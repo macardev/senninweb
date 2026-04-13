@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: auto; /* Lenis handle eder */
+  }
+
+  body {
+    background-color: #0A0A0A;
+    color: #F5F5F5;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    cursor: none; /* Custom cursor */
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar        { width: 3px; }
+  ::-webkit-scrollbar-track  { background: #0A0A0A; }
+  ::-webkit-scrollbar-thumb  { background: #D97706; border-radius: 2px; }
+
+  /* Selection */
+  ::selection {
+    background: #D97706;
+    color: #0A0A0A;
+  }
+}
+
+@layer utilities {
+  /* Glass yüzey */
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  /* Gold gradient text */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #FCD34D 0%, #D97706 50%, #B45309 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Altın çizgi */
+  .gold-line {
+    background: linear-gradient(90deg, transparent, #D97706 50%, transparent);
+    height: 1px;
+  }
+
+  /* Noise texture overlay */
+  .noise::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='[w3.org](http://www.w3.org/2000/svg)'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Section padding standartı */
+  .section-pad {
+    @apply py-32 px-6 md:px-12 lg:px-24;
+  }
+}
