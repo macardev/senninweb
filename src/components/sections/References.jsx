@@ -189,7 +189,7 @@ function UtsuriCard() {
           <p className="text-white/50 text-sm leading-relaxed mb-6">
             Moda markaları için yapay zeka destekli model fotoğrafı üretim platformu.
             Gerçek fotoğraf çekimi olmadan, dakikalar içinde profesyonel ürün görselleri.
-            Türkiye'nin öncü AI fashion platformu.
+            Türkiye'nin AI fashion platformu.
           </p>
 
           {/* Özellikler */}
@@ -236,7 +236,7 @@ function UtsuriCard() {
 
           {/* CTA */}
           <a
-            href="[utsuriai.com](https://utsuriai.com)"
+            href="https://www.utsuriai.com"
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}

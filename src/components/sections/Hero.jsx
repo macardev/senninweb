@@ -19,9 +19,9 @@ export default function Hero() {
       className="relative w-full h-screen min-h-[700px] flex items-center overflow-hidden bg-black"
     >
       {/* 3D Torus — sağ taraf */}
-      <div className="absolute right-0 top-0 w-full md:w-[55%] h-full opacity-90">
+      {/* <div className="absolute right-0 top-0 w-full md:w-[55%] h-full opacity-90">
         <TorusScene />
-      </div>
+      </div> */}
 
       {/* Gradient — sol tarafa geçiş */}
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-transparent pointer-events-none" />
@@ -32,56 +32,57 @@ export default function Hero() {
 
       {/* İçerik */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
-        <motion.div
+        <div
           variants={stagger}
           initial="hidden"
           animate="visible"
           className="max-w-2xl"
         >
           {/* Üst etiket */}
-          <motion.div variants={fadeUp} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}>
+          <div variants={fadeUp} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}>
             <span className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-gold-500 mb-8">
               <span className="w-8 h-px bg-gold-500" />
               Premium Web Tasarım & SEO
             </span>
-          </motion.div>
+          </div>
 
           {/* Ana başlık */}
           <motion.h1
-            variants={fadeUp}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display font-bold leading-[1.05] tracking-tight mb-6"
-          >
-            <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
-              İşletmenizi
-            </span>
-            <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
-              internette
-            </span>
-            <span className="block text-5xl md:text-6xl lg:text-7xl text-gold-gradient">
-              zirveye taşıyoruz.
-            </span>
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              className="font-display font-bold leading-[1.05] tracking-tight mb-6"
+            >
+              <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
+                İşletmenizi
+              </span>
+              <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
+                internette
+              </span>
+              <span className="block text-5xl md:text-6xl lg:text-7xl text-gold-gradient">
+                zirveye taşıyoruz.
+              </span>
           </motion.h1>
 
           {/* Alt açıklama */}
-          <motion.p
+          <p
             variants={fadeUp}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-base md:text-lg text-white/50 leading-relaxed mb-10 max-w-lg"
           >
             Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde
             rakiplerinizin önüne geçiriyoruz.
-          </motion.p>
+          </p>
 
           {/* CTA Butonlar */}
-          <motion.div
+          <div
             variants={fadeUp}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-wrap items-center gap-4"
           >
             {/* Primary CTA */}
             <a href="#contact">
-              <motion.button
+              <button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="relative px-8 py-4 rounded-full font-medium text-sm tracking-wide overflow-hidden group"
@@ -90,12 +91,12 @@ export default function Hero() {
                 <span className="relative z-10 text-black font-semibold">
                   Ücretsiz Teklif Al
                 </span>
-              </motion.button>
+              </button>
             </a>
 
             {/* Secondary CTA */}
             <a href="#references">
-              <motion.button
+              <button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="flex items-center gap-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 group"
@@ -106,12 +107,12 @@ export default function Hero() {
                   </svg>
                 </span>
                 Çalışmalarımızı Gör
-              </motion.button>
+              </button>
             </a>
-          </motion.div>
+          </div>
 
           {/* Alt metrik bar */}
-          <motion.div
+          <div
             variants={fadeUp}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="flex items-center gap-8 mt-16 pt-8 border-t border-white/8"
@@ -130,12 +131,12 @@ export default function Hero() {
                 </p>
               </div>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
+      <div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
@@ -144,12 +145,12 @@ export default function Hero() {
         <span className="text-[10px] tracking-[0.3em] uppercase text-white/25">
           Kaydır
         </span>
-        <motion.div
+        <div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           className="w-px h-8 bg-gradient-to-b from-white/25 to-transparent"
         />
-      </motion.div>
+      </div>
     </section>
   )
 }

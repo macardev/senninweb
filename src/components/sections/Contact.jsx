@@ -133,8 +133,8 @@ const handleSubmit = async (e) => {
                     </svg>
                   ),
                   label: 'Telefon',
-                  value: '+90 (555) 000 00 00',
-                  href:  'tel:+905550000000',
+                  value: '+90 (531) 405 15 84',
+                  href:  'tel:+905314051584',
                 },
                 {
                   icon: (
@@ -193,7 +193,7 @@ const handleSubmit = async (e) => {
             >
               <div className="w-1.5 h-1.5 rounded-full bg-gold-500 animate-pulse" />
               <span className="text-sm text-gold-400/80">
-                Ortalama yanıt süresi: 48 saat içinde
+                Ortalama yanıt süresi: 24 saat içinde
               </span>
             </motion.div>
           </motion.div>

@@ -204,7 +204,7 @@ export default function Footer() {
                   <div className="absolute inset-[9px] rounded-full bg-gold-500" />
                 </div>
                 <span className="font-display font-bold text-lg tracking-tight text-white">
-                  Web<span className="text-gold-gradient">Rise</span>
+                  Sennin<span className="text-gold-gradient">Web</span>
                 </span>
               </div>
 
@@ -272,7 +272,7 @@ export default function Footer() {
           <div className="py-6 flex flex-col sm:flex-row items-center
                           justify-between gap-4">
             <p className="text-xs text-white/20 tracking-wide">
-              © 2025 WebRise. Tüm hakları saklıdır.
+              © 2025 SenninWeb. Tüm hakları saklıdır.
             </p>
 
             {/* Legal linkler */}

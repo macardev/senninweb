@@ -50,7 +50,7 @@ export default function Navbar() {
             <div className="absolute inset-[9px] rounded-full bg-gold-500 group-hover:scale-110 transition-transform duration-300" />
           </div>
           <span className="font-display font-bold text-lg tracking-tight text-white">
-            Web<span className="text-gold-gradient">Rise</span>
+            Sennin<span className="text-gold-gradient">Web</span>
           </span>
         </a>
 
