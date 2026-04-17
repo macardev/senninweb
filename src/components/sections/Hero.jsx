@@ -136,7 +136,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div
+      {/* <div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
@@ -150,7 +150,7 @@ export default function Hero() {
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           className="w-px h-8 bg-gradient-to-b from-white/25 to-transparent"
         />
-      </div>
+      </div> */}
     </section>
   )
 }
