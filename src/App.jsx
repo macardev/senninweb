@@ -13,51 +13,57 @@ const References = lazy(() => import('@/components/sections/References'))
 const Contact = lazy(() => import('@/components/sections/Contact'))
 
 export default function App() {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.4,  
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      smoothWheel: true,
-    })
+    useEffect(() => {
+      const isMobile = window.innerWidth < 768
 
-    function raf(time) {
-      lenis.raf(time)
+      if (isMobile) return // 📱 mobilde Lenis çalışmaz
+
+      const lenis = new Lenis({
+        duration: 1,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      })
+
+      function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+
       requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf)
 
-    return () => lenis.destroy()
-  }, [])
+      return () => lenis.destroy()
+    }, [])
 
   return (
-    <>
-      <CustomCursor />
-      <Navbar />
-      <main>
-         <Hero />
+  <>
+    {typeof window !== "undefined" && window.innerWidth > 768 && <CustomCursor />}
+    
+    <Navbar />
 
-        <Suspense fallback={<div className="text-white">Yükleniyor...</div>}>
-          <Manifesto />
-        </Suspense>
+    <main>
+      <Hero />
 
-        <Suspense fallback={<div className="text-white">Yükleniyor...</div>}>
-          <Services />
-        </Suspense>
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <Manifesto />
+      </Suspense>
 
-        <Suspense fallback={<div className="text-white">Yükleniyor...</div>}>
-          <HowWeWork />
-        </Suspense>
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <Services />
+      </Suspense>
 
-        <Suspense fallback={<div className="text-white">Yükleniyor...</div>}>
-          <References />
-        </Suspense>
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <HowWeWork />
+      </Suspense>
 
-        <Suspense fallback={<div className="text-white">Yükleniyor...</div>}>
-          <Contact />
-        </Suspense>
-      </main>
-      <Footer />
-    </>
-  )
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <References />
+      </Suspense>
+
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <Contact />
+      </Suspense>
+    </main>
+
+    <Footer />
+  </>
+)
 }
