@@ -54,13 +54,13 @@ export default function Hero() {
               className="font-display font-bold leading-[1.05] tracking-tight mb-6"
             >
               <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
-                İşletmenizi
+                İşletmeniz için
               </span>
               <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
-                internette
+                profesyonel 
               </span>
               <span className="block text-5xl md:text-6xl lg:text-7xl text-gold-gradient">
-                zirveye taşıyoruz.
+                web tasarım ve Seo hizmeti
               </span>
           </motion.h1>
 
