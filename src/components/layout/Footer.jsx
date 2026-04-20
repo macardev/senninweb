@@ -1,21 +1,23 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useLocation, useNavigate } from "react-router-dom"
+import { scrollToIdWithRetry } from "@/utils/scrollToId"
 
 const footerLinks = [
   {
     title: 'Hizmetler',
     links: [
-      { label: 'Web Tasarım',      href: '#services'    },
-      { label: 'SEO & Büyüme',     href: '#services'    },
-      { label: 'Kurumsal Kimlik',  href: '#services'    },
+      { label: 'Web Tasarım',      href: '/#services'    },
+      { label: 'SEO & Büyüme',     href: '/#services'    },
+      { label: 'Kurumsal Kimlik',  href: '/#services'    },
     ],
   },
   {
     title: 'Şirket',
     links: [
-      { label: 'Referanslar',  href: '#references' },
-      { label: 'Nasıl Çalışırız', href: '#how'     },
-      { label: 'İletişim',     href: '#contact'    },
+      { label: 'Referanslar',  href: '/#references' },
+      { label: 'Nasıl Çalışırız', href: '/#how'     },
+      { label: 'İletişim',     href: '/#contact'    },
     ],
   },
 ]
@@ -174,11 +176,22 @@ function LegalModal({ type, onClose }) {
 
 export default function Footer() {
   const [modal, setModal] = useState(null)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   const handleNav = (e, href) => {
     e.preventDefault()
-    const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    const hashIndex = href.indexOf("#")
+    const targetId = hashIndex >= 0 ? href.slice(hashIndex + 1) : ""
+    if (!targetId) return
+
+    if (location.pathname !== "/") {
+      navigate("/")
+      setTimeout(() => scrollToIdWithRetry(targetId), 0)
+      return
+    }
+
+    scrollToIdWithRetry(targetId)
   }
 
   return (

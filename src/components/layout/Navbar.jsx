@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { motion, useScroll } from 'framer-motion'
+import { Link, useLocation, useNavigate } from "react-router-dom"
+import { scrollToIdWithRetry } from "@/utils/scrollToId"
 
 const navLinks = [
-  { label: 'Hizmetler',   href: '#services'    },
-  { label: 'Referanslar', href: '#references'  },
-  { label: 'İletişim',    href: '#contact'     },
+  { label: 'Hizmetler',   href: '/#services' },
+  { label: 'Referanslar', href: '/#references' },
+  { label: 'İletişim',    href: '/#contact' },
+  { label: 'Dijital Rehber', href: '/blog' }
 ]
-
 export default function Navbar() {
   const [scrolled,  setScrolled]  = useState(false)
   const [menuOpen,  setMenuOpen]  = useState(false)
   const { scrollY } = useScroll()
+  const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     const unsub = scrollY.on('change', v => setScrolled(v > 50))
@@ -20,8 +24,18 @@ export default function Navbar() {
   const handleNav = (e, href) => {
     e.preventDefault()
     setMenuOpen(false)
-    const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+
+    const hashIndex = href.indexOf("#")
+    const targetId = hashIndex >= 0 ? href.slice(hashIndex + 1) : ""
+    if (!targetId) return
+
+    if (location.pathname !== "/") {
+      navigate("/")
+      setTimeout(() => scrollToIdWithRetry(targetId), 0)
+      return
+    }
+
+    scrollToIdWithRetry(targetId)
   }
 
   return (
@@ -39,8 +53,13 @@ export default function Navbar() {
 
         {/* Logo */}
         <a
-          href="#"
-          onClick={e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+          href="/"
+          onClick={(e) => {
+            e.preventDefault()
+            setMenuOpen(false)
+            if (location.pathname !== "/") navigate("/")
+            setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0)
+          }}
           className="flex items-center gap-3 group"
         >
           {/* İkon: dönen halka referansı */}
@@ -56,21 +75,38 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-10">
-          {navLinks.map(link => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={e => handleNav(e, link.href)}
-              className="text-sm font-medium text-white/50 hover:text-white transition-colors duration-300 tracking-wide"
-            >
-              {link.label}
-            </a>
-          ))}
+         {navLinks.map(link => {
+
+          const isRoute = link.href.startsWith("/")
+
+          if (isRoute) {
+            return (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="text-sm font-medium text-white/50 hover:text-white transition-colors duration-300 tracking-wide"
+              >
+                {link.label}
+              </Link>
+            )
+          }
+
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={e => handleNav(e, link.href)}
+                className="text-sm font-medium text-white/50 hover:text-white transition-colors duration-300 tracking-wide"
+              >
+                {link.label}
+              </a>
+            )
+          })}
         </nav>
 
         {/* CTA */}
         <div className="hidden md:block">
-          <a href="#contact" onClick={e => handleNav(e, '#contact')}>
+          <a href="/#contact" onClick={e => handleNav(e, '/#contact')}>
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{  scale: 0.97 }}
@@ -123,17 +159,48 @@ export default function Navbar() {
         className="md:hidden overflow-hidden bg-black/95 backdrop-blur-xl border-t border-white/5"
       >
         <div className="px-6 py-8 flex flex-col gap-7">
-          {navLinks.map(link => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={e => handleNav(e, link.href)}
-              className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a href="#contact" onClick={e => handleNav(e, '#contact')}>
+          {navLinks.map(link => {
+            const isRoute = link.href.startsWith("/")
+            const isSection = link.href.startsWith("/#")
+
+            if (isSection) {
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => handleNav(e, link.href)}
+                  className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
+                >
+                  {link.label}
+                </a>
+              )
+            }
+
+            if (isRoute) {
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )
+            }
+
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={e => handleNav(e, link.href)}
+                className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
+              >
+                {link.label}
+              </a>
+            )
+          })}
+          <a href="/#contact" onClick={e => handleNav(e, '/#contact')}>
             <button className="w-full py-3.5 rounded-full border border-gold-500/50 text-gold-400 text-sm font-medium tracking-wide">
               Teklif Al
             </button>

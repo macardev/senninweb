@@ -204,7 +204,7 @@ export default function HowWeWork() {
                 className="mt-16 p-6 rounded-2xl border border-white/6 bg-white/[0.02]"
               >
                 <p className="text-xs tracking-[0.2em] uppercase text-white/30 mb-5">
-                  Neden WebRise?
+                  Neden SenninWeb?
                 </p>
                 {[
                   'Sınırsız revizyon hakkı',

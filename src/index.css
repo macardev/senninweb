@@ -20,7 +20,10 @@
     color: #F5F5F5;
     font-family: 'Inter', system-ui, sans-serif;
     overflow-x: hidden;
-    cursor: none; /* Custom cursor */
+  }
+
+  body.cursor-none {
+    cursor: none; /* enabled only when CustomCursor is active */
   }
 
   /* Scrollbar */

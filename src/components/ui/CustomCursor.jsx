@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 
-export default function CustomCursor() {
+export default function CustomCursor({ routeKey }) {
   const cursorRef = useRef(null)
   const dotRef    = useRef(null)
 
@@ -22,6 +22,14 @@ export default function CustomCursor() {
       mouseY.set(e.clientY)
     }
 
+    window.addEventListener('mousemove', move)
+
+    return () => {
+      window.removeEventListener('mousemove', move)
+    }
+  }, [])
+
+  useEffect(() => {
     // Hover: tıklanabilir elementlerde cursor büyüsün
     const grow = () => {
       cursorRef.current?.classList.add('scale-[2.5]', 'border-gold-500', 'opacity-60')
@@ -30,22 +38,19 @@ export default function CustomCursor() {
       cursorRef.current?.classList.remove('scale-[2.5]', 'border-gold-500', 'opacity-60')
     }
 
-    window.addEventListener('mousemove', move)
-
-    const clickables = document.querySelectorAll('a, button, [data-cursor]')
+    const clickables = document.querySelectorAll('a, button, [role="button"], [data-cursor]')
     clickables.forEach(el => {
       el.addEventListener('mouseenter', grow)
       el.addEventListener('mouseleave', shrink)
     })
 
     return () => {
-      window.removeEventListener('mousemove', move)
       clickables.forEach(el => {
         el.removeEventListener('mouseenter', grow)
         el.removeEventListener('mouseleave', shrink)
       })
     }
-  }, [])
+  }, [routeKey])
 
   return (
     <>
