@@ -6,6 +6,7 @@ import Home from "@/pages/Home"
 import Blog from "@/pages/Blog"
 import BlogPost from "@/pages/BlogPost"
 
+
 export default function App() {
   return (
     <Router>

@@ -1,125 +1,12 @@
-import React, { useRef, useState } from 'react'
-import { motion, useScroll, useTransform, useSpring, useAnimationFrame } from 'framer-motion'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { MeshTransmissionMaterial, Float, Trail } from '@react-three/drei'
+import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import useInView from '@/hooks/useInView'
 
-
-// ─── Utsuri 3D Sahne ────────────────────────────────────────────────
-function UtsuriOrb() {
-  const meshRef  = useRef()
-  const groupRef = useRef()
-  const ringRef1 = useRef()
-  const ringRef2 = useRef()
-
- useFrame((state, delta) => {
-  if (!meshRef.current) return
-    const t = state.clock.elapsedTime
-    meshRef.current.rotation.x  = t * 0.3
-    meshRef.current.rotation.y  = t * 0.2
-    ringRef1.current.rotation.z = t * 0.4
-    ringRef1.current.rotation.x = Math.PI / 3 + Math.sin(t * 0.5) * 0.1
-    ringRef2.current.rotation.z = -t * 0.25
-    ringRef2.current.rotation.y = t * 0.15
-    groupRef.current.position.y = Math.sin(t * 0.6) * 0.08
-  })
-
-  return (
-    <group ref={groupRef}>
-      {/* Ana küre */}
-      <mesh ref={meshRef}>
-        <icosahedronGeometry args={[1, 2]} />
-        <MeshTransmissionMaterial
-          backside
-          samples={12}
-          resolution={256}
-          transmission={0.95}
-          roughness={0.08}
-          thickness={0.5}
-          ior={1.6}
-          chromaticAberration={0.08}
-          distortion={0.15}
-          distortionScale={0.4}
-          temporalDistortion={0.08}
-          color="#9333EA"
-          attenuationColor="#C084FC"
-          attenuationDistance={0.6}
-        />
-      </mesh>
-
-      {/* Mor halka 1 */}
-      <mesh ref={ringRef1} rotation={[Math.PI / 3, 0, 0]}>
-        <torusGeometry args={[1.6, 0.012, 16, 120]} />
-        <meshBasicMaterial color="#A855F7" transparent opacity={0.5} />
-      </mesh>
-
-      {/* Pembe halka 2 */}
-      <mesh ref={ringRef2} rotation={[Math.PI / 5, Math.PI / 4, 0]}>
-        <torusGeometry args={[1.9, 0.006, 16, 120]} />
-        <meshBasicMaterial color="#EC4899" transparent opacity={0.3} />
-      </mesh>
-
-      {/* Küçük yörüngeli top */}
-      <mesh position={[1.6, 0, 0]} rotation={[0, 0, 0]}>
-        <sphereGeometry args={[0.08, 16, 16]} />
-        <meshBasicMaterial color="#C084FC" />
-      </mesh>
-    </group>
-  )
-}
-
-function UtsuriParticles({ count = 50 }) {
-  const mesh = useRef()
-  const positions = React.useMemo(() => {
-    const pos = new Float32Array(count * 3)
-    for (let i = 0; i < count; i++) {
-      const r     = 2 + Math.random() * 1.5
-      const theta = Math.random() * Math.PI * 2
-      const phi   = Math.random() * Math.PI
-      pos[i * 3]     = r * Math.sin(phi) * Math.cos(theta)
-      pos[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta)
-      pos[i * 3 + 2] = r * Math.cos(phi)
-    }
-    return pos
-  }, [count])
-
-  useFrame((state) => {
-    mesh.current.rotation.y = state.clock.elapsedTime * 0.08
-  })
-
-  return (
-    <points ref={mesh}>
-      <bufferGeometry>
-        <bufferAttribute attach="attributes-position" array={positions} count={count} itemSize={3} />
-      </bufferGeometry>
-      <pointsMaterial size={0.03} color="#A855F7" transparent opacity={0.7} sizeAttenuation />
-    </points>
-  )
-}
-
-function UtsuriScene() {
-  return (
-    <Canvas
-      camera={{ position: [0, 0, 4.5], fov: 45 }}
-      gl={{ antialias: true, alpha: true }}
-      dpr={1}
-    >
-      <ambientLight intensity={0.4} />
-      <pointLight position={[3, 3, 3]}   intensity={2}   color="#A855F7" />
-      <pointLight position={[-3, -2, -3]} intensity={1}   color="#EC4899" />
-      <pointLight position={[0, 0, 3]}   intensity={0.8} color="#ffffff" />
-      <UtsuriOrb />
-    {!isMobile && <UtsuriParticles />}
-    </Canvas>
-  )
-}
 
 // ─── Utsuri Featured Kart ───────────────────────────────────────────
 function UtsuriCard() {
   const { ref, inView } = useInView({ threshold: 0.1 })
   const [hovered, setHovered] = useState(false)
-
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768
 
   return (
     <motion.div
@@ -145,41 +32,19 @@ function UtsuriCard() {
         />
       </div>
 
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 h-full">
+      <div className="relative z-10 flex flex-col">
 
-        {/* Sol — 3D sahne */}
-        <div className="relative h-64 md:h-full min-h-[280px]">
-          {isMobile ? (
-              <div className="relative w-full h-full overflow-hidden">
-                <img 
-                  src="/utsuri-preview.webp"
-                  alt="Utsuri AI platform arayüzü"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-
-                <div className="absolute bottom-4 left-4 text-xs text-white/60">
-                  Canlı Proje Önizleme
-                </div>
-              </div>
-            ) : (
-              <UtsuriScene />
-          )}
-
-          {/* Floating etiket */}
-          <motion.div
-            animate={hovered ? { y: -4, opacity: 1 } : { y: 0, opacity: 0.7 }}
-            transition={{ duration: 0.4 }}
-            className="absolute top-5 left-5 px-3 py-1.5 rounded-full
-                       bg-purple-500/20 border border-purple-400/30
-                       text-xs text-purple-300 font-medium tracking-wide"
-          >
-            ✦ Canlı Referans
-          </motion.div>
+        {/* Top — Image */}
+        <div className="relative w-full h-[240px] md:h-[300px] bg-black">
+          <img
+            src="/utsuri.webp"
+            alt="Utsuri AI"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
 
-        {/* Sağ — içerik */}
-        <div className="p-8 md:p-10 flex flex-col justify-center">
+        {/* Bottom — Content */}
+        <div className="p-6 md:p-8 flex flex-col justify-start">
 
           {/* Kategori */}
           <div className="flex items-center gap-3 mb-5">
