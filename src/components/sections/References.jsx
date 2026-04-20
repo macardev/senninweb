@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, useSpring, useAnimationFrame } from 'f
 import { Canvas, useFrame } from '@react-three/fiber'
 import { MeshTransmissionMaterial, Float, Trail } from '@react-three/drei'
 import useInView from '@/hooks/useInView'
-const isMobile = typeof window !== "undefined" && window.innerWidth < 768
+
 
 // ─── Utsuri 3D Sahne ────────────────────────────────────────────────
 function UtsuriOrb() {
@@ -119,6 +119,8 @@ function UtsuriCard() {
   const { ref, inView } = useInView({ threshold: 0.1 })
   const [hovered, setHovered] = useState(false)
 
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768
+
   return (
     <motion.div
       ref={ref}
@@ -147,15 +149,22 @@ function UtsuriCard() {
 
         {/* Sol — 3D sahne */}
         <div className="relative h-64 md:h-full min-h-[280px]">
-            {isMobile ? (
-              <img 
-                src="/utsuri-preview.jpg" 
-                alt="Utsuri AI preview"
-                className="w-full h-full object-cover"
-              />
+          {isMobile ? (
+              <div className="relative w-full h-full overflow-hidden">
+                <img 
+                  src="/utsuri-preview.webp"
+                  alt="Utsuri AI platform arayüzü"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+
+                <div className="absolute bottom-4 left-4 text-xs text-white/60">
+                  Canlı Proje Önizleme
+                </div>
+              </div>
             ) : (
-          <UtsuriScene />
-        )}
+              <UtsuriScene />
+          )}
 
           {/* Floating etiket */}
           <motion.div
