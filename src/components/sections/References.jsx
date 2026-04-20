@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, useSpring, useAnimationFrame } from 'f
 import { Canvas, useFrame } from '@react-three/fiber'
 import { MeshTransmissionMaterial, Float, Trail } from '@react-three/drei'
 import useInView from '@/hooks/useInView'
+const isMobile = typeof window !== "undefined" && window.innerWidth < 768
 
 // ─── Utsuri 3D Sahne ────────────────────────────────────────────────
 function UtsuriOrb() {
@@ -11,7 +12,8 @@ function UtsuriOrb() {
   const ringRef1 = useRef()
   const ringRef2 = useRef()
 
-  useFrame((state) => {
+ useFrame((state, delta) => {
+  if (!meshRef.current) return
     const t = state.clock.elapsedTime
     meshRef.current.rotation.x  = t * 0.3
     meshRef.current.rotation.y  = t * 0.2
@@ -26,7 +28,7 @@ function UtsuriOrb() {
     <group ref={groupRef}>
       {/* Ana küre */}
       <mesh ref={meshRef}>
-        <icosahedronGeometry args={[1, 8]} />
+        <icosahedronGeometry args={[1, 2]} />
         <MeshTransmissionMaterial
           backside
           samples={12}
@@ -100,14 +102,14 @@ function UtsuriScene() {
     <Canvas
       camera={{ position: [0, 0, 4.5], fov: 45 }}
       gl={{ antialias: true, alpha: true }}
-      dpr={[1, 2]}
+      dpr={1}
     >
       <ambientLight intensity={0.4} />
       <pointLight position={[3, 3, 3]}   intensity={2}   color="#A855F7" />
       <pointLight position={[-3, -2, -3]} intensity={1}   color="#EC4899" />
       <pointLight position={[0, 0, 3]}   intensity={0.8} color="#ffffff" />
       <UtsuriOrb />
-      <UtsuriParticles />
+    {!isMobile && <UtsuriParticles />}
     </Canvas>
   )
 }
@@ -145,7 +147,15 @@ function UtsuriCard() {
 
         {/* Sol — 3D sahne */}
         <div className="relative h-64 md:h-full min-h-[280px]">
+            {isMobile ? (
+              <img 
+                src="/utsuri-preview.jpg" 
+                alt="Utsuri AI preview"
+                className="w-full h-full object-cover"
+              />
+            ) : (
           <UtsuriScene />
+        )}
 
           {/* Floating etiket */}
           <motion.div
