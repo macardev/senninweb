@@ -1,6 +1,7 @@
 import { useEffect } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
+import { getBlogPost } from "@/data/blogPosts"
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -24,18 +25,162 @@ function upsertMetaByProperty(property, content) {
   return el
 }
 
+function renderSection(section, index) {
+  switch (section.type) {
+    case "heroSection":
+      return (
+        <div key={index} className="space-y-4">
+          <h1 className="text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
+            {section.title}
+          </h1>
+          <h2 className="text-xl md:text-2xl font-display font-semibold text-white/80">
+            {section.subtitle}
+          </h2>
+        </div>
+      )
+
+    case "heading2":
+      return (
+        <h2 key={index} className="text-2xl md:text-3xl font-display font-semibold text-white pt-8">
+          {section.content}
+        </h2>
+      )
+
+    case "heading3":
+      return (
+        <h3 key={index} className="text-xl md:text-2xl font-display font-semibold text-white">
+          {section.content}
+        </h3>
+      )
+
+    case "paragraph":
+      return (
+        <p key={index} className="text-sm md:text-base text-white/65 leading-relaxed">
+          {section.content}
+        </p>
+      )
+
+    case "intro":
+      return (
+        <p key={index} className="text-sm md:text-base text-white/65 leading-relaxed">
+          {section.content}
+        </p>
+      )
+
+    case "bulletList":
+      return (
+        <ul key={index} className="space-y-2 text-sm md:text-base text-white/65 leading-relaxed list-disc pl-5 marker:text-gold-500/80">
+          {section.items.map((item, itemIndex) => (
+            <li key={itemIndex}>{item}</li>
+          ))}
+        </ul>
+      )
+
+    case "question":
+      return (
+        <div key={index} className="space-y-3">
+          <p className="text-sm md:text-base text-white/65 leading-relaxed">
+            {section.question}
+          </p>
+          <p className="text-sm md:text-base text-white/65 leading-relaxed font-semibold">
+            {section.answer}
+          </p>
+        </div>
+      )
+
+    case "conclusion":
+      return (
+        <div key={index} className="space-y-3">
+          <p className="text-sm md:text-base text-white/65 leading-relaxed">
+            {section.intro}
+          </p>
+          <ul className="space-y-2 text-sm md:text-base text-white/65 leading-relaxed list-disc pl-5 marker:text-gold-500/80">
+            {section.items.map((item, itemIndex) => (
+              <li key={itemIndex}>{item}</li>
+            ))}
+          </ul>
+          <p className="text-sm md:text-base text-white/65 leading-relaxed">
+            {section.closing}
+          </p>
+        </div>
+      )
+
+    case "finalParagraph":
+      return (
+        <p key={index} className="text-sm md:text-base text-white/65 leading-relaxed">
+          {section.content}
+        </p>
+      )
+
+    case "finalCta":
+      return (
+        <div key={index} className="space-y-3">
+          <p className="text-sm md:text-base text-white/65 leading-relaxed font-semibold">
+            {section.question}
+          </p>
+          <p className="text-sm md:text-base text-white/65 leading-relaxed">
+            {section.ctaText}
+          </p>
+        </div>
+      )
+
+    case "section":
+      return (
+        <div key={index} className="space-y-5">
+          <p className="text-sm md:text-base text-white/65 leading-relaxed">
+            {section.content}
+          </p>
+          <div className="space-y-8">
+            {section.subsections?.map((subsection, subIndex) => (
+              <div key={subIndex} className="space-y-3">
+                <h3 className="text-xl md:text-2xl font-display font-semibold text-white">
+                  {subsection.heading}
+                </h3>
+                <p className="text-sm md:text-base text-white/65 leading-relaxed">
+                  {subsection.content}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+
+    default:
+      return null
+  }
+}
+
 export default function BlogPost() {
   const navigate = useNavigate()
+  const { slug } = useParams()
+  const post = getBlogPost(slug)
+
+  if (!post) {
+    return (
+      <div className="px-6 md:px-12 py-20">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl font-bold text-white mb-4">Sayfa Bulunamadı</h1>
+          <p className="text-white/60 mb-8">Bu blog yazısı mevcut değil.</p>
+          <Link
+            to="/blog"
+            className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium tracking-wide bg-gold-500 text-black hover:bg-gold-400 transition-colors"
+          >
+            Blog'a Dön
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?",
-    description:
-      "Küçük işletmeler için web sitesinin nasıl müşteri getirdiğini öğrenin. SEO, hız ve doğru strateji ile daha fazla müşteri kazanın.",
+    headline: post.shortTitle,
+    description: post.metaDescription,
     author: {
       "@type": "Person",
-      name: "Çağatay Macar",
-      jobTitle: "Senior Web Developer",
+      name: post.author,
+      jobTitle: post.authorTitle,
     },
     publisher: {
       "@type": "Organization",
@@ -43,49 +188,41 @@ export default function BlogPost() {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://senninweb.com/blog/kucuk-isletme-web-sitesi",
+      "@id": post.schemaUrl,
     },
   }
 
   useEffect(() => {
     const prevTitle = document.title
-
     const prevDesc = document.head.querySelector('meta[name="description"]')?.getAttribute("content") ?? null
     const prevViewport = document.head.querySelector('meta[name="viewport"]')?.getAttribute("content") ?? null
     const prevRobots = document.head.querySelector('meta[name="robots"]')?.getAttribute("content") ?? null
-
     const prevOgTitle = document.head.querySelector('meta[property="og:title"]')?.getAttribute("content") ?? null
     const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
     const prevOgType = document.head.querySelector('meta[property="og:type"]')?.getAttribute("content") ?? null
     const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
 
-    const title = "Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir? | SenninWeb"
-    const description =
-      "Küçük işletmeler için web sitesinin nasıl müşteri getirdiğini öğrenin. SEO, hız ve doğru strateji ile daha fazla müşteri kazanın."
-
-    document.title = title
-    upsertMetaByName("description", description)
+    document.title = post.title
+    upsertMetaByName("description", post.metaDescription)
     upsertMetaByName("viewport", "width=device-width, initial-scale=1.0")
     upsertMetaByName("robots", "index, follow")
 
-    upsertMetaByProperty("og:title", title)
-    upsertMetaByProperty("og:description", description)
+    upsertMetaByProperty("og:title", post.title)
+    upsertMetaByProperty("og:description", post.metaDescription)
     upsertMetaByProperty("og:type", "article")
     upsertMetaByProperty("og:url", typeof window !== "undefined" ? window.location.href : "")
 
     return () => {
       document.title = prevTitle
-
       if (prevDesc !== null) upsertMetaByName("description", prevDesc)
       if (prevViewport !== null) upsertMetaByName("viewport", prevViewport)
       if (prevRobots !== null) upsertMetaByName("robots", prevRobots)
-
       if (prevOgTitle !== null) upsertMetaByProperty("og:title", prevOgTitle)
       if (prevOgDesc !== null) upsertMetaByProperty("og:description", prevOgDesc)
       if (prevOgType !== null) upsertMetaByProperty("og:type", prevOgType)
       if (prevOgUrl !== null) upsertMetaByProperty("og:url", prevOgUrl)
     }
-  }, [])
+  }, [post])
 
   return (
     <article className="px-6 md:px-12 pb-20">
@@ -119,105 +256,28 @@ export default function BlogPost() {
           </Link>
 
           <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
-            <span className="text-gold-400/90 font-semibold">Büyüme</span>
+            <span className="text-gold-400/90 font-semibold">{post.tag}</span>
             <span className="text-white/25">•</span>
-            <span className="text-white/40">6 dk okuma</span>
+            <span className="text-white/40">{post.readingTime}</span>
             <span className="text-white/25">•</span>
-            <span className="text-white/40">2026</span>
+            <span className="text-white/40">{post.date}</span>
           </div>
 
           <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
-            Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?
+            {post.shortTitle}
           </h1>
           <p className="mt-3 text-xs md:text-sm text-white/60">
-            Yazar: Çağatay Macar • Senior Web Developer
+            Yazar: {post.author} • {post.authorTitle}
           </p>
           <p className="mt-5 text-sm md:text-base text-white/60 leading-relaxed">
-            Günümüzde bir işletmenin sadece fiziksel olarak var olması yeterli değil...
+            {post.description}
           </p>
 
           <div className="mt-8 gold-line opacity-20" />
         </div>
 
         <div className="space-y-10 text-white/70 leading-relaxed">
-          <section className="space-y-5">
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              Günümüzde bir işletmenin başarılı olabilmesi için sadece fiziksel bir mağazaya sahip olması yeterli değil.
-              İnsanlar bir ürün veya hizmet aradığında ilk yaptıkları şey Google’da arama yapmak.
-              Eğer işletmeniz bu aramalarda görünmüyorsa, potansiyel müşterilerinizi fark etmeden kaybediyorsunuz demektir.
-            </p>
-
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              Peki bir web sitesi gerçekten müşteri getirir mi?
-            </p>
-
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              Cevap: Evet, ama doğru yapılırsa.
-            </p>
-
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              Birçok işletme web sitesi yaptırıyor ancak sonuç alamıyor. Bunun en büyük sebebi sitenin sadece “var olması”
-              ama aktif olarak çalışmamasıdır. Yani SEO yapılmamış, yavaş açılan veya kullanıcıyı yönlendirmeyen bir site
-              hiçbir işe yaramaz.
-            </p>
-          </section>
-
-          <section className="space-y-5">
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              Gerçekten müşteri getiren bir web sitesi 3 temel üzerine kuruludur:
-            </p>
-
-            <div className="space-y-8">
-              <section className="space-y-3">
-                <h2 className="text-xl md:text-2xl font-display font-semibold text-white">
-                  1. Google’da Görünürlük (SEO)
-                </h2>
-                <p className="text-sm md:text-base text-white/65 leading-relaxed">
-                  İnsanlar hizmet ararken sizin sitenizi bulabilmeli. Bunun için doğru anahtar kelimeler, teknik SEO ve içerik stratejisi gerekir.
-                </p>
-              </section>
-
-              <section className="space-y-3">
-                <h2 className="text-xl md:text-2xl font-display font-semibold text-white">
-                  2. Hız ve Performans
-                </h2>
-                <p className="text-sm md:text-base text-white/65 leading-relaxed">
-                  Ziyaretçiler yavaş açılan siteleri anında terk eder. Hızlı bir site hem kullanıcı deneyimini artırır hem de Google sıralamasında yükselmenizi sağlar.
-                </p>
-              </section>
-
-              <section className="space-y-3">
-                <h2 className="text-xl md:text-2xl font-display font-semibold text-white">
-                  3. Doğru Yönlendirme (CTA)
-                </h2>
-                <p className="text-sm md:text-base text-white/65 leading-relaxed">
-                  Kullanıcı siteye geldiğinde ne yapacağını bilmeli. “Teklif al”, “iletişime geç” gibi yönlendirmeler olmadan ziyaretçiler müşteriye dönüşmez.
-                </p>
-              </section>
-            </div>
-
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              Profesyonel bir web sitesi sizin için 7/24 çalışan bir satış temsilcisi gibidir. Doğru kurulduğunda size sürekli yeni müşteriler kazandırır.
-            </p>
-
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              Eğer sizin de web siteniz:
-            </p>
-
-            <ul className="space-y-2 text-sm md:text-base text-white/65 leading-relaxed list-disc pl-5 marker:text-gold-500/80">
-              <li>müşteri getirmiyorsa</li>
-              <li>Google’da görünmüyorsa</li>
-              <li>yavaş çalışıyorsa</li>
-            </ul>
-
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              bunun çözümü doğru bir strateji ile mümkündür.
-            </p>
-
-            <p className="text-sm md:text-base text-white/65 leading-relaxed">
-              İşletmenize özel, hızlı ve SEO uyumlu bir web sitesi ile dijitalde rakiplerinizin önüne geçebilirsiniz.
-            </p>
-          </section>
+          {post.sections.map((section, index) => renderSection(section, index))}
 
           <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-10">
             <div className="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 blur-[70px] pointer-events-none" />

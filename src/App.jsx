@@ -19,8 +19,8 @@ export default function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/blog" element={<Blog />} />
 
-          {/* 📝 BLOG DETAY */}
-          <Route path="/blog/kucuk-isletme-web-sitesi" element={<BlogPost />} />
+          {/* 📝 BLOG DETAY - Dynamic routing */}
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Route>
       </Routes>
     </Router>

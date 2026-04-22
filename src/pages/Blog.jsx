@@ -1,16 +1,8 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useEffect } from "react"
+import { getAllBlogPosts } from "@/data/blogPosts"
 
-const posts = [
-  {
-    slug: "kucuk-isletme-web-sitesi",
-    title: "Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?",
-    desc: "Web sitesi ile müşteri kazanmanın temel stratejileri.",
-    tag: "Büyüme",
-    readingTime: "6 dk",
-    date: "2026"
-  }
-]
+const posts = getAllBlogPosts()
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -99,7 +91,7 @@ export default function Blog() {
                 </div>
 
                 <h2 className="mt-4 text-xl md:text-2xl font-display font-semibold leading-snug text-white">
-                  {post.title}
+                  {post.shortTitle}
                 </h2>
                 <p className="mt-3 text-sm text-white/55 leading-relaxed">
                   {post.desc}
