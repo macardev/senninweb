@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useIsMobile } from '@/hooks/useIsMobile'
 import useInView from '@/hooks/useInView'
 
 const services = [
@@ -51,15 +52,18 @@ const services = [
 ]
 
 function ServiceCard({ service, index }) {
+  const isMobile = useIsMobile()
   const { ref, inView } = useInView()
   const cardRef = useRef(null)
 
+  // Only use scroll parallax on desktop (not on mobile for better performance)
   const { scrollYProgress } = useScroll({
     target: cardRef,
     offset: ['start end', 'end start'],
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], [60, -60])
+  // Skip parallax on mobile - use dummy value
+  const y = isMobile ? 0 : useTransform(scrollYProgress, [0, 1], [60, -60])
 
   return (
     <motion.div
@@ -152,6 +156,7 @@ function ServiceCard({ service, index }) {
 }
 
 export default function Services() {
+  const isMobile = useIsMobile()
   const { ref, inView } = useInView()
 
   return (
@@ -222,8 +227,8 @@ export default function Services() {
           </div>
           <a href="#contact">
             <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
+              whileHover={isMobile ? {} : { scale: 1.03 }}
+              whileTap={isMobile ? {} : { scale: 0.97 }}
               className="relative flex-shrink-0 px-7 py-3.5 rounded-full
                          font-medium text-sm tracking-wide overflow-hidden group"
             >

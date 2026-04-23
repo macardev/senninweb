@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useIsMobile } from '@/hooks/useIsMobile'
 import useInView from '@/hooks/useInView'
 
 const steps = [
@@ -60,6 +61,7 @@ const steps = [
 ]
 
 function StepCard({ step, index, total }) {
+  const isMobile = useIsMobile()
   const { ref, inView } = useInView({ threshold: 0.2 })
   const isLast = index === total - 1
 
@@ -87,12 +89,14 @@ function StepCard({ step, index, total }) {
                      text-gold-400 flex-shrink-0 z-10"
         >
           {step.icon}
-          {/* Pulse halkası */}
-          <motion.div
-            animate={inView ? { scale: [1, 1.6], opacity: [0.3, 0] } : {}}
-            transition={{ duration: 2, repeat: Infinity, delay: index * 0.4 }}
-            className="absolute inset-0 rounded-full border border-gold-500/30"
-          />
+          {/* Pulse halkası — disable on mobile */}
+          {!isMobile && (
+            <motion.div
+              animate={inView ? { scale: [1, 1.6], opacity: [0.3, 0] } : {}}
+              transition={{ duration: 2, repeat: Infinity, delay: index * 0.4 }}
+              className="absolute inset-0 rounded-full border border-gold-500/30"
+            />
+          )}
         </motion.div>
 
         {/* Dikey çizgi — son kart değilse */}
@@ -135,6 +139,7 @@ function StepCard({ step, index, total }) {
 }
 
 export default function HowWeWork() {
+  const isMobile = useIsMobile()
   const { ref, inView } = useInView()
   const containerRef    = useRef(null)
 
@@ -143,8 +148,8 @@ export default function HowWeWork() {
     offset: ['start end', 'end start'],
   })
 
-  // Sağ taraf — scroll parallax
-  const rightY = useTransform(scrollYProgress, [0, 1], [80, -80])
+  // Sağ taraf — scroll parallax (disable on mobile for better performance)
+  const rightY = isMobile ? 0 : useTransform(scrollYProgress, [0, 1], [80, -80])
 
   return (
     <section
@@ -192,7 +197,7 @@ export default function HowWeWork() {
               {/* Toplam süre badge */}
               <div className="inline-flex items-center gap-3 px-5 py-3
                               rounded-full border border-gold-500/20 bg-gold-500/5">
-                <div className="w-1.5 h-1.5 rounded-full bg-gold-500 animate-pulse" />
+                <div className={`w-1.5 h-1.5 rounded-full bg-gold-500 ${!isMobile ? 'animate-pulse' : ''}`} />
                 <span className="text-sm text-gold-400 font-medium">
                   Ortalama 10–19 günde teslim
                 </span>

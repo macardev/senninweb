@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { useIsMobile } from '@/hooks/useIsMobile'
 import TorusScene from '@/components/three/TorusScene'
 
 const fadeUp = {
@@ -7,12 +8,26 @@ const fadeUp = {
   visible: { opacity: 1, y: 0,   filter: 'blur(0px)' },
 }
 
+// Mobile optimized: no blur, simpler animation
+const fadeUpMobile = {
+  hidden:  { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+}
+
 const stagger = {
   hidden:  {},
   visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
 }
 
+// Mobile optimized: no delay, faster stagger
+const staggerMobile = {
+  hidden:  {},
+  visible: { transition: { staggerChildren: 0.05, delayChildren: 0 } },
+}
+
 export default function Hero() {
+  const isMobile = useIsMobile()
+
   return (
     <section
       id="hero"
@@ -33,13 +48,16 @@ export default function Hero() {
       {/* İçerik */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
         <motion.div
-          variants={stagger}
+          variants={isMobile ? staggerMobile : stagger}
           initial="hidden"
           animate="visible"
           className="max-w-2xl"
         >
           {/* Üst etiket */}
-          <motion.div variants={fadeUp} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}>
+          <motion.div 
+            variants={isMobile ? fadeUpMobile : fadeUp} 
+            transition={{ duration: isMobile ? 0.4 : 0.6, ease: [0.16, 1, 0.3, 1] }}
+          >
             <span className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-gold-500 mb-8">
               <span className="w-8 h-px bg-gold-500" />
               Premium Web Tasarım & SEO
@@ -50,7 +68,7 @@ export default function Hero() {
           <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.05 }}
+              transition={{ duration: isMobile ? 0.3 : 0.5, delay: isMobile ? 0 : 0.05 }}
               className="font-display font-bold leading-[1.05] tracking-tight mb-6"
             >
               <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
@@ -66,8 +84,8 @@ export default function Hero() {
 
           {/* Alt açıklama */}
           <motion.p
-            variants={fadeUp}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            variants={isMobile ? fadeUpMobile : fadeUp}
+            transition={{ duration: isMobile ? 0.4 : 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="text-base md:text-lg text-white/50 leading-relaxed mb-10 max-w-lg"
           >
             Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde
@@ -76,15 +94,15 @@ export default function Hero() {
 
           {/* CTA Butonlar */}
           <motion.div
-            variants={fadeUp}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            variants={isMobile ? fadeUpMobile : fadeUp}
+            transition={{ duration: isMobile ? 0.4 : 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-wrap items-center gap-4"
           >
             {/* Primary CTA */}
             <a href="#contact">
               <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={isMobile ? {} : { scale: 1.03 }}
+                whileTap={isMobile ? {} : { scale: 0.97 }}
                 className="relative px-8 py-4 rounded-full font-medium text-sm tracking-wide overflow-hidden group"
               >
                 <span className="absolute inset-0 rounded-full bg-gold-500 group-hover:bg-gold-400 transition-colors duration-300" />
@@ -97,8 +115,8 @@ export default function Hero() {
             {/* Secondary CTA */}
             <a href="#references">
               <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={isMobile ? {} : { scale: 1.03 }}
+                whileTap={isMobile ? {} : { scale: 0.97 }}
                 className="flex items-center gap-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 group"
               >
                 <span className="w-10 h-10 rounded-full border border-white/15 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
@@ -113,8 +131,8 @@ export default function Hero() {
 
           {/* Alt metrik bar */}
           <motion.div
-            variants={fadeUp}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            variants={isMobile ? fadeUpMobile : fadeUp}
+            transition={{ duration: isMobile ? 0.4 : 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="flex items-center gap-8 mt-16 pt-8 border-t border-white/8"
           >
             {[

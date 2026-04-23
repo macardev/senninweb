@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
+import { useIsMobile } from '@/hooks/useIsMobile'
 
 const words = [
   'Güzel',
@@ -13,6 +14,7 @@ const words = [
 ]
 
 export default function Manifesto() {
+  const isMobile = useIsMobile()
   const containerRef = useRef(null)
 
   const { scrollYProgress } = useScroll({
@@ -20,15 +22,16 @@ export default function Manifesto() {
     offset: ['start end', 'end start'],
   })
 
-  const smooth = useSpring(scrollYProgress, {
+  // Disable spring animation on mobile
+  const smooth = isMobile ? scrollYProgress : useSpring(scrollYProgress, {
     stiffness: 60,
     damping: 20,
     mass: 0.5,
   })
 
-  // Section scale ve opacity
-  const opacity = useTransform(smooth, [0, 0.2, 0.8, 1], [0, 1, 1, 0])
-  const scale   = useTransform(smooth, [0, 0.2, 0.8, 1], [0.92, 1, 1, 0.95])
+  // Section scale ve opacity (disable on mobile)
+  const opacity = isMobile ? 1 : useTransform(smooth, [0, 0.2, 0.8, 1], [0, 1, 1, 0])
+  const scale   = isMobile ? 1 : useTransform(smooth, [0, 0.2, 0.8, 1], [0.92, 1, 1, 0.95])
 
   return (
     <section
@@ -61,7 +64,7 @@ export default function Manifesto() {
         </div>
 
         {/* Kelime bazlı animasyonlu metin */}
-        <WordReveal progress={smooth} />
+        <WordReveal progress={smooth} isMobile={isMobile} />
       </motion.div>
 
       {/* Alt çizgi */}
@@ -72,7 +75,7 @@ export default function Manifesto() {
   )
 }
 
-function WordReveal({ progress }) {
+function WordReveal({ progress, isMobile }) {
   return (
     <h2 className="font-display font-bold text-4xl md:text-6xl lg:text-7xl leading-tight tracking-tight flex flex-wrap gap-x-[0.25em] gap-y-2">
       {words.map((word, i) => (
@@ -82,20 +85,21 @@ function WordReveal({ progress }) {
           index={i}
           total={words.length}
           progress={progress}
+          isMobile={isMobile}
         />
       ))}
     </h2>
   )
 }
 
-function AnimatedWord({ word, index, total, progress }) {
-  // Her kelime scroll ilerledikçe sırayla açılır
+function AnimatedWord({ word, index, total, progress, isMobile }) {
+  // Skip scroll animations on mobile
   const start = 0.15 + (index / total) * 0.35
   const end   = start + 0.15
 
-  const opacity = useTransform(progress, [start, end], [0.1, 1])
-  const y       = useTransform(progress, [start, end], [20, 0])
-  const color   = useTransform(
+  const opacity = isMobile ? 1 : useTransform(progress, [start, end], [0.1, 1])
+  const y       = isMobile ? 0 : useTransform(progress, [start, end], [20, 0])
+  const color   = isMobile ? undefined : useTransform(
     progress,
     [start, end],
     ['rgba(255,255,255,0.15)', 'rgba(245,245,245,1)']
