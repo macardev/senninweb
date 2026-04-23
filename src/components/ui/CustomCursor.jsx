@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useCallback } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 
 export default function CustomCursor({ routeKey }) {
   const cursorRef = useRef(null)
   const dotRef    = useRef(null)
+  const clickablesRef = useRef(new Set())
+  const listenerRef = useRef(null)
 
   const mouseX = useMotionValue(-100)
   const mouseY = useMotionValue(-100)
@@ -22,7 +24,7 @@ export default function CustomCursor({ routeKey }) {
       mouseY.set(e.clientY)
     }
 
-    window.addEventListener('mousemove', move)
+    window.addEventListener('mousemove', move, { passive: true })
 
     return () => {
       window.removeEventListener('mousemove', move)
@@ -30,25 +32,59 @@ export default function CustomCursor({ routeKey }) {
   }, [])
 
   useEffect(() => {
-    // Hover: tıklanabilir elementlerde cursor büyüsün
+    // Batch DOM reads to avoid layout thrashing
     const grow = () => {
-      cursorRef.current?.classList.add('scale-[2.5]', 'border-gold-500', 'opacity-60')
+      if (cursorRef.current) {
+        cursorRef.current.classList.add('scale-[2.5]', 'border-gold-500', 'opacity-60')
+      }
     }
     const shrink = () => {
-      cursorRef.current?.classList.remove('scale-[2.5]', 'border-gold-500', 'opacity-60')
+      if (cursorRef.current) {
+        cursorRef.current.classList.remove('scale-[2.5]', 'border-gold-500', 'opacity-60')
+      }
     }
 
-    const clickables = document.querySelectorAll('a, button, [role="button"], [data-cursor]')
-    clickables.forEach(el => {
-      el.addEventListener('mouseenter', grow)
-      el.addEventListener('mouseleave', shrink)
-    })
+    // Use event delegation instead of individual listeners
+    const handleMouseEnter = (e) => {
+      if (clickablesRef.current.has(e.target)) {
+        grow()
+      }
+    }
+    const handleMouseLeave = (e) => {
+      if (clickablesRef.current.has(e.target)) {
+        shrink()
+      }
+    }
+
+    // Update clickables list - batch DOM reads once
+    const updateClickables = () => {
+      // Clear previous listeners
+      if (listenerRef.current) {
+        document.removeEventListener('mouseenter', handleMouseEnter, true)
+        document.removeEventListener('mouseleave', handleMouseLeave, true)
+      }
+
+      // Batch DOM read: get all clickables at once
+      const clickables = document.querySelectorAll('a, button, [role="button"], [data-cursor]')
+      clickablesRef.current.clear()
+      
+      clickables.forEach(el => {
+        clickablesRef.current.add(el)
+      })
+
+      // Use event delegation on document
+      document.addEventListener('mouseenter', handleMouseEnter, true)
+      document.addEventListener('mouseleave', handleMouseLeave, true)
+      listenerRef.current = { handleMouseEnter, handleMouseLeave }
+    }
+
+    updateClickables()
 
     return () => {
-      clickables.forEach(el => {
-        el.removeEventListener('mouseenter', grow)
-        el.removeEventListener('mouseleave', shrink)
-      })
+      if (listenerRef.current) {
+        document.removeEventListener('mouseenter', handleMouseEnter, true)
+        document.removeEventListener('mouseleave', handleMouseLeave, true)
+      }
     }
   }, [routeKey])
 

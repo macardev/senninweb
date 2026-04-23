@@ -9,6 +9,7 @@ const navLinks = [
   { label: 'İletişim',    href: '/#contact' },
   { label: 'Dijital Rehber', href: '/blog' }
 ]
+
 export default function Navbar() {
   const [scrolled,  setScrolled]  = useState(false)
   const [menuOpen,  setMenuOpen]  = useState(false)
@@ -17,7 +18,17 @@ export default function Navbar() {
   const location = useLocation()
 
   useEffect(() => {
-    const unsub = scrollY.on('change', v => setScrolled(v > 50))
+    // Throttle scroll event to avoid excessive state updates
+    let lastUpdate = 0
+    const throttleDelay = 100
+    
+    const unsub = scrollY.on('change', v => {
+      const now = Date.now()
+      if (now - lastUpdate > throttleDelay) {
+        setScrolled(v > 50)
+        lastUpdate = now
+      }
+    })
     return unsub
   }, [scrollY])
 
@@ -42,7 +53,7 @@ export default function Navbar() {
     <motion.header
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0,    opacity: 1  }}
-      transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? 'bg-black/80 backdrop-blur-xl border-b border-white/5 py-4'

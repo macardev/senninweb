@@ -4,27 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="İşletmeniz için modern web tasarım ve SEO çözümleri sunuyoruz.">
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MNVQN1HEK9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-MNVQN1HEK9');
-    </script>
     <title>Web Tasarım & SEO Hizmeti | Sennin Web</title>
 
-    <!-- Favicon Assets -->
+    <!-- Favicon Assets - Optimized for Google Search Results -->
+    <!-- Traditional favicon.ico (root level for maximum compatibility) -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    
+    <!-- Primary favicon sources (PNG - Google preferred) -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon-48x48.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    
+    <!-- Shortcut icon (traditional fallback) -->
+    <link rel="shortcut icon" href="/favicon/favicon-48x48.png" type="image/png">
+    
+    <!-- Apple devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    
+    <!-- SVG favicon (modern browsers) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    
+    <!-- Web App Manifest (PWA support) -->
     <link rel="manifest" href="/favicon/site.webmanifest">
+    
+    <!-- Theme color for browser chrome -->
     <meta name="theme-color" content="#D97706">
 
+    <!-- Preconnect to font domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload critical fonts -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap"
+      as="style"
+    />
+    
+    <!-- Load fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
@@ -33,5 +50,29 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Defer Google Analytics to avoid render-blocking -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MNVQN1HEK9');
+      
+      // Load GA script asynchronously after page has rendered
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          loadGoogleAnalytics();
+        });
+      } else {
+        loadGoogleAnalytics();
+      }
+      
+      function loadGoogleAnalytics() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MNVQN1HEK9';
+        document.head.appendChild(script);
+      }
+    </script>
   </body>
 </html>

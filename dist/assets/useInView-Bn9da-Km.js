@@ -1,1 +1,0 @@
-import{r as t}from"./index-piw6eycp.js";function f(s={}){const n=t.useRef(null),[o,u]=t.useState(!1);return t.useEffect(()=>{const e=n.current;if(!e)return;const r=new IntersectionObserver(([c])=>{c.isIntersecting&&(u(!0),r.unobserve(e))},{threshold:.15,...s});return r.observe(e),()=>r.disconnect()},[]),{ref:n,inView:o}}export{f as u};

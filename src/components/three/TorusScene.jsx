@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react'
+import React, { useRef, useMemo, Suspense, lazy } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Environment, MeshTransmissionMaterial } from '@react-three/drei'
 import * as THREE from 'three'
@@ -7,7 +7,7 @@ function Torus() {
   const meshRef    = useRef()
   const groupRef   = useRef()
 
-  // Mouse takibi
+  // Mouse takibi - memoized to avoid recreating object
   const mouse = useMemo(() => ({ x: 0, y: 0 }), [])
 
   React.useEffect(() => {
@@ -15,9 +15,9 @@ function Torus() {
       mouse.x = (e.clientX / window.innerWidth  - 0.5) * 2
       mouse.y = (e.clientY / window.innerHeight - 0.5) * 2
     }
-    window.addEventListener('mousemove', handleMouse)
+    window.addEventListener('mousemove', handleMouse, { passive: true })
     return () => window.removeEventListener('mousemove', handleMouse)
-  }, [])
+  }, [mouse])
 
   useFrame((state) => {
     const t = state.clock.elapsedTime

@@ -9,7 +9,7 @@ const fadeUp = {
 
 const stagger = {
   hidden:  {},
-  visible: { transition: { staggerChildren: 0.15, delayChildren: 0.6 } },
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
 }
 
 export default function Hero() {
@@ -32,25 +32,25 @@ export default function Hero() {
 
       {/* İçerik */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
-        <div
+        <motion.div
           variants={stagger}
           initial="hidden"
           animate="visible"
           className="max-w-2xl"
         >
           {/* Üst etiket */}
-          <div variants={fadeUp} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}>
+          <motion.div variants={fadeUp} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}>
             <span className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-gold-500 mb-8">
               <span className="w-8 h-px bg-gold-500" />
               Premium Web Tasarım & SEO
             </span>
-          </div>
+          </motion.div>
 
           {/* Ana başlık */}
           <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.05 }}
               className="font-display font-bold leading-[1.05] tracking-tight mb-6"
             >
               <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
@@ -65,24 +65,24 @@ export default function Hero() {
           </motion.h1>
 
           {/* Alt açıklama */}
-          <p
+          <motion.p
             variants={fadeUp}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="text-base md:text-lg text-white/50 leading-relaxed mb-10 max-w-lg"
           >
             Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde
             rakiplerinizin önüne geçiriyoruz.
-          </p>
+          </motion.p>
 
           {/* CTA Butonlar */}
-          <div
+          <motion.div
             variants={fadeUp}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-wrap items-center gap-4"
           >
             {/* Primary CTA */}
             <a href="#contact">
-              <button
+              <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="relative px-8 py-4 rounded-full font-medium text-sm tracking-wide overflow-hidden group"
@@ -91,12 +91,12 @@ export default function Hero() {
                 <span className="relative z-10 text-black font-semibold">
                   Ücretsiz Teklif Al
                 </span>
-              </button>
+              </motion.button>
             </a>
 
             {/* Secondary CTA */}
             <a href="#references">
-              <button
+              <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="flex items-center gap-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 group"
@@ -107,14 +107,14 @@ export default function Hero() {
                   </svg>
                 </span>
                 Çalışmalarımızı Gör
-              </button>
+              </motion.button>
             </a>
-          </div>
+          </motion.div>
 
           {/* Alt metrik bar */}
-          <div
+          <motion.div
             variants={fadeUp}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="flex items-center gap-8 mt-16 pt-8 border-t border-white/8"
           >
             {[
@@ -131,8 +131,8 @@ export default function Hero() {
                 </p>
               </div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}
