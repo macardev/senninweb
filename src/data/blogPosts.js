@@ -289,6 +289,231 @@ export const blogPosts = [
         ctaText: "Bizimle iletişime geçin, web sitenizi birlikte bir müşteri mıknatısına dönüştürelim!"
       }
     ]
+  },
+  {
+    slug: "small-businesses-visible-on-google-2026",
+    title: "Small Businesses' Real Way to Get Visible on Google (2026 Guide) | SenninWeb",
+    description: "Not showing up on Google? Learn 2026 SEO strategies to turn your website from a digital ghost into a customer-generating machine. Step-by-step growth strategies.",
+    shortTitle: "Small Businesses' Real Way to Get Visible on Google (2026 Guide)",
+    desc: "Turn your website from invisible to profitable with proven 2026 SEO strategies for small businesses.",
+    tag: "SEO & Growth",
+    readingTime: "10 min",
+    date: "2026",
+    author: "Çağatay Macar",
+    authorTitle: "Senior Web Developer",
+    metaDescription: "Not showing up on Google? With 2026 SEO trends, turn your website from a digital ghost into a customer-generating machine. Step-by-step growth strategies here.",
+    schemaUrl: "https://senninweb.com/blog/small-businesses-visible-on-google-2026",
+    sections: [
+      {
+        type: "heroSection",
+        title: "Small Businesses' Real Way to Get Visible on Google",
+        subtitle: "If You're Not on Google, Your Sign Only Lights Up the Street"
+      },
+      {
+        type: "paragraph",
+        content: "Let's be clear: today, a business's size is not measured in square meters but in its \"pixel share\" on Google."
+      },
+      {
+        type: "paragraph",
+        content: "When a customer needs a service, they no longer ask friends. They take out their phone and search things like:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Best dental clinic near me",
+          "Emergency plumber",
+          "Corporate web design prices 2026"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "If you are not in the first 3–5 results, you basically do not exist for that potential customer. Being visible on Google is no longer a \"choice\" but a survival requirement. But don't worry—you can still outperform big-budget competitors with the right moves."
+      },
+      {
+        type: "heading2",
+        content: "1. What is SEO? (Simplified Explanation)"
+      },
+      {
+        type: "paragraph",
+        content: "SEO (Search Engine Optimization) is not just stuffing keywords into a website. In 2026, SEO means convincing Google that: \"A user has a problem, and I can solve it in the best and fastest way.\""
+      },
+      {
+        type: "paragraph",
+        content: "Google now focuses on 3 main pillars:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Correct Content (E-E-A-T)",
+          "Technical Excellence",
+          "Digital Authority (Trust & Reputation)"
+        ]
+      },
+      {
+        type: "heading2",
+        content: "2. The \"I Already Have a Website\" Mistake"
+      },
+      {
+        type: "paragraph",
+        content: "Around 80% of businesses make the same mistake: they build a website, pay for it, and never touch it again."
+      },
+      {
+        type: "heading3",
+        content: "Dead Website vs. Living Website"
+      },
+      {
+        type: "paragraph",
+        content: "A dead website sits there gathering dust while your competitors are actively updating their content, adding fresh blog posts, and keeping their Google business profiles updated."
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Dead Website: No updates, outdated information, broken links, no mobile optimization",
+          "Living Website: Fresh content, optimized for Google, updated regularly, mobile-friendly, fast loading"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Your website needs to be a living, breathing asset that works for you 24/7."
+      },
+      {
+        type: "heading2",
+        content: "3. The 5 Golden Rules of Ranking on Google"
+      },
+      {
+        type: "heading3",
+        content: "Rule #1: Target the Right Keywords (Search Intent)"
+      },
+      {
+        type: "paragraph",
+        content: "Don't just target any keyword. Find keywords where your ideal customers are actually searching. Use tools like Google Search Console and competitor analysis to understand what people in your market are looking for."
+      },
+      {
+        type: "heading3",
+        content: "Rule #2: Create Content That Answers Questions"
+      },
+      {
+        type: "paragraph",
+        content: "Your potential customers have problems. Write content that solves those problems. If someone searches \"how to fix a leaky faucet quickly,\" your plumbing company should have an article answering exactly that."
+      },
+      {
+        type: "heading3",
+        content: "Rule #3: Make Your Site Lightning Fast"
+      },
+      {
+        type: "paragraph",
+        content: "Google ranks faster sites higher. Mobile sites that take more than 3 seconds to load lose 75% of visitors. Optimize images, use caching, and minimize unnecessary code."
+      },
+      {
+        type: "heading3",
+        content: "Rule #4: Build Trust and Authority"
+      },
+      {
+        type: "paragraph",
+        content: "Include customer testimonials, certifications, trust badges, and backlinks from reputable sources. Google trusts established, authoritative websites."
+      },
+      {
+        type: "heading3",
+        content: "Rule #5: Optimize for Mobile First"
+      },
+      {
+        type: "paragraph",
+        content: "More than 60% of searches happen on mobile. Google crawls the mobile version of your site first. If your mobile site is poor, your rankings will suffer."
+      },
+      {
+        type: "heading2",
+        content: "4. Mistakes to Avoid in 2026"
+      },
+      {
+        type: "heading3",
+        content: "Mistake #1: Ignoring Google Business Profile"
+      },
+      {
+        type: "paragraph",
+        content: "For local businesses, a complete and updated Google Business Profile is essential. People search \"near me\" every single day. Make sure you show up."
+      },
+      {
+        type: "heading3",
+        content: "Mistake #2: Keyword Stuffing"
+      },
+      {
+        type: "paragraph",
+        content: "Google's algorithms have gotten smarter. Stuffing keywords doesn't work anymore. Write naturally for humans first, optimize for search engines second."
+      },
+      {
+        type: "heading3",
+        content: "Mistake #3: Neglecting Mobile Users"
+      },
+      {
+        type: "paragraph",
+        content: "If your website doesn't look good and function smoothly on phones, you're losing customers to competitors who have."
+      },
+      {
+        type: "heading3",
+        content: "Mistake #4: Weak or No CTAs (Call-to-Actions)"
+      },
+      {
+        type: "paragraph",
+        content: "Visitors won't know what to do next if you don't guide them. Add clear buttons and links telling them to \"Call Now,\" \"Get a Quote,\" or \"Learn More.\""
+      },
+      {
+        type: "heading3",
+        content: "Mistake #5: Publishing Once and Forgetting"
+      },
+      {
+        type: "paragraph",
+        content: "SEO is not a one-time fix. Businesses that update content regularly and publish new articles rank higher than those that don't."
+      },
+      {
+        type: "heading2",
+        content: "5. 3 Practical Steps You Can Apply Right Now"
+      },
+      {
+        type: "heading3",
+        content: "Step 1: Audit Your Current Website"
+      },
+      {
+        type: "paragraph",
+        content: "Use Google PageSpeed Insights to check your site's speed. Use Google Search Console to see which keywords bring traffic. Identify what's working and what isn't."
+      },
+      {
+        type: "heading3",
+        content: "Step 2: Create One High-Quality Page Targeting Your Best Opportunity"
+      },
+      {
+        type: "paragraph",
+        content: "Don't try to optimize everything at once. Pick one high-intent keyword (one where customers are ready to buy or hire) and create a detailed, helpful page around it."
+      },
+      {
+        type: "heading3",
+        content: "Step 3: Get Reviews and Build Your Google Business Profile"
+      },
+      {
+        type: "paragraph",
+        content: "Ask your happy customers to leave reviews on Google. Complete every field in your Google Business Profile. This is often the fastest way to start getting local visibility."
+      },
+      {
+        type: "heading2",
+        content: "Conclusion: Your Competition Is Already Moving"
+      },
+      {
+        type: "paragraph",
+        content: "In 2026, digital visibility is not a luxury—it's a necessity. The businesses winning right now are those that understood this years ago and have been consistently optimizing their online presence."
+      },
+      {
+        type: "paragraph",
+        content: "You don't need a massive budget to compete. You need a smart strategy, consistent execution, and the right tools. A small business with excellent SEO will always beat a large business with poor online visibility."
+      },
+      {
+        type: "paragraph",
+        content: "The question isn't whether you can afford to optimize your online presence. It's whether you can afford not to."
+      },
+      {
+        type: "finalCta",
+        question: "Ready to turn your invisible website into a customer-generating machine?",
+        ctaText: "Start with a free audit of your website. Check your speed, identify quick wins, and discover the low-hanging fruit that could bring you new customers this month. The best time to start was yesterday. The second-best time is today."
+      }
+    ]
   }
 ];
 
