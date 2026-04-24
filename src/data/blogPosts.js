@@ -292,226 +292,214 @@ export const blogPosts = [
   },
   {
     slug: "small-businesses-visible-on-google-2026",
-    title: "Small Businesses' Real Way to Get Visible on Google (2026 Guide) | SenninWeb",
-    description: "Not showing up on Google? Learn 2026 SEO strategies to turn your website from a digital ghost into a customer-generating machine. Step-by-step growth strategies.",
-    shortTitle: "Small Businesses' Real Way to Get Visible on Google (2026 Guide)",
-    desc: "Turn your website from invisible to profitable with proven 2026 SEO strategies for small businesses.",
-    tag: "SEO & Growth",
-    readingTime: "10 min",
+    title: "Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu (2026 Rehberi) | SenninWeb",
+    description: "Google'da görünmüyor musunuz? 2026 SEO trendleriyle web sitenizi dijital bir hayaletten, müşteri çeken bir makineye dönüştürün. Adım adım yükselme stratejileri burada.",
+    shortTitle: "Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu (2026 Rehberi)",
+    desc: "Web sitenizi dijital hayaletten müşteri çeken bir makineye dönüştürün. 2026 SEO stratejileri.",
+    tag: "SEO & Büyüme",
+    readingTime: "12 dk",
     date: "2026",
     author: "Çağatay Macar",
     authorTitle: "Senior Web Developer",
-    metaDescription: "Not showing up on Google? With 2026 SEO trends, turn your website from a digital ghost into a customer-generating machine. Step-by-step growth strategies here.",
+    metaDescription: "Google'da görünmüyor musunuz? 2026 SEO trendleriyle web sitenizi dijital bir hayaletten, müşteri çeken bir makineye dönüştürün. Adım adım yükselme stratejileri burada.",
     schemaUrl: "https://senninweb.com/blog/small-businesses-visible-on-google-2026",
     sections: [
       {
         type: "heroSection",
-        title: "Small Businesses' Real Way to Get Visible on Google",
-        subtitle: "If You're Not on Google, Your Sign Only Lights Up the Street"
+        title: "Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu",
+        subtitle: "Google'da Yoksan, Tabelan Sadece Sokağı Aydınlatır"
       },
       {
         type: "paragraph",
-        content: "Let's be clear: today, a business's size is not measured in square meters but in its \"pixel share\" on Google."
+        content: "Şunu net bir şekilde masaya koyalım: Bugün bir işletmenin büyüklüğü metrekareyle değil, Google'daki \"piksel payıyla\" ölçülüyor."
       },
       {
         type: "paragraph",
-        content: "When a customer needs a service, they no longer ask friends. They take out their phone and search things like:"
+        content: "Bir müşteri bir hizmete ihtiyaç duyduğunda artık eşe dosta sormuyor. Cebinden telefonu çıkarıyor ve o meşhur aramaları yapıyor:"
       },
       {
         type: "bulletList",
         items: [
-          "Best dental clinic near me",
-          "Emergency plumber",
-          "Corporate web design prices 2026"
+          "Yakınımdaki en iyi diş kliniği",
+          "Acil tesisatçı ustası",
+          "Kurumsal web tasarım fiyatları 2026"
         ]
       },
       {
         type: "paragraph",
-        content: "If you are not in the first 3–5 results, you basically do not exist for that potential customer. Being visible on Google is no longer a \"choice\" but a survival requirement. But don't worry—you can still outperform big-budget competitors with the right moves."
+        content: "Eğer o parmakların kaydırdığı ilk 3-5 sonuçta yoksanız, o potansiyel müşteri için teknik olarak hiç var olmamışsınız demektir. Google'da görünmek artık bir \"tercih\" değil, bir hayatta kalma meselesidir. Ama korkmayın; dev bütçeli rakiplerinizi sadece \"doğru hamlelerle\" saf dışı bırakmanız mümkün."
       },
       {
         type: "heading2",
-        content: "1. What is SEO? (Simplified Explanation)"
+        content: "1. SEO Nedir? (Yazılımcı Jargonundan Arındırılmış Tanım)"
       },
       {
         type: "paragraph",
-        content: "SEO (Search Engine Optimization) is not just stuffing keywords into a website. In 2026, SEO means convincing Google that: \"A user has a problem, and I can solve it in the best and fastest way.\""
+        content: "SEO (Arama Motoru Optimizasyonu), çoğu kişinin sandığı gibi sitenin sağına soluna anahtar kelime serpiştirmek değildir. 2026 dünyasında SEO, Google'a şu güveni vermektir: \"Kullanıcının bir derdi var ve bu derdi en kaliteli, en hızlı şekilde ben çözerim.\""
       },
       {
         type: "paragraph",
-        content: "Google now focuses on 3 main pillars:"
+        content: "Google artık 3 ana sütuna bakıyor:"
       },
       {
         type: "bulletList",
         items: [
-          "Correct Content (E-E-A-T)",
-          "Technical Excellence",
-          "Digital Authority (Trust & Reputation)"
+          "Doğru İçerik (E-E-A-T): Sadece bilgi mi veriyorsun yoksa o konuda bir \"deneyimin\" ve \"uzmanlığın\" mı var? Google artık \"yazmış olmak için yazılan\" yapay zeka metinlerini yemiyor.",
+          "Teknik Kusursuzluk: Siteniz bir kaplumbağa kadar yavaşsa, dünyanın en iyi makalesini yazsanız bile Google sizi arka sıralara mahkum eder.",
+          "Dijital İtibar (Otorite): Başka siteler ve gerçek insanlar sizden bahsediyor mu?"
         ]
       },
       {
         type: "heading2",
-        content: "2. The \"I Already Have a Website\" Mistake"
+        content: "2. \"Web Sitem Var, Yeter\" Yanılgısı: Dijital Dükkanın Kepenklerini İndirmeyin"
       },
       {
         type: "paragraph",
-        content: "Around 80% of businesses make the same mistake: they build a website, pay for it, and never touch it again."
+        content: "Türkiye'deki işletmelerin %80'i aynı hatayı yapıyor: Bir web sitesi yaptırıyor, parasını ödüyor ve bir daha o siteye bakmıyor."
+      },
+      {
+        type: "paragraph",
+        content: "Düşünün ki lüks bir dükkan açtınız ama vitrin 2 yıldır aynı, içeride kimse yok, raflar tozlanmış. Müşteri girer mi? Girmez. Google botları da girmez. Google şunu ister: \"Bana yaşadığını kanıtla!\""
       },
       {
         type: "heading3",
-        content: "Dead Website vs. Living Website"
-      },
-      {
-        type: "paragraph",
-        content: "A dead website sits there gathering dust while your competitors are actively updating their content, adding fresh blog posts, and keeping their Google business profiles updated."
+        content: "Ölü Site vs. Canlı Site"
       },
       {
         type: "bulletList",
         items: [
-          "Dead Website: No updates, outdated information, broken links, no mobile optimization",
-          "Living Website: Fresh content, optimized for Google, updated regularly, mobile-friendly, fast loading"
+          "Ölü Site: 2 yıldır güncellenmemiş, blog yazısı olmayan, iletişim bilgileri eski site.",
+          "Canlı Site: Haftalık içerik üreten, kullanıcı yorumlarına cevap veren, teknik olarak taze tutulan site."
         ]
       },
       {
         type: "paragraph",
-        content: "Your website needs to be a living, breathing asset that works for you 24/7."
+        content: "Sonuç: Google her zaman \"yaşayan\" işletmeyi ödüllendirir."
       },
       {
         type: "heading2",
-        content: "3. The 5 Golden Rules of Ranking on Google"
+        content: "3. Google'da Yükselmenin 5 Altın Kuralı"
       },
       {
         type: "heading3",
-        content: "Rule #1: Target the Right Keywords (Search Intent)"
+        content: "Kural 1: Müşterinin Aklını Oku (Kelime Stratejisi)"
       },
       {
         type: "paragraph",
-        content: "Don't just target any keyword. Find keywords where your ideal customers are actually searching. Use tools like Google Search Console and competitor analysis to understand what people in your market are looking for."
+        content: "Siz kendinize \"Profesyonel Dijital Çözüm Ortağı\" demek isteyebilirsiniz, kulağa havalı geliyor. Ama müşteri Google'a şunu yazar: \"Ucuz web sitesi yapan yerler.\" Kazanan, kendi egosunu değil, müşterinin klavyesini rehber edinen işletmedir."
+      },
+      {
+        type: "paragraph",
+        content: "2026'da \"niş\" kelimelere odaklanın. \"Avukat\" kelimesinde yükselmek imkansız olabilir ama \"Bursa boşanma avukatı ücretleri\" kelimesinde zirveye oynayabilirsiniz."
       },
       {
         type: "heading3",
-        content: "Rule #2: Create Content That Answers Questions"
+        content: "Kural 2: İlk 5 Saniyede \"Evindesin\" Hissini Ver"
       },
       {
         type: "paragraph",
-        content: "Your potential customers have problems. Write content that solves those problems. If someone searches \"how to fix a leaky faucet quickly,\" your plumbing company should have an article answering exactly that."
+        content: "Kullanıcı sitenize girdiğinde bir kronometre çalışır. Tasarımınız amatörse, yazılar iç içe geçmişse veya o meşhur \"SSL Sertifikası Yok\" (Güvenli Değil) uyarısı çıkıyorsa, müşteri kaçar. Müşteri kaçarsa \"Hemen Çıkma Oranı\" (Bounce Rate) fırlar ve Google sizi cezalandırır."
       },
       {
         type: "heading3",
-        content: "Rule #3: Make Your Site Lightning Fast"
+        content: "Kural 3: Hız Sizi Vezir de Eder, Rezil de"
       },
       {
         type: "paragraph",
-        content: "Google ranks faster sites higher. Mobile sites that take more than 3 seconds to load lose 75% of visitors. Optimize images, use caching, and minimize unnecessary code."
+        content: "2026 yılında kimsenin bir sitenin açılmasını 5 saniye bekleyecek sabrı yok. Özellikle mobil hız, SEO'nun %50'sidir. Siteniz ışık hızında açılmıyorsa, müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile."
       },
       {
         type: "heading3",
-        content: "Rule #4: Build Trust and Authority"
+        content: "Kural 4: Yerel SEO - Mahallenizin Kahramanı Olun"
       },
       {
         type: "paragraph",
-        content: "Include customer testimonials, certifications, trust badges, and backlinks from reputable sources. Google trusts established, authoritative websites."
+        content: "Küçük bir işletmeyseniz, tüm Türkiye ile rekabet etmenize gerek yok. Google Haritalar (Google Business) sizin en büyük silahınız. Konumunuz net mi? Müşterileriniz yorum yapmış mı? (Ve siz onlara nazikçe cevap vermiş misiniz?) Dükkanın içinden güncel fotoğraflar var mı? Eğer haritada varsanız, o mahalledeki müşterinin cebindesiniz demektir."
       },
       {
         type: "heading3",
-        content: "Rule #5: Optimize for Mobile First"
+        content: "Kural 5: Güven Sinyalleri (Sosyal Kanıt)"
       },
       {
         type: "paragraph",
-        content: "More than 60% of searches happen on mobile. Google crawls the mobile version of your site first. If your mobile site is poor, your rankings will suffer."
+        content: "Google, \"insanların ne dediğine\" bakar. Sitenizde gerçek müşteri referansları, varsa başarı belgeleri ve mutlaka çalışan bir iletişim formu olmalı. \"Bize Ulaşın\" sayfası olmayan bir işletmeye Google da güvenmez, Ayşe Teyze de."
       },
       {
         type: "heading2",
-        content: "4. Mistakes to Avoid in 2026"
+        content: "4. 2026'da Kaçınmanız Gereken \"Tuzaklar\""
       },
       {
         type: "heading3",
-        content: "Mistake #1: Ignoring Google Business Profile"
+        content: "Tuzak 1: Kopya İçerik"
       },
       {
         type: "paragraph",
-        content: "For local businesses, a complete and updated Google Business Profile is essential. People search \"near me\" every single day. Make sure you show up."
+        content: "Başka siteden yazı kopyalamak, Google'a \"Benim özgün bir fikrim yok\" demektir. Direkt elenirsiniz."
       },
       {
         type: "heading3",
-        content: "Mistake #2: Keyword Stuffing"
+        content: "Tuzak 2: Anahtar Kelime Çöplüğü"
       },
       {
         type: "paragraph",
-        content: "Google's algorithms have gotten smarter. Stuffing keywords doesn't work anymore. Write naturally for humans first, optimize for search engines second."
+        content: "Yazının her yerine \"en iyi kebapçı, İstanbul kebapçı, kebapçı nerede\" gibi kelimeler yığmak 2010'da kaldı. Google artık bunu \"spam\" olarak görüyor."
       },
       {
         type: "heading3",
-        content: "Mistake #3: Neglecting Mobile Users"
+        content: "Tuzak 3: Sabırsızlık"
       },
       {
         type: "paragraph",
-        content: "If your website doesn't look good and function smoothly on phones, you're losing customers to competitors who have."
-      },
-      {
-        type: "heading3",
-        content: "Mistake #4: Weak or No CTAs (Call-to-Actions)"
-      },
-      {
-        type: "paragraph",
-        content: "Visitors won't know what to do next if you don't guide them. Add clear buttons and links telling them to \"Call Now,\" \"Get a Quote,\" or \"Learn More.\""
-      },
-      {
-        type: "heading3",
-        content: "Mistake #5: Publishing Once and Forgetting"
-      },
-      {
-        type: "paragraph",
-        content: "SEO is not a one-time fix. Businesses that update content regularly and publish new articles rank higher than those that don't."
+        content: "SEO bir sprint değil, maratondur. \"Bugün yaptım, yarın neden birinci değilim?\" derseniz yanlış yoldasınız demektir."
       },
       {
         type: "heading2",
-        content: "5. 3 Practical Steps You Can Apply Right Now"
+        content: "5. Hemen Şimdi Uygulayabileceğiniz 3 Pratik Adım"
       },
       {
         type: "heading3",
-        content: "Step 1: Audit Your Current Website"
+        content: "Adım 1: Gizli Sekmede Kendinizi Arayın"
       },
       {
         type: "paragraph",
-        content: "Use Google PageSpeed Insights to check your site's speed. Use Google Search Console to see which keywords bring traffic. Identify what's working and what isn't."
+        content: "Google'ı açın ve hizmetinizi sanki bir müşterisiniz gibi aratın. İlk 3 sayfada yoksanız, alarm zilleri çalıyor demektir."
       },
       {
         type: "heading3",
-        content: "Step 2: Create One High-Quality Page Targeting Your Best Opportunity"
+        content: "Adım 2: Google İşletme Profilini Şahlandırın"
       },
       {
         type: "paragraph",
-        content: "Don't try to optimize everything at once. Pick one high-intent keyword (one where customers are ready to buy or hire) and create a detailed, helpful page around it."
+        content: "Hemen şimdi dükkandan/ofisten 3 taze fotoğraf çekip yükleyin. Bir müşterinizden samimi bir yorum isteyin."
       },
       {
         type: "heading3",
-        content: "Step 3: Get Reviews and Build Your Google Business Profile"
+        content: "Adım 3: Sektörel Bir Soruyu Cevaplayın"
       },
       {
         type: "paragraph",
-        content: "Ask your happy customers to leave reviews on Google. Complete every field in your Google Business Profile. This is often the fastest way to start getting local visibility."
+        content: "Sitenize girin ve en çok sorulan soruyu (Örn: \"X hizmeti alırken nelere dikkat edilmeli?\") 300 kelimelik bir yazı olarak paylaşın."
       },
       {
         type: "heading2",
-        content: "Conclusion: Your Competition Is Already Moving"
+        content: "Sonuç: Gelecek Dijitalde, Siz Neredesiniz?"
       },
       {
         type: "paragraph",
-        content: "In 2026, digital visibility is not a luxury—it's a necessity. The businesses winning right now are those that understood this years ago and have been consistently optimizing their online presence."
+        content: "Google'da kazananlar sadece \"şanslı\" olanlar değil; dijital dünyanın kurallarını kabul edip oyun kuranlardır."
       },
       {
         type: "paragraph",
-        content: "You don't need a massive budget to compete. You need a smart strategy, consistent execution, and the right tools. A small business with excellent SEO will always beat a large business with poor online visibility."
+        content: "Bugün küçük görünen o web sitesi, doğru stratejiyle yarın size gece gündüz çalışan bir satış temsilcisine dönüşebilir."
       },
       {
         type: "paragraph",
-        content: "The question isn't whether you can afford to optimize your online presence. It's whether you can afford not to."
+        content: "Unutmayın: En iyi saklanacak yer, Google'ın ikinci sayfasıdır. Çünkü oraya kimse bakmaz."
       },
       {
         type: "finalCta",
-        question: "Ready to turn your invisible website into a customer-generating machine?",
-        ctaText: "Start with a free audit of your website. Check your speed, identify quick wins, and discover the low-hanging fruit that could bring you new customers this month. The best time to start was yesterday. The second-best time is today."
+        question: "Sizi birinci sayfaya taşıyalım mı?",
+        ctaText: "Bu içeriği beğendiyseniz veya işletmeniz için profesyonel bir dokunuş arıyorsanız, bizimle iletişime geçmekten çekinmeyin!"
       }
     ]
   }
