@@ -124,7 +124,7 @@ export default function Hero() {
                     <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
-                Çalışmalarımızı Gör
+                Projelerimize Göz At
               </motion.button>
             </a>
           </motion.div>
