@@ -28,6 +28,13 @@
     cursor: none; /* enabled only when CustomCursor is active */
   }
 
+  /* Text overflow prevention */
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
   /* Scrollbar */
   ::-webkit-scrollbar        { width: 3px; }
   ::-webkit-scrollbar-track  { background: #0A0A0A; }
@@ -76,5 +83,16 @@
   /* Section padding standartı */
   .section-pad {
     @apply py-32 px-6 md:px-12 lg:px-24;
+  }
+
+  /* Responsive text overflow utilities */
+  .overflow-wrap-break-word {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Ensure max-width on responsive elements */
+  .responsive-container {
+    @apply max-w-full overflow-hidden;
   }
 }

@@ -72,15 +72,15 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: isMobile ? 0.3 : 0.5, delay: isMobile ? 0 : 0.05 }}
               style={{ willChange: 'transform, opacity' }}
-              className="font-display font-bold leading-[1.05] tracking-tight mb-6"
+              className="font-display font-bold leading-[1.05] tracking-tight mb-6 max-w-full overflow-hidden break-words"
             >
-              <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
+              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white break-words overflow-wrap-break-word">
                 İşletmeniz için
               </span>
-              <span className="block text-5xl md:text-6xl lg:text-7xl text-white">
+              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white break-words overflow-wrap-break-word">
                 profesyonel 
               </span>
-              <span className="block text-5xl md:text-6xl lg:text-7xl text-gold-gradient">
+              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gold-gradient break-words overflow-wrap-break-word">
                 web tasarım ve Seo hizmeti
               </span>
           </motion.h1>
@@ -89,7 +89,7 @@ export default function Hero() {
           <motion.p
             variants={isMobile ? fadeUpMobile : fadeUp}
             transition={{ duration: isMobile ? 0.4 : 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-base md:text-lg text-white/50 leading-relaxed mb-10 max-w-lg"
+            className="text-base md:text-lg text-white/50 leading-relaxed mb-10 max-w-lg break-words overflow-wrap-break-word max-w-full"
           >
             Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde
             rakiplerinizin önüne geçiriyoruz.
@@ -99,35 +99,35 @@ export default function Hero() {
           <motion.div
             variants={isMobile ? fadeUpMobile : fadeUp}
             transition={{ duration: isMobile ? 0.4 : 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-wrap items-center gap-4"
+            className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-4 max-w-full overflow-hidden"
           >
             {/* Primary CTA */}
-            <a href="#contact">
+            <a href="#contact" className="w-full sm:w-auto">
               <motion.button
                 whileHover={isMobile ? {} : { scale: 1.03 }}
                 whileTap={isMobile ? {} : { scale: 0.97 }}
-                className="relative px-8 py-4 rounded-full font-medium text-sm tracking-wide overflow-hidden group"
+                className="w-full sm:w-auto relative px-6 sm:px-8 py-4 rounded-full font-medium text-sm tracking-wide overflow-hidden group"
               >
                 <span className="absolute inset-0 rounded-full bg-gold-500 group-hover:bg-gold-400 transition-colors duration-300" />
-                <span className="relative z-10 text-black font-semibold">
+                <span className="relative z-10 text-black font-semibold whitespace-nowrap">
                   Ücretsiz Teklif Al
                 </span>
               </motion.button>
             </a>
 
             {/* Secondary CTA */}
-            <a href="#references">
+            <a href="#references" className="w-full sm:w-auto">
               <motion.button
                 whileHover={isMobile ? {} : { scale: 1.03 }}
                 whileTap={isMobile ? {} : { scale: 0.97 }}
-                className="flex items-center gap-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 group"
+                className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 group"
               >
-                <span className="w-10 h-10 rounded-full border border-white/15 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+                <span className="w-10 h-10 rounded-full border border-white/15 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300 flex-shrink-0">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
-                Projelerimize Göz At
+                <span className="whitespace-nowrap">Projelerimize Göz At</span>
               </motion.button>
             </a>
           </motion.div>
@@ -136,18 +136,18 @@ export default function Hero() {
           <motion.div
             variants={isMobile ? fadeUpMobile : fadeUp}
             transition={{ duration: isMobile ? 0.4 : 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="flex items-center gap-8 mt-16 pt-8 border-t border-white/8"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-16 pt-8 border-t border-white/8 max-w-full overflow-hidden"
           >
             {[
               { value: '48s',  label: 'Ortalama yanıt süresi' },
               { value: 'SEO',  label: 'Dahil her pakette'     },
               { value: '100%', label: 'Müşteri memnuniyeti'   },
             ].map((item) => (
-              <div key={item.label}>
-                <p className="font-display font-bold text-xl text-white mb-0.5">
+              <div key={item.label} className="min-w-0">
+                <p className="font-display font-bold text-lg sm:text-xl text-white mb-0.5 break-words">
                   {item.value}
                 </p>
-                <p className="text-xs text-white/35 tracking-wide">
+                <p className="text-xs text-white/35 tracking-wide break-words">
                   {item.label}
                 </p>
               </div>

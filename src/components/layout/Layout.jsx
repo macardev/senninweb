@@ -65,8 +65,8 @@ export default function Layout() {
 
       <Navbar />
 
-      <div className="min-h-screen flex flex-col bg-black text-white">
-        <main className="flex-1 pt-28">
+      <div className="min-h-screen flex flex-col bg-black text-white overflow-x-hidden max-w-full">
+        <main className="flex-1 pt-28 w-full">
           <Outlet />
         </main>
         <Footer />
