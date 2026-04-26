@@ -14,7 +14,7 @@
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: auto; /* Lenis handle eder */
+    scroll-behavior: smooth;
   }
 
   body {

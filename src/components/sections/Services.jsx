@@ -84,13 +84,15 @@ function ServiceCard({ service, index }) {
       <div className="relative p-8 md:p-10 rounded-2xl border border-white/6
                       bg-white/[0.02] hover:bg-white/[0.04]
                       hover:border-gold-500/20
-                      transition-all duration-500 overflow-hidden">
+                      transition-all duration-500 overflow-hidden"
+                      style={{ willChange: 'background-color, border-color' }}>
 
         {/* Hover glow */}
         <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100
                         transition-opacity duration-700 pointer-events-none"
           style={{
-            background: 'radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(217,119,6,0.06), transparent 40%)'
+            background: 'radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(217,119,6,0.06), transparent 40%)',
+            willChange: 'opacity'
           }}
         />
 

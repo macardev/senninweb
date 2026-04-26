@@ -8,20 +8,28 @@ export default function useInView(options = {}) {
     const el = ref.current
     if (!el) return
 
+    // Use a more efficient threshold for mobile and desktop
+    const threshold = options.threshold ?? 0.15
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true)
-          // Bir kez tetikle, sürekli tekrar etmesin
+          // Once triggered, unobserve to avoid repeated callbacks
           observer.unobserve(el)
         }
       },
-      { threshold: 0.15, ...options }
+      { 
+        threshold,
+        // Only observe elements currently in viewport + some buffer
+        rootMargin: '50px',
+        ...options 
+      }
     )
 
     observer.observe(el)
     return () => observer.disconnect()
-  }, [])
+  }, [options.threshold])
 
   return { ref, inView }
 }

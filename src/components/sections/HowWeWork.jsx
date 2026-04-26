@@ -75,6 +75,7 @@ function StepCard({ step, index, total }) {
         delay: index * 0.12,
         ease: [0.16, 1, 0.3, 1],
       }}
+      style={{ willChange: inView ? 'transform, opacity' : 'auto' }}
       className="relative flex gap-6 md:gap-10"
     >
       {/* Sol — numara + dikey çizgi */}

@@ -39,7 +39,10 @@ function UtsuriCard() {
           <img
             src="/utsuri.webp"
             alt="Utsuri AI"
+            width="600"
+            height="300"
             className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
           />
         </div>
 

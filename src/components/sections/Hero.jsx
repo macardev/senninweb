@@ -1,37 +1,39 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { useIsMobile } from '@/hooks/useIsMobile'
-import TorusScene from '@/components/three/TorusScene'
+import { usePerformanceMode } from '@/hooks/usePerformanceMode'
 
 const fadeUp = {
-  hidden:  { opacity: 0, y: 40,  filter: 'blur(8px)' },
-  visible: { opacity: 1, y: 0,   filter: 'blur(0px)' },
+  hidden:  { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
 }
 
 // Mobile optimized: no blur, simpler animation
 const fadeUpMobile = {
-  hidden:  { opacity: 0, y: 20 },
+  hidden:  { opacity: 0, y: 15 },
   visible: { opacity: 1, y: 0 },
 }
 
 const stagger = {
   hidden:  {},
-  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.05 } },
 }
 
-// Mobile optimized: no delay, faster stagger
+// Mobile optimized: much faster stagger
 const staggerMobile = {
   hidden:  {},
-  visible: { transition: { staggerChildren: 0.05, delayChildren: 0 } },
+  visible: { transition: { staggerChildren: 0.03, delayChildren: 0 } },
 }
 
 export default function Hero() {
   const isMobile = useIsMobile()
+  const { animationDuration } = usePerformanceMode()
 
   return (
     <section
       id="hero"
       className="relative w-full h-screen min-h-[700px] flex items-center overflow-hidden bg-black"
+      style={{ willChange: 'contents' }}
     >
       {/* 3D Torus — sağ taraf */}
       {/* <div className="absolute right-0 top-0 w-full md:w-[55%] h-full opacity-90">
@@ -69,6 +71,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: isMobile ? 0.3 : 0.5, delay: isMobile ? 0 : 0.05 }}
+              style={{ willChange: 'transform, opacity' }}
               className="font-display font-bold leading-[1.05] tracking-tight mb-6"
             >
               <span className="block text-5xl md:text-6xl lg:text-7xl text-white">

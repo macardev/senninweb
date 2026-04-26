@@ -24,12 +24,13 @@ export default function CustomCursor({ routeKey }) {
       mouseY.set(e.clientY)
     }
 
-    window.addEventListener('mousemove', move, { passive: true })
+    // Use passive event listener and throttle if needed
+    window.addEventListener('mousemove', move, { passive: true, capture: false })
 
     return () => {
-      window.removeEventListener('mousemove', move)
+      window.removeEventListener('mousemove', move, { capture: false })
     }
-  }, [])
+  }, [mouseX, mouseY])
 
   useEffect(() => {
     // Batch DOM reads to avoid layout thrashing

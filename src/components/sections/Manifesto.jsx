@@ -93,7 +93,7 @@ function WordReveal({ progress, isMobile }) {
 }
 
 function AnimatedWord({ word, index, total, progress, isMobile }) {
-  // Skip scroll animations on mobile
+  // Skip scroll animations on mobile for better performance
   const start = 0.15 + (index / total) * 0.35
   const end   = start + 0.15
 
@@ -116,6 +116,7 @@ function AnimatedWord({ word, index, total, progress, isMobile }) {
         opacity,
         y,
         color: isAccent || isGold ? undefined : color,
+        willChange: isMobile ? 'auto' : 'opacity, transform, color'
       }}
       className={`inline-block ${
         isAccent ? 'text-gold-500' :

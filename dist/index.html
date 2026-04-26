@@ -6,39 +6,67 @@
     <meta name="description" content="İşletmeniz için modern web tasarım ve SEO çözümleri sunuyoruz.">
     <title>Web Tasarım & SEO Hizmeti | Sennin Web</title>
 
-    <!-- Favicon Assets -->
+    <!-- Favicon Assets - Optimized for Google Search Results -->
+    <!-- Traditional favicon.ico (root level for maximum compatibility) -->
+    <link rel="icon" href="/favicon.ico">
+    
+    <!-- Primary favicon sources (PNG - Google preferred) -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon-48x48.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    
+    <!-- Shortcut icon (traditional fallback) -->
+    <link rel="shortcut icon" href="/favicon/favicon-48x48.png" type="image/png">
+    
+    <!-- Apple devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    
+    <!-- SVG favicon (modern browsers) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    
+    <!-- Web App Manifest (PWA support) -->
     <link rel="manifest" href="/favicon/site.webmanifest">
+    
+    <!-- Theme color for browser chrome -->
     <meta name="theme-color" content="#D97706">
 
     <!-- Preconnect to font domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
-    <!-- Preload critical fonts -->
+    <!-- Preload critical fonts with font-display: swap for faster FCP -->
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap"
       as="style"
     />
     
-    <!-- Load fonts -->
+    <!-- Load fonts with swap for non-blocking rendering -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/assets/index-BeeVHGxA.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-iY16a1VJ.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-other-D2ONhOcY.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-motion-DZDl2CTf.js">
-    <link rel="modulepreload" crossorigin href="/assets/layout-ChAJxmzu.js">
-    <link rel="modulepreload" crossorigin href="/assets/page-Home-Dz_3XQtw.js">
-    <link rel="modulepreload" crossorigin href="/assets/page-Blog-CIwg6Njr.js">
-    <link rel="modulepreload" crossorigin href="/assets/page-BlogPost-CoXuRZB8.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-FjK6ftOU.css">
+    
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+      /* Critical Hero styles for fastest FCP */
+      body { background-color: #0A0A0A; color: #F5F5F5; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; }
+      html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      .hero-critical { display: flex; align-items: center; min-height: 700px; position: relative; overflow: hidden; background-color: #000; }
+      .text-white { color: #F5F5F5; }
+      .text-gold-500 { color: #D97706; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BKBw7Uhi.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-BWZq-Uvr.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-other-B1oI4NoE.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-motion-9J6HXoXH.js">
+    <link rel="modulepreload" crossorigin href="/assets/layout-B1Llq1PU.js">
+    <link rel="modulepreload" crossorigin href="/assets/section-Hero-Bh_FsEAo.js">
+    <link rel="modulepreload" crossorigin href="/assets/section-BlogCTA-CziEVmR7.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-Home-BZPFLk-e.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-Blog-lAz1anjT.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-BlogPost-2GGHCCty.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DsIDzNdP.css">
   </head>
   <body>
     <div id="root"></div>

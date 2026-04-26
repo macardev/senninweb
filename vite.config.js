@@ -9,12 +9,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  // Optimize build performance
   build: {
-    // Optimize chunk sizes and code splitting
+    // Use default esbuild minifier (faster and no additional deps)
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          // Vendor chunks
+          // Vendor chunks - split heavy libraries
           if (id.includes('node_modules')) {
             if (id.includes('react') || id.includes('@react')) {
               return 'vendor-react'
@@ -24,6 +25,9 @@ export default defineConfig({
             }
             if (id.includes('framer-motion')) {
               return 'vendor-motion'
+            }
+            if (id.includes('emailjs')) {
+              return 'vendor-email'
             }
             return 'vendor-other'
           }
@@ -35,6 +39,11 @@ export default defineConfig({
           // Separate layout chunk
           if (id.includes('components/layout/')) {
             return 'layout'
+          }
+          // Separate sections chunks
+          if (id.includes('components/sections/')) {
+            const match = id.match(/sections\/([^/]+)\.jsx/)
+            if (match) return `section-${match[1]}`
           }
         },
       },
