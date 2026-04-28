@@ -24,7 +24,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Birçok işletme web sitesi yaptırıyor ancak sonuç alamıyor. Bunun en büyük sebebi sitenin sadece \"var olması\" ama aktif olarak çalışmamasıdır. Yani SEO yapılmamış, yavaş açılan veya kullanıcıyı yönlendirmeyen bir site hiçbir işe yaramaz."
+        content: "Birçok işletme web sitesi yaptırıyor ancak sonuç alamıyor. Bunun en büyük sebebi sitenin sadece \"var olması\" ama aktif olarak çalışmamasıdır. Yani SEO yapılmamış, yavaş açılan veya kullanıcıyı yönlendirmeyen bir site hiçbir işe yaramaz. Doğru bir <a href=\"https://www.google.com/analytics/\" target=\"_blank\" rel=\"noopener noreferrer\">analiz ve izleme</a> yapılmadan da başarı ölçmek mümkün değildir.",
+        isHtml: true
       },
       {
         type: "section",
@@ -37,7 +38,8 @@ export const blogPosts = [
           },
           {
             heading: "2. Hız ve Performans",
-            content: "Ziyaretçiler yavaş açılan siteleri anında terk eder. Hızlı bir site hem kullanıcı deneyimini artırır hem de Google sıralamasında yükselmenizi sağlar."
+            content: "Ziyaretçiler yavaş açılan siteleri anında terk eder. <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Web sitesinin hızını ölçmek</a> ve iyileştirmek hem kullanıcı deneyimini artırır hem de Google sıralamasında yükselmenizi sağlar.",
+            isHtml: true
           },
           {
             heading: "3. Doğru Yönlendirme (CTA)",
@@ -118,19 +120,16 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Türkiye'deki KOBİ'lerin %25'i hala bir web sitesine ihtiyaç duymadığını düşünürken, %27'si ise operasyonel yoğunluktan dolayı dijitale vakit ayıramıyor."
-      },
-      {
-        type: "paragraph",
-        content: "Ancak asıl sorun genellikle şu 3 noktada düğümleniyor:"
+        content: "Türkiye'deki KOBİ'lerin %25'i hala bir web sitesine ihtiyaç duymadığını düşünürken, %27'si ise operasyonel yoğunluktan dolayı dijitale vakit ayıramıyor. Ancak asıl sorun şu 3 noktada düğümleniyor:"
       },
       {
         type: "bulletList",
         items: [
-          "Sadece Tasarıma Odaklanmak: Siteniz çok şık olabilir ama eğer teknik altyapısı zayıfsa Google onu bulamaz.",
-          "Yavaşlık Ölümcüldür: Google verilerine göre, 3 saniyeden geç açılan mobil sitelerdeki kullanıcıların %75'i sayfayı anında terk ediyor.",
+          "Sadece Tasarıma Odaklanmak: Siteniz çok şık olabilir ama eğer teknik altyapısı zayıfsa <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google onu bulamaz</a>.",
+          "Yavaşlık Ölümcüldür: <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Google verilerine göre, 3 saniyeden geç açılan mobil sitelerdeki kullanıcıların %75'i</a> sayfayı anında terk ediyor.",
           "Müşteriyi Tanımamak: Siteye giren kişi \"biz kimiz\" yazısından önce \"benim sorunumu nasıl çözersiniz\" sorusuna cevap arar. Eğer bu cevabı 5 saniye içinde veremiyorsanız, kullanıcıyı rakibinize kaptırırsınız."
-        ]
+        ],
+        isHtml: true
       },
       {
         type: "heading2",
@@ -162,11 +161,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Google sonuçlarının ilk sayfası, tüm tıklamaların %90'ını topluyor. İlk sayfada yoksanız, dijital okyanusta görünmezsiniz."
-      },
-      {
-        type: "paragraph",
-        content: "\"SEO hizmeti\" sadece teknik bir ayar değil, dükkanınızı arka sokaktan ana caddeye taşıma işlemidir."
+        content: "Google sonuçlarının ilk sayfası, tüm tıklamaların %90'ını topluyor. İlk sayfada yoksanız, dijital okyanusta görünmezsiniz. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">\"SEO hizmeti\" sadece teknik bir ayar değil</a>, dükkanınızı arka sokaktan ana caddeye taşıma işlemidir."
       },
       {
         type: "paragraph",
@@ -183,9 +178,10 @@ export const blogPosts = [
       {
         type: "bulletList",
         items: [
-          "SSL Sertifikası: Sitenizde \"Güvenli Değil\" uyarısı çıkıyorsa, müşterilerin %90'ı hemen kaçar.",
+          "<a href=\"https://www.ssl.com/article/how-ssl-certificates-work/\" target=\"_blank\" rel=\"noopener noreferrer\">SSL Sertifikası: Sitenizde \"Güvenli Değil\" uyarısı</a> çıkıyorsa, müşterilerin %90'ı hemen kaçar.",
           "Sosyal Kanıt: Mutlu müşteri yorumları, tamamlanmış proje fotoğrafları ve referanslar güveni perçinler."
-        ]
+        ],
+        isHtml: true
       },
       {
         type: "heading2",
@@ -193,23 +189,20 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Küçük işletmeler için en büyük fırsat, kendi mahallelerindeki ve şehirlerindeki müşterilere ulaşmaktır."
+        content: "Küçük işletmeler için en büyük fırsat, kendi mahallelerindeki ve şehirlerindeki müşterilere ulaşmaktır. \"Yerel SEO\" sayesinde, birisi \"yakınımdaki kurumsal web sitesi yapan yerler\" diye aradığında en üstte siz çıkabilirsiniz."
       },
       {
         type: "paragraph",
-        content: "\"Yerel SEO\" sayesinde, birisi \"yakınımdaki kurumsal web sitesi yapan yerler\" diye aradığında en üstte siz çıkabilirsiniz."
-      },
-      {
-        type: "paragraph",
-        content: "Google Haritalar (Google İşletme Profili) kaydınızın web sitenizle uyumu hayati önem taşır:"
+        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar (Google İşletme Profili)</a> kaydınızın web sitenizle uyumu hayati önem taşır:"
       },
       {
         type: "bulletList",
         items: [
-          "NAP Tutarlılığı: İşletme adı, adres ve telefon her yerde aynı olmalı",
+          "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">NAP Tutarlılığı: İşletme adı, adres ve telefon</a> her yerde aynı olmalı",
           "Yorum Yönetimi: Her yoruma cevap ver",
           "Fotoğraflar: Kaliteli görseller tıklamayı artırır"
-        ]
+        ],
+        isHtml: true
       },
       {
         type: "heading2",
@@ -335,7 +328,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "SEO (Arama Motoru Optimizasyonu), çoğu kişinin sandığı gibi sitenin sağına soluna anahtar kelime serpiştirmek değildir. 2026 dünyasında SEO, Google'a şu güveni vermektir: \"Kullanıcının bir derdi var ve bu derdi en kaliteli, en hızlı şekilde ben çözerim.\""
+        content: "SEO (Arama Motoru Optimizasyonu), çoğu kişinin sandığı gibi sitenin sağına soluna anahtar kelime serpiştirmek değildir. 2026 dünyasında SEO, <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google'a şu güveni vermektir: \"Kullanıcının bir derdi var ve bu derdi en kaliteli, en hızlı şekilde ben çözerim.\"</a>"
       },
       {
         type: "paragraph",
@@ -345,9 +338,10 @@ export const blogPosts = [
         type: "bulletList",
         items: [
           "Doğru İçerik (E-E-A-T): Sadece bilgi mi veriyorsun yoksa o konuda bir \"deneyimin\" ve \"uzmanlığın\" mı var? Google artık \"yazmış olmak için yazılan\" yapay zeka metinlerini yemiyor.",
-          "Teknik Kusursuzluk: Siteniz bir kaplumbağa kadar yavaşsa, dünyanın en iyi makalesini yazsanız bile Google sizi arka sıralara mahkum eder.",
+          "Teknik Kusursuzluk: <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Siteniz bir kaplumbağa kadar yavaşsa</a>, dünyanın en iyi makalesini yazsanız bile Google sizi arka sıralara mahkum eder.",
           "Dijital İtibar (Otorite): Başka siteler ve gerçek insanlar sizden bahsediyor mu?"
-        ]
+        ],
+        isHtml: true
       },
       {
         type: "heading2",
@@ -355,11 +349,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Türkiye'deki işletmelerin %80'i aynı hatayı yapıyor: Bir web sitesi yaptırıyor, parasını ödüyor ve bir daha o siteye bakmıyor."
-      },
-      {
-        type: "paragraph",
-        content: "Düşünün ki lüks bir dükkan açtınız ama vitrin 2 yıldır aynı, içeride kimse yok, raflar tozlanmış. Müşteri girer mi? Girmez. Google botları da girmez. Google şunu ister: \"Bana yaşadığını kanıtla!\""
+        content: "Türkiye'deki işletmelerin %80'i aynı hatayı yapıyor: Bir web sitesi yaptırıyor, parasını ödüyor ve bir daha o siteye bakmıyor. Düşünün ki lüks bir dükkan açtınız ama vitrin 2 yıldır aynı, içeride kimse yok, raflar tozlanmış. Müşteri girer mi? Girmez. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google botları da girmez</a>. Google şunu ister: \"Bana yaşadığını kanıtla!\""
       },
       {
         type: "heading3",
@@ -390,7 +380,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "2026'da \"niş\" kelimelere odaklanın. \"Avukat\" kelimesinde yükselmek imkansız olabilir ama \"Bursa boşanma avukatı ücretleri\" kelimesinde zirveye oynayabilirsiniz."
+        content: "2026'da \"niş\" kelimelere odaklanın. \"Avukat\" kelimesinde yükselmek imkansız olabilir ama \"Bursa boşanma avukatı ücretleri\" kelimesinde zirveye oynayabilirsiniz. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Doğru anahtar kelimeleri bulmanın ilk adımı Google Search Console'u kullanmaktır</a>."
       },
       {
         type: "heading3",
@@ -398,7 +388,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Kullanıcı sitenize girdiğinde bir kronometre çalışır. Tasarımınız amatörse, yazılar iç içe geçmişse veya o meşhur \"SSL Sertifikası Yok\" (Güvenli Değil) uyarısı çıkıyorsa, müşteri kaçar. Müşteri kaçarsa \"Hemen Çıkma Oranı\" (Bounce Rate) fırlar ve Google sizi cezalandırır."
+        content: "Kullanıcı sitenize girdiğinde bir kronometre çalışır. Tasarımınız amatörse, yazılar iç içe geçmişse veya o meşhur \"SSL Sertifikası Yok\" (Güvenli Değil) uyarısı çıkıyorsa, müşteri kaçar. <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Müşteri kaçarsa \"Hemen Çıkma Oranı\" (Bounce Rate) fırlar</a> ve Google sizi cezalandırır."
       },
       {
         type: "heading3",
@@ -406,7 +396,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "2026 yılında kimsenin bir sitenin açılmasını 5 saniye bekleyecek sabrı yok. Özellikle mobil hız, SEO'nun %50'sidir. Siteniz ışık hızında açılmıyorsa, müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile."
+        content: "2026 yılında kimsenin bir sitenin açılmasını 5 saniye bekleyecek sabrı yok. Özellikle mobil hız, SEO'nun %50'sidir. <a href=\"https://web.dev/vitals/\" target=\"_blank\" rel=\"noopener noreferrer\">Siteniz ışık hızında açılmıyorsa</a>, müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile."
       },
       {
         type: "heading3",
@@ -414,7 +404,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Küçük bir işletmeyseniz, tüm Türkiye ile rekabet etmenize gerek yok. Google Haritalar (Google Business) sizin en büyük silahınız. Konumunuz net mi? Müşterileriniz yorum yapmış mı? (Ve siz onlara nazikçe cevap vermiş misiniz?) Dükkanın içinden güncel fotoğraflar var mı? Eğer haritada varsanız, o mahalledeki müşterinin cebindesiniz demektir."
+        content: "Küçük bir işletmeyseniz, tüm Türkiye ile rekabet etmenize gerek yok. <a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar (Google Business) sizin en büyük silahınız</a>. Konumunuz net mi? Müşterileriniz yorum yapmış mı? (Ve siz onlara nazikçe cevap vermiş misiniz?) Dükkanın içinden güncel fotoğraflar var mı? Eğer haritada varsanız, o mahalledeki müşterinin cebindesiniz demektir."
       },
       {
         type: "heading3",
@@ -434,7 +424,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Başka siteden yazı kopyalamak, Google'a \"Benim özgün bir fikrim yok\" demektir. Direkt elenirsiniz."
+        content: "<a href=\"https://support.google.com/webmasters/answer/66359\" target=\"_blank\" rel=\"noopener noreferrer\">Başka siteden yazı kopyalamak, Google'a \"Benim özgün bir fikrim yok\" demektir</a>. Direkt elenirsiniz."
       },
       {
         type: "heading3",

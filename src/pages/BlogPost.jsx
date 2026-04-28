@@ -49,14 +49,22 @@ function renderSection(section, index) {
     case "heading3":
       return (
         <h3 key={index} className="text-xl md:text-2xl font-display font-semibold text-white">
-          {section.content}
+          {section.isHtml ? (
+            <span dangerouslySetInnerHTML={{ __html: section.content }} />
+          ) : (
+            section.content
+          )}
         </h3>
       )
 
     case "paragraph":
       return (
         <p key={index} className="text-sm md:text-base text-white/65 leading-relaxed">
-          {section.content}
+          {section.isHtml ? (
+            <span dangerouslySetInnerHTML={{ __html: section.content }} />
+          ) : (
+            section.content
+          )}
         </p>
       )
 
@@ -71,7 +79,13 @@ function renderSection(section, index) {
       return (
         <ul key={index} className="space-y-2 text-sm md:text-base text-white/65 leading-relaxed list-disc pl-5 marker:text-gold-500/80">
           {section.items.map((item, itemIndex) => (
-            <li key={itemIndex}>{item}</li>
+            <li key={itemIndex}>
+              {section.isHtml ? (
+                <span dangerouslySetInnerHTML={{ __html: item }} />
+              ) : (
+                item
+              )}
+            </li>
           ))}
         </ul>
       )

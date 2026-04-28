@@ -95,4 +95,30 @@
   .responsive-container {
     @apply max-w-full overflow-hidden;
   }
+
+  /* Blog post links styling */
+  p a, li a {
+    color: #FCD34D;
+    text-decoration: underline;
+    text-decoration-color: #FCD34D;
+    text-underline-offset: 2px;
+    transition: all 0.3s ease;
+  }
+
+  p a:hover, li a:hover {
+    color: #D97706;
+    text-decoration-color: #D97706;
+  }
+
+  h3 a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #FCD34D;
+    text-underline-offset: 2px;
+    transition: color 0.3s ease;
+  }
+
+  h3 a:hover {
+    color: #FCD34D;
+  }
 }
