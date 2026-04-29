@@ -121,7 +121,7 @@ export default function Navbar() {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{  scale: 0.97 }}
-              className="relative px-6 py-2.5 text-sm font-medium tracking-wide overflow-hidden group"
+              className="relative px-8 py-3 text-base font-medium tracking-wide overflow-hidden group rounded-full"
             >
               {/* Border */}
               <span className="absolute inset-0 rounded-full border border-gold-500/50 group-hover:border-gold-400 transition-colors duration-300" />
@@ -212,7 +212,7 @@ export default function Navbar() {
             )
           })}
           <a href="/#contact" onClick={e => handleNav(e, '/#contact')}>
-            <button className="w-full py-3.5 rounded-full border border-gold-500/50 text-gold-400 text-sm font-medium tracking-wide">
+            <button className="w-full py-4 rounded-full border border-gold-500/50 text-gold-400 text-base font-medium tracking-wide hover:bg-gold-500/10 transition-colors">
               Teklif Al
             </button>
           </a>

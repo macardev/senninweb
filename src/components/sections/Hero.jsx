@@ -101,12 +101,12 @@ export default function Hero() {
             transition={{ duration: isMobile ? 0.4 : 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-4 max-w-full overflow-hidden"
           >
-            {/* Primary CTA */}
+            {/* Primary CTA - Teklif Al */}
             <a href="#contact" className="w-full sm:w-auto">
               <motion.button
                 whileHover={isMobile ? {} : { scale: 1.03 }}
                 whileTap={isMobile ? {} : { scale: 0.97 }}
-                className="w-full sm:w-auto relative px-6 sm:px-8 py-4 rounded-full font-medium text-sm tracking-wide overflow-hidden group"
+                className="w-full sm:w-auto relative px-8 sm:px-10 py-4 sm:py-5 rounded-full font-medium text-base tracking-wide overflow-hidden group"
               >
                 <span className="absolute inset-0 rounded-full bg-gold-500 group-hover:bg-gold-400 transition-colors duration-300" />
                 <span className="relative z-10 text-black font-semibold whitespace-nowrap">
@@ -115,19 +115,14 @@ export default function Hero() {
               </motion.button>
             </a>
 
-            {/* Secondary CTA */}
-            <a href="#references" className="w-full sm:w-auto">
+            {/* Secondary CTA - Blog */}
+            <a href="/blog" className="w-full sm:w-auto">
               <motion.button
                 whileHover={isMobile ? {} : { scale: 1.03 }}
                 whileTap={isMobile ? {} : { scale: 0.97 }}
-                className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2.5 text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 group"
+                className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2.5 px-8 sm:px-10 py-4 sm:py-5 rounded-full border border-white/20 hover:border-white/40 text-base font-medium text-white/70 hover:text-white transition-all duration-300 group"
               >
-                <span className="w-10 h-10 rounded-full border border-white/15 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300 flex-shrink-0">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </span>
-                <span className="whitespace-nowrap">Projelerimize Göz At</span>
+                <span className="whitespace-nowrap">Blog'a Git</span>
               </motion.button>
             </a>
           </motion.div>

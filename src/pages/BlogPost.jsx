@@ -312,7 +312,7 @@ export default function BlogPost() {
                   navigate("/")
                   setTimeout(() => scrollToIdWithRetry("contact"), 0)
                 }}
-                className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium tracking-wide
+                className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-medium tracking-wide
                            bg-gold-500 text-black hover:bg-gold-400 transition-colors w-full sm:w-auto"
               >
                 Ücretsiz Teklif Al
