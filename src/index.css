@@ -121,4 +121,19 @@
   h3 a:hover {
     color: #FCD34D;
   }
+
+  /* Blogpost content HTML rendering */
+  span a {
+    color: #FCD34D !important;
+    text-decoration: underline !important;
+    text-decoration-color: #FCD34D !important;
+    text-underline-offset: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  span a:hover {
+    color: #D97706 !important;
+    text-decoration-color: #D97706 !important;
+  }
 }

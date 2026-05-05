@@ -38,7 +38,7 @@ export const blogPosts = [
           },
           {
             heading: "2. Hız ve Performans",
-            content: "Ziyaretçiler yavaş açılan siteleri anında terk eder. <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Web sitesinin hızını ölçmek</a> ve iyileştirmek hem kullanıcı deneyimini artırır hem de Google sıralamasında yükselmenizi sağlar.",
+            content: "Ziyaretçiler yavaş açılan siteleri anında terk eder. <a href=\"https://pagespeed.web.dev/?hl=tr\" target=\"_blank\" rel=\"noopener noreferrer\">Siteniz ışık hızında açılmıyorsa</a>, müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile.",
             isHtml: true
           },
           {
@@ -396,7 +396,7 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "2026 yılında kimsenin bir sitenin açılmasını 5 saniye bekleyecek sabrı yok. Özellikle mobil hız, SEO'nun %50'sidir. <a href=\"https://web.dev/vitals/\" target=\"_blank\" rel=\"noopener noreferrer\">Siteniz ışık hızında açılmıyorsa</a>, müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile."
+        content: "2026 yılında kimsenin bir sitenin açılmasını 5 saniye bekleyecek sabrı yok. Özellikle mobil hız, SEO'nun %50'sidir. <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Siteniz ışık hızında açılmıyorsa</a>, müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile."
       },
       {
         type: "heading3",
@@ -490,6 +490,194 @@ export const blogPosts = [
         type: "finalCta",
         question: "Sizi birinci sayfaya taşıyalım mı?",
         ctaText: "Bu içeriği beğendiyseniz veya işletmeniz için profesyonel bir dokunuş arıyorsanız, bizimle iletişime geçmekten çekinmeyin!"
+      }
+    ]
+  },
+  {
+    slug: "web-siteniz-neden-hala-ilk-sayfada-degil-2026",
+    title: "Web Siteniz Neden İlk Sayfada Değil? | 2026 SEO Rehberi | SenninWeb",
+    description: "Web siteniz Google'da görünmüyor mu? 2026 SEO stratejileriyle neden ilk sayfada olmadığınızı öğrenin ve müşteri getiren bir siteye nasıl dönüşeceğinizi keşfedin.",
+    shortTitle: "Web Siteniz Neden İlk Sayfada Değil? | 2026 SEO Rehberi",
+    desc: "Google'da ilk sayfada olmayan web sitelerinin sorunlarını çözen 2026 SEO stratejileri.",
+    tag: "SEO & Büyüme",
+    readingTime: "8 dk",
+    date: "2026",
+    author: "Çağatay Macar",
+    authorTitle: "Senior Web Developer",
+    metaDescription: "Web siteniz Google'da görünmüyor mu? 2026 SEO stratejileriyle neden ilk sayfada olmadığınızı öğrenin ve müşteri getiren bir siteye nasıl dönüşeceğinizi keşfedin.",
+    schemaUrl: "https://senninweb.com/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026",
+    sections: [
+      {
+        type: "heroSection",
+        title: "Web Siteniz Neden Hâlâ İlk Sayfada Değil? (2026 Rehberi)",
+        subtitle: "Görünmeyen Bir İşletme, Gerçekten Var mıdır?"
+      },
+      {
+        type: "paragraph",
+        content: "Şöyle düşünün: Şehrinizin en işlek caddesinde harika bir işletme açtınız. Ürünleriniz kaliteli, hizmetiniz mükemmel. Ama küçük bir sorun var—kimse sizi bulamıyor."
+      },
+      {
+        type: "paragraph",
+        content: "Bugün Google'da ilk sayfada olmayan bir web sitesinin durumu tam olarak budur. İnsanlar bir hizmet aradığında ilk yaptıkları şey <a href=\"https://www.google.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Google'da arama yapmak</a>. Ve gerçek şu ki: Tıklamaların büyük çoğunluğu ilk sayfada kalıyor."
+      },
+      {
+        type: "paragraph",
+        content: "Eğer siz orada değilseniz, potansiyel müşteriniz rakibinizde. Bu yazıda, web sitenizin neden görünmediğini ve 2026'da bunu nasıl düzeltebileceğinizi açıklayacağız."
+      },
+      {
+        type: "heading2",
+        content: "1. Web Siteniz Sadece Var, Ama Çalışmıyor"
+      },
+      {
+        type: "paragraph",
+        content: "Web sitesi yapmak, müşteri kazanmak anlamına gelmez. Eğer siteniz yavaşsa, mobil uyumlu değilse ve net bir mesaj vermiyorsa, Google sizi yukarı taşımaz."
+      },
+      {
+        type: "bulletList",
+        items: [
+          "<strong>Yavaş Açılış:</strong> 3 saniyeden fazla açılan siteler kullanıcılarını kaybeder",
+          "<strong>Mobil Uyumsuzluk:</strong> 2026'da trafiğin %60'ı mobil, bu kritiktir",
+          "<strong>Belirsiz Mesaj:</strong> Kullanıcı 5 saniye içinde \"benim sorunumu çözersiniz\" demesini beklediğinde anlamayabilir"
+        ],
+        isHtml: true
+      },
+      {
+        type: "heading2",
+        content: "2. Yanlış Anahtar Kelimelerle Yarışıyorsunuz"
+      },
+      {
+        type: "paragraph",
+        content: "Genel kelimeler yerine niş ve kullanıcı niyeti yüksek anahtar kelimelere odaklanmanız gerekir. Örneğin \"avukat\" yerine \"Bursa boşanma avukatı ücretleri\" veya \"web tasarım hizmet\" yerine \"İstanbul e-ticaret web tasarımı\" gibi."
+      },
+      {
+        type: "paragraph",
+        content: "Yerel ve spesifik aramalar daha hızlı sonuç getirir ve dönüşüm oranı çok daha yüksektir. Eğer <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>'u kontrol etmiyorsanız, hangi kelimelerle görünüp hangileriyle görünmediğinizi bilemezsiniz demektir."
+      },
+      {
+        type: "heading2",
+        content: "3. İçerik Üretmiyorsunuz"
+      },
+      {
+        type: "paragraph",
+        content: "Düzenli blog içeriği üretmeyen siteler Google tarafından pasif görülür. İçerik sadece \"bilgi vermek\" için değildir—SEO'nun en güçlü parçalarından biridir."
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Aylık yalnızca 1-2 blog yazısı, sitenizin Google'da freski tutmaz",
+          "Her yazı, farklı anahtar kelimelere optimize edilmesi gerekir",
+          "Kullanıcı sorularına cevap veren içerik, \"feature snippet\"lere girebilir ve organik trafiği artırır"
+        ]
+      },
+      {
+        type: "heading2",
+        content: "4. Yerel SEO'yu Kaçırıyorsunuz"
+      },
+      {
+        type: "paragraph",
+        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Maps ve yerel aramalar</a> küçük işletmeler için en büyük fırsattır. Profil optimizasyonu ve müşteri yorumları sıralamanızı doğrudan etkiler."
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Google İşletme Profili tamamlanmış mı? (İşletme adı, adres, telefon aynı mı her yerde?)",
+          "Müşteri yorumlarına cevap veriyorsunuz mu?",
+          "Yeterli fotoğraf ve güncel bilgiler var mı?"
+        ]
+      },
+      {
+        type: "heading2",
+        content: "5. Siteniz Güven Vermiyor"
+      },
+      {
+        type: "paragraph",
+        content: "SSL sertifikası, referanslar, kaliteli görseller ve hızlı yükleme güven oluşturur. Güven yoksa, kullanıcı da yoktur."
+      },
+      {
+        type: "bulletList",
+        items: [
+          "<strong>\"Güvenli Değil\" Uyarısı:</strong> SSL yoksa, müşterinin %90'ı hemen kaçar",
+          "<strong>Gerçek Referanslar:</strong> Müşteri yorumları, proje fotoğrafları ve tamamlanan işler güvenilirlik gösterir",
+          "<strong>Hızlı Yükleme:</strong> <a href=\"https://pagespeed.web.dev/?hl=tr\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>'ta 80+ puan hedefleyin"
+        ],
+        isHtml: true
+      },
+      {
+        type: "heading2",
+        content: "6. Rakipleriniz Daha İyi Çalışıyor"
+      },
+      {
+        type: "paragraph",
+        content: "SEO sürekli bir süreçtir. Rakipleriniz yatırım yapıyorsa, siz geride kalırsınız. Bugün Google'ın ilk sayfasında olan işletme 1-2 yıl bunu korumak için aktif çalışıyor demektir."
+      },
+      {
+        type: "heading2",
+        content: "7. Siteniz Satış Odaklı Değil"
+      },
+      {
+        type: "paragraph",
+        content: "Bir web sitesi sadece bilgi vermez—kullanıcıyı harekete geçirir. İletişim formu, \"Teklif Al\" butonu, \"Hemen Çağır\" gibi açık CTA'lar (Call to Action) olmadan dönüşüm olmaz."
+      },
+      {
+        type: "heading2",
+        content: "2026 İçin Praktik Yol Haritası"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "✅ Hızlı ve mobil uyumlu <a href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\">web tasarım</a>",
+          "✅ Doğru keyword stratejisi ile <a href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\">SEO hizmeti</a> uygulaması",
+          "✅ Aylık 2-4 blog yazısı üretimi",
+          "✅ Google Maps ve yerel SEO optimizasyonu",
+          "✅ Güven ve marka algısı oluşturma",
+          "✅ Dönüşüm odaklı site yapısı"
+        ],
+        isHtml: true
+      },
+      {
+        type: "heading2",
+        content: "Hızlı Başlangıç: Bugün Yapabileceğiniz 3 Adım"
+      },
+      {
+        type: "heading3",
+        content: "Adım 1: Sitenizi Test Edin"
+      },
+      {
+        type: "paragraph",
+        content: "<a href=\"https://pagespeed.web.dev/?hl=tr\" target=\"_blank\" rel=\"noopener noreferrer\">Google PageSpeed Insights</a>'ta sitenizin mobil ve masaüstü hızını kontrol edin. 80 puanın altındaysa, bir sorunu vardır."
+      },
+      {
+        type: "heading3",
+        content: "Adım 2: Google Search Console'u Bağlayın"
+      },
+      {
+        type: "paragraph",
+        content: "<a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>'u sitenize bağlayın ve \"Sorgu Performansı\" bölümünde hangi kelimelerde göründüğünüzü görün."
+      },
+      {
+        type: "heading3",
+        content: "Adım 3: Google İşletme Profilini Güncelleyin"
+      },
+      {
+        type: "paragraph",
+        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google İşletme Profili</a>'ni doldurun, 5 kaliteli işletme fotoğrafı yükleyin ve müşteriler yorum yapmaya teşvik edin."
+      },
+      {
+        type: "heading2",
+        content: "Sonuç: Google'da Kazananlar Olanlar"
+      },
+      {
+        type: "paragraph",
+        content: "Google'da ilk sayfada olmak tesadüf değildir. Doğru strateji, tutarlı çalışma ve mütemadiyen iyileştirme ile her işletme görünürlüğünü artırabilir."
+      },
+      {
+        type: "paragraph",
+        content: "2026'da dijitalleşme artık bir tercih değil, bir zorunluluktur. Siz rakiplerinizin önüne geçmek, Google'da tam da arandığınız anda müşterilerinizin karşısına çıkmak ve web sitenizi gerçek bir satış ofisine dönüştürmek istemez misiniz?"
+      },
+      {
+        type: "finalCta",
+        question: "Web sitenizin neden görünmediğini öğrenmek ister misiniz?",
+        ctaText: "<a href=\"#contact\" style=\"color: #FCD34D; font-weight: bold;\">Bizimle iletişime geçin</a> ve sitenizi müşteri getiren bir sisteme dönüştürelim!"
       }
     ]
   }

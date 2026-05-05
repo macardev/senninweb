@@ -42,7 +42,11 @@ function renderSection(section, index) {
     case "heading2":
       return (
         <h2 key={index} className="text-2xl md:text-3xl font-display font-semibold text-white pt-8">
-          {section.content}
+          {section.isHtml ? (
+            <span dangerouslySetInnerHTML={{ __html: section.content }} />
+          ) : (
+            section.content
+          )}
         </h2>
       )
 
@@ -71,7 +75,11 @@ function renderSection(section, index) {
     case "intro":
       return (
         <p key={index} className="text-sm md:text-base text-white/65 leading-relaxed">
-          {section.content}
+          {section.isHtml ? (
+            <span dangerouslySetInnerHTML={{ __html: section.content }} />
+          ) : (
+            section.content
+          )}
         </p>
       )
 
@@ -94,10 +102,18 @@ function renderSection(section, index) {
       return (
         <div key={index} className="space-y-3">
           <p className="text-sm md:text-base text-white/65 leading-relaxed">
-            {section.question}
+            {section.isHtml ? (
+              <span dangerouslySetInnerHTML={{ __html: section.question }} />
+            ) : (
+              section.question
+            )}
           </p>
           <p className="text-sm md:text-base text-white/65 leading-relaxed font-semibold">
-            {section.answer}
+            {section.isHtml ? (
+              <span dangerouslySetInnerHTML={{ __html: section.answer }} />
+            ) : (
+              section.answer
+            )}
           </p>
         </div>
       )
@@ -106,15 +122,29 @@ function renderSection(section, index) {
       return (
         <div key={index} className="space-y-3">
           <p className="text-sm md:text-base text-white/65 leading-relaxed">
-            {section.intro}
+            {section.isHtml ? (
+              <span dangerouslySetInnerHTML={{ __html: section.intro }} />
+            ) : (
+              section.intro
+            )}
           </p>
           <ul className="space-y-2 text-sm md:text-base text-white/65 leading-relaxed list-disc pl-5 marker:text-gold-500/80">
             {section.items.map((item, itemIndex) => (
-              <li key={itemIndex}>{item}</li>
+              <li key={itemIndex}>
+                {section.isHtml ? (
+                  <span dangerouslySetInnerHTML={{ __html: item }} />
+                ) : (
+                  item
+                )}
+              </li>
             ))}
           </ul>
           <p className="text-sm md:text-base text-white/65 leading-relaxed">
-            {section.closing}
+            {section.isHtml ? (
+              <span dangerouslySetInnerHTML={{ __html: section.closing }} />
+            ) : (
+              section.closing
+            )}
           </p>
         </div>
       )
@@ -122,7 +152,11 @@ function renderSection(section, index) {
     case "finalParagraph":
       return (
         <p key={index} className="text-sm md:text-base text-white/65 leading-relaxed">
-          {section.content}
+          {section.isHtml ? (
+            <span dangerouslySetInnerHTML={{ __html: section.content }} />
+          ) : (
+            section.content
+          )}
         </p>
       )
 
@@ -130,10 +164,18 @@ function renderSection(section, index) {
       return (
         <div key={index} className="space-y-3">
           <p className="text-sm md:text-base text-white/65 leading-relaxed font-semibold">
-            {section.question}
+            {section.isHtml ? (
+              <span dangerouslySetInnerHTML={{ __html: section.question }} />
+            ) : (
+              section.question
+            )}
           </p>
           <p className="text-sm md:text-base text-white/65 leading-relaxed">
-            {section.ctaText}
+            {section.isHtml ? (
+              <span dangerouslySetInnerHTML={{ __html: section.ctaText }} />
+            ) : (
+              section.ctaText
+            )}
           </p>
         </div>
       )
@@ -142,16 +184,28 @@ function renderSection(section, index) {
       return (
         <div key={index} className="space-y-5">
           <p className="text-sm md:text-base text-white/65 leading-relaxed">
-            {section.content}
+            {section.isHtml ? (
+              <span dangerouslySetInnerHTML={{ __html: section.content }} />
+            ) : (
+              section.content
+            )}
           </p>
           <div className="space-y-8">
             {section.subsections?.map((subsection, subIndex) => (
               <div key={subIndex} className="space-y-3">
                 <h3 className="text-xl md:text-2xl font-display font-semibold text-white">
-                  {subsection.heading}
+                  {subsection.isHtml ? (
+                    <span dangerouslySetInnerHTML={{ __html: subsection.heading }} />
+                  ) : (
+                    subsection.heading
+                  )}
                 </h3>
                 <p className="text-sm md:text-base text-white/65 leading-relaxed">
-                  {subsection.content}
+                  {subsection.isHtml ? (
+                    <span dangerouslySetInnerHTML={{ __html: subsection.content }} />
+                  ) : (
+                    subsection.content
+                  )}
                 </p>
               </div>
             ))}
