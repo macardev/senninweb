@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import { usePerformanceMode } from '@/hooks/usePerformanceMode'
+import { scrollToIdWithRetry } from '@/utils/scrollToId'
 
 const fadeUp = {
   hidden:  { opacity: 0, y: 40 },
@@ -28,6 +30,23 @@ const staggerMobile = {
 export default function Hero() {
   const isMobile = useIsMobile()
   const { animationDuration } = usePerformanceMode()
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const handleScroll = (targetId) => {
+    if (location.pathname !== "/") {
+      navigate("/")
+      setTimeout(() => scrollToIdWithRetry(targetId), 0)
+    } else {
+      scrollToIdWithRetry(targetId)
+    }
+  }
+
+  const handleBlogNavigation = () => {
+    if (location.pathname !== "/blog") {
+      navigate("/blog")
+    }
+  }
 
   return (
     <section
@@ -102,29 +121,27 @@ export default function Hero() {
             className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-4 max-w-full overflow-hidden"
           >
             {/* Primary CTA - Teklif Al */}
-            <a href="#contact" className="w-full sm:w-auto">
-              <motion.button
-                whileHover={isMobile ? {} : { scale: 1.03 }}
-                whileTap={isMobile ? {} : { scale: 0.97 }}
-                className="w-full sm:w-auto relative px-8 sm:px-10 py-4 sm:py-5 rounded-full font-medium text-base tracking-wide overflow-hidden group"
-              >
-                <span className="absolute inset-0 rounded-full bg-gold-500 group-hover:bg-gold-400 transition-colors duration-300" />
-                <span className="relative z-10 text-black font-semibold whitespace-nowrap">
-                  Ücretsiz Teklif Al
-                </span>
-              </motion.button>
-            </a>
+            <motion.button
+              onClick={() => handleScroll("contact")}
+              whileHover={isMobile ? {} : { scale: 1.03 }}
+              whileTap={isMobile ? {} : { scale: 0.97 }}
+              className="w-full sm:w-auto relative px-8 sm:px-10 py-4 sm:py-5 rounded-full font-medium text-base tracking-wide overflow-hidden group cursor-pointer"
+            >
+              <span className="absolute inset-0 rounded-full bg-gold-500 group-hover:bg-gold-400 transition-colors duration-300" />
+              <span className="relative z-10 text-black font-semibold whitespace-nowrap">
+                Ücretsiz Teklif Al
+              </span>
+            </motion.button>
 
             {/* Secondary CTA - Blog */}
-            <a href="/blog" className="w-full sm:w-auto">
-              <motion.button
-                whileHover={isMobile ? {} : { scale: 1.03 }}
-                whileTap={isMobile ? {} : { scale: 0.97 }}
-                className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2.5 px-8 sm:px-10 py-4 sm:py-5 rounded-full border border-white/20 hover:border-white/40 text-base font-medium text-white/70 hover:text-white transition-all duration-300 group"
-              >
-                <span className="whitespace-nowrap">Blog'a Git</span>
-              </motion.button>
-            </a>
+            <motion.button
+              onClick={handleBlogNavigation}
+              whileHover={isMobile ? {} : { scale: 1.03 }}
+              whileTap={isMobile ? {} : { scale: 0.97 }}
+              className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2.5 px-8 sm:px-10 py-4 sm:py-5 rounded-full border border-white/20 hover:border-white/40 text-base font-medium text-white/70 hover:text-white transition-all duration-300 group cursor-pointer"
+            >
+              <span className="whitespace-nowrap">Blog'a Git</span>
+            </motion.button>
           </motion.div>
 
           {/* Alt metrik bar */}
