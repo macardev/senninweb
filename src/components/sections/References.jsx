@@ -1,92 +1,279 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import useInView from '@/hooks/useInView'
 
 
-// ─── Utsuri Featured Kart ───────────────────────────────────────────
-function UtsuriCard() {
-  const { ref, inView } = useInView({ threshold: 0.1 })
-  const [hovered, setHovered] = useState(false)
+// ─── Placeholder Görseller ───────────────────────────────────────────
+
+function ModelPlaceholder() {
+  return (
+    <svg viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="model-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#7C3AED" stopOpacity="0.35" />
+          <stop offset="100%" stopColor="#DB2777" stopOpacity="0.12" />
+        </linearGradient>
+        <radialGradient id="model-glow" cx="50%" cy="40%" r="50%">
+          <stop offset="0%" stopColor="#A855F7" stopOpacity="0.12" />
+          <stop offset="100%" stopColor="#A855F7" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect width="400" height="260" fill="#0A0A0A" />
+      <rect width="400" height="260" fill="url(#model-grad)" />
+      <rect width="400" height="260" fill="url(#model-glow)" />
+      <circle cx="200" cy="95" r="32" stroke="#A855F7" strokeWidth="1.2" fill="none" opacity="0.45" />
+      <path d="M158 172 c0-32 42-52 42-52 0 0 42 20 42 52" stroke="#A855F7" strokeWidth="1.2" fill="none" opacity="0.45" />
+      <circle cx="130" cy="75" r="1.5" fill="#A855F7" opacity="0.6" />
+      <circle cx="270" cy="110" r="1" fill="#A855F7" opacity="0.5" />
+      <circle cx="150" cy="145" r="1.2" fill="#C084FC" opacity="0.4" />
+      <circle cx="260" cy="80" r="1" fill="#C084FC" opacity="0.4" />
+      <circle cx="180" cy="65" r="0.8" fill="#A855F7" opacity="0.3" />
+      <line x1="120" y1="195" x2="280" y2="195" stroke="#A855F7" strokeWidth="0.5" opacity="0.15" strokeDasharray="3 4" />
+      <text x="200" y="230" textAnchor="middle" fill="#A855F7" fillOpacity="0.15"
+        fontFamily="system-ui" fontSize="10" fontWeight="500" letterSpacing="4">
+        AI · FASHION
+      </text>
+    </svg>
+  )
+}
+
+function CakePlaceholder() {
+  return (
+    <svg viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="cake-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#EC4899" stopOpacity="0.3" />
+          <stop offset="100%" stopColor="#FCD34D" stopOpacity="0.1" />
+        </linearGradient>
+        <radialGradient id="cake-glow" cx="50%" cy="55%" r="45%">
+          <stop offset="0%" stopColor="#F472B6" stopOpacity="0.12" />
+          <stop offset="100%" stopColor="#F472B6" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect width="400" height="260" fill="#0A0A0A" />
+      <rect width="400" height="260" fill="url(#cake-grad)" />
+      <rect width="400" height="260" fill="url(#cake-glow)" />
+      <rect x="145" y="135" width="110" height="55" rx="3" stroke="#F472B6" strokeWidth="1.2" fill="none" opacity="0.5" />
+      <rect x="135" y="118" width="130" height="22" rx="3" stroke="#FCD34D" strokeWidth="1.2" fill="none" opacity="0.5" />
+      <rect x="155" y="150" width="10" height="12" rx="1" stroke="#F472B6" strokeWidth="0.8" fill="none" opacity="0.3" />
+      <rect x="235" y="150" width="10" height="12" rx="1" stroke="#F472B6" strokeWidth="0.8" fill="none" opacity="0.3" />
+      {[170, 192, 214].map((x, i) => (
+        <React.Fragment key={i}>
+          <rect x={x} y={95 + (i % 2 === 0 ? 0 : 3)} width="1.5" height="23" rx="0.75" fill="#FCD34D" opacity="0.6" />
+          <circle cx={x + 0.75} cy={93 + (i % 2 === 0 ? 0 : 3)} r="2.5" fill="#FCD34D" opacity="0.8" />
+          <circle cx={x + 0.75} cy={93 + (i % 2 === 0 ? 0 : 3)} r="5" fill="#FCD34D" opacity="0.2" />
+        </React.Fragment>
+      ))}
+      <circle cx="115" cy="100" r="1.2" fill="#F472B6" opacity="0.6" />
+      <circle cx="285" cy="105" r="1" fill="#F472B6" opacity="0.5" />
+      <circle cx="125" cy="85" r="0.8" fill="#FCD34D" opacity="0.4" />
+      <circle cx="275" cy="85" r="0.8" fill="#FCD34D" opacity="0.4" />
+      <text x="200" y="230" textAnchor="middle" fill="#F472B6" fillOpacity="0.15"
+        fontFamily="system-ui" fontSize="10" fontWeight="500" letterSpacing="4">
+        BUTIK · PASTA
+      </text>
+    </svg>
+  )
+}
+
+function FurniturePlaceholder() {
+  return (
+    <svg viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="furniture-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#D97706" stopOpacity="0.3" />
+          <stop offset="100%" stopColor="#B45309" stopOpacity="0.1" />
+        </linearGradient>
+        <radialGradient id="furniture-glow" cx="50%" cy="50%" r="45%">
+          <stop offset="0%" stopColor="#D97706" stopOpacity="0.1" />
+          <stop offset="100%" stopColor="#D97706" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect width="400" height="260" fill="#0A0A0A" />
+      <rect width="400" height="260" fill="url(#furniture-grad)" />
+      <rect width="400" height="260" fill="url(#furniture-glow)" />
+      <rect x="162" y="145" width="76" height="45" rx="2" stroke="#D97706" strokeWidth="1.2" fill="none" opacity="0.5" />
+      <line x1="162" y1="145" x2="162" y2="120" stroke="#D97706" strokeWidth="1.2" opacity="0.5" />
+      <line x1="238" y1="145" x2="238" y2="120" stroke="#D97706" strokeWidth="1.2" opacity="0.5" />
+      <line x1="162" y1="138" x2="238" y2="138" stroke="#D97706" strokeWidth="0.8" opacity="0.35" />
+      <line x1="162" y1="190" x2="148" y2="210" stroke="#D97706" strokeWidth="1.2" opacity="0.5" />
+      <line x1="238" y1="190" x2="252" y2="210" stroke="#D97706" strokeWidth="1.2" opacity="0.5" />
+      <line x1="172" y1="158" x2="228" y2="158" stroke="#D97706" strokeWidth="0.5" opacity="0.25" />
+      <line x1="172" y1="170" x2="228" y2="170" stroke="#D97706" strokeWidth="0.5" opacity="0.25" />
+      <circle cx="140" cy="95" r="1.2" fill="#FBBF24" opacity="0.5" />
+      <circle cx="260" cy="105" r="1" fill="#FBBF24" opacity="0.4" />
+      <circle cx="155" cy="80" r="0.8" fill="#D97706" opacity="0.3" />
+      <circle cx="248" cy="85" r="0.8" fill="#D97706" opacity="0.3" />
+      <text x="200" y="230" textAnchor="middle" fill="#D97706" fillOpacity="0.15"
+        fontFamily="system-ui" fontSize="10" fontWeight="500" letterSpacing="4">
+        MOBILYA · TASARIM
+      </text>
+    </svg>
+  )
+}
+
+
+// ─── Referans Verileri ──────────────────────────────────────────────
+
+const references = [
+  {
+    id: 'utsuri',
+    name: 'Utsuri AI',
+    domain: 'utsuriai.com',
+    category: 'AI SaaS · Moda Teknolojisi',
+    description:
+      'Moda markaları için yapay zeka destekli model fotoğrafı üretim platformu. Gerçek fotoğraf çekimi olmadan, dakikalar içinde profesyonel ürün görselleri.',
+    features: [
+      'AI destekli model fotoğrafı üretimi',
+      'Çoklu şablon & stil sistemi',
+      'Türkçe arayüz & yerel destek',
+      'SaaS abonelik altyapısı',
+    ],
+    metrics: [
+      { value: 'SaaS', label: 'Platform türü' },
+      { value: 'AI', label: 'Teknoloji' },
+      { value: 'TR #1', label: 'AI Fashion' },
+    ],
+    tags: ['AI', 'SaaS', 'Moda'],
+    placeholder: 'model',
+    accent: { hex: '#A855F7', tailwind: 'purple' },
+    url: 'https://www.utsuriai.com',
+  },
+  {
+    id: 'ozkan',
+    name: 'Özkan Mobilya',
+    domain: 'ozkanmobilya.com',
+    category: 'Mobilya & İç Tasarım · Bilecik',
+    description:
+      'Yerel mobilya ustasının dijital vitrini. Modern ürün galerisi ve yerel SEO ile müşteri sayısını katladık.',
+    features: [
+      'Modern ürün galerisi tasarımı',
+      'Yerel SEO optimizasyonu',
+      'Mobil uyumlu responsive yapı',
+    ],
+    metrics: [
+      { value: '3x', label: 'Daha fazla müşteri' },
+      { value: '2x', label: 'Web trafiği' },
+    ],
+    tags: ['Web Tasarım', 'SEO'],
+    placeholder: 'furniture',
+    accent: { hex: '#D97706', tailwind: 'amber' },
+    url: null,
+  },
+  {
+    id: 'missbutik',
+    name: 'Miss Butik Pasta',
+    domain: 'missbutikpasta.com',
+    category: 'Butik Pasta · Gebze',
+    description:
+      'Gebze bölgesinde siparişe özel tasarımlı özel gün pastaları üreten butik pastacı. Lezzetleri dijital vitrinle sevenleriyle buluşturuyor.',
+    features: [
+      'Özel gün pastaları tasarımı',
+      'Siparişe özel kişiselleştirme',
+      'Modern dijital vitrin',
+      'Mobil uyumlu arayüz',
+    ],
+    metrics: [
+      { value: '🎂', label: 'Özel tasarım' },
+      { value: '✨', label: 'Kişiye özel' },
+    ],
+    tags: ['Web Tasarım', 'E-Ticaret'],
+    placeholder: 'cake',
+    accent: { hex: '#EC4899', tailwind: 'pink' },
+    url: 'https://missbutikpasta.com',
+  },
+]
+
+
+// ─── Placeholder Seçici ──────────────────────────────────────────────
+
+function PlaceholderImage({ type }) {
+  switch (type) {
+    case 'model': return <ModelPlaceholder />
+    case 'cake': return <CakePlaceholder />
+    case 'furniture': return <FurniturePlaceholder />
+    default: return null
+  }
+}
+
+
+// ─── Referans Kartı ───────────────────────────────────────────────────
+
+function ReferenceCard({ data, index, inView }) {
+  const a = data.accent
 
   return (
     <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 60 }}
+      initial={{ opacity: 0, y: 40 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className="relative rounded-2xl overflow-hidden border border-purple-500/20
-                 bg-white/[0.02] group col-span-1 md:col-span-2"
-      style={{ minHeight: 480 }}
+      transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
+      className="relative rounded-2xl overflow-hidden border border-white/6
+                 bg-white/[0.02] mx-1 md:mx-3"
+      style={{ minHeight: 500 }}
     >
-      {/* Arka plan glow */}
+      {/* Glow arka planı */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-br
-                        from-purple-900/20 via-transparent to-pink-900/10" />
-        <motion.div
-          animate={hovered ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          className="absolute inset-0 bg-gradient-to-br
-                     from-purple-800/10 via-transparent to-pink-800/10"
+        <div
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            background: `linear-gradient(135deg, ${a.hex}22, transparent 60%, ${a.hex}11)`,
+          }}
         />
       </div>
 
-      <div className="relative z-10 flex flex-col">
+      <div className="relative z-10 flex flex-col h-full">
 
-        {/* Top — Image */}
-        <div className="relative w-full h-[240px] md:h-[300px] bg-black">
-          <img
-            src="/utsuri.webp"
-            alt="Utsuri AI"
-            width="600"
-            height="300"
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="eager"
-          />
+        {/* Görsel alanı */}
+        <div className="relative w-full h-[200px] md:h-[260px] bg-black overflow-hidden">
+          <PlaceholderImage type={data.placeholder} />
         </div>
 
-        {/* Bottom — Content */}
-        <div className="p-6 md:p-8 flex flex-col justify-start">
+        {/* İçerik */}
+        <div className="p-6 md:p-8 flex flex-col flex-1">
 
           {/* Kategori */}
-          <div className="flex items-center gap-3 mb-5">
-            <span className="w-6 h-px bg-purple-400" />
-            <span className="text-xs tracking-[0.25em] uppercase text-purple-400/70 font-medium">
-              AI SaaS · Moda Teknolojisi
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-6 h-px" style={{ backgroundColor: a.hex }} />
+            <span
+              className="text-xs tracking-[0.25em] uppercase font-medium"
+              style={{ color: `${a.hex}b3` }}
+            >
+              {data.category}
             </span>
           </div>
 
-          {/* Logo / İsim */}
+          {/* İsim + Domain */}
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-purple-500/20
-                            border border-purple-400/30
-                            flex items-center justify-center text-lg">
-              ✦
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center text-lg"
+              style={{
+                backgroundColor: `${a.hex}22`,
+                borderColor: `${a.hex}44`,
+                borderWidth: 1,
+                color: a.hex,
+              }}
+            >
+              {data.placeholder === 'cake' ? '🧁' : data.placeholder === 'model' ? '✦' : '🪑'}
             </div>
             <div>
               <h3 className="font-display font-bold text-2xl text-white tracking-tight">
-                Utsuri AI
+                {data.name}
               </h3>
-              <p className="text-xs text-white/50">utsuriai.com</p>
+              <p className="text-xs text-white/50">{data.domain}</p>
             </div>
           </div>
 
           {/* Açıklama */}
           <p className="text-white/50 text-sm leading-relaxed mb-6">
-            Moda markaları için yapay zeka destekli model fotoğrafı üretim platformu.
-            Gerçek fotoğraf çekimi olmadan, dakikalar içinde profesyonel ürün görselleri.
-            Türkiye'nin AI fashion platformu.
+            {data.description}
           </p>
 
           {/* Özellikler */}
           <div className="space-y-2.5 mb-8">
-            {[
-              'AI destekli model fotoğrafı üretimi',
-              'Çoklu şablon & stil sistemi',
-              'Türkçe arayüz & yerel destek',
-              'SaaS abonelik altyapısı',
-            ].map((feat, i) => (
+            {data.features.map((feat, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, x: -10 }}
@@ -94,7 +281,10 @@ function UtsuriCard() {
                 transition={{ delay: 0.3 + i * 0.08, duration: 0.5 }}
                 className="flex items-center gap-3"
               >
-                <div className="w-1 h-1 rounded-full bg-purple-400/70 flex-shrink-0" />
+                <div
+                  className="w-1 h-1 rounded-full flex-shrink-0"
+                  style={{ backgroundColor: `${a.hex}b3` }}
+                />
                 <span className="text-sm text-white/50">{feat}</span>
               </motion.div>
             ))}
@@ -103,162 +293,103 @@ function UtsuriCard() {
           {/* Ayraç */}
           <div className="w-full h-px bg-white/6 mb-6" />
 
-          {/* Metrikler */}
-          <div className="grid grid-cols-3 gap-4 mb-8">
-            {[
-              { value: 'SaaS',   label: 'Platform türü'   },
-              { value: 'AI',     label: 'Teknoloji'        },
-              { value: 'TR #1',  label: 'AI Fashion'       },
-            ].map((m, i) => (
-              <div key={i}>
-                <p className={`font-display font-bold text-base mb-0.5 ${
-                  i === 0 ? 'text-purple-400' : 'text-white'
-                }`}>
-                  {m.value}
-                </p>
-                <p className="text-[11px] text-white/50">{m.label}</p>
-              </div>
-            ))}
+          {/* Metrikler + Tagler */}
+          <div className="flex items-center justify-between mt-auto">
+            <div className="flex gap-6">
+              {data.metrics.map((m, i) => (
+                <div key={i}>
+                  <p className="font-display font-bold text-base mb-0.5" style={{ color: a.hex }}>
+                    {m.value}
+                  </p>
+                  <p className="text-[11px] text-white/50">{m.label}</p>
+                </div>
+              ))}
+            </div>
+            <div className="flex gap-2">
+              {data.tags.map(tag => (
+                <span
+                  key={tag}
+                  className="px-2.5 py-1 rounded-full text-[10px] font-medium
+                             bg-white/4 border border-white/8 text-white/50"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
 
           {/* CTA */}
-          <a
-            href="https://www.utsuriai.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="flex items-center gap-2.5 text-sm font-medium
-                        text-purple-300 hover:text-purple-200
-                        transition-colors duration-300 group/btn"
-            >
-              <span>Siteyi Ziyaret Et</span>
-              <span className="w-7 h-7 rounded-full border border-purple-400/30
-                              group-hover/btn:border-purple-300/60
-                              flex items-center justify-center
-                              transition-colors duration-300">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-                  <path d="M2 9L9 2M9 2H4M9 2v5"
-                    stroke="currentColor" strokeWidth="1.5"
-                    strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-            </motion.button>
-          </a>
+          {data.url && (
+            <div className="mt-6 pt-4 border-t border-white/6">
+              <a
+                href={data.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="flex items-center gap-2.5 text-sm font-medium
+                            transition-colors duration-300 group/btn"
+                  style={{ color: `${a.hex}cc` }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = a.hex}
+                  onMouseLeave={(e) => e.currentTarget.style.color = `${a.hex}cc`}
+                >
+                  <span>Siteyi Ziyaret Et</span>
+                  <span
+                    className="w-7 h-7 rounded-full border flex items-center justify-center
+                               transition-colors duration-300"
+                    style={{ borderColor: `${a.hex}44` }}
+                  >
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                      <path d="M2 9L9 2M9 2H4M9 2v5"
+                        stroke="currentColor" strokeWidth="1.5"
+                        strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
+                </motion.button>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </motion.div>
   )
 }
 
-// ─── Küçük Showcase Kartları ────────────────────────────────────────
-const showcases = [
-  {
-    id: '02',
-    name: 'Özkan Mobilya',
-    category: 'Mobilya & İç Tasarım · Bilecik',
-    description: 'Yerel mobilya ustasının dijital vitrini. Ürün galerisi ve yerel SEO.',
-    tags: ['Web Tasarım', 'SEO'],
-    color: '#D97706',
-    metrics: { value: '3x', label: 'Daha fazla müşteri' },
-  },
-  {
-    id: '03',
-    name: 'Dr. Ayşe Kaya',
-    category: 'Diş Kliniği · Bilecik',
-    description: 'Modern diş kliniği için premium dijital varlık ve online randevu.',
-    tags: ['Web Tasarım', 'SEO'],
-    color: '#34D399',
-    metrics: { value: '2x', label: 'Online randevu' },
-  },
-]
-
-function ShowcaseCard({ project, index }) {
-  const { ref, inView } = useInView({ threshold: 0.2 })
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 40 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{
-        duration: 0.8,
-        delay: index * 0.12,
-        ease: [0.16, 1, 0.3, 1],
-      }}
-      className="group relative rounded-2xl overflow-hidden border border-white/6
-                 bg-white/[0.02] hover:border-white/12 transition-all duration-500 p-7"
-    >
-      {/* Numara */}
-      <span className="text-[10px] tracking-[0.3em] uppercase font-medium"
-        style={{ color: project.color }}>
-        {project.id}
-      </span>
-
-      {/* Mock ekran */}
-      <div className="relative h-32 my-5 rounded-xl bg-surface-100 overflow-hidden">
-        {/* Tarayıcı bar */}
-        <div className="absolute top-0 left-0 right-0 h-6 bg-surface-200
-                        flex items-center px-3 gap-1.5">
-          {[1,2,3].map(i => (
-            <div key={i} className="w-2 h-2 rounded-full bg-white/10" />
-          ))}
-        </div>
-        {/* İçerik */}
-        <div className="absolute inset-0 top-6 p-3 flex flex-col gap-2">
-          <div className="h-1 rounded-full w-3/4"
-            style={{ background: project.color, opacity: 0.6 }} />
-          <div className="h-2.5 w-1/2 rounded bg-white/8" />
-          <div className="grid grid-cols-2 gap-2 mt-1">
-            <div className="h-10 rounded bg-white/[0.04]" />
-            <div className="h-10 rounded bg-white/[0.04]" />
-          </div>
-        </div>
-      </div>
-
-      {/* İsim */}
-      <h3 className="font-display font-bold text-lg text-white tracking-tight mb-1">
-        {project.name}
-      </h3>
-      <p className="text-[11px] text-white/50 mb-3">{project.category}</p>
-      <p className="text-sm text-white/50 leading-relaxed mb-5">
-        {project.description}
-      </p>
-
-      {/* Metrik */}
-      <div className="flex items-center justify-between pt-4 border-t border-white/6">
-        <div>
-          <p className="font-display font-bold text-base"
-            style={{ color: project.color }}>
-            {project.metrics.value}
-          </p>
-          <p className="text-[11px] text-white/50">{project.metrics.label}</p>
-        </div>
-        <div className="flex gap-2">
-          {project.tags.map(tag => (
-            <span key={tag}
-              className="px-2.5 py-1 rounded-full text-[10px] font-medium
-                         bg-white/4 border border-white/8 text-white/50">
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
-    </motion.div>
-  )
-}
 
 // ─── Ana Section ─────────────────────────────────────────────────────
+
 export default function References() {
+  const [currentIndex, setCurrentIndex] = useState(0)
   const { ref, inView } = useInView()
+  const total = references.length
+
+  const goTo = (i) => {
+    setCurrentIndex(Math.max(0, Math.min(i, total - 1)))
+  }
+
+  const goNext = () => {
+    if (currentIndex < total - 1) setCurrentIndex((p) => p + 1)
+  }
+
+  const goPrev = () => {
+    if (currentIndex > 0) setCurrentIndex((p) => p - 1)
+  }
+
+  const handleDragEnd = (_, { offset, velocity }) => {
+    const swipe = Math.abs(offset.x) * velocity.x
+    if (swipe < -500 && currentIndex < total - 1) {
+      setCurrentIndex((p) => p + 1)
+    } else if (swipe > 500 && currentIndex > 0) {
+      setCurrentIndex((p) => p - 1)
+    }
+  }
 
   return (
     <section id="references" className="relative bg-black section-pad overflow-hidden">
-
-      {/* Arka plan */}
+      {/* Arka plan glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[400px]
                         bg-purple-900/8 blur-[180px] rounded-full" />
@@ -266,8 +397,7 @@ export default function References() {
                         bg-gold-500/4 blur-[150px] rounded-full" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
-
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <motion.div
           ref={ref}
@@ -297,11 +427,78 @@ export default function References() {
           </div>
         </motion.div>
 
-        {/* Grid — Utsuri büyük + 2 küçük */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <UtsuriCard />
-          {showcases.map((p, i) => (
-            <ShowcaseCard key={p.id} project={p} index={i} />
+        {/* ─── Carousel ─────────────────────────────────────────── */}
+        <div className="relative">
+          {/* Slide Container */}
+          <div className="overflow-hidden rounded-2xl">
+            <motion.div
+              className="flex"
+              animate={{ x: `-${currentIndex * 100}%` }}
+              transition={{ type: 'spring', stiffness: 320, damping: 30 }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.08}
+              onDragEnd={handleDragEnd}
+            >
+              {references.map((data, i) => (
+                <div key={data.id} className="min-w-full shrink-0">
+                  <ReferenceCard data={data} index={i} inView={inView} />
+                </div>
+              ))}
+            </motion.div>
+          </div>
+
+          {/* Navigasyon Okları */}
+          {currentIndex > 0 && (
+            <button
+              onClick={goPrev}
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-20
+                         w-10 h-10 rounded-full bg-black/60 backdrop-blur-sm
+                         border border-white/10 flex items-center justify-center
+                         text-white/70 hover:text-white hover:bg-black/80
+                         hover:border-white/20 transition-all duration-300"
+              aria-label="Önceki referans"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5"
+                  strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          )}
+          {currentIndex < total - 1 && (
+            <button
+              onClick={goNext}
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-20
+                         w-10 h-10 rounded-full bg-black/60 backdrop-blur-sm
+                         border border-white/10 flex items-center justify-center
+                         text-white/70 hover:text-white hover:bg-black/80
+                         hover:border-white/20 transition-all duration-300"
+              aria-label="Sonraki referans"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5"
+                  strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          )}
+        </div>
+
+        {/* Dot Indicator'lar */}
+        <div className="flex items-center justify-center gap-3 mt-10">
+          {references.map((data, i) => (
+            <button
+              key={data.id}
+              onClick={() => goTo(i)}
+              className="transition-all duration-500 rounded-full"
+              aria-label={`${data.name} referansına git`}
+            >
+              {i === currentIndex ? (
+                <span className="block w-8 h-2 rounded-full bg-gold-500" />
+              ) : (
+                <span className="block w-2 h-2 rounded-full bg-white/20
+                                 hover:bg-white/40 transition-colors duration-300" />
+              )}
+            </button>
           ))}
         </div>
 
@@ -313,8 +510,8 @@ export default function References() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-center text-xs text-white/40 mt-10 tracking-wide"
         >
-          * Özkan Mobilya ve Dr. Ayşe Kaya showcase amaçlıdır.
-          Utsuri AI canlı ve aktif referanstır.
+          Özkan Mobilya showcase amaçlıdır.
+          Utsuri AI ve Miss Butik Pasta canlı ve aktif referanslardır.
         </motion.p>
       </div>
     </section>
