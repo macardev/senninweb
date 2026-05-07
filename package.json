@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node generate-ico.js && vite",
-    "build": "node generate-ico.js && vite build",
+    "build": "node generate-ico.js && vite build && node postbuild.mjs",
     "preview": "vite preview",
     "generate-favicon": "node generate-ico.js"
   },
