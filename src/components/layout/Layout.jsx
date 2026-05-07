@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from "react"
+import { lazy, Suspense, useEffect, useMemo, useState } from "react"
 import { Outlet, useLocation } from "react-router-dom"
 
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
-import CustomCursor from "@/components/ui/CustomCursor"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
+
+const CustomCursor = lazy(() => import("@/components/ui/CustomCursor"))
 
 function getCursorEnabled() {
   if (typeof window === "undefined") return false
@@ -61,7 +62,11 @@ export default function Layout() {
 
   return (
     <>
-      {cursorEnabled && <CustomCursor routeKey={cursorKey} />}
+      {cursorEnabled && (
+        <Suspense fallback={null}>
+          <CustomCursor routeKey={cursorKey} />
+        </Suspense>
+      )}
 
       <Navbar />
 

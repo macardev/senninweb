@@ -45,6 +45,15 @@
     background: #D97706;
     color: #0A0A0A;
   }
+
+  /* Navbar slide-down animation */
+  @keyframes slideDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  .animate-slideDown {
+    animation: slideDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+  }
 }
 
 @layer utilities {

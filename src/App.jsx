@@ -1,30 +1,43 @@
-import React from "react"
+import React, { lazy, Suspense } from "react"
 import { HashRouter as Router, Routes, Route } from "react-router-dom"
 
 import Layout from "@/components/layout/Layout"
-import Home from "@/pages/Home"
-import Blog from "@/pages/Blog"
-import BlogPost from "@/pages/BlogPost"
-import Gebze from "@/pages/Gebze"
 
+const Home = lazy(() => import("@/pages/Home"))
+const Blog = lazy(() => import("@/pages/Blog"))
+const BlogPost = lazy(() => import("@/pages/BlogPost"))
+const Gebze = lazy(() => import("@/pages/Gebze"))
 
 export default function App() {
   return (
     <Router>
       <Routes>
         <Route element={<Layout />}>
-          {/* 🏠 ANA SAYFA */}
-          <Route path="/" element={<Home />} />
-
-          {/* 📝 BLOG LİSTE (keep existing + add lowercase alias) */}
-          <Route path="/Blog" element={<Blog />} />
-          <Route path="/blog" element={<Blog />} />
-
-          {/* 📝 BLOG DETAY - Dynamic routing */}
-          <Route path="/blog/:slug" element={<BlogPost />} />
-
-          {/* 🌍 BÖLGESEL SAYFALAR */}
-          <Route path="/gebze" element={<Gebze />} />
+          <Route path="/" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <Home />
+            </Suspense>
+          } />
+          <Route path="/Blog" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <Blog />
+            </Suspense>
+          } />
+          <Route path="/blog" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <Blog />
+            </Suspense>
+          } />
+          <Route path="/blog/:slug" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <BlogPost />
+            </Suspense>
+          } />
+          <Route path="/gebze" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <Gebze />
+            </Suspense>
+          } />
         </Route>
       </Routes>
     </Router>
