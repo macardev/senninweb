@@ -58,7 +58,7 @@ export default function Manifesto() {
         {/* Küçük etiket */}
         <div className="flex items-center gap-3 mb-12">
           <span className="w-8 h-px bg-gold-500" />
-          <span className="text-xs tracking-[0.25em] uppercase text-gold-500/70 font-medium">
+          <span className="text-xs tracking-[0.25em] uppercase text-gold-400 font-medium">
             Felsefemiz
           </span>
         </div>

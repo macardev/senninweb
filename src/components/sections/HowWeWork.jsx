@@ -116,11 +116,11 @@ function StepCard({ step, index, total }) {
       <div className="pb-14">
         {/* Numara + süre */}
         <div className="flex items-center gap-4 mb-3">
-          <span className="text-[10px] tracking-[0.3em] uppercase text-gold-500/60 font-medium">
+          <span className="text-[10px] tracking-[0.3em] uppercase text-gold-400 font-medium">
             {step.number}
           </span>
           <span className="px-2.5 py-1 rounded-full bg-white/4 border border-white/8
-                           text-[10px] tracking-wider text-white/35">
+                           text-[10px] tracking-wider text-white/50">
             {step.duration}
           </span>
         </div>
@@ -131,7 +131,7 @@ function StepCard({ step, index, total }) {
         </h3>
 
         {/* Açıklama */}
-        <p className="text-white/45 text-sm leading-relaxed max-w-md">
+        <p className="text-white/50 text-sm leading-relaxed max-w-md">
           {step.description}
         </p>
       </div>
@@ -178,7 +178,7 @@ export default function HowWeWork() {
             >
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-8 h-px bg-gold-500" />
-                <span className="text-xs tracking-[0.25em] uppercase text-gold-500/70 font-medium">
+                <span className="text-xs tracking-[0.25em] uppercase text-gold-400 font-medium">
                   Süreç
                 </span>
               </div>
@@ -190,7 +190,7 @@ export default function HowWeWork() {
                 <span className="text-gold-gradient">çalışıyoruz?</span>
               </h2>
 
-              <p className="text-white/40 text-sm leading-relaxed mb-10 max-w-sm">
+              <p className="text-white/55 text-sm leading-relaxed mb-10 max-w-sm">
                 Şeffaf, hızlı ve sonuç odaklı bir süreç. Başlangıçtan yayına
                 kadar her adımda ne olduğunu bilirsiniz.
               </p>
@@ -209,7 +209,7 @@ export default function HowWeWork() {
                 style={{ y: rightY }}
                 className="mt-16 p-6 rounded-2xl border border-white/6 bg-white/[0.02]"
               >
-                <p className="text-xs tracking-[0.2em] uppercase text-white/30 mb-5">
+                <p className="text-xs tracking-[0.2em] uppercase text-white/50 mb-5">
                   Neden SenninWeb?
                 </p>
                 {[

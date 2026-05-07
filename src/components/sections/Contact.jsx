@@ -91,7 +91,7 @@ const handleSubmit = async (e) => {
             {/* Etiket */}
             <div className="flex items-center gap-3 mb-6">
               <span className="w-8 h-px bg-gold-500" />
-              <span className="text-xs tracking-[0.25em] uppercase text-gold-500/70 font-medium">
+              <span className="text-xs tracking-[0.25em] uppercase text-gold-400 font-medium">
                 İletişim
               </span>
             </div>
@@ -104,7 +104,7 @@ const handleSubmit = async (e) => {
               <span className="text-gold-gradient">konuşalım.</span>
             </h2>
 
-            <p className="text-white/40 text-sm leading-relaxed mb-12 max-w-sm">
+            <p className="text-white/55 text-sm leading-relaxed mb-12 max-w-sm">
               İşletmeniz için doğru dijital stratejiyi birlikte belirleyelim.
               İlk görüşme tamamen ücretsiz.
             </p>
@@ -166,7 +166,7 @@ const handleSubmit = async (e) => {
                     {item.icon}
                   </div>
                   <div>
-                    <p className="text-[11px] text-white/30 uppercase tracking-wider mb-0.5">
+                    <p className="text-[11px] text-white/50 uppercase tracking-wider mb-0.5">
                       {item.label}
                     </p>
                     {item.href ? (
@@ -192,7 +192,7 @@ const handleSubmit = async (e) => {
                          rounded-full border border-gold-500/20 bg-gold-500/5"
             >
               <div className="w-1.5 h-1.5 rounded-full bg-gold-500 animate-pulse" />
-              <span className="text-sm text-gold-400/80">
+              <span className="text-sm text-gold-300 font-medium">
                 Ortalama yanıt süresi: 24 saat içinde
               </span>
             </motion.div>
@@ -225,7 +225,7 @@ const handleSubmit = async (e) => {
                 <h3 className="font-display font-bold text-2xl text-white mb-3">
                   Mesajınız alındı!
                 </h3>
-                <p className="text-white/45 text-sm leading-relaxed">
+                <p className="text-white/55 text-sm leading-relaxed">
                   En kısa sürede macarcagatay@gmail.com
                   adresinden size dönüş yapacağız.
                 </p>
@@ -237,7 +237,7 @@ const handleSubmit = async (e) => {
                 {/* Ad Soyad + Telefon */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs text-white/30
+                    <label className="block text-xs text-white/50
                                       uppercase tracking-wider mb-2">
                       Ad Soyad
                     </label>
@@ -254,7 +254,7 @@ const handleSubmit = async (e) => {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs text-white/30
+                    <label className="block text-xs text-white/50
                                       uppercase tracking-wider mb-2">
                       Telefon
                     </label>
@@ -273,7 +273,7 @@ const handleSubmit = async (e) => {
 
                 {/* E-posta */}
                 <div>
-                  <label className="block text-xs text-white/30
+                  <label className="block text-xs text-white/50
                                     uppercase tracking-wider mb-2">
                     E-posta
                   </label>
@@ -292,7 +292,7 @@ const handleSubmit = async (e) => {
 
                 {/* Hizmet seçimi */}
                 <div>
-                  <label className="block text-xs text-white/30
+                  <label className="block text-xs text-white/50
                                     uppercase tracking-wider mb-2">
                     İlgilendiğiniz Hizmet
                   </label>
@@ -306,7 +306,7 @@ const handleSubmit = async (e) => {
                                    border transition-all duration-300 ${
                           form.service === s
                             ? 'border-gold-500/60 bg-gold-500/10 text-gold-400'
-                            : 'border-white/8 bg-white/[0.02] text-white/40 hover:border-white/20'
+                            : 'border-white/8 bg-white/[0.02] text-white/55 hover:border-white/20'
                         }`}
                       >
                         {s}
@@ -317,7 +317,7 @@ const handleSubmit = async (e) => {
 
                 {/* Mesaj */}
                 <div>
-                  <label className="block text-xs text-white/30
+                  <label className="block text-xs text-white/50
                                     uppercase tracking-wider mb-2">
                     Mesajınız
                   </label>
@@ -371,7 +371,7 @@ const handleSubmit = async (e) => {
                   </span>
                 </motion.button>
 
-                <p className="text-center text-xs text-white/20 pt-1">
+                <p className="text-center text-xs text-white/40 pt-1">
                   Bilgileriniz üçüncü şahıslarla paylaşılmaz.
                 </p>
               </form>

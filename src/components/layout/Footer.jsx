@@ -164,7 +164,7 @@ function LegalModal({ type, onClose }) {
         <div className="px-8 py-6 overflow-y-auto max-h-[60vh]
                         scrollbar-thin scrollbar-track-transparent
                         scrollbar-thumb-white/10">
-          <pre className="text-xs text-white/45 leading-relaxed
+          <pre className="text-xs text-white/55 leading-relaxed
                           whitespace-pre-wrap font-sans">
             {data.content}
           </pre>
@@ -221,7 +221,7 @@ export default function Footer() {
                 </span>
               </div>
 
-              <p className="text-sm text-white/35 leading-relaxed max-w-xs mb-6">
+              <p className="text-sm text-white/50 leading-relaxed max-w-xs mb-6">
                 İşletmeleriniz için premium web tasarım ve SEO ajansı.
                 Dijitalde güçlü bir varlık için buradayız.
               </p>
@@ -230,7 +230,7 @@ export default function Footer() {
               <div className="space-y-2">
                 <a
                   href="mailto:macarcagatay@gmail.com"
-                  className="flex items-center gap-2.5 text-xs text-white/35
+                  className="flex items-center gap-2.5 text-xs text-white/50
                              hover:text-gold-400 transition-colors duration-300 group"
                 >
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
@@ -241,7 +241,7 @@ export default function Footer() {
                   </svg>
                   macarcagatay@gmail.com
                 </a>
-                <div className="flex items-center gap-2.5 text-xs text-white/35">
+                <div className="flex items-center gap-2.5 text-xs text-white/50">
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     className="text-gold-500/50">
                     <path d="M6.5 1a4 4 0 100 8A4 4 0 006.5 1zM1 12c0-2 2.5-3 5.5-3s5.5 1 5.5 3"
@@ -257,7 +257,7 @@ export default function Footer() {
             {footerLinks.map(group => (
               <div key={group.title}>
                 <h4 className="text-[10px] font-semibold uppercase tracking-[0.2em]
-                               text-white/25 mb-5">
+                               text-white/40 mb-5">
                   {group.title}
                 </h4>
                 <ul className="space-y-3">
@@ -266,7 +266,7 @@ export default function Footer() {
                       <a
                         href={link.href}
                         onClick={e => handleNav(e, link.href)}
-                        className="text-sm text-white/40 hover:text-white
+                        className="text-sm text-white/55 hover:text-white
                                    transition-colors duration-300"
                       >
                         {link.label}
@@ -284,7 +284,7 @@ export default function Footer() {
           {/* Alt — copyright + legal */}
           <div className="py-6 flex flex-col sm:flex-row items-center
                           justify-between gap-4">
-            <p className="text-xs text-white/20 tracking-wide">
+            <p className="text-xs text-white/40 tracking-wide">
               © 2025 SenninWeb. Tüm hakları saklıdır.
             </p>
 
@@ -298,7 +298,7 @@ export default function Footer() {
                 <button
                   key={item.key}
                   onClick={() => setModal(item.key)}
-                  className="text-xs text-white/25 hover:text-white/60
+                  className="text-xs text-white/40 hover:text-white/70
                              transition-colors duration-300 underline
                              underline-offset-2 decoration-white/10"
                 >

@@ -84,10 +84,10 @@ export default function Blog() {
                     <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold-400/90">
                       {post.tag}
                     </span>
-                    <span className="text-[10px] text-white/30">•</span>
-                    <span className="text-[10px] text-white/40">{post.readingTime}</span>
+                    <span className="text-[10px] text-white/40">•</span>
+                    <span className="text-[10px] text-white/55">{post.readingTime}</span>
                   </div>
-                  <span className="text-[10px] text-white/35">{post.date}</span>
+                  <span className="text-[10px] text-white/50">{post.date}</span>
                 </div>
 
                 <h2 className="mt-4 text-xl md:text-2xl font-display font-semibold leading-snug text-white">

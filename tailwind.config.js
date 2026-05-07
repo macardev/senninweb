@@ -9,7 +9,7 @@ export default {
       },
       colors: {
         black: '#0A0A0A',
-        white: '#F5F5F5',
+        white: '#FFFFFF',
         gold: {
           300: '#FCD34D',
           400: '#FBBF24',

@@ -5,6 +5,7 @@ import Layout from "@/components/layout/Layout"
 import Home from "@/pages/Home"
 import Blog from "@/pages/Blog"
 import BlogPost from "@/pages/BlogPost"
+import Gebze from "@/pages/Gebze"
 
 
 export default function App() {
@@ -21,6 +22,9 @@ export default function App() {
 
           {/* 📝 BLOG DETAY - Dynamic routing */}
           <Route path="/blog/:slug" element={<BlogPost />} />
+
+          {/* 🌍 BÖLGESEL SAYFALAR */}
+          <Route path="/gebze" element={<Gebze />} />
         </Route>
       </Routes>
     </Router>

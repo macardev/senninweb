@@ -68,7 +68,7 @@ function UtsuriCard() {
               <h3 className="font-display font-bold text-2xl text-white tracking-tight">
                 Utsuri AI
               </h3>
-              <p className="text-xs text-white/35">utsuriai.com</p>
+              <p className="text-xs text-white/50">utsuriai.com</p>
             </div>
           </div>
 
@@ -95,7 +95,7 @@ function UtsuriCard() {
                 className="flex items-center gap-3"
               >
                 <div className="w-1 h-1 rounded-full bg-purple-400/70 flex-shrink-0" />
-                <span className="text-sm text-white/45">{feat}</span>
+                <span className="text-sm text-white/50">{feat}</span>
               </motion.div>
             ))}
           </div>
@@ -116,7 +116,7 @@ function UtsuriCard() {
                 }`}>
                   {m.value}
                 </p>
-                <p className="text-[11px] text-white/30">{m.label}</p>
+                <p className="text-[11px] text-white/50">{m.label}</p>
               </div>
             ))}
           </div>
@@ -223,8 +223,8 @@ function ShowcaseCard({ project, index }) {
       <h3 className="font-display font-bold text-lg text-white tracking-tight mb-1">
         {project.name}
       </h3>
-      <p className="text-[11px] text-white/30 mb-3">{project.category}</p>
-      <p className="text-sm text-white/45 leading-relaxed mb-5">
+      <p className="text-[11px] text-white/50 mb-3">{project.category}</p>
+      <p className="text-sm text-white/50 leading-relaxed mb-5">
         {project.description}
       </p>
 
@@ -235,13 +235,13 @@ function ShowcaseCard({ project, index }) {
             style={{ color: project.color }}>
             {project.metrics.value}
           </p>
-          <p className="text-[11px] text-white/30">{project.metrics.label}</p>
+          <p className="text-[11px] text-white/50">{project.metrics.label}</p>
         </div>
         <div className="flex gap-2">
           {project.tags.map(tag => (
             <span key={tag}
               className="px-2.5 py-1 rounded-full text-[10px] font-medium
-                         bg-white/4 border border-white/8 text-white/35">
+                         bg-white/4 border border-white/8 text-white/50">
               {tag}
             </span>
           ))}
@@ -278,7 +278,7 @@ export default function References() {
         >
           <div className="flex items-center gap-3 mb-6">
             <span className="w-8 h-px bg-gold-500" />
-            <span className="text-xs tracking-[0.25em] uppercase text-gold-500/70 font-medium">
+            <span className="text-xs tracking-[0.25em] uppercase text-gold-400 font-medium">
               Referanslar
             </span>
           </div>
@@ -290,7 +290,7 @@ export default function References() {
               <br />
               <span className="text-gold-gradient">konuşuyor.</span>
             </h2>
-            <p className="text-white/40 text-sm leading-relaxed max-w-xs md:text-right">
+            <p className="text-white/55 text-sm leading-relaxed max-w-xs md:text-right">
               Gerçek projeler, gerçek büyüme.
               Her biri sektöründe dijitalin gücünü kanıtlıyor.
             </p>
@@ -311,7 +311,7 @@ export default function References() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-center text-xs text-white/20 mt-10 tracking-wide"
+          className="text-center text-xs text-white/40 mt-10 tracking-wide"
         >
           * Özkan Mobilya ve Dr. Ayşe Kaya showcase amaçlıdır.
           Utsuri AI canlı ve aktif referanstır.

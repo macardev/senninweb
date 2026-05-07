@@ -314,21 +314,12 @@ export default function BlogPost() {
             Ana Sayfaya Dön
           </button>
 
-          <Link
-            to="/blog"
-            data-cursor
-            className="mt-5 inline-flex items-center gap-2 text-xs text-white/45 hover:text-white/80 transition-colors"
-          >
-            <span className="text-base leading-none">←</span>
-            Rehbere dön
-          </Link>
-
-          <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
+           <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
             <span className="text-gold-400/90 font-semibold">{post.tag}</span>
-            <span className="text-white/25">•</span>
-            <span className="text-white/40">{post.readingTime}</span>
-            <span className="text-white/25">•</span>
-            <span className="text-white/40">{post.date}</span>
+            <span className="text-white/40">•</span>
+            <span className="text-white/55">{post.readingTime}</span>
+            <span className="text-white/40">•</span>
+            <span className="text-white/55">{post.date}</span>
           </div>
 
           <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
@@ -371,7 +362,7 @@ export default function BlogPost() {
               >
                 Ücretsiz Teklif Al
               </Link>
-              <span className="text-xs text-white/40">
+              <span className="text-xs text-white/55">
                 Ortalama dönüş süresi: 24 saat
               </span>
             </div>

@@ -7,12 +7,24 @@ const navLinks = [
   { label: 'Hizmetler',   href: '/#services' },
   { label: 'Referanslar', href: '/#references' },
   { label: 'İletişim',    href: '/#contact' },
-  { label: 'Dijital Rehber', href: '/blog' }
+  { label: 'Dijital Rehber', href: '/blog' },
+  {
+    label: 'Hizmet Verdiğimiz Bölgeler',
+    href: '#',
+    submenu: [
+      { label: 'Gebze', href: '/gebze' },
+      { label: 'Kocaeli (Yakında)', href: '#', disabled: true },
+      { label: 'İstanbul (Yakında)', href: '#', disabled: true },
+      { label: 'Bursa (Yakında)', href: '#', disabled: true },
+    ]
+  }
 ]
 
 export default function Navbar() {
   const [scrolled,  setScrolled]  = useState(false)
   const [menuOpen,  setMenuOpen]  = useState(false)
+  const [regionsOpen, setRegionsOpen] = useState(false)
+  const [mobileRegionsOpen, setMobileRegionsOpen] = useState(false)
   const { scrollY } = useScroll()
   const navigate = useNavigate()
   const location = useLocation()
@@ -87,6 +99,54 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-10">
          {navLinks.map(link => {
+          // Submenu varsa dropdown olarak render et
+          if (link.submenu) {
+            return (
+              <div
+                key={link.label}
+                className="relative"
+                onMouseEnter={() => setRegionsOpen(true)}
+                onMouseLeave={() => setRegionsOpen(false)}
+              >
+                <button
+                  className="text-sm font-medium text-white/50 hover:text-white transition-colors duration-300 tracking-wide flex items-center gap-1"
+                >
+                  {link.label}
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {/* Dropdown Menu */}
+                {regionsOpen && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 bg-black/95 backdrop-blur-xl border border-white/10 rounded-xl py-2 z-50">
+                    {link.submenu.map((item, idx) => {
+                      if (item.disabled) {
+                        return (
+                          <span
+                            key={idx}
+                            className="block px-4 py-2 text-sm text-white/45 cursor-not-allowed"
+                          >
+                            {item.label}
+                          </span>
+                        )
+                      }
+                      return (
+                        <Link
+                          key={item.href}
+                          to={item.href}
+                          className="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+                          onClick={() => setRegionsOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                      )
+                    })}
+                  </div>
+                )}
+              </div>
+            )
+          }
 
           const isRoute = link.href.startsWith("/")
 
@@ -171,6 +231,50 @@ export default function Navbar() {
       >
         <div className="px-6 py-8 flex flex-col gap-7">
           {navLinks.map(link => {
+            // Submenu varsa
+            if (link.submenu) {
+              return (
+                <div key={link.label}>
+                  <button
+                    onClick={() => setMobileRegionsOpen(o => !o)}
+                    className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    {link.label}
+                    <svg className={`w-4 h-4 transition-transform ${mobileRegionsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  
+                  {mobileRegionsOpen && (
+                    <div className="ml-4 mt-3 flex flex-col gap-3">
+                      {link.submenu.map((item, idx) => {
+                        if (item.disabled) {
+                          return (
+                            <span key={idx} className="text-lg text-white/45 cursor-not-allowed">
+                              {item.label}
+                            </span>
+                          )
+                        }
+                        return (
+                          <Link
+                            key={item.href}
+                            to={item.href}
+                            onClick={() => {
+                              setMenuOpen(false)
+                              setMobileRegionsOpen(false)
+                            }}
+                            className="text-lg text-white/70 hover:text-white transition-colors"
+                          >
+                            {item.label}
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  )}
+                </div>
+              )
+            }
+
             const isRoute = link.href.startsWith("/")
             const isSection = link.href.startsWith("/#")
 
@@ -179,7 +283,10 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={(e) => handleNav(e, link.href)}
+                  onClick={(e) => {
+                    handleNav(e, link.href)
+                    setMenuOpen(false)
+                  }}
                   className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
                 >
                   {link.label}
@@ -204,7 +311,10 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={e => handleNav(e, link.href)}
+                onClick={e => {
+                  handleNav(e, link.href)
+                  setMenuOpen(false)
+                }}
                 className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
               >
                 {link.label}

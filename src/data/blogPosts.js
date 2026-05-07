@@ -161,7 +161,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Google sonuçlarının ilk sayfası, tüm tıklamaların %90'ını topluyor. İlk sayfada yoksanız, dijital okyanusta görünmezsiniz. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">\"SEO hizmeti\" sadece teknik bir ayar değil</a>, dükkanınızı arka sokaktan ana caddeye taşıma işlemidir."
+        content: "Google sonuçlarının ilk sayfası, tüm tıklamaların %90'ını topluyor. İlk sayfada yoksanız, dijital okyanusta görünmezsiniz. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">\"SEO hizmeti\" sadece teknik bir ayar değil</a>, dükkanınızı arka sokaktan ana caddeye taşıma işlemidir.",
+        isHtml: true
       },
       {
         type: "paragraph",
@@ -193,7 +194,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar (Google İşletme Profili)</a> kaydınızın web sitenizle uyumu hayati önem taşır:"
+        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar (Google İşletme Profili)</a> kaydınızın web sitenizle uyumu hayati önem taşır:",
+        isHtml: true
       },
       {
         type: "bulletList",
@@ -328,7 +330,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "SEO (Arama Motoru Optimizasyonu), çoğu kişinin sandığı gibi sitenin sağına soluna anahtar kelime serpiştirmek değildir. 2026 dünyasında SEO, <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google'a şu güveni vermektir: \"Kullanıcının bir derdi var ve bu derdi en kaliteli, en hızlı şekilde ben çözerim.\"</a>"
+        content: "SEO (Arama Motoru Optimizasyonu), çoğu kişinin sandığı gibi sitenin sağına soluna anahtar kelime serpiştirmek değildir. 2026 dünyasında SEO, <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google'a şu güveni vermektir: \"Kullanıcının bir derdi var ve bu derdi en kaliteli, en hızlı şekilde ben çözerim.\"</a>",
+        isHtml: true
       },
       {
         type: "paragraph",
@@ -349,7 +352,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Türkiye'deki işletmelerin %80'i aynı hatayı yapıyor: Bir web sitesi yaptırıyor, parasını ödüyor ve bir daha o siteye bakmıyor. Düşünün ki lüks bir dükkan açtınız ama vitrin 2 yıldır aynı, içeride kimse yok, raflar tozlanmış. Müşteri girer mi? Girmez. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google botları da girmez</a>. Google şunu ister: \"Bana yaşadığını kanıtla!\""
+        content: "Türkiye'deki işletmelerin %80'i aynı hatayı yapıyor: Bir web sitesi yaptırıyor, parasını ödüyor ve bir daha o siteye bakmıyor. Düşünün ki lüks bir dükkan açtınız ama vitrin 2 yıldır aynı, içeride kimse yok, raflar tozlanmış. Müşteri girer mi? Girmez. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google botları da girmez</a>. Google şunu ister: \"Bana yaşadığını kanıtla!\"",
+        isHtml: true
       },
       {
         type: "heading3",
@@ -380,7 +384,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "2026'da \"niş\" kelimelere odaklanın. \"Avukat\" kelimesinde yükselmek imkansız olabilir ama \"Bursa boşanma avukatı ücretleri\" kelimesinde zirveye oynayabilirsiniz. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Doğru anahtar kelimeleri bulmanın ilk adımı Google Search Console'u kullanmaktır</a>."
+        content: "2026'da \"niş\" kelimelere odaklanın. \"Avukat\" kelimesinde yükselmek imkansız olabilir ama \"Bursa boşanma avukatı ücretleri\" kelimesinde zirveye oynayabilirsiniz. <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Doğru anahtar kelimeleri bulmanın ilk adımı Google Search Console'u kullanmaktır</a>.",
+        isHtml: true
       },
       {
         type: "heading3",
@@ -388,7 +393,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Kullanıcı sitenize girdiğinde bir kronometre çalışır. Tasarımınız amatörse, yazılar iç içe geçmişse veya o meşhur \"SSL Sertifikası Yok\" (Güvenli Değil) uyarısı çıkıyorsa, müşteri kaçar. <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Müşteri kaçarsa \"Hemen Çıkma Oranı\" (Bounce Rate) fırlar</a> ve Google sizi cezalandırır."
+        content: "Kullanıcı sitenize girdiğinde bir kronometre çalışır. Tasarımınız amatörse, yazılar iç içe geçmişse veya o meşhur \"SSL Sertifikası Yok\" (Güvenli Değil) uyarısı çıkıyorsa, müşteri kaçar. <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Müşteri kaçarsa \"Hemen Çıkma Oranı\" (Bounce Rate) fırlar</a> ve Google sizi cezalandırır.",
+        isHtml: true
       },
       {
         type: "heading3",
@@ -396,7 +402,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "2026 yılında kimsenin bir sitenin açılmasını 5 saniye bekleyecek sabrı yok. Özellikle mobil hız, SEO'nun %50'sidir. <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Siteniz ışık hızında açılmıyorsa</a>, müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile."
+        content: "2026 yılında kimsenin bir sitenin açılmasını 5 saniye bekleyecek sabrı yok. Özellikle mobil hız, SEO'nun %50'sidir. <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Siteniz ışık hızında açılmıyorsa</a>, müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile.",
+        isHtml: true
       },
       {
         type: "heading3",
@@ -404,7 +411,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Küçük bir işletmeyseniz, tüm Türkiye ile rekabet etmenize gerek yok. <a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar (Google Business) sizin en büyük silahınız</a>. Konumunuz net mi? Müşterileriniz yorum yapmış mı? (Ve siz onlara nazikçe cevap vermiş misiniz?) Dükkanın içinden güncel fotoğraflar var mı? Eğer haritada varsanız, o mahalledeki müşterinin cebindesiniz demektir."
+        content: "Küçük bir işletmeyseniz, tüm Türkiye ile rekabet etmenize gerek yok. <a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar (Google Business) sizin en büyük silahınız</a>. Konumunuz net mi? Müşterileriniz yorum yapmış mı? (Ve siz onlara nazikçe cevap vermiş misiniz?) Dükkanın içinden güncel fotoğraflar var mı? Eğer haritada varsanız, o mahalledeki müşterinin cebindesiniz demektir.",
+        isHtml: true
       },
       {
         type: "heading3",
@@ -424,7 +432,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "<a href=\"https://support.google.com/webmasters/answer/66359\" target=\"_blank\" rel=\"noopener noreferrer\">Başka siteden yazı kopyalamak, Google'a \"Benim özgün bir fikrim yok\" demektir</a>. Direkt elenirsiniz."
+        content: "<a href=\"https://support.google.com/webmasters/answer/66359\" target=\"_blank\" rel=\"noopener noreferrer\">Başka siteden yazı kopyalamak, Google'a \"Benim özgün bir fikrim yok\" demektir</a>. Direkt elenirsiniz.",
+        isHtml: true
       },
       {
         type: "heading3",
@@ -518,7 +527,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Bugün Google'da ilk sayfada olmayan bir web sitesinin durumu tam olarak budur. İnsanlar bir hizmet aradığında ilk yaptıkları şey <a href=\"https://www.google.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Google'da arama yapmak</a>. Ve gerçek şu ki: Tıklamaların büyük çoğunluğu ilk sayfada kalıyor."
+        content: "Bugün Google'da ilk sayfada olmayan bir web sitesinin durumu tam olarak budur. İnsanlar bir hizmet aradığında ilk yaptıkları şey <a href=\"https://www.google.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Google'da arama yapmak</a>. Ve gerçek şu ki: Tıklamaların büyük çoğunluğu ilk sayfada kalıyor.",
+        isHtml: true
       },
       {
         type: "paragraph",
@@ -551,7 +561,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "Yerel ve spesifik aramalar daha hızlı sonuç getirir ve dönüşüm oranı çok daha yüksektir. Eğer <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>'u kontrol etmiyorsanız, hangi kelimelerle görünüp hangileriyle görünmediğinizi bilemezsiniz demektir."
+        content: "Yerel ve spesifik aramalar daha hızlı sonuç getirir ve dönüşüm oranı çok daha yüksektir. Eğer <a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>'u kontrol etmiyorsanız, hangi kelimelerle görünüp hangileriyle görünmediğinizi bilemezsiniz demektir.",
+        isHtml: true
       },
       {
         type: "heading2",
@@ -575,7 +586,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Maps ve yerel aramalar</a> küçük işletmeler için en büyük fırsattır. Profil optimizasyonu ve müşteri yorumları sıralamanızı doğrudan etkiler."
+        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Maps ve yerel aramalar</a> küçük işletmeler için en büyük fırsattır. Profil optimizasyonu ve müşteri yorumları sıralamanızı doğrudan etkiler.",
+        isHtml: true
       },
       {
         type: "bulletList",
@@ -644,7 +656,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "<a href=\"https://pagespeed.web.dev/?hl=tr\" target=\"_blank\" rel=\"noopener noreferrer\">Google PageSpeed Insights</a>'ta sitenizin mobil ve masaüstü hızını kontrol edin. 80 puanın altındaysa, bir sorunu vardır."
+        content: "<a href=\"https://pagespeed.web.dev/?hl=tr\" target=\"_blank\" rel=\"noopener noreferrer\">Google PageSpeed Insights</a>'ta sitenizin mobil ve masaüstü hızını kontrol edin. 80 puanın altındaysa, bir sorunu vardır.",
+        isHtml: true
       },
       {
         type: "heading3",
@@ -652,7 +665,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "<a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>'u sitenize bağlayın ve \"Sorgu Performansı\" bölümünde hangi kelimelerde göründüğünüzü görün."
+        content: "<a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>'u sitenize bağlayın ve \"Sorgu Performansı\" bölümünde hangi kelimelerde göründüğünüzü görün.",
+        isHtml: true
       },
       {
         type: "heading3",
@@ -660,7 +674,8 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google İşletme Profili</a>'ni doldurun, 5 kaliteli işletme fotoğrafı yükleyin ve müşteriler yorum yapmaya teşvik edin."
+        content: "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google İşletme Profili</a>'ni doldurun, 5 kaliteli işletme fotoğrafı yükleyin ve müşteriler yorum yapmaya teşvik edin.",
+        isHtml: true
       },
       {
         type: "heading2",
@@ -677,7 +692,8 @@ export const blogPosts = [
       {
         type: "finalCta",
         question: "Web sitenizin neden görünmediğini öğrenmek ister misiniz?",
-        ctaText: "<a href=\"#contact\" style=\"color: #FCD34D; font-weight: bold;\">Bizimle iletişime geçin</a> ve sitenizi müşteri getiren bir sisteme dönüştürelim!"
+        ctaText: "<a href=\"#contact\" style=\"color: #FCD34D; font-weight: bold;\">Bizimle iletişime geçin</a> ve sitenizi müşteri getiren bir sisteme dönüştürelim!",
+        isHtml: true
       }
     ]
   }

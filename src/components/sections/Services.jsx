@@ -98,7 +98,7 @@ function ServiceCard({ service, index }) {
 
         {/* Numara */}
         <div className="flex items-start justify-between mb-8">
-          <span className="text-[10px] tracking-[0.3em] uppercase text-gold-500/60 font-medium">
+          <span className="text-[10px] tracking-[0.3em] uppercase text-gold-500 font-medium">
             {service.number}
           </span>
           {/* Ok ikonu — hover'da görünür */}
@@ -130,7 +130,7 @@ function ServiceCard({ service, index }) {
             <span className="text-gold-gradient">{service.accent}</span>
             <span className="text-white"> {service.accentRest}</span>
           </h3>
-          <p className="text-xs tracking-[0.15em] uppercase text-white/35">
+          <p className="text-xs tracking-[0.15em] uppercase text-white/50">
             {service.subtitle}
           </p>
         </div>
@@ -146,7 +146,7 @@ function ServiceCard({ service, index }) {
         {/* Özellikler */}
         <ul className="space-y-3">
           {service.features.map((feat, i) => (
-            <li key={i} className="flex items-center gap-3 text-sm text-white/45">
+            <li key={i} className="flex items-center gap-3 text-sm text-white/50">
               <span className="w-1 h-1 rounded-full bg-gold-500/70 flex-shrink-0" />
               {feat}
             </li>
@@ -184,7 +184,7 @@ export default function Services() {
         >
           <div className="flex items-center gap-3 mb-6">
             <span className="w-8 h-px bg-gold-500" />
-            <span className="text-xs tracking-[0.25em] uppercase text-gold-500/70 font-medium">
+            <span className="text-xs tracking-[0.25em] uppercase text-gold-400 font-medium">
               Hizmetler
             </span>
           </div>
@@ -196,7 +196,7 @@ export default function Services() {
               <span className="text-gold-gradient">her şey dahil.</span>
             </h2>
 
-            <p className="text-white/40 text-sm leading-relaxed max-w-xs md:text-right">
+            <p className="text-white/55 text-sm leading-relaxed max-w-xs md:text-right">
               Web siteniz, SEO'nuz ve marka kimliğiniz —
               hepsini birlikte, hepsini premium kalitede sunuyoruz.
             </p>
@@ -223,7 +223,7 @@ export default function Services() {
             <p className="font-display font-semibold text-xl text-white mb-1">
               Hangi paketi seçeceğinizi bilmiyor musunuz?
             </p>
-            <p className="text-sm text-white/40">
+            <p className="text-sm text-white/55">
               Size özel ücretsiz danışmanlık için ulaşın.
             </p>
           </div>

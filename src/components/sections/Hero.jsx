@@ -159,7 +159,7 @@ export default function Hero() {
                 <p className="font-display font-bold text-lg sm:text-xl text-white mb-0.5 break-words">
                   {item.value}
                 </p>
-                <p className="text-xs text-white/35 tracking-wide break-words">
+                <p className="text-xs text-white/50 tracking-wide break-words">
                   {item.label}
                 </p>
               </div>
