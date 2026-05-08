@@ -1,9 +1,9 @@
-import React, { lazy, Suspense } from "react"
+import { lazy, Suspense } from "react"
 import { HashRouter as Router, Routes, Route } from "react-router-dom"
 
 import Layout from "@/components/layout/Layout"
+import Home from "@/pages/Home"
 
-const Home = lazy(() => import("@/pages/Home"))
 const Blog = lazy(() => import("@/pages/Blog"))
 const BlogPost = lazy(() => import("@/pages/BlogPost"))
 const Gebze = lazy(() => import("@/pages/Gebze"))
@@ -13,11 +13,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={
-            <Suspense fallback={<div className="min-h-screen bg-black" />}>
-              <Home />
-            </Suspense>
-          } />
+          <Route path="/" element={<Home />} />
           <Route path="/Blog" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <Blog />

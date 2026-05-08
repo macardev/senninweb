@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import { scrollToIdWithRetry } from '@/utils/scrollToId'
@@ -7,11 +6,6 @@ export default function Hero() {
   const isMobile = useIsMobile()
   const navigate = useNavigate()
   const location = useLocation()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
 
   const handleScroll = (targetId) => {
     if (location.pathname !== "/") {
@@ -37,16 +31,16 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
-        <div className={`max-w-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className="max-w-2xl">
 
-          <div style={{ transitionDelay: '0s' }}>
+          <div className="animate-heroIn" style={{ animationDelay: '0s' }}>
             <span className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-gold-500 mb-8">
               <span className="w-8 h-px bg-gold-500" />
               Premium Web Tasarım & SEO
             </span>
           </div>
 
-          <div style={{ transitionDelay: isMobile ? '0.05s' : '0.1s' }}>
+          <div className="animate-heroIn" style={{ animationDelay: isMobile ? '0.05s' : '0.1s' }}>
             <h1 className="font-display font-bold leading-[1.05] tracking-tight mb-6 max-w-full overflow-hidden break-words">
               <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white">
                 İşletmeniz için
@@ -60,14 +54,14 @@ export default function Hero() {
             </h1>
           </div>
 
-          <div style={{ transitionDelay: isMobile ? '0.1s' : '0.2s' }}>
+          <div className="animate-heroIn" style={{ animationDelay: isMobile ? '0.1s' : '0.2s' }}>
             <p className="text-base md:text-lg text-white/60 leading-relaxed mb-10 max-w-lg">
               Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde
               rakiplerinizin önüne geçiriyoruz.
             </p>
           </div>
 
-          <div style={{ transitionDelay: isMobile ? '0.15s' : '0.3s' }}>
+          <div className="animate-heroIn" style={{ animationDelay: isMobile ? '0.15s' : '0.3s' }}>
             <div className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-4">
               <button
                 onClick={() => handleScroll("contact")}
@@ -88,7 +82,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div style={{ transitionDelay: isMobile ? '0.2s' : '0.4s' }}>
+          <div className="animate-heroIn" style={{ animationDelay: isMobile ? '0.2s' : '0.4s' }}>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-16 pt-8 border-t border-white/8">
               {[
                 { value: '48s',  label: 'Ortalama yanıt süresi' },
