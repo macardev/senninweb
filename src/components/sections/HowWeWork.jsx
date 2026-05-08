@@ -1,5 +1,4 @@
-import React, { useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import useInView from '@/hooks/useInView'
 
@@ -61,96 +60,65 @@ const steps = [
 ]
 
 function StepCard({ step, index, total }) {
-  const isMobile = useIsMobile()
   const { ref, inView } = useInView({ threshold: 0.2 })
   const isLast = index === total - 1
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, x: -30 }}
-      animate={inView ? { opacity: 1, x: 0 } : {}}
-      transition={{
-        duration: 0.8,
-        delay: index * 0.12,
-        ease: [0.16, 1, 0.3, 1],
-      }}
-      style={{ willChange: inView ? 'transform, opacity' : 'auto' }}
-      className="relative flex gap-6 md:gap-10"
+      className={`relative flex gap-6 md:gap-10 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[30px]'
+      }`}
+      style={{ transitionDelay: `${index * 120}ms` }}
     >
-      {/* Sol — numara + dikey çizgi */}
       <div className="flex flex-col items-center flex-shrink-0">
-        {/* İkon çemberi */}
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={inView ? { scale: 1, opacity: 1 } : {}}
-          transition={{ delay: index * 0.12 + 0.2, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="relative w-12 h-12 rounded-full border border-gold-500/30
+        <div
+          className={`relative w-12 h-12 rounded-full border border-gold-500/30
                      bg-gold-500/5 flex items-center justify-center
-                     text-gold-400 flex-shrink-0 z-10"
+                     text-gold-400 flex-shrink-0 z-10 transition-all duration-500 ${
+            inView ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
+          }`}
+          style={{ transitionDelay: `${index * 120 + 200}ms` }}
         >
           {step.icon}
-          {/* Pulse halkası — disable on mobile */}
-          {!isMobile && (
-            <motion.div
-              animate={inView ? { scale: [1, 1.6], opacity: [0.3, 0] } : {}}
-              transition={{ duration: 2, repeat: Infinity, delay: index * 0.4 }}
-              className="absolute inset-0 rounded-full border border-gold-500/30"
-            />
-          )}
-        </motion.div>
+        </div>
 
-        {/* Dikey çizgi — son kart değilse */}
         {!isLast && (
-          <motion.div
-            initial={{ scaleY: 0 }}
-            animate={inView ? { scaleY: 1 } : {}}
-            transition={{ delay: index * 0.12 + 0.4, duration: 0.8, ease: 'easeOut' }}
-            style={{ originY: 0 }}
-            className="w-px flex-1 mt-3 bg-gradient-to-b from-gold-500/20 to-transparent"
+          <div
+            className={`w-px flex-1 mt-3 bg-gradient-to-b from-gold-500/20 to-transparent transition-all duration-[800ms] ease-out ${
+              inView ? 'scale-y-100' : 'scale-y-0'
+            }`}
+            style={{ transformOrigin: 'top', transitionDelay: `${index * 120 + 400}ms` }}
           />
         )}
       </div>
 
-      {/* Sağ — içerik */}
       <div className="pb-14">
-        {/* Numara + süre */}
         <div className="flex items-center gap-4 mb-3">
           <span className="text-[10px] tracking-[0.3em] uppercase text-gold-400 font-medium">
             {step.number}
           </span>
           <span className="px-2.5 py-1 rounded-full bg-white/4 border border-white/8
-                           text-[10px] tracking-wider text-white/50">
+                           text-[10px] tracking-wider text-white/60">
             {step.duration}
           </span>
         </div>
 
-        {/* Başlık */}
         <h3 className="font-display font-bold text-2xl md:text-3xl text-white mb-3 tracking-tight">
           {step.title}
         </h3>
 
-        {/* Açıklama */}
-        <p className="text-white/50 text-sm leading-relaxed max-w-md">
+        <p className="text-white/60 text-sm leading-relaxed max-w-md">
           {step.description}
         </p>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
 export default function HowWeWork() {
-  const isMobile = useIsMobile()
   const { ref, inView } = useInView()
   const containerRef    = useRef(null)
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start end', 'end start'],
-  })
-
-  // Sağ taraf — scroll parallax (disable on mobile for better performance)
-  const rightY = isMobile ? 0 : useTransform(scrollYProgress, [0, 1], [80, -80])
 
   return (
     <section
@@ -158,7 +126,6 @@ export default function HowWeWork() {
       ref={containerRef}
       className="relative bg-black section-pad overflow-hidden"
     >
-      {/* Arka plan */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 right-0 w-[500px] h-[500px]
                         bg-gold-500/3 blur-[160px] rounded-full -translate-y-1/2" />
@@ -167,14 +134,12 @@ export default function HowWeWork() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32">
 
-          {/* Sol — başlık sticky */}
           <div>
-            <motion.div
+            <div
               ref={ref}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:sticky lg:top-32"
+              className={`lg:sticky lg:top-32 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+              }`}
             >
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-8 h-px bg-gold-500" />
@@ -190,26 +155,26 @@ export default function HowWeWork() {
                 <span className="text-gold-gradient">çalışıyoruz?</span>
               </h2>
 
-              <p className="text-white/55 text-sm leading-relaxed mb-10 max-w-sm">
+              <p className="text-white/60 text-sm leading-relaxed mb-10 max-w-sm">
                 Şeffaf, hızlı ve sonuç odaklı bir süreç. Başlangıçtan yayına
                 kadar her adımda ne olduğunu bilirsiniz.
               </p>
 
-              {/* Toplam süre badge */}
               <div className="inline-flex items-center gap-3 px-5 py-3
                               rounded-full border border-gold-500/20 bg-gold-500/5">
-                <div className={`w-1.5 h-1.5 rounded-full bg-gold-500 ${!isMobile ? 'animate-pulse' : ''}`} />
+                <div className="w-1.5 h-1.5 rounded-full bg-gold-500" />
                 <span className="text-sm text-gold-400 font-medium">
                   Ortalama 10–19 günde teslim
                 </span>
               </div>
 
-              {/* Güven metrikleri */}
-              <motion.div
-                style={{ y: rightY }}
-                className="mt-16 p-6 rounded-2xl border border-white/6 bg-white/[0.02]"
+              <div
+                className={`mt-16 p-6 rounded-2xl border border-white/6 bg-white/[0.02] transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                  inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+                }`}
+                style={{ transitionDelay: '0.2s' }}
               >
-                <p className="text-xs tracking-[0.2em] uppercase text-white/50 mb-5">
+                <p className="text-xs tracking-[0.2em] uppercase text-white/60 mb-5">
                   Neden SenninWeb?
                 </p>
                 {[
@@ -218,12 +183,12 @@ export default function HowWeWork() {
                   'Yayın sonrası 30 gün destek',
                   'SEO her pakette standart',
                 ].map((item, i) => (
-                  <motion.div
+                  <div
                     key={i}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={inView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ delay: 0.4 + i * 0.1, duration: 0.6 }}
-                    className="flex items-center gap-3 py-3 border-b border-white/5 last:border-0"
+                    className={`flex items-center gap-3 py-3 border-b border-white/5 last:border-0 transition-all duration-[600ms] ${
+                      inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[10px]'
+                    }`}
+                    style={{ transitionDelay: `${400 + i * 100}ms` }}
                   >
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                       <path
@@ -234,14 +199,13 @@ export default function HowWeWork() {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span className="text-sm text-white/55">{item}</span>
-                  </motion.div>
+                    <span className="text-sm text-white/60">{item}</span>
+                  </div>
                 ))}
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
 
-          {/* Sağ — adımlar */}
           <div className="pt-2">
             {steps.map((step, i) => (
               <StepCard

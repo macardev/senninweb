@@ -1,10 +1,5 @@
 import { useEffect, useState } from 'react'
 
-/**
- * Hook to detect if the viewport is mobile size (< 769px)
- * Returns true for mobile, false for tablet/desktop
- * Optimized for performance: only updates on resize with debounce
- */
 export function useIsMobile() {
   const [isMobile, setIsMobile] = useState(() => {
     if (typeof window === 'undefined') return false
@@ -12,22 +7,14 @@ export function useIsMobile() {
   })
 
   useEffect(() => {
-    let timeout
-    const handleResize = () => {
-      clearTimeout(timeout)
-      timeout = setTimeout(() => {
-        setIsMobile(window.innerWidth < 769)
-      }, 150)
-    }
+    if (typeof window === 'undefined') return
 
-    // Set initial value immediately
-    setIsMobile(window.innerWidth < 769)
+    const mql = window.matchMedia('(max-width: 768px)')
+    setIsMobile(mql.matches)
 
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-      clearTimeout(timeout)
-    }
+    const handleChange = (e) => setIsMobile(e.matches)
+    mql.addEventListener('change', handleChange)
+    return () => mql.removeEventListener('change', handleChange)
   }, [])
 
   return isMobile

@@ -1,7 +1,9 @@
-import React, { useEffect, useRef, useCallback } from 'react'
+import { useEffect, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 
-export default function CustomCursor({ routeKey }) {
+export default function CustomCursor() {
+  const location = useLocation()
   const cursorRef = useRef(null)
   const dotRef    = useRef(null)
   const clickablesRef = useRef(new Set())
@@ -87,7 +89,7 @@ export default function CustomCursor({ routeKey }) {
         document.removeEventListener('mouseleave', handleMouseLeave, true)
       }
     }
-  }, [routeKey])
+  }, [location.pathname])
 
   return (
     <>

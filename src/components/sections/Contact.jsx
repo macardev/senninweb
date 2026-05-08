@@ -1,8 +1,7 @@
-import React, { useState, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { useState } from 'react'
 import useInView from '@/hooks/useInView'
 import emailjs from '@emailjs/browser'
- 
+
 
 const services = [
   'Web Tasarım',
@@ -35,8 +34,8 @@ const handleSubmit = async (e) => {
 
   try {
     await emailjs.send(
-      'service_fku436a',    // Adım 2'den aldığın Service ID
-      'template_h8x9ylc',   // Adım 3'ten aldığın Template ID
+      'service_fku436a',
+      'template_h8x9ylc',
       {
         from_name:  form.name,
         from_email: form.email,
@@ -44,7 +43,7 @@ const handleSubmit = async (e) => {
         service:    form.service  || 'Belirtilmedi',
         message:    form.message  || 'Mesaj girilmedi',
       },
-      'xx85OmC9vAmhoFav0'     // Adım 4'ten aldığın Public Key
+      'xx85OmC9vAmhoFav0'
     )
 
     setSending(false)
@@ -71,7 +70,6 @@ const handleSubmit = async (e) => {
   return (
     <section id="contact" className="relative bg-black section-pad overflow-hidden">
 
-      {/* Arka plan */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2
                         w-[700px] h-[400px] rounded-full
@@ -81,14 +79,12 @@ const handleSubmit = async (e) => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
 
-          {/* Sol — bilgi */}
-          <motion.div
+          <div
             ref={ref}
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className={`transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+              inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+            }`}
           >
-            {/* Etiket */}
             <div className="flex items-center gap-3 mb-6">
               <span className="w-8 h-px bg-gold-500" />
               <span className="text-xs tracking-[0.25em] uppercase text-gold-400 font-medium">
@@ -96,7 +92,6 @@ const handleSubmit = async (e) => {
               </span>
             </div>
 
-            {/* Başlık */}
             <h2 className="font-display font-bold text-5xl md:text-6xl
                            tracking-tight leading-tight mb-6">
               <span className="text-white">Projenizi</span>
@@ -104,12 +99,11 @@ const handleSubmit = async (e) => {
               <span className="text-gold-gradient">konuşalım.</span>
             </h2>
 
-            <p className="text-white/55 text-sm leading-relaxed mb-12 max-w-sm">
+            <p className="text-white/60 text-sm leading-relaxed mb-12 max-w-sm">
               İşletmeniz için doğru dijital stratejiyi birlikte belirleyelim.
               İlk görüşme tamamen ücretsiz.
             </p>
 
-            {/* İletişim bilgileri */}
             <div className="space-y-5">
               {[
                 {
@@ -151,13 +145,13 @@ const handleSubmit = async (e) => {
                   value: 'Bilecik & İstanbul',
                   href:  null,
                 },
-              ].map((item) => (
-                <motion.div
+              ].map((item, idx) => (
+                <div
                   key={item.label}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="flex items-center gap-4 group"
+                  className={`flex items-center gap-4 group transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                    inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'
+                  }`}
+                  style={{ transitionDelay: '200ms' }}
                 >
                   <div className="w-10 h-10 rounded-xl border border-white/8
                                   bg-white/[0.03] flex items-center justify-center
@@ -166,7 +160,7 @@ const handleSubmit = async (e) => {
                     {item.icon}
                   </div>
                   <div>
-                    <p className="text-[11px] text-white/50 uppercase tracking-wider mb-0.5">
+                    <p className="text-[11px] text-white/60 uppercase tracking-wider mb-0.5">
                       {item.label}
                     </p>
                     {item.href ? (
@@ -179,40 +173,37 @@ const handleSubmit = async (e) => {
                       <p className="text-sm text-white/60">{item.value}</p>
                     )}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
-            {/* Response time badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="inline-flex items-center gap-3 mt-12 px-5 py-3
-                         rounded-full border border-gold-500/20 bg-gold-500/5"
+            <div
+              className={`inline-flex items-center gap-3 mt-12 px-5 py-3
+                         rounded-full border border-gold-500/20 bg-gold-500/5 transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[10px]'
+              }`}
+              style={{ transitionDelay: '0.5s' }}
             >
               <div className="w-1.5 h-1.5 rounded-full bg-gold-500 animate-pulse" />
               <span className="text-sm text-gold-300 font-medium">
                 Ortalama yanıt süresi: 24 saat içinde
               </span>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          {/* Sağ — form */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          <div
+            className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+              inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+            style={{ transitionDelay: '0.15s' }}
           >
             {sent ? (
-              // Başarı mesajı
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                className="h-full flex flex-col items-center justify-center
+              <div
+                className={`h-full flex flex-col items-center justify-center
                            text-center p-12 rounded-2xl border border-gold-500/20
-                           bg-gold-500/5"
+                           bg-gold-500/5 transition-all duration-500 ${
+                  sent ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                }`}
               >
                 <div className="w-16 h-16 rounded-full border border-gold-500/40
                                 bg-gold-500/10 flex items-center justify-center mb-6">
@@ -225,19 +216,17 @@ const handleSubmit = async (e) => {
                 <h3 className="font-display font-bold text-2xl text-white mb-3">
                   Mesajınız alındı!
                 </h3>
-                <p className="text-white/55 text-sm leading-relaxed">
+                <p className="text-white/60 text-sm leading-relaxed">
                   En kısa sürede macarcagatay@gmail.com
                   adresinden size dönüş yapacağız.
                 </p>
-              </motion.div>
+              </div>
             ) : (
-              // Form
               <form onSubmit={handleSubmit} className="space-y-4">
 
-                {/* Ad Soyad + Telefon */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs text-white/50
+                    <label className="block text-xs text-white/60
                                       uppercase tracking-wider mb-2">
                       Ad Soyad
                     </label>
@@ -254,7 +243,7 @@ const handleSubmit = async (e) => {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs text-white/50
+                    <label className="block text-xs text-white/60
                                       uppercase tracking-wider mb-2">
                       Telefon
                     </label>
@@ -271,9 +260,8 @@ const handleSubmit = async (e) => {
                   </div>
                 </div>
 
-                {/* E-posta */}
                 <div>
-                  <label className="block text-xs text-white/50
+                  <label className="block text-xs text-white/60
                                     uppercase tracking-wider mb-2">
                     E-posta
                   </label>
@@ -290,9 +278,8 @@ const handleSubmit = async (e) => {
                   />
                 </div>
 
-                {/* Hizmet seçimi */}
                 <div>
-                  <label className="block text-xs text-white/50
+                  <label className="block text-xs text-white/60
                                     uppercase tracking-wider mb-2">
                     İlgilendiğiniz Hizmet
                   </label>
@@ -302,11 +289,11 @@ const handleSubmit = async (e) => {
                         key={s}
                         type="button"
                         onClick={() => setForm(f => ({ ...f, service: s }))}
-                        className={`px-4 py-2 rounded-full text-xs font-medium
-                                   border transition-all duration-300 ${
+                        className={`px-4 py-3 rounded-full text-xs font-medium
+                                   border transition-all duration-300 min-h-[44px] ${
                           form.service === s
                             ? 'border-gold-500/60 bg-gold-500/10 text-gold-400'
-                            : 'border-white/8 bg-white/[0.02] text-white/55 hover:border-white/20'
+                            : 'border-white/8 bg-white/[0.02] text-white/60 hover:border-white/20'
                         }`}
                       >
                         {s}
@@ -315,9 +302,8 @@ const handleSubmit = async (e) => {
                   </div>
                 </div>
 
-                {/* Mesaj */}
                 <div>
-                  <label className="block text-xs text-white/50
+                  <label className="block text-xs text-white/60
                                     uppercase tracking-wider mb-2">
                     Mesajınız
                   </label>
@@ -333,12 +319,9 @@ const handleSubmit = async (e) => {
                   />
                 </div>
 
-                {/* Gönder butonu */}
-                <motion.button
+                <button
                   type="submit"
                   disabled={sending}
-                  whileHover={!sending ? { scale: 1.02 } : {}}
-                  whileTap={!sending  ? { scale: 0.98 } : {}}
                   className="relative w-full py-4 rounded-xl font-medium
                              text-sm tracking-wide overflow-hidden group
                              disabled:opacity-70 disabled:cursor-not-allowed"
@@ -350,12 +333,8 @@ const handleSubmit = async (e) => {
                                    gap-2 text-black font-semibold">
                     {sending ? (
                       <>
-                        <motion.span
-                          animate={{ rotate: 360 }}
-                          transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-                          className="block w-4 h-4 border-2 border-black/30
-                                     border-t-black rounded-full"
-                        />
+                        <span className="block w-4 h-4 border-2 border-black/30
+                                        border-t-black rounded-full animate-spin" />
                         Gönderiliyor...
                       </>
                     ) : (
@@ -369,14 +348,14 @@ const handleSubmit = async (e) => {
                       </>
                     )}
                   </span>
-                </motion.button>
+                </button>
 
-                <p className="text-center text-xs text-white/40 pt-1">
+                <p className="text-center text-xs text-white/55 pt-1">
                   Bilgileriniz üçüncü şahıslarla paylaşılmaz.
                 </p>
               </form>
             )}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

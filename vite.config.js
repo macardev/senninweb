@@ -17,14 +17,14 @@ export default defineConfig({
         manualChunks: (id) => {
           // Vendor chunks - split heavy libraries
           if (id.includes('node_modules')) {
-            if (id.includes('react') || id.includes('@react')) {
-              return 'vendor-react'
-            }
             if (id.includes('framer-motion')) {
               return 'vendor-motion'
             }
             if (id.includes('emailjs')) {
               return 'vendor-email'
+            }
+            if (id.includes('react') || id.includes('react-dom') || id.includes('scheduler')) {
+              return 'vendor-react'
             }
             return 'vendor-other'
           }
@@ -45,7 +45,6 @@ export default defineConfig({
         },
       },
     },
-    // Increase chunk size warning limit for three.js and framer-motion
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500,
   },
 })

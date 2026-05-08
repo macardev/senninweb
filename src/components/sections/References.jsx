@@ -1,9 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import useInView from '@/hooks/useInView'
-
-
-// ─── Placeholder Görseller ───────────────────────────────────────────
 
 function ModelPlaceholder() {
   return (
@@ -115,9 +112,6 @@ function FurniturePlaceholder() {
   )
 }
 
-
-// ─── Referans Verileri ──────────────────────────────────────────────
-
 const references = [
   {
     id: 'utsuri',
@@ -187,9 +181,6 @@ const references = [
   },
 ]
 
-
-// ─── Placeholder Seçici ──────────────────────────────────────────────
-
 function PlaceholderImage({ type }) {
   switch (type) {
     case 'model': return <ModelPlaceholder />
@@ -199,22 +190,17 @@ function PlaceholderImage({ type }) {
   }
 }
 
-
-// ─── Referans Kartı ───────────────────────────────────────────────────
-
 function ReferenceCard({ data, index, inView }) {
   const a = data.accent
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
-      className="relative rounded-2xl overflow-hidden border border-white/6
-                 bg-white/[0.02] mx-1 md:mx-3"
-      style={{ minHeight: 500 }}
+    <div
+      className={`relative rounded-2xl overflow-hidden border border-white/6
+                 bg-white/[0.02] mx-1 md:mx-3 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+      style={{ minHeight: 500, transitionDelay: `${index * 150}ms` }}
     >
-      {/* Glow arka planı */}
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute inset-0 opacity-[0.08]"
@@ -226,15 +212,12 @@ function ReferenceCard({ data, index, inView }) {
 
       <div className="relative z-10 flex flex-col h-full">
 
-        {/* Görsel alanı */}
         <div className="relative w-full h-[200px] md:h-[260px] bg-black overflow-hidden">
           <PlaceholderImage type={data.placeholder} />
         </div>
 
-        {/* İçerik */}
         <div className="p-6 md:p-8 flex flex-col flex-1">
 
-          {/* Kategori */}
           <div className="flex items-center gap-3 mb-4">
             <span className="w-6 h-px" style={{ backgroundColor: a.hex }} />
             <span
@@ -245,7 +228,6 @@ function ReferenceCard({ data, index, inView }) {
             </span>
           </div>
 
-          {/* İsim + Domain */}
           <div className="flex items-center gap-3 mb-4">
             <div
               className="w-10 h-10 rounded-xl flex items-center justify-center text-lg"
@@ -262,38 +244,34 @@ function ReferenceCard({ data, index, inView }) {
               <h3 className="font-display font-bold text-2xl text-white tracking-tight">
                 {data.name}
               </h3>
-              <p className="text-xs text-white/50">{data.domain}</p>
+              <p className="text-xs text-white/60">{data.domain}</p>
             </div>
           </div>
 
-          {/* Açıklama */}
-          <p className="text-white/50 text-sm leading-relaxed mb-6">
+          <p className="text-white/60 text-sm leading-relaxed mb-6">
             {data.description}
           </p>
 
-          {/* Özellikler */}
           <div className="space-y-2.5 mb-8">
             {data.features.map((feat, i) => (
-              <motion.div
+              <div
                 key={i}
-                initial={{ opacity: 0, x: -10 }}
-                animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ delay: 0.3 + i * 0.08, duration: 0.5 }}
-                className="flex items-center gap-3"
+                className={`flex items-center gap-3 transition-all duration-500 ${
+                  inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[10px]'
+                }`}
+                style={{ transitionDelay: `${300 + i * 80}ms` }}
               >
                 <div
                   className="w-1 h-1 rounded-full flex-shrink-0"
                   style={{ backgroundColor: `${a.hex}b3` }}
                 />
-                <span className="text-sm text-white/50">{feat}</span>
-              </motion.div>
+                <span className="text-sm text-white/60">{feat}</span>
+              </div>
             ))}
           </div>
 
-          {/* Ayraç */}
           <div className="w-full h-px bg-white/6 mb-6" />
 
-          {/* Metrikler + Tagler */}
           <div className="flex items-center justify-between mt-auto">
             <div className="flex gap-6">
               {data.metrics.map((m, i) => (
@@ -301,7 +279,7 @@ function ReferenceCard({ data, index, inView }) {
                   <p className="font-display font-bold text-base mb-0.5" style={{ color: a.hex }}>
                     {m.value}
                   </p>
-                  <p className="text-[11px] text-white/50">{m.label}</p>
+                  <p className="text-[11px] text-white/60">{m.label}</p>
                 </div>
               ))}
             </div>
@@ -310,7 +288,7 @@ function ReferenceCard({ data, index, inView }) {
                 <span
                   key={tag}
                   className="px-2.5 py-1 rounded-full text-[10px] font-medium
-                             bg-white/4 border border-white/8 text-white/50"
+                             bg-white/4 border border-white/8 text-white/60"
                 >
                   {tag}
                 </span>
@@ -318,7 +296,6 @@ function ReferenceCard({ data, index, inView }) {
             </div>
           </div>
 
-          {/* CTA */}
           {data.url && (
             <div className="mt-6 pt-4 border-t border-white/6">
               <a
@@ -327,14 +304,10 @@ function ReferenceCard({ data, index, inView }) {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                <button
                   className="flex items-center gap-2.5 text-sm font-medium
                             transition-colors duration-300 group/btn"
                   style={{ color: `${a.hex}cc` }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = a.hex}
-                  onMouseLeave={(e) => e.currentTarget.style.color = `${a.hex}cc`}
                 >
                   <span>Siteyi Ziyaret Et</span>
                   <span
@@ -348,18 +321,15 @@ function ReferenceCard({ data, index, inView }) {
                         strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </span>
-                </motion.button>
+                </button>
               </a>
             </div>
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
-
-
-// ─── Ana Section ─────────────────────────────────────────────────────
 
 export default function References() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -389,7 +359,6 @@ export default function References() {
 
   return (
     <section id="references" className="relative bg-black section-pad overflow-hidden">
-      {/* Arka plan glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[400px]
                         bg-purple-900/8 blur-[180px] rounded-full" />
@@ -398,13 +367,11 @@ export default function References() {
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        {/* Header */}
-        <motion.div
+        <div
           ref={ref}
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-16"
+          className={`mb-16 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+            inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
+          }`}
         >
           <div className="flex items-center gap-3 mb-6">
             <span className="w-8 h-px bg-gold-500" />
@@ -420,16 +387,14 @@ export default function References() {
               <br />
               <span className="text-gold-gradient">konuşuyor.</span>
             </h2>
-            <p className="text-white/55 text-sm leading-relaxed max-w-xs md:text-right">
+            <p className="text-white/60 text-sm leading-relaxed max-w-xs md:text-right">
               Gerçek projeler, gerçek büyüme.
               Her biri sektöründe dijitalin gücünü kanıtlıyor.
             </p>
           </div>
-        </motion.div>
+        </div>
 
-        {/* ─── Carousel ─────────────────────────────────────────── */}
         <div className="relative">
-          {/* Slide Container */}
           <div className="overflow-hidden rounded-2xl">
             <motion.div
               className="flex"
@@ -448,12 +413,11 @@ export default function References() {
             </motion.div>
           </div>
 
-          {/* Navigasyon Okları */}
           {currentIndex > 0 && (
             <button
               onClick={goPrev}
               className="absolute left-3 top-1/2 -translate-y-1/2 z-20
-                         w-10 h-10 rounded-full bg-black/60 backdrop-blur-sm
+                         w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm
                          border border-white/10 flex items-center justify-center
                          text-white/70 hover:text-white hover:bg-black/80
                          hover:border-white/20 transition-all duration-300"
@@ -469,7 +433,7 @@ export default function References() {
             <button
               onClick={goNext}
               className="absolute right-3 top-1/2 -translate-y-1/2 z-20
-                         w-10 h-10 rounded-full bg-black/60 backdrop-blur-sm
+                         w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm
                          border border-white/10 flex items-center justify-center
                          text-white/70 hover:text-white hover:bg-black/80
                          hover:border-white/20 transition-all duration-300"
@@ -483,13 +447,12 @@ export default function References() {
           )}
         </div>
 
-        {/* Dot Indicator'lar */}
         <div className="flex items-center justify-center gap-3 mt-10">
           {references.map((data, i) => (
             <button
               key={data.id}
               onClick={() => goTo(i)}
-              className="transition-all duration-500 rounded-full"
+              className="transition-all duration-500 rounded-full p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
               aria-label={`${data.name} referansına git`}
             >
               {i === currentIndex ? (
@@ -502,17 +465,15 @@ export default function References() {
           ))}
         </div>
 
-        {/* Alt not */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-center text-xs text-white/40 mt-10 tracking-wide"
+        <p
+          className={`text-center text-xs text-white/55 mt-10 tracking-wide transition-all duration-[800ms] ${
+            inView ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{ transitionDelay: '0.5s' }}
         >
           Özkan Mobilya showcase amaçlıdır.
           Utsuri AI ve Miss Butik Pasta canlı ve aktif referanslardır.
-        </motion.p>
+        </p>
       </div>
     </section>
   )

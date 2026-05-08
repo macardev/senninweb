@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useMemo, useState } from "react"
+import { lazy, Suspense, useEffect, useState } from "react"
 import { Outlet, useLocation } from "react-router-dom"
 
 import Navbar from "@/components/layout/Navbar"
@@ -55,16 +55,11 @@ export default function Layout() {
     setTimeout(() => scrollToIdWithRetry(id), 0)
   }, [location.pathname, location.hash])
 
-  const cursorKey = useMemo(
-    () => `${location.pathname}${location.search}${location.hash}`,
-    [location.pathname, location.search, location.hash]
-  )
-
   return (
     <>
       {cursorEnabled && (
         <Suspense fallback={null}>
-          <CustomCursor routeKey={cursorKey} />
+          <CustomCursor />
         </Suspense>
       )}
 
@@ -79,4 +74,3 @@ export default function Layout() {
     </>
   )
 }
-

@@ -60,7 +60,7 @@ export default function Blog() {
           <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight">
             Web Tasarım ve SEO Rehberi
           </h1>
-          <p className="mt-3 text-sm md:text-base text-white/55 max-w-2xl leading-relaxed">
+          <p className="mt-3 text-sm md:text-base text-white/60 max-w-2xl leading-relaxed">
             Küçük işletmeler için modern web tasarım, dönüşüm optimizasyonu ve SEO üzerine pratik yazılar.
           </p>
 
@@ -84,20 +84,20 @@ export default function Blog() {
                     <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold-400/90">
                       {post.tag}
                     </span>
-                    <span className="text-[10px] text-white/40">•</span>
-                    <span className="text-[10px] text-white/55">{post.readingTime}</span>
+                    <span className="text-[10px] text-white/55">•</span>
+                    <span className="text-[10px] text-white/60">{post.readingTime}</span>
                   </div>
-                  <span className="text-[10px] text-white/50">{post.date}</span>
+                  <span className="text-[10px] text-white/60">{post.date}</span>
                 </div>
 
                 <h2 className="mt-4 text-xl md:text-2xl font-display font-semibold leading-snug text-white">
                   {post.shortTitle}
                 </h2>
-                <p className="mt-3 text-sm text-white/55 leading-relaxed">
+                <p className="mt-3 text-sm text-white/60 leading-relaxed">
                   {post.desc}
                 </p>
 
-                <div className="mt-6 inline-flex items-center gap-2 text-sm text-white/70 group-hover:text-white transition-colors">
+                <div className="mt-6 inline-flex items-center gap-2 text-sm text-white/70 group-hover:text-white transition-colors min-h-[44px]">
                   Devamını oku
                   <span className="inline-block translate-x-0 group-hover:translate-x-1 transition-transform">
                     →

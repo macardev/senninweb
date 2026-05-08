@@ -151,10 +151,10 @@ export default function Gebze() {
 
           <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
             <span className="text-gold-400/90 font-semibold">Gebze</span>
-            <span className="text-white/40">•</span>
-            <span className="text-white/55">Yerel SEO</span>
-            <span className="text-white/40">•</span>
-            <span className="text-white/55">Web Tasarım</span>
+            <span className="text-white/55">•</span>
+            <span className="text-white/60">Yerel SEO</span>
+            <span className="text-white/55">•</span>
+            <span className="text-white/60">Web Tasarım</span>
           </div>
 
           <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
@@ -173,12 +173,12 @@ export default function Gebze() {
               case "heroSection":
                 return (
                   <div key={index} className="space-y-4">
-                    <h1 className="text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
                       {section.title}
-                    </h1>
-                    <h2 className="text-xl md:text-2xl font-display font-semibold text-white/80">
-                      {section.subtitle}
                     </h2>
+                    <h3 className="text-xl md:text-2xl font-display font-semibold text-white/80">
+                      {section.subtitle}
+                    </h3>
                   </div>
                 )
               case "heading2":
@@ -225,9 +225,9 @@ export default function Gebze() {
                 return (
                   <section key={index} className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-10">
                     <div className="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 blur-[70px] pointer-events-none" />
-                    <h3 className="relative text-lg md:text-2xl font-display font-semibold text-white">
+                    <h2 className="relative text-lg md:text-2xl font-display font-semibold text-white">
                       {section.question}
-                    </h3>
+                    </h2>
                     <p className="relative mt-3 text-sm md:text-base text-white/60 leading-relaxed max-w-xl">
                       {section.ctaText}
                     </p>

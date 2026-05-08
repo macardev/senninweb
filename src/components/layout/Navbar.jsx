@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 
@@ -26,24 +26,25 @@ export default function Navbar() {
   const [mobileRegionsOpen, setMobileRegionsOpen] = useState(false)
   const navigate = useNavigate()
   const location = useLocation()
+  const scrollRAF = useRef(null)
 
   useEffect(() => {
-    let lastUpdate = 0
-    const throttleDelay = 100
-
     const handleScroll = () => {
-      const now = Date.now()
-      if (now - lastUpdate > throttleDelay) {
+      if (scrollRAF.current) return
+      scrollRAF.current = requestAnimationFrame(() => {
         setScrolled(window.scrollY > 50)
-        lastUpdate = now
-      }
+        scrollRAF.current = null
+      })
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      if (scrollRAF.current) cancelAnimationFrame(scrollRAF.current)
+    }
   }, [])
 
-  const handleNav = (e, href) => {
+  const handleNav = useCallback((e, href) => {
     e.preventDefault()
     setMenuOpen(false)
 
@@ -58,7 +59,7 @@ export default function Navbar() {
     }
 
     scrollToIdWithRetry(targetId)
-  }
+  }, [location.pathname, navigate])
 
   return (
     <header
@@ -70,7 +71,6 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
 
-        {/* Logo */}
         <a
           href="/"
           onClick={(e) => {
@@ -91,7 +91,6 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-10">
          {navLinks.map(link => {
           if (link.submenu) {
@@ -103,7 +102,7 @@ export default function Navbar() {
                 onMouseLeave={() => setRegionsOpen(false)}
               >
                 <button
-                  className="text-sm font-medium text-white/50 hover:text-white transition-colors duration-300 tracking-wide flex items-center gap-1"
+                  className="text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 tracking-wide flex items-center gap-1"
                 >
                   {link.label}
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,7 +117,7 @@ export default function Navbar() {
                         return (
                           <span
                             key={idx}
-                            className="block px-4 py-2 text-sm text-white/45 cursor-not-allowed"
+                            className="block px-4 py-2 text-sm text-white/55 cursor-not-allowed"
                           >
                             {item.label}
                           </span>
@@ -128,7 +127,7 @@ export default function Navbar() {
                         <Link
                           key={item.href}
                           to={item.href}
-                          className="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+                          className="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors min-h-[44px] flex items-center"
                           onClick={() => setRegionsOpen(false)}
                         >
                           {item.label}
@@ -148,7 +147,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-sm font-medium text-white/50 hover:text-white transition-colors duration-300 tracking-wide"
+                className="text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 tracking-wide"
               >
                 {link.label}
               </Link>
@@ -160,7 +159,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={e => handleNav(e, link.href)}
-                className="text-sm font-medium text-white/50 hover:text-white transition-colors duration-300 tracking-wide"
+                className="text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 tracking-wide"
               >
                 {link.label}
               </a>
@@ -168,7 +167,6 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* CTA */}
         <div className="hidden md:block">
           <a href="/#contact" onClick={e => handleNav(e, '/#contact')}>
             <button
@@ -183,9 +181,8 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile hamburger */}
         <button
-          className="md:hidden flex flex-col gap-[5px] p-2 z-50"
+          className="md:hidden flex flex-col gap-[5px] p-3 z-50 min-w-[44px] min-h-[44px] items-center justify-center"
           onClick={() => setMenuOpen(o => !o)}
           aria-label="Menüyü aç"
         >
@@ -207,7 +204,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden bg-black/95 backdrop-blur-xl border-t border-white/5 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           menuOpen
@@ -222,7 +218,7 @@ export default function Navbar() {
                 <div key={link.label}>
                   <button
                     onClick={() => setMobileRegionsOpen(o => !o)}
-                    className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors flex items-center gap-2"
+                    className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors flex items-center gap-2 min-h-[44px]"
                   >
                     {link.label}
                     <svg className={`w-4 h-4 transition-transform duration-300 ${mobileRegionsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -235,7 +231,7 @@ export default function Navbar() {
                       {link.submenu.map((item, idx) => {
                         if (item.disabled) {
                           return (
-                            <span key={idx} className="text-lg text-white/45 cursor-not-allowed">
+                            <span key={idx} className="text-lg text-white/55 cursor-not-allowed min-h-[44px] flex items-center">
                               {item.label}
                             </span>
                           )
@@ -248,7 +244,7 @@ export default function Navbar() {
                               setMenuOpen(false)
                               setMobileRegionsOpen(false)
                             }}
-                            className="text-lg text-white/70 hover:text-white transition-colors"
+                            className="text-lg text-white/70 hover:text-white transition-colors min-h-[44px] flex items-center"
                           >
                             {item.label}
                           </Link>
@@ -272,7 +268,7 @@ export default function Navbar() {
                     handleNav(e, link.href)
                     setMenuOpen(false)
                   }}
-                  className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
+                  className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors min-h-[44px] flex items-center"
                 >
                   {link.label}
                 </a>
@@ -285,7 +281,7 @@ export default function Navbar() {
                   key={link.href}
                   to={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
+                  className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors min-h-[44px] flex items-center"
                 >
                   {link.label}
                 </Link>
@@ -300,7 +296,7 @@ export default function Navbar() {
                   handleNav(e, link.href)
                   setMenuOpen(false)
                 }}
-                className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors"
+                className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors min-h-[44px] flex items-center"
               >
                 {link.label}
               </a>

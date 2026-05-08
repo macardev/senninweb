@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react'
 import { useLocation, useNavigate } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 
@@ -123,24 +122,17 @@ function LegalModal({ type, onClose }) {
   if (!data) return null
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      onClick={onClose}
+    <div
       className="fixed inset-0 z-[9998] flex items-end sm:items-center
                  justify-center p-4 bg-black/80 backdrop-blur-sm"
+      onClick={onClose}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 60, scale: 0.97 }}
-        animate={{ opacity: 1, y: 0,  scale: 1    }}
-        exit={{    opacity: 0, y: 60, scale: 0.97 }}
-        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+      <div
         onClick={e => e.stopPropagation()}
         className="relative w-full max-w-2xl max-h-[80vh] rounded-2xl
-                   border border-white/10 bg-[#0f0f0f] overflow-hidden"
+                   border border-white/10 bg-[#0f0f0f] overflow-hidden
+                   animate-modalIn"
       >
-        {/* Header */}
         <div className="flex items-center justify-between px-8 py-5
                         border-b border-white/6">
           <h3 className="font-display font-bold text-lg text-white">
@@ -148,9 +140,9 @@ function LegalModal({ type, onClose }) {
           </h3>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full border border-white/10
-                       flex items-center justify-center
-                       text-white/40 hover:text-white
+                    className="w-8 h-8 rounded-full border border-white/10
+                               flex items-center justify-center
+                               text-white/55 hover:text-white
                        hover:border-white/30 transition-colors"
           >
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -160,17 +152,16 @@ function LegalModal({ type, onClose }) {
           </button>
         </div>
 
-        {/* Content */}
         <div className="px-8 py-6 overflow-y-auto max-h-[60vh]
                         scrollbar-thin scrollbar-track-transparent
                         scrollbar-thumb-white/10">
-          <pre className="text-xs text-white/55 leading-relaxed
+          <pre className="text-xs text-white/60 leading-relaxed
                           whitespace-pre-wrap font-sans">
             {data.content}
           </pre>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   )
 }
 
@@ -198,17 +189,14 @@ export default function Footer() {
     <>
       <footer className="relative bg-black border-t border-white/5 overflow-hidden">
 
-        {/* Subtle glow */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2
                         w-[500px] h-[200px] bg-gold-500/3
                         blur-[120px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
 
-          {/* Üst — ana içerik */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 py-16">
 
-            {/* Marka */}
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-5">
                 <div className="relative w-8 h-8">
@@ -221,16 +209,15 @@ export default function Footer() {
                 </span>
               </div>
 
-              <p className="text-sm text-white/50 leading-relaxed max-w-xs mb-6">
+              <p className="text-sm text-white/60 leading-relaxed max-w-xs mb-6">
                 İşletmeleriniz için premium web tasarım ve SEO ajansı.
                 Dijitalde güçlü bir varlık için buradayız.
               </p>
 
-              {/* İletişim bilgileri */}
               <div className="space-y-2">
                 <a
                   href="mailto:macarcagatay@gmail.com"
-                  className="flex items-center gap-2.5 text-xs text-white/50
+                  className="flex items-center gap-2.5 text-xs text-white/60
                              hover:text-gold-400 transition-colors duration-300 group"
                 >
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
@@ -241,7 +228,7 @@ export default function Footer() {
                   </svg>
                   macarcagatay@gmail.com
                 </a>
-                <div className="flex items-center gap-2.5 text-xs text-white/50">
+                <div className="flex items-center gap-2.5 text-xs text-white/60">
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                     className="text-gold-500/50">
                     <path d="M6.5 1a4 4 0 100 8A4 4 0 006.5 1zM1 12c0-2 2.5-3 5.5-3s5.5 1 5.5 3"
@@ -253,11 +240,10 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Link grupları */}
             {footerLinks.map(group => (
               <div key={group.title}>
                 <h4 className="text-[10px] font-semibold uppercase tracking-[0.2em]
-                               text-white/40 mb-5">
+                               text-white/55 mb-5">
                   {group.title}
                 </h4>
                 <ul className="space-y-3">
@@ -266,7 +252,7 @@ export default function Footer() {
                       <a
                         href={link.href}
                         onClick={e => handleNav(e, link.href)}
-                        className="text-sm text-white/55 hover:text-white
+                         className="text-sm text-white/60 hover:text-white
                                    transition-colors duration-300"
                       >
                         {link.label}
@@ -278,17 +264,14 @@ export default function Footer() {
             ))}
           </div>
 
-          {/* Ayraç */}
           <div className="gold-line opacity-10" />
 
-          {/* Alt — copyright + legal */}
           <div className="py-6 flex flex-col sm:flex-row items-center
                           justify-between gap-4">
-            <p className="text-xs text-white/40 tracking-wide">
+            <p className="text-xs text-white/55 tracking-wide">
               © 2025 SenninWeb. Tüm hakları saklıdır.
             </p>
 
-            {/* Legal linkler */}
             <div className="flex items-center gap-6">
               {[
                 { key: 'kvkk',     label: 'KVKK'               },
@@ -298,9 +281,9 @@ export default function Footer() {
                 <button
                   key={item.key}
                   onClick={() => setModal(item.key)}
-                  className="text-xs text-white/40 hover:text-white/70
+                  className="text-xs text-white/55 hover:text-white/70
                              transition-colors duration-300 underline
-                             underline-offset-2 decoration-white/10"
+                             underline-offset-2 decoration-white/10 min-h-[44px] flex items-center"
                 >
                   {item.label}
                 </button>
@@ -310,12 +293,9 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* Modal */}
-      <AnimatePresence>
-        {modal && (
-          <LegalModal type={modal} onClose={() => setModal(null)} />
-        )}
-      </AnimatePresence>
+      {modal && (
+        <LegalModal type={modal} onClose={() => setModal(null)} />
+      )}
     </>
   )
 }

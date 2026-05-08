@@ -22,7 +22,7 @@ export default function BlogCTA() {
               <h2 className="mt-4 text-2xl md:text-4xl font-display font-bold tracking-tight text-white">
                 Dijital Rehberler ile İşinizi Büyütün
               </h2>
-              <p className="mt-3 text-sm md:text-base text-white/55 leading-relaxed">
+              <p className="mt-3 text-sm md:text-base text-white/60 leading-relaxed">
                 Web tasarım, SEO ve dijital büyüme hakkında hazırladığımız rehberlerle işletmenizi bir adım öne taşıyın.
               </p>
             </div>

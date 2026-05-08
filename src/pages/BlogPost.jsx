@@ -30,12 +30,12 @@ function renderSection(section, index) {
     case "heroSection":
       return (
         <div key={index} className="space-y-4">
-          <h1 className="text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
             {section.title}
-          </h1>
-          <h2 className="text-xl md:text-2xl font-display font-semibold text-white/80">
-            {section.subtitle}
           </h2>
+          <h3 className="text-xl md:text-2xl font-display font-semibold text-white/80">
+            {section.subtitle}
+          </h3>
         </div>
       )
 
@@ -316,19 +316,19 @@ export default function BlogPost() {
 
            <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
             <span className="text-gold-400/90 font-semibold">{post.tag}</span>
-            <span className="text-white/40">•</span>
-            <span className="text-white/55">{post.readingTime}</span>
-            <span className="text-white/40">•</span>
-            <span className="text-white/55">{post.date}</span>
+            <span className="text-white/55">•</span>
+            <span className="text-white/60">{post.readingTime}</span>
+            <span className="text-white/55">•</span>
+            <span className="text-white/60">{post.date}</span>
           </div>
 
           <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
             {post.shortTitle}
           </h1>
-          <p className="mt-3 text-xs md:text-sm text-white/60">
+          <p className="mt-3 text-xs md:text-sm text-white/65">
             Yazar: {post.author} • {post.authorTitle}
           </p>
-          <p className="mt-5 text-sm md:text-base text-white/60 leading-relaxed">
+          <p className="mt-5 text-sm md:text-base text-white/65 leading-relaxed">
             {post.description}
           </p>
 
@@ -341,10 +341,10 @@ export default function BlogPost() {
           <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-10">
             <div className="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 blur-[70px] pointer-events-none" />
 
-            <h3 className="relative text-lg md:text-2xl font-display font-semibold text-white">
+            <h2 className="relative text-lg md:text-2xl font-display font-semibold text-white">
               Hazır mısınız?
-            </h3>
-            <p className="relative mt-3 text-sm md:text-base text-white/60 leading-relaxed max-w-xl">
+            </h2>
+            <p className="relative mt-3 text-sm md:text-base text-white/65 leading-relaxed max-w-xl">
               Web sitenizi müşteri kazandıran, premium bir sisteme dönüştürelim. Hız, SEO ve dönüşüm odaklı bir planı birlikte çıkaralım.
             </p>
 
@@ -362,7 +362,7 @@ export default function BlogPost() {
               >
                 Ücretsiz Teklif Al
               </Link>
-              <span className="text-xs text-white/55">
+              <span className="text-xs text-white/60">
                 Ortalama dönüş süresi: 24 saat
               </span>
             </div>
