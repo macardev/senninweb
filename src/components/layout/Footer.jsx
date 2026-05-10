@@ -235,7 +235,7 @@ export default function Footer() {
                       stroke="currentColor" strokeWidth="1.2"
                       strokeLinecap="round"/>
                   </svg>
-                  Bilecik & İstanbul, Türkiye
+                  Çukurören Küme Evleri Cumhuriyet Cad. NO:32 D:1 Gölpazarı/Bilecik
                 </div>
               </div>
             </div>

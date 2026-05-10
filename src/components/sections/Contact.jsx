@@ -142,7 +142,7 @@ const handleSubmit = async (e) => {
                     </svg>
                   ),
                   label: 'Konum',
-                  value: 'Bilecik & İstanbul',
+                  value: 'Çukurören Küme Evleri Cumhuriyet Cad. NO:32 D:1 Gölpazarı/Bilecik',
                   href:  null,
                 },
               ].map((item, idx) => (
