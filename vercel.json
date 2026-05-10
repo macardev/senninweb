@@ -1,5 +1,7 @@
 {
   "rewrites": [
-    { "source": "/((?!api|assets|favicon|_next|static|robots\\.txt|sitemap\\.xml|favicon\\.ico).*)", "destination": "/index.html" }
+    { "source": "/blog", "destination": "/index.html" },
+    { "source": "/blog/:path*", "destination": "/index.html" },
+    { "source": "/gebze", "destination": "/index.html" }
   ]
 }
