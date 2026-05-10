@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react"
-import { HashRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Layout from "@/components/layout/Layout"
 import Home from "@/pages/Home"
@@ -14,11 +14,6 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/Blog" element={
-            <Suspense fallback={<div className="min-h-screen bg-black" />}>
-              <Blog />
-            </Suspense>
-          } />
           <Route path="/blog" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <Blog />
