@@ -196,7 +196,7 @@ function ReferenceCard({ data, index, inView }) {
   return (
     <div
       className={`relative rounded-2xl overflow-hidden border border-white/6
-                 bg-white/[0.02] mx-1 md:mx-3 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                 bg-white/[0.02] mx-0 sm:mx-3 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
       style={{ minHeight: 500, transitionDelay: `${index * 150}ms` }}
@@ -272,8 +272,8 @@ function ReferenceCard({ data, index, inView }) {
 
           <div className="w-full h-px bg-white/6 mb-6" />
 
-          <div className="flex items-center justify-between mt-auto">
-            <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-auto">
+            <div className="flex flex-wrap gap-3 sm:gap-6">
               {data.metrics.map((m, i) => (
                 <div key={i}>
                   <p className="font-display font-bold text-base mb-0.5" style={{ color: a.hex }}>
@@ -283,7 +283,7 @@ function ReferenceCard({ data, index, inView }) {
                 </div>
               ))}
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {data.tags.map(tag => (
                 <span
                   key={tag}
@@ -381,7 +381,7 @@ export default function References() {
           </div>
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <h2 className="font-display font-bold text-5xl md:text-6xl
+            <h2 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl
                            tracking-tight leading-tight">
               <span className="text-white">Sonuçlar</span>
               <br />
@@ -395,10 +395,10 @@ export default function References() {
         </div>
 
         <div className="relative">
-          <div className="overflow-hidden rounded-2xl">
+          <div className="overflow-hidden rounded-2xl relative">
             <motion.div
               className="flex"
-              animate={{ x: `-${currentIndex * 100}%` }}
+              animate={{ x: `-${(currentIndex / total) * 100}%` }}
               transition={{ type: 'spring', stiffness: 320, damping: 30 }}
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
@@ -411,40 +411,42 @@ export default function References() {
                 </div>
               ))}
             </motion.div>
-          </div>
 
-          {currentIndex > 0 && (
             <button
               onClick={goPrev}
-              className="absolute left-3 top-1/2 -translate-y-1/2 z-20
+              className={`absolute left-3 top-1/2 -translate-y-1/2 z-20
                          w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm
                          border border-white/10 flex items-center justify-center
                          text-white/70 hover:text-white hover:bg-black/80
-                         hover:border-white/20 transition-all duration-300"
+                         hover:border-white/20 transition-all duration-300 ${
+                currentIndex === 0 ? 'opacity-0 pointer-events-none' : ''
+              }`}
               aria-label="Önceki referans"
+              style={{ touchAction: 'manipulation' }}
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5"
                   strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </button>
-          )}
-          {currentIndex < total - 1 && (
             <button
               onClick={goNext}
-              className="absolute right-3 top-1/2 -translate-y-1/2 z-20
+              className={`absolute right-3 top-1/2 -translate-y-1/2 z-20
                          w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm
                          border border-white/10 flex items-center justify-center
                          text-white/70 hover:text-white hover:bg-black/80
-                         hover:border-white/20 transition-all duration-300"
+                         hover:border-white/20 transition-all duration-300 ${
+                currentIndex === total - 1 ? 'opacity-0 pointer-events-none' : ''
+              }`}
               aria-label="Sonraki referans"
+              style={{ touchAction: 'manipulation' }}
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5"
                   strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </button>
-          )}
+          </div>
         </div>
 
         <div className="flex items-center justify-center gap-3 mt-10">
