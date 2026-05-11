@@ -408,10 +408,13 @@ export default function References() {
           >
             <div
               className="flex transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
-              style={{ transform: `translateX(-${(currentIndex / total) * 100}%)` }}
+              style={{
+                width: `${total * 100}%`,
+                transform: `translateX(-${(currentIndex / total) * 100}%)`
+              }}
             >
               {references.map((data, i) => (
-                <div key={data.id} className="min-w-full shrink-0">
+                <div key={data.id} className="shrink-0" style={{ width: `${100 / total}%` }}>
                   <ReferenceCard data={data} index={i} inView={inView} />
                 </div>
               ))}
