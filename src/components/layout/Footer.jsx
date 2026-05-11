@@ -26,11 +26,11 @@ const legalTexts = {
     title: 'KVKK Aydınlatma Metni',
     content: `KİŞİSEL VERİLERİN KORUNMASI KANUNU AYDINLATMA METNİ
 
-WebRise ("Şirket") olarak kişisel verilerinizin güvenliği hususuna azami hassasiyet göstermekteyiz. Bu bilinçle, Şirket olarak ürün ve hizmetlerimizden faydalanan kişiler dahil, Şirket ile ilişkili tüm şahıslara ait her türlü kişisel verinin 6698 sayılı Kişisel Verilerin Korunması Kanunu'na ("KVK Kanunu") uygun olarak işlenerek, muhafaza edilmesine büyük önem atfetmekteyiz.
+Sennin Web ("Şirket") olarak kişisel verilerinizin güvenliği hususuna azami hassasiyet göstermekteyiz. Bu bilinçle, Şirket olarak ürün ve hizmetlerimizden faydalanan kişiler dahil, Şirket ile ilişkili tüm şahıslara ait her türlü kişisel verinin 6698 sayılı Kişisel Verilerin Korunması Kanunu'na ("KVK Kanunu") uygun olarak işlenerek, muhafaza edilmesine büyük önem atfetmekteyiz.
 
 VERİ SORUMLUSU
 
-KVK Kanunu kapsamında kişisel verileriniz; veri sorumlusu sıfatıyla WebRise tarafından aşağıda açıklanan kapsamda işlenecektir.
+KVK Kanunu kapsamında kişisel verileriniz; veri sorumlusu sıfatıyla Sennin Web tarafından aşağıda açıklanan kapsamda işlenecektir.
 
 HANGİ KİŞİSEL VERİLERİNİZİ İŞLİYORUZ?
 
@@ -60,7 +60,7 @@ KVK Kanunu'nun 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmedi
 
 Son güncelleme: Ocak 2025
 
-WebRise olarak gizliliğinize saygı duyuyor ve kişisel verilerinizi korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda hangi bilgileri topladığımızı, bu bilgileri nasıl kullandığımızı ve koruduğumuzu açıklamaktadır.
+Sennin Web olarak gizliliğinize saygı duyuyor ve kişisel verilerinizi korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda hangi bilgileri topladığımızı, bu bilgileri nasıl kullandığımızı ve koruduğumuzu açıklamaktadır.
 
 TOPLANAN BİLGİLER
 
@@ -95,23 +95,23 @@ Bu web sitesini kullanarak aşağıdaki kullanım koşullarını kabul etmiş sa
 
 HİZMETLERİN KAPSAMI
 
-WebRise, küçük ve orta ölçekli işletmelere web tasarım, SEO danışmanlığı ve kurumsal kimlik hizmetleri sunmaktadır. Sunulan hizmetlerin kapsamı ve bedeli, taraflar arasında imzalanacak sözleşme ile belirlenir.
+Sennin Web, küçük ve orta ölçekli işletmelere web tasarım, SEO danışmanlığı ve kurumsal kimlik hizmetleri sunmaktadır. Sunulan hizmetlerin kapsamı ve bedeli, taraflar arasında imzalanacak sözleşme ile belirlenir.
 
 FİKRİ MÜLKİYET
 
-Bu web sitesinde yer alan tüm içerik, tasarım, metin, görsel ve yazılım unsurları WebRise'ın mülkiyetindedir ve telif hukuku kapsamında korunmaktadır. İzinsiz kopyalanması ve kullanılması yasaktır.
+Bu web sitesinde yer alan tüm içerik, tasarım, metin, görsel ve yazılım unsurları Sennin Web'in mülkiyetindedir ve telif hukuku kapsamında korunmaktadır. İzinsiz kopyalanması ve kullanılması yasaktır.
 
 MÜŞTERİ PROJELERİ
 
-Proje sürecinde müşteriden temin edilen tüm bilgi ve belgeler gizli tutulur. WebRise, müşteri onayı olmaksızın bu bilgileri üçüncü taraflarla paylaşmaz. Tamamlanan projeler, müşteri izniyle referans olarak kullanılabilir.
+Proje sürecinde müşteriden temin edilen tüm bilgi ve belgeler gizli tutulur. Sennin Web, müşteri onayı olmaksızın bu bilgileri üçüncü taraflarla paylaşmaz. Tamamlanan projeler, müşteri izniyle referans olarak kullanılabilir.
 
 SORUMLULUK SINIRI
 
-WebRise, sunduğu hizmetleri özenle ve profesyonellikle yerine getirmeyi taahhüt eder. Ancak internet ortamının doğasından kaynaklanan aksaklıklar, üçüncü taraf platform değişiklikleri veya mücbir sebepler nedeniyle oluşabilecek zararlardan sorumlu tutulamaz.
+Sennin Web, sunduğu hizmetleri özenle ve profesyonellikle yerine getirmeyi taahhüt eder. Ancak internet ortamının doğasından kaynaklanan aksaklıklar, üçüncü taraf platform değişiklikleri veya mücbir sebepler nedeniyle oluşabilecek zararlardan sorumlu tutulamaz.
 
 DEĞİŞİKLİKLER
 
-WebRise, kullanım koşullarını önceden haber vermeksizin güncelleme hakkını saklı tutar. Güncel koşullar her zaman bu sayfada yayınlanacaktır.
+Sennin Web, kullanım koşullarını önceden haber vermeksizin güncelleme hakkını saklı tutar. Güncel koşullar her zaman bu sayfada yayınlanacaktır.
 
 İletişim: macarcagatay@gmail.com`,
   },
