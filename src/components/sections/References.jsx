@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import React, { useState, useRef, useCallback } from 'react'
 import useInView from '@/hooks/useInView'
 
 function ModelPlaceholder() {
@@ -335,30 +334,37 @@ export default function References() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const { ref, inView } = useInView()
   const total = references.length
+  const touchStartX = useRef(0)
+  const touchStartY = useRef(0)
 
-  const goTo = (i) => {
+  const goTo = useCallback((i) => {
     setCurrentIndex(Math.max(0, Math.min(i, total - 1)))
+  }, [total])
+
+  const goNext = useCallback(() => {
+    setCurrentIndex(prev => Math.min(prev + 1, total - 1))
+  }, [total])
+
+  const goPrev = useCallback(() => {
+    setCurrentIndex(prev => Math.max(prev - 1, 0))
+  }, [])
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX
+    touchStartY.current = e.touches[0].clientY
   }
 
-  const goNext = () => {
-    if (currentIndex < total - 1) setCurrentIndex((p) => p + 1)
-  }
-
-  const goPrev = () => {
-    if (currentIndex > 0) setCurrentIndex((p) => p - 1)
-  }
-
-  const handleDragEnd = (_, { offset, velocity }) => {
-    const swipe = Math.abs(offset.x) * velocity.x
-    if (swipe < -500 && currentIndex < total - 1) {
-      setCurrentIndex((p) => p + 1)
-    } else if (swipe > 500 && currentIndex > 0) {
-      setCurrentIndex((p) => p - 1)
+  const handleTouchEnd = (e) => {
+    const diffX = touchStartX.current - e.changedTouches[0].clientX
+    const diffY = Math.abs(touchStartY.current - e.changedTouches[0].clientY)
+    if (Math.abs(diffX) > 50 && Math.abs(diffX) > diffY * 1.5) {
+      if (diffX > 0) goNext()
+      else goPrev()
     }
   }
 
   return (
-    <section id="references" className="relative bg-black section-pad overflow-hidden">
+    <section id="references" className="relative bg-black section-pad">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-1/4 w-[600px] h-[400px]
                         bg-purple-900/8 blur-[180px] rounded-full" />
@@ -395,58 +401,53 @@ export default function References() {
         </div>
 
         <div className="relative">
-          <div className="overflow-hidden rounded-2xl relative">
-            <motion.div
-              className="flex"
-              animate={{ x: `-${(currentIndex / total) * 100}%` }}
-              transition={{ type: 'spring', stiffness: 320, damping: 30 }}
-              drag="x"
-              dragConstraints={{ left: 0, right: 0 }}
-              dragElastic={0.08}
-              onDragEnd={handleDragEnd}
+          <div
+            className="overflow-hidden rounded-2xl"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            <div
+              className="flex transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              style={{ transform: `translateX(-${(currentIndex / total) * 100}%)` }}
             >
               {references.map((data, i) => (
                 <div key={data.id} className="min-w-full shrink-0">
                   <ReferenceCard data={data} index={i} inView={inView} />
                 </div>
               ))}
-            </motion.div>
-
-            <button
-              onClick={goPrev}
-              className={`absolute left-3 top-1/2 -translate-y-1/2 z-20
-                         w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm
-                         border border-white/10 flex items-center justify-center
-                         text-white/70 hover:text-white hover:bg-black/80
-                         hover:border-white/20 transition-all duration-300 ${
-                currentIndex === 0 ? 'opacity-0 pointer-events-none' : ''
-              }`}
-              aria-label="Önceki referans"
-              style={{ touchAction: 'manipulation' }}
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5"
-                  strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-            <button
-              onClick={goNext}
-              className={`absolute right-3 top-1/2 -translate-y-1/2 z-20
-                         w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm
-                         border border-white/10 flex items-center justify-center
-                         text-white/70 hover:text-white hover:bg-black/80
-                         hover:border-white/20 transition-all duration-300 ${
-                currentIndex === total - 1 ? 'opacity-0 pointer-events-none' : ''
-              }`}
-              aria-label="Sonraki referans"
-              style={{ touchAction: 'manipulation' }}
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5"
-                  strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
+            </div>
           </div>
+
+          <button
+            onClick={goPrev}
+            className="absolute left-3 top-1/2 -translate-y-1/2 z-50
+                       w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm
+                       border border-white/10 flex items-center justify-center
+                       text-white/70 hover:text-white hover:bg-black/80
+                       hover:border-white/20 transition-all duration-300"
+            aria-label="Önceki referans"
+            style={{ display: currentIndex === 0 ? 'none' : 'flex' }}
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.5"
+                strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <button
+            onClick={goNext}
+            className="absolute right-3 top-1/2 -translate-y-1/2 z-50
+                       w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm
+                       border border-white/10 flex items-center justify-center
+                       text-white/70 hover:text-white hover:bg-black/80
+                       hover:border-white/20 transition-all duration-300"
+            aria-label="Sonraki referans"
+            style={{ display: currentIndex === total - 1 ? 'none' : 'flex' }}
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5"
+                strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
         </div>
 
         <div className="flex items-center justify-center gap-3 mt-10">
