@@ -16,6 +16,7 @@ const pages = [
   { loc: '/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir', priority: '0.7' },
   { loc: '/blog/small-businesses-visible-on-google-2026', priority: '0.7' },
   { loc: '/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026', priority: '0.7' },
+  { loc: '/sss', priority: '0.8' },
 ]
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

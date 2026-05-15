@@ -7,6 +7,7 @@ import Home from "@/pages/Home"
 const Blog = lazy(() => import("@/pages/Blog"))
 const BlogPost = lazy(() => import("@/pages/BlogPost"))
 const Gebze = lazy(() => import("@/pages/Gebze"))
+const SSS = lazy(() => import("@/pages/SSS"))
 
 export default function App() {
   return (
@@ -27,6 +28,11 @@ export default function App() {
           <Route path="/gebze" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <Gebze />
+            </Suspense>
+          } />
+          <Route path="/sss" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <SSS />
             </Suspense>
           } />
         </Route>

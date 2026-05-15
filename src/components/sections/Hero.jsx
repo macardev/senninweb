@@ -85,7 +85,7 @@ export default function Hero() {
           <div className="animate-heroIn" style={{ animationDelay: isMobile ? '0.2s' : '0.4s' }}>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-16 pt-8 border-t border-white/8">
               {[
-                { value: '48s',  label: 'Ortalama yanıt süresi' },
+                { value: '24s',  label: 'Ortalama yanıt süresi' },
                 { value: 'SEO',  label: 'Dahil her pakette'     },
                 { value: '100%', label: 'Müşteri memnuniyeti'   },
               ].map((item) => (

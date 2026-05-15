@@ -17,6 +17,7 @@ const footerLinks = [
       { label: 'Referanslar',  href: '/#references' },
       { label: 'Nasıl Çalışırız', href: '/#how'     },
       { label: 'İletişim',     href: '/#contact'    },
+      { label: 'Sıkça Sorulan Sorular', href: '/sss' },
     ],
   },
 ]

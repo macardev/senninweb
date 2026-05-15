@@ -2,6 +2,7 @@
   "rewrites": [
     { "source": "/blog", "destination": "/index.html" },
     { "source": "/blog/:path*", "destination": "/index.html" },
-    { "source": "/gebze", "destination": "/index.html" }
+    { "source": "/gebze", "destination": "/index.html" },
+    { "source": "/sss", "destination": "/index.html" }
   ]
 }

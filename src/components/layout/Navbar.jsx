@@ -7,6 +7,7 @@ const navLinks = [
   { label: 'Referanslar', href: '/#references' },
   { label: 'İletişim',    href: '/#contact' },
   { label: 'Dijital Rehber', href: '/blog' },
+  { label: 'SSS', href: '/sss' },
   {
     label: 'Hizmet Verdiğimiz Bölgeler',
     href: '#',

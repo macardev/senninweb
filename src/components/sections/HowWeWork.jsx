@@ -8,7 +8,7 @@ const steps = [
     title: 'Keşif & Strateji',
     description:
       'İşletmenizi, hedef kitlenizi ve rakiplerinizi analiz ediyoruz. Sizi öne çıkaracak dijital stratejiyi birlikte belirliyoruz.',
-    duration: '1–2 gün',
+    duration: '1 gün',
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
         <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="1.5"/>
@@ -21,8 +21,8 @@ const steps = [
     number: '02',
     title: 'Tasarım & Onay',
     description:
-      'Markanıza özel tasarım konsepti hazırlıyoruz. Siz onaylayana kadar revize ediyoruz — sınırsız düzeltme hakkı.',
-    duration: '3–5 gün',
+      'Markanıza özel tasarım konseptleri hazırlıyor, geri bildirimlerinizle şekillendirip onayınıza sunuyoruz.',
+    duration: '2 gün',
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
         <rect x="3" y="3" width="16" height="12" rx="2" stroke="currentColor" strokeWidth="1.5"/>
@@ -36,7 +36,7 @@ const steps = [
     title: 'Geliştirme',
     description:
       'Onaylanan tasarımı hayata geçiriyoruz. Hızlı, animasyonlu ve mobil uyumlu — production-ready kod.',
-    duration: '5–10 gün',
+    duration: '4 gün',
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
         <path d="M7 8l-4 3 4 3M15 8l4 3-4 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -49,7 +49,7 @@ const steps = [
     title: 'Yayın & SEO',
     description:
       'Sitenizi yayına alıyor, domain & hosting kurulumunu yapıyor ve temel SEO optimizasyonunu tamamlıyoruz.',
-    duration: '1–2 gün',
+    duration: '1 gün',
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
         <path d="M11 3C6.58 3 3 6.58 3 11s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z" stroke="currentColor" strokeWidth="1.5"/>
@@ -164,7 +164,7 @@ export default function HowWeWork() {
                               rounded-full border border-gold-500/20 bg-gold-500/5">
                 <div className="w-1.5 h-1.5 rounded-full bg-gold-500" />
                 <span className="text-sm text-gold-400 font-medium">
-                  Ortalama 10–19 günde teslim
+                  Ortalama 8 günde teslim
                 </span>
               </div>
 
@@ -178,7 +178,7 @@ export default function HowWeWork() {
                   Neden SenninWeb?
                 </p>
                 {[
-                  'Sınırsız revizyon hakkı',
+                  '48 saatte demo tasarım',
                   'Proje boyunca doğrudan iletişim',
                   'Yayın sonrası 30 gün destek',
                   'SEO her pakette standart',
