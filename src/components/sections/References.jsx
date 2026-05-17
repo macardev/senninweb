@@ -111,6 +111,42 @@ function FurniturePlaceholder() {
   )
 }
 
+function RealEstatePlaceholder() {
+  return (
+    <svg viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="realestate-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.3" />
+          <stop offset="100%" stopColor="#1D4ED8" stopOpacity="0.1" />
+        </linearGradient>
+        <radialGradient id="realestate-glow" cx="50%" cy="50%" r="45%">
+          <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.12" />
+          <stop offset="100%" stopColor="#60A5FA" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect width="400" height="260" fill="#0A0A0A" />
+      <rect width="400" height="260" fill="url(#realestate-grad)" />
+      <rect width="400" height="260" fill="url(#realestate-glow)" />
+      <polygon points="200,85 140,135 140,125 200,75 260,125 260,135" stroke="#60A5FA" strokeWidth="1.2" fill="none" opacity="0.5" />
+      <rect x="165" y="135" width="70" height="55" rx="2" stroke="#60A5FA" strokeWidth="1.2" fill="none" opacity="0.5" />
+      <rect x="185" y="155" width="30" height="35" rx="1.5" stroke="#60A5FA" strokeWidth="0.8" fill="none" opacity="0.3" />
+      <rect x="195" y="160" width="10" height="8" rx="1" stroke="#60A5FA" strokeWidth="0.6" fill="none" opacity="0.25" />
+      <rect x="165" y="145" width="70" height="3" rx="1" stroke="#60A5FA" strokeWidth="0.6" fill="none" opacity="0.25" />
+      <circle cx="110" cy="100" r="1.2" fill="#60A5FA" opacity="0.6" />
+      <circle cx="290" cy="105" r="1" fill="#60A5FA" opacity="0.5" />
+      <circle cx="130" cy="85" r="0.8" fill="#93C5FD" opacity="0.4" />
+      <circle cx="270" cy="85" r="0.8" fill="#93C5FD" opacity="0.4" />
+      <circle cx="145" cy="70" r="0.6" fill="#60A5FA" opacity="0.3" />
+      <circle cx="255" cy="70" r="0.6" fill="#60A5FA" opacity="0.3" />
+      <text x="200" y="230" textAnchor="middle" fill="#60A5FA" fillOpacity="0.15"
+        fontFamily="system-ui" fontSize="10" fontWeight="500" letterSpacing="4">
+        GAYRIMENKUL · DANISMANLIK
+      </text>
+    </svg>
+  )
+}
+
 const references = [
   {
     id: 'utsuri',
@@ -178,6 +214,28 @@ const references = [
     accent: { hex: '#EC4899', tailwind: 'pink' },
     url: 'https://missbutikpasta.com',
   },
+  {
+    id: 'mahirakar',
+    name: 'Mahir Akar',
+    domain: 'mahirakarremax.com',
+    category: 'Gayrimenkul Danışmanlığı',
+    description:
+      'Pendik, Kartal ve Tuzla bölgelerinde uzman gayrimenkul danışmanı için kişisel kurumsal web sitesi. Lokal SEO optimizasyonu ve modern tasarım.',
+    features: [
+      'Lokal SEO optimizasyonu',
+      'Modern responsive tasarım',
+      'Kurumsal kimlik & prestij',
+      'Mobil uyumlu arayüz',
+    ],
+    metrics: [
+      { value: '🏠', label: 'Bölge uzmanı' },
+      { value: '📈', label: 'SEO odaklı' },
+    ],
+    tags: ['Web Tasarım', 'SEO', 'Gayrimenkul'],
+    placeholder: 'realestate',
+    accent: { hex: '#3B82F6', tailwind: 'blue' },
+    url: 'https://mahirakarremax.com',
+  },
 ]
 
 function PlaceholderImage({ type }) {
@@ -185,6 +243,7 @@ function PlaceholderImage({ type }) {
     case 'model': return <ModelPlaceholder />
     case 'cake': return <CakePlaceholder />
     case 'furniture': return <FurniturePlaceholder />
+    case 'realestate': return <RealEstatePlaceholder />
     default: return null
   }
 }
@@ -237,7 +296,7 @@ function ReferenceCard({ data, index, inView }) {
                 color: a.hex,
               }}
             >
-              {data.placeholder === 'cake' ? '🧁' : data.placeholder === 'model' ? '✦' : '🪑'}
+              {data.placeholder === 'cake' ? '🧁' : data.placeholder === 'model' ? '✦' : data.placeholder === 'realestate' ? '🏠' : '🪑'}
             </div>
             <div>
               <h3 className="font-display font-bold text-2xl text-white tracking-tight">
@@ -478,7 +537,7 @@ export default function References() {
           style={{ transitionDelay: '0.5s' }}
         >
           Özkan Mobilya showcase amaçlıdır.
-          Utsuri AI ve Miss Butik Pasta canlı ve aktif referanslardır.
+          Utsuri AI, Miss Butik Pasta ve Mahir Akar canlı ve aktif referanslardır.
         </p>
       </div>
     </section>
