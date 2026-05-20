@@ -22,16 +22,17 @@ export default function Manifesto() {
     offset: ['start end', 'end start'],
   })
 
-  // Disable spring animation on mobile
-  const smooth = isMobile ? scrollYProgress : useSpring(scrollYProgress, {
+  const springScroll = useSpring(scrollYProgress, {
     stiffness: 60,
     damping: 20,
     mass: 0.5,
   })
+  const smooth = isMobile ? scrollYProgress : springScroll
 
-  // Section scale ve opacity (disable on mobile)
-  const opacity = isMobile ? 1 : useTransform(smooth, [0, 0.2, 0.8, 1], [0, 1, 1, 0])
-  const scale   = isMobile ? 1 : useTransform(smooth, [0, 0.2, 0.8, 1], [0.92, 1, 1, 0.95])
+  const transformOpacity = useTransform(smooth, [0, 0.2, 0.8, 1], [0, 1, 1, 0])
+  const transformScale = useTransform(smooth, [0, 0.2, 0.8, 1], [0.92, 1, 1, 0.95])
+  const opacity = isMobile ? 1 : transformOpacity
+  const scale   = isMobile ? 1 : transformScale
 
   return (
     <section
@@ -93,17 +94,16 @@ function WordReveal({ progress, isMobile }) {
 }
 
 function AnimatedWord({ word, index, total, progress, isMobile }) {
-  // Skip scroll animations on mobile for better performance
   const start = 0.15 + (index / total) * 0.35
   const end   = start + 0.15
 
-  const opacity = isMobile ? 1 : useTransform(progress, [start, end], [0.1, 1])
-  const y       = isMobile ? 0 : useTransform(progress, [start, end], [20, 0])
-  const color   = isMobile ? undefined : useTransform(
-    progress,
-    [start, end],
-    ['rgba(255,255,255,0.15)', 'rgba(245,245,245,1)']
-  )
+  const transformOpacity = useTransform(progress, [start, end], [0.1, 1])
+  const transformY = useTransform(progress, [start, end], [20, 0])
+  const transformColor = useTransform(progress, [start, end], ['rgba(255,255,255,0.15)', 'rgba(245,245,245,1)'])
+
+  const opacity = isMobile ? 1 : transformOpacity
+  const y       = isMobile ? 0 : transformY
+  const color   = isMobile ? undefined : transformColor
 
   // "—" işareti altın rengi
   const isAccent = word === '—'

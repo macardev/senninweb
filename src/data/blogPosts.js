@@ -696,6 +696,318 @@ export const blogPosts = [
         isHtml: true
       }
     ]
+  },
+  {
+    slug: "web-sitesi-tasarim-fiyatlari-2026",
+    title: "Web Sitesi Tasarımı Kaç TL? (2026 Güncel Rehber) | SenninWeb",
+    description: "Web sitesi fiyatları neden bu kadar değişiyor? 2026 yılında profesyonel bir web sitesi yaptırmanın gerçek maliyetini, hangi detayların fiyatı etkilediğini ve nelere dikkat etmeniz gerektiğini öğrenin.",
+    shortTitle: "Web Sitesi Tasarımı Kaç TL? (2026 Güncel Rehber)",
+    desc: "Web sitesi fiyatları neden bu kadar değişiyor? 2026'da profesyonel bir site yaptırmanın gerçek maliyeti.",
+    tag: "Web Tasarım",
+    readingTime: "7 dk",
+    date: "2026",
+    author: "Çağatay Macar",
+    authorTitle: "Senior Web Developer",
+    metaDescription: "Web sitesi fiyatları neden bu kadar değişiyor? 2026 yılında profesyonel bir web sitesi yaptırmanın gerçek maliyetini, hangi detayların fiyatı etkilediğini ve nelere dikkat etmeniz gerektiğini öğrenin.",
+    schemaUrl: "https://www.senninweb.com/blog/web-sitesi-tasarim-fiyatlari-2026",
+    sections: [
+      {
+        type: "heroSection",
+        title: "\u201C5.000 TL'ye de site var, 100.000 TL'ye de\u2026\u201D Peki Aradaki Fark Ne?",
+        subtitle: "Web Sitesi Tasar\u0131m\u0131 Ka\u00E7 TL?"
+      },
+      {
+        type: "intro",
+        content: "Web sitesi yapt\u0131rmak isteyen \u00E7o\u011Fu ki\u015Finin kafas\u0131 ayn\u0131 noktada kar\u0131\u015F\u0131yor: \u201CTamam ama bu i\u015Fin ger\u00E7ek fiyat\u0131 ne?\u201D"
+      },
+      {
+        type: "paragraph",
+        content: "\u00C7\u00FCnk\u00FC internette dola\u015Ft\u0131\u011F\u0131n\u0131zda birbirinden tamamen farkl\u0131 rakamlar g\u00F6r\u00FCyorsunuz. Bir yerde 3-5 bin TL'ye \u201Ckurumsal site\u201D yap\u0131l\u0131rken, ba\u015Fka bir ajans tek sayfal\u0131k bir landing page i\u00E7in bile 40-50 bin TL isteyebiliyor."
+      },
+      {
+        type: "paragraph",
+        content: "\u0130\u015Fin ilgin\u00E7 taraf\u0131 \u015Fu: \u0130kisi de teknik olarak \u201Cweb sitesi\u201D. Ama ger\u00E7ekte ayn\u0131 \u015Fey de\u011Filler."
+      },
+      {
+        type: "paragraph",
+        content: "T\u0131pk\u0131 bir emlak \u00F6rne\u011Fi gibi d\u00FC\u015F\u00FCn\u00FCn. \u0130kisi de \u201Cev\u201D olabilir ama biri plans\u0131z, eski bir bina; di\u011Feri ise mimarisi d\u00FC\u015F\u00FCn\u00FClm\u00FC\u015F, yat\u0131r\u0131m de\u011Feri ta\u015F\u0131yan modern bir ya\u015Fam alan\u0131d\u0131r."
+      },
+      {
+        type: "heading2",
+        content: "\u00D6nce \u015Eunu Netle\u015Ftirelim: Web Sitesi Bir Masraf m\u0131, Yat\u0131r\u0131m m\u0131?"
+      },
+      {
+        type: "paragraph",
+        content: "As\u0131l fark burada ba\u015Fl\u0131yor."
+      },
+      {
+        type: "paragraph",
+        content: "Baz\u0131 i\u015Fletmeler web sitesini sadece \u201Cinternette bulunal\u0131m\u201D diye yapt\u0131r\u0131yor. Baz\u0131lar\u0131 ise onu aktif \u00E7al\u0131\u015Fan bir m\u00FC\u015Fteri kazanma sistemi olarak g\u00F6r\u00FCyor. \u0130kinci grup genelde daha fazla kazan\u0131yor."
+      },
+      {
+        type: "paragraph",
+        content: "\u00C7\u00FCnk\u00FC iyi haz\u0131rlanm\u0131\u015F bir site:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "size g\u00FCven kazand\u0131r\u0131r",
+          "Google'da g\u00F6r\u00FCn\u00FCrl\u00FCk sa\u011Flar",
+          "reklam d\u00F6n\u00FC\u015F\u00FCm\u00FCn\u00FC art\u0131r\u0131r",
+          "WhatsApp mesajlar\u0131n\u0131 art\u0131r\u0131r",
+          "marka alg\u0131n\u0131z\u0131 g\u00FC\u00E7lendirir"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "K\u00F6t\u00FC haz\u0131rlanm\u0131\u015F bir site ise \u00E7o\u011Fu zaman sadece dijital bir kartvizitten ibaret kal\u0131r."
+      },
+      {
+        type: "heading2",
+        content: "2026'da Web Sitesi Fiyatlar\u0131n\u0131 Etkileyen Ana Fakt\u00F6rler"
+      },
+      {
+        type: "heading3",
+        content: "1. Tasar\u0131m Kalitesi"
+      },
+      {
+        type: "paragraph",
+        content: "Haz\u0131r tema ile yap\u0131lan bir siteyle, markaya \u00F6zel tasarlanm\u0131\u015F bir aray\u00FCz aras\u0131nda ciddi fark vard\u0131r."
+      },
+      {
+        type: "paragraph",
+        content: "\u00D6zellikle art\u0131k kullan\u0131c\u0131lar \u015Funa al\u0131\u015Ft\u0131:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "h\u0131zl\u0131 a\u00E7\u0131lan siteler",
+          "modern animasyonlar",
+          "Apple tarz\u0131 temiz aray\u00FCzler",
+          "mobilde kusursuz deneyim"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Yani sadece \u201Csite olsun\u201D d\u00F6nemi b\u00FCy\u00FCk \u00F6l\u00E7\u00FCde bitti. Bug\u00FCn insanlar siteye girdiklerinde birka\u00E7 saniye i\u00E7inde marka hakk\u0131nda fikir olu\u015Fturuyor."
+      },
+      {
+        type: "heading3",
+        content: "2. Mobil Performans"
+      },
+      {
+        type: "paragraph",
+        content: "Bir\u00E7ok i\u015Fletme h\u00E2l\u00E2 masa\u00FCst\u00FCne g\u00F6re d\u00FC\u015F\u00FCn\u00FCyor ama internet trafi\u011Finin b\u00FCy\u00FCk k\u0131sm\u0131 art\u0131k mobil cihazlardan geliyor."
+      },
+      {
+        type: "paragraph",
+        content: "Ve i\u015Fin k\u00F6t\u00FC taraf\u0131 \u015Fu: Google da bunu biliyor. Yava\u015F a\u00E7\u0131lan veya mobilde bozulan siteler hem kullan\u0131c\u0131 kaybediyor hem de SEO taraf\u0131nda geriye d\u00FC\u015F\u00FCyor."
+      },
+      {
+        type: "paragraph",
+        content: "\u00D6zellikle:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "FCP (First Contentful Paint)",
+          "LCP (Largest Contentful Paint)",
+          "Core Web Vitals"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "gibi performans metrikleri art\u0131k \u00E7ok daha \u00F6nemli hale geldi."
+      },
+      {
+        type: "heading3",
+        content: "3. SEO Dahil mi?"
+      },
+      {
+        type: "paragraph",
+        content: "Bu \u00E7ok kritik bir detay. Baz\u0131 ajanslar sadece siteyi teslim eder. SEO taraf\u0131na hi\u00E7 dokunmaz."
+      },
+      {
+        type: "paragraph",
+        content: "Baz\u0131lar\u0131 ise:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "teknik SEO",
+          "h\u0131z optimizasyonu",
+          "meta yap\u0131land\u0131rmalar\u0131",
+          "Google indexleme",
+          "lokal SEO",
+          "Google Maps uyumlulu\u011Fu"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "gibi detaylar\u0131 da s\u00FCrece dahil eder. Do\u011Fal olarak bu da fiyat\u0131 etkiler. \u00C7\u00FCnk\u00FC SEO sonradan \u201Ceklenen\u201D bir \u015Fey de\u011Fil; sitenin temel yap\u0131s\u0131n\u0131n i\u00E7ine i\u015Flenmesi gereken bir sistemdir."
+      },
+      {
+        type: "heading3",
+        content: "4. \u0130\u00E7erik ve Metin Yaz\u0131m\u0131"
+      },
+      {
+        type: "paragraph",
+        content: "\u00C7o\u011Fu insan \u015Funu fark etmiyor: Web sitesindeki yaz\u0131lar da i\u015Fin b\u00FCy\u00FCk k\u0131sm\u0131."
+      },
+      {
+        type: "paragraph",
+        content: "\u00C7\u00FCnk\u00FC kullan\u0131c\u0131 \u015Funu ar\u0131yor: \u201CBu i\u015Fletme benim problemimi \u00E7\u00F6z\u00FCyor mu?\u201D"
+      },
+      {
+        type: "paragraph",
+        content: "\u0130yi yaz\u0131lm\u0131\u015F bir i\u00E7erik:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "g\u00FCven verir",
+          "d\u00F6n\u00FC\u015F\u00FCm\u00FC art\u0131r\u0131r",
+          "SEO'ya katk\u0131 sa\u011Flar"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "K\u00F6t\u00FC yaz\u0131lm\u0131\u015F i\u00E7erik ise en iyi tasar\u0131m\u0131 bile s\u0131radan g\u00F6sterebilir."
+      },
+      {
+        type: "heading3",
+        content: "5. \u00D6zel Yaz\u0131l\u0131m ve Ekstra \u00D6zellikler"
+      },
+      {
+        type: "paragraph",
+        content: "Her site ayn\u0131 de\u011Fildir. \u00D6rne\u011Fin:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "emlak filtreleme sistemi",
+          "online rezervasyon",
+          "\u00F6zel admin paneli",
+          "\u00FCyelik sistemi",
+          "\u00F6deme entegrasyonlar\u0131",
+          "\u00E7oklu dil deste\u011Fi"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "gibi \u00F6zellikler projeyi tamamen farkl\u0131 seviyeye ta\u015F\u0131r. Bu y\u00FCzden fiyat verirken \u00E7o\u011Fu profesyonel ekip \u00F6nce ihtiya\u00E7 analizi yapar."
+      },
+      {
+        type: "heading2",
+        content: "Peki Ger\u00E7ek\u00E7i Fiyat Aral\u0131klar\u0131 Ne?"
+      },
+      {
+        type: "paragraph",
+        content: "Tabii ki her proje farkl\u0131d\u0131r ama 2026 i\u00E7in genel tablo a\u015Fa\u011F\u0131 yukar\u0131 \u015F\u00F6yle:"
+      },
+      {
+        type: "paragraph",
+        isHtml: true,
+        content: "<div class=\"overflow-x-auto my-6\"><table class=\"w-full text-sm text-white/65 border-collapse\"><thead><tr class=\"border-b border-white/10\"><th class=\"text-left py-3 pr-6 font-semibold text-white\">Proje T\u00FCr\u00FC</th><th class=\"text-left py-3 font-semibold text-white\">Ortalama Aral\u0131k</th></tr></thead><tbody><tr class=\"border-b border-white/10\"><td class=\"py-3 pr-6\">Basit tan\u0131t\u0131m sitesi</td><td class=\"py-3\">10.000 \u2013 20.000 TL</td></tr><tr class=\"border-b border-white/10\"><td class=\"py-3 pr-6\">Profesyonel kurumsal site</td><td class=\"py-3\">20.000 \u2013 50.000 TL</td></tr><tr class=\"border-b border-white/10\"><td class=\"py-3 pr-6\">Premium UI/UX odakl\u0131 site</td><td class=\"py-3\">50.000 TL+</td></tr><tr><td class=\"py-3 pr-6\">\u00D6zel yaz\u0131l\u0131m projeleri</td><td class=\"py-3\">\u00C7ok daha y\u00FCksek olabilir</td></tr></tbody></table></div>"
+      },
+      {
+        type: "paragraph",
+        content: "Burada \u00F6nemli olan en ucuz se\u00E7ene\u011Fi bulmak de\u011Fil, ger\u00E7ekten i\u015Fletmenize katk\u0131 sa\u011Flayacak sistemi kurmak."
+      },
+      {
+        type: "heading2",
+        content: "En B\u00FCy\u00FCk Hata: Sadece Fiyata Odaklanmak"
+      },
+      {
+        type: "paragraph",
+        content: "Bir\u00E7ok i\u015Fletme \u015Fu hatay\u0131 yap\u0131yor: \u201CEn uygun fiyatl\u0131 olan\u0131 se\u00E7elim.\u201D"
+      },
+      {
+        type: "paragraph",
+        content: "Ama sonras\u0131nda:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "site yava\u015F oluyor",
+          "mobilde bozuluyor",
+          "Google'da g\u00F6r\u00FCnm\u00FCyor",
+          "d\u00F6n\u00FC\u015F\u00FCm getirmiyor"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "ve birka\u00E7 ay sonra siteyi ba\u015Ftan yapt\u0131rmak zorunda kal\u0131yorlar. Yani asl\u0131nda iki kere \u00F6deme yapm\u0131\u015F oluyorlar."
+      },
+      {
+        type: "heading2",
+        content: "\u0130yi Bir Web Sitesi Nas\u0131l Anla\u015F\u0131l\u0131r?"
+      },
+      {
+        type: "paragraph",
+        content: "Bir ajans veya freelancer ile \u00E7al\u0131\u015Fmadan \u00F6nce \u015Funlara bak\u0131n:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "Daha \u00F6nce yapt\u0131\u011F\u0131 i\u015Fler nas\u0131l g\u00F6r\u00FCn\u00FCyor?",
+          "Mobil performans\u0131 iyi mi?",
+          "Site h\u0131zl\u0131 a\u00E7\u0131l\u0131yor mu?",
+          "SEO bilgisi var m\u0131?",
+          "Sadece tasar\u0131m m\u0131 yap\u0131yor yoksa strateji de d\u00FC\u015F\u00FCn\u00FCyor mu?"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "\u00C7\u00FCnk\u00FC art\u0131k mesele sadece \u201Cg\u00FCzel g\u00F6r\u00FCnmek\u201D de\u011Fil. Google'da g\u00F6r\u00FCnmek, g\u00FCven vermek ve m\u00FC\u015Fteri d\u00F6n\u00FC\u015Ft\u00FCrmek de i\u015Fin bir par\u00E7as\u0131."
+      },
+      {
+        type: "heading2",
+        content: "Sonu\u00E7: Web Sitesi Fiyat\u0131 De\u011Fil, Getirisi \u00D6nemlidir"
+      },
+      {
+        type: "paragraph",
+        content: "\u0130yi bir web sitesi bazen aylarca m\u00FC\u015Fteri getirebilir. K\u00F6t\u00FC bir site ise sadece b\u00FCt\u00E7e t\u00FCketir."
+      },
+      {
+        type: "paragraph",
+        content: "Bu y\u00FCzden soru asl\u0131nda \u015Fu olmal\u0131: \u201CBu site bana ger\u00E7ekten m\u00FC\u015Fteri kazand\u0131racak m\u0131?\u201D"
+      },
+      {
+        type: "paragraph",
+        content: "E\u011Fer cevap evetse, o proje maliyet de\u011Fil yat\u0131r\u0131m haline gelir."
+      },
+      {
+        type: "heading2",
+        content: "Son Bir Not"
+      },
+      {
+        type: "paragraph",
+        content: "E\u011Fer siz de i\u015Fletmeniz i\u00E7in:"
+      },
+      {
+        type: "bulletList",
+        items: [
+          "h\u0131zl\u0131 a\u00E7\u0131lan",
+          "modern g\u00F6r\u00FCnen",
+          "SEO uyumlu",
+          "ger\u00E7ekten g\u00FCven veren"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "bir web sitesi olu\u015Fturmak istiyorsan\u0131z, \u00F6nce do\u011Fru stratejiyle ba\u015Flamak gerekir."
+      },
+      {
+        type: "paragraph",
+        content: "\u00C7\u00FCnk\u00FC dijital d\u00FCnyada bazen birka\u00E7 saniyelik ilk izlenim, aylarca s\u00FCrecek m\u00FC\u015Fteri ili\u015Fkilerini belirleyebiliyor."
+      },
+      {
+        type: "finalCta",
+        question: "\u0130\u015Fletmenize \u00F6zel, modern ve SEO uyumlu bir web sitesi mi ar\u0131yorsunuz?",
+        ctaText: "Bizimle ileti\u015Fime ge\u00E7in, size \u00F6zel bir strateji olu\u015Ftural\u0131m!"
+      }
+    ]
   }
 ];
 

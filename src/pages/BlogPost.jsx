@@ -236,6 +236,43 @@ export default function BlogPost() {
   const post = getBlogPost(slug)
   const canonicalUrl = useCanonicalUrl()
 
+  useEffect(() => {
+    if (!post) return
+    const prevTitle = document.title
+    const prevDesc = document.head.querySelector('meta[name="description"]')?.getAttribute("content") ?? null
+    const prevViewport = document.head.querySelector('meta[name="viewport"]')?.getAttribute("content") ?? null
+    const prevRobots = document.head.querySelector('meta[name="robots"]')?.getAttribute("content") ?? null
+    const prevOgTitle = document.head.querySelector('meta[property="og:title"]')?.getAttribute("content") ?? null
+    const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
+    const prevOgType = document.head.querySelector('meta[property="og:type"]')?.getAttribute("content") ?? null
+    const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
+    const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
+
+    document.title = post.title
+    upsertMetaByName("description", post.metaDescription)
+    upsertMetaByName("viewport", "width=device-width, initial-scale=1.0")
+    upsertMetaByName("robots", "index, follow")
+
+    upsertMetaByProperty("og:title", post.title)
+    upsertMetaByProperty("og:description", post.metaDescription)
+    upsertMetaByProperty("og:type", "article")
+    upsertMetaByProperty("og:url", canonicalUrl)
+
+    upsertLinkByRel("canonical", canonicalUrl)
+
+    return () => {
+      document.title = prevTitle
+      if (prevDesc !== null) upsertMetaByName("description", prevDesc)
+      if (prevViewport !== null) upsertMetaByName("viewport", prevViewport)
+      if (prevRobots !== null) upsertMetaByName("robots", prevRobots)
+      if (prevOgTitle !== null) upsertMetaByProperty("og:title", prevOgTitle)
+      if (prevOgDesc !== null) upsertMetaByProperty("og:description", prevOgDesc)
+      if (prevOgType !== null) upsertMetaByProperty("og:type", prevOgType)
+      if (prevOgUrl !== null) upsertMetaByProperty("og:url", prevOgUrl)
+      if (prevCanonical !== null) upsertLinkByRel("canonical", prevCanonical)
+    }
+  }, [post, canonicalUrl])
+
   if (!post) {
     return (
       <div className="px-6 md:px-12 py-20">
@@ -272,42 +309,6 @@ export default function BlogPost() {
       "@id": post.schemaUrl,
     },
   }
-
-  useEffect(() => {
-    const prevTitle = document.title
-    const prevDesc = document.head.querySelector('meta[name="description"]')?.getAttribute("content") ?? null
-    const prevViewport = document.head.querySelector('meta[name="viewport"]')?.getAttribute("content") ?? null
-    const prevRobots = document.head.querySelector('meta[name="robots"]')?.getAttribute("content") ?? null
-    const prevOgTitle = document.head.querySelector('meta[property="og:title"]')?.getAttribute("content") ?? null
-    const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
-    const prevOgType = document.head.querySelector('meta[property="og:type"]')?.getAttribute("content") ?? null
-    const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
-    const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
-
-    document.title = post.title
-    upsertMetaByName("description", post.metaDescription)
-    upsertMetaByName("viewport", "width=device-width, initial-scale=1.0")
-    upsertMetaByName("robots", "index, follow")
-
-    upsertMetaByProperty("og:title", post.title)
-    upsertMetaByProperty("og:description", post.metaDescription)
-    upsertMetaByProperty("og:type", "article")
-    upsertMetaByProperty("og:url", canonicalUrl)
-
-    upsertLinkByRel("canonical", canonicalUrl)
-
-    return () => {
-      document.title = prevTitle
-      if (prevDesc !== null) upsertMetaByName("description", prevDesc)
-      if (prevViewport !== null) upsertMetaByName("viewport", prevViewport)
-      if (prevRobots !== null) upsertMetaByName("robots", prevRobots)
-      if (prevOgTitle !== null) upsertMetaByProperty("og:title", prevOgTitle)
-      if (prevOgDesc !== null) upsertMetaByProperty("og:description", prevOgDesc)
-      if (prevOgType !== null) upsertMetaByProperty("og:type", prevOgType)
-      if (prevOgUrl !== null) upsertMetaByProperty("og:url", prevOgUrl)
-      if (prevCanonical !== null) upsertLinkByRel("canonical", prevCanonical)
-    }
-  }, [post, canonicalUrl])
 
   return (
     <article className="px-6 md:px-12 pb-20">
