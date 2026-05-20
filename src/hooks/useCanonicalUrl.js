@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom"
 
-const BASE = "https://senninweb.com"
+const BASE = "https://www.senninweb.com"
 
 export default function useCanonicalUrl() {
   const { pathname } = useLocation()

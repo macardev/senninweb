@@ -11,7 +11,7 @@ export const blogPosts = [
     author: "Çağatay Macar",
     authorTitle: "Senior Web Developer",
     metaDescription: "Küçük işletmeler için web sitesinin nasıl müşteri getirdiğini öğrenin. SEO, hız ve doğru strateji ile daha fazla müşteri kazanın.",
-    schemaUrl: "https://senninweb.com/blog/kucuk-isletme-web-sitesi",
+    schemaUrl: "https://www.senninweb.com/blog/kucuk-isletme-web-sitesi",
     sections: [
       {
         type: "intro",
@@ -79,7 +79,7 @@ export const blogPosts = [
     author: "Çağatay Macar",
     authorTitle: "Senior Web Developer",
     metaDescription: "Web siteniz var ama müşteri gelmiyor mu? 2026 SEO, Google Maps ve kurumsal web tasarımı stratejileriyle dijitalde nasıl öne çıkacağınızı ve satışlarınızı nasıl artıracağınızı öğrenin.",
-    schemaUrl: "https://senninweb.com/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir",
+    schemaUrl: "https://www.senninweb.com/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir",
     sections: [
       {
         type: "heroSection",
@@ -297,7 +297,7 @@ export const blogPosts = [
     author: "Çağatay Macar",
     authorTitle: "Senior Web Developer",
     metaDescription: "Google'da görünmüyor musunuz? 2026 SEO trendleriyle web sitenizi dijital bir hayaletten, müşteri çeken bir makineye dönüştürün. Adım adım yükselme stratejileri burada.",
-    schemaUrl: "https://senninweb.com/blog/small-businesses-visible-on-google-2026",
+    schemaUrl: "https://www.senninweb.com/blog/small-businesses-visible-on-google-2026",
     sections: [
       {
         type: "heroSection",
@@ -514,7 +514,7 @@ export const blogPosts = [
     author: "Çağatay Macar",
     authorTitle: "Senior Web Developer",
     metaDescription: "Web siteniz Google'da görünmüyor mu? 2026 SEO stratejileriyle neden ilk sayfada olmadığınızı öğrenin ve müşteri getiren bir siteye nasıl dönüşeceğinizi keşfedin.",
-    schemaUrl: "https://senninweb.com/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026",
+    schemaUrl: "https://www.senninweb.com/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026",
     sections: [
       {
         type: "heroSection",
