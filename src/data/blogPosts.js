@@ -286,7 +286,7 @@ export const blogPosts = [
     ]
   },
   {
-    slug: "small-businesses-visible-on-google-2026",
+    slug: "kucuk-isletmeler-google-da-gorunurluk-2026",
     title: "Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu (2026 Rehberi) | SenninWeb",
     description: "Google'da görünmüyor musunuz? 2026 SEO trendleriyle web sitenizi dijital bir hayaletten, müşteri çeken bir makineye dönüştürün. Adım adım yükselme stratejileri burada.",
     shortTitle: "Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu (2026 Rehberi)",
@@ -297,7 +297,7 @@ export const blogPosts = [
     author: "Çağatay Macar",
     authorTitle: "Senior Web Developer",
     metaDescription: "Google'da görünmüyor musunuz? 2026 SEO trendleriyle web sitenizi dijital bir hayaletten, müşteri çeken bir makineye dönüştürün. Adım adım yükselme stratejileri burada.",
-    schemaUrl: "https://www.senninweb.com/blog/small-businesses-visible-on-google-2026",
+    schemaUrl: "https://www.senninweb.com/blog/kucuk-isletmeler-google-da-gorunurluk-2026",
     sections: [
       {
         type: "heroSection",
