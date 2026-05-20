@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useEffect } from "react"
 import { getAllBlogPosts } from "@/data/blogPosts"
+import useCanonicalUrl from "@/hooks/useCanonicalUrl"
 
 const posts = getAllBlogPosts()
 
@@ -15,24 +16,39 @@ function upsertMetaByName(name, content) {
   return el
 }
 
+function upsertLinkByRel(rel, href) {
+  let el = document.head.querySelector(`link[rel="${rel}"]`)
+  if (!el) {
+    el = document.createElement("link")
+    el.setAttribute("rel", rel)
+    document.head.appendChild(el)
+  }
+  el.setAttribute("href", href)
+  return el
+}
+
 export default function Blog() {
   const navigate = useNavigate()
+  const canonicalUrl = useCanonicalUrl()
 
   useEffect(() => {
     const prevTitle = document.title
     const prevDesc = document.head.querySelector('meta[name="description"]')?.getAttribute("content") ?? null
+    const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
     document.title = "Web Tasarım ve SEO Rehberi | SenninWeb"
     upsertMetaByName(
       "description",
       "Web tasarım, SEO ve dijital büyüme üzerine rehberler. İşletmenizi internette büyütmek için stratejiler."
     )
+    upsertLinkByRel("canonical", canonicalUrl)
 
     return () => {
       document.title = prevTitle
       if (prevDesc !== null) upsertMetaByName("description", prevDesc)
+      if (prevCanonical !== null) upsertLinkByRel("canonical", prevCanonical)
     }
-  }, [])
+  }, [canonicalUrl])
 
   return (
     <section className="px-6 md:px-12">

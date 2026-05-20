@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
+import useCanonicalUrl from "@/hooks/useCanonicalUrl"
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -21,6 +22,17 @@ function upsertMetaByProperty(property, content) {
     document.head.appendChild(el)
   }
   el.setAttribute("content", content)
+  return el
+}
+
+function upsertLinkByRel(rel, href) {
+  let el = document.head.querySelector(`link[rel="${rel}"]`)
+  if (!el) {
+    el = document.createElement("link")
+    el.setAttribute("rel", rel)
+    document.head.appendChild(el)
+  }
+  el.setAttribute("href", href)
   return el
 }
 
@@ -89,6 +101,7 @@ const gebzeContent = {
 
 export default function Gebze() {
   const navigate = useNavigate()
+  const canonicalUrl = useCanonicalUrl()
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -110,6 +123,7 @@ export default function Gebze() {
     const prevDesc = document.head.querySelector('meta[name="description"]')?.getAttribute("content") ?? null
     const prevOgTitle = document.head.querySelector('meta[property="og:title"]')?.getAttribute("content") ?? null
     const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
+    const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
     document.title = gebzeContent.title
     upsertMetaByName("description", gebzeContent.metaDescription)
@@ -117,15 +131,18 @@ export default function Gebze() {
     upsertMetaByProperty("og:title", gebzeContent.title)
     upsertMetaByProperty("og:description", gebzeContent.metaDescription)
     upsertMetaByProperty("og:type", "website")
-    upsertMetaByProperty("og:url", typeof window !== "undefined" ? window.location.href : "")
+    upsertMetaByProperty("og:url", canonicalUrl)
+
+    upsertLinkByRel("canonical", canonicalUrl)
 
     return () => {
       document.title = prevTitle
       if (prevDesc !== null) upsertMetaByName("description", prevDesc)
       if (prevOgTitle !== null) upsertMetaByProperty("og:title", prevOgTitle)
       if (prevOgDesc !== null) upsertMetaByProperty("og:description", prevOgDesc)
+      if (prevCanonical !== null) upsertLinkByRel("canonical", prevCanonical)
     }
-  }, [])
+  }, [canonicalUrl])
 
   return (
     <article className="px-6 md:px-12 pb-20">

@@ -1,4 +1,8 @@
 {
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/:path*/", "destination": "/:path", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/blog", "destination": "/index.html" },
     { "source": "/blog/:path*", "destination": "/index.html" },

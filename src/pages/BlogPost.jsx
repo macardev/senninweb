@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 import { getBlogPost } from "@/data/blogPosts"
+import useCanonicalUrl from "@/hooks/useCanonicalUrl"
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -22,6 +23,17 @@ function upsertMetaByProperty(property, content) {
     document.head.appendChild(el)
   }
   el.setAttribute("content", content)
+  return el
+}
+
+function upsertLinkByRel(rel, href) {
+  let el = document.head.querySelector(`link[rel="${rel}"]`)
+  if (!el) {
+    el = document.createElement("link")
+    el.setAttribute("rel", rel)
+    document.head.appendChild(el)
+  }
+  el.setAttribute("href", href)
   return el
 }
 
@@ -222,6 +234,7 @@ export default function BlogPost() {
   const navigate = useNavigate()
   const { slug } = useParams()
   const post = getBlogPost(slug)
+  const canonicalUrl = useCanonicalUrl()
 
   if (!post) {
     return (
@@ -269,6 +282,7 @@ export default function BlogPost() {
     const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
     const prevOgType = document.head.querySelector('meta[property="og:type"]')?.getAttribute("content") ?? null
     const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
+    const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
     document.title = post.title
     upsertMetaByName("description", post.metaDescription)
@@ -278,7 +292,9 @@ export default function BlogPost() {
     upsertMetaByProperty("og:title", post.title)
     upsertMetaByProperty("og:description", post.metaDescription)
     upsertMetaByProperty("og:type", "article")
-    upsertMetaByProperty("og:url", typeof window !== "undefined" ? window.location.href : "")
+    upsertMetaByProperty("og:url", canonicalUrl)
+
+    upsertLinkByRel("canonical", canonicalUrl)
 
     return () => {
       document.title = prevTitle
@@ -289,8 +305,9 @@ export default function BlogPost() {
       if (prevOgDesc !== null) upsertMetaByProperty("og:description", prevOgDesc)
       if (prevOgType !== null) upsertMetaByProperty("og:type", prevOgType)
       if (prevOgUrl !== null) upsertMetaByProperty("og:url", prevOgUrl)
+      if (prevCanonical !== null) upsertLinkByRel("canonical", prevCanonical)
     }
-  }, [post])
+  }, [post, canonicalUrl])
 
   return (
     <article className="px-6 md:px-12 pb-20">
