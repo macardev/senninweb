@@ -318,19 +318,30 @@ export default function BlogPost() {
       />
       <div className="max-w-3xl mx-auto">
         <div className="pt-6 pb-10">
-          <button
-            type="button"
-            data-cursor
-            onClick={() => {
-              navigate("/")
-              setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0)
-            }}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03]
-                       px-4 py-2 text-xs text-white/70 hover:text-white hover:border-white/20 transition-colors"
-          >
-            <span className="text-base leading-none">←</span>
-            Ana Sayfaya Dön
-          </button>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              data-cursor
+              onClick={() => {
+                navigate("/")
+                setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0)
+              }}
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03]
+                         px-4 py-2 text-xs text-white/70 hover:text-white hover:border-white/20 transition-colors"
+            >
+              <span className="text-base leading-none">←</span>
+              Ana Sayfaya Dön
+            </button>
+            <Link
+              to="/blog"
+              data-cursor
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03]
+                         px-4 py-2 text-xs text-white/70 hover:text-white hover:border-white/20 transition-colors"
+            >
+              <span className="text-base leading-none">←</span>
+              Dijital Rehber
+            </Link>
+          </div>
 
            <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
             <span className="text-gold-400/90 font-semibold">{post.tag}</span>
