@@ -20,7 +20,7 @@
 No lint, typecheck, or test commands exist.
 
 ## Architecture
-- **Routes**: `/` (Home), `/blog`, `/blog/:slug`, `/gebze`
+- **Routes**: `/` (Home), `/blog`, `/blog/:slug`, `/gebze`, `/sss`
 - **Entry**: `src/main.jsx` → `src/App.jsx`
 - **Layout**: `src/components/layout/Layout.jsx` renders Navbar + `<Outlet/>` + Footer; custom cursor (lazy, desktop-only hover-capable devices)
 - **Home page** (`src/pages/Home.jsx`): Hero (eager), BlogCTA (eager), rest lazy-loaded inside `<Suspense>`
@@ -34,3 +34,12 @@ No lint, typecheck, or test commands exist.
 - Favicon SVG source: `public/favicon/favicon.svg`; ico regenerated during `dev` / `build`
 - `node_modules` is the only thing gitignored
 - No CI, no pre-commit hooks
+
+## SEO
+- SEO-REHBERI.md in project root: structured data (JSON-LD) guide with schema templates
+- Organization schema in `index.html` (global)
+- Home: Organization + WebSite (managed in page component via `useEffect`)
+- Blog: CollectionPage
+- BlogPost: Article (with image + datePublished)
+- SSS: FAQPage
+- Gebze: Service (local)

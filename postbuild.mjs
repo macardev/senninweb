@@ -17,6 +17,7 @@ const pages = [
   { loc: '/blog/kucuk-isletmeler-google-da-gorunurluk-2026', priority: '0.7' },
   { loc: '/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026', priority: '0.7' },
   { loc: '/blog/web-sitesi-tasarim-fiyatlari-2026', priority: '0.7' },
+  { loc: '/blog/tasarimin-5-temel-ilkesi', priority: '0.7' },
   { loc: '/sss', priority: '0.8' },
 ]
 

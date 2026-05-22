@@ -50,8 +50,20 @@ export default function Blog() {
     }
   }, [canonicalUrl])
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Web Tasarım ve SEO Rehberi | SenninWeb",
+    "description": "Web tasarım, SEO ve dijital büyüme üzerine rehberler. İşletmenizi internette büyütmek için stratejiler.",
+    "url": canonicalUrl,
+  }
+
   return (
     <section className="px-6 md:px-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-6xl mx-auto">
         <div className="pt-6 pb-10 md:pb-14">
           <button

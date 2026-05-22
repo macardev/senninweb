@@ -295,6 +295,8 @@ export default function BlogPost() {
     "@type": "Article",
     headline: post.shortTitle,
     description: post.metaDescription,
+    image: "https://www.senninweb.com/og-image.jpg",
+    datePublished: post.date,
     author: {
       "@type": "Person",
       name: post.author,
