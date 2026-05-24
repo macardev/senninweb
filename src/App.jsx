@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Layout from "@/components/layout/Layout"
+import ScrollToTop from "@/components/ui/ScrollToTop"
 import Home from "@/pages/Home"
 
 const Blog = lazy(() => import("@/pages/Blog"))
@@ -12,6 +13,7 @@ const SSS = lazy(() => import("@/pages/SSS"))
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />

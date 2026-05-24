@@ -82,11 +82,16 @@ export default function Navbar() {
           }}
           className="flex items-center gap-3 group"
         >
-          <div className="relative w-8 h-8">
-            <div className="absolute inset-0 rounded-full border border-gold-500/60 group-hover:border-gold-400 transition-colors duration-300" />
-            <div className="absolute inset-[5px] rounded-full bg-gold-500/20 group-hover:bg-gold-500/30 transition-colors duration-300" />
-            <div className="absolute inset-[9px] rounded-full bg-gold-500 group-hover:scale-110 transition-transform duration-300" />
-          </div>
+          <svg viewBox="0 0 32 32" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300">
+            <defs>
+              <linearGradient id="navbarS" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#D97706" />
+                <stop offset="100%" stopColor="#B45309" />
+              </linearGradient>
+            </defs>
+            <path d="M 10 8 Q 10 6 12 6 L 20 6 Q 22 6 22 8 Q 22 10 20 10 L 12 10 Q 10 10 10 12 L 10 15 Q 10 17 12 17 L 20 17 Q 22 17 22 19 Q 22 21 20 21 L 12 21 Q 10 21 10 23 Q 10 26 12 26 L 20 26 Q 22 26 22 24"
+                  fill="none" stroke="url(#navbarS)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
           <span className="font-display font-bold text-lg tracking-tight text-white">
             Sennin<span className="text-gold-gradient">Web</span>
           </span>
