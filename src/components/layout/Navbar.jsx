@@ -5,6 +5,7 @@ import { scrollToIdWithRetry } from "@/utils/scrollToId"
 const navLinks = [
   { label: 'Hizmetler',   href: '/#services' },
   { label: 'Referanslar', href: '/#references' },
+  { label: 'Hakkımızda',  href: '/hakkimizda' },
   { label: 'İletişim',    href: '/#contact' },
   { label: 'Dijital Rehber', href: '/blog' },
   { label: 'SSS', href: '/sss' },

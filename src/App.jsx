@@ -5,6 +5,7 @@ import Layout from "@/components/layout/Layout"
 import ScrollToTop from "@/components/ui/ScrollToTop"
 import Home from "@/pages/Home"
 
+const Hakkimizda = lazy(() => import("@/pages/Hakkimizda"))
 const Blog = lazy(() => import("@/pages/Blog"))
 const BlogPost = lazy(() => import("@/pages/BlogPost"))
 const Gebze = lazy(() => import("@/pages/Gebze"))
@@ -17,6 +18,11 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/hakkimizda" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <Hakkimizda />
+            </Suspense>
+          } />
           <Route path="/blog" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <Blog />

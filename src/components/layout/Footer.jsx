@@ -14,6 +14,7 @@ const footerLinks = [
   {
     title: 'Şirket',
     links: [
+      { label: 'Hakkımızda',  href: '/hakkimizda' },
       { label: 'Referanslar',  href: '/#references' },
       { label: 'Nasıl Çalışırız', href: '/#how'     },
       { label: 'İletişim',     href: '/#contact'    },

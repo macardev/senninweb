@@ -40,6 +40,11 @@ console.log('\n📄 Prerendering static pages:')
 
 // Static pages
 prerender(
+  '/hakkimizda',
+  'Hakkımızda | SenninWeb — Premium Web Tasarım & SEO',
+  "2025'te kurulan SenninWeb, işletmelerin marka görünürlüğünü artırmak, müşteri kazanımını hızlandırmak ve aylık gelirlerini yükseltmek için premium web tasarım ve SEO hizmetleri sunar."
+)
+prerender(
   '/blog',
   'Web Tasarım ve SEO Rehberi | SenninWeb',
   'Web tasarım, SEO ve dijital büyüme üzerine rehberler. İşletmenizi internette büyütmek için stratejiler.'
@@ -63,6 +68,7 @@ for (const post of blogPosts) {
 // ── Generate sitemap ──
 const pages = [
   { loc: '/', priority: '1.0' },
+  { loc: '/hakkimizda', priority: '0.8' },
   { loc: '/blog', priority: '0.8' },
   { loc: '/gebze', priority: '0.9' },
   ...blogPosts.map(p => ({ loc: `/blog/${p.slug}`, priority: '0.7' })),
