@@ -37,7 +37,7 @@ No lint, typecheck, or test commands exist.
 
 ## SEO
 - SEO-REHBERI.md in project root: structured data (JSON-LD) guide with schema templates
-- Statik yapılandırma dosyaları (robots.txt, llms.txt, sitemap.xml) yalnızca `public/` klasöründe yönetilir. Sitemap.xml `postbuild.mjs` tarafından otomatik oluşturulur. `public/` dışında hiçbir klasöre ekstra yapılandırma dosyası konulmaz. `index.html` yalnızca proje kökünde bulunur; `dist/` içinde bu dosyaların hiçbiri barındırılmaz (postbuild temizler).
+- Statik yapılandırma dosyaları (robots.txt, llms.txt, sitemap.xml) yalnızca `public/` klasöründe yönetilir. Sitemap.xml `postbuild.mjs` tarafından otomatik oluşturulur. `public/` dışında hiçbir klasöre ekstra yapılandırma dosyası konulmaz. `index.html` yalnızca proje kökünde bulunur.
 - Organization schema in `index.html` (global)
 - Home: Organization + WebSite (managed in page component via `useEffect`)
 - Blog: CollectionPage

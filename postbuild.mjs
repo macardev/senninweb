@@ -1,4 +1,4 @@
-import { writeFileSync, unlinkSync } from 'fs'
+import { writeFileSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -32,15 +32,5 @@ ${pages.map(p => `  <url>
 `
 
 writeFileSync(publicSitemap, sitemap, 'utf-8')
+writeFileSync(distSitemap, sitemap, 'utf-8')
 console.log('✓ sitemap generated with', pages.length, 'URLs')
-
-// ── Cleanup: dist'teki dosyaları kaldır (kaynaklar public/ veya root'ta) ──
-const distCleanup = [
-  resolve(__dirname, 'dist/robots.txt'),
-  resolve(__dirname, 'dist/llms.txt'),
-  resolve(__dirname, 'dist/sitemap.xml'),
-  resolve(__dirname, 'dist/index.html'),
-]
-for (const p of distCleanup) {
-  try { unlinkSync(p) } catch {}
-}
