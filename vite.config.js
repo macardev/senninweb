@@ -9,9 +9,10 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // Optimize build performance
   build: {
-    // Use default esbuild minifier (faster and no additional deps)
+    esbuild: {
+      drop: ['console', 'debugger'],
+    },
     rollupOptions: {
       output: {
         manualChunks: (id) => {

@@ -37,25 +37,14 @@
     </noscript>
 
     <!-- Critical CSS for instant above-the-fold paint -->
-    <style>
-      body { background-color: #0A0A0A; color: #FFFFFF; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; }
-      html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-      *, *::before, *::after { box-sizing: border-box; }
-      .hero-critical { display: flex; align-items: center; min-height: 700px; position: relative; overflow: hidden; background-color: #000; }
-      .text-white { color: #FFFFFF; }
-      .text-gold-500 { color: #D97706; }
-      .text-gold-gradient { background: linear-gradient(135deg, #FCD34D, #D97706, #B45309); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-      @media (max-width: 768px) {
-        .hero-critical { min-height: 600px; }
-      }
-    </style>
-    <script type="module" crossorigin src="/assets/index-gV9h8WqO.js"></script>
+    <style>body{background-color:#0a0a0a;color:#fff;font-family:system-ui,-apple-system,sans-serif;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*,:after,:before{box-sizing:border-box}.hero-critical{align-items:center;background-color:#000;display:flex;min-height:700px;overflow:hidden;position:relative}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}@media (max-width:768px){.hero-critical{min-height:600px}}</style>
+    <script type="module" crossorigin src="/assets/index-n_6TrikS.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-DNTqQLy0.js">
     <link rel="modulepreload" crossorigin href="/assets/layout-DzYMeQWL.js">
     <link rel="modulepreload" crossorigin href="/assets/section-Hero-Bwp0fD8L.js">
     <link rel="modulepreload" crossorigin href="/assets/section-BlogCTA-BGGgL8Ub.js">
-    <link rel="modulepreload" crossorigin href="/assets/page-Home-hw2II_Gp.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-LT5r3IZ9.css">
+    <link rel="modulepreload" crossorigin href="/assets/page-Home-CtbnfQ5-.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BkrR0r8v.css">
   </head>
   <body>
     <div id="root">
@@ -108,19 +97,17 @@
 
     <!-- Defer Google Analytics to avoid render-blocking -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-MNVQN1HEK9');
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() { loadGoogleAnalytics(); });
-      } else { loadGoogleAnalytics(); }
-      function loadGoogleAnalytics() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MNVQN1HEK9';
-        document.head.appendChild(script);
-      }
+      var raf = requestAnimationFrame || setTimeout;
+      raf(function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MNVQN1HEK9');
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MNVQN1HEK9';
+        document.head.appendChild(s);
+      });
     </script>
   </body>
 </html>

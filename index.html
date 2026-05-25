@@ -102,19 +102,17 @@
 
     <!-- Defer Google Analytics to avoid render-blocking -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-MNVQN1HEK9');
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() { loadGoogleAnalytics(); });
-      } else { loadGoogleAnalytics(); }
-      function loadGoogleAnalytics() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MNVQN1HEK9';
-        document.head.appendChild(script);
-      }
+      var raf = requestAnimationFrame || setTimeout;
+      raf(function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MNVQN1HEK9');
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MNVQN1HEK9';
+        document.head.appendChild(s);
+      });
     </script>
   </body>
 </html>
