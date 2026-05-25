@@ -1,23 +1,71 @@
-import { writeFileSync } from 'fs'
+import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const publicSitemap = resolve(__dirname, 'public/sitemap.xml')
-const distSitemap = resolve(__dirname, 'dist/sitemap.xml')
+const publicDir = resolve(__dirname, 'public')
+const distDir = resolve(__dirname, 'dist')
 const today = new Date().toISOString().split('T')[0]
+
+// ── Prerender helper ──
+function prerender(route, title, description) {
+  const html = indexHtml
+    .replace(/(<title>).*?(<\/title>)/, `$1${escapeHtml(title)}$2`)
+    .replace(
+      /(<meta name="description" content=").*?(")/,
+      `$1${escapeAttr(description)}$2`
+    )
+
+  const outPath = resolve(distDir, route.slice(1), 'index.html')
+  const outDir = dirname(outPath)
+  if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true })
+  writeFileSync(outPath, html, 'utf-8')
+  console.log(`  ✓ ${route}`)
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
+function escapeAttr(str) {
+  return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
+// ── Read template and blog data ──
+const indexHtml = readFileSync(resolve(distDir, 'index.html'), 'utf-8')
+const blogPosts = JSON.parse(readFileSync(resolve(publicDir, 'data/blog-posts.json'), 'utf-8'))
+
+// ── Prerender static HTML pages ──
+console.log('\n📄 Prerendering static pages:')
+
+// Static pages
+prerender(
+  '/blog',
+  'Web Tasarım ve SEO Rehberi | SenninWeb',
+  'Web tasarım, SEO ve dijital büyüme üzerine rehberler. İşletmenizi internette büyütmek için stratejiler.'
+)
+prerender(
+  '/gebze',
+  'Gebze Web Tasarım ve SEO Hizmetleri | SenninWeb',
+  "Gebze'de profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Yerel işletmeniz için Google'da üst sıralarda yer alın."
+)
+prerender(
+  '/sss',
+  'Sıkça Sorulan Sorular | SenninWeb',
+  'Web tasarım, SEO, AEO, GEO ve daha fazlası hakkında sıkça sorulan sorular. SenninWeb ile dijital dünyada merak ettiklerinizi öğrenin.'
+)
+
+// Blog posts
+for (const post of blogPosts) {
+  prerender(`/blog/${post.slug}`, post.title, post.metaDescription)
+}
 
 // ── Generate sitemap ──
 const pages = [
   { loc: '/', priority: '1.0' },
   { loc: '/blog', priority: '0.8' },
   { loc: '/gebze', priority: '0.9' },
-  { loc: '/blog/kucuk-isletme-web-sitesi', priority: '0.7' },
-  { loc: '/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir', priority: '0.7' },
-  { loc: '/blog/kucuk-isletmeler-google-da-gorunurluk-2026', priority: '0.7' },
-  { loc: '/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026', priority: '0.7' },
-  { loc: '/blog/web-sitesi-tasarim-fiyatlari-2026', priority: '0.7' },
-  { loc: '/blog/tasarimin-5-temel-ilkesi', priority: '0.7' },
+  ...blogPosts.map(p => ({ loc: `/blog/${p.slug}`, priority: '0.7' })),
   { loc: '/sss', priority: '0.8' },
 ]
 
@@ -31,6 +79,8 @@ ${pages.map(p => `  <url>
 </urlset>
 `
 
+const publicSitemap = resolve(publicDir, 'sitemap.xml')
+const distSitemap = resolve(distDir, 'sitemap.xml')
 writeFileSync(publicSitemap, sitemap, 'utf-8')
 writeFileSync(distSitemap, sitemap, 'utf-8')
-console.log('✓ sitemap generated with', pages.length, 'URLs')
+console.log('\n📄 Sitemap generated with', pages.length, 'URLs')
