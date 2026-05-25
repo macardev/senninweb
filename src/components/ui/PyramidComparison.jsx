@@ -187,8 +187,18 @@ export default function PyramidComparison() {
       </div>
 
       <div className="flex justify-between mt-4 text-xs font-medium">
-        <span className="text-white/40">Geleneksel Pazarlama</span>
-        <span className="text-gold-400">SenninWeb Stratejisi</span>
+        <div className="text-left">
+          <span className="text-white/40">Geleneksel Pazarlama</span>
+          <p className="text-[10px] text-white/30 mt-1 max-w-[180px] leading-tight">
+            Ay sonu tıklama ve gösterim raporu veren planlama
+          </p>
+        </div>
+        <div className="text-right">
+          <span className="text-gold-400">SenninWeb Stratejisi</span>
+          <p className="text-[10px] text-white/30 mt-1 max-w-[180px] leading-tight ml-auto">
+            Tıklama değil, müşteri ve aylık gelir getiren planlama
+          </p>
+        </div>
       </div>
     </div>
   )

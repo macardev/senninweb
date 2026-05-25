@@ -195,6 +195,25 @@ export default function Hakkimizda() {
           </div>
         </div>
 
+        <div className="mt-12 gold-line opacity-20" />
+
+        <div className="mt-12 text-center">
+          <h2 className="text-lg md:text-xl font-display font-semibold text-white">
+            Dijital Rehberimizi Keşfedin
+          </h2>
+          <p className="mt-2 text-sm md:text-base text-white/65 leading-relaxed max-w-lg mx-auto">
+            Web tasarım, SEO ve dijital büyüme üzerine yazdığımız rehberleri okuyun.
+          </p>
+          <Link
+            to="/blog"
+            data-cursor
+            className="mt-6 inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-medium tracking-wide
+                       border border-gold-500/50 text-gold-400 hover:bg-gold-500 hover:text-black transition-all"
+          >
+            Dijital Rehber →
+          </Link>
+        </div>
+
         <section className="mt-12 relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-10">
           <div className="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 blur-[70px] pointer-events-none" />
 
