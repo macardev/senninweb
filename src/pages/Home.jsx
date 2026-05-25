@@ -48,6 +48,12 @@ export default function Home() {
   const canonicalUrl = useCanonicalUrl()
 
   useEffect(() => {
+    import("@/components/sections/PyramidSection")
+    import("@/components/sections/Manifesto")
+    import("@/components/sections/Services")
+  }, [])
+
+  useEffect(() => {
     const prevTitle = document.title
     const prevDesc = document.head.querySelector('meta[name="description"]')?.getAttribute("content") ?? null
     const prevOgTitle = document.head.querySelector('meta[property="og:title"]')?.getAttribute("content") ?? null

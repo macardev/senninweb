@@ -1,9 +1,9 @@
-import { readFileSync, writeFileSync } from 'fs'
+import { writeFileSync, unlinkSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const distHtml = resolve(__dirname, 'dist/index.html')
+const publicSitemap = resolve(__dirname, 'public/sitemap.xml')
 const distSitemap = resolve(__dirname, 'dist/sitemap.xml')
 const today = new Date().toISOString().split('T')[0]
 
@@ -31,32 +31,16 @@ ${pages.map(p => `  <url>
 </urlset>
 `
 
-writeFileSync(distSitemap, sitemap, 'utf-8')
+writeFileSync(publicSitemap, sitemap, 'utf-8')
 console.log('✓ sitemap generated with', pages.length, 'URLs')
 
-// ── Optimize HTML ──
-let html = readFileSync(distHtml, 'utf-8')
-
-html = html.replace(
-  /<link rel="stylesheet" crossorigin href="(\/assets\/index-[^.]+\.css)">/,
-  (match, href) =>
-    `<link rel="preload" href="${href}" as="style" onload="this.onload=null;this.rel='stylesheet'">\n    <noscript>${match}</noscript>`
-)
-
-const existingRefs = new Set()
-for (const m of html.matchAll(/(?:src|href)="(\/assets\/[^"]+\.js)"/g)) {
-  existingRefs.add(m[1])
+// ── Cleanup: dist'teki dosyaları kaldır (kaynaklar public/ veya root'ta) ──
+const distCleanup = [
+  resolve(__dirname, 'dist/robots.txt'),
+  resolve(__dirname, 'dist/llms.txt'),
+  resolve(__dirname, 'dist/sitemap.xml'),
+  resolve(__dirname, 'dist/index.html'),
+]
+for (const p of distCleanup) {
+  try { unlinkSync(p) } catch {}
 }
-
-const entryScript = [...html.matchAll(/src="(\/assets\/index-[^.]+\.js)"/g)].map(m => m[1])[0]
-const missingPreloads = [...existingRefs]
-  .filter(href => href !== entryScript && !html.includes(`modulepreload" crossorigin href="${href}"`))
-  .map(href => `    <link rel="modulepreload" crossorigin href="${href}">`)
-  .join('\n')
-
-if (missingPreloads) {
-  html = html.replace('</head>', `${missingPreloads}\n  </head>`)
-}
-
-writeFileSync(distHtml, html, 'utf-8')
-console.log('✓ postbuild: CSS non-blocking, modulepreload deduplicated')

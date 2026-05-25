@@ -17,6 +17,8 @@ const services = [
     ],
     accent: 'Web',
     accentRest: 'Tasarım',
+    image: '/images/webtasarım.webp',
+    imageAlt: 'Web Tasarım hizmet görseli',
   },
   {
     number: '02',
@@ -32,6 +34,8 @@ const services = [
     ],
     accent: 'SEO',
     accentRest: '& Büyüme',
+    image: '/images/seovebüyüme.webp',
+    imageAlt: 'SEO ve Büyüme hizmet görseli',
   },
   {
     number: '03',
@@ -47,6 +51,8 @@ const services = [
     ],
     accent: 'Kurumsal',
     accentRest: 'Kimlik',
+    image: '/images/kurumsalkimlik.webp',
+    imageAlt: 'Kurumsal Kimlik hizmet görseli',
   },
 ]
 
@@ -108,9 +114,21 @@ function ServiceCard({ service, index }) {
           </p>
         </div>
 
-        <p className="text-white/60 text-sm leading-relaxed mb-8 max-w-sm">
+        <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-sm">
           {service.description}
         </p>
+
+        <div className="relative w-full h-48 rounded-xl overflow-hidden mb-6">
+          <img
+            src={service.image}
+            alt={service.imageAlt}
+            loading="lazy"
+            width="400"
+            height="192"
+            className="w-full h-full object-cover rounded-xl
+                       transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+        </div>
 
         <div className="w-full h-px bg-white/6 mb-8" />
 

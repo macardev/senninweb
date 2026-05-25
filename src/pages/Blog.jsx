@@ -1,9 +1,7 @@
+import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { useEffect } from "react"
 import { getAllBlogPosts } from "@/data/blogPosts"
 import useCanonicalUrl from "@/hooks/useCanonicalUrl"
-
-const posts = getAllBlogPosts()
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -30,6 +28,15 @@ function upsertLinkByRel(rel, href) {
 export default function Blog() {
   const navigate = useNavigate()
   const canonicalUrl = useCanonicalUrl()
+  const [posts, setPosts] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    getAllBlogPosts().then(data => {
+      setPosts(data)
+      setLoading(false)
+    })
+  }, [])
 
   useEffect(() => {
     const prevTitle = document.title
@@ -95,46 +102,55 @@ export default function Blog() {
           <div className="mt-8 gold-line opacity-20" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-16">
-          {posts.map((post) => (
-            <Link
-              key={post.slug}
-              to={`/blog/${post.slug}`}
-              data-cursor
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]
-                         hover:border-white/20 hover:bg-white/[0.05] transition-colors"
-            >
-              <div className="absolute -top-24 -right-24 w-64 h-64 bg-gold-500/10 blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity" />
+        {loading ? (
+          <div className="flex items-center justify-center py-20">
+            <div className="flex items-center gap-3 text-sm text-white/60">
+              <div className="w-4 h-4 rounded-full border border-gold-500/30 border-t-gold-500 animate-spin" />
+              Yükleniyor...
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-16">
+            {posts.map((post) => (
+              <Link
+                key={post.slug}
+                to={`/blog/${post.slug}`}
+                data-cursor
+                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]
+                           hover:border-white/20 hover:bg-white/[0.05] transition-colors"
+              >
+                <div className="absolute -top-24 -right-24 w-64 h-64 bg-gold-500/10 blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity" />
 
-              <div className="relative p-7">
-                <div className="flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold-400/90">
-                      {post.tag}
-                    </span>
-                    <span className="text-[10px] text-white/55">•</span>
-                    <span className="text-[10px] text-white/60">{post.readingTime}</span>
+                <div className="relative p-7">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold-400/90">
+                        {post.tag}
+                      </span>
+                      <span className="text-[10px] text-white/55">•</span>
+                      <span className="text-[10px] text-white/60">{post.readingTime}</span>
+                    </div>
+                    <span className="text-[10px] text-white/60">{post.date}</span>
                   </div>
-                  <span className="text-[10px] text-white/60">{post.date}</span>
-                </div>
 
-                <h2 className="mt-4 text-xl md:text-2xl font-display font-semibold leading-snug text-white">
-                  {post.shortTitle}
-                </h2>
-                <p className="mt-3 text-sm text-white/60 leading-relaxed">
-                  {post.desc}
-                </p>
+                  <h2 className="mt-4 text-xl md:text-2xl font-display font-semibold leading-snug text-white">
+                    {post.shortTitle}
+                  </h2>
+                  <p className="mt-3 text-sm text-white/60 leading-relaxed">
+                    {post.desc}
+                  </p>
 
-                <div className="mt-6 inline-flex items-center gap-2 text-sm text-white/70 group-hover:text-white transition-colors min-h-[44px]">
-                  Devamını oku
-                  <span className="inline-block translate-x-0 group-hover:translate-x-1 transition-transform">
-                    →
-                  </span>
+                  <div className="mt-6 inline-flex items-center gap-2 text-sm text-white/70 group-hover:text-white transition-colors min-h-[44px]">
+                    Devamını oku
+                    <span className="inline-block translate-x-0 group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   )

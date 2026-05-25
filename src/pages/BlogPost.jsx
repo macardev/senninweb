@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 import { getBlogPost } from "@/data/blogPosts"
@@ -233,8 +233,17 @@ function renderSection(section, index) {
 export default function BlogPost() {
   const navigate = useNavigate()
   const { slug } = useParams()
-  const post = getBlogPost(slug)
+  const [post, setPost] = useState(null)
+  const [loading, setLoading] = useState(true)
   const canonicalUrl = useCanonicalUrl()
+
+  useEffect(() => {
+    setLoading(true)
+    getBlogPost(slug).then(data => {
+      setPost(data)
+      setLoading(false)
+    })
+  }, [slug])
 
   useEffect(() => {
     if (!post) return
@@ -272,6 +281,19 @@ export default function BlogPost() {
       if (prevCanonical !== null) upsertLinkByRel("canonical", prevCanonical)
     }
   }, [post, canonicalUrl])
+
+  if (loading) {
+    return (
+      <div className="px-6 md:px-12 py-20">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-3 text-sm text-white/60">
+            <div className="w-4 h-4 rounded-full border border-gold-500/30 border-t-gold-500 animate-spin" />
+            Yükleniyor...
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   if (!post) {
     return (
