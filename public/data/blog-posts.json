@@ -692,7 +692,7 @@
       {
         "type": "finalCta",
         "question": "Web sitenizin neden görünmediğini öğrenmek ister misiniz?",
-        "ctaText": "<a href=\"#contact\" style=\"color: #FCD34D; font-weight: bold;\">Bizimle iletişime geçin</a> ve sitenizi müşteri getiren bir sisteme dönüştürelim!",
+        "ctaText": "<a href=\"#contact\">Bizimle iletişime geçin</a> ve sitenizi müşteri getiren bir sisteme dönüştürelim!",
         "isHtml": true
       }
     ]
@@ -1079,6 +1079,314 @@
         "type": "finalCta",
         "question": "İşletmenize özel, bu 5 ilkeye uygun bir web sitesi mi arıyorsunuz?",
         "ctaText": "Bizimle iletişime geçin, size özel bir strateji oluşturalım!"
+      }
+    ]
+  },
+  {
+    "slug": "web-tasarim-fiyatlari-neden-degisiyor-2026",
+    "title": "Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor? 2026 Güncel Rehber | SenninWeb",
+    "description": "Web tasarım fiyatları neden bu kadar farklı? 2026 yılında profesyonel web tasarım, kurumsal web tasarım ve web sitesi tasarımı fiyatlarını etkileyen tüm faktörler güncel rehber. En uygun web tasarım hizmeti fiyatları hakkında bilmeniz gerekenler.",
+    "shortTitle": "Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor?",
+    "desc": "Web tasarım fiyatları neden bu kadar farklı? 2026'da profesyonel ve kurumsal web tasarım maliyetlerini etkileyen faktörler.",
+    "tag": "Web Tasarım",
+    "readingTime": "7 dk",
+    "date": "2026",
+    "author": "Çağatay Macar",
+    "authorTitle": "Senior Web Developer",
+    "metaDescription": "Web tasarım fiyatları neden bu kadar değişiklik gösteriyor? 2026 yılında profesyonel web tasarım, kurumsal web tasarım ve web sitesi tasarımı fiyatlarını etkileyen tüm faktörleri güncel fiyat aralıklarıyla öğrenin.",
+    "schemaUrl": "https://www.senninweb.com/blog/web-tasarim-fiyatlari-neden-degisiyor-2026",
+    "sections": [
+      {
+        "type": "heroSection",
+        "title": "Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor?",
+        "subtitle": "5.000 TL'ye de site var, 100.000 TL'ye de — peki aradaki fark ne?"
+      },
+      {
+        "type": "paragraph",
+        "content": "İnternette web sitesi yaptırmak istediğinizde karşınıza çıkan fiyatlar o kadar farklı ki insan ister istemez kafası karışıyor. Bir ajans 3.000 TL'ye \"profesyonel web sitesi\" yaparken, başka bir ajans aynı hizmet için 50.000 TL istiyor. İkisi de aynı şeyi mi yapıyor? Kesinlikle hayır."
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Tıpkı bir araba örneğindeki gibi: İkisi de araba ama biri sizi A noktasından B noktasına götüren ekonomik bir model, diğeri ise konfor, hız ve güvenlik donanımlarıyla dolu lüks bir araç. <strong>Tasarım</strong> dünyasında da durum aynı. Bu yazıda, fiyat uçurumunun nedenlerini, 2026 yılında hangi fiyat aralıklarının gerçekçi olduğunu ve doğru tercihi nasıl yapacağınızı adım adım anlatacağım."
+      },
+      {
+        "type": "heading2",
+        "content": "Web Tasarım Fiyatları Neden Bu Kadar Farklı?"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Bu sorunun tek bir cevabı yok. Çünkü fiyatı etkileyen onlarca değişken var. Ama en temel sebep şu: Herkes \"web sitesi\" yapıyor ama ortaya çıkan işin kalitesi, kapsamı ve teknik altyapısı tamamen farklı. <strong>Kurumsal bir site</strong> ile hazır tema üzerinden yapılan bir site arasında dağlar kadar fark vardır."
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Düşük fiyatlı seçenekler genellikle hazır şablonlar kullanır, size özel bir tasarım sunmaz ve çoğu zaman <a href=\"/blog/teknik-terimler#mobil-uyumlu-tasarim\">mobil uyumlu tasarım</a> gibi temel gereklilikleri bile tam karşılamaz. Oysa profesyonel bir stratejik süreç, markanıza özel stratejilerle ilerler ve sizi rakiplerinizden ayıran bir dijital varlık oluşturur."
+      },
+      {
+        "type": "heading2",
+        "content": "2026 Web Tasarım Fiyatlarını Belirleyen 5 Faktör"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Bu hizmeti alırken ödediğiniz ücretin karşılığında tam olarak ne aldığınızı anlamak için şu 5 faktöre dikkat etmelisiniz."
+      },
+      {
+        "type": "heading3",
+        "content": "1. Tasarım Kalitesi ve UI/UX"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "<a href=\"/blog/teknik-terimler#ui-ux-tasarimi\">UI/UX tasarımı</a>, bir web sitesinin sadece görünümünü değil, kullanıcının siteyle olan tüm etkileşimini kapsar. Profesyonel bir ekip, sitenize giren bir kişinin hangi butona tıklayacağından, hangi renklerin güven hissi vereceğine kadar her detayı özel olarak tasarlar. Hazır tema kullanan siteler ise bu sürecin neredeyse tamamını atlar. Bu da fiyata doğrudan yansır."
+      },
+      {
+        "type": "heading3",
+        "content": "2. Mobil Uyum ve Hız (Core Web Vitals)"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Google, 2026 yılında mobil uyum ve site hızını sıralama faktörü olarak çok ciddiye alıyor. <a href=\"/blog/teknik-terimler#core-web-vitals\">Core Web Vitals</a> olarak bilinen bu performans metrikleri, sitenizin hem kullanıcı deneyimini hem de Google'daki sıralamasını doğrudan etkiliyor. Profesyonel bir ajans, bu metrikleri optimize etmek için altyapı seviyesinde çalışır. Bu da ek bir maliyet demektir."
+      },
+      {
+        "type": "heading3",
+        "content": "3. SEO ve Teknik Altyapı"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "<a href=\"/blog/teknik-terimler#seo-uyumlu-web-sitesi\">SEO uyumlu web sitesi</a> kurulumu, sitenin iskeletinden itibaren başlar. Doğru başlık etiketleri, schema.org yapılandırması, hız optimizasyonu, görsel sıkıştırma ve daha birçok teknik detay, sitenizin Google'da görünür olmasını sağlar. Ucuz seçeneklerde bu adımlar genellikle ya eksiktir ya da hiç yoktur."
+      },
+      {
+        "type": "heading3",
+        "content": "4. Özel Yazılım ve Fonksiyonellik İhtiyaçları"
+      },
+      {
+        "type": "paragraph",
+        "content": "Her işletmenin ihtiyacı farklıdır. Online rezervasyon sistemi, üyelik paneli, ödeme entegrasyonu, çoklu dil desteği gibi özellikler projenin kapsamını ve dolayısıyla fiyatı artırır. Basit bir tanıtım sitesi ile özel yazılım gerektiren bir platform arasındaki fiyat farkı bu noktada ortaya çıkar."
+      },
+      {
+        "type": "heading3",
+        "content": "5. İçerik ve Metin Yazarlığı"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bir web sitesini etkili yapan sadece görseller değil, aynı zamanda içerikleridir. Profesyonel metin yazarlığı, markanızın sesini doğru yansıtır, ziyaretçileri harekete geçirir ve SEO'ya katkı sağlar. İçerik üretimi de maliyeti etkileyen önemli bir faktördür."
+      },
+      {
+        "type": "heading2",
+        "content": "2026 Güncel Fiyat Aralıkları"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tabii ki her proje benzersizdir ancak 2026 yılı için genel bir fikir vermek adına ortalama fiyat aralıklarını şöyle özetleyebilirim:"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "<div class=\"overflow-x-auto my-6\"><table class=\"w-full text-sm text-white/65 border-collapse\"><thead><tr class=\"border-b border-white/10\"><th class=\"text-left py-3 pr-6 font-semibold text-white\">Proje Türü</th><th class=\"text-left py-3 font-semibold text-white\">Ortalama Fiyat Aralığı</th></tr></thead><tbody><tr class=\"border-b border-white/10\"><td class=\"py-3 pr-6\">Hazır tema ile basit tanıtım sitesi</td><td class=\"py-3\">5.000 – 15.000 TL</td></tr><tr class=\"border-b border-white/10\"><td class=\"py-3 pr-6\">Profesyonel kurumsal site çözümü</td><td class=\"py-3\">20.000 – 50.000 TL</td></tr><tr class=\"border-b border-white/10\"><td class=\"py-3 pr-6\">Premium UI/UX + SEO odaklı site</td><td class=\"py-3\">50.000 – 100.000 TL</td></tr><tr><td class=\"py-3 pr-6\">Özel yazılım + e-ticaret + portal</td><td class=\"py-3\">100.000 TL ve üzeri</td></tr></tbody></table></div>"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Gördüğünüz gibi <strong>fiyatlar</strong> oldukça geniş bir skalada yer alıyor. Önemli olan en ucuz seçeneği bulmak değil, işletmenizin ihtiyaçlarına en uygun seçeneği almak."
+      },
+      {
+        "type": "heading2",
+        "content": "Ucuz Web Tasarım vs Profesyonel Yaklaşım"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Düşük fiyatlı bir web sitesi yaptırıp birkaç ay sonra \"keşke daha iyisini yaptırsaydım\" dediğinizi duyar gibiyim. Çünkü <a href=\"/blog/teknik-terimler#ssl-sertifikasi\">SSL sertifikası</a> olmayan, mobilde bozulan, yavaş açılan bir site size sadece masraf değil, aynı zamanda itibar kaybı da yaşatır."
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "<strong>Profesyonel bir site</strong> ise şunları garanti eder: Google'da görünürlük, hızlı açılış süreleri, mobilde kusursuz deneyim, güvenli altyapı ve markanıza uygun özel tasarım. Bu bir maliyet değil, yatırımdır."
+      },
+      {
+        "type": "paragraph",
+        "content": "Unutmayın, internet kullanıcılarının %75'i bir web sitesinin güvenilirliğini sadece tasarımına bakarak değerlendiriyor. Amatör görünen bir site, profesyonel bir işletme olsanız bile potansiyel müşterilerinizi kaçırmanıza neden olur."
+      },
+      {
+        "type": "heading2",
+        "content": "Web Tasarım Fiyatları Hakkında Sık Sorulan Sorular"
+      },
+      {
+        "type": "paragraph",
+        "content": "En çok merak edilen soruları ve cevaplarını burada topladım:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>En ucuz site fiyatı ne kadar?</strong> Hazır tema kullanan basit bir tanıtım sitesi 5.000 TL'den başlayabilir. Ancak bu siteler genellikle SEO, hız ve mobil uyum konusunda yetersiz kalır.",
+          "<strong>Kurumsal site fiyatları neden daha yüksek?</strong> Çünkü markaya özel UI/UX çalışması, SEO altyapısı, hız optimizasyonu ve özgün içerik üretimi gibi profesyonel hizmetleri kapsar.",
+          "<strong>Site fiyatları 2026'da arttı mı?</strong> Evet, döviz kurları, artan işçilik maliyetleri ve gelişen teknoloji gereksinimleri nedeniyle fiyatlar her yıl belirli bir oranda artış gösteriyor.",
+          "<strong>Web sitesi fiyatına domain ve hosting dahil mi?</strong> Çoğu profesyonel ajans ilk yıl domain ve hosting hizmetini pakete dahil eder. Sonraki yıllar için yenileme ücretleri ayrıca alınır."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Daha fazla sorunuz varsa <a href=\"/sss\">SSS sayfamızı</a> ziyaret edebilir veya bizimle doğrudan iletişime geçebilirsiniz."
+      },
+      {
+        "type": "finalCta",
+        "question": "İşletmenize özel, profesyonel bir çözüm mü arıyorsunuz?",
+        "ctaText": "Bizimle iletişime geçin, size özel bir strateji ve fiyat teklifi oluşturalım!"
+      }
+    ]
+  },
+  {
+    "slug": "teknik-terimler",
+    "title": "Web Tasarım Teknik Terimler Sözlüğü | Core Web Vitals, SEO, UI/UX | SenninWeb",
+    "description": "Web tasarım ve SEO dünyasında sıkça kullanılan teknik terimlerin detaylı açıklamaları. Core Web Vitals, SSL Sertifikası, UI/UX Tasarımı, SEO Uyumluluğu ve Mobil Uyumlu Tasarım rehberi.",
+    "shortTitle": "Web Tasarım Teknik Terimler Sözlüğü",
+    "desc": "Web tasarımın temel teknik terimleri: Core Web Vitals, SSL, UI/UX, SEO ve mobil uyum.",
+    "tag": "Web Tasarım",
+    "readingTime": "8 dk",
+    "date": "2026",
+    "author": "Çağatay Macar",
+    "authorTitle": "Senior Web Developer",
+    "metaDescription": "Web tasarım teknik terimler sözlüğü. Core Web Vitals, SSL Sertifikası, UI/UX Tasarımı, SEO Uyumlu Web Sitesi ve Mobil Uyumlu Tasarım hakkında detaylı açıklamalar.",
+    "schemaUrl": "https://www.senninweb.com/blog/teknik-terimler",
+    "sections": [
+      {
+        "type": "paragraph",
+        "content": "Web tasarım dünyasında sıkça duyduğunuz ama tam olarak ne anlama geldiğini bilmediğiniz teknik terimler mi var? Bu sayfada, blog yazılarımızda link verdiğimiz tüm teknik terimlerin detaylı açıklamalarını bulabilirsiniz. Her bir terimi, neden önemli olduğunu ve web sitenizi nasıl etkilediğini anlattım."
+      },
+      {
+        "type": "heading2",
+        "content": "Core Web Vitals"
+      },
+      {
+        "type": "paragraph",
+        "content": "Core Web Vitals, Google'ın bir web sitesinin kullanıcı deneyimini ölçmek için kullandığı üç temel performans metriğidir. 2021 yılında Google tarafından sıralama faktörü haline getirilmiştir ve 2026 itibarıyla hala en önemli sıralama sinyallerinden biridir."
+      },
+      {
+        "type": "paragraph",
+        "content": "Bu üç metrik şunlardır:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>LCP (Largest Contentful Paint):</strong> Sayfadaki en büyük içerik öğesinin (görsel, video, metin bloğu) ne kadar sürede görüntülendiğini ölçer. İdeal süre 2.5 saniyenin altıdır.",
+          "<strong>INP (Interaction to Next Paint):</strong> Kullanıcının bir sayfayla etkileşime geçmesi (tıklama, dokunma) ile tarayıcının buna yanıt vermesi arasındaki süreyi ölçer. 200 milisaniyenin altı ideal kabul edilir.",
+          "<strong>CLS (Cumulative Layout Shift):</strong> Sayfa yüklenirken görsel öğelerin beklenmedik şekilde kaymasını ölçer. 0.1'in altı ideal değerdir."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Core Web Vitals metriklerinin iyi olması, sitenizin hem Google'da daha üst sıralarda çıkmasını sağlar hem de kullanıcıların sitenizde daha uzun süre kalmasına yardımcı olur. <strong>Web tasarım</strong> sürecinde bu metrikleri göz önünde bulundurmak, uzun vadede sitenizin başarısını doğrudan etkiler."
+      },
+      {
+        "type": "heading2",
+        "content": "SSL Sertifikası"
+      },
+      {
+        "type": "paragraph",
+        "content": "SSL (Secure Sockets Layer) sertifikası, web siteniz ile ziyaretçilerinizin tarayıcısı arasındaki veri iletişimini şifreleyen bir güvenlik protokolüdür. Bir sitenin HTTPS ile başlamasını sağlayan ve tarayıcıda kilit simgesiyle gösterilen bu sertifika, özellikle kullanıcı bilgilerinin (kredi kartı, şifre, kişisel veriler) korunması için hayati önem taşır."
+      },
+      {
+        "type": "paragraph",
+        "content": "SSL sertifikası olmayan bir site, tarayıcılarda \"Güvenli Değil\" uyarısı gösterir. Araştırmalar, kullanıcıların %90'ının böyle bir uyarıyla karşılaştığında siteyi hemen terk ettiğini gösteriyor. Ayrıca Google, SSL sertifikası olan siteleri (HTTPS) sıralamada SSL olmayanlara (HTTP) göre daha üstte konumlandırır."
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Günümüzde ücretsiz SSL sertifikası sağlayıcıları (Let's Encrypt gibi) sayesinde her web sitesi kolayca SSL sahibi olabilir. <strong>Profesyonel web tasarım</strong> hizmeti alırken SSL sertifikasının dahil olup olmadığını mutlaka sormalısınız."
+      },
+      {
+        "type": "heading2",
+        "content": "UI/UX Tasarımı"
+      },
+      {
+        "type": "paragraph",
+        "content": "UI (User Interface — Kullanıcı Arayüzü) ve UX (User Experience — Kullanıcı Deneyimi), modern web tasarımının iki temel yapıtaşıdır. Sıkça birlikte anılsalar da aslında farklı şeyleri ifade ederler."
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "<strong>UI Tasarımı:</strong> Web sitesinin görsel öğeleriyle ilgilenir. Renk paletleri, tipografi, buton tasarımları, ikonlar, boşluk kullanımı ve genel görsel hiyerarşi UI'ın kapsamına girer. Kısacası kullanıcının \"gördüğü\" her şeydir."
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "<strong>UX Tasarımı:</strong> Kullanıcının siteyle olan tüm etkileşimini kapsar. Bir butona tıkladığında ne olacağı, sayfalar arasında nasıl gezineceği, aradığı bilgiyi kaç adımda bulacağı gibi akış ve kullanılabilirlik konularıyla ilgilenir."
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "İyi bir UI/UX tasarımı, ziyaretçilerin sitenizde daha uzun süre kalmasını, daha kolay gezinmesini ve sonuç olarak dönüşüm oranlarının artmasını sağlar. <strong>Kurumsal web tasarım</strong> projelerinde UI/UX çalışması, profesyonel fiyatın önemli bir bölümünü oluşturur."
+      },
+      {
+        "type": "heading2",
+        "content": "SEO Uyumlu Web Sitesi"
+      },
+      {
+        "type": "paragraph",
+        "content": "SEO (Search Engine Optimization — Arama Motoru Optimizasyonu), bir web sitesinin Google gibi arama motorlarında üst sıralarda çıkması için yapılan teknik ve stratejik çalışmaların tamamıdır. SEO uyumlu bir web sitesi, daha en baştan bu optimizasyonlar düşünülerek inşa edilir."
+      },
+      {
+        "type": "paragraph",
+        "content": "SEO uyumlu bir web sitesinde şunlar bulunur:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>Teknik SEO:</strong> Doğru HTML etiket yapısı (h1, h2, title, meta description), schema.org yapılandırması, XML sitemap, robots.txt dosyası ve hızlı sayfa yükleme süreleri.",
+          "<strong>İçerik SEO:</strong> Doğru anahtar kelime stratejisi, kullanıcı niyetine uygun içerik, okunabilirlik ve özgün değer sunan metinler.",
+          "<strong>Teknik Altyapı:</strong> Mobil uyumluluk, HTTPS güvenliği, kırık link kontrolleri, yönlendirme (redirect) yönetimi ve sayfa hızı optimizasyonu."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "SEO sonradan eklenen bir özellik değil, sitenin temeline işlenmesi gereken bir sistemdir. Bu yüzden <strong>web tasarım hizmeti</strong> alırken SEO altyapısının projeye dahil olup olmadığını sorgulamak kritik önem taşır."
+      },
+      {
+        "type": "heading2",
+        "content": "Mobil Uyumlu Tasarım"
+      },
+      {
+        "type": "paragraph",
+        "content": "Mobil uyumlu tasarım (responsive design), bir web sitesinin tüm ekran boyutlarında (mobil telefon, tablet, dizüstü bilgisayar, masaüstü) kusursuz görünmesini ve çalışmasını sağlayan bir yaklaşımdır. 2026 yılı itibarıyla internet trafiğinin %60'ından fazlası mobil cihazlardan geliyor."
+      },
+      {
+        "type": "paragraph",
+        "content": "Google, 2015 yılından beri mobil uyumluluğu sıralama faktörü olarak kullanıyor ve 2024 itibarıyla tamamen mobil öncelikli indekslemeye (mobile-first indexing) geçti. Bu demek oluyor ki Google, sitenizin mobil sürümünü masaüstü sürümünden önce değerlendiriyor."
+      },
+      {
+        "type": "paragraph",
+        "content": "İyi bir mobil uyumlu tasarım şunları içerir:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "Esnek grid yapısı ve orantılı boyutlandırma",
+          "Dokunmatik ekranlara uygun buton ve link boyutları",
+          "Okunabilir font büyüklükleri (en az 16px)",
+          "Hızlı yükleme süreleri için optimize edilmiş görseller",
+          "Yatay kaydırma gerektirmeyen akışkan düzen"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Mobil uyumlu bir site sadece Google için değil, kullanıcı deneyimi için de olmazsa olmazdır. <strong>Web sitesi tasarımı</strong> yaptırırken mobil uyumun standart olarak dahil edildiğinden emin olun."
+      },
+      {
+        "type": "finalCta",
+        "question": "Bu terimler hakkında daha fazla bilgi mi almak istiyorsunuz?",
+        "ctaText": "Bizimle iletişime geçin, web sitenizin tüm teknik detaylarını birlikte planlayalım!"
       }
     ]
   }

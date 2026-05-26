@@ -1,0 +1,25 @@
+# Sennin Web
+> Web tasarım ve SEO hizmetleri sunan premium dijital ajans.
+
+## Pages
+
+- [Ana Sayfa](https://www.senninweb.com/): Web tasarım, SEO ve kurumsal kimlik hizmetleri
+- [Hakkimizda](https://www.senninweb.com/hakkimizda): Sennin Web hakkında detaylı bilgi
+- [Blog](https://www.senninweb.com/blog): Web tasarım, SEO ve dijital büyüme rehberleri
+- [Gebze](https://www.senninweb.com/gebze): Gebze web tasarım ve SEO hizmetleri
+- [SSS](https://www.senninweb.com/sss): Sık sorulan sorular
+
+## Blog Posts
+
+- [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?](https://www.senninweb.com/blog/kucuk-isletme-web-sitesi): Web sitesi ile müşteri kazanma stratejileri
+- [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir? 2026 SEO Rehberi](https://www.senninweb.com/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir): 2026 SEO stratejileriyle müşteri kazanma
+- [Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu (2026 Rehberi)](https://www.senninweb.com/blog/kucuk-isletmeler-google-da-gorunurluk-2026): Google'da görünürlük stratejileri
+- [Web Siteniz Neden Hala İlk Sayfada Değil? 2026 SEO Rehberi](https://www.senninweb.com/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026): İlk sayfada olmama nedenleri ve çözümleri
+- [Web Sitesi Tasarımı Kaç TL? (2026 Güncel Rehber)](https://www.senninweb.com/blog/web-sitesi-tasarim-fiyatlari-2026): Web sitesi fiyatlandırma rehberi
+- [Tasarımın 5 Temel İlkesi: Kurumsal Web Tasarım Rehberi](https://www.senninweb.com/blog/tasarimin-5-temel-ilkesi): Web tasarımının 5 temel ilkesi
+- [Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor?](https://www.senninweb.com/blog/web-tasarim-fiyatlari-neden-degisiyor-2026): Web tasarım fiyatlarını etkileyen faktörler
+- [Web Tasarım Teknik Terimler Sözlüğü](https://www.senninweb.com/blog/teknik-terimler): Core Web Vitals, SSL, UI/UX, SEO ve mobil uyum terimleri
+
+## References
+
+- [SEO Rehberi](https://www.senninweb.com/SEO-REHBERI.md): Yapılandırılmış veri (JSON-LD) şablonları

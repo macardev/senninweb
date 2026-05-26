@@ -66,11 +66,11 @@
 
   /* Hero staggered entrance - content starts visible, no flash */
   @keyframes heroIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from { transform: translateY(10px); }
+    to   { transform: translateY(0); }
   }
   .animate-heroIn {
-    animation: heroIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation: heroIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 }
 
@@ -122,45 +122,47 @@
   .responsive-container {
     @apply max-w-full overflow-hidden;
   }
+}
 
-  /* Blog post links styling */
-  p a, li a {
-    color: #FCD34D;
-    text-decoration: underline;
-    text-decoration-color: #FCD34D;
-    text-underline-offset: 2px;
-    transition: all 0.3s ease;
-  }
+/* ─── Blog post links styling ─────────────────────────────── */
+/* MUST stay outside @layer utilities to guarantee highest cascade priority.
+   Tailwind utility classes in the same layer can otherwise override these. */
+p a, li a {
+  color: #FCD34D;
+  text-decoration: underline;
+  text-decoration-color: #FCD34D;
+  text-underline-offset: 2px;
+  transition: all 0.3s ease;
+}
 
-  p a:hover, li a:hover {
-    color: #D97706;
-    text-decoration-color: #D97706;
-  }
+p a:hover, li a:hover {
+  color: #D97706;
+  text-decoration-color: #D97706;
+}
 
-  h3 a {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: #FCD34D;
-    text-underline-offset: 2px;
-    transition: color 0.3s ease;
-  }
+h3 a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #FCD34D;
+  text-underline-offset: 2px;
+  transition: color 0.3s ease;
+}
 
-  h3 a:hover {
-    color: #FCD34D;
-  }
+h3 a:hover {
+  color: #FCD34D;
+}
 
-  /* Blogpost content HTML rendering */
-  span a {
-    color: #FCD34D !important;
-    text-decoration: underline !important;
-    text-decoration-color: #FCD34D !important;
-    text-underline-offset: 2px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
+/* Blogpost content HTML rendering */
+span a {
+  color: #FCD34D !important;
+  text-decoration: underline !important;
+  text-decoration-color: #FCD34D !important;
+  text-underline-offset: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
-  span a:hover {
-    color: #D97706 !important;
-    text-decoration-color: #D97706 !important;
-  }
+span a:hover {
+  color: #D97706 !important;
+  text-decoration-color: #D97706 !important;
 }

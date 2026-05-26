@@ -1,41 +1,47 @@
 import { useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
-import { motion, useMotionValue, useSpring } from 'framer-motion'
 
 export default function CustomCursor() {
   const location = useLocation()
   const cursorRef = useRef(null)
-  const dotRef    = useRef(null)
+  const dotRef = useRef(null)
+  const rafRef = useRef(null)
+  const posRef = useRef({ x: -100, y: -100 })
+  const ringRef = useRef({ x: -100, y: -100 })
   const clickablesRef = useRef(new Set())
   const listenerRef = useRef(null)
 
-  const mouseX = useMotionValue(-100)
-  const mouseY = useMotionValue(-100)
-
-  // Büyük halka — gecikmeli, yavaş
-  const springX = useSpring(mouseX, { stiffness: 80,  damping: 20, mass: 0.5 })
-  const springY = useSpring(mouseY, { stiffness: 80,  damping: 20, mass: 0.5 })
-
-  // Küçük nokta — anlık
-  const dotX = useSpring(mouseX, { stiffness: 400, damping: 28, mass: 0.2 })
-  const dotY = useSpring(mouseY, { stiffness: 400, damping: 28, mass: 0.2 })
-
   useEffect(() => {
     const move = (e) => {
-      mouseX.set(e.clientX)
-      mouseY.set(e.clientY)
+      posRef.current = { x: e.clientX, y: e.clientY }
     }
 
-    // Use passive event listener and throttle if needed
-    window.addEventListener('mousemove', move, { passive: true, capture: false })
+    const animate = () => {
+      const ring = ringRef.current
+      const pos = posRef.current
+      ring.x += (pos.x - ring.x) * 0.08
+      ring.y += (pos.y - ring.y) * 0.08
+
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate(${ring.x - 18}px, ${ring.y - 18}px)`
+      }
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate(${pos.x - 3}px, ${pos.y - 3}px)`
+      }
+
+      rafRef.current = requestAnimationFrame(animate)
+    }
+
+    window.addEventListener('mousemove', move, { passive: true })
+    rafRef.current = requestAnimationFrame(animate)
 
     return () => {
-      window.removeEventListener('mousemove', move, { capture: false })
+      window.removeEventListener('mousemove', move)
+      if (rafRef.current) cancelAnimationFrame(rafRef.current)
     }
-  }, [mouseX, mouseY])
+  }, [])
 
   useEffect(() => {
-    // Batch DOM reads to avoid layout thrashing
     const grow = () => {
       if (cursorRef.current) {
         cursorRef.current.classList.add('scale-[2.5]', 'border-gold-500', 'opacity-60')
@@ -47,35 +53,22 @@ export default function CustomCursor() {
       }
     }
 
-    // Use event delegation instead of individual listeners
     const handleMouseEnter = (e) => {
-      if (clickablesRef.current.has(e.target)) {
-        grow()
-      }
+      if (clickablesRef.current.has(e.target)) grow()
     }
     const handleMouseLeave = (e) => {
-      if (clickablesRef.current.has(e.target)) {
-        shrink()
-      }
+      if (clickablesRef.current.has(e.target)) shrink()
     }
 
-    // Update clickables list - batch DOM reads once
     const updateClickables = () => {
-      // Clear previous listeners
       if (listenerRef.current) {
         document.removeEventListener('mouseenter', handleMouseEnter, true)
         document.removeEventListener('mouseleave', handleMouseLeave, true)
       }
-
-      // Batch DOM read: get all clickables at once
       const clickables = document.querySelectorAll('a, button, [role="button"], [data-cursor]')
       clickablesRef.current.clear()
-      
-      clickables.forEach(el => {
-        clickablesRef.current.add(el)
-      })
+      clickables.forEach(el => clickablesRef.current.add(el))
 
-      // Use event delegation on document
       document.addEventListener('mouseenter', handleMouseEnter, true)
       document.addEventListener('mouseleave', handleMouseLeave, true)
       listenerRef.current = { handleMouseEnter, handleMouseLeave }
@@ -93,28 +86,13 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* Büyük halka */}
-      <motion.div
+      <div
         ref={cursorRef}
-        className="fixed top-0 left-0 w-9 h-9 rounded-full border border-white/30 pointer-events-none z-[9999] transition-transform duration-200"
-        style={{
-          x: springX,
-          y: springY,
-          translateX: '-50%',
-          translateY: '-50%',
-        }}
+        className="fixed top-0 left-0 w-9 h-9 rounded-full border border-white/30 pointer-events-none z-[9999] transition-transform duration-200 will-change-transform"
       />
-
-      {/* Küçük merkez nokta */}
-      <motion.div
+      <div
         ref={dotRef}
-        className="fixed top-0 left-0 w-1.5 h-1.5 rounded-full bg-gold-500 pointer-events-none z-[9999]"
-        style={{
-          x: dotX,
-          y: dotY,
-          translateX: '-50%',
-          translateY: '-50%',
-        }}
+        className="fixed top-0 left-0 w-1.5 h-1.5 rounded-full bg-gold-500 pointer-events-none z-[9999] will-change-transform"
       />
     </>
   )

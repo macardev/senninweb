@@ -32,8 +32,18 @@ function escapeAttr(str) {
 }
 
 // ── Read template and blog data ──
-const indexHtml = readFileSync(resolve(distDir, 'index.html'), 'utf-8')
+const distHtmlPath = resolve(distDir, 'index.html')
+let indexHtml = readFileSync(distHtmlPath, 'utf-8')
 const blogPosts = JSON.parse(readFileSync(resolve(publicDir, 'data/blog-posts.json'), 'utf-8'))
+
+// Defer full CSS: replace render-blocking <link> with media="print" onload pattern
+indexHtml = indexHtml.replace(
+  /<link rel="stylesheet"[^>]+href="([^"]+\.css)"[^>]*>/,
+  (match, href) =>
+    `<link rel="preload" href="${href}" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'" media="print">` +
+    `<noscript><link rel="stylesheet" href="${href}"></noscript>`
+)
+writeFileSync(distHtmlPath, indexHtml, 'utf-8')
 
 // ── Prerender static HTML pages ──
 console.log('\n📄 Prerendering static pages:')

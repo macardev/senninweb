@@ -10,6 +10,7 @@ const Blog = lazy(() => import("@/pages/Blog"))
 const BlogPost = lazy(() => import("@/pages/BlogPost"))
 const Gebze = lazy(() => import("@/pages/Gebze"))
 const SSS = lazy(() => import("@/pages/SSS"))
+const NotFound = lazy(() => import("@/pages/NotFound"))
 
 export default function App() {
   return (
@@ -41,6 +42,11 @@ export default function App() {
           <Route path="/sss" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <SSS />
+            </Suspense>
+          } />
+          <Route path="*" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <NotFound />
             </Suspense>
           } />
         </Route>

@@ -108,8 +108,8 @@ export default function Navbar() {
                 onMouseEnter={() => setRegionsOpen(true)}
                 onMouseLeave={() => setRegionsOpen(false)}
               >
-                <button
-                  className="text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 tracking-wide flex items-center gap-1"
+                  <button
+                    className="text-sm font-medium text-white/80 hover:text-white transition-colors duration-300 tracking-wide flex items-center gap-1"
                 >
                   {link.label}
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,14 +147,14 @@ export default function Navbar() {
             )
           }
 
-          const isRoute = link.href.startsWith("/")
+            const isRoute = link.href.startsWith("/")
 
           if (isRoute) {
             return (
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 tracking-wide"
+                className="text-sm font-medium text-white/80 hover:text-white transition-colors duration-300 tracking-wide py-2"
               >
                 {link.label}
               </Link>
@@ -166,7 +166,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={e => handleNav(e, link.href)}
-                className="text-sm font-medium text-white/60 hover:text-white transition-colors duration-300 tracking-wide"
+                className="text-sm font-medium text-white/80 hover:text-white transition-colors duration-300 tracking-wide py-2"
               >
                 {link.label}
               </a>
@@ -175,17 +175,16 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <a href="/#contact" onClick={e => handleNav(e, '/#contact')}>
-            <button
-              className="relative px-8 py-3 text-base font-medium tracking-wide overflow-hidden group rounded-full hover:scale-[1.03] active:scale-[0.97] transition-transform duration-200"
-            >
-              <span className="absolute inset-0 rounded-full border border-gold-500/50 group-hover:border-gold-400 transition-colors duration-300" />
-              <span className="absolute inset-0 rounded-full bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
-              <span className="relative z-10 text-gold-400 group-hover:text-black transition-colors duration-300">
-                Teklif Al
-              </span>
-            </button>
-          </a>
+          <button
+            onClick={() => handleNav({ preventDefault: () => {} }, '/#contact')}
+            className="relative px-8 py-3 text-base font-medium tracking-wide overflow-hidden group rounded-full hover:scale-[1.03] active:scale-[0.97] transition-transform duration-200"
+          >
+            <span className="absolute inset-0 rounded-full border border-gold-500/50 group-hover:border-gold-400 transition-colors duration-300" />
+            <span className="absolute inset-0 rounded-full bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
+            <span className="relative z-10 text-gold-400 group-hover:text-black transition-colors duration-300">
+              Teklif Al
+            </span>
+          </button>
         </div>
 
         <button

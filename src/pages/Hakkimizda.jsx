@@ -93,7 +93,7 @@ export default function Hakkimizda() {
           "@type": "Organization",
           "name": "SenninWeb"
         },
-        "image": "https://www.senninweb.com/images/çağatay-macar-biometrik.jpeg",
+        "image": "https://www.senninweb.com/images/cagatay-macar-biometrik.webp",
         "description": "SenninWeb kurucusu ve senior web geliştiricisi. Premium web tasarım ve SEO hizmetleri sunuyor."
       }
     ]
@@ -125,10 +125,13 @@ export default function Hakkimizda() {
         <div className="flex flex-col items-center text-center">
           <div className="w-36 md:w-44 h-36 md:h-44 rounded-full overflow-hidden border-2 border-gold-500/30 mb-6">
             <img
-              src="/images/çağatay-macar-biometrik.jpeg"
+              src="/images/cagatay-macar-biometrik.webp"
               alt="Çağatay Macar — SenninWeb Kurucusu"
+              width="176"
+              height="176"
               className="w-full h-full object-cover"
               loading="lazy"
+              fetchpriority="low"
             />
           </div>
 

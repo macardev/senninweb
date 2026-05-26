@@ -1,8 +1,16 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 import { getBlogPost } from "@/data/blogPosts"
 import useCanonicalUrl from "@/hooks/useCanonicalUrl"
+
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9çşğüöı]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+}
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -53,7 +61,7 @@ function renderSection(section, index) {
 
     case "heading2":
       return (
-        <h2 key={index} className="text-2xl md:text-3xl font-display font-semibold text-white pt-8">
+        <h2 key={index} id={slugify(section.content)} className="text-2xl md:text-3xl font-display font-semibold text-white pt-8 scroll-mt-28">
           {section.isHtml ? (
             <span dangerouslySetInnerHTML={{ __html: section.content }} />
           ) : (
@@ -205,7 +213,7 @@ function renderSection(section, index) {
           <div className="space-y-8">
             {section.subsections?.map((subsection, subIndex) => (
               <div key={subIndex} className="space-y-3">
-                <h3 className="text-xl md:text-2xl font-display font-semibold text-white">
+                <h3 id={slugify(subsection.heading)} className="text-xl md:text-2xl font-display font-semibold text-white scroll-mt-28">
                   {subsection.isHtml ? (
                     <span dangerouslySetInnerHTML={{ __html: subsection.heading }} />
                   ) : (
@@ -282,6 +290,52 @@ export default function BlogPost() {
     }
   }, [post, canonicalUrl])
 
+  const tocEntries = useMemo(() => {
+    if (!post) return []
+    const entries = []
+    for (const section of post.sections) {
+      if (section.type === "heading2" && section.content) {
+        entries.push({
+          id: slugify(section.content),
+          label: section.content,
+        })
+      }
+      if (section.type === "section" && section.subsections) {
+        for (const sub of section.subsections) {
+          if (sub.heading) {
+            entries.push({
+              id: slugify(sub.heading),
+              label: sub.heading,
+            })
+          }
+        }
+      }
+    }
+    return entries
+  }, [post])
+
+  const [activeId, setActiveId] = useState("")
+
+  useEffect(() => {
+    if (!tocEntries.length) return
+    const ids = tocEntries.map(e => e.id)
+    const observer = new IntersectionObserver(
+      entries => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id)
+          }
+        }
+      },
+      { rootMargin: "-30% 0px -60% 0px" }
+    )
+    for (const id of ids) {
+      const el = document.getElementById(id)
+      if (el) observer.observe(el)
+    }
+    return () => observer.disconnect()
+  }, [tocEntries])
+
   if (loading) {
     return (
       <div className="px-6 md:px-12 py-20">
@@ -340,86 +394,116 @@ export default function BlogPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="max-w-3xl mx-auto">
-        <div className="pt-6 pb-10">
-          <div className="flex flex-wrap items-center gap-2">
-            <button
-              type="button"
-              data-cursor
-              onClick={() => {
-                navigate("/")
-                setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0)
-              }}
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03]
-                         px-4 py-2 text-xs text-white/70 hover:text-white hover:border-white/20 transition-colors"
-            >
-              <span className="text-base leading-none">←</span>
-              Ana Sayfaya Dön
-            </button>
-            <Link
-              to="/blog"
-              data-cursor
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03]
-                         px-4 py-2 text-xs text-white/70 hover:text-white hover:border-white/20 transition-colors"
-            >
-              <span className="text-base leading-none">←</span>
-              Dijital Rehber
-            </Link>
-          </div>
+      <div className={tocEntries.length > 0 ? "lg:grid lg:grid-cols-[280px_1fr] lg:gap-10 max-w-6xl mx-auto" : "max-w-3xl mx-auto"}>
+        {tocEntries.length > 0 && (
+          <aside className="hidden lg:block relative">
+            <nav className="sticky top-32 space-y-1.5 border-l border-white/10 pl-5 max-h-[calc(100vh-10rem)] overflow-y-auto">
+              <p className="text-[10px] tracking-[0.2em] uppercase text-white/40 mb-4 font-semibold">
+                İçindekiler
+              </p>
+              {tocEntries.map(entry => (
+                <a
+                  key={entry.id}
+                  href={`#${entry.id}`}
+                  onClick={e => {
+                    e.preventDefault()
+                    const el = document.getElementById(entry.id)
+                    if (el) el.scrollIntoView({ behavior: "smooth" })
+                  }}
+                  className={`block text-xs leading-relaxed py-1.5 border-l-2 transition-all duration-200 -ml-5 pl-5 ${
+                    activeId === entry.id
+                      ? "border-gold-500 text-white font-medium"
+                      : "border-transparent text-white/50 hover:text-white/80 hover:border-white/30"
+                  }`}
+                >
+                  {entry.label}
+                </a>
+              ))}
+            </nav>
+          </aside>
+        )}
 
-           <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
-            <span className="text-gold-400/90 font-semibold">{post.tag}</span>
-            <span className="text-white/55">•</span>
-            <span className="text-white/60">{post.readingTime}</span>
-            <span className="text-white/55">•</span>
-            <span className="text-white/60">{post.date}</span>
-          </div>
+        <div className="min-w-0">
+          <div className="pt-6 pb-10">
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                data-cursor
+                onClick={() => {
+                  navigate("/")
+                  setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0)
+                }}
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03]
+                           px-4 py-2 text-xs text-white/70 hover:text-white hover:border-white/20 transition-colors"
+              >
+                <span className="text-base leading-none">←</span>
+                Ana Sayfaya Dön
+              </button>
+              <Link
+                to="/blog"
+                data-cursor
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03]
+                           px-4 py-2 text-xs text-white/70 hover:text-white hover:border-white/20 transition-colors"
+              >
+                <span className="text-base leading-none">←</span>
+                Dijital Rehber
+              </Link>
+            </div>
 
-          <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
-            {post.shortTitle}
-          </h1>
-          <p className="mt-3 text-xs md:text-sm text-white/65">
-            Yazar: {post.author} • {post.authorTitle}
-          </p>
-          <p className="mt-5 text-sm md:text-base text-white/65 leading-relaxed">
-            {post.description}
-          </p>
+             <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
+              <span className="text-gold-400/90 font-semibold">{post.tag}</span>
+              <span className="text-white/55">•</span>
+              <span className="text-white/60">{post.readingTime}</span>
+              <span className="text-white/55">•</span>
+              <span className="text-white/60">{post.date}</span>
+            </div>
 
-          <div className="mt-8 gold-line opacity-20" />
-        </div>
-
-        <div className="space-y-10 text-white/70 leading-relaxed">
-          {post.sections.map((section, index) => renderSection(section, index))}
-
-          <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-10">
-            <div className="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 blur-[70px] pointer-events-none" />
-
-            <h2 className="relative text-lg md:text-2xl font-display font-semibold text-white">
-              Hazır mısınız?
-            </h2>
-            <p className="relative mt-3 text-sm md:text-base text-white/65 leading-relaxed max-w-xl">
-              Web sitenizi müşteri kazandıran, premium bir sisteme dönüştürelim. Hız, SEO ve dönüşüm odaklı bir planı birlikte çıkaralım.
+            <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
+              {post.shortTitle}
+            </h1>
+            <p className="mt-3 text-xs md:text-sm text-white/65">
+              Yazar: {post.author} • {post.authorTitle}
+            </p>
+            <p className="mt-5 text-sm md:text-base text-white/65 leading-relaxed">
+              {post.description}
             </p>
 
-            <div className="relative mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <Link
-                to="/#contact"
-                data-cursor
-                onClick={(e) => {
-                  e.preventDefault()
-                  navigate("/")
-                  setTimeout(() => scrollToIdWithRetry("contact"), 0)
-                }}
-                className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-medium tracking-wide
-                           bg-gold-500 text-black hover:bg-gold-400 transition-colors w-full sm:w-auto"
-              >
-                Ücretsiz Teklif Al
-              </Link>
-              <span className="text-xs text-white/60">
-                Ortalama dönüş süresi: 24 saat
-              </span>
-            </div>
-          </section>
+            <div className="mt-8 gold-line opacity-20" />
+          </div>
+
+          <div className="space-y-10 text-white/70 leading-relaxed">
+            {post.sections.map((section, index) => renderSection(section, index))}
+
+            <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-10">
+              <div className="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 blur-[70px] pointer-events-none" />
+
+              <h2 className="relative text-lg md:text-2xl font-display font-semibold text-white">
+                Hazır mısınız?
+              </h2>
+              <p className="relative mt-3 text-sm md:text-base text-white/65 leading-relaxed max-w-xl">
+                Web sitenizi müşteri kazandıran, premium bir sisteme dönüştürelim. Hız, SEO ve dönüşüm odaklı bir planı birlikte çıkaralım.
+              </p>
+
+              <div className="relative mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <Link
+                  to="/#contact"
+                  data-cursor
+                  onClick={(e) => {
+                    e.preventDefault()
+                    navigate("/")
+                    setTimeout(() => scrollToIdWithRetry("contact"), 0)
+                  }}
+                  className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-medium tracking-wide
+                             bg-gold-500 text-black hover:bg-gold-400 transition-colors w-full sm:w-auto"
+                >
+                  Ücretsiz Teklif Al
+                </Link>
+                <span className="text-xs text-white/60">
+                  Ortalama dönüş süresi: 24 saat
+                </span>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </article>

@@ -143,12 +143,12 @@ Format: **JSON-LD** (Google'ın tercih ettiği format)
 
 | Sayfa | Schema | Statü |
 |---|---|---|
-| Ana Sayfa `/` | Organization + WebSite | eklenecek |
-| Blog `/blog` | CollectionPage | eklenecek |
-| Blog Yazısı `/blog/:slug` | Article | ✅ mevcut (+ image/datePublished eklenecek) |
+| Ana Sayfa `/` | Organization + WebSite | ✅ mevcut |
+| Blog `/blog` | CollectionPage | ✅ mevcut |
+| Blog Yazısı `/blog/:slug` | Article (image + datePublished dahil) | ✅ mevcut |
 | Gebze `/gebze` | Service | ✅ mevcut |
-| SSS `/sss` | FAQPage | eklenecek |
-| Global (index.html) | Organization | eklenecek |
+| SSS `/sss` | FAQPage | ✅ mevcut |
+| Global (index.html) | Organization | ✅ mevcut |
 
 ---
 

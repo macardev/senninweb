@@ -276,17 +276,17 @@ export default function Footer() {
 
             {footerLinks.map(group => (
               <div key={group.title}>
-                <h4 className="text-[10px] font-semibold uppercase tracking-[0.2em]
-                               text-white/55 mb-5">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.2em]
+                               text-white/60 mb-5">
                   {group.title}
-                </h4>
+                </span>
                 <ul className="space-y-3">
                   {group.links.map(link => (
                     <li key={link.label}>
                       <a
                         href={link.href}
                         onClick={e => handleNav(e, link.href)}
-                         className="text-sm text-white/60 hover:text-white
+                         className="text-sm text-white/70 hover:text-white
                                    transition-colors duration-300"
                       >
                         {link.label}

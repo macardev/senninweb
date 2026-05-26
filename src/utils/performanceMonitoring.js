@@ -64,15 +64,15 @@ export function logPerformanceMetrics() {
 
   window.addEventListener('load', () => {
     setTimeout(() => {
-      const perfData = window.performance.timing
-      const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart
-      
+      const navEntry = performance.getEntriesByType('navigation')[0]
+      if (!navEntry) return
+
       console.log('%c⚡ Performance Metrics', 'font-size: 14px; font-weight: bold; color: #D97706;')
-      console.log('DNS Lookup:', perfData.domainLookupEnd - perfData.domainLookupStart, 'ms')
-      console.log('TCP Connection:', perfData.connectEnd - perfData.connectStart, 'ms')
-      console.log('DOM Interactive:', perfData.domInteractive - perfData.navigationStart, 'ms')
-      console.log('DOM Complete:', perfData.domComplete - perfData.navigationStart, 'ms')
-      console.log('Page Load Time:', pageLoadTime, 'ms')
+      console.log('DNS Lookup:', (navEntry.domainLookupEnd - navEntry.domainLookupStart).toFixed(2), 'ms')
+      console.log('TCP Connection:', (navEntry.connectEnd - navEntry.connectStart).toFixed(2), 'ms')
+      console.log('DOM Interactive:', navEntry.domInteractive.toFixed(2), 'ms')
+      console.log('DOM Complete:', navEntry.domComplete.toFixed(2), 'ms')
+      console.log('Page Load Time:', (navEntry.loadEventEnd - navEntry.startTime).toFixed(2), 'ms')
     }, 0)
   })
 }
