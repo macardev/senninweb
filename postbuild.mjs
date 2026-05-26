@@ -40,7 +40,7 @@ const blogPosts = JSON.parse(readFileSync(resolve(publicDir, 'data/blog-posts.js
 indexHtml = indexHtml.replace(
   /<link rel="stylesheet"[^>]+href="([^"]+\.css)"[^>]*>/,
   (match, href) =>
-    `<link rel="preload" href="${href}" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'" media="print">` +
+    `<link rel="preload" href="${href}" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">` +
     `<noscript><link rel="stylesheet" href="${href}"></noscript>`
 )
 writeFileSync(distHtmlPath, indexHtml, 'utf-8')
