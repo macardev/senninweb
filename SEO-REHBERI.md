@@ -39,7 +39,7 @@ Format: **JSON-LD** (Google'ın tercih ettiği format)
   "telephone": "+90 (531) 405 15 84",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Çukurören Küme Evleri Cumhuriyet Cad. NO:32 D:1",
+    "streetAddress": "11702 Çukurören",
     "addressLocality": "Gölpazarı",
     "addressRegion": "Bilecik",
     "addressCountry": "TR"

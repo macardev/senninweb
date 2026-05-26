@@ -74,43 +74,6 @@ function CakePlaceholder() {
   )
 }
 
-function FurniturePlaceholder() {
-  return (
-    <svg viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-full" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <linearGradient id="furniture-grad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#D97706" stopOpacity="0.3" />
-          <stop offset="100%" stopColor="#B45309" stopOpacity="0.1" />
-        </linearGradient>
-        <radialGradient id="furniture-glow" cx="50%" cy="50%" r="45%">
-          <stop offset="0%" stopColor="#D97706" stopOpacity="0.1" />
-          <stop offset="100%" stopColor="#D97706" stopOpacity="0" />
-        </radialGradient>
-      </defs>
-      <rect width="400" height="260" fill="#0A0A0A" />
-      <rect width="400" height="260" fill="url(#furniture-grad)" />
-      <rect width="400" height="260" fill="url(#furniture-glow)" />
-      <rect x="162" y="145" width="76" height="45" rx="2" stroke="#D97706" strokeWidth="1.2" fill="none" opacity="0.5" />
-      <line x1="162" y1="145" x2="162" y2="120" stroke="#D97706" strokeWidth="1.2" opacity="0.5" />
-      <line x1="238" y1="145" x2="238" y2="120" stroke="#D97706" strokeWidth="1.2" opacity="0.5" />
-      <line x1="162" y1="138" x2="238" y2="138" stroke="#D97706" strokeWidth="0.8" opacity="0.35" />
-      <line x1="162" y1="190" x2="148" y2="210" stroke="#D97706" strokeWidth="1.2" opacity="0.5" />
-      <line x1="238" y1="190" x2="252" y2="210" stroke="#D97706" strokeWidth="1.2" opacity="0.5" />
-      <line x1="172" y1="158" x2="228" y2="158" stroke="#D97706" strokeWidth="0.5" opacity="0.25" />
-      <line x1="172" y1="170" x2="228" y2="170" stroke="#D97706" strokeWidth="0.5" opacity="0.25" />
-      <circle cx="140" cy="95" r="1.2" fill="#FBBF24" opacity="0.5" />
-      <circle cx="260" cy="105" r="1" fill="#FBBF24" opacity="0.4" />
-      <circle cx="155" cy="80" r="0.8" fill="#D97706" opacity="0.3" />
-      <circle cx="248" cy="85" r="0.8" fill="#D97706" opacity="0.3" />
-      <text x="200" y="230" textAnchor="middle" fill="#D97706" fillOpacity="0.15"
-        fontFamily="system-ui" fontSize="10" fontWeight="500" letterSpacing="4">
-        MOBILYA · TASARIM
-      </text>
-    </svg>
-  )
-}
-
 function RealEstatePlaceholder() {
   return (
     <svg viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -172,27 +135,6 @@ const references = [
     url: 'https://www.utsuriai.com',
   },
   {
-    id: 'ozkan',
-    name: 'Özkan Mobilya',
-    domain: 'ozkanmobilya.com',
-    category: 'Mobilya & İç Tasarım · Bilecik',
-    description:
-      'Yerel mobilya ustasının dijital vitrini. Modern ürün galerisi ve yerel SEO ile müşteri sayısını katladık.',
-    features: [
-      'Modern ürün galerisi tasarımı',
-      'Yerel SEO optimizasyonu',
-      'Mobil uyumlu responsive yapı',
-    ],
-    metrics: [
-      { value: '3x', label: 'Daha fazla müşteri' },
-      { value: '2x', label: 'Web trafiği' },
-    ],
-    tags: ['Web Tasarım', 'SEO'],
-    placeholder: 'furniture',
-    accent: { hex: '#D97706', tailwind: 'amber' },
-    url: null,
-  },
-  {
     id: 'missbutik',
     name: 'Miss Butik Pasta',
     domain: 'missbutikpasta.com',
@@ -242,7 +184,6 @@ function PlaceholderImage({ type }) {
   switch (type) {
     case 'model': return <ModelPlaceholder />
     case 'cake': return <CakePlaceholder />
-    case 'furniture': return <FurniturePlaceholder />
     case 'realestate': return <RealEstatePlaceholder />
     default: return null
   }

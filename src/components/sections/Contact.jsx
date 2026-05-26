@@ -142,8 +142,8 @@ const handleSubmit = async (e) => {
                     </svg>
                   ),
                   label: 'Konum',
-                  value: 'Çukurören Küme Evleri Cumhuriyet Cad. NO:32 D:1 Gölpazarı/Bilecik',
-                  href:  'https://www.google.com/maps/dir/?api=1&destination=Cukuroren+Kume+Evleri+Cumhuriyet+Cad+NO%3A32+D%3A1+Golpazari%2FBilecik',
+                  value: '11702 Çukurören/Gölpazarı/Bilecik',
+                  href:  'https://www.google.com/maps/dir/?api=1&destination=40.316075%2C30.292531',
                 },
               ].map((item, idx) => (
                 <div
@@ -185,7 +185,7 @@ const handleSubmit = async (e) => {
             >
               {inView && (
                 <iframe
-                  src="https://www.google.com/maps?q=%C3%87ukur%C3%B6ren+K%C3%BCme+Evleri+Cumhuriyet+Cad+NO:32+D:1+G%C3%B6lpazar%C4%B1/Bilecik&output=embed"
+                  src="https://www.google.com/maps?q=40.316075%2C30.292531&z=18&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }}
