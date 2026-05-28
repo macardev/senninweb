@@ -1389,5 +1389,115 @@
         "ctaText": "Bizimle iletişime geçin, web sitenizin tüm teknik detaylarını birlikte planlayalım!"
       }
     ]
+  },
+  {
+    "slug": "web-tasarim-fiyatlari-ne-kadar-odullu-siteler",
+    "title": "Web Tasarım Fiyatları Ne Kadar? Ödüllü Sitelerin Maliyeti Ne? 2026 Rehberi | SenninWeb",
+    "description": "Ödüllü web sitesi fiyatları ne kadar? Müşteri perspektifinden Awwwards kalitesinde bir site yaptırmanın maliyeti, SEO avantajları ve 2 kata varan satış artışı. Karşılaştırmalı 2026 rehberi.",
+    "shortTitle": "Web Tasarım Fiyatları Ne Kadar? Ödüllü Sitelerin Maliyeti Ne?",
+    "desc": "Ödüllü bir site hayal edin: Awwwards kalitesi, SEO, 2 kat satış. Web tasarım fiyatları ne kadar, gerçekçi mi? Müşteri perspektifinden karşılaştırmalı rehber.",
+    "tag": "Web Tasarım",
+    "readingTime": "8 dk",
+    "date": "2026",
+    "author": "Çağatay Macar",
+    "authorTitle": "Senior Web Developer",
+    "metaDescription": "Ödüllü web sitesi fiyatları ne kadar? Müşteri perspektifinden Awwwards kalitesinde bir site yaptırmanın maliyeti, SEO avantajları ve 2 kata varan satış artışı. Karşılaştırmalı 2026 rehberi.",
+    "schemaUrl": "https://www.senninweb.com/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler",
+    "sections": [
+      {
+        "type": "heroSection",
+        "title": "Web Tasarım Fiyatları Ne Kadar? Ödüllü Sitelerin Maliyeti Ne?",
+        "subtitle": "Bir Hayalle Başlayalım: Ödüllü Bir Web Sitesi Size Ne Kazandırır?"
+      },
+      {
+        "type": "intro",
+        "content": "Şimdi bir hayal edelim. Gözlerinizi kapatın ve şöyle bir senaryo düşünün: Web siteniz Awwwards'da 'Site of the Day' seçilmiş, CSSDA veya FWA gibi platformlarda ödül almış. Müşterileriniz size 'siteniz harika olmuş, böyle profesyonel bir firmayla çalıştığımız için gurur duyuyoruz' diye mesaj atıyor. Google'da rakiplerinizin hep önünde çıkıyorsunuz çünkü SEO ile birleşmiş ödüllü bir tasarım, işletmenize sadece prestij değil, doğrudan 1.8x - 2x daha fazla satış getiriyor. İnsanlar güvenilir, profesyonel ve akılda kalan bir markayla çalışmak ister — ve siz o marka oluyorsunuz. Peki bu hayal gerçek olabilir mi? Üstelik düşündüğünüz kadar pahalı da değil."
+      },
+      {
+        "type": "paragraph",
+        "content": "Bu yazıda, ödüllü web sitelerinin ardındaki gerçek maliyetleri, hangi bütçeyle ne alabileceğinizi ve bir müşteri olarak nelere dikkat etmeniz gerektiğini anlatacağım. Çünkü web tasarım fiyatları internette dolaşan o kafa karıştırıcı rakamlar arasında kaybolmamanızı istiyorum."
+      },
+      {
+        "type": "heading2",
+        "content": "1. Ödüllü Siteleri Sıradan Sitelerden Ayıran Ne?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bu soru, işin en can alıcı noktası. Çünkü bir siteye baktığınızda 'işte bu ödüllük' dedirten şey tam olarak ne? Hazır bir tema üzerine yapılmış bir siteyle, ödül almak için özel olarak tasarlanmış bir site arasındaki farkı nasıl anlarsınız?"
+      },
+      {
+        "type": "bulletList",
+        "isHtml": true,
+        "items": [
+          "<strong>Hız ve Performans:</strong> Ödüllü sitelerin ortak özelliği, <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Core Web Vitals</a> metriklerinde mükemmel puan almalarıdır. Yani saniyeler içinde açılır, kullanıcıyı bekletmezler.",
+          "<strong>UI/UX Detayları:</strong> Her butonun konumu, her geçiş animasyonu, her font seçimi — bunların hepsi bilinçli yapılmış tercihlerdir. Gözünüzün 'güzel' dediği şey aslında onlarca küçük kararın toplamıdır.",
+          "<strong>Yaratıcı Yaklaşım:</strong> Jüri üyeleri sıradanlıktan sıkılmıştır. Ödül alan siteler, alışılmışın dışında bir hikaye anlatma biçimiyle gelir. Bu da özel bir tasarım süreci gerektirir.",
+          "<strong>Mobil Performans:</strong> Günümüzde bir site mobilde kötü çalışıyorsa ödül alması neredeyse imkansız. Mobil uyumluluk artık standart değil, zorunluluk."
+        ]
+      },
+      {
+        "type": "heading2",
+        "content": "2. Web Tasarım Fiyatları: Hangi Bütçeyle Ne Alıyorsun?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Şimdi gelelim işin maddi kısmına. 2026 yılında web tasarım fiyatları geniş bir skalaya yayılıyor. Ama işin güzel tarafı şu: Ödül alacak kalitede bir site yaptırmak sandığınız kadar astronomik rakamlar gerektirmiyor. Tabii doğru ajansla çalışırsanız."
+      },
+      {
+        "type": "section",
+        "content": "Projenin kapsamına ve ihtiyaçlarınıza göre üç ana fiyat aralığından bahsetmek mümkün:",
+        "subsections": [
+          {
+            "heading": "10.000 – 20.000 TL Arası: Basit Ama Temiz Çözümler",
+            "content": "Bu fiyat aralığı genelde hazır tema üzerinden yapılan, standart özelliklere sahip siteleri kapsar. Ödül almak için yeterli olmasa da, küçük bir işletme için iş görebilir. Ancak SEO altyapısı, mobil performans ve özgün tasarım gibi konularda genellikle sınırlı kalır."
+          },
+          {
+            "heading": "20.000 – 50.000 TL Arası: Profesyonel Ödül Adayı",
+            "content": "İşte asıl sihir burada başlıyor. Bu bütçeyle markanıza özel, modern ve performans odaklı bir site yaptırabilirsiniz. SEO altyapısı, hız optimizasyonu ve UI/UX çalışması bu paketin içinde yer alır. Geçenlerde bir müşterimle konuşurken şöyle demişti: 'Keşke daha önce yaptırsaydım, gelen müşteri sayısı iki katına çıktı.' İşte bu aralık, ödül almak için en gerçekçi bütçedir."
+          },
+          {
+            "heading": "50.000 TL ve Üzeri: Premium Ödül Avcısı",
+            "content": "Awwwards, CSSDA gibi platformlarda 'Site of the Day' hedefleyenler için bu aralık daha uygun. Özel animasyonlar, sıfırdan yazılmış kod, benzersiz bir kullanıcı deneyimi — bunların hepsi bir ekip çalışmasıdır. Ama unutmayın, yüksek bütçe tek başına ödül garantisi vermez. Önemli olan vizyon ve doğru ekiptir."
+          }
+        ]
+      },
+      {
+        "type": "heading2",
+        "content": "3. Ödüllü Site Yaptırmak İstiyorum: Ne Yapmalıyım?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Peki bir müşteri olarak siz ne yapmalısınız? İşte size birkaç pratik tavsiye:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "Ödül kazanmış ajansların portföylerini inceleyin. Beğendiğiniz siteleri bir listeye alın.",
+          "Fiyat teklifi alırken sadece rakam değil, teklifin içeriğini de karşılaştırın. SEO dahil mi? Mobil performans garantisi var mı?",
+          "Referans isteyin ve o referanslarla konuşun. 'Siteniz size müşteri getirdi mi?' sorusu en kritik sorudur.",
+          "Awwwards, CSSDA, FWA gibi platformlarda gezinin. Hangi ortak özellikleri görüyorsunuz? Bunları kendi sitenizde de isteyin.",
+          "Acele karar vermeyin. İyi bir site planlaması 2-3 hafta sürebilir, bu normaldir."
+        ]
+      },
+      {
+        "type": "conclusion",
+        "intro": "Unutmayın, ödül bir amaç değil, bir araçtır. Asıl hedef, sitenizin size daha fazla müşteri kazandırması ve işletmenizi büyütmesidir. Eğer şu anki web siteniz:",
+        "items": [
+          "beklediğiniz kadar müşteri getirmiyorsa",
+          "rakiplerinizin gerisinde kalıyorsa",
+          "ödül alabilecek potansiyelde değilse"
+        ],
+        "closing": "bunun çözümü doğru strateji ve doğru ekipten geçiyor."
+      },
+      {
+        "type": "finalParagraph",
+        "content": "Web tasarım fiyatları kafanızı karıştırmasın. Önemli olan, sitenizin size ne kazandıracağıdır. Ödüllü bir site, iyi bir SEO stratejisiyle birleştiğinde işletmenizi bir sonraki seviyeye taşıyabilir."
+      },
+      {
+        "type": "finalCta",
+        "question": "Sizin hayalinizdeki siteyi konuşmaya ne dersiniz?",
+        "ctaText": "Bizimle iletişime geçin, web tasarım fiyatları ve size özel çözümler hakkında detaylı bilgi alın!"
+      }
+    ]
   }
 ]
