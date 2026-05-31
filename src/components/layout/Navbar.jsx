@@ -17,6 +17,7 @@ const navLinks = [
       { label: 'Kocaeli (Yakında)', href: '#', disabled: true },
       { label: 'İstanbul (Yakında)', href: '#', disabled: true },
       { label: 'Bursa (Yakında)', href: '#', disabled: true },
+      { label: 'Bilecik', href: '/bilecik' },
     ]
   }
 ]
@@ -29,6 +30,13 @@ export default function Navbar() {
   const navigate = useNavigate()
   const location = useLocation()
   const scrollRAF = useRef(null)
+  const closeTimeoutRef = useRef(null)
+
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
+    }
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -105,8 +113,13 @@ export default function Navbar() {
               <div
                 key={link.label}
                 className="relative"
-                onMouseEnter={() => setRegionsOpen(true)}
-                onMouseLeave={() => setRegionsOpen(false)}
+                onMouseEnter={() => {
+                  if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
+                  setRegionsOpen(true)
+                }}
+                onMouseLeave={() => {
+                  closeTimeoutRef.current = setTimeout(() => setRegionsOpen(false), 200)
+                }}
               >
                   <button
                     className="text-sm font-medium text-white/80 hover:text-white transition-colors duration-300 tracking-wide flex items-center gap-1"

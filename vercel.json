@@ -10,6 +10,8 @@
     { "source": "/blog/:path*", "destination": "/index.html" },
     { "source": "/gebze", "destination": "/index.html" },
     { "source": "/gebze/", "destination": "/index.html" },
+    { "source": "/bilecik", "destination": "/index.html" },
+    { "source": "/bilecik/", "destination": "/index.html" },
     { "source": "/sss", "destination": "/index.html" },
     { "source": "/sss/", "destination": "/index.html" }
   ]

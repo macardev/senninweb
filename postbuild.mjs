@@ -51,18 +51,23 @@ console.log('\n📄 Prerendering static pages:')
 // Static pages
 prerender(
   '/hakkimizda',
-  'Hakkımızda | SenninWeb — Premium Web Tasarım & SEO',
-  "2025'te kurulan SenninWeb, işletmelerin marka görünürlüğünü artırmak, müşteri kazanımını hızlandırmak ve aylık gelirlerini yükseltmek için premium web tasarım ve SEO hizmetleri sunar."
+  'Hakkımızda | SenninWeb - Web Tasarım & SEO Ajansı | Premium Çözümler',
+  'SenninWeb: 2025\'te kurulan premium web tasarım ve SEO ajansı. KOBİ\'ler için özel web tasarımı, SEO danışmanlığı ve kurumsal kimlik çözümleri.'
 )
 prerender(
   '/blog',
-  'Web Tasarım ve SEO Rehberi | SenninWeb',
-  'Web tasarım, SEO ve dijital büyüme üzerine rehberler. İşletmenizi internette büyütmek için stratejiler.'
+  'Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb',
+  'Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google\'da üst sıralara taşıyacak ipuçları.'
 )
 prerender(
   '/gebze',
   'Gebze Web Tasarım ve SEO Hizmetleri | SenninWeb',
   "Gebze'de profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Yerel işletmeniz için Google'da üst sıralarda yer alın."
+)
+prerender(
+  '/bilecik',
+  'Bilecik Web Tasarım ve SEO Hizmetleri | SenninWeb',
+  "Bilecik'te profesyonel web tasarım, SEO ve Google Maps hizmetleri. Yerel işletmenizi Google'da üst sıralara taşıyın. Bilecik SEO danışmanlığı ve kurumsal web sitesi çözümleri."
 )
 prerender(
   '/sss',
@@ -81,6 +86,7 @@ const pages = [
   { loc: '/hakkimizda', priority: '0.8' },
   { loc: '/blog', priority: '0.8' },
   { loc: '/gebze', priority: '0.9' },
+  { loc: '/bilecik', priority: '0.9' },
   ...blogPosts.map(p => ({ loc: `/blog/${p.slug}`, priority: '0.7' })),
   { loc: '/sss', priority: '0.8' },
 ]

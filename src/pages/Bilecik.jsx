@@ -36,21 +36,21 @@ function upsertLinkByRel(rel, href) {
   return el
 }
 
-const gebzeContent = {
-  title: "Gebze Web Tasarım ve SEO Hizmetleri | SenninWeb",
-  shortTitle: "Gebze Web Tasarım & SEO",
-  metaDescription: "Gebze'de profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Yerel işletmeniz için Google'da üst sıralarda yer alın.",
-  description: "Gebze bölgesindeki işletmeler için özel olarak tasarlanmış web tasarım ve SEO çözümleri.",
+const bilecikContent = {
+  title: "Bilecik Web Tasarım ve SEO Hizmetleri | SenninWeb",
+  shortTitle: "Bilecik Web Tasarım & SEO",
+  metaDescription: "Bilecik'te profesyonel web tasarım, SEO ve Google Maps hizmetleri. Yerel işletmenizi Google'da üst sıralara taşıyın. Bilecik SEO danışmanlığı ve kurumsal web sitesi çözümleri.",
+  description: "Bilecik bölgesindeki işletmeler için özel web tasarım, yerel SEO ve dijital pazarlama çözümleri.",
   sections: [
     {
       type: "heroSection",
-      title: "Gebze'de İşletmeniz Büyümeyi Hak Ediyor",
-      subtitle: "Premium web tasarım ve yerel SEO ile Google'da görünün, müşteriler size gelsin"
+      title: "Bilecik'te İşletmeniz Büyümeyi Hak Ediyor",
+      subtitle: "Premium web tasarım ve yerel SEO ile Bilecik'te Google'da görünün, müşteriler size gelsin"
     },
     {
       type: "paragraph",
       "isHtml": true,
-      content: "Bir hayal edin: İşletmeniz Google'da ilk sırada. <strong>\"Gebze web tasarım\"</strong> yazan herkes sizi buluyor, telefonunuz durmadan çalıyor, her arayan yeni bir müşteri. Rakipleriniz size yetişemiyor, çünkü siz dijitalde çoktan zirveye yerleştiniz. Kulağa hoş geliyor değil mi?"
+      content: "Bir hayal edin: Bilecik'te işletmeniz Google'da ilk sırada. <strong>\"Bilecik web tasarım\"</strong>, <strong>\"Bozüyük avukat\"</strong> yazan herkes sizi buluyor. Telefonunuz durmadan çalıyor, her arayan yeni bir müşteri. Rakipleriniz size yetişemiyor, çünkü siz dijitalde çoktan zirveye yerleştiniz. Kulağa hoş geliyor değil mi?"
     },
     {
       type: "paragraph",
@@ -59,12 +59,12 @@ const gebzeContent = {
     },
     {
       type: "heading2",
-      content: "Gebze'de SenninWeb Farkı"
+      content: "Bilecik'te SenninWeb Farkı"
     },
     {
       type: "paragraph",
       "isHtml": true,
-      content: "<strong>Gebze'yi biliyoruz.</strong> Sadece bir ajans değil, bölgenin dinamiklerine, rekabetine ve fırsatlarına hâkim bir ekibiz. Bu yüzden işletmeniz için geliştirdiğimiz stratejiler, İstanbul'daki bir ajansın hazır şablonu gibi değil, size özel ve yerel."
+      content: "<strong>Bilecik'i biliyoruz.</strong> Sadece bir ajans değil, Bilecik'in dinamiklerine, rekabetine ve fırsatlarına hâkim bir ekibiz. Bu yüzden işletmeniz için geliştirdiğimiz stratejiler, hazır şablonlar gibi değil, size özel ve yerel."
     },
     {
       type: "paragraph",
@@ -74,7 +74,7 @@ const gebzeContent = {
     {
       type: "paragraph",
       "isHtml": true,
-      "content": "<strong>Sonuç odaklıyız.</strong> Gebze'deki işletmeler için geliştirdiğimiz stratejilerle Google görünürlüğünü ve müşteri sayısını artırıyoruz. Söz vermiyor, kanıtlıyoruz."
+      "content": "<strong>Sonuç odaklıyız.</strong> Bilecik'teki işletmeler için geliştirdiğimiz stratejilerle Google görünürlüğünü ve müşteri sayısını artırıyoruz. Söz vermiyor, kanıtlıyoruz."
     },
     {
       type: "heading2",
@@ -86,15 +86,15 @@ const gebzeContent = {
       subsections: [
         {
           heading: "Kurumsal Web Sitesi ile Güven Kazanın",
-          content: "Potansiyel müşterileriniz sitenize girdiği an profesyonel bir markayla karşılaştığını hissetsin. Sizi en iyi yansıtan, hızlı ve mobil uyumlu web siteleriyle dijitalde fark yaratın."
-        },
-        {
-          heading: "E-Ticaret ile Satışlarınızı Katlayın",
-          content: "Gebze merkezli e-ticaret işletmeniz için satış odaklı, ödeme entegrasyonlu ve SEO altyapılı online mağazanızı kuralım. 7/24 satış yapmaya hazır olun."
+          content: "Potansiyel müşterileriniz sitenize girdiği an profesyonel bir markayla karşılaştığını hissetsin. Bilecik merkez ve ilçelerinde faaliyet gösteren işletmenizi en iyi yansıtan, hızlı ve mobil uyumlu web siteleri tasarlıyoruz."
         },
         {
           heading: "Yerel SEO ile Google'da Zirveye Çıkın",
-          content: "Google İşletme Profili optimizasyonu, yerel anahtar kelime stratejisi ve teknik SEO ile Gebze'de rakiplerinizin önüne geçin. Sizi arayanlar sizi bulsun."
+          content: "Bilecik özelinde anahtar kelime analizi, Google İşletme Profili optimizasyonu, teknik SEO ve içerik stratejisi. Bilecik, Bozüyük, Osmaneli, Söğüt ve Gölpazarı'nda Google'da üst sıralarda yer almanız için ihtiyacınız olan her şey."
+        },
+        {
+          heading: "E-Ticaret ile Satışlarınızı Katlayın",
+          content: "Bilecik merkezli e-ticaret işletmeniz için satış odaklı, ödeme entegrasyonlu ve SEO altyapılı online mağazanızı kuralım. 7/24 satış yapmaya hazır olun."
         }
       ]
     },
@@ -105,29 +105,29 @@ const gebzeContent = {
     },
     {
       type: "finalCta",
-      question: "Gebze'de rakipleriniz beklemiyor. Siz neden bekleyesiniz?",
+      question: "Bilecik'te rakipleriniz beklemiyor. Siz neden bekleyesiniz?",
       ctaText: "Hemen ücretsiz teklif alın, işletmenizi dijitalde büyütmeye bugün başlayın."
     }
   ]
 }
 
-export default function Gebze() {
+export default function Bilecik() {
   const navigate = useNavigate()
   const canonicalUrl = useCanonicalUrl()
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Gebze Web Tasarım ve SEO Hizmetleri",
+    "name": "Bilecik Web Tasarım ve SEO Hizmetleri",
     "provider": {
       "@type": "Organization",
       "name": "SenninWeb",
     },
     "areaServed": {
       "@type": "City",
-      "name": "Gebze"
+      "name": "Bilecik"
     },
-    "description": gebzeContent.metaDescription
+    "description": bilecikContent.metaDescription
   }
 
   useEffect(() => {
@@ -137,11 +137,11 @@ export default function Gebze() {
     const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
-    document.title = gebzeContent.title
-    upsertMetaByName("description", gebzeContent.metaDescription)
+    document.title = bilecikContent.title
+    upsertMetaByName("description", bilecikContent.metaDescription)
     upsertMetaByName("robots", "index, follow")
-    upsertMetaByProperty("og:title", gebzeContent.title)
-    upsertMetaByProperty("og:description", gebzeContent.metaDescription)
+    upsertMetaByProperty("og:title", bilecikContent.title)
+    upsertMetaByProperty("og:description", bilecikContent.metaDescription)
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
 
@@ -179,7 +179,7 @@ export default function Gebze() {
           </button>
 
           <div className="mt-6 flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase">
-            <span className="text-gold-400/90 font-semibold">Gebze</span>
+            <span className="text-gold-400/90 font-semibold">Bilecik</span>
             <span className="text-white/55">•</span>
             <span className="text-white/60">Yerel SEO</span>
             <span className="text-white/55">•</span>
@@ -187,17 +187,17 @@ export default function Gebze() {
           </div>
 
           <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
-            {gebzeContent.shortTitle}
+            {bilecikContent.shortTitle}
           </h1>
           <p className="mt-5 text-sm md:text-base text-white/60 leading-relaxed">
-            {gebzeContent.description}
+            {bilecikContent.description}
           </p>
 
           <div className="mt-8 gold-line opacity-20" />
         </div>
 
         <div className="space-y-10 text-white/70 leading-relaxed">
-          {gebzeContent.sections.map((section, index) => {
+          {bilecikContent.sections.map((section, index) => {
             switch (section.type) {
               case "heroSection":
                 return (
@@ -216,10 +216,24 @@ export default function Gebze() {
                     {section.content}
                   </h2>
                 )
+              case "heading3":
+                return (
+                  <h3 key={index} className="text-xl md:text-2xl font-display font-semibold text-white">
+                    {section.isHtml ? (
+                      <span dangerouslySetInnerHTML={{ __html: section.content }} />
+                    ) : (
+                      section.content
+                    )}
+                  </h3>
+                )
               case "paragraph":
                 return (
                   <p key={index} className="text-sm md:text-base text-white/65 leading-relaxed">
-                    <span dangerouslySetInnerHTML={{ __html: section.content }} />
+                    {section.isHtml ? (
+                      <span dangerouslySetInnerHTML={{ __html: section.content }} />
+                    ) : (
+                      section.content
+                    )}
                   </p>
                 )
               case "bulletList":

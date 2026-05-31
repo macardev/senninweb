@@ -43,10 +43,10 @@ export default function Blog() {
     const prevDesc = document.head.querySelector('meta[name="description"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
-    document.title = "Web Tasarım ve SEO Rehberi | SenninWeb"
+    document.title = "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb"
     upsertMetaByName(
       "description",
-      "Web tasarım, SEO ve dijital büyüme üzerine rehberler. İşletmenizi internette büyütmek için stratejiler."
+      "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları."
     )
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -60,8 +60,8 @@ export default function Blog() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Web Tasarım ve SEO Rehberi | SenninWeb",
-    "description": "Web tasarım, SEO ve dijital büyüme üzerine rehberler. İşletmenizi internette büyütmek için stratejiler.",
+    "name": "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb",
+    "description": "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları.",
     "url": canonicalUrl,
   }
 

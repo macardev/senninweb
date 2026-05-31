@@ -49,12 +49,12 @@ export default function Hakkimizda() {
     const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
-    document.title = "Hakkımızda | SenninWeb — Premium Web Tasarım & SEO"
-    upsertMetaByName("description", "2025'te kurulan SenninWeb, işletmelerin marka görünürlüğünü artırmak, müşteri kazanımını hızlandırmak ve aylık gelirlerini yükseltmek için premium web tasarım ve SEO hizmetleri sunar.")
+    document.title = "Hakkımızda | SenninWeb - Web Tasarım & SEO Ajansı | Premium Çözümler"
+    upsertMetaByName("description", "SenninWeb: 2025'te kurulan premium web tasarım ve SEO ajansı. KOBİ'ler için özel web tasarımı, SEO danışmanlığı ve kurumsal kimlik çözümleri.")
     upsertMetaByName("robots", "index, follow")
 
-    upsertMetaByProperty("og:title", "Hakkımızda | SenninWeb — Premium Web Tasarım & SEO")
-    upsertMetaByProperty("og:description", "2025'te kurulan SenninWeb, işletmelerin marka görünürlüğünü artırmak, müşteri kazanımını hızlandırmak ve aylık gelirlerini yükseltmek için premium web tasarım ve SEO hizmetleri sunar.")
+    upsertMetaByProperty("og:title", "Hakkımızda | SenninWeb - Web Tasarım & SEO Ajansı | Premium Çözümler")
+    upsertMetaByProperty("og:description", "SenninWeb: 2025'te kurulan premium web tasarım ve SEO ajansı. KOBİ'ler için özel web tasarımı, SEO danışmanlığı ve kurumsal kimlik çözümleri.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
 

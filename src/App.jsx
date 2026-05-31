@@ -9,6 +9,7 @@ const Hakkimizda = lazy(() => import("@/pages/Hakkimizda"))
 const Blog = lazy(() => import("@/pages/Blog"))
 const BlogPost = lazy(() => import("@/pages/BlogPost"))
 const Gebze = lazy(() => import("@/pages/Gebze"))
+const Bilecik = lazy(() => import("@/pages/Bilecik"))
 const SSS = lazy(() => import("@/pages/SSS"))
 const NotFound = lazy(() => import("@/pages/NotFound"))
 
@@ -37,6 +38,11 @@ export default function App() {
           <Route path="/gebze" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <Gebze />
+            </Suspense>
+          } />
+          <Route path="/bilecik" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <Bilecik />
             </Suspense>
           } />
           <Route path="/sss" element={
