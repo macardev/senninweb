@@ -372,11 +372,16 @@ export default function BlogPost() {
     headline: post.shortTitle,
     description: post.metaDescription,
     image: "https://www.senninweb.com/og-image.jpg",
-    datePublished: post.date,
+    datePublished: post.datePublished,
+    dateModified: post.dateModified || post.datePublished,
     author: {
       "@type": "Person",
-      name: post.author,
-      jobTitle: post.authorTitle,
+      name: "Çağatay Samet Macar",
+      jobTitle: ["Senior Web Developer", "Marketing Expert"],
+      url: "https://www.linkedin.com/in/çağatay-samet-macar-5bb930411/",
+      image: "https://www.senninweb.com/images/cagatay-macar-biometrik.webp",
+      description: "8+ yıllık deneyime sahip senior web geliştiricisi ve pazarlama uzmanı. UI/UX tasarım ve dijital pazarlama stratejileri konusunda uzman.",
+      sameAs: ["https://www.linkedin.com/in/çağatay-samet-macar-5bb930411/"]
     },
     publisher: {
       "@type": "Organization",
@@ -455,8 +460,8 @@ export default function BlogPost() {
               <span className="text-white/55">•</span>
               <span className="text-white/60">{post.readingTime}</span>
               <span className="text-white/55">•</span>
-              <span className="text-white/60">{post.date}</span>
-            </div>
+               <span className="text-white/60">{new Date(post.date).toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+             </div>
 
             <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
               {post.shortTitle}
@@ -473,6 +478,36 @@ export default function BlogPost() {
 
           <div className="space-y-10 text-white/70 leading-relaxed">
             {post.sections.map((section, index) => renderSection(section, index))}
+
+            <div className="gold-line opacity-20" />
+
+            <div className="flex flex-col sm:flex-row items-start gap-5 p-6 md:p-8 rounded-3xl border border-white/10 bg-white/[0.03]">
+              <img
+                src="/images/cagatay-macar-biometrik.webp"
+                alt="Çağatay Samet Macar"
+                className="w-14 h-14 rounded-full object-cover shrink-0"
+                loading="lazy"
+              />
+              <div className="space-y-2">
+                <div className="flex items-center gap-3 flex-wrap">
+                  <span className="font-display font-semibold text-white text-base">Çağatay Samet Macar</span>
+                  <span className="text-[10px] tracking-[0.2em] uppercase text-gold-400/90">Senior Web Developer & Marketing Expert</span>
+                </div>
+                <p className="text-sm text-white/60 leading-relaxed">
+                  8+ yıllık deneyim. Manisa Celal Bayar Üniversitesi Bilgisayar Programcılığı ve Ekol 42 Gebye Muallimköy.
+                  UI/UX tasarım ve dijital pazarlama stratejileri üzerine uzmanlaştı. Referans projeler: missbutikpasta.com, mahirakarremax.com.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/çağatay-samet-macar-5bb930411/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-white/50 hover:text-gold-400 transition-colors"
+                >
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn'de bağlan
+                </a>
+              </div>
+            </div>
 
             <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-10">
               <div className="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 blur-[70px] pointer-events-none" />

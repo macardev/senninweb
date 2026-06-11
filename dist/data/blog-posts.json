@@ -7,7 +7,9 @@
     "desc": "Küçük işletme web siteniz nasıl müşteri getirir? 2026'da SEO ve mobil uyum ile satışları 2 kata çıkarın.",
     "tag": "Büyüme",
     "readingTime": "6 dk",
-    "date": "2026",
+    "datePublished": "2026-01-12",
+    "dateModified": "2026-03-10",
+    "date": "2026-01-12",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "Küçük işletme web siteniz nasıl müşteri getirir? 2026'da Google'da görünün, mobil uyumlu tasarım ve SEO ile satışlarınızı 2 kata çıkarın.",
@@ -53,13 +55,14 @@
       },
       {
         "type": "conclusion",
+        "isHtml": true,
         "intro": "Eğer sizin de web siteniz:",
         "items": [
           "müşteri getirmiyorsa",
           "Google'da görünmüyorsa",
           "yavaş çalışıyorsa"
         ],
-        "closing": "bunun çözümü doğru bir strateji ile mümkündür."
+        "closing": "bunun çözümü doğru bir <a href=\"/gebze\">Gebze web tasarım stratejisi</a> ile mümkündür."
       },
       {
         "type": "finalParagraph",
@@ -75,7 +78,9 @@
     "desc": "10 adımda SEO, Google Maps ve dönüşüm odaklı tasarımla satışlarınızı artırın.",
     "tag": "SEO & Büyüme",
     "readingTime": "12 dk",
-    "date": "2026",
+    "datePublished": "2026-02-03",
+    "dateModified": "2026-04-15",
+    "date": "2026-02-03",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "Küçük işletme web siteniz müşteri getirmiyor mu? 10 adımda SEO, Google Maps ve dönüşüm odaklı tasarımla satışlarınızı artırın.",
@@ -145,7 +150,8 @@
       },
       {
         "type": "paragraph",
-        "content": "Sitenizin metinleri bir satış temsilcisi gibi konuşmalıdır. 2026 SEO trendleri artık sadece anahtar kelimelere değil, \"kullanıcı niyetine\" (search intent) odaklanıyor."
+        "isHtml": true,
+        "content": "Sitenizin metinleri bir satış temsilcisi gibi konuşmalıdır. <a href=\"/blog/kucuk-isletmeler-google-da-gorunurluk-2026\">2026 SEO trendleri</a> artık sadece anahtar kelimelere değil, \"kullanıcı niyetine\" (search intent) odaklanıyor."
       },
       {
         "type": "paragraph",
@@ -190,7 +196,8 @@
       },
       {
         "type": "paragraph",
-        "content": "Küçük işletmeler için en büyük fırsat, kendi mahallelerindeki ve şehirlerindeki müşterilere ulaşmaktır. \"Yerel SEO\" sayesinde, birisi \"yakınımdaki kurumsal web sitesi yapan yerler\" diye aradığında en üstte siz çıkabilirsiniz."
+        "isHtml": true,
+        "content": "Küçük işletmeler için en büyük fırsat, kendi mahallelerindeki ve şehirlerindeki müşterilere ulaşmaktır. <a href=\"/gebze\">Gebze'de yerel SEO</a> sayesinde, birisi \"yakınımdaki kurumsal web sitesi yapan yerler\" diye aradığında en üstte siz çıkabilirsiniz."
       },
       {
         "type": "paragraph",
@@ -293,7 +300,9 @@
     "desc": "7 adımda Google'da ilk sayfaya çıkın ve rakiplerinizi geçin. 2026 SEO trendleri.",
     "tag": "SEO & Büyüme",
     "readingTime": "12 dk",
-    "date": "2026",
+    "datePublished": "2026-01-28",
+    "dateModified": "2026-03-10",
+    "date": "2026-01-28",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "Küçük işletmeniz Google'da görünmüyor mu? 2026 SEO trendleriyle 7 adımda Google'da ilk sayfaya çıkın ve rakiplerinizi geçin.",
@@ -411,7 +420,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Küçük bir işletmeyseniz, tüm Türkiye ile rekabet etmenize gerek yok. <a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar (Google Business) sizin en büyük silahınız</a>. Konumunuz net mi? Müşterileriniz yorum yapmış mı? (Ve siz onlara nazikçe cevap vermiş misiniz?) Dükkanın içinden güncel fotoğraflar var mı? Eğer haritada varsanız, o mahalledeki müşterinin cebindesiniz demektir.",
+        "content": "Küçük bir işletmeyseniz, tüm Türkiye ile rekabet etmenize gerek yok. <a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar (Google Business) sizin en büyük silahınız</a>. Konumunuz net mi? Müşterileriniz yorum yapmış mı? (Ve siz onlara nazikçe cevap vermiş misiniz?) Dükkanın içinden güncel fotoğraflar var mı? Eğer haritada varsanız, o mahalledeki müşterinin cebindesiniz demektir. <a href=\"/gebze\">Gebze'de yerel SEO</a> ve <a href=\"/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir\">satış odaklı web sitesi stratejileri</a> ile siz de mahallenizin kahramanı olabilirsiniz.",
         "isHtml": true
       },
       {
@@ -510,7 +519,9 @@
     "desc": "8 yaygın hatayı öğrenin ve SEO, hız, mobil uyum ile sitenizi zirveye taşıyın.",
     "tag": "SEO & Büyüme",
     "readingTime": "8 dk",
-    "date": "2026",
+    "datePublished": "2026-02-18",
+    "dateModified": "2026-02-18",
+    "date": "2026-02-18",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "Web siteniz Google'da ilk sayfada değil mi? 8 yaygın hatayı öğrenin ve SEO, hız, mobil uyum ile sitenizi zirveye taşıyın.",
@@ -557,7 +568,8 @@
       },
       {
         "type": "paragraph",
-        "content": "Genel kelimeler yerine niş ve kullanıcı niyeti yüksek anahtar kelimelere odaklanmanız gerekir. Örneğin \"avukat\" yerine \"Bursa boşanma avukatı ücretleri\" veya \"web tasarım hizmet\" yerine \"İstanbul e-ticaret web tasarımı\" gibi."
+        "isHtml": true,
+        "content": "Genel kelimeler yerine niş ve kullanıcı niyeti yüksek anahtar kelimelere odaklanmanız gerekir. Örneğin \"avukat\" yerine \"Bursa boşanma avukatı ücretleri\" veya \"web tasarım hizmet\" yerine \"İstanbul e-ticaret web tasarımı\" gibi. <a href=\"/blog/kucuk-isletmeler-google-da-gorunurluk-2026\">Detaylı SEO görünürlük rehberi →</a>"
       },
       {
         "type": "paragraph",
@@ -591,8 +603,9 @@
       },
       {
         "type": "bulletList",
+        "isHtml": true,
         "items": [
-          "Google İşletme Profili tamamlanmış mı? (İşletme adı, adres, telefon aynı mı her yerde?)",
+          "<a href=\"/gebze\">Gebze Google İşletme Profili</a> tamamlanmış mı? (İşletme adı, adres, telefon aynı mı her yerde?)",
           "Müşteri yorumlarına cevap veriyorsunuz mu?",
           "Yeterli fotoğraf ve güncel bilgiler var mı?"
         ]
@@ -637,8 +650,8 @@
       {
         "type": "bulletList",
         "items": [
-          "✅ Hızlı ve mobil uyumlu <a href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\">web tasarım</a>",
-          "✅ Doğru keyword stratejisi ile <a href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\">SEO hizmeti</a> uygulaması",
+          "✅ Hızlı ve mobil uyumlu <a href=\"/gebze\" target=\"_blank\" rel=\"noopener noreferrer\">Gebze'de web tasarım</a>",
+          "✅ Doğru keyword stratejisi ile <a href=\"/bilecik\" target=\"_blank\" rel=\"noopener noreferrer\">Bilecik'te SEO hizmeti</a> uygulaması",
           "✅ Aylık 2-4 blog yazısı üretimi",
           "✅ Google Maps ve yerel SEO optimizasyonu",
           "✅ Güven ve marka algısı oluşturma",
@@ -705,7 +718,9 @@
     "desc": "2026 web sitesi fiyatları. Profesyonel tasarım, kurumsal site ve SEO paketleri güncel fiyat aralıkları.",
     "tag": "Web Tasarım",
     "readingTime": "7 dk",
-    "date": "2026",
+    "datePublished": "2026-03-05",
+    "dateModified": "2026-03-05",
+    "date": "2026-03-05",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "2026 web sitesi fiyatları ne kadar? Profesyonel web tasarımı, kurumsal site ve SEO paketleri güncel fiyat aralıkları. Hazır tema vs özel tasarım karşılaştırması.",
@@ -801,7 +816,8 @@
       },
       {
         "type": "paragraph",
-        "content": "Ve işin kötü tarafı şu: Google da bunu biliyor. Yavaş açılan veya mobilde bozulan siteler hem kullanıcı kaybediyor hem de SEO tarafında geriye düşüyor."
+        "isHtml": true,
+        "content": "Ve işin kötü tarafı şu: Google da bunu biliyor. Yavaş açılan veya mobilde bozulan siteler hem kullanıcı kaybediyor hem de SEO tarafında geriye düşüyor. <a href=\"/blog/tasarimin-5-temel-ilkesi\">Web tasarımın 5 temel ilkesi</a>'nde mobil uyum ve hızın önemini detaylıca ele aldık."
       },
       {
         "type": "paragraph",
@@ -1017,7 +1033,9 @@
     "desc": "UI/UX, hız, mobil uyum, SEO ve müşteri odaklı tasarım. Profesyonel web sitesi rehberi.",
     "tag": "Web Tasarım",
     "readingTime": "10 dk",
-    "date": "2026",
+    "datePublished": "2026-02-10",
+    "dateModified": "2026-02-10",
+    "date": "2026-02-10",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "Web tasarımın 5 temel ilkesi: UI/UX, hız, mobil uyum, SEO ve müşteri odaklı tasarım. Profesyonel bir web sitesinde olması gerekenler.",
@@ -1043,7 +1061,8 @@
         "subsections": [
           {
             "heading": "1. Müşteri İhtiyaçlarının Belirlenmesi",
-            "content": "Geçenlerde gayrimenkul danışmanı Mahir Akar Bey ile konuşuyorduk. Kendisine baştan sona bir web sitesi yapmadım — zaten bir sitesi vardı. Ona local SEO hizmeti veriyorum. Birlikte oturup hedef anahtar kelimeleri belirledik, içerikleri için en çok aratılan sorulardan başlıklar ürettik. Ayrıca sitesine blog sayfaları ekledik, hız ve erişilebilirlik konusunda gerekli düzeltmeleri yaptım. İşte bu süreç, bir web sitesinin sadece yapılıp bırakılacak bir şey olmadığını gösteriyor. Müşteri ihtiyaçları dediğimiz şey, bir kere konuşup biten bir şey değildir — sürekli güncellenen, gelişen bir süreçtir. Kısacası, bir web sitesi yapmaya karar verdiğinizde ilk yapmanız gereken şey bir aynanın karşısına geçip kendinize şu soruyu sormaktır: 'Bu site benim için ne yapacak?' Kurumsal web tasarım süreci bu soruyla başlar. Hedef kitlenizi tanımadan, onların ihtiyaçlarını anlamadan yapılmış bir site, ne kadar gösterişli olursa olsun boş bir vitrinden farksızdır."
+            "isHtml": true,
+            "content": "Geçenlerde gayrimenkul danışmanı Mahir Akar Bey ile konuşuyorduk. Kendisine baştan sona bir web sitesi yapmadım — zaten bir sitesi vardı. Ona <a href=\"/gebze\">Gebze'de local SEO hizmeti</a> veriyorum. Birlikte oturup hedef anahtar kelimeleri belirledik, içerikleri için en çok aratılan sorulardan başlıklar ürettik. Ayrıca sitesine blog sayfaları ekledik, hız ve erişilebilirlik konusunda gerekli düzeltmeleri yaptım. İşte bu süreç, bir web sitesinin sadece yapılıp bırakılacak bir şey olmadığını gösteriyor. Müşteri ihtiyaçları dediğimiz şey, bir kere konuşup biten bir şey değildir — sürekli güncellenen, gelişen bir süreçtir. Kısacası, bir web sitesi yapmaya karar verdiğinizde ilk yapmanız gereken şey bir aynanın karşısına geçip kendinize şu soruyu sormaktır: 'Bu site benim için ne yapacak?' Kurumsal web tasarım süreci bu soruyla başlar. Hedef kitlenizi tanımadan, onların ihtiyaçlarını anlamadan yapılmış bir site, ne kadar gösterişli olursa olsun boş bir vitrinden farksızdır."
           },
           {
             "heading": "2. Görsel Hiyerarşi ve Kullanıcı Deneyimi (UI/UX)",
@@ -1051,7 +1070,8 @@
           },
           {
             "heading": "3. Hız ve Performans Optimizasyonu",
-            "content": "Bu maddeyi atlayan web sitesi firmaları maalesef ki bir numaralı hatayı yapıyor. İnsanlar sabırsız. Bir sitenin açılmasını 3 saniyeden fazla bekleyen kullanıcıların neredeyse yarısı sayfayı terk ediyor. Hız, sadece kullanıcı memnuniyeti için değil, Google sıralamaları için de kritik. Core Web Vitals dediğimiz performans metrikleri, artık Google'ın sıralama faktörleri arasında. Yani siteniz yavaşsa, Google da onu aşağılara atıyor. Görsel optimizasyonu, gereksiz kod temizliği, önbellekleme ve CDN kullanımı gibi teknik detaylar kulak tırmalayabilir belki, ama bir profesyonel web tasarım sürecinde bunların hepsi hesaba katılmalı."
+            "isHtml": true,
+            "content": "Bu maddeyi atlayan web sitesi firmaları maalesef ki bir numaralı hatayı yapıyor. İnsanlar sabırsız. Bir sitenin açılmasını 3 saniyeden fazla bekleyen kullanıcıların neredeyse yarısı sayfayı terk ediyor. Hız, sadece kullanıcı memnuniyeti için değil, Google sıralamaları için de kritik. <a href=\"/blog/teknik-terimler#core-web-vitals\">Core Web Vitals</a> dediğimiz performans metrikleri, artık Google'ın sıralama faktörleri arasında. Yani siteniz yavaşsa, Google da onu aşağılara atıyor. Görsel optimizasyonu, gereksiz kod temizliği, önbellekleme ve CDN kullanımı gibi teknik detaylar kulak tırmalayabilir belki, ama bir profesyonel web tasarım sürecinde bunların hepsi hesaba katılmalı."
           },
           {
             "heading": "4. Mobil Uyumluluk (Responsive Design)",
@@ -1090,7 +1110,9 @@
     "desc": "2026 web tasarım fiyatları. Fiyatı etkileyen 5 faktör ve doğru ajans seçimi rehberi.",
     "tag": "Web Tasarım",
     "readingTime": "7 dk",
-    "date": "2026",
+    "datePublished": "2026-03-22",
+    "dateModified": "2026-03-22",
+    "date": "2026-03-22",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "Web tasarım fiyatları neden bu kadar farklı? 2026 güncel fiyat aralıkları, fiyatı etkileyen 5 faktör ve doğru ajans seçimi rehberi.",
@@ -1140,7 +1162,7 @@
       {
         "type": "paragraph",
         "isHtml": true,
-        "content": "<a href=\"/blog/teknik-terimler#ui-ux-tasarimi\">UI/UX tasarımı</a>, bir web sitesinin sadece görünümünü değil, kullanıcının siteyle olan tüm etkileşimini kapsar. Profesyonel bir ekip, sitenize giren bir kişinin hangi butona tıklayacağından, hangi renklerin güven hissi vereceğine kadar her detayı özel olarak tasarlar. Hazır tema kullanan siteler ise bu sürecin neredeyse tamamını atlar. Bu da fiyata doğrudan yansır."
+        "content": "<a href=\"/blog/teknik-terimler#ui-ux-tasarimi\">UI/UX tasarımı</a>, bir web sitesinin sadece görünümünü değil, kullanıcının siteyle olan tüm etkileşimini kapsar. Profesyonel bir ekip, sitenize giren bir kişinin hangi butona tıklayacağından, hangi renklerin güven hissi vereceğine kadar her detayı özel olarak tasarlar. <a href=\"/blog/tasarimin-5-temel-ilkesi\">Web tasarımın 5 temel ilkesi</a> rehberimizde bu konuları detaylıca ele aldık. Hazır tema kullanan siteler ise bu sürecin neredeyse tamamını atlar. Bu da fiyata doğrudan yansır."
       },
       {
         "type": "heading3",
@@ -1250,7 +1272,9 @@
     "desc": "Web tasarımın temel teknik terimleri: Core Web Vitals, SSL, UI/UX, SEO ve mobil uyum.",
     "tag": "Web Tasarım",
     "readingTime": "8 dk",
-    "date": "2026",
+    "datePublished": "2026-04-01",
+    "dateModified": "2026-04-01",
+    "date": "2026-04-01",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "Web tasarım teknik terimler sözlüğü. Core Web Vitals, SSL Sertifikası, UI/UX Tasarımı, SEO Uyumlu Web Sitesi ve Mobil Uyumlu Tasarım hakkında detaylı açıklamalar.",
@@ -1350,7 +1374,7 @@
       {
         "type": "paragraph",
         "isHtml": true,
-        "content": "SEO sonradan eklenen bir özellik değil, sitenin temeline işlenmesi gereken bir sistemdir. Bu yüzden <strong>web tasarım hizmeti</strong> alırken SEO altyapısının projeye dahil olup olmadığını sorgulamak kritik önem taşır."
+        "content": "SEO sonradan eklenen bir özellik değil, sitenin temeline işlenmesi gereken bir sistemdir. Bu yüzden <strong>web tasarım hizmeti</strong> alırken SEO altyapısının projeye dahil olup olmadığını sorgulamak kritik önem taşır. SEO hakkında sıkça sorulan sorular için <a href=\"/sss\">SSS sayfamızı</a> ziyaret edebilirsiniz."
       },
       {
         "type": "heading2",
@@ -1398,7 +1422,9 @@
     "desc": "Ödüllü bir site hayal edin: Awwwards kalitesi, SEO, 2 kat satış. Web tasarım fiyatları ne kadar, gerçekçi mi? Müşteri perspektifinden karşılaştırmalı rehber.",
     "tag": "Web Tasarım",
     "readingTime": "8 dk",
-    "date": "2026",
+    "datePublished": "2026-04-10",
+    "dateModified": "2026-04-10",
+    "date": "2026-04-10",
     "author": "Çağatay Macar",
     "authorTitle": "Senior Web Developer",
     "metaDescription": "Ödüllü web sitesi fiyatları ne kadar? Müşteri perspektifinden Awwwards kalitesinde bir site yaptırmanın maliyeti, SEO avantajları ve 2 kata varan satış artışı. Karşılaştırmalı 2026 rehberi.",
@@ -1429,7 +1455,7 @@
         "type": "bulletList",
         "isHtml": true,
         "items": [
-          "<strong>Hız ve Performans:</strong> Ödüllü sitelerin ortak özelliği, <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Core Web Vitals</a> metriklerinde mükemmel puan almalarıdır. Yani saniyeler içinde açılır, kullanıcıyı bekletmezler.",
+          "<strong>Hız ve Performans:</strong> Ödüllü sitelerin ortak özelliği, Core Web Vitals metriklerinde mükemmel puan almalarıdır. Yani saniyeler içinde açılır, kullanıcıyı bekletmezler.",
           "<strong>UI/UX Detayları:</strong> Her butonun konumu, her geçiş animasyonu, her font seçimi — bunların hepsi bilinçli yapılmış tercihlerdir. Gözünüzün 'güzel' dediği şey aslında onlarca küçük kararın toplamıdır.",
           "<strong>Yaratıcı Yaklaşım:</strong> Jüri üyeleri sıradanlıktan sıkılmıştır. Ödül alan siteler, alışılmışın dışında bir hikaye anlatma biçimiyle gelir. Bu da özel bir tasarım süreci gerektirir.",
           "<strong>Mobil Performans:</strong> Günümüzde bir site mobilde kötü çalışıyorsa ödül alması neredeyse imkansız. Mobil uyumluluk artık standart değil, zorunluluk."
@@ -1491,7 +1517,8 @@
       },
       {
         "type": "finalParagraph",
-        "content": "Web tasarım fiyatları kafanızı karıştırmasın. Önemli olan, sitenizin size ne kazandıracağıdır. Ödüllü bir site, iyi bir SEO stratejisiyle birleştiğinde işletmenizi bir sonraki seviyeye taşıyabilir."
+        "isHtml": true,
+        "content": "<a href=\"/blog/web-tasarim-fiyatlari-neden-degisiyor-2026\">Web tasarım fiyatları</a> kafanızı karıştırmasın. Önemli olan, sitenizin size ne kazandıracağıdır. Ödüllü bir site, iyi bir SEO stratejisiyle birleştiğinde işletmenizi bir sonraki seviyeye taşıyabilir."
       },
       {
         "type": "finalCta",

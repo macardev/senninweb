@@ -49,6 +49,46 @@ const faqs = [
       "Günümüzde bunun birden fazla yolu var. Figma-Webflow gibi tasarım araçları, baştan sona elle kodlayarak yazma, vibe coding (son birkaç yılda ortaya çıkan bir kodlama yöntemi — sadece yapay zekaya ne yapması gerektiği söylenerek profesyonel kalitede web sitesi tasarımları ortaya çıkarılabiliyor) bunlardan birkaç tanesidir. Sennin Web olarak biz bu üçünü harmanlayarak daha etkili sonuçlar elde ediyoruz. Sitenin UI/UX tasarımı için Figma kullanarak kullanıcının etkileşime girdiği arayüzü modern, estetik ve hızlı bir şekilde tasarlıyoruz. Ardından geliştirici ekibimiz bunu yapay zeka ajanlarının yardımıyla hem kodluyor hem de debug (hata giderme) işlemini yapıyor."
   },
   {
+    question: "Web sitem Google'da neden çıkmıyor?",
+    answer:
+      "En sık duyduğumuz sorulardan biridir bu. Birkaç farklı sebebi olabilir, en yaygın olanlarına bir bakalım.\n\nBirincisi: siteniz çok yeni olabilir. Google'ın yeni bir siteyi keşfetmesi, taraması ve sıralamaya koyması zaman alır. İkincisi: siteniz teknik olarak Google'ın istediği kriterleri karşılamıyor olabilir. Mobil uyumluluk, hız, SSL sertifikası, düzgün bir site haritası — bunlar olmadan Google sizi görmezden gelir. Üçüncüsü: içerik yetersizliği. Sitenizde bir iki cümlelik sayfalar varsa, Google'a \"bu sayfa bir şey anlatmıyor\" sinyali gönderirsiniz.\n\nDördüncüsü de şu: hiç SEO çalışması yapılmamış olabilir. Güzel bir site yapıp yayına almak yetmez. Doğru anahtar kelimeleri hedeflemek, etiketleri düzenlemek, yerel SEO'yu kurmak — bunların hepsi ayrı birer çalışma gerektirir.\n\nKısacası: siteniz var diye Google'da çıkacağının garantisi yok. Ama doğru adımları atarsanız çıkma ihtimali epey artar."
+  },
+  {
+    question: "Hazır tema mı kullanıyorsunuz, yoksa sıfırdan mı tasarlıyorsunuz?",
+    answer:
+      "Kesinlikle sıfırdan tasarlıyoruz. Hazır temalar — özellikle WordPress için olanlar — hız, güvenlik ve SEO açısından ciddi dezavantajlar yaratabiliyor. Biz her projeye sıfırdan başlıyor, işletmenin ihtiyaçlarını analiz ediyor, hedef kitlesini tanıyor ve ona göre bir tasarım çıkarıyoruz.\n\nBunun en büyük avantajı: siteniz size özel oluyor. Başka hiçbir yerde görmeyeceğiniz bir arayüz, markanızın renkleriyle bütünleşmiş bir deneyim. Hazır tema kullandığınızda ise aynı siteyi onlarca farklı işletmede görmeniz mümkün. Bu da hem prestij hem de özgünlük açısından can sıkıcı."
+  },
+  {
+    question: "Mobil uyumlu (responsive) site yapıyor musunuz?",
+    answer:
+      "Tabii ki. Günümüzde internet trafiğinin %60'ı mobilden geliyor. Google da mobil uyumluluğu en kritik sıralama faktörlerinden biri olarak değerlendiriyor. Mobil uyumlu olmayan bir site yapmak, 2026 yılında dükkânınızın kapısına \"girmeyin\" yazısı asmak gibi bir şey.\n\nTüm projelerimizi mobil öncelikli tasarlıyoruz. Önce telefon ekranında kusursuz görünsün, sonra tablet ve masaüstüne uyarlıyoruz. Buton boyutlarından yazı puntolarına, menü düzeninden görsel optimizasyonuna kadar her şey mobil kullanıcı düşünülerek hazırlanıyor."
+  },
+  {
+    question: "Siteyi kendim güncelleyebilecek miyim, admin paneli var mı?",
+    answer:
+      "Evet, tüm projelerimizi kullanıcı dostu bir yönetim paneliyle teslim ediyoruz. Hiç kod bilmeseniz bile içeriklerinizi kolayca güncelleyebilir, yeni sayfalar ekleyebilir, görselleri değiştirebilirsiniz.\n\nTeslimat sonrası kısa bir eğitim de veriyoruz — paneli nasıl kullanacağınızı, nelere dikkat etmeniz gerektiğini anlatıyoruz. Yine de \"uğraşamam, siz yönetin\" derseniz, onun için de aylık bakım seçeneklerimiz mevcut."
+  },
+  {
+    question: "Web sitesi yaptırmak ne kadar sürer?",
+    answer:
+      "Projenin kapsamına göre değişir, ama ortalama bir kurumsal site için 8-10 gün civarında teslim yapıyoruz. İlk 48 saat içinde demo tasarımı gönderiyoruz, siz onayladıktan sonra geliştirme aşamasına geçiyoruz.\n\nTabii e-ticaret gibi daha karmaşık projelerde bu süre 2-3 haftayı bulabilir. Ama net zaman çizelgesini her zaman ilk görüşmede sizinle paylaşıyoruz — ne zaman ne olacağını bilmek istemez misiniz?"
+  },
+  {
+    question: "Siteyi yayına aldıktan sonra destek / bakım veriyor musunuz?",
+    answer:
+      "Evet, veriyoruz. Yayın sonrası 30 gün boyunca ücretsiz destek sağlıyoruz. Bu süreçte karşılaştığınız herhangi bir sorun, küçük değişiklik talepleri veya uyum sorunlarıyla ilgileniyoruz.\n\n30 gün sonrası için ise aylık bakım planlarımız var. Güvenlik güncellemeleri, performans takibi, içerik güncellemeleri ve yedekleme gibi hizmetleri düzenli olarak sağlıyoruz. Uzun vadeli çözüm ortağınız olmak isteriz."
+  },
+  {
+    question: "SEO ve Google Ads (reklam) arasındaki fark nedir? Hangisi daha iyi?",
+    answer:
+      "İkisi birbirini tamamlayan ama çok farklı şeyler. Google Ads, reklam verdiğiniz sürece üst sıralarda göründüğünüz bir sistem. Bütçeyi kestiğiniz an trafik de kesilir. Kısa vadeli hızlı sonuç almak istiyorsanız işe yarar.\n\nSEO ise uzun vadeli bir yatırım. Çalışmalar yapılır, içerik üretilir, teknik altyapı düzeltilir — ve zamanla sıralamalar oturur. Reklamdan farkı, bütçeyi kestiğinizde trafiğin kesilmemesi. Yani organik olarak kazandığınız sıralamalar sizin olmaya devam eder.\n\nHangisi daha iyi? İhtiyacınıza bağlı. Ama şunu söyleyebilirim: SEO olmadan sadece reklama bel bağlamak, her ay para ödemeniz gereken bir kiralık evde oturmak gibidir. SEO ise size kendi evinizi satın almak gibi gelir."
+  },
+  {
+    question: "SEO ne kadar sürede sonuç verir? Garanti verebiliyor musunuz?",
+    answer:
+      "Açık olacağım: SEO'da garanti diye bir şey yoktur. Google, yılda binlerce algoritma güncellemesi yapar ve sıralama 200'den fazla faktöre bağlıdır. Size \"bir ay sonra birinci sıradayız\" diyen bir ajans varsa, ya size yalan söylüyordur ya da kendine.\n\nAma gerçekçi bir zaman çizelgesi verebilirim. Teknik düzenlemelerin etkisi 4-8 hafta içinde görülmeye başlar. Düşük ve orta rekabetli kelimelerde ilk sıralama hareketleri 3. aydan itibaren gözlemlenir. Kalıcı ve güçlü sonuçlar ise 6-12 ay arasında oturur.\n\nGaranti veremeyiz — bunu veren bir ajans varsa kaçın derim. Ama şeffaf raporlama ile her ay ne yaptığımızı, hangi kelimelerde ilerlediğimizi, trafiğin nasıl değiştiğini gösteririz. Sonuçlar konuşur."
+  },
+  {
     question: "SEO Yetmiyormuş Gibi, AEO ve GEO Nereden Çıktı?",
     answer:
       "Önce SEO'dan bahsedelim. SEO (search engine optimization — arama motoru optimizasyonu), web sitenizi kullanıcı dostu hale getirerek Google'da üst sıralarda çıkması için yapılan işlemdir. Bunu zaten duymayan yoktur herhalde? Gelelim AEO'ya. AEO (answer engine optimization — cevap motoru optimizasyonu), yapay zeka destekli arama motorları tarafından kullanıcıya en doğru cevabı verebilmek için içeriklerin optimize edilmesidir. Örneğin Gemini veya ChatGPT'ye bir soru sorduğunuzda, bu yapay zekaların sizin sitenizdeki bilgilerden yola çıkarak kullanıcıya cevap vermesini sağlayan bir işlemdir. GEO ise AEO'ya benzer. Generative Engine Optimization (üretici motor optimizasyonu), içeriklerinizi üretken yapay zeka destekli arama motorlarının daha kolay bulması, anlaması ve yanıtlarına kaynak olarak göstermesi için yapılan işlemdir."
@@ -59,6 +99,11 @@ const faqs = [
       "Açık konuşacağım, şu an ortada öyle aman aman kesin yöntemler yok. SEO'daki gibi kalıplaşmış yöntemler yok desek daha doğru olur. Dediğim gibi ama şu anlık."
   },
   {
+    question: "Sadece SEO hizmeti alabilir miyim?",
+    answer:
+      "Evet, sadece SEO hizmeti de alabilirsiniz. Mevcut bir siteniz varsa ve sadece Google'da görünürlüğünü artırmak istiyorsanız, SEO paketlerimizden birini seçip başlayabiliriz. Önce sitenizin mevcut durumunu analiz ediyor, sonra size özel bir strateji belirliyoruz.\n\nAma şunu da söylemeden geçemeyeceğim: bazen sitenin teknik altyapısı SEO çalışmasının tam verim almasını engelleyebiliyor. Eğer böyle bir durumla karşılaşırsak, sizi uyarır ve önce siteyi iyileştirmeyi öneririz. Yoksa \"sadece SEO yapalım, sonra siteyi düşünürüz\" yaklaşımı pek sağlıklı olmuyor."
+  },
+  {
     question: "Fiyatlar Neye Göre Belirleniyor?",
     answer:
       "Fiyat konusunun birçok farklı etkeni var. Sitenin kategorisine (blog, portfolyo veya e-ticaret) göre, sayfa sayısı, animasyonların kompleks olup olmadığı veya 3D animasyonlar gibi konular örneklerden birkaç tanesi olarak gösterilebilir."
@@ -67,6 +112,11 @@ const faqs = [
     question: "E-ticaret Siteleri Neden Hep Daha Pahalı Oluyor?",
     answer:
       "E-ticaret sitelerinin daha pahalı olmasının iki ana sebebi var. Birincisi: Web sitesi tasarımı ve geliştirmesinde iki ana başlık bulunur. Birisi front-end (ön uç), diğeri ise back-end (arka uç) olarak isimlendirilir. Front-end, kullanıcının siteye girdiği zaman gördüğü her şeydir: yazılar, renkler, kartlar, görseller, ikonlar, logo vs. Back-end ise sitenin arkaplanında siteye fonksiyonellik katmak için kullanılır. Abonelik işlemleri, kayıt olmak veya sitede hesap açma, ödeme altyapıları ekleme, ürün satışları back-end ile yapılır. Blog ve portfolyo türündeki siteler için çoğu zaman front-end yeterlidir. E-ticaret sitelerinde ise back-end işin içine girdiği için maliyet artar."
+  },
+  {
+    question: "Sizi rakiplerinizden ayıran nedir? Neden SenninWeb'i tercih etmeliyim?",
+    answer:
+      "Güzel soru. Bizi diğer ajanslardan ayıran birkaç şey var.\n\nBirincisi: hazır tema kullanmıyoruz. Her projeyi sıfırdan, markaya özel tasarlıyoruz. Çoğu ajans bir tema alıp üzerinden iki günde site çıkarırken, biz her pikselle tek tek ilgileniyoruz.\n\nİkincisi: SEO sadece bir hizmetimiz değil, felsefemizin temeli. \"Güzel görünmek yetmez, Google'da da görünmek lazım\" sözü boşuna değil. Tasarım ve SEO'yu birbirinden ayırmıyor, her projede ikisini birlikte düşünüyoruz.\n\nÜçüncüsü: işimizi hızlı yapıyoruz. Ortalama 8 günde teslim, 48 saatte demo tasarım. Çoğu ajansın haftalarca sürdüğü işi biz günlerle ölçüyoruz.\n\nDördüncüsü: şeffafız. Ne yapıyoruz, neden yapıyoruz, ne zaman bitecek — her şeyi baştan konuşuyoruz. Sürpriz yok, gizli maliyet yok.\n\nBeşincisi: AEO ve GEO gibi yeni nesil arama motoru optimizasyonu konularında da çalışıyoruz. Çoğu ajansın henüz adını bile duymadığı bu alanlarda projeler üretiyoruz. Yapay zeka çağında sadece Google'da değil, ChatGPT'de, Gemini'de, Perplexity'de de görünür olmanız için çalışıyoruz."
   }
 ]
 
@@ -142,10 +192,10 @@ export default function SSS() {
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
     document.title = "Sıkça Sorulan Sorular | SenninWeb"
-    upsertMetaByName("description", "Web tasarım, SEO, AEO, GEO ve daha fazlası hakkında sıkça sorulan sorular. SenninWeb ile dijital dünyada merak ettiklerinizi öğrenin.")
+    upsertMetaByName("description", "Web tasarım, SEO, mobil uyumluluk, Google'da görünürlük, yapay zeka optimizasyonu ve daha fazlası hakkında sıkça sorulan sorular. SenninWeb ile merak ettiklerinizi öğrenin.")
     upsertMetaByName("robots", "index, follow")
     upsertMetaByProperty("og:title", "Sıkça Sorulan Sorular | SenninWeb")
-    upsertMetaByProperty("og:description", "Web tasarım, SEO, AEO, GEO ve daha fazlası hakkında sıkça sorulan sorular.")
+    upsertMetaByProperty("og:description", "Web tasarım, mobil uyumluluk, SEO, Google Ads ve daha fazlası hakkında sıkça sorulan sorular.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
 
@@ -206,7 +256,7 @@ export default function SSS() {
             <span className="text-gold-gradient">Sorulan Sorular</span>
           </h1>
           <p className="mt-5 text-sm md:text-base text-white/60 leading-relaxed max-w-lg">
-            Web tasarım, SEO ve dijital pazarlama hakkında en çok merak edilenleri
+            Web tasarım, SEO, mobil uyumluluk ve dijital pazarlama hakkında en çok merak edilenleri
             burada derledik.
           </p>
 

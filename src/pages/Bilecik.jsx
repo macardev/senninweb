@@ -119,13 +119,68 @@ export default function Bilecik() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Bilecik Web Tasarım ve SEO Hizmetleri",
+    "url": canonicalUrl,
     "provider": {
       "@type": "Organization",
       "name": "SenninWeb",
+      "url": "https://www.senninweb.com",
+      "telephone": "+90 (531) 405 15 84",
+      "email": "macarcagatay@gmail.com"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Bilecik"
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Bilecik"
+      },
+      {
+        "@type": "City",
+        "name": "Bozüyük"
+      },
+      {
+        "@type": "City",
+        "name": "Osmaneli"
+      },
+      {
+        "@type": "City",
+        "name": "Söğüt"
+      },
+      {
+        "@type": "City",
+        "name": "Gölpazarı"
+      }
+    ],
+    "serviceType": [
+      "Web Tasarım",
+      "SEO Hizmeti",
+      "E-Ticaret Çözümleri",
+      "Dijital Pazarlama"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Bilecik Dijital Hizmetler",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Kurumsal Web Sitesi"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "E-Ticaret Sitesi"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Yerel SEO"
+          }
+        }
+      ]
     },
     "description": bilecikContent.metaDescription
   }

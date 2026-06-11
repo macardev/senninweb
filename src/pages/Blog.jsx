@@ -130,7 +130,7 @@ export default function Blog() {
                       <span className="text-[10px] text-white/55">•</span>
                       <span className="text-[10px] text-white/60">{post.readingTime}</span>
                     </div>
-                    <span className="text-[10px] text-white/60">{post.date}</span>
+                    <span className="text-[10px] text-white/60">{new Date(post.date).toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                   </div>
 
                   <h2 className="mt-4 text-xl md:text-2xl font-display font-semibold leading-snug text-white">
