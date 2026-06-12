@@ -70,6 +70,11 @@ prerender(
   "Bilecik'te profesyonel web tasarım, SEO ve Google Maps hizmetleri. Yerel işletmenizi Google'da üst sıralara taşıyın. Bilecik SEO danışmanlığı ve kurumsal web sitesi çözümleri."
 )
 prerender(
+  '/kocaeli',
+  'Kocaeli Web Tasarım ve SEO Hizmetleri | SenninWeb',
+  "Kocaeli'de profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. İzmit, Gebze, Körfez ve tüm Kocaeli'de işletmenizi Google'da üst sıralara taşıyın."
+)
+prerender(
   '/sss',
   'Sıkça Sorulan Sorular | SenninWeb',
   'Web tasarım, SEO, AEO, GEO ve daha fazlası hakkında sıkça sorulan sorular. SenninWeb ile dijital dünyada merak ettiklerinizi öğrenin.'
@@ -87,6 +92,7 @@ const pages = [
   { loc: '/blog', priority: '0.8' },
   { loc: '/gebze', priority: '0.9' },
   { loc: '/bilecik', priority: '0.9' },
+  { loc: '/kocaeli', priority: '0.9' },
   ...blogPosts.map(p => ({ loc: `/blog/${p.slug}`, priority: '0.7' })),
   { loc: '/sss', priority: '0.8' },
 ]

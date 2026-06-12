@@ -14,7 +14,7 @@ const navLinks = [
     href: '#',
     submenu: [
       { label: 'Gebze', href: '/gebze' },
-      { label: 'Kocaeli (Yakında)', href: '#', disabled: true },
+      { label: 'Kocaeli', href: '/kocaeli' },
       { label: 'İstanbul (Yakında)', href: '#', disabled: true },
       { label: 'Bursa (Yakında)', href: '#', disabled: true },
       { label: 'Bilecik', href: '/bilecik' },
