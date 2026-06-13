@@ -8,11 +8,14 @@
     "build": "node generate-ico.js && vite build && node postbuild.mjs",
     "preview": "vite preview",
     "generate-favicon": "node generate-ico.js",
-    "create-post": "node scripts/create-post.mjs"
+    "create-post": "node scripts/create-post.mjs",
+    "prospect-clients": "node scripts/prospect-clients.mjs",
+    "send-outreach": "node scripts/send-outreach.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "framer-motion": "^11.11.17",
+    "nodemailer": "^8.0.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.14.1"

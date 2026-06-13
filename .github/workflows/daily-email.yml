@@ -1,0 +1,45 @@
+name: Daily Outreach Email Sender
+
+on:
+  schedule:
+    - cron: '0 7 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install --production
+
+      - name: Send outreach emails
+        run: node scripts/send-outreach.mjs
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Commit updated state
+        run: |
+          if [ -n "$(git status --porcelain public/data/prospects.json scripts/outreach-state.json)" ]; then
+            git config user.name "SenninWeb Bot"
+            git config user.email "bot@senninweb.com"
+            git add public/data/prospects.json scripts/outreach-state.json
+            git commit -m "feat(outreach): daily email send update"
+            git push
+            echo "Outreach state updated"
+          else
+            echo "No changes to commit"
+          fi

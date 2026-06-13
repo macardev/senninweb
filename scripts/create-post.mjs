@@ -269,7 +269,9 @@ DESTEKLENEN SECTION TIPLERI:
 11. finalCta: { "type": "finalCta", "question": "Soru cumlesi", "ctaText": "CTA metni" }
 
 GENEL KURALLAR:
-- Yazı uzunlugu: En az 1800 kelime
+- Yazı uzunlugu: En az 2500 kelime. BU BIR ZORUNLULUKTUR, kisa yazma.
+- En az 8 section kullan, en az 4 farkli section tipi kullan (sadece paragraph ve heading2 degil)
+- Her paragraph en az 3-5 cumle olmali, tek cumlelik paragraflar kullanma
 - Cesitli section tipleri kullan (sadece paragraph degil)
 - isHtml: false olan metinlerde HTML tag kullanma
 - Her yazida en az 1 isHtml: true blok olmali (linkler icin)
@@ -315,7 +317,7 @@ async function callOpenAI(topicTitle, topicDescription) {
         { role: "user", content: userPrompt },
       ],
       temperature: 0.7,
-      max_tokens: 10000,
+      max_tokens: 16384,
     }),
   })
 
@@ -339,8 +341,8 @@ function validatePost(post) {
   if (missing.length > 0) {
     throw new Error(`Eksik alanlar: ${missing.join(", ")}`)
   }
-  if (!Array.isArray(post.sections) || post.sections.length < 3) {
-    throw new Error("En az 3 section gerekli")
+  if (!Array.isArray(post.sections) || post.sections.length < 8) {
+    throw new Error("En az 8 section gerekli (sadece " + (post.sections ? post.sections.length : 0) + " var)")
   }
   const validTypes = ["heroSection", "intro", "question", "heading2", "heading3", "paragraph", "bulletList", "section", "conclusion", "finalParagraph", "finalCta"]
   for (const s of post.sections) {
@@ -443,6 +445,14 @@ async function main() {
   }).join(" ")
   post.readingTime = calculateReadingTime(allText)
 
+  const wordCount = allText.split(/\s+/).filter(w => w.length > 0).length
+  if (wordCount < 1200) {
+    log(`UYARI: Yazı kisa (${wordCount} kelime). En az 1200 kelime bekleniyor.`, colors.yellow)
+    writeLog(`Warning: Short post (${wordCount} words)`)
+  }
+
+  log(`Kelime sayisi: ${wordCount}`, colors.cyan)
+
   try {
     validatePost(post)
   } catch (err) {
@@ -460,8 +470,9 @@ async function main() {
   log(`  Baslik: ${post.shortTitle || post.title}`, colors.cyan)
   log(`  Bolum: ${post.sections.length}`, colors.cyan)
   log(`  Sure: ${post.readingTime}`, colors.cyan)
+  log(`  Kelime: ${wordCount}`, colors.cyan)
   log(`  Post sayisi: ${existingPosts.length}`, colors.cyan)
-  writeLog(`Post created: ${post.slug} | ${post.shortTitle || post.title} | ${post.sections.length} sections | ${post.readingTime}`)
+  writeLog(`Post created: ${post.slug} | ${post.shortTitle || post.title} | ${post.sections.length} sections | ${post.readingTime} | ${wordCount} words`)
 
   if (isGitHubActions) {
     log("GitHub Actions ortami — git islemleri workflow tarafindan yapilacak", colors.cyan)

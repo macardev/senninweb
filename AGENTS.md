@@ -16,6 +16,9 @@
 | `npm run build` | Generates favicon.ico → builds → runs `postbuild.mjs` (sitemap gen) |
 | `npm run preview` | Serves the built `dist/` |
 | `npm run generate-favicon` | Regenerate favicon.ico from SVG only |
+| `npm run create-post` | AI-powered blog post creation + git push |
+| `npm run prospect-clients` | Google Places API → scrape Gebze businesses → prospects.json |
+| `npm run send-outreach` | Google Workspace SMTP + OpenAI → send personalized cold email batch |
 
 No lint, typecheck, or test commands exist.
 
@@ -33,11 +36,49 @@ No lint, typecheck, or test commands exist.
 - **IMPORTANT — CSS cascade:** Rules inside `@layer utilities {}` can be overridden by other Tailwind utility classes in the same layer. Styles outside any `@layer` (unlayered) have the **highest** cascade priority.
 - **Blogpost link styling:** `<a>` tags rendered via `dangerouslySetInnerHTML` MUST use unlayered CSS rules (outside `@layer utilities`) to guarantee they beat Tailwind's inheritance chain. If a link fix isn't applying, move the rule out of its layer block.
 
+## Automation — Client Outreach Pipeline
+
+### Two scripts + Two GitHub Actions workflows
+
+**`scripts/prospect-clients.mjs`** — Weekly Gebze business scraping
+- Google Places API → Text Search for 16 categories (restoran, avukat, kuaför, etc.)
+- Extracts name, address, phone, website, Google rating
+- Tries to find email from website (scrapes homepage + contact page)
+- OpenAI generates personalization note per prospect
+- Saves to `public/data/prospects.json`
+
+**`scripts/send-outreach.mjs`** — Daily cold email sending
+- Reads `prospects.json`, picks batch due for their next email
+- OpenAI generates personalized Turkish email (4-sequence: observation → case study → objection → breakup)
+- Sends via Google Workspace SMTP (nodemailer → smtp.gmail.com, `business@senninweb.com`)
+- Tracks warmup (5→8→12→15→20/day), gaps between emails (3-5 days), replies, bounces
+- State in `scripts/outreach-state.json`
+
+### GitHub Actions Workflows
+| Workflow | Schedule | Trigger |
+|---|---|---|
+| `weekly-prospect.yml` | Mon 05:00 UTC | 8:00 TR |
+| `daily-email.yml` | Mon-Fri 07:00 UTC | 10:00 TR |
+
+### Required GitHub Secrets
+- `GOOGLE_PLACES_KEY` — Google Cloud Console → Places API key
+- `GMAIL_USER` — `business@senninweb.com`
+- `GMAIL_APP_PASSWORD` — Google Account → App Passwords
+- `OPENAI_API_KEY` — Already exists
+
+### Warmup schedule (built-in)
+- First 25 emails: 5/day → then 8/day → then 12/day → then 15/day → max 20/day
+- 3-5 day gaps between sequence emails
+
+### Önemli
+- `.env` needs: `OPENAI_API_KEY`, `GOOGLE_PLACES_KEY`, `GMAIL_USER`, `GMAIL_APP_PASSWORD`
+- `public/data/prospects.json` and `scripts/outreach-state.json` are tracked in git (needed for state across GH Action runs)
+
 ## Dev notes
 - SSR-like prerendered hero in `index.html` for fast FCP; React hydrates over it
 - Hash-anchor scroll on homepage: `/#contact`, `/#services`, etc. — handled by `Layout.jsx` + `scrollToId.js`
 - Favicon SVG source: `public/favicon/favicon.svg`; ico regenerated during `dev` / `build`
-- `node_modules` is the only thing gitignored
+- `node_modules` and `logs/` are gitignored
 - No CI, no pre-commit hooks
 
 ## SEO

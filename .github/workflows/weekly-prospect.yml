@@ -1,0 +1,41 @@
+name: Weekly Prospect Scraper
+
+on:
+  schedule:
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Run prospect scraper
+        run: node scripts/prospect-clients.mjs
+        env:
+          GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Commit new prospects
+        run: |
+          if [ -n "$(git status --porcelain public/data/prospects.json)" ]; then
+            git config user.name "SenninWeb Bot"
+            git config user.email "bot@senninweb.com"
+            git add public/data/prospects.json
+            git commit -m "feat(prospect): weekly scrape update"
+            git push
+            echo "Prospects updated"
+          else
+            echo "No changes to commit"
+          fi
