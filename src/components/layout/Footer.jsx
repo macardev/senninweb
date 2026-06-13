@@ -55,7 +55,7 @@ HAKLARINIZ
 
 KVK Kanunu'nun 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini isteme, silinmesini veya yok edilmesini isteme haklarına sahipsiniz.
 
-İletişim: macarcagatay@gmail.com`,
+İletişim: bussiness@senninweb.com`,
   },
   gizlilik: {
     title: 'Gizlilik Politikası',
@@ -86,7 +86,7 @@ Kişisel verileriniz; yasal zorunluluklar dışında üçüncü taraflarla payla
 
 İLETİŞİM
 
-Gizlilik politikamıza ilişkin sorularınız için: macarcagatay@gmail.com`,
+Gizlilik politikamıza ilişkin sorularınız için: bussiness@senninweb.com`,
   },
   kullanim: {
     title: 'Kullanım Koşulları',
@@ -116,7 +116,7 @@ DEĞİŞİKLİKLER
 
 Sennin Web, kullanım koşullarını önceden haber vermeksizin güncelleme hakkını saklı tutar. Güncel koşullar her zaman bu sayfada yayınlanacaktır.
 
-İletişim: macarcagatay@gmail.com`,
+İletişim: bussiness@senninweb.com`,
   },
 }
 
@@ -230,7 +230,7 @@ export default function Footer() {
 
               <div className="space-y-2">
                 <a
-                  href="mailto:macarcagatay@gmail.com"
+                  href="mailto:bussiness@senninweb.com"
                   className="flex items-center gap-2.5 text-xs text-white/60
                              hover:text-gold-400 transition-colors duration-300 group"
                 >
@@ -240,7 +240,7 @@ export default function Footer() {
                       stroke="currentColor" strokeWidth="1.2"
                       strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  macarcagatay@gmail.com
+                  bussiness@senninweb.com
                 </a>
                 <div className="flex items-center gap-2.5 text-xs text-white/60">
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none"

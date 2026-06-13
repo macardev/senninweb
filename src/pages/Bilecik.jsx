@@ -125,7 +125,7 @@ export default function Bilecik() {
       "name": "SenninWeb",
       "url": "https://www.senninweb.com",
       "telephone": "+90 (531) 405 15 84",
-      "email": "macarcagatay@gmail.com"
+      "email": "bussiness@senninweb.com"
     },
     "areaServed": [
       {

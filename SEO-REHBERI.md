@@ -35,7 +35,7 @@ Format: **JSON-LD** (Google'ın tercih ettiği format)
   "url": "https://www.senninweb.com",
   "logo": "https://www.senninweb.com/favicon/favicon.svg",
   "description": "Web tasarım ve SEO hizmetleri sunan premium dijital ajans.",
-  "email": "macarcagatay@gmail.com",
+  "email": "bussiness@senninweb.com",
   "telephone": "+90 (531) 405 15 84",
   "address": {
     "@type": "PostalAddress",
