@@ -6,6 +6,7 @@ import useCanonicalUrl from "@/hooks/useCanonicalUrl"
 
 const PyramidSection = lazy(() => import("@/components/sections/PyramidSection"))
 const Manifesto = lazy(() => import("@/components/sections/Manifesto"))
+const DesignShowcase = lazy(() => import("@/components/sections/DesignShowcase"))
 const Services = lazy(() => import("@/components/sections/Services"))
 const HowWeWork = lazy(() => import("@/components/sections/HowWeWork"))
 const References = lazy(() => import("@/components/sections/References"))
@@ -88,6 +89,10 @@ export default function Home() {
       />
 
       <Hero />
+
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <DesignShowcase />
+      </Suspense>
 
       <Suspense fallback={<div style={{ height: "400px" }} />}>
         <PyramidSection />
