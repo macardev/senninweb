@@ -80,6 +80,25 @@ function calculateReadingTime(text) {
   return `${minutes} dk`
 }
 
+function extractAllText(post) {
+  return post.sections.map(s => {
+    let text = ""
+    if (s.content) text += " " + s.content
+    if (s.question) text += " " + s.question
+    if (s.answer) text += " " + s.answer
+    if (s.items) text += " " + s.items.join(" ")
+    if (s.intro) text += " " + s.intro
+    if (s.closing) text += " " + s.closing
+    if (s.subsections) {
+      for (const sub of s.subsections) {
+        if (sub.heading) text += " " + sub.heading
+        if (sub.content) text += " " + sub.content
+      }
+    }
+    return text
+  }).join(" ")
+}
+
 async function fetchRssHeadlines(url) {
   const res = await fetch(url, {
     headers: { "User-Agent": "Mozilla/5.0 (compatible; SenninWebBot/1.0)" },
@@ -292,7 +311,7 @@ KULLANILABILIR GERCEK URL'LER:
 - /sss`
 }
 
-async function callOpenAI(topicTitle, topicDescription) {
+async function callOpenAI(topicTitle, topicDescription, temperature = 0.7) {
   const today = new Date().toISOString().split("T")[0]
   const systemPrompt = buildAeoGeoPrompt(topicTitle, topicDescription, today)
 
@@ -311,12 +330,12 @@ async function callOpenAI(topicTitle, topicDescription) {
       "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini",
+      model: "gpt-4o",
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: userPrompt },
       ],
-      temperature: 0.7,
+      temperature,
       max_tokens: 16384,
     }),
   })
@@ -333,6 +352,137 @@ async function callOpenAI(topicTitle, topicDescription) {
   const jsonStr = jsonMatch ? jsonMatch[1] : content
 
   return JSON.parse(jsonStr)
+}
+
+async function generateImagePrompt(title) {
+  log("Görsel prompt'u olusturuluyor...", colors.cyan)
+  writeLog("Generating image prompt via AI...")
+
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: "Sen bir AI görsel prompt mühendisisin. Blog yazısı başlığına göre Nano Banana AI görsel modeli için kısa, etkili bir İngilizce prompt üret. Profesyonel, modern web tasarım tarzında, koyu arka planlı, altın vurgulu bir kapak görseli olacak şekilde tasarla. Sadece prompt metnini döndür, başka bir şey yazma." },
+        { role: "user", content: `Blog yazısı başlığı: "${title}". Bunun için bir kapak görseli promptu üret.` },
+      ],
+      temperature: 0.7,
+      max_tokens: 200,
+    }),
+  })
+
+  if (!response.ok) {
+    const err = await response.text()
+    throw new Error(`Image prompt generation failed (${response.status}): ${err}`)
+  }
+
+  const data = await response.json()
+  const prompt = data.choices[0].message.content.trim()
+
+  log(`   Görsel prompt: ${prompt}`, colors.cyan)
+  writeLog(`Generated image prompt: ${prompt}`)
+
+  return prompt
+}
+
+async function generateBlogImage(imagePrompt, slug) {
+  const apiKey = process.env.NANO_BANANA_API_KEY
+  if (!apiKey) {
+    log("NANO_BANANA_API_KEY bulunamadi, görsel atlaniyor.", colors.yellow)
+    writeLog("NANO_BANANA_API_KEY not found, skipping image generation")
+    return null
+  }
+
+  const BASE_URL = "https://api.nanobananaapi.ai/api/v1/nanobanana"
+  const IMAGE_DIR = path.join(ROOT, "public", "images", "blog")
+
+  if (!fs.existsSync(IMAGE_DIR)) {
+    fs.mkdirSync(IMAGE_DIR, { recursive: true })
+  }
+
+  log("Nano Banana ile görsel olusturuluyor...", colors.cyan)
+  writeLog("Calling Nano Banana API for image generation...")
+
+  const genResponse = await fetch(`${BASE_URL}/generate-2`, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      prompt: imagePrompt,
+      type: "TEXTTOIAMGE",
+      numImages: 1,
+      aspectRatio: "16:9",
+      resolution: "1K",
+      outputFormat: "jpg",
+    }),
+  })
+
+  if (!genResponse.ok) {
+    const err = await genResponse.text()
+    throw new Error(`Nano Banana generation failed (${genResponse.status}): ${err}`)
+  }
+
+  const genResult = await genResponse.json()
+  if (genResult.code !== 200) {
+    throw new Error(`Nano Banana error: ${genResult.msg}`)
+  }
+
+  const taskId = genResult.data.taskId
+  writeLog(`Image task submitted: ${taskId}`)
+
+  let resultUrl = null
+  const maxAttempts = 60
+  for (let i = 0; i < maxAttempts; i++) {
+    await new Promise(r => setTimeout(r, 3000))
+
+    const statusResponse = await fetch(`${BASE_URL}/record-info?taskId=${taskId}`, {
+      headers: {
+        "Authorization": `Bearer ${apiKey}`,
+      },
+    })
+
+    if (!statusResponse.ok) continue
+
+    const statusResult = await statusResponse.json()
+    if (statusResult.code !== 200) continue
+
+    const flag = statusResult.data.successFlag
+    if (flag === 1) {
+      resultUrl = statusResult.data.response?.resultImageUrl
+      writeLog(`Image generated: ${resultUrl}`)
+      break
+    } else if (flag === 2 || flag === 3) {
+      throw new Error(`Image generation failed (flag: ${flag}): ${statusResult.data.errorMessage || 'Unknown error'}`)
+    }
+  }
+
+  if (!resultUrl) {
+    throw new Error("Image generation timed out")
+  }
+
+  log("Görsel indiriliyor...", colors.cyan)
+  writeLog(`Downloading image from: ${resultUrl}`)
+
+  const imageResponse = await fetch(resultUrl)
+  if (!imageResponse.ok) {
+    throw new Error(`Failed to download image: ${imageResponse.status}`)
+  }
+
+  const imageBuffer = Buffer.from(await imageResponse.arrayBuffer())
+  const fileName = `${slug}.jpg`
+  const filePath = path.join(IMAGE_DIR, fileName)
+  fs.writeFileSync(filePath, imageBuffer)
+  writeLog(`Image saved to: ${filePath}`)
+
+  const coverImage = `/images/blog/${fileName}`
+  log(`   Kaydedildi: ${coverImage}`, colors.green)
+  return coverImage
 }
 
 function validatePost(post) {
@@ -398,58 +548,56 @@ async function main() {
   }
 
   let post
-  try {
-    post = await callOpenAI(topic.title, topic.description)
-  } catch (err) {
-    log(`AI icerik uretilemedi: ${err.message}`, colors.red)
-    writeLog(`Content generation failed: ${err.message}`)
-    process.exit(1)
-  }
-
-  const today = new Date()
-  const isoDate = today.toISOString().split("T")[0]
-
-  post.datePublished = isoDate
-  post.dateModified = isoDate
-  post.date = isoDate
-  post.author = "Cagatay Macar"
-  post.authorTitle = "Senior Web Developer"
-
-  if (!post.slug) {
-    post.slug = slugify(post.shortTitle || post.title)
-  }
-
-  if (existingSlugs.includes(post.slug)) {
-    const suffix = String(Date.now()).slice(-4)
-    post.slug = slugify(post.slug + "-" + suffix)
-    writeLog(`Duplicate slug detected, appended suffix: ${post.slug}`)
-  }
-
-  post.schemaUrl = `https://www.senninweb.com/blog/${post.slug}`
-
-  const allText = post.sections.map(s => {
-    let text = ""
-    if (s.content) text += " " + s.content
-    if (s.question) text += " " + s.question
-    if (s.answer) text += " " + s.answer
-    if (s.items) text += " " + s.items.join(" ")
-    if (s.intro) text += " " + s.intro
-    if (s.closing) text += " " + s.closing
-    if (s.subsections) {
-      for (const sub of s.subsections) {
-        if (sub.heading) text += " " + sub.heading
-        if (sub.content) text += " " + sub.content
-      }
+  let wordCount = 0
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    const temp = attempt === 1 ? 0.7 : 0.85
+    try {
+      post = await callOpenAI(topic.title, topic.description, temp)
+    } catch (err) {
+      log(`AI icerik uretilemedi: ${err.message}`, colors.red)
+      writeLog(`Content generation failed: ${err.message}`)
+      process.exit(1)
     }
-    return text
-  }).join(" ")
-  post.readingTime = calculateReadingTime(allText)
 
-  const wordCount = allText.split(/\s+/).filter(w => w.length > 0).length
-  if (wordCount < 1200) {
-    log(`UYARI: Yazı kisa (${wordCount} kelime). En az 1200 kelime bekleniyor.`, colors.yellow)
-    writeLog(`Warning: Short post (${wordCount} words)`)
+    const today = new Date()
+    const isoDate = today.toISOString().split("T")[0]
+
+    post.datePublished = isoDate
+    post.dateModified = isoDate
+    post.date = isoDate
+    post.author = "Cagatay Macar"
+    post.authorTitle = "Senior Web Developer"
+
+    if (!post.slug) {
+      post.slug = slugify(post.shortTitle || post.title)
+    }
+
+    if (existingSlugs.includes(post.slug)) {
+      const suffix = String(Date.now()).slice(-4)
+      post.slug = slugify(post.slug + "-" + suffix)
+      writeLog(`Duplicate slug detected, appended suffix: ${post.slug}`)
+    }
+
+    post.schemaUrl = `https://www.senninweb.com/blog/${post.slug}`
+
+    const allText = extractAllText(post)
+    const currentWordCount = allText.split(/\s+/).filter(w => w.length > 0).length
+    wordCount = currentWordCount
+
+    if (currentWordCount >= 2000 || attempt === 2) {
+      if (currentWordCount < 2000) {
+        log(`UYARI: Yazı hala kısa (${currentWordCount} kelime). En az 2000 kelime bekleniyor.`, colors.yellow)
+        writeLog(`Warning: Short post after retry (${currentWordCount} words)`)
+      }
+      break
+    }
+
+    log(`Yazı kısa (${currentWordCount} kelime), yeniden deneniyor...`, colors.yellow)
+    writeLog(`Post too short (${currentWordCount} words), retrying...`)
   }
+
+  const finalAllText = extractAllText(post)
+  post.readingTime = calculateReadingTime(finalAllText)
 
   log(`Kelime sayisi: ${wordCount}`, colors.cyan)
 
@@ -459,6 +607,18 @@ async function main() {
     log(`Dogrulama hatasi: ${err.message}`, colors.red)
     writeLog(`Validation error: ${err.message}`)
     process.exit(1)
+  }
+
+  let coverImage = null
+  try {
+    const imagePrompt = await generateImagePrompt(post.shortTitle || post.title)
+    coverImage = await generateBlogImage(imagePrompt, post.slug)
+    if (coverImage) {
+      post.coverImage = coverImage
+    }
+  } catch (err) {
+    log(`Görsel olusturulamadi: ${err.message}`, colors.yellow)
+    writeLog(`Image generation failed: ${err.message}`)
   }
 
   existingPosts.unshift(post)
@@ -471,8 +631,9 @@ async function main() {
   log(`  Bolum: ${post.sections.length}`, colors.cyan)
   log(`  Sure: ${post.readingTime}`, colors.cyan)
   log(`  Kelime: ${wordCount}`, colors.cyan)
+  log(`  Görsel: ${coverImage || 'yok'}`, colors.cyan)
   log(`  Post sayisi: ${existingPosts.length}`, colors.cyan)
-  writeLog(`Post created: ${post.slug} | ${post.shortTitle || post.title} | ${post.sections.length} sections | ${post.readingTime} | ${wordCount} words`)
+  writeLog(`Post created: ${post.slug} | ${post.shortTitle || post.title} | ${post.sections.length} sections | ${post.readingTime} | ${wordCount} words | cover: ${coverImage}`)
 
   if (isGitHubActions) {
     log("GitHub Actions ortami — git islemleri workflow tarafindan yapilacak", colors.cyan)
@@ -483,7 +644,7 @@ async function main() {
     writeLog(`Starting git operations on branch: ${branch}`)
 
     try {
-      execSync(`git add "${path.relative(ROOT, DATA_FILE)}"`, { cwd: ROOT })
+      execSync(`git add "${path.relative(ROOT, DATA_FILE)}" public/images/blog/`, { cwd: ROOT })
       log(`  git add tamam`, colors.green)
       writeLog("git add successful")
 

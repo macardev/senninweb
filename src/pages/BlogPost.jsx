@@ -371,7 +371,7 @@ export default function BlogPost() {
     "@type": "Article",
     headline: post.shortTitle,
     description: post.metaDescription,
-    image: "https://www.senninweb.com/og-image.jpg",
+    image: post.coverImage ? `https://www.senninweb.com${post.coverImage}` : "https://www.senninweb.com/og-image.jpg",
     datePublished: post.datePublished,
     dateModified: post.dateModified || post.datePublished,
     author: {
@@ -462,6 +462,17 @@ export default function BlogPost() {
               <span className="text-white/55">•</span>
                <span className="text-white/60">{new Date(post.date).toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
              </div>
+
+            {post.coverImage && (
+              <div className="mt-6 -mx-6 md:-mx-0 rounded-2xl overflow-hidden">
+                <img
+                  src={post.coverImage}
+                  alt={post.shortTitle}
+                  className="w-full aspect-video object-cover"
+                  loading="eager"
+                />
+              </div>
+            )}
 
             <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
               {post.shortTitle}

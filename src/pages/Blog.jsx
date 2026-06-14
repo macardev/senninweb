@@ -133,6 +133,17 @@ export default function Blog() {
                     <span className="text-[10px] text-white/60">{new Date(post.date).toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                   </div>
 
+                  {post.coverImage && (
+                    <div className="mt-4 -mx-7 rounded-none overflow-hidden">
+                      <img
+                        src={post.coverImage}
+                        alt={post.shortTitle}
+                        className="w-full aspect-video object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  )}
+
                   <h2 className="mt-4 text-xl md:text-2xl font-display font-semibold leading-snug text-white">
                     {post.shortTitle}
                   </h2>
