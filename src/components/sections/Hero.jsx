@@ -30,7 +30,7 @@ function DesktopHero() {
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
       <div className="absolute top-0 right-0 w-full md:w-2/5 h-full bg-black pointer-events-none z-0" />
 
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 py-20">
+      <div className="relative z-20 w-full max-w-[90rem] mx-auto px-6 md:px-12 py-20">
         <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:gap-12 items-center">
           <div>
             <div className="animate-heroIn" style={{ animationDelay: '0s' }}>
