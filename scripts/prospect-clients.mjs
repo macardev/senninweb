@@ -151,20 +151,22 @@ async function fetchWithTimeout(url, timeout = 10000) {
 }
 
 async function findEmailFromWebsite(url) {
-  if (!url) return null
+  if (!url) return { email: null, html: null, fetchDurationMs: 0 }
+  const start = Date.now()
   const html = await fetchWithTimeout(url, 10000)
-  if (!html) return null
+  const fetchDurationMs = Date.now() - start
+  if (!html) return { email: null, html: null, fetchDurationMs }
 
   const mailtoRegex = /mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi
   const matches = [...html.matchAll(mailtoRegex)]
-  if (matches.length > 0) return matches[0][1].toLowerCase()
+  if (matches.length > 0) return { email: matches[0][1].toLowerCase(), html, fetchDurationMs }
 
   const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g
   const emails = [...new Set(html.match(emailRegex) || [])]
     .filter(e => !e.includes("example.com") && !e.includes("@domain") && !e.endsWith(".png") && !e.endsWith(".jpg") && !e.endsWith(".svg"))
     .filter(e => !e.includes("sponsored") && !e.includes("noreply") && !e.includes("no-reply"))
 
-  if (emails.length > 0) return emails[0].toLowerCase()
+  if (emails.length > 0) return { email: emails[0].toLowerCase(), html, fetchDurationMs }
 
   const contactPatterns = ["iletisim", "contact", "bize-ulasin"]
   for (const pattern of contactPatterns) {
@@ -172,13 +174,61 @@ async function findEmailFromWebsite(url) {
     const subHtml = await fetchWithTimeout(contactUrl, 5000)
     if (!subHtml) continue
     const subMailto = [...subHtml.matchAll(mailtoRegex)]
-    if (subMailto.length > 0) return subMailto[0][1].toLowerCase()
+    if (subMailto.length > 0) return { email: subMailto[0][1].toLowerCase(), html, fetchDurationMs }
     const subEmails = [...new Set(subHtml.match(emailRegex) || [])]
       .filter(e => !e.includes("example.com") && !e.includes("@domain"))
-    if (subEmails.length > 0) return subEmails[0].toLowerCase()
+    if (subEmails.length > 0) return { email: subEmails[0].toLowerCase(), html, fetchDurationMs }
   }
 
-  return null
+  return { email: null, html, fetchDurationMs }
+}
+
+function analyzeSiteQuality(html, fetchDurationMs) {
+  const issues = []
+  let score = 100
+
+  if (!/<meta\s+[^>]*name=["']viewport["']/i.test(html)) {
+    issues.push("mobil uyumsuz")
+    score -= 25
+  }
+  if (!/<title>/i.test(html) || /<title>\s*<\/title>/i.test(html)) {
+    issues.push("SEO baslik yok")
+    score -= 20
+  }
+  if (!/<meta\s+[^>]*name=["']description["']/i.test(html)) {
+    issues.push("meta aciklama yok")
+    score -= 15
+  }
+  const pageSizeKB = Math.round(html.length / 1024)
+  if (pageSizeKB > 200) {
+    issues.push(`sayfa cok agir (${pageSizeKB}KB)`)
+    score -= 15
+  }
+  const inlineStyles = (html.match(/style\s*=\s*["']/gi) || []).length
+  if (inlineStyles > 20) {
+    issues.push(`inline CSS fazla (${inlineStyles} adet)`)
+    score -= 10
+  }
+  if (fetchDurationMs > 5000) {
+    issues.push(`yavas yuklenme (${(fetchDurationMs / 1000).toFixed(1)}s)`)
+    score -= 10
+  }
+  if (!/<h1[\s>]/i.test(html)) {
+    issues.push("h1 etiketi yok")
+    score -= 5
+  }
+  if (!/<html[^>]*lang=/i.test(html)) {
+    issues.push("dil etiketi yok (lang)")
+    score -= 5
+  }
+
+  return {
+    score: Math.max(0, score),
+    issues,
+    analyzedAt: new Date().toISOString().split("T")[0],
+    pageSizeKB,
+    fetchDurationMs,
+  }
 }
 
 async function generatePersonalization(prospect) {
@@ -188,18 +238,20 @@ SenninWeb, web tasarim, SEO ve dijital pazarlama hizmetleri sunan bir ajans. Mer
 
 Gorevin: Verilen isletme bilgilerine gore kisa bir kisisellestirme notu yaz. Bu not, e-posta pazarlama icin kullanilacak.
 
-Soyle bir gozlem yap:
-- Isletmenin web sitesi var mi, yok mu?
-- Varsa sitede ne gibi sorunlar olabilir? (yavas, mobil uyumsuz, eski tasarim)
-- Yoksa Google'daki varligi nasil? (sadece Google Maps'te mi?)
-- Isletmenin sektorundeki genel dijital eksiklikler neler?
+Site kalite analizi sonuclarina gore notu olustur:
+- Web sitesi yoksa: Google Maps'te var olmanin yetmedigini, rakiplerinin online oldugunu belirt
+- Site kalitesi dusukse (mobil uyumsuz, meta aciklamasi yok, agir sayfa, yavas): bu somut sorunlari belirterek SenninWeb'in nasil yardimci olabilecegini anlat
+- Site kalitesi iyiyse: yine de gelistirilecek alanlar olabileceginden bahset
 
 1-2 cumle, samimi ve profesyonel Turkce. Sadece notu yaz, baska metin ekleme.`
 
+  const quality = prospect.siteQuality || {}
   const userPrompt = `Isletme: ${prospect.business}
 Kategori: ${prospect.category}
 Web sitesi: ${prospect.website || "YOK"}
-Puan: ${prospect.rating || "Bilinmiyor"}
+Site kalite puani: ${quality.score ?? "Bilinmiyor"}/100
+Tespit edilen sorunlar: ${(quality.issues || []).join(", ") || "Bilinmiyor"}
+Google puani: ${prospect.rating || "Bilinmiyor"}
 Adres: ${prospect.address || "Bilinmiyor"}
 
 Bu isletme icin kisa bir kisisellestirme notu yaz.`
@@ -298,6 +350,9 @@ async function main() {
         userRatingCount: place.userRatingCount,
         googleMapsUri: place.googleMapsUri,
         hasWebsite: place.hasWebsite,
+        siteQuality: place.website
+          ? { score: 0, issues: ["analiz edilmedi"], analyzedAt: null, pageSizeKB: 0, fetchDurationMs: 0 }
+          : { score: 0, issues: ["web sitesi yok"], analyzedAt: new Date().toISOString().split("T")[0], pageSizeKB: 0, fetchDurationMs: 0 },
         personalizationNote: "",
         outreachStage: 0,
         lastEmailDate: null,
@@ -328,14 +383,19 @@ async function main() {
       const batch = websiteProspects.slice(i, i + 10)
       await Promise.all(
         batch.map(async (prospect) => {
-          const email = await findEmailFromWebsite(prospect.website)
-          if (email) {
-            prospect.email = email
-            emailFound++
-            log(`  ✓ ${prospect.business}: ${email}`, colors.green)
-            writeLog(`  EMAIL FOUND: ${prospect.business} -> ${email}`)
+          const { email, html, fetchDurationMs } = await findEmailFromWebsite(prospect.website)
+          prospect.email = email
+          if (html) {
+            prospect.siteQuality = analyzeSiteQuality(html, fetchDurationMs)
           } else {
-            log(`  ✗ ${prospect.business}: email bulunamadi`, colors.yellow)
+            prospect.siteQuality = { score: 0, issues: ["web sitesi erisilemez"], analyzedAt: new Date().toISOString().split("T")[0], pageSizeKB: 0, fetchDurationMs }
+          }
+          if (email) {
+            emailFound++
+            log(`  ✓ ${prospect.business}: ${email} (site: ${prospect.siteQuality.score}/100)`, colors.green)
+            writeLog(`  EMAIL FOUND: ${prospect.business} -> ${email}, quality: ${prospect.siteQuality.score}`)
+          } else {
+            log(`  ✗ ${prospect.business}: email bulunamadi (site: ${prospect.siteQuality.score}/100)`, colors.yellow)
           }
         })
       )

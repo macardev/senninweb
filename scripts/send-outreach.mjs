@@ -287,8 +287,15 @@ async function main() {
     return daysSince(p.lastEmailDate) >= gap
   })
 
+  available.sort((a, b) => {
+    const scoreA = a.siteQuality?.score ?? 0
+    const scoreB = b.siteQuality?.score ?? 0
+    return scoreA - scoreB
+  })
+
   log(`E-posta gonderilebilecek: ${available.length} prospect`, colors.cyan)
-  writeLog(`Available to send: ${available.length}`)
+  log(`Once en kotu sitelere gonderim yapilacak (en dusuk siteQuality puani onecelikli)`, colors.cyan)
+  writeLog(`Available to send: ${available.length}, sorted by site quality asc`)
 
   const batch = available.slice(0, dailyLimit)
   log(`Bugun gonderilecek: ${batch.length} e-posta`, colors.cyan)
