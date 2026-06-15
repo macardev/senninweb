@@ -136,52 +136,49 @@ async function searchPlaces(category) {
   return results
 }
 
-async function findEmailFromWebsite(url) {
-  if (!url) return null
+async function fetchWithTimeout(url, timeout = 10000) {
   try {
     const res = await fetch(url, {
-      signal: AbortSignal.timeout(5000),
+      signal: AbortSignal.timeout(timeout),
       headers: { "User-Agent": "Mozilla/5.0 (compatible; SenninWebBot/1.0)" },
     })
     if (!res.ok) return null
-    const html = await res.text()
-
-    const mailtoRegex = /mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi
-    const matches = [...html.matchAll(mailtoRegex)]
-    if (matches.length > 0) {
-      return matches[0][1].toLowerCase()
-    }
-
-    const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g
-    const emails = [...new Set(html.match(emailRegex) || [])]
-      .filter(e => !e.includes("example.com") && !e.includes("@domain") && !e.endsWith(".png") && !e.endsWith(".jpg") && !e.endsWith(".svg"))
-      .filter(e => !e.includes("sponsored") && !e.includes("noreply") && !e.includes("no-reply"))
-
-    if (emails.length > 0) return emails[0].toLowerCase()
-
-    const contactPatterns = ["iletisim", "contact", "iletisim.html", "contact.html", "bize-ulasin", "iletisim.php"]
-    for (const pattern of contactPatterns) {
-      const contactUrl = `${url.replace(/\/$/, "")}/${pattern}`
-      try {
-        const subRes = await fetch(contactUrl, {
-          signal: AbortSignal.timeout(3000),
-          headers: { "User-Agent": "Mozilla/5.0 (compatible; SenninWebBot/1.0)" },
-        })
-        if (subRes.ok) {
-          const subHtml = await subRes.text()
-          const subMailto = [...subHtml.matchAll(mailtoRegex)]
-          if (subMailto.length > 0) return subMailto[0][1].toLowerCase()
-          const subEmails = [...new Set(subHtml.match(emailRegex) || [])]
-            .filter(e => !e.includes("example.com") && !e.includes("@domain"))
-          if (subEmails.length > 0) return subEmails[0].toLowerCase()
-        }
-      } catch {}
-    }
-
-    return null
+    const text = await res.text()
+    return text
   } catch {
     return null
   }
+}
+
+async function findEmailFromWebsite(url) {
+  if (!url) return null
+  const html = await fetchWithTimeout(url, 10000)
+  if (!html) return null
+
+  const mailtoRegex = /mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi
+  const matches = [...html.matchAll(mailtoRegex)]
+  if (matches.length > 0) return matches[0][1].toLowerCase()
+
+  const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g
+  const emails = [...new Set(html.match(emailRegex) || [])]
+    .filter(e => !e.includes("example.com") && !e.includes("@domain") && !e.endsWith(".png") && !e.endsWith(".jpg") && !e.endsWith(".svg"))
+    .filter(e => !e.includes("sponsored") && !e.includes("noreply") && !e.includes("no-reply"))
+
+  if (emails.length > 0) return emails[0].toLowerCase()
+
+  const contactPatterns = ["iletisim", "contact", "bize-ulasin"]
+  for (const pattern of contactPatterns) {
+    const contactUrl = `${url.replace(/\/$/, "")}/${pattern}`
+    const subHtml = await fetchWithTimeout(contactUrl, 5000)
+    if (!subHtml) continue
+    const subMailto = [...subHtml.matchAll(mailtoRegex)]
+    if (subMailto.length > 0) return subMailto[0][1].toLowerCase()
+    const subEmails = [...new Set(subHtml.match(emailRegex) || [])]
+      .filter(e => !e.includes("example.com") && !e.includes("@domain"))
+    if (subEmails.length > 0) return subEmails[0].toLowerCase()
+  }
+
+  return null
 }
 
 async function generatePersonalization(prospect) {
@@ -235,7 +232,7 @@ Bu isletme icin kisa bir kisisellestirme notu yaz.`
 }
 
 function generateProspectId(existingIds) {
-  let counter = existingIds.length + 1
+  let counter = existingIds.size + 1
   let id
   do {
     id = `gbz-${String(counter).padStart(3, "0")}`
@@ -275,6 +272,7 @@ async function main() {
   const allNew = []
   let totalFetched = 0
 
+  // === FAZ 1: Google Places'den isletmeleri topla (email scraping yok) ===
   for (const category of CATEGORIES) {
     log(`${category} araniyor...`, colors.cyan)
     writeLog(`Searching: ${category}`)
@@ -288,21 +286,13 @@ async function main() {
       if (existingNames.has(nameKey)) continue
       if (allNew.some(p => p.business.toLowerCase().trim() === nameKey)) continue
 
-      let email = null
-      if (place.website) {
-        email = await findEmailFromWebsite(place.website)
-        if (email && categoryNew % 3 === 0) {
-          await new Promise(r => setTimeout(r, 500))
-        }
-      }
-
-      const prospect = {
+      allNew.push({
         id: generateProspectId(new Set([...existingIds, ...allNew.map(p => p.id)])),
         business: place.business,
         category: place.category,
         phone: place.phone,
         website: place.website,
-        email: email,
+        email: null,
         address: place.address,
         rating: place.rating,
         userRatingCount: place.userRatingCount,
@@ -314,9 +304,8 @@ async function main() {
         replied: false,
         bounced: false,
         addedDate: new Date().toISOString().split("T")[0],
-      }
+      })
 
-      allNew.push(prospect)
       existingNames.add(nameKey)
       categoryNew++
     }
@@ -328,6 +317,35 @@ async function main() {
   log(``, colors.reset)
   log(`Toplam: ${totalFetched} isletme bulundu, ${allNew.length} yeni eklenecek`, colors.cyan)
   writeLog(`Total fetched: ${totalFetched}, new: ${allNew.length}`)
+
+  // === FAZ 2: Websitelerinden e-posta adreslerini parallel tara ===
+  const websiteProspects = allNew.filter(p => p.website)
+  if (websiteProspects.length > 0) {
+    log(`\nWebsitesi olan ${websiteProspects.length} isletmenin e-posta adresleri taranıyor (10 parallel)...`, colors.cyan)
+    writeLog(`Email scraping phase: ${websiteProspects.length} websites`)
+    let emailFound = 0
+    for (let i = 0; i < websiteProspects.length; i += 10) {
+      const batch = websiteProspects.slice(i, i + 10)
+      await Promise.all(
+        batch.map(async (prospect) => {
+          const email = await findEmailFromWebsite(prospect.website)
+          if (email) {
+            prospect.email = email
+            emailFound++
+            log(`  ✓ ${prospect.business}: ${email}`, colors.green)
+            writeLog(`  EMAIL FOUND: ${prospect.business} -> ${email}`)
+          } else {
+            log(`  ✗ ${prospect.business}: email bulunamadi`, colors.yellow)
+          }
+        })
+      )
+      log(`  Email scraping: ${Math.min(i + 10, websiteProspects.length)}/${websiteProspects.length}`, colors.cyan)
+    }
+    log(`  Toplam ${emailFound}/${websiteProspects.length} email bulundu`, colors.cyan)
+    writeLog(`Email scraping done: ${emailFound}/${websiteProspects.length} found`)
+  } else {
+    log(`\nWebsitesi olan isletme yok, email scraping atlaniyor.`, colors.yellow)
+  }
 
   if (allNew.length === 0) {
     log("Yeni prospect bulunamadi.", colors.yellow)

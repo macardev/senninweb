@@ -16,7 +16,6 @@
 | `npm run build` | Generates favicon.ico → builds → runs `postbuild.mjs` (sitemap gen) |
 | `npm run preview` | Serves the built `dist/` |
 | `npm run generate-favicon` | Regenerate favicon.ico from SVG only |
-| `npm run create-post` | AI-powered blog post creation + git push |
 | `npm run prospect-clients` | Google Places API → scrape Gebze businesses → prospects.json |
 | `npm run send-outreach` | Google Workspace SMTP + OpenAI → send personalized cold email batch |
 
@@ -37,15 +36,6 @@ No lint, typecheck, or test commands exist.
 - **Blogpost link styling:** `<a>` tags rendered via `dangerouslySetInnerHTML` MUST use unlayered CSS rules (outside `@layer utilities`) to guarantee they beat Tailwind's inheritance chain. If a link fix isn't applying, move the rule out of its layer block.
 
 ## Automation — Client Outreach Pipeline
-
-### Two scripts + Two GitHub Actions workflows
-
-**`scripts/create-post.mjs`** — AI-powered blog post creation + image generation
-- `gpt-4o` for content generation (enforces min 2000 words, retries once if too short)
-- `gpt-4o-mini` for topic selection & image prompt generation (cheap tasks)
-- **Nano Banana API** (`api.nanobananaapi.ai`) generates 16:9 cover image per post
-- Cover images saved to `public/images/blog/[slug].jpg`, tracked as `coverImage` field in JSON
-- Reads/writes `public/data/blog-posts.json`
 
 **`scripts/prospect-clients.mjs`** — Weekly Gebze business scraping
 - Google Places API → Text Search for 16 categories (restoran, avukat, kuaför, etc.)
@@ -72,14 +62,13 @@ No lint, typecheck, or test commands exist.
 - `GMAIL_USER` — `business@senninweb.com`
 - `GMAIL_APP_PASSWORD` — Google Account → App Passwords
 - `OPENAI_API_KEY` — Already exists
-- `NANO_BANANA_API_KEY` — Nano Banana API key for blog cover image generation
 
 ### Warmup schedule (built-in)
 - First 25 emails: 5/day → then 8/day → then 12/day → then 15/day → max 20/day
 - 3-5 day gaps between sequence emails
 
 ### Önemli
-- `.env` needs: `OPENAI_API_KEY`, `GOOGLE_PLACES_KEY`, `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `NANO_BANANA_API_KEY`
+- `.env` needs: `OPENAI_API_KEY`, `GOOGLE_PLACES_KEY`, `GMAIL_USER`, `GMAIL_APP_PASSWORD`
 - `public/data/prospects.json` and `scripts/outreach-state.json` are tracked in git (needed for state across GH Action runs)
 
 ## Dev notes
