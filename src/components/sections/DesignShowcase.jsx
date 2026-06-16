@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import DesignEditorial from '@/components/sections/DesignEditorial'
 import DesignDarkTech from '@/components/sections/DesignDarkTech'
@@ -28,6 +29,17 @@ const showcaseItems = [
 ]
 
 function DesktopShowcase() {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
+
+  useEffect(() => {
+    if (isPaused) return
+    const interval = setInterval(() => {
+      setActiveIndex(prev => (prev + 1) % showcaseItems.length)
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [isPaused])
+
   return (
     <section className="relative w-full bg-black py-24 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -44,16 +56,31 @@ function DesktopShowcase() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {showcaseItems.map((item) => {
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {showcaseItems.map((item, index) => {
+            const isActive = index === activeIndex
             const Comp = item.Component
             return (
-              <div key={item.num} className="relative rounded-2xl overflow-hidden border border-white/10" style={{ height: '520px' }}>
+              <div
+                key={item.num}
+                className={`relative rounded-2xl overflow-hidden border transition-all duration-700 ${
+                  isActive
+                    ? 'border-gold-500/60 shadow-[0_0_30px_rgba(212,168,83,0.15)]'
+                    : 'border-white/10'
+                }`}
+                style={{ height: '520px' }}
+              >
                 <div className="w-full h-full">
                   <Comp />
                 </div>
 
-                <div className="absolute top-0 left-0 z-20 w-full h-full bg-gradient-to-r from-black/80 via-black/40 to-transparent p-6 md:p-8 flex flex-col justify-end pointer-events-none">
+                <div className={`absolute top-0 left-0 z-20 w-full h-full bg-gradient-to-r from-black/80 via-black/40 to-transparent p-6 md:p-8 flex flex-col justify-end pointer-events-none transition-opacity duration-700 ${
+                  isActive ? 'opacity-85' : 'opacity-100'
+                }`}>
                   <span className="text-gold-500 text-xs font-mono tracking-widest">
                     {item.num}
                   </span>

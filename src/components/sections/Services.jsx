@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import useInView from '@/hooks/useInView'
 
@@ -56,7 +56,7 @@ const services = [
   },
 ]
 
-function ServiceCard({ service, index }) {
+function ServiceCard({ service, index, isActive }) {
   const { ref, inView } = useInView()
 
   return (
@@ -67,10 +67,11 @@ function ServiceCard({ service, index }) {
       }`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="relative p-8 md:p-10 rounded-2xl border border-white/6
-                      bg-white/[0.02] hover:bg-white/[0.04]
-                      hover:border-gold-500/20
-                      transition-all duration-500 overflow-hidden">
+      <div className={`relative p-8 md:p-10 rounded-2xl border transition-all duration-700 overflow-hidden ${
+        isActive
+          ? 'border-gold-500/60 shadow-[0_0_30px_rgba(212,168,83,0.15)] bg-white/[0.04]'
+          : 'border-white/6 bg-white/[0.02]'
+      } hover:bg-white/[0.04] hover:border-gold-500/20`}>
 
         <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100
                         transition-opacity duration-700 pointer-events-none"
@@ -147,6 +148,17 @@ function ServiceCard({ service, index }) {
 
 export default function Services() {
   const { ref, inView } = useInView()
+  const isMobile = useIsMobile()
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
+
+  useEffect(() => {
+    if (isMobile || isPaused) return
+    const interval = setInterval(() => {
+      setActiveIndex(prev => (prev + 1) % services.length)
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [isMobile, isPaused])
 
   return (
     <section id="services" className="relative bg-black section-pad">
@@ -187,9 +199,13 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-5"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           {services.map((service, i) => (
-            <ServiceCard key={service.number} service={service} index={i} />
+            <ServiceCard key={service.number} service={service} index={i} isActive={!isMobile && i === activeIndex} />
           ))}
         </div>
 
