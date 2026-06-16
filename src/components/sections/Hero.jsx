@@ -43,13 +43,13 @@ function DesktopHero() {
             <div className="animate-heroIn" style={{ animationDelay: '0.1s' }}>
               <h1 className="font-display font-bold leading-[1.05] tracking-tight mb-6 max-w-full overflow-hidden break-words">
                 <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white">
-                  İşletmeniz için
+                  Sennin Web ile işletmeniz için
                 </span>
                 <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white">
                   profesyonel
                 </span>
                 <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gold-gradient">
-                  web tasarım ve Seo hizmeti
+                  web tasarım ve SEO hizmeti
                 </span>
               </h1>
             </div>
@@ -140,9 +140,9 @@ function MobileHero() {
           </span>
 
           <h1 className="font-display font-bold leading-[1.05] tracking-tight mb-6">
-            <span className="block text-4xl text-white">İşletmeniz için</span>
+            <span className="block text-4xl text-white">Sennin Web ile işletmeniz için</span>
             <span className="block text-4xl text-white">profesyonel</span>
-            <span className="block text-4xl text-gold-gradient">web tasarım ve Seo hizmeti</span>
+            <span className="block text-4xl text-gold-gradient">web tasarım ve SEO hizmeti</span>
           </h1>
 
           <p className="text-base text-white/60 leading-relaxed mb-8 max-w-lg">

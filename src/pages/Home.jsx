@@ -62,6 +62,13 @@ export default function Home() {
     upsertMetaByProperty("og:description", "Premium web tasarım, SEO ve kurumsal kimlik hizmetleri. İşletmenizi dijitalde büyütün.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
+    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
+    upsertMetaByProperty("og:image:width", "1200")
+    upsertMetaByProperty("og:image:height", "630")
+
+    upsertMetaByName("twitter:card", "summary_large_image")
+    upsertMetaByName("twitter:title", "Web Tasarım & SEO Hizmeti | Sennin Web")
+    upsertMetaByName("twitter:description", "Premium web tasarım, SEO ve kurumsal kimlik hizmetleri. İşletmenizi dijitalde büyütün.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -74,11 +81,23 @@ export default function Home() {
     }
   }, [canonicalUrl])
 
+  const today = new Date().toISOString().split('T')[0]
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Sennin Web",
     "url": "https://www.senninweb.com",
+    "description": "KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı.",
+    "dateModified": today,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.senninweb.com/?s={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   }
 
   return (

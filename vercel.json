@@ -1,6 +1,7 @@
 {
   "redirects": [
-    { "source": "/blog/small-businesses-visible-on-google-2026", "destination": "/blog/kucuk-isletmeler-google-da-gorunurluk-2026", "permanent": true }
+    { "source": "/blog/small-businesses-visible-on-google-2026", "destination": "/blog/kucuk-isletmeler-google-da-gorunurluk-2026", "permanent": true },
+    { "source": "https://senninweb.com/:path*", "destination": "https://www.senninweb.com/:path*", "permanent": true }
   ],
   "rewrites": [
     { "source": "/hakkimizda", "destination": "/index.html" },

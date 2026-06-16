@@ -1,13 +1,15 @@
 # Sennin Web
-> Web tasarım ve SEO hizmetleri sunan premium dijital ajans.
+> KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı. 2025'te Çağatay Macar tarafından kuruldu. Bilecik/Gölpazarı merkezli, Türkiye geneline hizmet. Mobil uyumlu, SEO odaklı, sıfırdan tasarlanmış web siteleri.
 
 ## Pages
 
-- [Ana Sayfa](https://www.senninweb.com/): Web tasarım, SEO ve kurumsal kimlik hizmetleri
-- [Hakkimizda](https://www.senninweb.com/hakkimizda): Sennin Web hakkında detaylı bilgi
-- [Blog](https://www.senninweb.com/blog): Web tasarım, SEO ve dijital büyüme rehberleri
-- [Gebze](https://www.senninweb.com/gebze): Gebze web tasarım ve SEO hizmetleri
-- [SSS](https://www.senninweb.com/sss): Sık sorulan sorular
+- [Ana Sayfa](https://www.senninweb.com/): Premium web tasarım, SEO ve kurumsal kimlik hizmetleri. KOBİ'lere özel, mobil uyumlu ve dönüşüm odaklı çözümler.
+- [Hakkimizda](https://www.senninweb.com/hakkimizda): Sennin Web kurucusu Çağatay Macar ve şirket hikayesi. Premium tasarım yaklaşımı, SEO felsefesi ve değerler.
+- [Dijital Rehber](https://www.senninweb.com/blog): Web tasarım, SEO, 2026 trendleri, küçük işletme stratejileri ve dijital büyüme üzerine kapsamlı rehberler.
+- [Gebze](https://www.senninweb.com/gebze): Gebze'de web tasarım, yerel SEO, e-ticaret ve dijital pazarlama çözümleri. Bölgeye özel hizmetler.
+- [Bilecik](https://www.senninweb.com/bilecik): Bilecik'te web tasarım, SEO, Google Maps optimizasyonu ve kurumsal kimlik hizmetleri.
+- [Kocaeli](https://www.senninweb.com/kocaeli): Kocaeli genelinde web tasarım, SEO ve dijital pazarlama. İzmit, Gebze, Körfez, Gölcük ve tüm ilçeler.
+- [SSS](https://www.senninweb.com/sss): Web tasarım, SEO, AEO, GEO, mobil uyumluluk ve fiyatlandırma hakkında 17 detaylı soru-cevap.
 
 ## Blog Posts
 
@@ -20,6 +22,14 @@
 - [Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor?](https://www.senninweb.com/blog/web-tasarim-fiyatlari-neden-degisiyor-2026): Web tasarım fiyatlarını etkileyen faktörler
 - [Web Tasarım Teknik Terimler Sözlüğü](https://www.senninweb.com/blog/teknik-terimler): Core Web Vitals, SSL, UI/UX, SEO ve mobil uyum terimleri
 
+## Services
+
+- **Web Tasarım**: Premium, sıfırdan tasarlanmış, mobil öncelikli web siteleri. Ortalama 8-10 gün teslim. Hazır tema kullanılmaz.
+- **SEO ve Büyüme**: Yerel SEO, anahtar kelime stratejisi, Google Business Profile yönetimi. 4-8 haftada ilk sinyaller.
+- **Kurumsal Kimlik**: Logo, kartvizit, sosyal medya şablonları, marka rehberi. Tutarlı ve premium marka kimliği.
+
 ## References
 
-- [SEO Rehberi](https://www.senninweb.com/SEO-REHBERI.md): Yapılandırılmış veri (JSON-LD) şablonları
+- [SEO Rehberi](https://www.senninweb.com/SEO-REHBERI.md): Yapılandırılmış veri (JSON-LD) şablonları ve kod örnekleri
+- [GitHub](https://github.com/macardev/senninweb): Proje kaynak kodu ve sürüm geçmişi
+- [LinkedIn](https://www.linkedin.com/in/çağatay-samet-macar-5bb930411/): Kurucu Çağatay Macar'ın LinkedIn profili

@@ -198,6 +198,13 @@ export default function SSS() {
     upsertMetaByProperty("og:description", "Web tasarım, mobil uyumluluk, SEO, Google Ads ve daha fazlası hakkında sıkça sorulan sorular.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
+    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
+    upsertMetaByProperty("og:image:width", "1200")
+    upsertMetaByProperty("og:image:height", "630")
+
+    upsertMetaByName("twitter:card", "summary_large_image")
+    upsertMetaByName("twitter:title", "Sıkça Sorulan Sorular | SenninWeb")
+    upsertMetaByName("twitter:description", "Web tasarım, mobil uyumluluk, SEO, Google Ads ve daha fazlası hakkında sıkça sorulan sorular.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -210,9 +217,14 @@ export default function SSS() {
     }
   }, [canonicalUrl])
 
+  const today = new Date().toISOString().split('T')[0]
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": "Sıkça Sorulan Sorular | SenninWeb",
+    "description": "Web tasarım, SEO, mobil uyumluluk, Google'da görünürlük ve daha fazlası hakkında sıkça sorulan sorular.",
+    "dateModified": today,
     "mainEntity": faqs.map(f => ({
       "@type": "Question",
       "name": f.question,

@@ -57,6 +57,13 @@ export default function Hakkimizda() {
     upsertMetaByProperty("og:description", "SenninWeb: 2025'te kurulan premium web tasarım ve SEO ajansı. KOBİ'ler için özel web tasarımı, SEO danışmanlığı ve kurumsal kimlik çözümleri.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
+    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
+    upsertMetaByProperty("og:image:width", "1200")
+    upsertMetaByProperty("og:image:height", "630")
+
+    upsertMetaByName("twitter:card", "summary_large_image")
+    upsertMetaByName("twitter:title", "Hakkımızda | SenninWeb - Web Tasarım & SEO Ajansı | Premium Çözümler")
+    upsertMetaByName("twitter:description", "SenninWeb: 2025'te kurulan premium web tasarım ve SEO ajansı. KOBİ'ler için özel web tasarımı, SEO danışmanlığı ve kurumsal kimlik çözümleri.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -88,13 +95,24 @@ export default function Hakkimizda() {
       {
         "@type": "Person",
         "name": "Çağatay Macar",
+        "givenName": "Çağatay",
+        "familyName": "Macar",
         "jobTitle": ["Kurucu", "Senior Web Developer"],
         "worksFor": {
           "@type": "Organization",
           "name": "SenninWeb"
         },
         "image": "https://www.senninweb.com/images/cagatay-macar-biometrik.webp",
-        "description": "SenninWeb kurucusu ve senior web geliştiricisi. Premium web tasarım ve SEO hizmetleri sunuyor."
+        "description": "SenninWeb kurucusu ve senior web geliştiricisi. Premium web tasarım ve SEO hizmetleri sunuyor.",
+        "knowsAbout": ["Web Tasarım", "SEO", "Dijital Pazarlama", "UI/UX Tasarım", "Frontend Development"],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Manisa Celal Bayar Üniversitesi"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/çağatay-samet-macar-5bb930411/",
+          "https://github.com/macardev"
+        ]
       }
     ]
   }

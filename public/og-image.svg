@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#1A1000"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#D97706" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="200" cy="500" r="300" fill="#D97706" opacity="0.04"/>
+  <circle cx="1000" cy="150" r="250" fill="#D97706" opacity="0.03"/>
+  <text x="80" y="240" font-family="Inter,system-ui,sans-serif" font-size="72" font-weight="800" fill="#FFFFFF">İşletmeniz için</text>
+  <text x="80" y="330" font-family="Inter,system-ui,sans-serif" font-size="72" font-weight="800" fill="#FFFFFF">profesyonel</text>
+  <text x="80" y="420" font-family="Inter,system-ui,sans-serif" font-size="72" font-weight="800" fill="url(#gold)">web tasarım &amp; SEO</text>
+  <line x1="80" y1="465" x2="500" y2="465" stroke="url(#goldLine)" stroke-width="2"/>
+  <text x="80" y="520" font-family="Inter,system-ui,sans-serif" font-size="26" fill="rgba(255,255,255,0.5)">Premium dijital ajans. KOBİ'lere özel çözümler.</text>
+  <text x="80" y="575" font-family="Inter,system-ui,sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">Sennin<span fill="url(#gold)">Web</span></text>
+  <rect x="420" y="545" width="60" height="2" rx="1" fill="#D97706" opacity="0.5"/>
+  <text x="500" y="575" font-family="Inter,system-ui,sans-serif" font-size="20" fill="rgba(255,255,255,0.4)">senninweb.com</text>
+</svg>

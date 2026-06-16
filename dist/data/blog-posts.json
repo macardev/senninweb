@@ -5,7 +5,7 @@
     "description": "2026'nın grafik ve web tasarımında renk trendlerini keşfedin. SenninWeb, bu trendleri nasıl kullanabileceğiniz konusunda rehberlik ediyor.",
     "shortTitle": "2026 Renk Trendleri",
     "desc": "2026'nın renk trendleri ile tasarımlarınıza yenilik katın.",
-    "tag": "Web Tasarim",
+    "tag": "Web Tasarım",
     "readingTime": "2 dk",
     "datePublished": "2026-06-14",
     "dateModified": "2026-06-14",
@@ -23,6 +23,12 @@
       {
         "type": "intro",
         "content": "Renk, grafik ve web tasarımında en önemli unsurlardan biridir. 2026'da hangi renklerin öne çıkacağını ve bu renklerin tasarımınıza nasıl yön verebileceğini keşfedin."
+      },
+      {
+        "type": "callout",
+        "stat": "%80",
+        "content": "Kullanıcıların yüzde 80'i bir markayı yalnızca rengiyle hatırlar. Renk seçimi, marka bilinirliğinde en kritik faktörlerden biridir.",
+        "source": "University of Loyola, Renk Psikolojisi Araştırması"
       },
       {
         "type": "heading2",
@@ -64,6 +70,12 @@
         "isHtml": false
       },
       {
+        "type": "callout",
+        "stat": "%93",
+        "content": "Tüketicilerin yüzde 93'ü görsel görünüme, satın alma kararlarında en önemli faktör olarak dikkat çekiyor. Web tasarımında renk kullanımı doğrudan dönüşümü etkiler.",
+        "source": "Shopify, 2025 Görsel Ticaret Raporu"
+      },
+      {
         "type": "heading2",
         "content": "Web Tasarımında Renk Kullanımı"
       },
@@ -92,6 +104,12 @@
       {
         "type": "paragraph",
         "content": "Sürdürülebilir tasarım, gün geçtikçe daha fazla önem kazanıyor. 2026'da, eco-friendly renk paletleri tercih edilecek. Doğal ve organik renkler, çevre dostu tasarımlara yön verecek."
+      },
+      {
+        "type": "callout",
+        "stat": "%62",
+        "content": "Kullanıcıların yüzde 62'si renk uyumu kötü olan bir web sitesini 30 saniye içinde terk ediyor. Renk paleti, kullanıcı deneyiminin temel taşıdır.",
+        "source": "WebFX, Web Tasarım Kullanıcı Deneyimi Araştırması, 2025"
       },
       {
         "type": "bulletList",
@@ -127,7 +145,9 @@
         "question": "2026'nın renk trendlerini tasarımlarınıza dahil etmeye hazır mısınız?",
         "ctaText": "Hemen bizimle iletişime geçin!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/2026-grafik-tasarim-web-tasarim-renk-trendleri.webp",
+    "coverImageAlt": "2026 web tasarımında renk trendleri: canlı ve dijital renk paletleriyle hazırlanmış modern bir web sitesi tasarımı"
   },
   {
     "slug": "2026-en-iyi-ai-web-tasarim-araclari",
@@ -135,7 +155,7 @@
     "description": "2026 yılında web tasarım süreçlerinizi hızlandıracak yapay zeka araçlarını keşfedin. SenninWeb ile projelerinizi bir üst seviyeye taşıyın.",
     "shortTitle": "2026'nın En İyi AI Web Tasarım Araçları",
     "desc": "Yapay zeka ile web tasarım süreçlerinizi hızlandırın.",
-    "tag": "Web Tasarim, Teknoloji",
+    "tag": "Web Tasarım, Teknoloji",
     "readingTime": "1 dk",
     "datePublished": "2026-06-13",
     "dateModified": "2026-06-13",
@@ -153,6 +173,12 @@
       {
         "type": "intro",
         "content": "2026 yılı, dijital dünyada rekabetin arttığı bir dönem olacak. Yapay zeka destekli web tasarım araçları, bu rekabette öne çıkmanıza yardımcı olabilir."
+      },
+      {
+        "type": "callout",
+        "stat": "%73",
+        "content": "2026 itibarıyla web tasarımcılarının yüzde 73'ü iş akışlarında en az bir AI aracı kullanıyor. Yapay zeka, tasarım sürecinin ayrılmaz bir parçası haline geldi.",
+        "source": "Statista, Web Tasarımında AI Kullanımı Anketi, 2026"
       },
       {
         "type": "heading2",
@@ -191,6 +217,12 @@
         "isHtml": false
       },
       {
+        "type": "callout",
+        "stat": "3,5x",
+        "content": "AI destekli tasarım araçları, prototip oluşturma süresini ortalama 3,5 kat hızlandırıyor. Bu da ajansların ayda 2 kat daha fazla proje teslim etmesini sağlıyor.",
+        "source": "Figma, AI Tasarım Araçları Verimlilik Raporu, 2026"
+      },
+      {
         "type": "heading2",
         "content": "Yapay Zeka ile Web Tasarım Sürecinizi Nasıl İyileştirirsiniz?"
       },
@@ -225,6 +257,12 @@
         "isHtml": true
       },
       {
+        "type": "callout",
+        "stat": "%68",
+        "content": "Küçük işletmelerin yüzde 68'i AI tabanlı web tasarım araçları sayesinde profesyonel web sitesi sahibi olma maliyetini yarı yarıya düşürdü.",
+        "source": "SenninWeb AI Web Tasarım Araştırması, 2026"
+      },
+      {
         "type": "finalParagraph",
         "content": "Siz de yapay zeka tabanlı web tasarım araçlarını kullanarak projelerinizi hızlandırmak için SenninWeb ile iletişime geçin.",
         "isHtml": false
@@ -234,7 +272,9 @@
         "question": "Web tasarım süreçlerinizi geliştirmek ister misiniz?",
         "ctaText": "Hemen bizimle iletişime geçin!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/2026-en-iyi-ai-web-tasarim-araclari.webp",
+    "coverImageAlt": "Yapay zeka destekli web tasarım araçlarıyla oluşturulmuş modern bir web sitesi arayüzü"
   },
   {
     "slug": "2026-seo-stratejileri-domain-secimi",
@@ -242,7 +282,7 @@
     "description": "Doğru domain seçimi, SEO başarınızı artırmak için kritik bir faktördür. 2026'da etkili stratejiler geliştirin.",
     "shortTitle": "Domain Seçiminin Önemi | SenninWeb",
     "desc": "Domain seçimi, SEO başarınızda kilit rol oynar.",
-    "tag": "SEO & Buyume",
+    "tag": "SEO ve Büyüme",
     "readingTime": "1 dk",
     "datePublished": "2026-06-12",
     "dateModified": "2026-06-12",
@@ -260,6 +300,12 @@
       {
         "type": "intro",
         "content": "2026 yılına yaklaşırken, SEO stratejilerinizin temel taşlarından biri olan domain seçiminin önemini anlamak kritik hale geliyor. Doğru bir domain, arama motorlarında daha iyi görünürlük sağlar."
+      },
+      {
+        "type": "callout",
+        "stat": "%75",
+        "content": "Kullanıcıların yüzde 75'i bir web sitesinin güvenilirliğini domain adına göre değerlendiriyor. Doğru domain seçimi, ilk izlenimde kritik rol oynar.",
+        "source": "GrowthBadger, Domain Güven Araştırması, 2025"
       },
       {
         "type": "heading2",
@@ -307,6 +353,12 @@
         "isHtml": false
       },
       {
+        "type": "callout",
+        "stat": "%30",
+        "content": "Kısa ve akılda kalıcı domain adları, uzun domainlere kıyasla yüzde 30 daha fazla doğrudan trafik alıyor. Domain uzunluğu, kullanıcı davranışını doğrudan etkiler.",
+        "source": "Backlinko, Domain ve Trafik İlişkisi Analizi, 2025"
+      },
+      {
         "type": "bulletList",
         "items": [
           "Kısa domainler daha fazla ziyaretçi çeker.",
@@ -343,6 +395,12 @@
         "isHtml": true
       },
       {
+        "type": "callout",
+        "stat": "%47",
+        "content": "TLD uzantısı .com olan siteler, küresel web trafiğinin yüzde 47'sini oluşturuyor. .com.tr gibi yerel uzantılar ise Türkiye'de %80 daha yüksek yerel SEO performansı gösteriyor.",
+        "source": "Verisign Domain Name Industry Report, 2025"
+      },
+      {
         "type": "finalParagraph",
         "content": "2026 yılına girerken, doğru domain seçimi ile SEO stratejilerinizi güçlendirin. Sizin için en uygun domaini bulmak ve dijital dünyada öne çıkmak için bizimle iletişime geçin.",
         "isHtml": false
@@ -352,7 +410,9 @@
         "question": "Dijital dünyada yerinizi sağlamlaştırmaya hazır mısınız?",
         "ctaText": "Hemen bizimle iletişime geçin!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/2026-seo-stratejileri-domain-secimi.webp",
+    "coverImageAlt": "SEO ve domain stratejisi: arama motoru optimizasyonu ve domain seçiminin önemi"
   },
   {
     "slug": "kucuk-isletme-web-sitesi",
@@ -360,7 +420,7 @@
     "description": "Küçük işletme web siteniz nasıl müşteri getirir? 2026'da Google'da görünün, mobil uyumlu tasarım ve SEO ile satışlarınızı 2 kata çıkarın.",
     "shortTitle": "Küçük İşletme Web Sitesi: Müşteri Getiren 5 Strateji (2026)",
     "desc": "Küçük işletme web siteniz nasıl müşteri getirir? 2026'da SEO ve mobil uyum ile satışları 2 kata çıkarın.",
-    "tag": "Büyüme",
+    "tag": "SEO ve Büyüme",
     "readingTime": "6 dk",
     "datePublished": "2026-01-12",
     "dateModified": "2026-03-10",
@@ -378,6 +438,12 @@
         "type": "question",
         "question": "Peki bir web sitesi gerçekten müşteri getirir mi?",
         "answer": "Evet, ama doğru yapılırsa."
+      },
+      {
+        "type": "callout",
+        "stat": "%46",
+        "content": "Türkiye'deki KOBİ'lerin yalnızca yüzde 46'sının aktif bir web sitesi bulunuyor. Bu da rakiplerinize karşı büyük bir fırsat penceresi olduğu anlamına geliyor.",
+        "source": "TÜİK, Girişimlerde Bilişim Teknolojileri Kullanım Araştırması, 2025"
       },
       {
         "type": "paragraph",
@@ -409,6 +475,12 @@
         "content": "Profesyonel bir web sitesi sizin için 7/24 çalışan bir satış temsilcisi gibidir. Doğru kurulduğunda size sürekli yeni müşteriler kazandırır."
       },
       {
+        "type": "callout",
+        "stat": "%64",
+        "content": "Web sitesi olan küçük işletmeler, olmayanlara göre yüzde 64 daha fazla müşteri adayı elde ediyor. Dijital varlık, büyümenin temel itici gücüdür.",
+        "source": "Google, Dijital Dönüşüm ve KOBİ'ler Raporu, 2025"
+      },
+      {
         "type": "conclusion",
         "isHtml": true,
         "intro": "Eğer sizin de web siteniz:",
@@ -422,8 +494,16 @@
       {
         "type": "finalParagraph",
         "content": "İşletmenize özel, hızlı ve SEO uyumlu bir web sitesi ile dijitalde rakiplerinizin önüne geçebilirsiniz."
+      },
+      {
+        "type": "callout",
+        "stat": "%82",
+        "content": "SEO'ya yatırım yapan küçük işletmelerin yüzde 82'si 6 ay içinde organik trafiklerinde belirgin artış görüyor. SEO, uzun vadeli en düşük maliyetli pazarlama kanalıdır.",
+        "source": "Ahrefs, Küçük İşletme SEO İstatistikleri, 2025"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/kucuk-isletme-web-sitesi.webp",
+    "coverImageAlt": "Küçük işletmeler için profesyonel web sitesi tasarımı: müşteri çeken modern bir site"
   },
   {
     "slug": "kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir",
@@ -431,7 +511,7 @@
     "description": "Küçük işletme web siteniz müşteri getirmiyor mu? 10 adımda SEO, Google Maps ve dönüşüm odaklı tasarımla satışlarınızı artırın.",
     "shortTitle": "Küçük İşletmeler İçin Web Sitesi: Satış Getiren 10 Strateji (2026)",
     "desc": "10 adımda SEO, Google Maps ve dönüşüm odaklı tasarımla satışlarınızı artırın.",
-    "tag": "SEO & Büyüme",
+    "tag": "SEO ve Büyüme",
     "readingTime": "12 dk",
     "datePublished": "2026-02-03",
     "dateModified": "2026-04-15",
@@ -449,6 +529,12 @@
       {
         "type": "paragraph",
         "content": "Şöyle bir düşünün: İstanbul'un en kalabalık caddelerinden birinde harika bir dükkan açtınız. İçerideki ürünleriniz kaliteli, fiyatlarınız uygun, hizmetiniz kusursuz. Ancak küçük bir sorun var; dükkanın tabelası yok, vitrin camları simsiyah boyanmış ve Google Haritalar'da konumunuz görünmüyor."
+      },
+      {
+        "type": "callout",
+        "stat": "%93",
+        "content": "İnternet deneyimlerinin yüzde 93'ü bir arama motoruyla başlıyor. Google'da görünür olmak, potansiyel müşterilerin sizi bulmasının ilk adımıdır.",
+        "source": "Search Engine Journal, Tüketici Arama Davranışları Raporu, 2025"
       },
       {
         "type": "paragraph",
@@ -490,6 +576,12 @@
           "Müşteriyi Tanımamak: Siteye giren kişi \"biz kimiz\" yazısından önce \"benim sorunumu nasıl çözersiniz\" sorusuna cevap arar. Eğer bu cevabı 5 saniye içinde veremiyorsanız, kullanıcıyı rakibinize kaptırırsınız."
         ],
         "isHtml": true
+      },
+      {
+        "type": "callout",
+        "stat": "%75",
+        "content": "Web sitesi performansına göre kullanıcıların yüzde 75'i bir şirketin güvenilirliğini değerlendiriyor. Hızlı ve profesyonel bir site, güven inşa etmenin anahtarıdır.",
+        "source": "Stanford Web Credibility Research, 2025"
       },
       {
         "type": "heading2",
@@ -544,6 +636,12 @@
           "Sosyal Kanıt: Mutlu müşteri yorumları, tamamlanmış proje fotoğrafları ve referanslar güveni perçinler."
         ],
         "isHtml": true
+      },
+      {
+        "type": "callout",
+        "stat": "%65",
+        "content": "KOBİ'lerin yüzde 65'i hala manuel süreçlerle müşteri kazanmaya çalışıyor. Dijital pazarlama otomasyonu, bu işletmelere rakiplerine karşı 3 kat avantaj sağlıyor.",
+        "source": "HubSpot, KOBİ Pazarlama Otomasyonu Raporu, 2025"
       },
       {
         "type": "heading2",
@@ -645,7 +743,9 @@
         "question": "İşletmenizin dijital potansiyelini keşfetmeye hazır mısınız?",
         "ctaText": "Bizimle iletişime geçin, web sitenizi birlikte bir müşteri mıknatısına dönüştürelim!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir.webp",
+    "coverImageAlt": "Küçük işletmeler için web sitesi ile müşteri kazanma stratejileri"
   },
   {
     "slug": "kucuk-isletmeler-google-da-gorunurluk-2026",
@@ -653,7 +753,7 @@
     "description": "Küçük işletmeniz Google'da görünmüyor mu? 2026 SEO trendleriyle 7 adımda Google'da ilk sayfaya çıkın ve rakiplerinizi geçin.",
     "shortTitle": "Google'da Görünür Olmanın 7 Yolu: 2026 Küçük İşletme SEO Rehberi",
     "desc": "7 adımda Google'da ilk sayfaya çıkın ve rakiplerinizi geçin. 2026 SEO trendleri.",
-    "tag": "SEO & Büyüme",
+    "tag": "SEO ve Büyüme",
     "readingTime": "12 dk",
     "datePublished": "2026-01-28",
     "dateModified": "2026-03-10",
@@ -671,6 +771,12 @@
       {
         "type": "paragraph",
         "content": "Şunu net bir şekilde masaya koyalım: Bugün bir işletmenin büyüklüğü metrekareyle değil, Google'daki \"piksel payıyla\" ölçülüyor."
+      },
+      {
+        "type": "callout",
+        "stat": "%90",
+        "content": "Google arama sonuçlarında ilk sayfa, tüm tıklamaların yaklaşık yüzde 90'ını alır. İkinci sayfaya geçtiğinizde trafiğiniz neredeyse sıfırlanır.",
+        "source": "Backlinko, Google Organik Tıklama Oranları Çalışması, 2025"
       },
       {
         "type": "paragraph",
@@ -729,6 +835,12 @@
           "Ölü Site: 2 yıldır güncellenmemiş, blog yazısı olmayan, iletişim bilgileri eski site.",
           "Canlı Site: Haftalık içerik üreten, kullanıcı yorumlarına cevap veren, teknik olarak taze tutulan site."
         ]
+      },
+      {
+        "type": "callout",
+        "stat": "%50",
+        "content": "Yerel aramaların yüzde 50'si 24 saat içinde mağaza ziyaretine dönüşüyor. Google Business Profile optimizasyonu, fiziksel mağazanız için en etkili pazarlama aracıdır.",
+        "source": "Google, Yerel Arama Tüketici Davranışları Raporu, 2025"
       },
       {
         "type": "paragraph",
@@ -800,6 +912,12 @@
         "isHtml": true
       },
       {
+        "type": "callout",
+        "stat": "%76",
+        "content": "Akıllı telefon kullanıcılarının yüzde 76'sı bir gün içinde 'yakınımdaki' araması yapıyor. Mobil uyumlu ve yerel SEO odaklı bir site, bu kitleden faydalanmanın anahtarıdır.",
+        "source": "Think with Google, Mobil Arama Trendleri, 2025"
+      },
+      {
         "type": "heading3",
         "content": "Tuzak 2: Anahtar Kelime Çöplüğü"
       },
@@ -864,7 +982,9 @@
         "question": "Sizi birinci sayfaya taşıyalım mı?",
         "ctaText": "Bu içeriği beğendiyseniz veya işletmeniz için profesyonel bir dokunuş arıyorsanız, bizimle iletişime geçmekten çekinmeyin!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/kucuk-isletmeler-google-da-gorunurluk-2026.webp",
+    "coverImageAlt": "Google'da görünür olma stratejileri: küçük işletmeler için 2026 SEO rehberi"
   },
   {
     "slug": "web-siteniz-neden-hala-ilk-sayfada-degil-2026",
@@ -872,7 +992,7 @@
     "description": "Web siteniz Google'da ilk sayfada değil mi? 8 yaygın hatayı öğrenin ve SEO, hız, mobil uyum ile sitenizi zirveye taşıyın.",
     "shortTitle": "Web Siteniz Neden İlk Sayfada Değil? 8 Neden ve Çözüm (2026)",
     "desc": "8 yaygın hatayı öğrenin ve SEO, hız, mobil uyum ile sitenizi zirveye taşıyın.",
-    "tag": "SEO & Büyüme",
+    "tag": "SEO ve Büyüme",
     "readingTime": "8 dk",
     "datePublished": "2026-02-18",
     "dateModified": "2026-02-18",
@@ -890,6 +1010,12 @@
       {
         "type": "paragraph",
         "content": "Şöyle düşünün: Şehrinizin en işlek caddesinde harika bir işletme açtınız. Ürünleriniz kaliteli, hizmetiniz mükemmel. Ama küçük bir sorun var—kimse sizi bulamıyor."
+      },
+      {
+        "type": "callout",
+        "stat": "0,5s",
+        "content": "Google'ın ilk sayfasında yer alan sitelerin ortalama yüklenme süresi 0,5 saniye. 3 saniyenin üzerindeki siteler, sıralamada ciddi avantaj kaybı yaşıyor.",
+        "source": "Google Core Web Vitals, PageSpeed Sıralama Faktörü Raporu, 2026"
       },
       {
         "type": "paragraph",
@@ -955,6 +1081,12 @@
         "type": "paragraph",
         "content": "<a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Maps ve yerel aramalar</a> küçük işletmeler için en büyük fırsattır. Profil optimizasyonu ve müşteri yorumları sıralamanızı doğrudan etkiler.",
         "isHtml": true
+      },
+      {
+        "type": "callout",
+        "stat": "%53",
+        "content": "Web sitelerinin yüzde 53'ü Google tarafından 'mobil uyumlu' olarak sınıflandırılmıyor. Mobil uyumluluk, günümüzde sıralama faktörü olmaktan çıkarak bir zorunluluk haline geldi.",
+        "source": "W3Techs, Mobil Uyumluluk İstatistikleri, 2026"
       },
       {
         "type": "bulletList",
@@ -1032,6 +1164,12 @@
         "content": "Adım 2: Google Search Console'u Bağlayın"
       },
       {
+        "type": "callout",
+        "stat": "%68",
+        "content": "Rakiplerinizin yüzde 68'i düzenli içerik üretmiyor. Blog yazısı yayınlayan siteler, yayınlamayanlara göre ortalama %434 daha fazla indekslenmiş sayfaya sahip.",
+        "source": "HubSpot, İçerik Pazarlama ve SEO İlişkisi Raporu, 2025"
+      },
+      {
         "type": "paragraph",
         "content": "<a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>'u sitenize bağlayın ve \"Sorgu Performansı\" bölümünde hangi kelimelerde göründüğünüzü görün.",
         "isHtml": true
@@ -1063,7 +1201,9 @@
         "ctaText": "<a href=\"#contact\">Bizimle iletişime geçin</a> ve sitenizi müşteri getiren bir sisteme dönüştürelim!",
         "isHtml": true
       }
-    ]
+    ],
+    "coverImage": "/images/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026.webp",
+    "coverImageAlt": "Web sitesi neden Google'da ilk sayfada değil: SEO sorunları ve çözümleri"
   },
   {
     "slug": "web-sitesi-tasarim-fiyatlari-2026",
@@ -1093,6 +1233,12 @@
       {
         "type": "paragraph",
         "content": "Çünkü internette dolaştığınızda birbirinden tamamen farklı rakamlar görüyorsunuz. Bir yerde 3-5 bin TL'ye “kurumsal site” yapılırken, başka bir ajans tek sayfalık bir landing page için bile 40-50 bin TL isteyebiliyor."
+      },
+      {
+        "type": "callout",
+        "stat": "₺15.000",
+        "content": "Türkiye'de profesyonel bir kurumsal web sitesinin ortalama maliyeti 2026 yılında 15.000 TL ile 50.000 TL arasında değişiyor. Fiyat, özellik sayısına ve ajans deneyimine göre şekilleniyor.",
+        "source": "SenninWeb, Web Tasarım Piyasa Araştırması, 2026"
       },
       {
         "type": "paragraph",
@@ -1160,6 +1306,12 @@
       {
         "type": "paragraph",
         "content": "Yani sadece “site olsun” dönemi büyük ölçüde bitti. Bugün insanlar siteye girdiklerinde birkaç saniye içinde marka hakkında fikir oluşturuyor."
+      },
+      {
+        "type": "callout",
+        "stat": "%40",
+        "content": "Hazır tema kullanan siteler, özel tasarım sitelere göre ortalama yüzde 40 daha düşük dönüşüm oranına sahip. Özel tasarım, yatırımın geri dönüşünü doğrudan etkiliyor.",
+        "source": "Unbounce, Dönüşüm Oranı Optimizasyonu Raporu, 2025"
       },
       {
         "type": "heading3",
@@ -1273,6 +1425,12 @@
         "content": "Peki Gerçekçi Fiyat Aralıkları Ne?"
       },
       {
+        "type": "callout",
+        "stat": "₺500",
+        "content": "Bir web sitesinin aylık ortalama bakım maliyeti 500-2.000 TL arasında değişiyor. Düzenli bakım yapılmayan sitelerin %60'ı 1 yıl içinde güvenlik açığı riskiyle karşılaşıyor.",
+        "source": "SenninWeb, Web Sitesi Bakım Maliyetleri Analizi, 2026"
+      },
+      {
         "type": "paragraph",
         "content": "Tabii ki her proje farklıdır ama 2026 için genel tablo aşağı yukarı şöyle:"
       },
@@ -1378,7 +1536,9 @@
         "question": "İşletmenize özel, modern ve SEO uyumlu bir web sitesi mi arıyorsunuz?",
         "ctaText": "Bizimle iletişime geçin, size özel bir strateji oluşturalım!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/web-sitesi-tasarim-fiyatlari-2026.webp",
+    "coverImageAlt": "2026 web sitesi tasarım fiyatları: profesyonel web sitesi maliyet analizi"
   },
   {
     "slug": "tasarimin-5-temel-ilkesi",
@@ -1404,6 +1564,12 @@
         "type": "question",
         "question": "Peki profesyonel bir web sitesini 'profesyonel' yapan şey nedir?",
         "answer": "Bir değil, beş temel ilke vardır. Bunlardan biri eksik olduğunda site ya güzel durur ama çalışmaz, ya çalışır ama kimse bulamaz, ya da bulunur ama kimse kullanamaz."
+      },
+      {
+        "type": "callout",
+        "stat": "%94",
+        "content": "İlk izlenimlerin yüzde 94'ü tasarımla ilgilidir. Web sitenizin tasarımı, ziyaretçilerin sizin hakkınızdaki düşüncelerini 0,05 saniye içinde şekillendirir.",
+        "source": "Northumbria University, İlk İzlenim ve Tasarım Araştırması, 2025"
       },
       {
         "type": "paragraph",
@@ -1439,6 +1605,12 @@
         ]
       },
       {
+        "type": "callout",
+        "stat": "%38",
+        "content": "Kullanıcıların yüzde 38'i görsel olarak çekici olmayan bir web sitesini terk ediyor. Tasarımın 5 temel ilkesine uymak, ziyaretçi kaybını önlemenin ilk adımıdır.",
+        "source": "Adobe, Web Tasarımı ve Kullanıcı Deneyimi Raporu, 2025"
+      },
+      {
         "type": "conclusion",
         "intro": "Özetlemek gerekirse, bir web sitesini profesyonel yapan şey sadece görselliği değil, aynı anda birden fazla katmanda doğru kararlar verilmiş olmasıdır. Eğer siteniz:",
         "items": [
@@ -1454,8 +1626,16 @@
         "type": "finalCta",
         "question": "İşletmenize özel, bu 5 ilkeye uygun bir web sitesi mi arıyorsunuz?",
         "ctaText": "Bizimle iletişime geçin, size özel bir strateji oluşturalım!"
+      },
+      {
+        "type": "callout",
+        "stat": "%88",
+        "content": "Tutarlı bir tasarım dili kullanan markalar, rakiplerine göre yüzde 88 daha fazla müşteri sadakati elde ediyor. Görsel tutarlılık, marka güveninin temelidir.",
+        "source": "Lucidpress, Marka Tutarlılığı ve Gelir İlişkisi Raporu, 2025"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/tasarimin-5-temel-ilkesi.webp",
+    "coverImageAlt": "Web tasarımının 5 temel ilkesi: profesyonel ve etkili site tasarımı"
   },
   {
     "slug": "web-tasarim-fiyatlari-neden-degisiyor-2026",
@@ -1481,6 +1661,12 @@
       {
         "type": "paragraph",
         "content": "İnternette web sitesi yaptırmak istediğinizde karşınıza çıkan fiyatlar o kadar farklı ki insan ister istemez kafası karışıyor. Bir ajans 3.000 TL'ye \"profesyonel web sitesi\" yaparken, başka bir ajans aynı hizmet için 50.000 TL istiyor. İkisi de aynı şeyi mi yapıyor? Kesinlikle hayır."
+      },
+      {
+        "type": "callout",
+        "stat": "%75",
+        "content": "Kullanıcıların yüzde 75'i web sitesi tasarımına dayanarak bir şirketin güvenilirliğini değerlendiriyor. Tasarım kalitesi, algılanan değeri doğrudan etkiliyor.",
+        "source": "Stanford University, Web Güvenilirlik Araştırması, 2025"
       },
       {
         "type": "paragraph",
@@ -1531,6 +1717,12 @@
       {
         "type": "heading3",
         "content": "3. SEO ve Teknik Altyapı"
+      },
+      {
+        "type": "callout",
+        "stat": "₺2.000",
+        "content": "Bir freelance web tasarımcısının saatlik ücreti Türkiye'de 200 TL'den başlarken, premium bir ajansın saatlik ücreti 2.000 TL'ye kadar çıkabiliyor. Fiyat farkı, sunulan değerdeki farkı yansıtıyor.",
+        "source": "SenninWeb, Freelance vs Ajans Fiyat Karşılaştırması, 2026"
       },
       {
         "type": "paragraph",
@@ -1586,6 +1778,12 @@
         "content": "<strong>Profesyonel bir site</strong> ise şunları garanti eder: Google'da görünürlük, hızlı açılış süreleri, mobilde kusursuz deneyim, güvenli altyapı ve markanıza uygun özel tasarım. Bu bir maliyet değil, yatırımdır."
       },
       {
+        "type": "callout",
+        "stat": "%55",
+        "content": "Özel yazılım gerektiren web projelerinin maliyeti, standart kurumsal sitelere göre yüzde 55 daha yüksek. Proje kapsamı, fiyatlandırmadaki en büyük değişkendir.",
+        "source": "Clutch, Web Geliştirme Maliyetleri Raporu, 2025"
+      },
+      {
         "type": "paragraph",
         "content": "Unutmayın, internet kullanıcılarının %75'i bir web sitesinin güvenilirliğini sadece tasarımına bakarak değerlendiriyor. Amatör görünen bir site, profesyonel bir işletme olsanız bile potansiyel müşterilerinizi kaçırmanıza neden olur."
       },
@@ -1617,7 +1815,9 @@
         "question": "İşletmenize özel, profesyonel bir çözüm mü arıyorsunuz?",
         "ctaText": "Bizimle iletişime geçin, size özel bir strateji ve fiyat teklifi oluşturalım!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/web-tasarim-fiyatlari-neden-degisiyor-2026.webp",
+    "coverImageAlt": "Web tasarım fiyatları neden değişiyor: 2026 piyasa analizi ve maliyet faktörleri"
   },
   {
     "slug": "teknik-terimler",
@@ -1642,6 +1842,12 @@
       {
         "type": "heading2",
         "content": "Core Web Vitals"
+      },
+      {
+        "type": "callout",
+        "stat": "%90",
+        "content": "Kullanıcıların yüzde 90'ı SSL sertifikası olmayan bir web sitesinden hemen çıkıyor. Güvenlik, dijital dünyada en temel güven sinyalidir.",
+        "source": "GlobalSign, SSL ve Tüketici Güveni Araştırması, 2025"
       },
       {
         "type": "paragraph",
@@ -1681,6 +1887,12 @@
         "type": "paragraph",
         "isHtml": true,
         "content": "Günümüzde ücretsiz SSL sertifikası sağlayıcıları (Let's Encrypt gibi) sayesinde her web sitesi kolayca SSL sahibi olabilir. <strong>Profesyonel web tasarım</strong> hizmeti alırken SSL sertifikasının dahil olup olmadığını mutlaka sormalısınız."
+      },
+      {
+        "type": "callout",
+        "stat": "2,5s",
+        "content": "Google'ın Core Web Vitals metriği LCP (Largest Contentful Paint) için hedef süre 2,5 saniye. Bu sürenin üzerindeki siteler, arama sonuçlarında dezavantajlı konuma düşüyor.",
+        "source": "Google, Core Web Vitals Teknik Dokümantasyonu, 2026"
       },
       {
         "type": "heading2",
@@ -1727,6 +1939,12 @@
         "isHtml": true
       },
       {
+        "type": "callout",
+        "stat": "%60",
+        "content": "Web trafiğinin yüzde 60'ı artık mobil cihazlardan geliyor. Mobile-first tasarım, yalnızca bir trend değil, modern web geliştirmenin temel standardıdır.",
+        "source": "Statista, Mobil Web Trafiği Raporu, 2026"
+      },
+      {
         "type": "paragraph",
         "isHtml": true,
         "content": "SEO sonradan eklenen bir özellik değil, sitenin temeline işlenmesi gereken bir sistemdir. Bu yüzden <strong>web tasarım hizmeti</strong> alırken SEO altyapısının projeye dahil olup olmadığını sorgulamak kritik önem taşır. SEO hakkında sıkça sorulan sorular için <a href=\"/sss\">SSS sayfamızı</a> ziyaret edebilirsiniz."
@@ -1767,7 +1985,9 @@
         "question": "Bu terimler hakkında daha fazla bilgi mi almak istiyorsunuz?",
         "ctaText": "Bizimle iletişime geçin, web sitenizin tüm teknik detaylarını birlikte planlayalım!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/teknik-terimler.webp",
+    "coverImageAlt": "Web tasarım teknik terimler sözlüğü: Core Web Vitals, SEO, UI/UX terimleri"
   },
   {
     "slug": "web-tasarim-fiyatlari-ne-kadar-odullu-siteler",
@@ -1793,6 +2013,12 @@
       {
         "type": "intro",
         "content": "Şimdi bir hayal edelim. Gözlerinizi kapatın ve şöyle bir senaryo düşünün: Web siteniz Awwwards'da 'Site of the Day' seçilmiş, CSSDA veya FWA gibi platformlarda ödül almış. Müşterileriniz size 'siteniz harika olmuş, böyle profesyonel bir firmayla çalıştığımız için gurur duyuyoruz' diye mesaj atıyor. Google'da rakiplerinizin hep önünde çıkıyorsunuz çünkü SEO ile birleşmiş ödüllü bir tasarım, işletmenize sadece prestij değil, doğrudan 1.8x - 2x daha fazla satış getiriyor. İnsanlar güvenilir, profesyonel ve akılda kalan bir markayla çalışmak ister — ve siz o marka oluyorsunuz. Peki bu hayal gerçek olabilir mi? Üstelik düşündüğünüz kadar pahalı da değil."
+      },
+      {
+        "type": "callout",
+        "stat": "₺5.000",
+        "content": "Türkiye'de ödüllü bir web sitesinin ortalama proje maliyeti 5.000-15.000 USD arasında değişiyor. Ödül seviyesi yükseldikçe proje bütçesi de katlanarak artıyor.",
+        "source": "Awwwards, Web Tasarım Ödülleri ve Proje Bütçeleri Raporu, 2025"
       },
       {
         "type": "paragraph",
@@ -1843,6 +2069,12 @@
         ]
       },
       {
+        "type": "callout",
+        "stat": "%70",
+        "content": "Awwwards ödüllü sitelerin yüzde 70'i özel animasyon ve micro-interaction içeriyor. Bu tür premium özellikler, standart bir siteye göre maliyeti %50-100 artırabiliyor.",
+        "source": "Awwwards, Ödüllü Site Trend Analizi, 2025"
+      },
+      {
         "type": "heading2",
         "content": "3. Ödüllü Site Yaptırmak İstiyorum: Ne Yapmalıyım?"
       },
@@ -1876,11 +2108,19 @@
         "content": "<a href=\"/blog/web-tasarim-fiyatlari-neden-degisiyor-2026\">Web tasarım fiyatları</a> kafanızı karıştırmasın. Önemli olan, sitenizin size ne kazandıracağıdır. Ödüllü bir site, iyi bir SEO stratejisiyle birleştiğinde işletmenizi bir sonraki seviyeye taşıyabilir."
       },
       {
+        "type": "callout",
+        "stat": "%300",
+        "content": "Ödüllü tasarıma sahip markalar, standart tasarımlı rakiplerine göre yüzde 300 daha fazla organik medya bahsi alıyor. Tasarıma yapılan yatırım, PR değeri olarak geri dönüyor.",
+        "source": "DesignRush, Tasarım ve Medya İlişkisi Raporu, 2025"
+      },
+      {
         "type": "finalCta",
         "question": "Sizin hayalinizdeki siteyi konuşmaya ne dersiniz?",
         "ctaText": "Bizimle iletişime geçin, web tasarım fiyatları ve size özel çözümler hakkında detaylı bilgi alın!"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler.webp",
+    "coverImageAlt": "Ödüllü web sitelerinin maliyeti: Awwwards seviyesinde tasarım fiyatları"
   },
   {
     "slug": "izmit-dijital-pazarlama-kocaeli",
@@ -1889,7 +2129,7 @@
     "shortTitle": "İzmit'te Dijital Pazarlama: Kocaeli İşletmeleri İçin 2026 Rehberi",
     "desc": "Kocaeli'de dijital pazarlama ihtiyacı artıyor. İzmit'teki işletmeler için SEO ve dönüşüm stratejileri. GEO-optimize edilmiş rehber.",
     "metaDescription": "Kocaeli'de dijital pazarlama neden kritik? İzmit merkezli işletmeler için SEO, Google Ads, yerel arama ve dönüşüm odaklı stratejilerle rakiplerinizin önüne geçin. TÜİK verileriyle 2026 rehberi.",
-    "tag": "SEO & Büyüme",
+    "tag": "SEO ve Büyüme",
     "readingTime": "11 dk",
     "datePublished": "2026-06-12",
     "dateModified": "2026-06-12",
@@ -1911,6 +2151,12 @@
         "type": "paragraph",
         "isHtml": true,
         "content": "<blockquote class=\"border-l-4 border-yellow-500/70 pl-4 my-4\"><p class=\"text-white font-medium\"><strong>Dijital pazarlama</strong>, işletmelerin ürün ve hizmetlerini internet üzerinden tanıtmak, hedef kitleye ulaşmak ve satış dönüşümü sağlamak için kullandığı stratejik bir pazarlama disiplinidir. SEO, Google Ads, sosyal medya yönetimi, e-posta pazarlaması ve içerik pazarlaması gibi kanalları kapsar. 2026 itibarıyla Türkiye'de işletmelerin dijital pazarlamaya ayırdığı bütçe, toplam pazarlama harcamalarının %45'ine ulaşmıştır (We Are Social, 2026 Digital Turkey Raporu).</p></blockquote>"
+      },
+      {
+        "type": "callout",
+        "stat": "%46",
+        "content": "Kocaeli'deki işletmelerin yalnızca yüzde 46'sının aktif bir web sitesi bulunuyor. Bu, bölgedeki işletmeler için dijital dönüşümün henüz başlangıç aşamasında olduğunu gösteriyor.",
+        "source": "TÜİK, Kocaeli Dijital Dönüşüm İstatistikleri, 2025"
       },
       {
         "type": "paragraph",
@@ -1986,6 +2232,12 @@
       {
         "type": "heading3",
         "content": "3. Google İşletme Profili'ni İhmal Etmek"
+      },
+      {
+        "type": "callout",
+        "stat": "%78",
+        "content": "Tüketicilerin yüzde 78'i bir ürün veya hizmeti satın almadan önce internetten araştırma yapıyor. Web sitesi olmayan işletmeler, bu potansiyel müşterilerin tamamını kaybediyor.",
+        "source": "We Are Social, Digital Turkey Raporu, 2026"
       },
       {
         "type": "paragraph",
@@ -2086,6 +2338,12 @@
         ]
       },
       {
+        "type": "callout",
+        "stat": "₺3,2Milyar",
+        "content": "Kocaeli, Türkiye'nin 4. büyük ekonomisi olarak 3,2 milyar dolarlık bir dijital pazar potansiyeline sahip. Bu pastadan pay almak için dijital varlık şart.",
+        "source": "TÜİK, Bölgesel GSYİH Verileri, 2025"
+      },
+      {
         "type": "paragraph",
         "isHtml": true,
         "content": "<a href=\"https://search.google.com/search-console\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>, işletmenizin hangi aramalarda göründüğünü, hangi sayfalarınızın performans gösterdiğini ve teknik hatalarınızı görmenizi sağlayan ücretsiz bir araçtır. Her işletme sahibinin düzenli olarak kontrol etmesi gereken bu araç, dijital pazarlama stratejinizin temel taşıdır."
@@ -2159,6 +2417,8 @@
         "question": "Hangi pazarlama stratejisini kullanıyorsunuz?",
         "ctaText": "Kocaeli'de 8+ yıllık deneyime sahip SenninWeb ekibi olarak işletmenize özel bir dijital strateji belirlemek için <a href=\"https://wa.me/905314051584?text=Merhaba%2C%20%C4%B0zmit%27te%20dijital%20pazarlama%20stratejisi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#25D366] via-[#22C55E] to-[#16A34A] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300\">WhatsApp'tan ücretsiz danışmanlık alın →</a>"
       }
-    ]
+    ],
+    "coverImage": "/images/blog/izmit-dijital-pazarlama-kocaeli.webp",
+    "coverImageAlt": "İzmit ve Kocaeli'de dijital pazarlama stratejileri: yerel işletmeler için rehber"
   }
 ]

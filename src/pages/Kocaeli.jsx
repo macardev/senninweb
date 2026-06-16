@@ -129,11 +129,14 @@ export default function Kocaeli() {
   const navigate = useNavigate()
   const canonicalUrl = useCanonicalUrl()
 
+  const today = new Date().toISOString().split('T')[0]
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Kocaeli Web Tasarım ve SEO Hizmetleri",
     "url": canonicalUrl,
+    "dateModified": today,
     "provider": {
       "@type": "Organization",
       "name": "SenninWeb",
@@ -205,6 +208,13 @@ export default function Kocaeli() {
     upsertMetaByProperty("og:description", kocaeliContent.metaDescription)
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
+    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
+    upsertMetaByProperty("og:image:width", "1200")
+    upsertMetaByProperty("og:image:height", "630")
+
+    upsertMetaByName("twitter:card", "summary_large_image")
+    upsertMetaByName("twitter:title", kocaeliContent.title)
+    upsertMetaByName("twitter:description", kocaeliContent.metaDescription)
 
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -255,6 +265,7 @@ export default function Kocaeli() {
           </p>
 
           <div className="mt-8 gold-line opacity-20" />
+          <p className="mt-4 text-xs text-white/40">Son güncelleme: {today}</p>
         </div>
 
         <div className="space-y-10 text-white/70 leading-relaxed">
@@ -356,6 +367,21 @@ export default function Kocaeli() {
                 return null
             }
           })}
+        </div>
+
+        <div className="mt-16 pt-8 border-t border-white/10">
+          <p className="text-xs text-white/40 uppercase tracking-widest mb-3">Okumaya Devam Edin</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <Link to="/blog/izmit-dijital-pazarlama-kocaeli" className="text-sm text-gold-400 hover:text-gold-300 transition-colors">
+              İzmit'te dijital pazarlama rehberi →
+            </Link>
+            <Link to="/blog/kucuk-isletmeler-google-da-gorunurluk-2026" className="text-sm text-gold-400 hover:text-gold-300 transition-colors">
+              Google'da görünürlük rehberi →
+            </Link>
+            <Link to="/blog/web-sitesi-tasarim-fiyatlari-2026" className="text-sm text-gold-400 hover:text-gold-300 transition-colors">
+              2026 web tasarım fiyatları →
+            </Link>
+          </div>
         </div>
       </div>
     </article>

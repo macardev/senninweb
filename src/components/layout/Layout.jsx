@@ -1,11 +1,22 @@
-import { lazy, Suspense, useEffect, useState } from "react"
+import { lazy, Suspense, useEffect, useMemo, useState } from "react"
 import { Outlet, useLocation } from "react-router-dom"
 
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 
+const BASE = "https://www.senninweb.com"
+
 const CustomCursor = lazy(() => import("@/components/ui/CustomCursor"))
+
+const breadcrumbLabels = {
+  "/hakkimizda": "Hakkımızda",
+  "/blog": "Dijital Rehber",
+  "/gebze": "Gebze",
+  "/bilecik": "Bilecik",
+  "/kocaeli": "Kocaeli",
+  "/sss": "Sıkça Sorulan Sorular",
+}
 
 function getCursorEnabled() {
   if (typeof window === "undefined") return false
@@ -18,6 +29,22 @@ function getCursorEnabled() {
 export default function Layout() {
   const location = useLocation()
   const [cursorEnabled, setCursorEnabled] = useState(getCursorEnabled)
+
+  const breadcrumbItems = useMemo(() => {
+    const items = [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": BASE }
+    ]
+    const path = location.pathname === "/" ? null : location.pathname.replace(/\/+$/, "")
+    if (path) {
+      const label = breadcrumbLabels[path] || path.replace("/", "").replace(/-/g, " ")
+      items.push({ "@type": "ListItem", "position": 2, "name": label, "item": `${BASE}${path}` })
+      if (path.startsWith("/blog/")) {
+        items[1] = { "@type": "ListItem", "position": 2, "name": "Dijital Rehber", "item": `${BASE}/blog` }
+        items.push({ "@type": "ListItem", "position": 3, "name": "Makale", "item": `${BASE}${path}` })
+      }
+    }
+    return items
+  }, [location.pathname])
 
   useEffect(() => {
     const update = () => setCursorEnabled(getCursorEnabled())
@@ -55,8 +82,19 @@ export default function Layout() {
     setTimeout(() => scrollToIdWithRetry(id), 0)
   }, [location.pathname, location.hash])
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems,
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       {cursorEnabled && (
         <Suspense fallback={null}>
           <CustomCursor />

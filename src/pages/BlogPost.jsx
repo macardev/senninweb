@@ -233,6 +233,44 @@ function renderSection(section, index) {
         </div>
       )
 
+    case "callout":
+      return (
+        <div key={index} className="border-l-4 border-gold-500 bg-white/[0.03] rounded-r-2xl px-6 py-5 my-8">
+          {section.stat && (
+            <p className="text-3xl md:text-4xl font-bold text-gold-400 leading-tight mb-2">{section.stat}</p>
+          )}
+          <p className="text-sm md:text-base text-white/80 leading-relaxed">
+            {section.isHtml ? (
+              <span dangerouslySetInnerHTML={{ __html: section.content }} />
+            ) : (
+              section.content
+            )}
+          </p>
+          {section.source && (
+            <p className="text-xs text-white/40 mt-3 font-light">Kaynak: {section.source}</p>
+          )}
+        </div>
+      )
+
+    case "image":
+      return (
+        <figure key={index} className="-mx-6 md:-mx-0 my-8">
+          <div className="rounded-2xl overflow-hidden">
+            <img
+              src={section.src}
+              alt={section.alt || ""}
+              className="w-full aspect-video object-cover"
+              loading="lazy"
+            />
+          </div>
+          {section.caption && (
+            <figcaption className="mt-3 text-xs text-white/40 text-center italic">
+              {section.caption}
+            </figcaption>
+          )}
+        </figure>
+      )
+
     default:
       return null
   }
@@ -270,10 +308,21 @@ export default function BlogPost() {
     upsertMetaByName("viewport", "width=device-width, initial-scale=1.0")
     upsertMetaByName("robots", "index, follow")
 
+    const ogImage = post.coverImage
+      ? `https://www.senninweb.com${post.coverImage}`
+      : "https://www.senninweb.com/og-image.svg"
+
     upsertMetaByProperty("og:title", post.title)
     upsertMetaByProperty("og:description", post.metaDescription)
     upsertMetaByProperty("og:type", "article")
     upsertMetaByProperty("og:url", canonicalUrl)
+    upsertMetaByProperty("og:image", ogImage)
+    upsertMetaByProperty("og:image:width", "1200")
+    upsertMetaByProperty("og:image:height", "630")
+
+    upsertMetaByName("twitter:card", "summary_large_image")
+    upsertMetaByName("twitter:title", post.title)
+    upsertMetaByName("twitter:description", post.metaDescription)
 
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -467,7 +516,7 @@ export default function BlogPost() {
               <div className="mt-6 -mx-6 md:-mx-0 rounded-2xl overflow-hidden">
                 <img
                   src={post.coverImage}
-                  alt={post.shortTitle}
+                  alt={post.coverImageAlt || post.shortTitle}
                   className="w-full aspect-video object-cover"
                   loading="eager"
                 />

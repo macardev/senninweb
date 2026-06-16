@@ -14,6 +14,17 @@ function upsertMetaByName(name, content) {
   return el
 }
 
+function upsertMetaByProperty(property, content) {
+  let el = document.head.querySelector(`meta[property="${property}"]`)
+  if (!el) {
+    el = document.createElement("meta")
+    el.setAttribute("property", property)
+    document.head.appendChild(el)
+  }
+  el.setAttribute("content", content)
+  return el
+}
+
 function upsertLinkByRel(rel, href) {
   let el = document.head.querySelector(`link[rel="${rel}"]`)
   if (!el) {
@@ -41,6 +52,9 @@ export default function Blog() {
   useEffect(() => {
     const prevTitle = document.title
     const prevDesc = document.head.querySelector('meta[name="description"]')?.getAttribute("content") ?? null
+    const prevOgTitle = document.head.querySelector('meta[property="og:title"]')?.getAttribute("content") ?? null
+    const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
+    const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
     document.title = "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb"
@@ -48,11 +62,26 @@ export default function Blog() {
       "description",
       "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları."
     )
+    upsertMetaByProperty("og:title", "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb")
+    upsertMetaByProperty("og:description", "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları.")
+    upsertMetaByProperty("og:type", "website")
+    upsertMetaByProperty("og:url", canonicalUrl)
+    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
+    upsertMetaByProperty("og:image:width", "1200")
+    upsertMetaByProperty("og:image:height", "630")
+
+    upsertMetaByName("twitter:card", "summary_large_image")
+    upsertMetaByName("twitter:title", "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb")
+    upsertMetaByName("twitter:description", "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları.")
+
     upsertLinkByRel("canonical", canonicalUrl)
 
     return () => {
       document.title = prevTitle
       if (prevDesc !== null) upsertMetaByName("description", prevDesc)
+      if (prevOgTitle !== null) upsertMetaByProperty("og:title", prevOgTitle)
+      if (prevOgDesc !== null) upsertMetaByProperty("og:description", prevOgDesc)
+      if (prevOgUrl !== null) upsertMetaByProperty("og:url", prevOgUrl)
       if (prevCanonical !== null) upsertLinkByRel("canonical", prevCanonical)
     }
   }, [canonicalUrl])
@@ -137,7 +166,7 @@ export default function Blog() {
                     <div className="mt-4 -mx-7 rounded-none overflow-hidden">
                       <img
                         src={post.coverImage}
-                        alt={post.shortTitle}
+                        alt={post.coverImageAlt || post.shortTitle}
                         className="w-full aspect-video object-cover"
                         loading="lazy"
                       />
