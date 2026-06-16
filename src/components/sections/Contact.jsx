@@ -52,7 +52,7 @@ const handleSubmit = async (e) => {
   } catch (error) {
     console.error('EmailJS hata:', error)
     setSending(false)
-    alert('Bir hata oluştu. Lütfen doğrudan bussiness@senninweb.com adresine yazın.')
+    alert('Bir hata oluştu. Lütfen doğrudan business@senninweb.com adresine yazın.')
   }
 }
 
@@ -115,8 +115,8 @@ const handleSubmit = async (e) => {
                     </svg>
                   ),
                   label: 'E-posta',
-                  value: 'bussiness@senninweb.com',
-                  href:  'mailto:bussiness@senninweb.com',
+                  value: 'business@senninweb.com',
+                  href:  'mailto:business@senninweb.com',
                 },
                 {
                   icon: (
@@ -236,7 +236,7 @@ const handleSubmit = async (e) => {
                   Mesajınız alındı!
                 </h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  En kısa sürede bussiness@senninweb.com
+                  En kısa sürede business@senninweb.com
                   adresinden size dönüş yapacağız.
                 </p>
               </div>

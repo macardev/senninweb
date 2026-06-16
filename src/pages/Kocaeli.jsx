@@ -139,7 +139,7 @@ export default function Kocaeli() {
       "name": "SenninWeb",
       "url": "https://www.senninweb.com",
       "telephone": "+90 (531) 405 15 84",
-      "email": "bussiness@senninweb.com"
+      "email": "business@senninweb.com"
     },
     "areaServed": [
       { "@type": "City", "name": "İzmit" },
