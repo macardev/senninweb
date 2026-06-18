@@ -49,12 +49,12 @@ export default function Hakkimizda() {
     const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
-    document.title = "Hakkımızda | SenninWeb - Web Tasarım & SEO Ajansı | Premium Çözümler"
-    upsertMetaByName("description", "SenninWeb: 2025'te kurulan premium web tasarım ve SEO ajansı. KOBİ'ler için özel web tasarımı, SEO danışmanlığı ve kurumsal kimlik çözümleri.")
+    document.title = "Hakkımızda | SenninWeb"
+    upsertMetaByName("description", "Premium web tasarım ve SEO ajansı SenninWeb. 2025'te kurulduk, KOBİ'ler için özel web sitesi ve SEO çözümleri üretiyoruz. İşletmenizi Google'da görünür kılıyoruz.")
     upsertMetaByName("robots", "index, follow")
 
-    upsertMetaByProperty("og:title", "Hakkımızda | SenninWeb - Web Tasarım & SEO Ajansı | Premium Çözümler")
-    upsertMetaByProperty("og:description", "SenninWeb: 2025'te kurulan premium web tasarım ve SEO ajansı. KOBİ'ler için özel web tasarımı, SEO danışmanlığı ve kurumsal kimlik çözümleri.")
+    upsertMetaByProperty("og:title", "Hakkımızda | SenninWeb")
+    upsertMetaByProperty("og:description", "Premium web tasarım ve SEO ajansı SenninWeb. KOBİ'ler için özel web sitesi ve SEO çözümleri.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
     upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
@@ -62,8 +62,8 @@ export default function Hakkimizda() {
     upsertMetaByProperty("og:image:height", "630")
 
     upsertMetaByName("twitter:card", "summary_large_image")
-    upsertMetaByName("twitter:title", "Hakkımızda | SenninWeb - Web Tasarım & SEO Ajansı | Premium Çözümler")
-    upsertMetaByName("twitter:description", "SenninWeb: 2025'te kurulan premium web tasarım ve SEO ajansı. KOBİ'ler için özel web tasarımı, SEO danışmanlığı ve kurumsal kimlik çözümleri.")
+    upsertMetaByName("twitter:title", "Hakkımızda | SenninWeb")
+    upsertMetaByName("twitter:description", "Premium web tasarım ve SEO ajansı SenninWeb. KOBİ'ler için özel web sitesi ve SEO çözümleri.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 

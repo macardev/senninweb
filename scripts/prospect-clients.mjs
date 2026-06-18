@@ -69,7 +69,6 @@ function loadEnv() {
 }
 
 const CATEGORIES = [
-  "restoran",
   "kafe pastane",
   "kuaför berber",
   "güzellik salonu",
@@ -85,7 +84,13 @@ const CATEGORIES = [
   "bilgisayar tamir",
   "muhasebe mali müşavir",
   "terzi",
+  "ev tadilat",
+  "çatı ustası",
+  "konteynır ev",
+  "boya badana",
 ]
+
+const PRIORITY_CATEGORIES = ["ev tadilat", "çatı ustası", "konteynır ev", "boya badana", "inşaat firması"]
 
 async function searchPlaces(category) {
   const url = "https://places.googleapis.com/v1/places:searchText"
@@ -231,6 +236,43 @@ function analyzeSiteQuality(html, fetchDurationMs) {
   }
 }
 
+async function extractContactName(html, business) {
+  if (!html) return null
+  const text = html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 3000)
+  if (!text) return null
+
+  const systemPrompt = `Sayfa iceriginden isletme sahibi veya yetkilisinin adini bul.
+Sadece adi dondur, baska metin yazma.
+Bulamazsan "null" yaz.`
+
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: "gpt-4o-mini",
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: `Isletme: ${business}\n\nSayfa icerigi:\n${text}` },
+        ],
+        temperature: 0.1,
+        max_tokens: 50,
+      }),
+    })
+
+    if (!response.ok) return null
+    const data = await response.json()
+    const name = data.choices[0].message.content.trim()
+    if (!name || name.toLowerCase() === "null" || name.length > 50) return null
+    return name
+  } catch {
+    return null
+  }
+}
+
 async function generatePersonalization(prospect) {
   const systemPrompt = `Sen SenninWeb icin musteri adayi profillerini analiz eden bir stratejistsin.
 
@@ -345,6 +387,7 @@ async function main() {
         phone: place.phone,
         website: place.website,
         email: null,
+        contactName: null,
         address: place.address,
         rating: place.rating,
         userRatingCount: place.userRatingCount,
@@ -387,6 +430,12 @@ async function main() {
           prospect.email = email
           if (html) {
             prospect.siteQuality = analyzeSiteQuality(html, fetchDurationMs)
+            const name = await extractContactName(html, prospect.business)
+            if (name) {
+              prospect.contactName = name
+              log(`  → ${prospect.business}: isim bulundu -> ${name}`, colors.cyan)
+              writeLog(`  NAME FOUND: ${prospect.business} -> ${name}`)
+            }
           } else {
             prospect.siteQuality = { score: 0, issues: ["web sitesi erisilemez"], analyzedAt: new Date().toISOString().split("T")[0], pageSizeKB: 0, fetchDurationMs }
           }

@@ -192,10 +192,10 @@ export default function SSS() {
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
     document.title = "Sıkça Sorulan Sorular | SenninWeb"
-    upsertMetaByName("description", "Web tasarım, SEO, mobil uyumluluk, Google'da görünürlük, yapay zeka optimizasyonu ve daha fazlası hakkında sıkça sorulan sorular. SenninWeb ile merak ettiklerinizi öğrenin.")
+    upsertMetaByName("description", "Web siteniz neden Google'da çıkmıyor? SEO ne kadar sürer? Web tasarım fiyatları ne kadar? Tüm sorularınızı yanıtlıyoruz.")
     upsertMetaByName("robots", "index, follow")
     upsertMetaByProperty("og:title", "Sıkça Sorulan Sorular | SenninWeb")
-    upsertMetaByProperty("og:description", "Web tasarım, mobil uyumluluk, SEO, Google Ads ve daha fazlası hakkında sıkça sorulan sorular.")
+    upsertMetaByProperty("og:description", "Web siteniz neden Google'da çıkmıyor? SEO ne kadar sürer? Web tasarım fiyatları ne kadar? Tüm sorularınızı yanıtlıyoruz.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
     upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
@@ -204,7 +204,7 @@ export default function SSS() {
 
     upsertMetaByName("twitter:card", "summary_large_image")
     upsertMetaByName("twitter:title", "Sıkça Sorulan Sorular | SenninWeb")
-    upsertMetaByName("twitter:description", "Web tasarım, mobil uyumluluk, SEO, Google Ads ve daha fazlası hakkında sıkça sorulan sorular.")
+    upsertMetaByName("twitter:description", "Web siteniz neden Google'da çıkmıyor? SEO ne kadar sürer? Web tasarım fiyatları ne kadar? Tüm sorularınızı yanıtlıyoruz.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 

@@ -37,9 +37,9 @@ function upsertLinkByRel(rel, href) {
 }
 
 const gebzeContent = {
-  title: "Gebze Web Tasarım ve SEO Hizmetleri | SenninWeb",
+  title: "Gebze Web Tasarım & SEO | SenninWeb",
   shortTitle: "Gebze Web Tasarım & SEO",
-  metaDescription: "Gebze'de profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Yerel işletmeniz için Google'da üst sıralarda yer alın.",
+  metaDescription: "Gebze'de işletmeniz Google'da görünmüyor mu? Yerel SEO ve profesyonel web tasarımıyla rakiplerinizi geçin, müşteriler size gelsin.",
   description: "Gebze bölgesindeki işletmeler için özel olarak tasarlanmış web tasarım ve SEO çözümleri.",
   sections: [
     {

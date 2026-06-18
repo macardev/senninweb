@@ -57,13 +57,13 @@ export default function Blog() {
     const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
-    document.title = "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb"
+    document.title = "Blog | SenninWeb - Web Tasarım ve SEO Rehberleri"
     upsertMetaByName(
       "description",
-      "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları."
+      "Web siteniz neden müşteri getirmiyor? 2026 web tasarım fiyatları, SEO stratejileri ve dijital büyüme rehberleriyle işletmenizi Google'da üst sıralara taşıyın."
     )
-    upsertMetaByProperty("og:title", "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb")
-    upsertMetaByProperty("og:description", "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları.")
+    upsertMetaByProperty("og:title", "Blog | SenninWeb - Web Tasarım ve SEO Rehberleri")
+    upsertMetaByProperty("og:description", "Web siteniz neden müşteri getirmiyor? 2026 web tasarım fiyatları, SEO stratejileri ve dijital büyüme rehberleri.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
     upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
@@ -71,8 +71,8 @@ export default function Blog() {
     upsertMetaByProperty("og:image:height", "630")
 
     upsertMetaByName("twitter:card", "summary_large_image")
-    upsertMetaByName("twitter:title", "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb")
-    upsertMetaByName("twitter:description", "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları.")
+    upsertMetaByName("twitter:title", "Blog | SenninWeb - Web Tasarım ve SEO Rehberleri")
+    upsertMetaByName("twitter:description", "Web siteniz neden müşteri getirmiyor? 2026 web tasarım fiyatları, SEO stratejileri ve dijital büyüme rehberleri.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -89,8 +89,8 @@ export default function Blog() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Web Tasarım & SEO 2026 Rehberi: Fiyatlar, İpuçları, Stratejiler | SenninWeb",
-    "description": "Web tasarım fiyatları 2026, SEO stratejileri ve dijital büyüme rehberleri. Küçük işletmenizi Google'da üst sıralara taşıyacak ipuçları.",
+    "name": "Blog | SenninWeb - Web Tasarım ve SEO Rehberleri",
+    "description": "Web siteniz neden müşteri getirmiyor? 2026 web tasarım fiyatları, SEO stratejileri ve dijital büyüme rehberleri.",
     "url": canonicalUrl,
   }
 

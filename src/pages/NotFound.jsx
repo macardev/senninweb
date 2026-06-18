@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 
 export default function NotFound() {
   useEffect(() => {
-    document.title = "Sayfa Bulunamadı | Sennin Web"
+    document.title = "Sayfa Bulunamadı | SenninWeb"
     const desc = document.head.querySelector('meta[name="description"]')
     const orig = desc?.getAttribute("content") ?? ""
-    upsertMetaByName("description", "Aradığınız sayfa mevcut değil. Sennin Web ana sayfasına dönün.")
+    upsertMetaByName("description", "Aradığınız sayfa mevcut değil. SenninWeb ana sayfasına dönün.")
     upsertMetaByName("robots", "noindex, follow")
     return () => {
       if (orig) upsertMetaByName("description", orig)

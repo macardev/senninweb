@@ -37,9 +37,9 @@ function upsertLinkByRel(rel, href) {
 }
 
 const bilecikContent = {
-  title: "Bilecik Web Tasarım ve SEO Hizmetleri | SenninWeb",
+  title: "Bilecik Web Tasarım & SEO | SenninWeb",
   shortTitle: "Bilecik Web Tasarım & SEO",
-  metaDescription: "Bilecik'te profesyonel web tasarım, SEO ve Google Maps hizmetleri. Yerel işletmenizi Google'da üst sıralara taşıyın. Bilecik SEO danışmanlığı ve kurumsal web sitesi çözümleri.",
+  metaDescription: "Bilecik'te işletmeniz Google'da görünmüyor mu? Yerel SEO ve profesyonel web tasarımıyla rakiplerinizi geçin, müşteriler size gelsin.",
   description: "Bilecik bölgesindeki işletmeler için özel web tasarım, yerel SEO ve dijital pazarlama çözümleri.",
   sections: [
     {

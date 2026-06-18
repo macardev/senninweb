@@ -37,9 +37,9 @@ function upsertLinkByRel(rel, href) {
 }
 
 const kocaeliContent = {
-  title: "Kocaeli Web Tasarım ve SEO Hizmetleri | SenninWeb",
+  title: "Kocaeli Web Tasarım & SEO | SenninWeb",
   shortTitle: "Kocaeli Web Tasarım & SEO",
-  metaDescription: "Kocaeli'de profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. İzmit, Gebze, Körfez ve tüm Kocaeli'de işletmenizi Google'da üst sıralara taşıyın.",
+  metaDescription: "Kocaeli'de işletmeniz Google'da görünmüyor mu? Yerel SEO ve profesyonel web tasarımıyla İzmit, Gebze ve tüm Kocaeli'de rakiplerinizi geçin.",
   description: "Kocaeli genelinde işletmeler için özel web tasarım, yerel SEO ve dijital pazarlama çözümleri.",
   sections: [
     {

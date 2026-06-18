@@ -55,11 +55,11 @@ export default function Home() {
     const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
-    document.title = "Web Tasarım & SEO Hizmeti | Sennin Web"
-    upsertMetaByName("description", "Sennin Web ile premium web tasarımı, SEO danışmanlığı ve kurumsal kimlik hizmetleri alın. İşletmenizi Google'da üst sıralara taşıyın, organik müşteri kazanın.")
+    document.title = "Web Tasarım & SEO Hizmeti | SenninWeb"
+    upsertMetaByName("description", "Web siteniz Google'da yoksa müşteri kaybediyorsunuz. Premium web tasarım ve SEO ile işletmenizi dijitalde büyütün, organik müşteri kazanmaya başlayın.")
     upsertMetaByName("robots", "index, follow")
-    upsertMetaByProperty("og:title", "Web Tasarım & SEO Hizmeti | Sennin Web")
-    upsertMetaByProperty("og:description", "Premium web tasarım, SEO ve kurumsal kimlik hizmetleri. İşletmenizi dijitalde büyütün.")
+    upsertMetaByProperty("og:title", "Web Tasarım & SEO Hizmeti | SenninWeb")
+    upsertMetaByProperty("og:description", "Web siteniz Google'da yoksa müşteri kaybediyorsunuz. Premium web tasarım ve SEO ile işletmenizi dijitalde büyütün.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
     upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
@@ -67,8 +67,8 @@ export default function Home() {
     upsertMetaByProperty("og:image:height", "630")
 
     upsertMetaByName("twitter:card", "summary_large_image")
-    upsertMetaByName("twitter:title", "Web Tasarım & SEO Hizmeti | Sennin Web")
-    upsertMetaByName("twitter:description", "Premium web tasarım, SEO ve kurumsal kimlik hizmetleri. İşletmenizi dijitalde büyütün.")
+    upsertMetaByName("twitter:title", "Web Tasarım & SEO Hizmeti | SenninWeb")
+    upsertMetaByName("twitter:description", "Web siteniz Google'da yoksa müşteri kaybediyorsunuz. Premium web tasarım ve SEO ile işletmenizi dijitalde büyütün.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -86,7 +86,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Sennin Web",
+    "name": "SenninWeb",
     "url": "https://www.senninweb.com",
     "description": "KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı.",
     "dateModified": today,

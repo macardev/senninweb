@@ -75,6 +75,7 @@ function loadEnv() {
 function loadState() {
   const defaults = {
     warmupDay: 0,
+    warmupWeek: 1,
     totalSent: 0,
     consecutiveSendDays: 0,
     lastSendDate: null,
@@ -94,14 +95,14 @@ function saveState(state) {
 }
 
 function getDailyLimit(state) {
-  if (state.totalSent < 25) return 5
-  if (state.totalSent < 50) return 8
-  if (state.totalSent < 100) return 12
-  if (state.totalSent < 200) return 15
-  return 20
+  if (state.consecutiveSendDays === 0 && state.totalSent === 0) return 10
+  const week = state.warmupWeek || 1
+  return 10 + (week - 1) * 20
 }
 
 const GAP_DAYS = [0, 3, 4, 5]
+
+const PRIORITY_CATEGORIES = ["ev tadilat", "çatı ustası", "konteynır ev", "boya badana", "inşaat firması"]
 
 function daysSince(dateStr) {
   if (!dateStr) return Infinity
@@ -200,7 +201,26 @@ KURALLAR:
 - Sadece JSON dondur, baska metin yazma`
 }
 
+function getStage1Email(prospect) {
+  const greeting = prospect.contactName
+    ? `Merhaba ${prospect.contactName},`
+    : `Merhaba ${prospect.business} ekibi,`
+
+  const body = `${greeting}
+
+Ben Çağatay... Çağatay Macar, bunu konuşmamızın mantıklı olup olmadığını bilmiyorum ve elimde Google ve AI görünürlüğünüzün bir kopyasını tutuyorum. Birkaç dakikalığına bana yardımcı olur musunuz bu konuda?`
+
+  return {
+    subject: "Web ve AI ile potansiyel müşteri üretimi",
+    body,
+  }
+}
+
 async function generateEmail(stage, prospect) {
+  if (stage === 1) {
+    return getStage1Email(prospect)
+  }
+
   const systemPrompt = buildEmailSystemPrompt(stage, prospect)
 
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -274,6 +294,10 @@ async function main() {
     state.lastSendDate = today
   }
 
+  if (state.consecutiveSendDays > 0 && state.consecutiveSendDays % 5 === 0) {
+    state.warmupWeek = Math.floor(state.consecutiveSendDays / 5) + 1
+  }
+
   const dailyLimit = getDailyLimit(state)
   log(`Gunluk limit: ${dailyLimit} | Bugune kadar gonderilen: ${state.totalSent}`, colors.cyan)
   writeLog(`Daily limit: ${dailyLimit}, total sent so far: ${state.totalSent}`)
@@ -288,14 +312,18 @@ async function main() {
   })
 
   available.sort((a, b) => {
+    const aIsPriority = PRIORITY_CATEGORIES.includes(a.category)
+    const bIsPriority = PRIORITY_CATEGORIES.includes(b.category)
+    if (aIsPriority && !bIsPriority) return -1
+    if (!aIsPriority && bIsPriority) return 1
     const scoreA = a.siteQuality?.score ?? 0
     const scoreB = b.siteQuality?.score ?? 0
     return scoreA - scoreB
   })
 
   log(`E-posta gonderilebilecek: ${available.length} prospect`, colors.cyan)
-  log(`Once en kotu sitelere gonderim yapilacak (en dusuk siteQuality puani onecelikli)`, colors.cyan)
-  writeLog(`Available to send: ${available.length}, sorted by site quality asc`)
+  log(`Once oncelikli kategoriler (insaat/ev), sonra en kotu sitelere`, colors.cyan)
+  writeLog(`Available to send: ${available.length}, sorted by priority category then site quality asc`)
 
   const batch = available.slice(0, dailyLimit)
   log(`Bugun gonderilecek: ${batch.length} e-posta`, colors.cyan)
