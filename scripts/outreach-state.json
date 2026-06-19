@@ -1,6 +1,7 @@
 {
   "warmupDay": 0,
-  "totalSent": 10,
-  "consecutiveSendDays": 4,
-  "lastSendDate": "2026-06-18"
+  "warmupWeek": 2,
+  "totalSent": 40,
+  "consecutiveSendDays": 5,
+  "lastSendDate": "2026-06-19"
 }
