@@ -41,7 +41,7 @@ function log(msg, color = "") {
 }
 
 function loadEnv() {
-  if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD && process.env.OPENAI_API_KEY) return
+  if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) return
   if (!fs.existsSync(ENV_FILE)) {
     log("FATAL: .env dosyasi bulunamadi.", colors.red)
     process.exit(1)
@@ -64,10 +64,6 @@ function loadEnv() {
   }
   if (!process.env.GMAIL_APP_PASSWORD) {
     log("FATAL: GMAIL_APP_PASSWORD bulunamadi.", colors.red)
-    process.exit(1)
-  }
-  if (!process.env.OPENAI_API_KEY) {
-    log("FATAL: OPENAI_API_KEY bulunamadi.", colors.red)
     process.exit(1)
   }
 }
@@ -138,69 +134,6 @@ async function sendGmailEmail(to, subject, text) {
   })
 }
 
-function buildEmailSystemPrompt(stage, prospect) {
-  const stageTemplates = {
-    1: {
-      role: `Birinci e-posta — Google'da gozlem ve ucretsiz analiz teklifi`,
-      instructions: `Aciklayici ve dikkat cekici bir konu satiri kullan (isletme adi veya sektore dair kisa bir sey).
-Google'da isletmeyi arattiginda ne buldugunu anlat. Web sitesi yoksa bunu belirt, varsa eksiklerden bahset.
-SenninWeb'in ucretsiz web sitesi saglik raporu sundugunu soyle. Dusuk eforlu bir CTA: "Uygun bir vakitte ucretsiz analiz gondereyim mi?"
-Kisa, samimi, profesyonel Turkce. 4-5 cumle.`,
-    },
-    2: {
-      role: `Ikinci e-posta — Basari hikayesi (ornek olay)`,
-      instructions: `Gecen hafta gonderdigin epostaya atif yapmadan, direkt ornege gel.
-Miss Butik Pasta (gebze'de bir pasta butigi) ornegini ver: Sifirdan profesyonel web sitesi yaptik, simdi Google'da ilk sayfada ve musteri cekiyor.
-Onlar da ayni sekilde Google'da gorunur hale gelebilir.
-CTA olarak "Sizin isletmeniz icin de bir ornek gondereyim mi?" veya "Uygun musunuz?" de.
-4-5 cumle, samimi.`,
-    },
-    3: {
-      role: `Ucuncu e-posta — Engel giderme (fiyat/sure kaygisi)`,
-      instructions: `Fiyat ve teslim suresiyle ilgili kaygilari anladigini belirt.
-8 gunde yayinda olduklarini, her seyin tek fiyatla (sakli maliyet yok) sunuldugunu anlat.
-30 gun ucretsiz destek, 48 saatte demo gibi somut vaatler ver.
-"Ortalama 8 gunde siteniz yayinda — bunu duymak sasirtici mi?" gibi bir soru sor.
-5 cumle.`,
-    },
-    4: {
-      role: `Dorduncu e-posta — Veda (son sans)`,
-      instructions: `Rahatsiz etmek istemedigini ama bir kez daha hatirlatmak istedigini belirt.
-Web sitesi olmayan isletmelerin Google'da gorunmesinin imkansiz oldugunu kibarca hatirlat.
-Teklifin hala gecerli oldugunu, hazir olduklarinda burada oldugunu soyle.
-Kisa ve saygili. "Hayirli gunler, Cagatay" ile bitir.
-3-4 cumle.`,
-    },
-  }
-
-  const stageInfo = stageTemplates[stage] || stageTemplates[1]
-
-  return `Sen SenninWeb adina musteri adaylarina e-posta gonderen bir pazarlamacisin.
-
-SenninWeb, web tasarim, SEO ve dijital pazarlama hizmetleri sunan bir ajans. Merkezi Kocaeli/Gebze.
-
-Simdi: ${stageInfo.role}
-
-Isletme bilgileri:
-- Isletme: ${prospect.business}
-- Kategori: ${prospect.category}
-- Web sitesi: ${prospect.website || "YOK"}
-- Google puani: ${prospect.rating || "Bilinmiyor"}
-- Adres: ${prospect.address || "Bilinmiyor"}
-
-Kisisellestirme notu: ${prospect.personalizationNote || "Genel bir yaklasim kullan"}
-
-KURALLAR:
-- Sadece e-posta icerigini yaz (konu + govde)
-- Konu satirini 2-5 kelime, kucuk harf, noktalama isareti yok
-- Govde duz metin, HTML degil
-- Samimi ve profesyonel Turkce
-- "I hope this email finds you well" veya benzeri kalip ifadeler KULLANMA
-- Cagatay Macar olarak imzala
-- JSON formatinda: { "subject": "...", "body": "..." }
-- Sadece JSON dondur, baska metin yazma`
-}
-
 function getStage1Email(prospect) {
   const greeting = prospect.contactName
     ? `Merhaba ${prospect.contactName},`
@@ -211,47 +144,49 @@ function getStage1Email(prospect) {
 Ben Çağatay... Çağatay Macar, bunu konuşmamızın mantıklı olup olmadığını bilmiyorum ve elimde Google ve AI görünürlüğünüzün bir kopyasını tutuyorum. Birkaç dakikalığına bana yardımcı olur musunuz bu konuda?`
 
   return {
-    subject: "Web ve AI ile potansiyel müşteri üretimi",
+    subject: `(${prospect.business}/SenninWeb)`,
     body,
   }
 }
 
+function getStage2Email(prospect) {
+  return {
+    subject: `(${prospect.business}/SenninWeb)`,
+    body: `Bunu konuşmamız mantıklı mı emin değilim. Sadece şirketinizde, potansiyel müşteri üretimi ve aylık gelirinizi arttırma konusunda kim sorumlu onu öğrenmek için aradım. Bunun için kimle konuşmalıyım?`,
+  }
+}
+
+function getStage3Email(prospect) {
+  return {
+    subject: `(${prospect.business}/SenninWeb)`,
+    body: `Potansiyel müşteri üretimi ve belki de aylık gelirinizi 1.5x - 2x arttırma konusundan bahsettik. Bu konuda, şirketinizi olumsuz etkileyen durum nedir?
+
+Bu olumsuz durum ne kadardır devam ediyor?
+
+Bu durumu çözmek için ne denediniz?
+
+Bu çözülmezse ne gibi sonuçlar olur?`,
+  }
+}
+
+function getStage4Email(prospect) {
+  return {
+    subject: `(${prospect.business}/SenninWeb)`,
+    body: `Bu konuda yardım ister misiniz?
+
+Zoom: [Zoom görüşme linkinizi buraya ekleyin]
+WhatsApp: [WhatsApp görüşme linkinizi buraya ekleyin]`,
+  }
+}
+
 async function generateEmail(stage, prospect) {
-  if (stage === 1) {
-    return getStage1Email(prospect)
+  switch (stage) {
+    case 1: return getStage1Email(prospect)
+    case 2: return getStage2Email(prospect)
+    case 3: return getStage3Email(prospect)
+    case 4: return getStage4Email(prospect)
+    default: return getStage1Email(prospect)
   }
-
-  const systemPrompt = buildEmailSystemPrompt(stage, prospect)
-
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: "gpt-4o-mini",
-      messages: [
-        { role: "system", content: systemPrompt },
-        { role: "user", content: `"${prospect.business}" isletmesi icin ${stage}. epostayi olustur.` },
-      ],
-      temperature: 0.7,
-      max_tokens: 500,
-    }),
-  })
-
-  if (!response.ok) {
-    const err = await response.text()
-    throw new Error(`OpenAI hatasi (${response.status}): ${err}`)
-  }
-
-  const data = await response.json()
-  let content = data.choices[0].message.content.trim()
-
-  const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)```/)
-  const jsonStr = jsonMatch ? jsonMatch[1] : content
-
-  return JSON.parse(jsonStr)
 }
 
 async function main() {
@@ -349,8 +284,8 @@ async function main() {
     try {
       emailContent = await generateEmail(stage, prospect)
     } catch (err) {
-      log(`   AI uretim hatasi: ${err.message}`, colors.red)
-      writeLog(`AI generation error for ${prospect.business}: ${err.message}`)
+      log(`   E-posta olusturma hatasi: ${err.message}`, colors.red)
+      writeLog(`Email generation error for ${prospect.business}: ${err.message}`)
       failed++
       continue
     }
