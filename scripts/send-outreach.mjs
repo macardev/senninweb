@@ -96,7 +96,7 @@ function getDailyLimit(state) {
   return 10 + (week - 1) * 20
 }
 
-const GAP_DAYS = [0, 3, 4, 5]
+
 
 const PRIORITY_CATEGORIES = ["ev tadilat", "çatı ustası", "konteynır ev", "boya badana", "inşaat firması"]
 
@@ -149,44 +149,10 @@ Ben Çağatay... Çağatay Macar, bunu konuşmamızın mantıklı olup olmadığ
   }
 }
 
-function getStage2Email(prospect) {
-  return {
-    subject: `(${prospect.business}/SenninWeb)`,
-    body: `Bunu konuşmamız mantıklı mı emin değilim. Sadece şirketinizde, potansiyel müşteri üretimi ve aylık gelirinizi arttırma konusunda kim sorumlu onu öğrenmek için aradım. Bunun için kimle konuşmalıyım?`,
-  }
-}
 
-function getStage3Email(prospect) {
-  return {
-    subject: `(${prospect.business}/SenninWeb)`,
-    body: `Potansiyel müşteri üretimi ve belki de aylık gelirinizi 1.5x - 2x arttırma konusundan bahsettik. Bu konuda, şirketinizi olumsuz etkileyen durum nedir?
 
-Bu olumsuz durum ne kadardır devam ediyor?
-
-Bu durumu çözmek için ne denediniz?
-
-Bu çözülmezse ne gibi sonuçlar olur?`,
-  }
-}
-
-function getStage4Email(prospect) {
-  return {
-    subject: `(${prospect.business}/SenninWeb)`,
-    body: `Bu konuda yardım ister misiniz?
-
-Zoom: [Zoom görüşme linkinizi buraya ekleyin]
-WhatsApp: [WhatsApp görüşme linkinizi buraya ekleyin]`,
-  }
-}
-
-async function generateEmail(stage, prospect) {
-  switch (stage) {
-    case 1: return getStage1Email(prospect)
-    case 2: return getStage2Email(prospect)
-    case 3: return getStage3Email(prospect)
-    case 4: return getStage4Email(prospect)
-    default: return getStage1Email(prospect)
-  }
+async function generateEmail(prospect) {
+  return getStage1Email(prospect)
 }
 
 async function main() {
@@ -240,10 +206,8 @@ async function main() {
   const available = prospects.filter(p => {
     if (p.replied || p.bounced) return false
     if (!p.email) return false
-    if (p.outreachStage >= 4) return false
-    if (p.outreachStage === 0) return true
-    const gap = GAP_DAYS[p.outreachStage] || 3
-    return daysSince(p.lastEmailDate) >= gap
+    if (p.outreachStage >= 1) return false
+    return true
   })
 
   available.sort((a, b) => {
@@ -277,12 +241,12 @@ async function main() {
   for (const prospect of batch) {
     const stage = prospect.outreachStage + 1
 
-    log(`[${sent + 1}/${batch.length}] ${prospect.business} -> ${prospect.email} (eposta ${stage}/4)`, colors.cyan)
-    writeLog(`Generating email for ${prospect.business} (${prospect.email}), stage ${stage}`)
+    log(`[${sent + 1}/${batch.length}] ${prospect.business} -> ${prospect.email} (ilk eposta)`, colors.cyan)
+    writeLog(`Generating email for ${prospect.business} (${prospect.email})`)
 
     let emailContent
     try {
-      emailContent = await generateEmail(stage, prospect)
+      emailContent = await generateEmail(prospect)
     } catch (err) {
       log(`   E-posta olusturma hatasi: ${err.message}`, colors.red)
       writeLog(`Email generation error for ${prospect.business}: ${err.message}`)

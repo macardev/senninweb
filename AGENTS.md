@@ -46,7 +46,7 @@ No lint, typecheck, or test commands exist.
 
 **`scripts/send-outreach.mjs`** — Daily cold email sending
 - Reads `prospects.json`, picks batch due for their next email
-- OpenAI generates personalized Turkish email (4-sequence: observation → case study → objection → breakup)
+- OpenAI generates personalized Turkish email
 - Sends via Google Workspace SMTP (nodemailer → smtp.gmail.com, `business@senninweb.com`)
 - Tracks warmup (5→8→12→15→20/day), gaps between emails (3-5 days), replies, bounces
 - State in `scripts/outreach-state.json`
