@@ -40,7 +40,7 @@ const content = {
   title: "E-Ticaret Çözümleri | SenninWeb - Online Satış Siteleri",
   shortTitle: "E-Ticaret Çözümleri",
   metaDescription: "Profesyonel e-ticaret sitesi kurulumu: ödeme entegrasyonu, SEO altyapısı, mobil uyumlu online mağaza. İşletmenizi 7/24 satış yapacak şekilde dijital dönüşüme hazırlıyoruz.",
-  description: "İşletmenizi 7/24 satış yapacak şekilde dijital dönüşüme hazırlıyoruz. Ödeme entegrasyonlu, SEO uyumlu ve mobil dostu e-ticaret siteleri kuruyoruz.",
+  description: "E-ticaret, ürün ve hizmetlerin çevrimiçi platformlar üzerinden satışa sunulmasıdır. Bir e-ticaret sitesi; ödeme altyapısı, ürün yönetim sistemi, kargo entegrasyonu ve müşteri yönetimi gibi bileşenleri içerir. Güvenli ödeme, mobil uyumluluk ve SEO uyumu başarılı bir e-ticaret platformunun temel gereklilikleridir.",
   sections: [
     {
       type: "heroSection",
@@ -115,6 +115,20 @@ const content = {
       type: "paragraph",
       "isHtml": true,
       "content": "İlk adım çok basit: <strong>Ücretsiz teklifinizi alın</strong>, işletmenizi analiz edelim ve size özel e-ticaret çözümümüzü sunalım. Gerisini biz hallederiz."
+    },
+    {
+      type: "caseStudy",
+      title: "Örnek Projeler",
+      items: [
+        {
+          client: "Miss Butik Pasta",
+          domain: "missbutikpasta.com",
+          category: "Butik Pasta · Gebze",
+          description: "Gebze bölgesinde siparişe özel tasarımlı pasta üreten butik pastacı için dijital vitrin ve sipariş altyapısına sahip bir web sitesi geliştirildi. Site, ürünlerin görsel olarak sergilenmesini ve müşterilerin kolayca sipariş vermesini sağlamaktadır.",
+          features: ["Özel gün pastaları tasarımı", "Siparişe özel kişiselleştirme", "Modern dijital vitrin", "Mobil uyumlu arayüz"],
+          url: "https://missbutikpasta.com"
+        }
+      ]
     },
     {
       type: "finalCta",
@@ -309,6 +323,47 @@ export default function HizmetETicaret() {
                         </div>
                       ))}
                     </div>
+                  </div>
+                )
+              case "caseStudy":
+                return (
+                  <div key={index} className="space-y-6">
+                    <h2 className="text-2xl md:text-3xl font-display font-semibold text-white pt-8">
+                      {section.title}
+                    </h2>
+                    {section.items.map((item, i) => (
+                      <div key={i} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div>
+                            <h3 className="font-display font-bold text-xl text-white">
+                              {item.client}
+                            </h3>
+                            <p className="text-xs text-white/50">{item.domain} · {item.category}</p>
+                          </div>
+                        </div>
+                        <p className="text-sm md:text-base text-white/65 leading-relaxed mb-5">
+                          {item.description}
+                        </p>
+                        <div className="space-y-2 mb-5">
+                          {item.features.map((feat, fi) => (
+                            <div key={fi} className="flex items-center gap-2.5">
+                              <span className="w-1 h-1 rounded-full bg-gold-500/60 flex-shrink-0" />
+                              <span className="text-sm text-white/60">{feat}</span>
+                            </div>
+                          ))}
+                        </div>
+                        {item.url && (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm text-gold-400 hover:text-gold-300 transition-colors"
+                          >
+                            Siteyi Ziyaret Et →
+                          </a>
+                        )}
+                      </div>
+                    ))}
                   </div>
                 )
               case "finalCta":

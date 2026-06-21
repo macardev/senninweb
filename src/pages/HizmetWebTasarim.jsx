@@ -40,7 +40,7 @@ const content = {
   title: "Web Tasarım Hizmeti | SenninWeb - Premium Web Sitesi Tasarımı",
   shortTitle: "Web Tasarım Hizmeti",
   metaDescription: "Profesyonel web tasarım hizmeti: mobil uyumlu, hızlı yüklenen, SEO altyapılı kurumsal web siteleri. İşletmenize özel tasarım ve 3D animasyonlarla rakiplerinizden sıyrılın.",
-  description: "İşletmenizi dijitalde en iyi şekilde temsil eden, mobil uyumlu ve dönüşüm odaklı web siteleri tasarlıyoruz.",
+  description: "Web tasarım, web sitelerinin kullanıcı arayüzü, görsel estetik ve teknik performans bileşenlerinin planlanarak geliştirilmesidir. Mobil cihazlarla uyumluluk, hızlı yüklenme süreleri ve arama motoru görünürlüğü modern web tasarımının temel gereklilikleridir. Kurumsal web siteleri, marka kimliğini dijital ortamda temsil eden önemli bir iletişim aracıdır.",
   sections: [
     {
       type: "heroSection",
@@ -120,6 +120,28 @@ const content = {
       type: "paragraph",
       "isHtml": true,
       "content": "İlk adım çok basit: <strong>Ücretsiz teklifinizi alın</strong>, mevcut web sitenizi analiz edelim ve ihtiyaçlarınıza göre bir yol haritası çıkaralım. Gerisini biz hallederiz."
+    },
+    {
+      type: "caseStudy",
+      title: "Örnek Projeler",
+      items: [
+        {
+          client: "Miss Butik Pasta",
+          domain: "missbutikpasta.com",
+          category: "Butik Pasta · Gebze",
+          description: "Gebze bölgesinde siparişe özel tasarımlı pasta üreten butik pastacı için modern, mobil uyumlu ve görsel odaklı bir web sitesi geliştirildi. Sıfırdan tasarlanan site, markanın dijital vitrini olarak hizmet vermektedir.",
+          features: ["Özel gün pastaları tasarımı", "Siparişe özel kişiselleştirme", "Modern dijital vitrin", "Mobil uyumlu arayüz"],
+          url: "https://missbutikpasta.com"
+        },
+        {
+          client: "Utsuri AI",
+          domain: "utsuriai.com",
+          category: "AI SaaS · Moda Teknolojisi",
+          description: "Moda markaları için yapay zeka destekli model fotoğrafı üretim platformu. Gerçek fotoğraf çekimi olmadan, dakikalar içinde profesyonel ürün görselleri üreten SaaS ürünü için kapsamlı bir web sitesi tasarlandı.",
+          features: ["AI destekli model fotoğrafı üretimi", "Çoklu şablon & stil sistemi", "Türkçe arayüz & yerel destek", "SaaS abonelik altyapısı"],
+          url: "https://www.utsuriai.com"
+        }
+      ]
     },
     {
       type: "finalCta",
@@ -321,6 +343,47 @@ export default function HizmetWebTasarim() {
                         </div>
                       ))}
                     </div>
+                  </div>
+                )
+              case "caseStudy":
+                return (
+                  <div key={index} className="space-y-6">
+                    <h2 className="text-2xl md:text-3xl font-display font-semibold text-white pt-8">
+                      {section.title}
+                    </h2>
+                    {section.items.map((item, i) => (
+                      <div key={i} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div>
+                            <h3 className="font-display font-bold text-xl text-white">
+                              {item.client}
+                            </h3>
+                            <p className="text-xs text-white/50">{item.domain} · {item.category}</p>
+                          </div>
+                        </div>
+                        <p className="text-sm md:text-base text-white/65 leading-relaxed mb-5">
+                          {item.description}
+                        </p>
+                        <div className="space-y-2 mb-5">
+                          {item.features.map((feat, fi) => (
+                            <div key={fi} className="flex items-center gap-2.5">
+                              <span className="w-1 h-1 rounded-full bg-gold-500/60 flex-shrink-0" />
+                              <span className="text-sm text-white/60">{feat}</span>
+                            </div>
+                          ))}
+                        </div>
+                        {item.url && (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm text-gold-400 hover:text-gold-300 transition-colors"
+                          >
+                            Siteyi Ziyaret Et →
+                          </a>
+                        )}
+                      </div>
+                    ))}
                   </div>
                 )
               case "finalCta":

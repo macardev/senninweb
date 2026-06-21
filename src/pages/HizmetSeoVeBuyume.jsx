@@ -40,7 +40,7 @@ const content = {
   title: "SEO & Büyüme Hizmeti | SenninWeb - Arama Motoru Optimizasyonu",
   shortTitle: "SEO & Büyüme Hizmeti",
   metaDescription: "Profesyonel SEO hizmeti: yerel SEO, teknik SEO, AEO/GEO optimizasyonu ve anahtar kelime stratejisi. Google'da üst sıralara çıkın, organik trafiğinizi katlayın.",
-  description: "Arama motorlarında üst sıralara çıkmanız için kapsamlı SEO stratejileri, yerel optimizasyon ve yapay zeka arama motorlarına uyumlu içerik çözümleri sunuyoruz.",
+  description: "Arama motoru optimizasyonu (SEO), web sitelerinin Google ve diğer arama motorlarında organik olarak üst sıralarda yer alması için yapılan çalışmaların bütünüdür. Teknik SEO, yerel SEO ve içerik optimizasyonu bu alanın temel disiplinleridir. 2020'li yılların ortasından itibaren yapay zeka destekli arama motorları (ChatGPT, Perplexity, Gemini) için optimizasyon (AEO/GEO) da SEO stratejilerinin önemli bir parçası haline gelmiştir.",
   sections: [
     {
       type: "heroSection",
@@ -110,6 +110,20 @@ const content = {
       type: "paragraph",
       "isHtml": true,
       "content": "İlk adım çok basit: <strong>Ücretsiz teklifinizi alın</strong>, web sitenizi ve mevcut SEO durumunuzu analiz edelim. Gerisini biz hallederiz."
+    },
+    {
+      type: "caseStudy",
+      title: "Örnek Projeler",
+      items: [
+        {
+          client: "Mahir Akar",
+          domain: "mahirakarremax.com",
+          category: "Gayrimenkul Danışmanlığı",
+          description: "Pendik, Kartal ve Tuzla bölgelerinde uzman gayrimenkul danışmanı için lokal SEO odaklı kurumsal web sitesi geliştirildi. Bölgesel anahtar kelimelerle yapılan optimizasyon sayesinde danışmanın Google'da yerel aramalarda görünürlüğü artırıldı.",
+          features: ["Lokal SEO optimizasyonu", "Modern responsive tasarım", "Kurumsal kimlik & prestij", "Mobil uyumlu arayüz"],
+          url: "https://mahirakarremax.com"
+        }
+      ]
     },
     {
       type: "finalCta",
@@ -313,6 +327,47 @@ export default function HizmetSeoVeBuyume() {
                         </div>
                       ))}
                     </div>
+                  </div>
+                )
+              case "caseStudy":
+                return (
+                  <div key={index} className="space-y-6">
+                    <h2 className="text-2xl md:text-3xl font-display font-semibold text-white pt-8">
+                      {section.title}
+                    </h2>
+                    {section.items.map((item, i) => (
+                      <div key={i} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div>
+                            <h3 className="font-display font-bold text-xl text-white">
+                              {item.client}
+                            </h3>
+                            <p className="text-xs text-white/50">{item.domain} · {item.category}</p>
+                          </div>
+                        </div>
+                        <p className="text-sm md:text-base text-white/65 leading-relaxed mb-5">
+                          {item.description}
+                        </p>
+                        <div className="space-y-2 mb-5">
+                          {item.features.map((feat, fi) => (
+                            <div key={fi} className="flex items-center gap-2.5">
+                              <span className="w-1 h-1 rounded-full bg-gold-500/60 flex-shrink-0" />
+                              <span className="text-sm text-white/60">{feat}</span>
+                            </div>
+                          ))}
+                        </div>
+                        {item.url && (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm text-gold-400 hover:text-gold-300 transition-colors"
+                          >
+                            Siteyi Ziyaret Et →
+                          </a>
+                        )}
+                      </div>
+                    ))}
                   </div>
                 )
               case "finalCta":
