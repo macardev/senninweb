@@ -16,6 +16,10 @@ const breadcrumbLabels = {
   "/bilecik": "Bilecik",
   "/kocaeli": "Kocaeli",
   "/sss": "Sıkça Sorulan Sorular",
+  "/hizmet/web-tasarim": "Web Tasarım",
+  "/hizmet/seo-ve-buyume": "SEO & Büyüme",
+  "/hizmet/eticaret-cozumleri": "E-Ticaret Çözümleri",
+  "/hizmet/dijital-pazarlama": "Dijital Pazarlama",
 }
 
 function getCursorEnabled() {
@@ -103,7 +107,7 @@ export default function Layout() {
 
       <Navbar />
 
-      <div className="min-h-screen flex flex-col bg-black text-white max-w-full">
+      <div className="min-h-screen flex flex-col bg-black text-white max-w-full relative z-10">
         <main className="flex-1 pt-28 w-full">
           <Outlet />
         </main>

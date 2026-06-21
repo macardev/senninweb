@@ -12,6 +12,10 @@ const Gebze = lazy(() => import("@/pages/Gebze"))
 const Bilecik = lazy(() => import("@/pages/Bilecik"))
 const Kocaeli = lazy(() => import("@/pages/Kocaeli"))
 const SSS = lazy(() => import("@/pages/SSS"))
+const HizmetWebTasarim = lazy(() => import("@/pages/HizmetWebTasarim"))
+const HizmetSeoVeBuyume = lazy(() => import("@/pages/HizmetSeoVeBuyume"))
+const HizmetETicaret = lazy(() => import("@/pages/HizmetETicaret"))
+const HizmetDijitalPazarlama = lazy(() => import("@/pages/HizmetDijitalPazarlama"))
 const NotFound = lazy(() => import("@/pages/NotFound"))
 
 export default function App() {
@@ -54,6 +58,26 @@ export default function App() {
           <Route path="/sss" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <SSS />
+            </Suspense>
+          } />
+          <Route path="/hizmet/web-tasarim" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <HizmetWebTasarim />
+            </Suspense>
+          } />
+          <Route path="/hizmet/seo-ve-buyume" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <HizmetSeoVeBuyume />
+            </Suspense>
+          } />
+          <Route path="/hizmet/eticaret-cozumleri" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <HizmetETicaret />
+            </Suspense>
+          } />
+          <Route path="/hizmet/dijital-pazarlama" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <HizmetDijitalPazarlama />
             </Suspense>
           } />
           <Route path="*" element={

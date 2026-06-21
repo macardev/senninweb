@@ -3,7 +3,17 @@ import { Link, useLocation, useNavigate } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 
 const navLinks = [
-  { label: 'Hizmetler',   href: '/#services' },
+  {
+    label: 'Hizmetler',
+    href: '#',
+    submenu: [
+      { label: 'Web Tasarım', href: '/hizmet/web-tasarim' },
+      { label: 'SEO & Büyüme', href: '/hizmet/seo-ve-buyume' },
+      { label: 'E-Ticaret Çözümleri', href: '/hizmet/eticaret-cozumleri' },
+      { label: 'Dijital Pazarlama', href: '/hizmet/dijital-pazarlama' },
+      { label: 'Tüm Hizmetler', href: '/#services' },
+    ]
+  },
   { label: 'Referanslar', href: '/#references' },
   { label: 'Hakkımızda',  href: '/hakkimizda' },
   { label: 'İletişim',    href: '/#contact' },
@@ -25,8 +35,8 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled,  setScrolled]  = useState(false)
   const [menuOpen,  setMenuOpen]  = useState(false)
-  const [regionsOpen, setRegionsOpen] = useState(false)
-  const [mobileRegionsOpen, setMobileRegionsOpen] = useState(false)
+  const [openSubmenu, setOpenSubmenu] = useState(null)
+  const [mobileOpenSubmenu, setMobileOpenSubmenu] = useState(null)
   const navigate = useNavigate()
   const location = useLocation()
   const scrollRAF = useRef(null)
@@ -109,16 +119,17 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-10">
          {navLinks.map(link => {
           if (link.submenu) {
+            const isOpen = openSubmenu === link.label
             return (
               <div
                 key={link.label}
                 className="relative"
                 onMouseEnter={() => {
                   if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
-                  setRegionsOpen(true)
+                  setOpenSubmenu(link.label)
                 }}
                 onMouseLeave={() => {
-                  closeTimeoutRef.current = setTimeout(() => setRegionsOpen(false), 200)
+                  closeTimeoutRef.current = setTimeout(() => setOpenSubmenu(null), 200)
                 }}
               >
                   <button
@@ -130,8 +141,8 @@ export default function Navbar() {
                   </svg>
                 </button>
 
-                {regionsOpen && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 bg-black/95 backdrop-blur-xl border border-white/10 rounded-xl py-2 z-50">
+                {isOpen && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-black/95 backdrop-blur-xl border border-white/10 rounded-xl py-2 z-50">
                     {link.submenu.map((item, idx) => {
                       if (item.disabled) {
                         return (
@@ -143,12 +154,27 @@ export default function Navbar() {
                           </span>
                         )
                       }
+                      if (item.href.startsWith("/#")) {
+                        return (
+                          <a
+                            key={item.href}
+                            href={item.href}
+                            onClick={(e) => {
+                              handleNav(e, item.href)
+                              setOpenSubmenu(null)
+                            }}
+                            className="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors min-h-[44px] flex items-center"
+                          >
+                            {item.label}
+                          </a>
+                        )
+                      }
                       return (
                         <Link
                           key={item.href}
                           to={item.href}
                           className="block px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors min-h-[44px] flex items-center"
-                          onClick={() => setRegionsOpen(false)}
+                          onClick={() => setOpenSubmenu(null)}
                         >
                           {item.label}
                         </Link>
@@ -233,19 +259,20 @@ export default function Navbar() {
         <div className="px-6 py-8 flex flex-col gap-7">
           {navLinks.map(link => {
             if (link.submenu) {
+              const isMobileOpen = mobileOpenSubmenu === link.label
               return (
                 <div key={link.label}>
                   <button
-                    onClick={() => setMobileRegionsOpen(o => !o)}
+                    onClick={() => setMobileOpenSubmenu(o => o === link.label ? null : link.label)}
                     className="text-xl font-display font-semibold text-white/70 hover:text-white transition-colors flex items-center gap-2 min-h-[44px]"
                   >
                     {link.label}
-                    <svg className={`w-4 h-4 transition-transform duration-300 ${mobileRegionsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className={`w-4 h-4 transition-transform duration-300 ${isMobileOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
 
-                  {mobileRegionsOpen && (
+                  {isMobileOpen && (
                     <div className="ml-4 mt-3 flex flex-col gap-3">
                       {link.submenu.map((item, idx) => {
                         if (item.disabled) {
@@ -255,13 +282,29 @@ export default function Navbar() {
                             </span>
                           )
                         }
+                        if (item.href.startsWith("/#")) {
+                          return (
+                            <a
+                              key={item.href}
+                              href={item.href}
+                              onClick={(e) => {
+                                handleNav(e, item.href)
+                                setMenuOpen(false)
+                                setMobileOpenSubmenu(null)
+                              }}
+                              className="text-lg text-white/70 hover:text-white transition-colors min-h-[44px] flex items-center"
+                            >
+                              {item.label}
+                            </a>
+                          )
+                        }
                         return (
                           <Link
                             key={item.href}
                             to={item.href}
                             onClick={() => {
                               setMenuOpen(false)
-                              setMobileRegionsOpen(false)
+                              setMobileOpenSubmenu(null)
                             }}
                             className="text-lg text-white/70 hover:text-white transition-colors min-h-[44px] flex items-center"
                           >

@@ -79,6 +79,26 @@ prerender(
   'Sıkça Sorulan Sorular | SenninWeb',
   'Web tasarım, SEO, AEO, GEO ve daha fazlası hakkında sıkça sorulan sorular. SenninWeb ile dijital dünyada merak ettiklerinizi öğrenin.'
 )
+prerender(
+  '/hizmet/web-tasarim',
+  'Web Tasarım Hizmeti | SenninWeb - Premium Web Sitesi Tasarımı',
+  'Profesyonel web tasarım hizmeti: mobil uyumlu, hızlı yüklenen, SEO altyapılı kurumsal web siteleri. İşletmenize özel tasarım ve 3D animasyonlarla rakiplerinizden sıyrılın.'
+)
+prerender(
+  '/hizmet/seo-ve-buyume',
+  'SEO & Büyüme Hizmeti | SenninWeb - Arama Motoru Optimizasyonu',
+  'Profesyonel SEO hizmeti: yerel SEO, teknik SEO, AEO/GEO optimizasyonu ve anahtar kelime stratejisi. Google\'da üst sıralara çıkın, organik trafiğinizi katlayın.'
+)
+prerender(
+  '/hizmet/eticaret-cozumleri',
+  'E-Ticaret Çözümleri | SenninWeb - Online Satış Siteleri',
+  'Profesyonel e-ticaret sitesi kurulumu: ödeme entegrasyonu, SEO altyapısı, mobil uyumlu online mağaza. İşletmenizi 7/24 satış yapacak şekilde dijital dönüşüme hazırlıyoruz.'
+)
+prerender(
+  '/hizmet/dijital-pazarlama',
+  'Dijital Pazarlama Hizmeti | SenninWeb - Online Büyüme Çözümleri',
+  'Profesyonel dijital pazarlama hizmeti: Google Ads, sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu. Markanızı dijitalde büyütün, müşterilerinize ulaşın.'
+)
 
 // Blog posts
 for (const post of blogPosts) {
@@ -95,6 +115,10 @@ const pages = [
   { loc: '/kocaeli', priority: '0.9' },
   ...blogPosts.map(p => ({ loc: `/blog/${p.slug}`, priority: '0.7' })),
   { loc: '/sss', priority: '0.8' },
+  { loc: '/hizmet/web-tasarim', priority: '0.9' },
+  { loc: '/hizmet/seo-ve-buyume', priority: '0.9' },
+  { loc: '/hizmet/eticaret-cozumleri', priority: '0.9' },
+  { loc: '/hizmet/dijital-pazarlama', priority: '0.9' },
 ]
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

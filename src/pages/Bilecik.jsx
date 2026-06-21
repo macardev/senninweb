@@ -99,6 +99,15 @@ const bilecikContent = {
       ]
     },
     {
+      type: "heading2",
+      content: "Tüm Hizmetlerimizi Keşfedin"
+    },
+    {
+      type: "paragraph",
+      "isHtml": true,
+      content: "Bilecik'te işletmeniz için sunduğumuz tüm dijital çözümleri detaylı olarak inceleyin. Size özel <a href=\"/hizmet/web-tasarim\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">web tasarım</a>, <a href=\"/hizmet/seo-ve-buyume\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">SEO & büyüme</a>, <a href=\"/hizmet/eticaret-cozumleri\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">e-ticaret çözümleri</a> ve <a href=\"/hizmet/dijital-pazarlama\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">dijital pazarlama</a> hizmetlerimizle işletmenizi dijitalde büyütün."
+    },
+    {
       type: "paragraph",
       "isHtml": true,
       content: "İlk adım çok basit: <strong>Ücretsiz teklifinizi alın</strong>, web sitenizi ve Google görünürlüğünüzü analiz edelim. Gerisini biz hallederiz."
