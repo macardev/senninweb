@@ -3,22 +3,17 @@ import useInView from '@/hooks/useInView'
 import emailjs from '@emailjs/browser'
 
 
-const services = [
-  'Web Tasarım',
-  'SEO & Büyüme',
-  'Kurumsal Kimlik',
-  'Hepsi',
-]
-
 export default function Contact() {
   const { ref, inView } = useInView({ threshold: 0.1 })
 
   const [form, setForm] = useState({
-    name:    '',
-    email:   '',
-    phone:   '',
-    service: '',
-    message: '',
+    name:  '',
+    email: '',
+    phone: '',
+    q1:    '',
+    q2:    '',
+    q3:    '',
+    q4:    '',
   })
   const [sending, setSending]   = useState(false)
   const [sent,    setSent]      = useState(false)
@@ -39,9 +34,11 @@ const handleSubmit = async (e) => {
       {
         from_name:  form.name,
         from_email: form.email,
-        phone:      form.phone    || 'Belirtilmedi',
-        service:    form.service  || 'Belirtilmedi',
-        message:    form.message  || 'Mesaj girilmedi',
+        phone:      form.phone || 'Belirtilmedi',
+        q1:         form.q1    || 'Belirtilmedi',
+        q2:         form.q2    || 'Belirtilmedi',
+        q3:         form.q3    || 'Belirtilmedi',
+        q4:         form.q4    || 'Belirtilmedi',
       },
       'xx85OmC9vAmhoFav0'
     )
@@ -331,46 +328,28 @@ const handleSubmit = async (e) => {
                   />
                 </div>
 
-                <div>
-                  <label className="block text-xs text-white/60
-                                    uppercase tracking-wider mb-2">
-                    İlgilendiğiniz Hizmet
-                  </label>
-                  <div className="flex flex-wrap gap-2">
-                    {services.map(s => (
-                      <button
-                        key={s}
-                        type="button"
-                        onClick={() => setForm(f => ({ ...f, service: s }))}
-                        className={`px-4 py-3 rounded-full text-xs font-medium
-                                   border transition-all duration-300 min-h-[44px] ${
-                          form.service === s
-                            ? 'border-gold-500/60 bg-gold-500/10 text-gold-400'
-                            : 'border-white/8 bg-white/[0.02] text-white/60 hover:border-white/20'
-                        }`}
-                      >
-                        {s}
-                      </button>
-                    ))}
+                {[
+                  { name: 'q1', label: 'Şu anda işletmenizi olumsuz yönde etkileyen konu nedir?' },
+                  { name: 'q2', label: 'Bu ne kadardır devam ediyor?' },
+                  { name: 'q3', label: 'Bunu çözmek için bir yöntem denediniz mi?' },
+                  { name: 'q4', label: 'Bunu çözmezseniz önümüzdeki 6 ay sonunda ne gibi sonuçları olur?' },
+                ].map(q => (
+                  <div key={q.name}>
+                    <label className="block text-xs text-white/60 uppercase tracking-wider mb-2">
+                      {q.label}
+                    </label>
+                    <textarea
+                      name={q.name}
+                      rows={2}
+                      placeholder={q.label}
+                      value={form[q.name]}
+                      onChange={handleChange}
+                      onFocus={() => setFocused(q.name)}
+                      onBlur={() => setFocused(null)}
+                      className={`${inputClass(q.name)} resize-none`}
+                    />
                   </div>
-                </div>
-
-                <div>
-                  <label className="block text-xs text-white/60
-                                    uppercase tracking-wider mb-2">
-                    Mesajınız
-                  </label>
-                  <textarea
-                    name="message"
-                    rows={4}
-                    placeholder="İşletmeniz ve hedefleriniz hakkında kısaca bilgi verin..."
-                    value={form.message}
-                    onChange={handleChange}
-                    onFocus={() => setFocused('message')}
-                    onBlur={() => setFocused(null)}
-                    className={`${inputClass('message')} resize-none`}
-                  />
-                </div>
+                ))}
 
                 <button
                   type="submit"
