@@ -1,0 +1,1279 @@
+# Sennin Web — Full Documentation
+
+> Sennin Web, KOBİ'lere web tasarım, SEO ve dijital pazarlama hizmeti sağlayan bir ajans. 2025'te Çağatay Macar tarafından kuruldu. Bilecik/Gölpazarı merkezli, Türkiye geneline hizmet veriyor.
+
+## Pages
+
+- [Hakkımızda](hakkimizda.md): Sennin Web kurucusu Çağatay Macar ve şirket hikayesi
+- [SSS](sss.md): Web tasarım, SEO, AEO, GEO, mobil uyumluluk ve fiyatlandırma hakkında soru-cevap
+- [Web Tasarım](hizmet/web-tasarim.md): Sıfırdan tasarlanmış, mobil öncelikli web siteleri
+- [SEO ve Büyüme](hizmet/seo-ve-buyume.md): Arama motoru optimizasyonu, yerel SEO, AEO/GEO
+- [E-Ticaret Çözümleri](hizmet/eticaret-cozumleri.md): Online satış siteleri, ödeme entegrasyonu
+- [Dijital Pazarlama](hizmet/dijital-pazarlama.md): Sosyal medya yönetimi, içerik pazarlama
+- [Gebze](gebze.md): Gebze'de web tasarım, yerel SEO, e-ticaret ve dijital pazarlama
+- [Bilecik](bilecik.md): Bilecik'te web tasarım, SEO, Google Maps optimizasyonu
+- [Kocaeli](kocaeli.md): Kocaeli genelinde web tasarım, SEO ve dijital pazarlama
+
+## Blog Posts
+
+- [2026 Renk Trendleri: Grafik ve Web Tasarımında Öne Çıkan Renkler](blog/2026-grafik-tasarim-web-tasarim-renk-trendleri.md): 2026 renk trendleri grafik ve web tasarımınızı nasıl etkileyecek? Doğru renk paletiyle markanızı öne çıkarın, müşteri algısını yönlendirin.
+- [2026'nın En İyi AI Web Tasarım Araçları (Kapsamlı Liste)](blog/2026-en-iyi-ai-web-tasarim-araclari.md): AI web tasarım araçlarıyla işlerinizi 10x hızlandırın. 2026'nın en iyi yapay zeka araçlarını keşfedin, rakiplerinizin önüne geçin.
+- [Domain Seçimi 2026: SEO İçin En Doğru Domain Nasıl Seçilir?](blog/2026-seo-stratejileri-domain-secimi.md): Domain seçiminiz SEO başarınızı belirliyor. 2026'da doğru domain uzantısı ve stratejisiyle Google'da zirveye çıkın.
+- [Küçük İşletme Web Sitesi: Müşteri Getiren 5 Strateji (2026)](blog/kucuk-isletme-web-sitesi.md): Web siteniz neden müşteri getirmiyor? 5 stratejiyle küçük işletme web sitenizi satış makinesine dönüştürün. Hemen uygulayın.
+- [Küçük İşletmeler İçin Web Sitesi: Satış Getiren 10 Strateji (2026)](blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir.md): Küçük işletme web siteniz satış getirmiyor mu? 10 adımda SEO, Google Maps ve dönüşüm odaklı tasarımla müşteri çekmeye başlayın.
+- [Google'da Görünür Olmanın 7 Yolu: 2026 Küçük İşletme SEO Rehberi](blog/kucuk-isletmeler-google-da-gorunurluk-2026.md): Küçük işletmeniz Google'da görünmüyor mu? 2026 SEO trendleriyle 7 adımda sıralamalarda yükselin, organik müşteri kazanın.
+- [Web Siteniz Neden İlk Sayfada Değil? 8 Neden ve Çözüm (2026)](blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026.md): Web siteniz Google ilk sayfada değil mi? 8 yaygın hatayı öğrenin, SEO ve hız optimizasyonuyla sıralamanızı yükseltin.
+- [2026 Web Sitesi Fiyatları: Profesyonel Tasarım Kaç TL?](blog/web-sitesi-tasarim-fiyatlari-2026.md): 2026 web sitesi fiyatları ne kadar? Profesyonel kurumsal site ve SEO paketlerini karşılaştırın, bütçenize uygun planı bulun.
+- [Web Tasarımın 5 Temel İlkesi: Profesyonel Site Nasıl Olmalı?](blog/tasarimin-5-temel-ilkesi.md): Web tasarımda UI/UX, hız, mobil uyum ve SEO prensiplerini öğrenin. Profesyonel bir site için 5 temel ilkeyi keşfedin.
+- [2026 Web Tasarım Fiyatları Neden Değişiyor? (Detaylı Rehber)](blog/web-tasarim-fiyatlari-neden-degisiyor-2026.md): Web tasarım fiyatları neden bu kadar farklı? 2026 güncel fiyat aralıkları, saklı maliyetler ve bütçe dostu seçenekleri karşılaştırın.
+- [Web Tasarım Teknik Terimler Sözlüğü: Core Web Vitals'tan SEO'ya 50+ Terim](blog/teknik-terimler.md): Core Web Vitals, SSL, SEO, UI/UX — tüm teknik terimler tek rehberde. Web tasarım jargonunu anlayın, bilinçli kararlar verin.
+- [Ödüllü Web Sitesi Fiyatları 2026: Awwwards Kalitesinde Site Maliyeti](blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler.md): Ödüllü bir web sitesi yaptırmak ne kadar? Awwwards kalitesinde premium tasarım ve özelliklerin maliyetini öğrenin.
+- [İzmit'te Dijital Pazarlama 2026: Kocaeli İşletmeleri İçin Rehber](blog/izmit-dijital-pazarlama-kocaeli.md): Kocaeli'de dijital pazarlama neden kritik? İzmit merkezli işletmeniz için SEO, Google Maps ve yerel stratejileri keşfedin.
+
+## Blog İçerikleri
+
+---
+
+# 2026 Renk Trendleri: Grafik ve Web Tasarımında Öne Çıkan Renkler
+
+> *Yazar: Cagatay Macar | 2026-06-14 | 2 dk*
+
+2026 renk trendleri grafik ve web tasarımınızı nasıl etkileyecek? Doğru renk paletiyle markanızı öne çıkarın, müşteri algısını yönlendirin.
+
+# 2026'da Grafik Tasarım ve Web Tasarımında Renk Trendleri
+
+> Renklerin dijital dünyadaki rolü
+Renk, grafik ve web tasarımında en önemli unsurlardan biridir. 2026'da hangi renklerin öne çıkacağını ve bu renklerin tasarımınıza nasıl yön verebileceğini keşfedin.
+
+> **%80** — Kullanıcıların yüzde 80'i bir markayı yalnızca rengiyle hatırlar. Renk seçimi, marka bilinirliğinde en kritik faktörlerden biridir.
+> *Kaynak: University of Loyola, Renk Psikolojisi Araştırması*
+
+## 2026 Pantone Renkleri
+
+2026 yılında Pantone'un belirlediği renkler, tasarım dünyasında büyük etki yaratacaktır. 2026'nın rengi olarak seçilen 'Vivacious Violet', yaratıcılığı ve özgünlüğü simgeler. Grafik tasarımcılar, bu rengi kullanarak dikkat çekici ve dinamik tasarımlar oluşturabilirler.
+
+- Vivacious Violet, yaratıcılığı simgeler.
+- Renk trendleri, tasarımlarınızı zenginleştirir.
+- Pantone renkleri, sektördeki yenilikleri yansıtır.
+
+## Renk Psikolojisi ve Tasarım
+
+Renk psikolojisi, tasarımın etkisini artırmak için kritik bir unsurdur. Araştırmalara göre, kullanıcıların %80'i bir markayı renkleri ile hatırlar. 2026'da, duygusal bağ kuran renkler daha fazla tercih edilecektir.
+
+**S: Renklerin psikolojik etkileri nelerdir?**
+
+Renkler, insanların duygularını ve algılarını etkileyebilir. Örneğin, mavi renk güven hissi verirken, kırmızı heyecan ve tutku hissi yaratır.
+
+- Renk psikolojisi, tasarımın etkisini artırır.
+- Markalar, renklerle duygusal bağ kurar.
+- Kullanıcı algısı, renklerle şekillenir.
+
+> **%93** — Tüketicilerin yüzde 93'ü görsel görünüme, satın alma kararlarında en önemli faktör olarak dikkat çekiyor. Web tasarımında renk kullanımı doğrudan dönüşümü etkiler.
+> *Kaynak: Shopify, 2025 Görsel Ticaret Raporu*
+
+## Web Tasarımında Renk Kullanımı
+
+Web tasarımında renk kullanımı, kullanıcı deneyimini doğrudan etkiler. 2026'da, kullanıcıların dikkatini çeken, canlı ve enerjik renk paletleri öne çıkacaktır. Renk kombinasyonları, web sitenizin estetiğini ve kullanılabilirliğini artırır.
+
+**S: Hangi renk kombinasyonları 2026'da popüler olacak?**
+
+2026'da pastel tonları ile canlı renklerin kombinasyonları popüler olacak. Bu kombinasyonlar, sitenizin modern ve çekici görünmesini sağlar.
+
+- Canlı ve enerjik renk paletleri ön planda.
+- Pastel tonları ile canlı renklerin kombinasyonu.
+- Renkler, kullanıcı deneyimini etkiler.
+
+## Sürdürülebilir Renk Seçimleri
+
+Sürdürülebilir tasarım, gün geçtikçe daha fazla önem kazanıyor. 2026'da, eco-friendly renk paletleri tercih edilecek. Doğal ve organik renkler, çevre dostu tasarımlara yön verecek.
+
+> **%62** — Kullanıcıların yüzde 62'si renk uyumu kötü olan bir web sitesini 30 saniye içinde terk ediyor. Renk paleti, kullanıcı deneyiminin temel taşıdır.
+> *Kaynak: WebFX, Web Tasarım Kullanıcı Deneyimi Araştırması, 2025*
+
+- Sürdürülebilir tasarım trendleri artıyor.
+- Doğal ve organik renkler tercih ediliyor.
+- Çevre dostu tasarımlar, kullanıcıları etkiliyor.
+
+## Sonuç
+
+2026'da grafik ve web tasarımında renk trendleri, tasarımcılar için büyük fırsatlar sunuyor.
+- Vivacious Violet, 2026'nın rengi.
+- Renk psikolojisi, kullanıcı deneyimini etkiler.
+- Sürdürülebilir renk seçimleri ön planda.
+
+Bu trendleri takip ederek tasarımlarınızı geliştirebilirsiniz.
+
+Renklerin tasarımınızdaki etkisini keşfetmek için harekete geçin ve SenninWeb ile iletişime geçin.
+
+**2026'nın renk trendlerini tasarımlarınıza dahil etmeye hazır mısınız?**
+Hemen bizimle iletişime geçin!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/2026-grafik-tasarim-web-tasarim-renk-trendleri) sitesinde yayınlanmıştır.*
+
+---
+
+# 2026'nın En İyi AI Web Tasarım Araçları (Kapsamlı Liste)
+
+> *Yazar: Cagatay Macar | 2026-06-13 | 1 dk*
+
+AI web tasarım araçlarıyla işlerinizi 10x hızlandırın. 2026'nın en iyi yapay zeka araçlarını keşfedin, rakiplerinizin önüne geçin.
+
+# 2026'nın En İyi AI Web Tasarım Araçları ile Rekabette Öne Çıkın
+
+> Yapay zeka ile web tasarım süreçlerini hızlandırın ve yenilikçi çözümler bulun.
+2026 yılı, dijital dünyada rekabetin arttığı bir dönem olacak. Yapay zeka destekli web tasarım araçları, bu rekabette öne çıkmanıza yardımcı olabilir.
+
+> **%73** — 2026 itibarıyla web tasarımcılarının yüzde 73'ü iş akışlarında en az bir AI aracı kullanıyor. Yapay zeka, tasarım sürecinin ayrılmaz bir parçası haline geldi.
+> *Kaynak: Statista, Web Tasarımında AI Kullanımı Anketi, 2026*
+
+## Yapay Zeka Tabanlı Web Tasarım Araçları Nedir?
+
+Yapay zeka tabanlı web tasarım araçları, kullanıcı deneyimini artırmak ve tasarım sürecini hızlandırmak için geliştirilen yazılımlardır. Bu araçlar, kullanıcıların ihtiyaçlarına göre otomatik olarak tasarım önerileri sunabilir.
+
+- Kullanıcı dostu arayüzler sunar.
+- Otomatik tasarım önerileri ile zaman kazandırır.
+- Veri analizleri ile hedef kitleye ulaşmayı kolaylaştırır.
+
+## 2026'nın En İyi AI Web Tasarım Araçları
+
+2026 yılında öne çıkan bazı yapay zeka tabanlı web tasarım araçları şunlardır:
+
+- Figma: Kullanıcı arayüzü tasarımı için popüler bir araçtır.
+- Adobe XD: Prototip oluşturma ve tasarım için etkili bir çözümdür.
+- Wix ADI: Kullanıcıların ihtiyaçlarına göre otomatik tasarım yapabilen bir platformdur.
+
+> **3,5x** — AI destekli tasarım araçları, prototip oluşturma süresini ortalama 3,5 kat hızlandırıyor. Bu da ajansların ayda 2 kat daha fazla proje teslim etmesini sağlıyor.
+> *Kaynak: Figma, AI Tasarım Araçları Verimlilik Raporu, 2026*
+
+## Yapay Zeka ile Web Tasarım Sürecinizi Nasıl İyileştirirsiniz?
+
+Yapay zeka ile web tasarım sürecinizi iyileştirmek için, öncelikle doğru araçları seçmelisiniz. Bu araçlar, kullanıcı deneyimini artırmak için tasarım sürecinin her aşamasında yardımcı olabilir.
+
+**S: Yapay zeka tabanlı web tasarım araçlarının avantajları nelerdir?**
+
+Yapay zeka tabanlı web tasarım araçları, tasarım sürecini hızlandırır, kullanıcı deneyimini iyileştirir ve hedef kitleye ulaşmayı kolaylaştırır.
+
+**S: 2026'da en popüler AI web tasarım aracı hangisidir?**
+
+2026'da Figma, kullanıcı arayüzü tasarımı için en popüler AI web tasarım aracı olarak öne çıkmaktadır.
+
+## Sonuç
+
+2026 yılı, yapay zeka destekli web tasarım araçlarının öneminin arttığı bir dönem olacak. İşte bu araçlardan en iyi şekilde yararlanmanın üç yolu:
+- Doğru aracı seçin ve ihtiyaçlarınıza göre uyarlayın.
+- Kullanıcı deneyimini iyileştirmek için verileri analiz edin.
+- Yaratıcılığınızı artırmak için otomatik tasarım önerilerini değerlendirin.
+
+Yapay zeka ile web tasarım sürecinizi geliştirerek rekabette öne çıkabilirsiniz.
+
+> **%68** — Küçük işletmelerin yüzde 68'i AI tabanlı web tasarım araçları sayesinde profesyonel web sitesi sahibi olma maliyetini yarı yarıya düşürdü.
+> *Kaynak: SenninWeb AI Web Tasarım Araştırması, 2026*
+
+Siz de yapay zeka tabanlı web tasarım araçlarını kullanarak projelerinizi hızlandırmak için SenninWeb ile iletişime geçin.
+
+**Web tasarım süreçlerinizi geliştirmek ister misiniz?**
+Hemen bizimle iletişime geçin!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/2026-en-iyi-ai-web-tasarim-araclari) sitesinde yayınlanmıştır.*
+
+---
+
+# Domain Seçimi 2026: SEO İçin En Doğru Domain Nasıl Seçilir?
+
+> *Yazar: Cagatay Macar | 2026-06-12 | 1 dk*
+
+Domain seçiminiz SEO başarınızı belirliyor. 2026'da doğru domain uzantısı ve stratejisiyle Google'da zirveye çıkın.
+
+# 2026'da SEO Stratejilerinizi Güçlendirmek için Domain Seçiminin Önemi
+
+> Doğru domain seçimi, dijital dünyada yerinizi sağlamlaştırır.
+2026 yılına yaklaşırken, SEO stratejilerinizin temel taşlarından biri olan domain seçiminin önemini anlamak kritik hale geliyor. Doğru bir domain, arama motorlarında daha iyi görünürlük sağlar.
+
+> **%75** — Kullanıcıların yüzde 75'i bir web sitesinin güvenilirliğini domain adına göre değerlendiriyor. Doğru domain seçimi, ilk izlenimde kritik rol oynar.
+> *Kaynak: GrowthBadger, Domain Güven Araştırması, 2025*
+
+## Domain Seçiminin SEO Üzerindeki Etkisi
+
+Domain adı, web sitenizin kimliğidir ve SEO üzerinde doğrudan etkisi vardır. Araştırmalara göre, kullanıcılar %75 oranında tanıdık domain adlarına yöneliyor. Bu nedenle, doğru domain seçimi, organik trafiği artırabilir.
+
+- Kullanıcı güvenini artırır.
+- Arama motoru sıralamalarını iyileştirir.
+- Marka bilinirliğini artırır.
+
+## Anahtar Kelimelerin Önemi
+
+Domain adınızda anahtar kelimeleri bulundurmak, SEO'nuzu güçlendirebilir. Google, domain adını bir sıralama faktörü olarak değerlendirir. Ayrıca, kullanıcılar arama yaptıklarında ilgili kelimeleri içeren domainlere daha fazla güveniyor.
+
+- Anahtar kelimeler sıralama için önemlidir.
+- Kullanıcılara doğru mesajı iletir.
+- Rekabet avantajı sağlar.
+
+## Kısa ve Akılda Kalıcı Domainler
+
+Kısa ve akılda kalıcı domainler, kullanıcıların sitenizi kolayca hatırlamasını sağlar. Kullanıcılar, uzun ve karmaşık domainlerden kaçınır. Araştırmalara göre, kısa domainler %30 daha fazla ziyaretçi çekiyor.
+
+> **%30** — Kısa ve akılda kalıcı domain adları, uzun domainlere kıyasla yüzde 30 daha fazla doğrudan trafik alıyor. Domain uzunluğu, kullanıcı davranışını doğrudan etkiler.
+> *Kaynak: Backlinko, Domain ve Trafik İlişkisi Analizi, 2025*
+
+- Kısa domainler daha fazla ziyaretçi çeker.
+- Hatırlanması kolaydır.
+- Marka kimliğinizi güçlendirir.
+
+## Domain Uzantısının Rolü
+
+Domain uzantısı, sitenizin güvenilirliğini etkileyen bir unsurdur. .com, .net gibi popüler uzantılar, kullanıcıların sitenize olan güvenini artırabilir. Ayrıca, belirli sektörler için özel uzantılar da kullanılabilir.
+
+- Güvenilir uzantılar tercih edilmelidir.
+- Sektörünüze uygun uzantılar kullanın.
+- Kullanıcı güvenini artırır.
+
+## SenninWeb'in Destekleri
+
+SenninWeb olarak, web tasarım ve SEO hizmetlerimizle doğru domain seçiminizde yanınızdayız. Uzman ekibimizle birlikte, markanızı en iyi şekilde temsil edecek domaini bulmanıza yardımcı olabiliriz.
+
+> **%47** — TLD uzantısı .com olan siteler, küresel web trafiğinin yüzde 47'sini oluşturuyor. .com.tr gibi yerel uzantılar ise Türkiye'de %80 daha yüksek yerel SEO performansı gösteriyor.
+> *Kaynak: Verisign Domain Name Industry Report, 2025*
+
+2026 yılına girerken, doğru domain seçimi ile SEO stratejilerinizi güçlendirin. Sizin için en uygun domaini bulmak ve dijital dünyada öne çıkmak için bizimle iletişime geçin.
+
+**Dijital dünyada yerinizi sağlamlaştırmaya hazır mısınız?**
+Hemen bizimle iletişime geçin!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/2026-seo-stratejileri-domain-secimi) sitesinde yayınlanmıştır.*
+
+---
+
+# Küçük İşletme Web Sitesi: Müşteri Getiren 5 Strateji (2026)
+
+> *Yazar: Çağatay Macar | 2026-01-12 | 6 dk*
+
+Web siteniz neden müşteri getirmiyor? 5 stratejiyle küçük işletme web sitenizi satış makinesine dönüştürün. Hemen uygulayın.
+
+Günümüzde bir işletmenin başarılı olabilmesi için sadece fiziksel bir mağazaya sahip olması yeterli değil. İnsanlar bir ürün veya hizmet aradığında ilk yaptıkları şey Google'da arama yapmak. Eğer işletmeniz bu aramalarda görünmüyorsa, potansiyel müşterilerinizi fark etmeden kaybediyorsunuz demektir.
+
+**S: Peki bir web sitesi gerçekten müşteri getirir mi?**
+
+Evet, ama doğru yapılırsa.
+
+> **%46** — Türkiye'deki KOBİ'lerin yalnızca yüzde 46'sının aktif bir web sitesi bulunuyor. Bu da rakiplerinize karşı büyük bir fırsat penceresi olduğu anlamına geliyor.
+> *Kaynak: TÜİK, Girişimlerde Bilişim Teknolojileri Kullanım Araştırması, 2025*
+
+Birçok işletme web sitesi yaptırıyor ancak sonuç alamıyor. Bunun en büyük sebebi sitenin sadece "var olması" ama aktif olarak çalışmamasıdır. Yani SEO yapılmamış, yavaş açılan veya kullanıcıyı yönlendirmeyen bir site hiçbir işe yaramaz. Doğru bir [analiz ve izleme](https://www.google.com/analytics/) yapılmadan da başarı ölçmek mümkün değildir.
+
+### 3 Temel Başlık
+
+Gerçekten müşteri getiren bir web sitesi 3 temel üzerine kuruludur:
+
+**1. Google'da Görünürlük (SEO)**
+İnsanlar hizmet ararken sizin sitenizi bulabilmeli. Bunun için doğru anahtar kelimeler, teknik SEO ve içerik stratejisi gerekir.
+
+**2. Hız ve Performans**
+Ziyaretçiler yavaş açılan siteleri anında terk eder. [Siteniz ışık hızında açılmıyorsa](https://pagespeed.web.dev/?hl=tr), müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile.
+
+**3. Doğru Yönlendirme (CTA)**
+Kullanıcı siteye geldiğinde ne yapacağını bilmeli. "Teklif al", "iletişime geç" gibi yönlendirmeler olmadan ziyaretçiler müşteriye dönüşmez.
+
+Profesyonel bir web sitesi sizin için 7/24 çalışan bir satış temsilcisi gibidir. Doğru kurulduğunda size sürekli yeni müşteriler kazandırır.
+
+> **%64** — Web sitesi olan küçük işletmeler, olmayanlara göre yüzde 64 daha fazla müşteri adayı elde ediyor. Dijital varlık, büyümenin temel itici gücüdür.
+> *Kaynak: Google, Dijital Dönüşüm ve KOBİ'ler Raporu, 2025*
+
+Eğer sizin de web siteniz:
+- müşteri getirmiyorsa
+- Google'da görünmüyorsa
+- yavaş çalışıyorsa
+
+bunun çözümü doğru bir [Gebze web tasarım stratejisi](https://www.senninweb.com/gebze) ile mümkündür.
+
+İşletmenize özel, hızlı ve SEO uyumlu bir web sitesi ile dijitalde rakiplerinizin önüne geçebilirsiniz.
+
+> **%82** — SEO'ya yatırım yapan küçük işletmelerin yüzde 82'si 6 ay içinde organik trafiklerinde belirgin artış görüyor. SEO, uzun vadeli en düşük maliyetli pazarlama kanalıdır.
+> *Kaynak: Ahrefs, Küçük İşletme SEO İstatistikleri, 2025*
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/kucuk-isletme-web-sitesi) sitesinde yayınlanmıştır.*
+
+---
+
+# Küçük İşletmeler İçin Web Sitesi: Satış Getiren 10 Strateji (2026)
+
+> *Yazar: Çağatay Macar | 2026-02-03 | 12 dk*
+
+Küçük işletme web siteniz satış getirmiyor mu? 10 adımda SEO, Google Maps ve dönüşüm odaklı tasarımla müşteri çekmeye başlayın.
+
+# Küçük İşletmeler İçin Web Sitesi Nasıl Gerçek Bir Müşteri Mıknatısına Dönüşür? (2026 Güncel Rehber)
+
+> Giriş: Tabelasız Dükkanın Dijital Çilesi
+Şöyle bir düşünün: İstanbul'un en kalabalık caddelerinden birinde harika bir dükkan açtınız. İçerideki ürünleriniz kaliteli, fiyatlarınız uygun, hizmetiniz kusursuz. Ancak küçük bir sorun var; dükkanın tabelası yok, vitrin camları simsiyah boyanmış ve Google Haritalar'da konumunuz görünmüyor.
+
+> **%93** — İnternet deneyimlerinin yüzde 93'ü bir arama motoruyla başlıyor. Google'da görünür olmak, potansiyel müşterilerin sizi bulmasının ilk adımıdır.
+> *Kaynak: Search Engine Journal, Tüketici Arama Davranışları Raporu, 2025*
+
+Sokaktan her gün binlerce kişi geçiyor ama kimse sizin orada olduğunuzu bilmiyor.
+
+Bugün, profesyonel bir web sitesi olmayan veya sitesi Google'da görünmeyen küçük işletmelerin durumu tam olarak budur. İnternet deneyimlerinin %93'ü bir arama motoruyla başlıyor. Yani potansiyel müşterileriniz bir hizmete ihtiyaç duyduğunda ilk iş telefonuna sarılıyor.
+
+Eğer o ekranda yoksanız, o müşteri için aslında yoksunuz demektir.
+
+Peki, sadece bir "web sitesi yaptırmak" yeterli mi? Neden bazı siteler telefonları susturmazken diğerleri dijital birer tozlu rafa dönüşüyor?
+
+Gelin, web sitenizi pasif bir masraftan, 7/24 çalışan bir satış makinesine dönüştürmenin sırlarını birlikte çözelim.
+
+## 1. Web Sitem Var Ama Müşteri Gelmiyor: Nerede Hata Yapıyoruz?
+
+Birçok işletme sahibi, "Web sitesi kurduk ama tık yok" diyerek dijital dünyaya küsüyor. Ancak gerçek şu ki; satış getiren bir web sitesi sadece bir vitrin değil, yaşayan bir sistemdir.
+
+Türkiye'deki KOBİ'lerin %25'i hala bir web sitesine ihtiyaç duymadığını düşünürken, %27'si ise operasyonel yoğunluktan dolayı dijitale vakit ayıramıyor. Ancak asıl sorun şu 3 noktada düğümleniyor:
+
+- Sadece Tasarıma Odaklanmak: Siteniz çok şık olabilir ama eğer teknik altyapısı zayıfsa [Google onu bulamaz](https://search.google.com/search-console).
+- Yavaşlık Ölümcüldür: [Google verilerine göre, 3 saniyeden geç açılan mobil sitelerdeki kullanıcıların %75'i](https://pagespeed.web.dev/) sayfayı anında terk ediyor.
+- Müşteriyi Tanımamak: Siteye giren kişi "biz kimiz" yazısından önce "benim sorunumu nasıl çözersiniz" sorusuna cevap arar. Eğer bu cevabı 5 saniye içinde veremiyorsanız, kullanıcıyı rakibinize kaptırırsınız.
+
+> **%75** — Web sitesi performansına göre kullanıcıların yüzde 75'i bir şirketin güvenilirliğini değerlendiriyor. Hızlı ve profesyonel bir site, güven inşa etmenin anahtarıdır.
+> *Kaynak: Stanford Web Credibility Research, 2025*
+
+## 2. Müşteri Çeken Bir Web Sitenin 3 Altın Kuralı
+
+Web sitenizin bir "müşteri mıknatısı" gibi çalışması için şu üç sütun üzerine inşa edilmesi şarttır:
+
+### A. Doğru Mesaj ve İkna (Copywriting)
+
+Sitenizin metinleri bir satış temsilcisi gibi konuşmalıdır. [2026 SEO trendleri](https://www.senninweb.com/blog/kucuk-isletmeler-google-da-gorunurluk-2026) artık sadece anahtar kelimelere değil, "kullanıcı niyetine" (search intent) odaklanıyor.
+
+İnsanlar "en iyi tesisatçı" yazısını her yerde görüyor. Sizin farkınız ne?
+
+"30 dakikada kapınızdayız ve 2 yıl garantili tamir yapıyoruz" cümlesi, sadece bilgi değil, çözüm ve güven satar.
+
+### B. Google'da Görünürlük (SEO'nun Gücü)
+
+Google sonuçlarının ilk sayfası, tüm tıklamaların %90'ını topluyor. İlk sayfada yoksanız, dijital okyanusta görünmezsiniz. ["SEO hizmeti" sadece teknik bir ayar değil](https://search.google.com/search-console), dükkanınızı arka sokaktan ana caddeye taşıma işlemidir.
+
+Doğru anahtar kelime araştırması ve içerik optimizasyonu ile tam da sizin hizmetinizi arayan "sıcak müşterilere" organik olarak ulaşırsınız.
+
+### C. Güven İnşası (Marka Algısı)
+
+Dijital dünyada güven, paranın birimidir.
+
+- [SSL Sertifikası: Sitenizde "Güvenli Değil" uyarısı](https://www.ssl.com/article/how-ssl-certificates-work/) çıkıyorsa, müşterilerin %90'ı hemen kaçar.
+- Sosyal Kanıt: Mutlu müşteri yorumları, tamamlanmış proje fotoğrafları ve referanslar güveni perçinler.
+
+> **%65** — KOBİ'lerin yüzde 65'i hala manuel süreçlerle müşteri kazanmaya çalışıyor. Dijital pazarlama otomasyonu, bu işletmelere rakiplerine karşı 3 kat avantaj sağlıyor.
+> *Kaynak: HubSpot, KOBİ Pazarlama Otomasyonu Raporu, 2025*
+
+## 3. Gizli Silah: Google Maps ve Yerel SEO
+
+Küçük işletmeler için en büyük fırsat, kendi mahallelerindeki ve şehirlerindeki müşterilere ulaşmaktır. [Gebze'de yerel SEO](https://www.senninweb.com/gebze) sayesinde, birisi "yakınımdaki kurumsal web sitesi yapan yerler" diye aradığında en üstte siz çıkabilirsiniz.
+
+[Google Haritalar (Google İşletme Profili)](https://www.google.com/business/) kaydınızın web sitenizle uyumu hayati önem taşır:
+
+- [NAP Tutarlılığı: İşletme adı, adres ve telefon](https://www.google.com/business/) her yerde aynı olmalı
+- Yorum Yönetimi: Her yoruma cevap ver
+- Fotoğraflar: Kaliteli görseller tıklamayı artırır
+
+## 4. İyi Bir Web Sitesi vs. Kötü Bir Web Sitesi
+
+### Kötü Web Sitesi:
+
+- 5+ saniye açılış
+- Mobilde kötü deneyim
+- Güvenli değil (HTTP)
+- Zayıf görseller
+
+### İyi Web Sitesi:
+
+- < 2 saniye açılış
+- Mobilde mükemmel deneyim
+- HTTPS güvenliği
+- Gerçek ve kaliteli görseller
+
+## 5. Küçük İşletmelerin Yaptığı En Büyük 5 Hata
+
+- Mobil deneyimi önemsememek
+- Google Maps'i ihmal etmek
+- İçerik üretmemek
+- SSL kullanmamak
+- İletişimi zorlaştırmak
+
+## 6. Bugün Atabileceğiniz 3 Somut Adım
+
+- Sitenizi test edin: Google PageSpeed Insights ile hız kontrolü yap
+- Maps profilini güncelle: 5 kaliteli fotoğraf ekle
+- Mesajını netleştir: İlk cümlede değer önerini anlat
+
+## Sonuç: Yarının Kazananı Dijitalde Yerini Alanlar Olacak
+
+2026 perspektifinden baktığımızda, dijitalleşme artık bir tercih değil, sürdürülebilir büyümenin anahtarıdır.
+
+Türkiye'de KOBİ'lerin %65'i hala manuel süreçlerle uğraşırken, profesyonel bir web sitesi ve doğru bir SEO stratejisiyle öne çıkan işletmeler ciddi bir rekabet avantajı elde ediyor.
+
+Siz de rakiplerinizin önüne geçmek, Google'da tam da arandığınız anda müşterilerinizin karşısına çıkmak ve web sitenizi gerçek bir satış ofisine dönüştürmek istemez misiniz?
+
+**İşletmenizin dijital potansiyelini keşfetmeye hazır mısınız?**
+Bizimle iletişime geçin, web sitenizi birlikte bir müşteri mıknatısına dönüştürelim!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir) sitesinde yayınlanmıştır.*
+
+---
+
+# Google'da Görünür Olmanın 7 Yolu: 2026 Küçük İşletme SEO Rehberi
+
+> *Yazar: Çağatay Macar | 2026-01-28 | 12 dk*
+
+Küçük işletmeniz Google'da görünmüyor mu? 2026 SEO trendleriyle 7 adımda sıralamalarda yükselin, organik müşteri kazanın.
+
+# Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu
+
+> Google'da Yoksan, Tabelan Sadece Sokağı Aydınlatır
+Şunu net bir şekilde masaya koyalım: Bugün bir işletmenin büyüklüğü metrekareyle değil, Google'daki "piksel payıyla" ölçülüyor.
+
+> **%90** — Google arama sonuçlarında ilk sayfa, tüm tıklamaların yaklaşık yüzde 90'ını alır. İkinci sayfaya geçtiğinizde trafiğiniz neredeyse sıfırlanır.
+> *Kaynak: Backlinko, Google Organik Tıklama Oranları Çalışması, 2025*
+
+Bir müşteri bir hizmete ihtiyaç duyduğunda artık eşe dosta sormuyor. Cebinden telefonu çıkarıyor ve o meşhur aramaları yapıyor:
+
+- Yakınımdaki en iyi diş kliniği
+- Acil tesisatçı ustası
+- Kurumsal web tasarım fiyatları 2026
+
+Eğer o parmakların kaydırdığı ilk 3-5 sonuçta yoksanız, o potansiyel müşteri için teknik olarak hiç var olmamışsınız demektir. Google'da görünmek artık bir "tercih" değil, bir hayatta kalma meselesidir. Ama korkmayın; dev bütçeli rakiplerinizi sadece "doğru hamlelerle" saf dışı bırakmanız mümkün.
+
+## 1. SEO Nedir? (Yazılımcı Jargonundan Arındırılmış Tanım)
+
+SEO (Arama Motoru Optimizasyonu), çoğu kişinin sandığı gibi sitenin sağına soluna anahtar kelime serpiştirmek değildir. 2026 dünyasında SEO, [Google'a şu güveni vermektir: "Kullanıcının bir derdi var ve bu derdi en kaliteli, en hızlı şekilde ben çözerim."](https://search.google.com/search-console)
+
+Google artık 3 ana sütuna bakıyor:
+
+- Doğru İçerik (E-E-A-T): Sadece bilgi mi veriyorsun yoksa o konuda bir "deneyimin" ve "uzmanlığın" mı var? Google artık "yazmış olmak için yazılan" yapay zeka metinlerini yemiyor.
+- Teknik Kusursuzluk: [Siteniz bir kaplumbağa kadar yavaşsa](https://pagespeed.web.dev/), dünyanın en iyi makalesini yazsanız bile Google sizi arka sıralara mahkum eder.
+- Dijital İtibar (Otorite): Başka siteler ve gerçek insanlar sizden bahsediyor mu?
+
+## 2. "Web Sitem Var, Yeter" Yanılgısı: Dijital Dükkanın Kepenklerini İndirmeyin
+
+Türkiye'deki işletmelerin %80'i aynı hatayı yapıyor: Bir web sitesi yaptırıyor, parasını ödüyor ve bir daha o siteye bakmıyor. Düşünün ki lüks bir dükkan açtınız ama vitrin 2 yıldır aynı, içeride kimse yok, raflar tozlanmış. Müşteri girer mi? Girmez. [Google botları da girmez](https://search.google.com/search-console). Google şunu ister: "Bana yaşadığını kanıtla!"
+
+### Ölü Site vs. Canlı Site
+
+- Ölü Site: 2 yıldır güncellenmemiş, blog yazısı olmayan, iletişim bilgileri eski site.
+- Canlı Site: Haftalık içerik üreten, kullanıcı yorumlarına cevap veren, teknik olarak taze tutulan site.
+
+> **%50** — Yerel aramaların yüzde 50'si 24 saat içinde mağaza ziyaretine dönüşüyor. Google Business Profile optimizasyonu, fiziksel mağazanız için en etkili pazarlama aracıdır.
+> *Kaynak: Google, Yerel Arama Tüketici Davranışları Raporu, 2025*
+
+Sonuç: Google her zaman "yaşayan" işletmeyi ödüllendirir.
+
+## 3. Google'da Yükselmenin 5 Altın Kuralı
+
+### Kural 1: Müşterinin Aklını Oku (Kelime Stratejisi)
+
+Siz kendinize "Profesyonel Dijital Çözüm Ortağı" demek isteyebilirsiniz, kulağa havalı geliyor. Ama müşteri Google'a şunu yazar: "Ucuz web sitesi yapan yerler." Kazanan, kendi egosunu değil, müşterinin klavyesini rehber edinen işletmedir.
+
+2026'da "niş" kelimelere odaklanın. "Avukat" kelimesinde yükselmek imkansız olabilir ama "Bursa boşanma avukatı ücretleri" kelimesinde zirveye oynayabilirsiniz. [Doğru anahtar kelimeleri bulmanın ilk adımı Google Search Console'u kullanmaktır](https://search.google.com/search-console).
+
+### Kural 2: İlk 5 Saniyede "Evindesin" Hissini Ver
+
+Kullanıcı sitenize girdiğinde bir kronometre çalışır. Tasarımınız amatörse, yazılar iç içe geçmişse veya o meşhur "SSL Sertifikası Yok" (Güvenli Değil) uyarısı çıkıyorsa, müşteri kaçar. [Müşteri kaçarsa "Hemen Çıkma Oranı" (Bounce Rate) fırlar](https://pagespeed.web.dev/) ve Google sizi cezalandırır.
+
+### Kural 3: Hız Sizi Vezir de Eder, Rezil de
+
+2026 yılında kimsenin bir sitenin açılmasını 5 saniye bekleyecek sabrı yok. Özellikle mobil hız, SEO'nun %50'sidir. [Siteniz ışık hızında açılmıyorsa](https://pagespeed.web.dev/), müşteriniz rakibinizin sitesinde sepete çoktan ekleme yapmıştır bile.
+
+### Kural 4: Yerel SEO - Mahallenizin Kahramanı Olun
+
+Küçük bir işletmeyseniz, tüm Türkiye ile rekabet etmenize gerek yok. [Google Haritalar (Google Business) sizin en büyük silahınız](https://www.google.com/business/). Konumunuz net mi? Müşterileriniz yorum yapmış mı? (Ve siz onlara nazikçe cevap vermiş misiniz?) Dükkanın içinden güncel fotoğraflar var mı? Eğer haritada varsanız, o mahalledeki müşterinin cebindesiniz demektir. [Gebze'de yerel SEO](https://www.senninweb.com/gebze) ve [satış odaklı web sitesi stratejileri](https://www.senninweb.com/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir) ile siz de mahallenizin kahramanı olabilirsiniz.
+
+### Kural 5: Güven Sinyalleri (Sosyal Kanıt)
+
+Google, "insanların ne dediğine" bakar. Sitenizde gerçek müşteri referansları, varsa başarı belgeleri ve mutlaka çalışan bir iletişim formu olmalı. "Bize Ulaşın" sayfası olmayan bir işletmeye Google da güvenmez, Ayşe Teyze de.
+
+## 4. 2026'da Kaçınmanız Gereken "Tuzaklar"
+
+### Tuzak 1: Kopya İçerik
+
+[Başka siteden yazı kopyalamak, Google'a "Benim özgün bir fikrim yok" demektir](https://support.google.com/webmasters/answer/66359). Direkt elenirsiniz.
+
+> **%76** — Akıllı telefon kullanıcılarının yüzde 76'sı bir gün içinde 'yakınımdaki' araması yapıyor. Mobil uyumlu ve yerel SEO odaklı bir site, bu kitleden faydalanmanın anahtarıdır.
+> *Kaynak: Think with Google, Mobil Arama Trendleri, 2025*
+
+### Tuzak 2: Anahtar Kelime Çöplüğü
+
+Yazının her yerine "en iyi kebapçı, İstanbul kebapçı, kebapçı nerede" gibi kelimeler yığmak 2010'da kaldı. Google artık bunu "spam" olarak görüyor.
+
+### Tuzak 3: Sabırsızlık
+
+SEO bir sprint değil, maratondur. "Bugün yaptım, yarın neden birinci değilim?" derseniz yanlış yoldasınız demektir.
+
+## 5. Hemen Şimdi Uygulayabileceğiniz 3 Pratik Adım
+
+### Adım 1: Gizli Sekmede Kendinizi Arayın
+
+Google'ı açın ve hizmetinizi sanki bir müşterisiniz gibi aratın. İlk 3 sayfada yoksanız, alarm zilleri çalıyor demektir.
+
+### Adım 2: Google İşletme Profilini Şahlandırın
+
+Hemen şimdi dükkandan/ofisten 3 taze fotoğraf çekip yükleyin. Bir müşterinizden samimi bir yorum isteyin.
+
+### Adım 3: Sektörel Bir Soruyu Cevaplayın
+
+Sitenize girin ve en çok sorulan soruyu (Örn: "X hizmeti alırken nelere dikkat edilmeli?") 300 kelimelik bir yazı olarak paylaşın.
+
+## Sonuç: Gelecek Dijitalde, Siz Neredesiniz?
+
+Google'da kazananlar sadece "şanslı" olanlar değil; dijital dünyanın kurallarını kabul edip oyun kuranlardır.
+
+Bugün küçük görünen o web sitesi, doğru stratejiyle yarın size gece gündüz çalışan bir satış temsilcisine dönüşebilir.
+
+Unutmayın: En iyi saklanacak yer, Google'ın ikinci sayfasıdır. Çünkü oraya kimse bakmaz.
+
+**Sizi birinci sayfaya taşıyalım mı?**
+Bu içeriği beğendiyseniz veya işletmeniz için profesyonel bir dokunuş arıyorsanız, bizimle iletişime geçmekten çekinmeyin!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/kucuk-isletmeler-google-da-gorunurluk-2026) sitesinde yayınlanmıştır.*
+
+---
+
+# Web Siteniz Neden İlk Sayfada Değil? 8 Neden ve Çözüm (2026)
+
+> *Yazar: Çağatay Macar | 2026-02-18 | 8 dk*
+
+Web siteniz Google ilk sayfada değil mi? 8 yaygın hatayı öğrenin, SEO ve hız optimizasyonuyla sıralamanızı yükseltin.
+
+# Web Siteniz Neden Hâlâ İlk Sayfada Değil? (2026 Rehberi)
+
+> Görünmeyen Bir İşletme, Gerçekten Var mıdır?
+Şöyle düşünün: Şehrinizin en işlek caddesinde harika bir işletme açtınız. Ürünleriniz kaliteli, hizmetiniz mükemmel. Ama küçük bir sorun var—kimse sizi bulamıyor.
+
+> **0,5s** — Google'ın ilk sayfasında yer alan sitelerin ortalama yüklenme süresi 0,5 saniye. 3 saniyenin üzerindeki siteler, sıralamada ciddi avantaj kaybı yaşıyor.
+> *Kaynak: Google Core Web Vitals, PageSpeed Sıralama Faktörü Raporu, 2026*
+
+Bugün Google'da ilk sayfada olmayan bir web sitesinin durumu tam olarak budur. İnsanlar bir hizmet aradığında ilk yaptıkları şey [Google'da arama yapmak](https://www.google.com/). Ve gerçek şu ki: Tıklamaların büyük çoğunluğu ilk sayfada kalıyor.
+
+Eğer siz orada değilseniz, potansiyel müşteriniz rakibinizde. Bu yazıda, web sitenizin neden görünmediğini ve 2026'da bunu nasıl düzeltebileceğinizi açıklayacağız.
+
+## 1. Web Siteniz Sadece Var, Ama Çalışmıyor
+
+Web sitesi yapmak, müşteri kazanmak anlamına gelmez. Eğer siteniz yavaşsa, mobil uyumlu değilse ve net bir mesaj vermiyorsa, Google sizi yukarı taşımaz.
+
+- Yavaş Açılış: 3 saniyeden fazla açılan siteler kullanıcılarını kaybeder
+- Mobil Uyumsuzluk: 2026'da trafiğin %60'ı mobil, bu kritiktir
+- Belirsiz Mesaj: Kullanıcı 5 saniye içinde "benim sorunumu çözersiniz" demesini beklediğinde anlamayabilir
+
+## 2. Yanlış Anahtar Kelimelerle Yarışıyorsunuz
+
+Genel kelimeler yerine niş ve kullanıcı niyeti yüksek anahtar kelimelere odaklanmanız gerekir. Örneğin "avukat" yerine "Bursa boşanma avukatı ücretleri" veya "web tasarım hizmet" yerine "İstanbul e-ticaret web tasarımı" gibi. [Detaylı SEO görünürlük rehberi →](https://www.senninweb.com/blog/kucuk-isletmeler-google-da-gorunurluk-2026)
+
+Yerel ve spesifik aramalar daha hızlı sonuç getirir ve dönüşüm oranı çok daha yüksektir. Eğer [Google Search Console](https://search.google.com/search-console)'u kontrol etmiyorsanız, hangi kelimelerle görünüp hangileriyle görünmediğinizi bilemezsiniz demektir.
+
+## 3. İçerik Üretmiyorsunuz
+
+Düzenli blog içeriği üretmeyen siteler Google tarafından pasif görülür. İçerik sadece "bilgi vermek" için değildir—SEO'nun en güçlü parçalarından biridir.
+
+- Aylık yalnızca 1-2 blog yazısı, sitenizin Google'da freski tutmaz
+- Her yazı, farklı anahtar kelimelere optimize edilmesi gerekir
+- Kullanıcı sorularına cevap veren içerik, "feature snippet"lere girebilir ve organik trafiği artırır
+
+## 4. Yerel SEO'yu Kaçırıyorsunuz
+
+[Google Maps ve yerel aramalar](https://www.google.com/business/) küçük işletmeler için en büyük fırsattır. Profil optimizasyonu ve müşteri yorumları sıralamanızı doğrudan etkiler.
+
+> **%53** — Web sitelerinin yüzde 53'ü Google tarafından 'mobil uyumlu' olarak sınıflandırılmıyor. Mobil uyumluluk, günümüzde sıralama faktörü olmaktan çıkarak bir zorunluluk haline geldi.
+> *Kaynak: W3Techs, Mobil Uyumluluk İstatistikleri, 2026*
+
+- [Gebze Google İşletme Profili](https://www.senninweb.com/gebze) tamamlanmış mı? (İşletme adı, adres, telefon aynı mı her yerde?)
+- Müşteri yorumlarına cevap veriyorsunuz mu?
+- Yeterli fotoğraf ve güncel bilgiler var mı?
+
+## 5. Siteniz Güven Vermiyor
+
+SSL sertifikası, referanslar, kaliteli görseller ve hızlı yükleme güven oluşturur. Güven yoksa, kullanıcı da yoktur.
+
+- "Güvenli Değil" Uyarısı: SSL yoksa, müşterinin %90'ı hemen kaçar
+- Gerçek Referanslar: Müşteri yorumları, proje fotoğrafları ve tamamlanan işler güvenilirlik gösterir
+- Hızlı Yükleme: [PageSpeed Insights](https://pagespeed.web.dev/?hl=tr)'ta 80+ puan hedefleyin
+
+## 6. Rakipleriniz Daha İyi Çalışıyor
+
+SEO sürekli bir süreçtir. Rakipleriniz yatırım yapıyorsa, siz geride kalırsınız. Bugün Google'ın ilk sayfasında olan işletme 1-2 yıl bunu korumak için aktif çalışıyor demektir.
+
+## 7. Siteniz Satış Odaklı Değil
+
+Bir web sitesi sadece bilgi vermez—kullanıcıyı harekete geçirir. İletişim formu, "Teklif Al" butonu, "Hemen Çağır" gibi açık CTA'lar (Call to Action) olmadan dönüşüm olmaz.
+
+## 2026 İçin Praktik Yol Haritası
+
+- ✅ Hızlı ve mobil uyumlu [Gebze'de web tasarım](https://www.senninweb.com/gebze)
+- ✅ Doğru keyword stratejisi ile [Bilecik'te SEO hizmeti](https://www.senninweb.com/bilecik) uygulaması
+- ✅ Aylık 2-4 blog yazısı üretimi
+- ✅ Google Maps ve yerel SEO optimizasyonu
+- ✅ Güven ve marka algısı oluşturma
+- ✅ Dönüşüm odaklı site yapısı
+
+## Hızlı Başlangıç: Bugün Yapabileceğiniz 3 Adım
+
+### Adım 1: Sitenizi Test Edin
+
+[Google PageSpeed Insights](https://pagespeed.web.dev/?hl=tr)'ta sitenizin mobil ve masaüstü hızını kontrol edin. 80 puanın altındaysa, bir sorunu vardır.
+
+### Adım 2: Google Search Console'u Bağlayın
+
+> **%68** — Rakiplerinizin yüzde 68'i düzenli içerik üretmiyor. Blog yazısı yayınlayan siteler, yayınlamayanlara göre ortalama %434 daha fazla indekslenmiş sayfaya sahip.
+> *Kaynak: HubSpot, İçerik Pazarlama ve SEO İlişkisi Raporu, 2025*
+
+[Google Search Console](https://search.google.com/search-console)'u sitenize bağlayın ve "Sorgu Performansı" bölümünde hangi kelimelerde göründüğünüzü görün.
+
+### Adım 3: Google İşletme Profilini Güncelleyin
+
+[Google İşletme Profili](https://www.google.com/business/)'ni doldurun, 5 kaliteli işletme fotoğrafı yükleyin ve müşteriler yorum yapmaya teşvik edin.
+
+## Sonuç: Google'da Kazananlar Olanlar
+
+Google'da ilk sayfada olmak tesadüf değildir. Doğru strateji, tutarlı çalışma ve mütemadiyen iyileştirme ile her işletme görünürlüğünü artırabilir.
+
+2026'da dijitalleşme artık bir tercih değil, bir zorunluluktur. Siz rakiplerinizin önüne geçmek, Google'da tam da arandığınız anda müşterilerinizin karşısına çıkmak ve web sitenizi gerçek bir satış ofisine dönüştürmek istemez misiniz?
+
+**Web sitenizin neden görünmediğini öğrenmek ister misiniz?**
+<a href="#contact">Bizimle iletişime geçin</a> ve sitenizi müşteri getiren bir sisteme dönüştürelim!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026) sitesinde yayınlanmıştır.*
+
+---
+
+# 2026 Web Sitesi Fiyatları: Profesyonel Tasarım Kaç TL?
+
+> *Yazar: Çağatay Macar | 2026-03-05 | 7 dk*
+
+2026 web sitesi fiyatları ne kadar? Profesyonel kurumsal site ve SEO paketlerini karşılaştırın, bütçenize uygun planı bulun.
+
+# “5.000 TL'ye de site var, 100.000 TL'ye de…” Peki Aradaki Fark Ne?
+
+> Web Sitesi Tasarımı Kaç TL?
+Web sitesi yaptırmak isteyen çoğu kişinin kafası aynı noktada karışıyor: “Tamam ama bu işin gerçek fiyatı ne?”
+
+Çünkü internette dolaştığınızda birbirinden tamamen farklı rakamlar görüyorsunuz. Bir yerde 3-5 bin TL'ye “kurumsal site” yapılırken, başka bir ajans tek sayfalık bir landing page için bile 40-50 bin TL isteyebiliyor.
+
+> **₺15.000** — Türkiye'de profesyonel bir kurumsal web sitesinin ortalama maliyeti 2026 yılında 15.000 TL ile 50.000 TL arasında değişiyor. Fiyat, özellik sayısına ve ajans deneyimine göre şekilleniyor.
+> *Kaynak: SenninWeb, Web Tasarım Piyasa Araştırması, 2026*
+
+İşin ilginç tarafı şu: İkisi de teknik olarak “web sitesi”. Ama gerçekte aynı şey değiller.
+
+Tıpkı bir emlak örneği gibi düşünün. İkisi de “ev” olabilir ama biri plansız, eski bir bina; diğeri ise mimarisi düşünülmüş, yatırım değeri taşıyan modern bir yaşam alanıdır.
+
+## Önce Şunu Netleştirelim: Web Sitesi Bir Masraf mı, Yatırım mı?
+
+Asıl fark burada başlıyor.
+
+Bazı işletmeler web sitesini sadece “internette bulunalım” diye yaptırıyor. Bazıları ise onu aktif çalışan bir müşteri kazanma sistemi olarak görüyor. İkinci grup genelde daha fazla kazanıyor.
+
+Çünkü iyi hazırlanmış bir site:
+
+- size güven kazandırır
+- Google'da görünürlük sağlar
+- dönüşüm oranını artırır
+- WhatsApp mesajlarını artırır
+- marka algınızı güçlendirir
+
+Kötü hazırlanmış bir site ise çoğu zaman sadece dijital bir kartvizitten ibaret kalır.
+
+## 2026'da Web Sitesi Fiyatlarını Etkileyen Ana Faktörler
+
+### 1. Tasarım Kalitesi
+
+Hazır tema ile yapılan bir siteyle, markaya özel tasarlanmış bir arayüz arasında ciddi fark vardır.
+
+Özellikle artık kullanıcılar şuna alıştı:
+
+- hızlı açılan siteler
+- modern animasyonlar
+- Apple tarzı temiz arayüzler
+- mobilde kusursuz deneyim
+
+Yani sadece “site olsun” dönemi büyük ölçüde bitti. Bugün insanlar siteye girdiklerinde birkaç saniye içinde marka hakkında fikir oluşturuyor.
+
+> **%40** — Hazır tema kullanan siteler, özel tasarım sitelere göre ortalama yüzde 40 daha düşük dönüşüm oranına sahip. Özel tasarım, yatırımın geri dönüşünü doğrudan etkiliyor.
+> *Kaynak: Unbounce, Dönüşüm Oranı Optimizasyonu Raporu, 2025*
+
+### 2. Mobil Performans
+
+Birçok işletme hâlâ masaüstüne göre düşünüyor ama internet trafiğinin büyük kısmı artık mobil cihazlardan geliyor.
+
+Ve işin kötü tarafı şu: Google da bunu biliyor. Yavaş açılan veya mobilde bozulan siteler hem kullanıcı kaybediyor hem de SEO tarafında geriye düşüyor. [Web tasarımın 5 temel ilkesi](https://www.senninweb.com/blog/tasarimin-5-temel-ilkesi)'nde mobil uyum ve hızın önemini detaylıca ele aldık.
+
+Özellikle:
+
+- FCP (First Contentful Paint)
+- LCP (Largest Contentful Paint)
+- Core Web Vitals
+
+gibi performans metrikleri artık çok daha önemli hale geldi.
+
+### 3. SEO Dahil mi?
+
+Bu çok kritik bir detay. Bazı ajanslar sadece siteyi teslim eder. SEO tarafına hiç dokunmaz.
+
+Bazıları ise:
+
+- teknik SEO
+- hız optimizasyonu
+- meta yapılandırmaları
+- Google indexleme
+- lokal SEO
+- Google Maps uyumluluğu
+
+gibi detayları da sürece dahil eder. Doğal olarak bu da fiyatı etkiler. Çünkü SEO sonradan “eklenen” bir şey değil; sitenin temel yapısının içine işlenmesi gereken bir sistemdir.
+
+### 4. İçerik ve Metin Yazımı
+
+Çoğu insan şunu fark etmiyor: Web sitesindeki yazılar da işin büyük kısmı.
+
+Çünkü kullanıcı şunu arıyor: “Bu işletme benim problemimi çözüyor mu?”
+
+İyi yazılmış bir içerik:
+
+- güven verir
+- dönüşümü artırır
+- SEO'ya katkı sağlar
+
+Kötü yazılmış içerik ise en iyi tasarımı bile sıradan gösterebilir.
+
+### 5. Özel Yazılım ve Ekstra Özellikler
+
+Her site aynı değildir. Örneğin:
+
+- emlak filtreleme sistemi
+- online rezervasyon
+- özel admin paneli
+- üyelik sistemi
+- ödeme entegrasyonları
+- çoklu dil desteği
+
+gibi özellikler projeyi tamamen farklı seviyeye taşır. Bu yüzden fiyat verirken çoğu profesyonel ekip önce ihtiyaç analizi yapar.
+
+## Peki Gerçekçi Fiyat Aralıkları Ne?
+
+> **₺500** — Bir web sitesinin aylık ortalama bakım maliyeti 500-2.000 TL arasında değişiyor. Düzenli bakım yapılmayan sitelerin %60'ı 1 yıl içinde güvenlik açığı riskiyle karşılaşıyor.
+> *Kaynak: SenninWeb, Web Sitesi Bakım Maliyetleri Analizi, 2026*
+
+Tabii ki her proje farklıdır ama 2026 için genel tablo aşağı yukarı şöyle:
+
+Proje TürüOrtalama AralıkBasit tanıtım sitesi10.000 – 20.000 TLProfesyonel kurumsal site20.000 – 50.000 TLPremium UI/UX odaklı site50.000 TL+Özel yazılım projeleriÇok daha yüksek olabilir
+
+Burada önemli olan en ucuz seçeneği bulmak değil, gerçekten işletmenize katkı sağlayacak sistemi kurmak.
+
+## En Büyük Hata: Sadece Fiyata Odaklanmak
+
+Birçok işletme şu hatayı yapıyor: “En uygun fiyatlı olanı seçelim.”
+
+Ama sonrasında:
+
+- site yavaş oluyor
+- mobilde bozuluyor
+- Google'da görünmüyor
+- dönüşüm getirmiyor
+
+ve birkaç ay sonra siteyi baştan yaptırmak zorunda kalıyorlar. Yani aslında iki kere ödeme yapmış oluyorlar.
+
+## İyi Bir Web Sitesi Nasıl Anlaşılır?
+
+Bir ajans veya freelancer ile çalışmadan önce şunlara bakın:
+
+- Daha önce yaptığı işler nasıl görünüyor?
+- Mobil performansı iyi mi?
+- Site hızlı açılıyor mu?
+- SEO bilgisi var mı?
+- Sadece tasarım mı yapıyor yoksa strateji de düşünüyor mu?
+
+Çünkü artık mesele sadece “güzel görünmek” değil. Google'da görünmek, güven vermek ve müşteri dönüştürmek de işin bir parçası.
+
+## Sonuç: Web Sitesi Fiyatı Değil, Getirisi Önemlidir
+
+İyi bir web sitesi bazen aylarca müşteri getirebilir. Kötü bir site ise sadece bütçe tüketir.
+
+Bu yüzden soru aslında şu olmalı: “Bu site bana gerçekten müşteri kazandıracak mı?”
+
+Eğer cevap evetse, o proje maliyet değil yatırım haline gelir.
+
+## Son Bir Not
+
+Eğer siz de işletmeniz için:
+
+- hızlı açılan
+- modern görünen
+- SEO uyumlu
+- gerçekten güven veren
+
+bir web sitesi oluşturmak istiyorsanız, önce doğru stratejiyle başlamak gerekir.
+
+Çünkü dijital dünyada bazen birkaç saniyelik ilk izlenim, aylarca sürecek müşteri ilişkilerini belirleyebiliyor.
+
+**İşletmenize özel, modern ve SEO uyumlu bir web sitesi mi arıyorsunuz?**
+Bizimle iletişime geçin, size özel bir strateji oluşturalım!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/web-sitesi-tasarim-fiyatlari-2026) sitesinde yayınlanmıştır.*
+
+---
+
+# Web Tasarımın 5 Temel İlkesi: Profesyonel Site Nasıl Olmalı?
+
+> *Yazar: Çağatay Macar | 2026-02-10 | 10 dk*
+
+Web tasarımda UI/UX, hız, mobil uyum ve SEO prensiplerini öğrenin. Profesyonel bir site için 5 temel ilkeyi keşfedin.
+
+Web tasarım dendiğinde çoğu kişinin aklına ilk gelen şey görselliktir. "Şu site ne kadar güzelmiş", "bu site biraz amatör duruyor" gibi cümleler kurarız. Oysa profesyonel bir web sitesini güzel yapan şey sadece renkler veya fontlar değildir. İyi bir web tasarımı, perde arkasında onlarca kararın verildiği, stratejik düşünülmüş bir sürecin sonucudur. Kurumsal web tasarım dediğimiz şey tam olarak budur — görselin ötesinde, iş hedeflerine hizmet eden bir yapı kurmak.
+
+**S: Peki profesyonel bir web sitesini 'profesyonel' yapan şey nedir?**
+
+Bir değil, beş temel ilke vardır. Bunlardan biri eksik olduğunda site ya güzel durur ama çalışmaz, ya çalışır ama kimse bulamaz, ya da bulunur ama kimse kullanamaz.
+
+> **%94** — İlk izlenimlerin yüzde 94'ü tasarımla ilgilidir. Web sitenizin tasarımı, ziyaretçilerin sizin hakkınızdaki düşüncelerini 0,05 saniye içinde şekillendirir.
+> *Kaynak: Northumbria University, İlk İzlenim ve Tasarım Araştırması, 2025*
+
+Yıllardır web tasarım ve SEO hizmeti veren biri olarak şunu rahatlıkla söyleyebilirim: web sitesi firmaları arasındaki en büyük fark, bu ilkelerin kaçını gerçekten uyguladıklarıdır. Hadi gelin, bir profesyonel web tasarım sürecini ayakta tutan 5 temel ilkeye yakından bakalım.
+
+### Kurumsal Web Tasarımın 5 Temel İlkesi
+
+Her biri birbirini tamamlayan bu beş ilke, sıfırdan bir site kurarken veya mevcut bir siteyi iyileştirirken takip edilmesi gereken yol haritasıdır.
+
+**1. Müşteri İhtiyaçlarının Belirlenmesi**
+Geçenlerde gayrimenkul danışmanı Mahir Akar Bey ile konuşuyorduk. Kendisine baştan sona bir web sitesi yapmadım — zaten bir sitesi vardı. Ona [Gebze'de local SEO hizmeti](https://www.senninweb.com/gebze) veriyorum. Birlikte oturup hedef anahtar kelimeleri belirledik, içerikleri için en çok aratılan sorulardan başlıklar ürettik. Ayrıca sitesine blog sayfaları ekledik, hız ve erişilebilirlik konusunda gerekli düzeltmeleri yaptım. İşte bu süreç, bir web sitesinin sadece yapılıp bırakılacak bir şey olmadığını gösteriyor. Müşteri ihtiyaçları dediğimiz şey, bir kere konuşup biten bir şey değildir — sürekli güncellenen, gelişen bir süreçtir. Kısacası, bir web sitesi yapmaya karar verdiğinizde ilk yapmanız gereken şey bir aynanın karşısına geçip kendinize şu soruyu sormaktır: 'Bu site benim için ne yapacak?' Kurumsal web tasarım süreci bu soruyla başlar. Hedef kitlenizi tanımadan, onların ihtiyaçlarını anlamadan yapılmış bir site, ne kadar gösterişli olursa olsun boş bir vitrinden farksızdır.
+
+**2. Görsel Hiyerarşi ve Kullanıcı Deneyimi (UI/UX)**
+Bir siteye girdiğinizde gözünüzün ilk nereye gittiğini hiç fark ettiniz mi? İşte bu, görsel hiyerarşi denen şeyin ta kendisidir. Profesyonel web tasarım, kullanıcının gözünü yormadan, onu istediğiniz yöne nazikçe yönlendirme sanatıdır. Büyük başlıklar, kontrast renkler, doğru boşluk kullanımı — bunların hepsi kullanıcıya 'Önce buraya bak, sonra şuraya tıkla' mesajı verir. Kullanıcı deneyimi (UX) ise bunun bir adım ötesidir: butonların boyutu, menünün konumu, yazı büyüklüğü... Bunları doğru ayarlamazsanız siteniz ne kadar güzel olursa olsun, ziyaretçileriniz bir süre sonra 'ya tamam da nereye tıklayacağım şimdi ben' diyerek siteden çıkar.
+
+**3. Hız ve Performans Optimizasyonu**
+Bu maddeyi atlayan web sitesi firmaları maalesef ki bir numaralı hatayı yapıyor. İnsanlar sabırsız. Bir sitenin açılmasını 3 saniyeden fazla bekleyen kullanıcıların neredeyse yarısı sayfayı terk ediyor. Hız, sadece kullanıcı memnuniyeti için değil, Google sıralamaları için de kritik. [Core Web Vitals](https://www.senninweb.com/blog/teknik-terimler#core-web-vitals) dediğimiz performans metrikleri, artık Google'ın sıralama faktörleri arasında. Yani siteniz yavaşsa, Google da onu aşağılara atıyor. Görsel optimizasyonu, gereksiz kod temizliği, önbellekleme ve CDN kullanımı gibi teknik detaylar kulak tırmalayabilir belki, ama bir profesyonel web tasarım sürecinde bunların hepsi hesaba katılmalı.
+
+**4. Mobil Uyumluluk (Responsive Design)**
+Günümüzde internet trafiğinin yüzde 60'ından fazlası mobil cihazlardan geliyor. Bu demek oluyor ki siteniz masaüstünde mükemmel görünse bile, telefonda açıldığında dağınık duruyorsa potansiyel müşterilerinizin çoğunu kaybediyorsunuz. Responsive design, sitenizin her ekran boyutuna otomatik olarak uyum sağlaması demek. Eskiden ayrı bir mobil site yapma dönemi vardı, artık öyle değil. Google, mobil-first indexing dediği bir sistemle önce sitenizin mobil sürümüne bakıyor, onu değerlendiriyor. Kurumsal web tasarım yaptırırken 'mobilde nasıl görünecek?' sorusu en başta sorulması gereken sorulardan biridir.
+
+**5. SEO ve Dijital Görünürlük**
+Sonuncuyu en önemli madde olarak sakladım diyebilirim. Çünkü siteniz ne kadar güzel, hızlı ve mobil uyumlu olursa olsun, Google'da görünmüyorsa bir anlamı yok. SEO (arama motoru optimizasyonu), sitenizin Google'da üst sıralarda çıkması için yapılan çalışmaların bütünüdür. Web sitesi firmaları arasında seçim yaparken size sadece 'site yaparız' değil, 'sitenizi Google'da da gösteririz' diyenleri tercih etmelisiniz. Doğru anahtar kelime stratejisi, meta etiketler, hızlı yükleme süreleri ve kaliteli içerik — bunların hepsi SEO'nun bir parçası. Ayrıca son yıllarda AEO (Answer Engine Optimization) ve GEO (Generative Engine Optimization) gibi kavramlar da ortaya çıktı. Bunları da duymaya başlayacaksınız, emin olun.
+
+> **%38** — Kullanıcıların yüzde 38'i görsel olarak çekici olmayan bir web sitesini terk ediyor. Tasarımın 5 temel ilkesine uymak, ziyaretçi kaybını önlemenin ilk adımıdır.
+> *Kaynak: Adobe, Web Tasarımı ve Kullanıcı Deneyimi Raporu, 2025*
+
+Özetlemek gerekirse, bir web sitesini profesyonel yapan şey sadece görselliği değil, aynı anda birden fazla katmanda doğru kararlar verilmiş olmasıdır. Eğer siteniz:
+- müşteri ihtiyaçlarına göre şekillenmemişse
+- kullanıcı dostu değilse
+- yavaş açılıyorsa
+- mobilde dağılıyorsa
+- Google'da görünmüyorsa
+
+bunların hepsinin bir çözümü var. Ama önce sorunu kabul etmek gerek.
+
+**İşletmenize özel, bu 5 ilkeye uygun bir web sitesi mi arıyorsunuz?**
+Bizimle iletişime geçin, size özel bir strateji oluşturalım!
+
+> **%88** — Tutarlı bir tasarım dili kullanan markalar, rakiplerine göre yüzde 88 daha fazla müşteri sadakati elde ediyor. Görsel tutarlılık, marka güveninin temelidir.
+> *Kaynak: Lucidpress, Marka Tutarlılığı ve Gelir İlişkisi Raporu, 2025*
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/tasarimin-5-temel-ilkesi) sitesinde yayınlanmıştır.*
+
+---
+
+# 2026 Web Tasarım Fiyatları Neden Değişiyor? (Detaylı Rehber)
+
+> *Yazar: Çağatay Macar | 2026-03-22 | 7 dk*
+
+Web tasarım fiyatları neden bu kadar farklı? 2026 güncel fiyat aralıkları, saklı maliyetler ve bütçe dostu seçenekleri karşılaştırın.
+
+# Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor?
+
+> 5.000 TL'ye de site var, 100.000 TL'ye de — peki aradaki fark ne?
+İnternette web sitesi yaptırmak istediğinizde karşınıza çıkan fiyatlar o kadar farklı ki insan ister istemez kafası karışıyor. Bir ajans 3.000 TL'ye "profesyonel web sitesi" yaparken, başka bir ajans aynı hizmet için 50.000 TL istiyor. İkisi de aynı şeyi mi yapıyor? Kesinlikle hayır.
+
+> **%75** — Kullanıcıların yüzde 75'i web sitesi tasarımına dayanarak bir şirketin güvenilirliğini değerlendiriyor. Tasarım kalitesi, algılanan değeri doğrudan etkiliyor.
+> *Kaynak: Stanford University, Web Güvenilirlik Araştırması, 2025*
+
+Tıpkı bir araba örneğindeki gibi: İkisi de araba ama biri sizi A noktasından B noktasına götüren ekonomik bir model, diğeri ise konfor, hız ve güvenlik donanımlarıyla dolu lüks bir araç. Tasarım dünyasında da durum aynı. Bu yazıda, fiyat uçurumunun nedenlerini, 2026 yılında hangi fiyat aralıklarının gerçekçi olduğunu ve doğru tercihi nasıl yapacağınızı adım adım anlatacağım.
+
+## Web Tasarım Fiyatları Neden Bu Kadar Farklı?
+
+Bu sorunun tek bir cevabı yok. Çünkü fiyatı etkileyen onlarca değişken var. Ama en temel sebep şu: Herkes "web sitesi" yapıyor ama ortaya çıkan işin kalitesi, kapsamı ve teknik altyapısı tamamen farklı. Kurumsal bir site ile hazır tema üzerinden yapılan bir site arasında dağlar kadar fark vardır.
+
+Düşük fiyatlı seçenekler genellikle hazır şablonlar kullanır, size özel bir tasarım sunmaz ve çoğu zaman [mobil uyumlu tasarım](https://www.senninweb.com/blog/teknik-terimler#mobil-uyumlu-tasarim) gibi temel gereklilikleri bile tam karşılamaz. Oysa profesyonel bir stratejik süreç, markanıza özel stratejilerle ilerler ve sizi rakiplerinizden ayıran bir dijital varlık oluşturur.
+
+## 2026 Web Tasarım Fiyatlarını Belirleyen 5 Faktör
+
+Bu hizmeti alırken ödediğiniz ücretin karşılığında tam olarak ne aldığınızı anlamak için şu 5 faktöre dikkat etmelisiniz.
+
+### 1. Tasarım Kalitesi ve UI/UX
+
+[UI/UX tasarımı](https://www.senninweb.com/blog/teknik-terimler#ui-ux-tasarimi), bir web sitesinin sadece görünümünü değil, kullanıcının siteyle olan tüm etkileşimini kapsar. Profesyonel bir ekip, sitenize giren bir kişinin hangi butona tıklayacağından, hangi renklerin güven hissi vereceğine kadar her detayı özel olarak tasarlar. [Web tasarımın 5 temel ilkesi](https://www.senninweb.com/blog/tasarimin-5-temel-ilkesi) rehberimizde bu konuları detaylıca ele aldık. Hazır tema kullanan siteler ise bu sürecin neredeyse tamamını atlar. Bu da fiyata doğrudan yansır.
+
+### 2. Mobil Uyum ve Hız (Core Web Vitals)
+
+Google, 2026 yılında mobil uyum ve site hızını sıralama faktörü olarak çok ciddiye alıyor. [Core Web Vitals](https://www.senninweb.com/blog/teknik-terimler#core-web-vitals) olarak bilinen bu performans metrikleri, sitenizin hem kullanıcı deneyimini hem de Google'daki sıralamasını doğrudan etkiliyor. Profesyonel bir ajans, bu metrikleri optimize etmek için altyapı seviyesinde çalışır. Bu da ek bir maliyet demektir.
+
+### 3. SEO ve Teknik Altyapı
+
+> **₺2.000** — Bir freelance web tasarımcısının saatlik ücreti Türkiye'de 200 TL'den başlarken, premium bir ajansın saatlik ücreti 2.000 TL'ye kadar çıkabiliyor. Fiyat farkı, sunulan değerdeki farkı yansıtıyor.
+> *Kaynak: SenninWeb, Freelance vs Ajans Fiyat Karşılaştırması, 2026*
+
+[SEO uyumlu web sitesi](https://www.senninweb.com/blog/teknik-terimler#seo-uyumlu-web-sitesi) kurulumu, sitenin iskeletinden itibaren başlar. Doğru başlık etiketleri, schema.org yapılandırması, hız optimizasyonu, görsel sıkıştırma ve daha birçok teknik detay, sitenizin Google'da görünür olmasını sağlar. Ucuz seçeneklerde bu adımlar genellikle ya eksiktir ya da hiç yoktur.
+
+### 4. Özel Yazılım ve Fonksiyonellik İhtiyaçları
+
+Her işletmenin ihtiyacı farklıdır. Online rezervasyon sistemi, üyelik paneli, ödeme entegrasyonu, çoklu dil desteği gibi özellikler projenin kapsamını ve dolayısıyla fiyatı artırır. Basit bir tanıtım sitesi ile özel yazılım gerektiren bir platform arasındaki fiyat farkı bu noktada ortaya çıkar.
+
+### 5. İçerik ve Metin Yazarlığı
+
+Bir web sitesini etkili yapan sadece görseller değil, aynı zamanda içerikleridir. Profesyonel metin yazarlığı, markanızın sesini doğru yansıtır, ziyaretçileri harekete geçirir ve SEO'ya katkı sağlar. İçerik üretimi de maliyeti etkileyen önemli bir faktördür.
+
+## 2026 Güncel Fiyat Aralıkları
+
+Tabii ki her proje benzersizdir ancak 2026 yılı için genel bir fikir vermek adına ortalama fiyat aralıklarını şöyle özetleyebilirim:
+
+Proje TürüOrtalama Fiyat AralığıHazır tema ile basit tanıtım sitesi5.000 – 15.000 TLProfesyonel kurumsal site çözümü20.000 – 50.000 TLPremium UI/UX + SEO odaklı site50.000 – 100.000 TLÖzel yazılım + e-ticaret + portal100.000 TL ve üzeri
+
+Gördüğünüz gibi fiyatlar oldukça geniş bir skalada yer alıyor. Önemli olan en ucuz seçeneği bulmak değil, işletmenizin ihtiyaçlarına en uygun seçeneği almak.
+
+## Ucuz Web Tasarım vs Profesyonel Yaklaşım
+
+Düşük fiyatlı bir web sitesi yaptırıp birkaç ay sonra "keşke daha iyisini yaptırsaydım" dediğinizi duyar gibiyim. Çünkü [SSL sertifikası](https://www.senninweb.com/blog/teknik-terimler#ssl-sertifikasi) olmayan, mobilde bozulan, yavaş açılan bir site size sadece masraf değil, aynı zamanda itibar kaybı da yaşatır.
+
+Profesyonel bir site ise şunları garanti eder: Google'da görünürlük, hızlı açılış süreleri, mobilde kusursuz deneyim, güvenli altyapı ve markanıza uygun özel tasarım. Bu bir maliyet değil, yatırımdır.
+
+> **%55** — Özel yazılım gerektiren web projelerinin maliyeti, standart kurumsal sitelere göre yüzde 55 daha yüksek. Proje kapsamı, fiyatlandırmadaki en büyük değişkendir.
+> *Kaynak: Clutch, Web Geliştirme Maliyetleri Raporu, 2025*
+
+Unutmayın, internet kullanıcılarının %75'i bir web sitesinin güvenilirliğini sadece tasarımına bakarak değerlendiriyor. Amatör görünen bir site, profesyonel bir işletme olsanız bile potansiyel müşterilerinizi kaçırmanıza neden olur.
+
+## Web Tasarım Fiyatları Hakkında Sık Sorulan Sorular
+
+En çok merak edilen soruları ve cevaplarını burada topladım:
+
+- En ucuz site fiyatı ne kadar? Hazır tema kullanan basit bir tanıtım sitesi 5.000 TL'den başlayabilir. Ancak bu siteler genellikle SEO, hız ve mobil uyum konusunda yetersiz kalır.
+- Kurumsal site fiyatları neden daha yüksek? Çünkü markaya özel UI/UX çalışması, SEO altyapısı, hız optimizasyonu ve özgün içerik üretimi gibi profesyonel hizmetleri kapsar.
+- Site fiyatları 2026'da arttı mı? Evet, döviz kurları, artan işçilik maliyetleri ve gelişen teknoloji gereksinimleri nedeniyle fiyatlar her yıl belirli bir oranda artış gösteriyor.
+- Web sitesi fiyatına domain ve hosting dahil mi? Çoğu profesyonel ajans ilk yıl domain ve hosting hizmetini pakete dahil eder. Sonraki yıllar için yenileme ücretleri ayrıca alınır.
+
+Daha fazla sorunuz varsa [SSS sayfamızı](https://www.senninweb.com/sss) ziyaret edebilir veya bizimle doğrudan iletişime geçebilirsiniz.
+
+**İşletmenize özel, profesyonel bir çözüm mü arıyorsunuz?**
+Bizimle iletişime geçin, size özel bir strateji ve fiyat teklifi oluşturalım!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/web-tasarim-fiyatlari-neden-degisiyor-2026) sitesinde yayınlanmıştır.*
+
+---
+
+# Web Tasarım Teknik Terimler Sözlüğü: Core Web Vitals'tan SEO'ya 50+ Terim
+
+> *Yazar: Çağatay Macar | 2026-04-01 | 8 dk*
+
+Core Web Vitals, SSL, SEO, UI/UX — tüm teknik terimler tek rehberde. Web tasarım jargonunu anlayın, bilinçli kararlar verin.
+
+Web tasarım dünyasında sıkça duyduğunuz ama tam olarak ne anlama geldiğini bilmediğiniz teknik terimler mi var? Bu sayfada, blog yazılarımızda link verdiğimiz tüm teknik terimlerin detaylı açıklamalarını bulabilirsiniz. Her bir terimi, neden önemli olduğunu ve web sitenizi nasıl etkilediğini anlattım.
+
+## Core Web Vitals
+
+> **%90** — Kullanıcıların yüzde 90'ı SSL sertifikası olmayan bir web sitesinden hemen çıkıyor. Güvenlik, dijital dünyada en temel güven sinyalidir.
+> *Kaynak: GlobalSign, SSL ve Tüketici Güveni Araştırması, 2025*
+
+Core Web Vitals, Google'ın bir web sitesinin kullanıcı deneyimini ölçmek için kullandığı üç temel performans metriğidir. 2021 yılında Google tarafından sıralama faktörü haline getirilmiştir ve 2026 itibarıyla hala en önemli sıralama sinyallerinden biridir.
+
+Bu üç metrik şunlardır:
+
+- LCP (Largest Contentful Paint): Sayfadaki en büyük içerik öğesinin (görsel, video, metin bloğu) ne kadar sürede görüntülendiğini ölçer. İdeal süre 2.5 saniyenin altıdır.
+- INP (Interaction to Next Paint): Kullanıcının bir sayfayla etkileşime geçmesi (tıklama, dokunma) ile tarayıcının buna yanıt vermesi arasındaki süreyi ölçer. 200 milisaniyenin altı ideal kabul edilir.
+- CLS (Cumulative Layout Shift): Sayfa yüklenirken görsel öğelerin beklenmedik şekilde kaymasını ölçer. 0.1'in altı ideal değerdir.
+
+Core Web Vitals metriklerinin iyi olması, sitenizin hem Google'da daha üst sıralarda çıkmasını sağlar hem de kullanıcıların sitenizde daha uzun süre kalmasına yardımcı olur. Web tasarım sürecinde bu metrikleri göz önünde bulundurmak, uzun vadede sitenizin başarısını doğrudan etkiler.
+
+## SSL Sertifikası
+
+SSL (Secure Sockets Layer) sertifikası, web siteniz ile ziyaretçilerinizin tarayıcısı arasındaki veri iletişimini şifreleyen bir güvenlik protokolüdür. Bir sitenin HTTPS ile başlamasını sağlayan ve tarayıcıda kilit simgesiyle gösterilen bu sertifika, özellikle kullanıcı bilgilerinin (kredi kartı, şifre, kişisel veriler) korunması için hayati önem taşır.
+
+SSL sertifikası olmayan bir site, tarayıcılarda "Güvenli Değil" uyarısı gösterir. Araştırmalar, kullanıcıların %90'ının böyle bir uyarıyla karşılaştığında siteyi hemen terk ettiğini gösteriyor. Ayrıca Google, SSL sertifikası olan siteleri (HTTPS) sıralamada SSL olmayanlara (HTTP) göre daha üstte konumlandırır.
+
+Günümüzde ücretsiz SSL sertifikası sağlayıcıları (Let's Encrypt gibi) sayesinde her web sitesi kolayca SSL sahibi olabilir. Profesyonel web tasarım hizmeti alırken SSL sertifikasının dahil olup olmadığını mutlaka sormalısınız.
+
+> **2,5s** — Google'ın Core Web Vitals metriği LCP (Largest Contentful Paint) için hedef süre 2,5 saniye. Bu sürenin üzerindeki siteler, arama sonuçlarında dezavantajlı konuma düşüyor.
+> *Kaynak: Google, Core Web Vitals Teknik Dokümantasyonu, 2026*
+
+## UI/UX Tasarımı
+
+UI (User Interface — Kullanıcı Arayüzü) ve UX (User Experience — Kullanıcı Deneyimi), modern web tasarımının iki temel yapıtaşıdır. Sıkça birlikte anılsalar da aslında farklı şeyleri ifade ederler.
+
+UI Tasarımı: Web sitesinin görsel öğeleriyle ilgilenir. Renk paletleri, tipografi, buton tasarımları, ikonlar, boşluk kullanımı ve genel görsel hiyerarşi UI'ın kapsamına girer. Kısacası kullanıcının "gördüğü" her şeydir.
+
+UX Tasarımı: Kullanıcının siteyle olan tüm etkileşimini kapsar. Bir butona tıkladığında ne olacağı, sayfalar arasında nasıl gezineceği, aradığı bilgiyi kaç adımda bulacağı gibi akış ve kullanılabilirlik konularıyla ilgilenir.
+
+İyi bir UI/UX tasarımı, ziyaretçilerin sitenizde daha uzun süre kalmasını, daha kolay gezinmesini ve sonuç olarak dönüşüm oranlarının artmasını sağlar. Kurumsal web tasarım projelerinde UI/UX çalışması, profesyonel fiyatın önemli bir bölümünü oluşturur.
+
+## SEO Uyumlu Web Sitesi
+
+SEO (Search Engine Optimization — Arama Motoru Optimizasyonu), bir web sitesinin Google gibi arama motorlarında üst sıralarda çıkması için yapılan teknik ve stratejik çalışmaların tamamıdır. SEO uyumlu bir web sitesi, daha en baştan bu optimizasyonlar düşünülerek inşa edilir.
+
+SEO uyumlu bir web sitesinde şunlar bulunur:
+
+- Teknik SEO: Doğru HTML etiket yapısı (h1, h2, title, meta description), schema.org yapılandırması, XML sitemap, robots.txt dosyası ve hızlı sayfa yükleme süreleri.
+- İçerik SEO: Doğru anahtar kelime stratejisi, kullanıcı niyetine uygun içerik, okunabilirlik ve özgün değer sunan metinler.
+- Teknik Altyapı: Mobil uyumluluk, HTTPS güvenliği, kırık link kontrolleri, yönlendirme (redirect) yönetimi ve sayfa hızı optimizasyonu.
+
+> **%60** — Web trafiğinin yüzde 60'ı artık mobil cihazlardan geliyor. Mobile-first tasarım, yalnızca bir trend değil, modern web geliştirmenin temel standardıdır.
+> *Kaynak: Statista, Mobil Web Trafiği Raporu, 2026*
+
+SEO sonradan eklenen bir özellik değil, sitenin temeline işlenmesi gereken bir sistemdir. Bu yüzden web tasarım hizmeti alırken SEO altyapısının projeye dahil olup olmadığını sorgulamak kritik önem taşır. SEO hakkında sıkça sorulan sorular için [SSS sayfamızı](https://www.senninweb.com/sss) ziyaret edebilirsiniz.
+
+## Mobil Uyumlu Tasarım
+
+Mobil uyumlu tasarım (responsive design), bir web sitesinin tüm ekran boyutlarında (mobil telefon, tablet, dizüstü bilgisayar, masaüstü) kusursuz görünmesini ve çalışmasını sağlayan bir yaklaşımdır. 2026 yılı itibarıyla internet trafiğinin %60'ından fazlası mobil cihazlardan geliyor.
+
+Google, 2015 yılından beri mobil uyumluluğu sıralama faktörü olarak kullanıyor ve 2024 itibarıyla tamamen mobil öncelikli indekslemeye (mobile-first indexing) geçti. Bu demek oluyor ki Google, sitenizin mobil sürümünü masaüstü sürümünden önce değerlendiriyor.
+
+İyi bir mobil uyumlu tasarım şunları içerir:
+
+- Esnek grid yapısı ve orantılı boyutlandırma
+- Dokunmatik ekranlara uygun buton ve link boyutları
+- Okunabilir font büyüklükleri (en az 16px)
+- Hızlı yükleme süreleri için optimize edilmiş görseller
+- Yatay kaydırma gerektirmeyen akışkan düzen
+
+Mobil uyumlu bir site sadece Google için değil, kullanıcı deneyimi için de olmazsa olmazdır. Web sitesi tasarımı yaptırırken mobil uyumun standart olarak dahil edildiğinden emin olun.
+
+**Bu terimler hakkında daha fazla bilgi mi almak istiyorsunuz?**
+Bizimle iletişime geçin, web sitenizin tüm teknik detaylarını birlikte planlayalım!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/teknik-terimler) sitesinde yayınlanmıştır.*
+
+---
+
+# Ödüllü Web Sitesi Fiyatları 2026: Awwwards Kalitesinde Site Maliyeti
+
+> *Yazar: Çağatay Macar | 2026-04-10 | 8 dk*
+
+Ödüllü bir web sitesi yaptırmak ne kadar? Awwwards kalitesinde premium tasarım ve özelliklerin maliyetini öğrenin.
+
+# Web Tasarım Fiyatları Ne Kadar? Ödüllü Sitelerin Maliyeti Ne?
+
+> Bir Hayalle Başlayalım: Ödüllü Bir Web Sitesi Size Ne Kazandırır?
+Şimdi bir hayal edelim. Gözlerinizi kapatın ve şöyle bir senaryo düşünün: Web siteniz Awwwards'da 'Site of the Day' seçilmiş, CSSDA veya FWA gibi platformlarda ödül almış. Müşterileriniz size 'siteniz harika olmuş, böyle profesyonel bir firmayla çalıştığımız için gurur duyuyoruz' diye mesaj atıyor. Google'da rakiplerinizin hep önünde çıkıyorsunuz çünkü SEO ile birleşmiş ödüllü bir tasarım, işletmenize sadece prestij değil, doğrudan 1.8x - 2x daha fazla satış getiriyor. İnsanlar güvenilir, profesyonel ve akılda kalan bir markayla çalışmak ister — ve siz o marka oluyorsunuz. Peki bu hayal gerçek olabilir mi? Üstelik düşündüğünüz kadar pahalı da değil.
+
+> **₺5.000** — Türkiye'de ödüllü bir web sitesinin ortalama proje maliyeti 5.000-15.000 USD arasında değişiyor. Ödül seviyesi yükseldikçe proje bütçesi de katlanarak artıyor.
+> *Kaynak: Awwwards, Web Tasarım Ödülleri ve Proje Bütçeleri Raporu, 2025*
+
+Bu yazıda, ödüllü web sitelerinin ardındaki gerçek maliyetleri, hangi bütçeyle ne alabileceğinizi ve bir müşteri olarak nelere dikkat etmeniz gerektiğini anlatacağım. Çünkü web tasarım fiyatları internette dolaşan o kafa karıştırıcı rakamlar arasında kaybolmamanızı istiyorum.
+
+## 1. Ödüllü Siteleri Sıradan Sitelerden Ayıran Ne?
+
+Bu soru, işin en can alıcı noktası. Çünkü bir siteye baktığınızda 'işte bu ödüllük' dedirten şey tam olarak ne? Hazır bir tema üzerine yapılmış bir siteyle, ödül almak için özel olarak tasarlanmış bir site arasındaki farkı nasıl anlarsınız?
+
+- Hız ve Performans: Ödüllü sitelerin ortak özelliği, Core Web Vitals metriklerinde mükemmel puan almalarıdır. Yani saniyeler içinde açılır, kullanıcıyı bekletmezler.
+- UI/UX Detayları: Her butonun konumu, her geçiş animasyonu, her font seçimi — bunların hepsi bilinçli yapılmış tercihlerdir. Gözünüzün 'güzel' dediği şey aslında onlarca küçük kararın toplamıdır.
+- Yaratıcı Yaklaşım: Jüri üyeleri sıradanlıktan sıkılmıştır. Ödül alan siteler, alışılmışın dışında bir hikaye anlatma biçimiyle gelir. Bu da özel bir tasarım süreci gerektirir.
+- Mobil Performans: Günümüzde bir site mobilde kötü çalışıyorsa ödül alması neredeyse imkansız. Mobil uyumluluk artık standart değil, zorunluluk.
+
+## 2. Web Tasarım Fiyatları: Hangi Bütçeyle Ne Alıyorsun?
+
+Şimdi gelelim işin maddi kısmına. 2026 yılında web tasarım fiyatları geniş bir skalaya yayılıyor. Ama işin güzel tarafı şu: Ödül alacak kalitede bir site yaptırmak sandığınız kadar astronomik rakamlar gerektirmiyor. Tabii doğru ajansla çalışırsanız.
+
+Projenin kapsamına ve ihtiyaçlarınıza göre üç ana fiyat aralığından bahsetmek mümkün:
+
+**10.000 – 20.000 TL Arası: Basit Ama Temiz Çözümler**
+Bu fiyat aralığı genelde hazır tema üzerinden yapılan, standart özelliklere sahip siteleri kapsar. Ödül almak için yeterli olmasa da, küçük bir işletme için iş görebilir. Ancak SEO altyapısı, mobil performans ve özgün tasarım gibi konularda genellikle sınırlı kalır.
+
+**20.000 – 50.000 TL Arası: Profesyonel Ödül Adayı**
+İşte asıl sihir burada başlıyor. Bu bütçeyle markanıza özel, modern ve performans odaklı bir site yaptırabilirsiniz. SEO altyapısı, hız optimizasyonu ve UI/UX çalışması bu paketin içinde yer alır. Geçenlerde bir müşterimle konuşurken şöyle demişti: 'Keşke daha önce yaptırsaydım, gelen müşteri sayısı iki katına çıktı.' İşte bu aralık, ödül almak için en gerçekçi bütçedir.
+
+**50.000 TL ve Üzeri: Premium Ödül Avcısı**
+Awwwards, CSSDA gibi platformlarda 'Site of the Day' hedefleyenler için bu aralık daha uygun. Özel animasyonlar, sıfırdan yazılmış kod, benzersiz bir kullanıcı deneyimi — bunların hepsi bir ekip çalışmasıdır. Ama unutmayın, yüksek bütçe tek başına ödül garantisi vermez. Önemli olan vizyon ve doğru ekiptir.
+
+> **%70** — Awwwards ödüllü sitelerin yüzde 70'i özel animasyon ve micro-interaction içeriyor. Bu tür premium özellikler, standart bir siteye göre maliyeti %50-100 artırabiliyor.
+> *Kaynak: Awwwards, Ödüllü Site Trend Analizi, 2025*
+
+## 3. Ödüllü Site Yaptırmak İstiyorum: Ne Yapmalıyım?
+
+Peki bir müşteri olarak siz ne yapmalısınız? İşte size birkaç pratik tavsiye:
+
+- Ödül kazanmış ajansların portföylerini inceleyin. Beğendiğiniz siteleri bir listeye alın.
+- Fiyat teklifi alırken sadece rakam değil, teklifin içeriğini de karşılaştırın. SEO dahil mi? Mobil performans garantisi var mı?
+- Referans isteyin ve o referanslarla konuşun. 'Siteniz size müşteri getirdi mi?' sorusu en kritik sorudur.
+- Awwwards, CSSDA, FWA gibi platformlarda gezinin. Hangi ortak özellikleri görüyorsunuz? Bunları kendi sitenizde de isteyin.
+- Acele karar vermeyin. İyi bir site planlaması 2-3 hafta sürebilir, bu normaldir.
+
+Unutmayın, ödül bir amaç değil, bir araçtır. Asıl hedef, sitenizin size daha fazla müşteri kazandırması ve işletmenizi büyütmesidir. Eğer şu anki web siteniz:
+- beklediğiniz kadar müşteri getirmiyorsa
+- rakiplerinizin gerisinde kalıyorsa
+- ödül alabilecek potansiyelde değilse
+
+bunun çözümü doğru strateji ve doğru ekipten geçiyor.
+
+[Web tasarım fiyatları](https://www.senninweb.com/blog/web-tasarim-fiyatlari-neden-degisiyor-2026) kafanızı karıştırmasın. Önemli olan, sitenizin size ne kazandıracağıdır. Ödüllü bir site, iyi bir SEO stratejisiyle birleştiğinde işletmenizi bir sonraki seviyeye taşıyabilir.
+
+> **%300** — Ödüllü tasarıma sahip markalar, standart tasarımlı rakiplerine göre yüzde 300 daha fazla organik medya bahsi alıyor. Tasarıma yapılan yatırım, PR değeri olarak geri dönüyor.
+> *Kaynak: DesignRush, Tasarım ve Medya İlişkisi Raporu, 2025*
+
+**Sizin hayalinizdeki siteyi konuşmaya ne dersiniz?**
+Bizimle iletişime geçin, web tasarım fiyatları ve size özel çözümler hakkında detaylı bilgi alın!
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler) sitesinde yayınlanmıştır.*
+
+---
+
+# İzmit'te Dijital Pazarlama 2026: Kocaeli İşletmeleri İçin Rehber
+
+> *Yazar: Çağatay Macar | 2026-06-12 | 11 dk*
+
+Kocaeli'de dijital pazarlama neden kritik? İzmit merkezli işletmeniz için SEO, Google Maps ve yerel stratejileri keşfedin.
+
+# İzmit'te Dijital Pazarlama: Kocaeli İşletmeleri İçin Dönüşüm Zamanı
+
+> Sanayi şehrinin dijital dönüşümü: Kocaeli nerede duruyor?
+Türkiye'nin en büyük sanayi şehirlerinden biri olan Kocaeli, İzmit merkeziyle birlikte yüzbinlerce işletmeye ev sahipliği yapıyor. Otomotivden kimyaya, lojistikten perakendeye kadar geniş bir yelpazede faaliyet gösteren bu işletmelerin ortak bir sorunu var: Dijital pazarlamada geride kalmak.
+
+Dijital pazarlama, işletmelerin ürün ve hizmetlerini internet üzerinden tanıtmak, hedef kitleye ulaşmak ve satış dönüşümü sağlamak için kullandığı stratejik bir pazarlama disiplinidir. SEO, sosyal medya yönetimi, e-posta pazarlaması ve içerik pazarlaması gibi kanalları kapsar. 2026 itibarıyla Türkiye'de işletmelerin dijital pazarlamaya ayırdığı bütçe, toplam pazarlama harcamalarının %45'ine ulaşmıştır (We Are Social, 2026 Digital Turkey Raporu).
+
+> **%46** — Kocaeli'deki işletmelerin yalnızca yüzde 46'sının aktif bir web sitesi bulunuyor. Bu, bölgedeki işletmeler için dijital dönüşümün henüz başlangıç aşamasında olduğunu gösteriyor.
+> *Kaynak: TÜİK, Kocaeli Dijital Dönüşüm İstatistikleri, 2025*
+
+📌 Öne ÇıkanlarKocaeli'deki KOBİ'lerin yalnızca %46'sının aktif web sitesi bulunuyor — İstanbul'da bu oran %68Dijital pazarlama stratejisi uygulayan işletme oranı Kocaeli'de %20'nin altındaİnternet kullanıcılarının %78'i bir ürün veya hizmet araştırırken arama motorlarını kullanıyorGoogle'da ilk sayfada çıkmayan işletmeler, potansiyel müşterilerinin %90'ından fazlasını kaybediyor
+
+TÜİK'in 2025 Dijital Ekonomi Raporu'na göre, Kocaeli Türkiye'nin en büyük 4. ekonomisi konumunda. Ancak Kocaeli'deki KOBİ'lerin yalnızca %46'sının aktif bir web sitesi bulunuyor. Bu oran, İstanbul (%68) ve Ankara (%61) gibi şehirlerin oldukça gerisinde. Daha çarpıcı olanı, dijital pazarlama stratejisi uygulayan işletmelerin oranı ise %20'nin altında.
+
+Bir sanayi şehrinde bu tablo, hem büyük bir kayıp hem de büyük bir fırsat anlamına geliyor. Çünkü rakipleriniz henüz dijital pazarlamaya yatırım yapmamışken, siz doğru stratejiyle arayı açabilir ve pazarın önemli bir bölümünü ele geçirebilirsiniz.
+
+## Kocaeli'de Dijital Pazarlama Neden Kritik?
+
+Kocaeli, yalnızca sanayi üretimiyle değil, aynı zamanda genç ve dinamik nüfusuyla da dikkat çekiyor. 2 milyona yaklaşan nüfusun %60'ından fazlası 15-54 yaş aralığında — yani dijital kanalları aktif kullanan, satın alma kararlarını internet üzerinden veren kitle.
+
+We Are Social ve DataReportal'ın 2026 Digital Turkey raporuna göre, Türkiye'de internet kullanıcılarının %78'i bir ürün veya hizmet araştırırken arama motorlarını kullanıyor. Bu oran, 2024'te %72 iken 2 yıl içinde 6 puan artış gösterdi. Kocaeli özelinde ise her gün onbinlerce kullanıcı aşağıdaki gibi aramalar yapıyor:
+
+- "İzmit web tasarım"
+- "Kocaeli dijital pazarlama ajansı"
+- "İzmit'te Google'da çıkmak için ne yapmalı"
+- "Kocaeli SEO hizmeti"
+- "İzmit en iyi web sitesi yapan firmalar"
+
+Bu aramaların büyük kısmı herhangi bir karşılık bulamıyor. Çünkü Kocaeli'deki işletmelerin büyük bölümü ya hiç web sitesine sahip değil ya da sahip oldukları site SEO açısından optimize edilmemiş durumda.
+
+Dijital Varlık MetriğiKocaeliİstanbulAnkaraAktif web sitesi oranı%46%68%61Dijital pazarlama stratejisi<%20%40%35Google İşletme Profili güncel%40%65%58Düzenli içerik üretimi%15%32%28Kaynak: TÜİK Dijital Ekonomi Raporu, 2025
+
+## İzmit'teki İşletmelerin Dijital Pazarlamada Yaptığı 5 Büyük Hata
+
+Kocaeli'nin kalbi İzmit'te faaliyet gösteren işletmeleri incelediğimizde, dijital pazarlamada tekrar eden 5 temel hata görüyoruz:
+
+### 1. Web Sitesi Olmadan Varlık Göstermeye Çalışmak
+
+Kocaeli'deki esnaf ve KOBİ'lerin yaklaşık %40'ının hala aktif bir web sitesi bulunmuyor (TÜİK, 2025). Oysa potansiyel müşterilerin bir işletmeyi değerlendirirken ilk baktığı şey, o işletmenin internetteki varlığı. Web sitesi olmayan bir işletme, modern tüketici gözünde güvenilir görünmüyor.
+
+### 2. Sadece Sosyal Medyaya Güvenmek
+
+Instagram ve Facebook sayfaları önemli, ancak bir işletmenin dijital varlığı yalnızca sosyal medyadan ibaret olmamalı. Google'da yapılan bir arama sizi bulamıyorsa, potansiyel müşterilerinizin büyük kısmına ulaşamıyorsunuz demektir. Sosyal medya pasif bir vitrin, web sitesi ise 7/24 açık olan bir mağazadır.
+
+### 3. Google İşletme Profili'ni İhmal Etmek
+
+> **%78** — Tüketicilerin yüzde 78'i bir ürün veya hizmeti satın almadan önce internetten araştırma yapıyor. Web sitesi olmayan işletmeler, bu potansiyel müşterilerin tamamını kaybediyor.
+> *Kaynak: We Are Social, Digital Turkey Raporu, 2026*
+
+İzmit'teki işletmelerin Google Haritalar üzerindeki profilleri incelendiğinde, %60'ından fazlasının profil bilgilerinin eksik veya güncel olmadığı görülüyor. [Google İşletme Profili](https://www.google.com/business/), yerel SEO'nun temel taşıdır. İşletme adı, adres, telefon numarası (NAP) tutarlılığı ve güncel fotoğraflar, Google'ın sizi güvenilir bulmasını sağlar.
+
+### 5. İçerik Üretmemek
+
+Düzenli içerik üretmeyen işletmeler, Google nezdinde "pasif" olarak değerlendirilir. Blog yazıları, sektörel rehberler ve güncel haberler, hem müşterilerinize değer katar hem de SEO performansınızı artırır. Haftada bir blog yazısı yayınlayan işletmeler, yayınlamayanlara göre %67 daha fazla potansiyel müşteri elde ediyor.
+
+## Yerel SEO ile İzmit'te Görünür Olmak
+
+Kocaeli gibi büyük bir sanayi şehrinde faaliyet gösteriyorsanız, yerel SEO sizin en büyük rekabet avantajınız olabilir. Ulusal çapta büyük markalarla rekabet etmek yerine, kendi bölgenizdeki müşterilere odaklanarak çok daha hızlı sonuç alabilirsiniz.
+
+Yerel SEO'nun temel bileşenleri şunlardır:
+
+- Google İşletme Profili Optimizasyonu: İşletmenizin Kocaeli/İzmit konumunu doğru tanımlayın, çalışma saatlerinizi güncelleyin ve düzenli fotoğraf ekleyin.
+- Yerel Anahtar Kelimeler: "İzmit'te web tasarım", "Kocaeli SEO", "Körfez SEO" gibi lokasyon bazlı anahtar kelimeler hedefleyin.
+- Müşteri Yorumları: [Google Haritalar'da](https://www.google.com/business/) müşteri yorumları almak ve bu yorumlara yanıt vermek, sıralamanızı doğrudan etkiler.
+- NAP Tutarlılığı: İşletme adı, adres ve telefon numaranız web sitenizde, Google profilinizde ve diğer platformlarda birebir aynı olmalıdır.
+
+Kocaeli'nin bir diğer önemli ilçesi olan [Gebze'deki işletmeler benzer bir dönüşümden geçiyor](https://www.senninweb.com/gebze). Sanayi Odası'na kayıtlı binlerce firma, dijital pazarlama stratejileriyle yeni müşterilere ulaşmanın yollarını arıyor.
+
+## Kocaeli'de Hangi Dijital Pazarlama Kanalları İşe Yarıyor?
+
+Her işletmenin ihtiyacı farklıdır. Ancak Kocaeli'de faaliyet gösteren işletmeler için en etkili dijital pazarlama kanallarını şöyle sıralayabiliriz:
+
+### En Etkili Dijital Kanallar
+
+**Arama Motoru Optimizasyonu (SEO)**
+Kocaeli'deki işletmeler için en uzun vadeli ve sürdürülebilir kanal SEO'dur. SEO'ya yatırım yapan işletmelerin %82'si, 6 ay içinde organik trafiklerinde belirgin artış görüyor (Ahrefs, 2025 SEO İstatistikleri). [Google'da görünürlük rehberimizde](https://www.senninweb.com/blog/kucuk-isletmeler-google-da-gorunurluk-2026) detaylıca anlattığımız gibi, doğru anahtar kelime stratejisi ve teknik altyapı ile organik trafik elde etmek mümkündür.
+
+**WhatsApp Ticaret**
+Kocaeli'de küçük ve orta ölçekli işletmeler arasında WhatsApp üzerinden satış hızla yaygınlaşıyor. Web sitenize entegre edeceğiniz bir WhatsApp butonu, müşterilerle doğrudan iletişim kurmanızı sağlar.
+
+**LinkedIn ve B2B Pazarlama**
+Kocaeli sanayi şehri olduğu için B2B pazarlama büyük önem taşır. LinkedIn üzerinden kurumsal müşterilere ulaşmak, sanayi firmaları için en etkili kanallardan biridir.
+
+## İzmit Merkezli İşletmeler İçin Veri Odaklı Strateji
+
+Dijital pazarlamada başarının anahtarı veriye dayalı kararlar almaktır. Kocaeli özelinde bir strateji oluştururken takip edilmesi gereken adımlar şunlardır:
+
+- Google Analytics 4 kurulumu ile web sitenize gelen trafiği analiz edin
+- Google Search Console ile hangi anahtar kelimelerde göründüğünüzü tespit edin
+- Rakip analizi yaparak Kocaeli'deki benzer işletmelerin hangi kanalları kullandığını öğrenin
+- Müşteri anketleri ve geri bildirimlerle hedef kitlenizin dijital alışkanlıklarını belirleyin
+- A/B testleri ile hangi mesajların ve görsellerin daha iyi dönüşüm sağladığını ölçün
+
+> **₺3,2Milyar** — Kocaeli, Türkiye'nin 4. büyük ekonomisi olarak 3,2 milyar dolarlık bir dijital pazar potansiyeline sahip. Bu pastadan pay almak için dijital varlık şart.
+> *Kaynak: TÜİK, Bölgesel GSYİH Verileri, 2025*
+
+[Google Search Console](https://search.google.com/search-console), işletmenizin hangi aramalarda göründüğünü, hangi sayfalarınızın performans gösterdiğini ve teknik hatalarınızı görmenizi sağlayan ücretsiz bir araçtır. Her işletme sahibinin düzenli olarak kontrol etmesi gereken bu araç, dijital pazarlama stratejinizin temel taşıdır.
+
+## Kocaeli Sanayi ve Dijital Pazarlama
+
+Kocaeli, Türkiye'nin en büyük organize sanayi bölgelerine ev sahipliği yapıyor. Gebze OSB, İzmit OSB, Köseköy, Çayırova ve Dilovası gibi bölgelerde binlerce üretici firma faaliyet gösteriyor. Bu firmaların ortak ihtiyacı, dijital kanallarda doğru şekilde var olmak.
+
+Sanayi firmaları için dijital pazarlama dendiğinde akla yalnızca web sitesi gelmemeli. Endüstriyel firmalar için şu kanallar özellikle etkilidir:
+
+- SEO ile sektörel anahtar kelimelerde görünürlük ("Kocaeli kalıp imalatı", "İzmit CNC talaşlı imalat" vb.)
+- LinkedIn ile kurumsal müşteri ağı oluşturma
+- Teknik blog içerikleri ve sektörel rehberler
+- E-posta pazarlaması ile mevcut müşteri ilişkilerini güçlendirme
+- YouTube ile ürün tanıtım videoları ve fabrika turları
+
+## Sıkça Sorulan Sorular
+
+**S: İzmit'te dijital pazarlama ajansı seçerken nelere dikkat etmeliyim?**
+
+Ajansın Kocaeli'de daha önce tamamladığı projeleri inceleyin, referanslarını kontrol edin ve iletişim sürecinin şeffaf olup olmadığını değerlendirin. Size net bir strateji sunabiliyor mu, hangi kanallarda uzmanlaşmış ve raporlama süreci nasıl işliyor — bu üç sorunun yanıtı ajans seçiminizi belirlemelidir.
+
+**S: Kocaeli'de küçük bir işletmeyim, SEO'ya yatırım yapmalı mıyım?**
+
+Evet. Yerel SEO, küçük işletmeler için en yüksek yatırım getirisini sağlayan dijital pazarlama kanallarından biridir. Rakipleriniz henüz yatırım yapmamışken doğru stratejiyle bölgenizdeki aramalarda hızla yükselebilirsiniz. Kocaeli'de SEO rekabeti İstanbul'a göre %40 daha düşüktür.
+
+**S: Web sitem var ama müşteri getirmiyor, ne yapmalıyım?**
+
+Öncelikle sitenizin hızını, mobil uyumluluğunu ve teknik SEO altyapısını kontrol ettirin. <a href="/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026">Web sitenizin neden görünmediğine dair rehberimizde</a> bu konuyu detaylıca ele alıyoruz. Google PageSpeed Insights'ta 80+ puan hedefleyin.
+
+## Sonuç: Kocaeli Dijital Dönüşümün Tam Zamanı
+
+Türkiye'nin dördüncü büyük ekonomisi Kocaeli, sanayi altyapısı kadar dijital altyapısıyla da öne çıkmalı. İzmit merkezli işletmelerin dijital pazarlamaya yatırım yapması artık bir tercih değil, rekabette hayatta kalmanın temel koşulu.
+
+Unutmayın: Rakiplerinizin henüz dijital pazarlamaya adım atmadığı bu dönem, sizin için büyük bir fırsat penceresi. Doğru strateji, doğru araçlar ve veri odaklı kararlarla Kocaeli'de işletmenizi bir adım öne taşıyabilirsiniz.
+
+İzmit'te faaliyet gösteren işletmeniz için size özel bir dijital pazarlama stratejisi oluşturmak ister misiniz?
+
+**Hangi pazarlama stratejisini kullanıyorsunuz?**
+Kocaeli'de 8+ yıllık deneyime sahip SenninWeb ekibi olarak işletmenize özel bir dijital strateji belirlemek için <a href="https://wa.me/905314051584?text=Merhaba%2C%20%C4%B0zmit%27te%20dijital%20pazarlama%20stratejisi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#25D366] via-[#22C55E] to-[#16A34A] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">WhatsApp'tan ücretsiz danışmanlık alın →</a>
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/izmit-dijital-pazarlama-kocaeli) sitesinde yayınlanmıştır.*
+

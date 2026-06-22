@@ -1,4 +1,4 @@
-import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs'
+import { writeFileSync, readFileSync, mkdirSync, existsSync, cpSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -97,7 +97,7 @@ prerender(
 prerender(
   '/hizmet/dijital-pazarlama',
   'Dijital Pazarlama Hizmeti | SenninWeb - Online Büyüme Çözümleri',
-  'Profesyonel dijital pazarlama hizmeti: Google Ads, sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu. Markanızı dijitalde büyütün, müşterilerinize ulaşın.'
+  'Profesyonel dijital pazarlama hizmeti: sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu. Markanızı dijitalde büyütün, müşterilerinize ulaşın.'
 )
 
 // Blog posts
@@ -136,3 +136,17 @@ const distSitemap = resolve(distDir, 'sitemap.xml')
 writeFileSync(publicSitemap, sitemap, 'utf-8')
 writeFileSync(distSitemap, sitemap, 'utf-8')
 console.log('\n📄 Sitemap generated with', pages.length, 'URLs')
+
+// ── Generate MD mirrors & llms-full.txt ──
+import { execSync } from 'child_process'
+console.log('\n📝 Generating MD mirrors and llms-full.txt...')
+execSync('node scripts/generate-md-mirrors.mjs', { stdio: 'inherit', cwd: resolve(__dirname) })
+console.log('✅ MD mirrors and llms-full.txt done')
+
+// ── Sync generated docs to dist ──
+console.log('\n📋 Syncing public/docs to dist/docs...')
+const sourceDocs = resolve(publicDir, 'docs')
+const targetDocs = resolve(distDir, 'docs')
+if (!existsSync(targetDocs)) mkdirSync(targetDocs, { recursive: true })
+cpSync(sourceDocs, targetDocs, { recursive: true, force: true })
+console.log('✅ docs synced to dist')

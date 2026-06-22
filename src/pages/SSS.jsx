@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "Nedir bu İnternet Sitesi?",
     answer:
-      "İnternet (web) sitesi veya siteleri, bizim dijitaldeki 7/24 çalışan dükkanlarımızdır. Birçok farklı kategorisi vardır: blog, portfolyo, e-ticaret, haber siteleri, topluluk ve forum siteleri vs. İnternet siteleri, kendinizin veya işletmenizin reklamını yapmak için müthiş ve bir o kadar da etkili araçlardır. Günümüzde internet sitesi olmayan bir işletme hayal etmek bile tuhaf geliyor — artık işletme sahipleri veya freelance olarak çalışan şahıslar için bir zorunluluk haline geldi. Müşteri çekmek, satış yapmak, sponsor ve/veya yatırımcı bulmak için olmazsa olmazlardır."
+      "İnternet (web) sitesi veya siteleri, bizim dijitaldeki 7/24 çalışan dükkanlarımızdır. Birçok farklı kategorisi vardır: blog, portfolyo, e-ticaret, haber siteleri, topluluk ve forum siteleri vs. İnternet siteleri, kendinizin veya işletmenizi tanıtmak için müthiş ve bir o kadar da etkili araçlardır. Günümüzde internet sitesi olmayan bir işletme hayal etmek bile tuhaf geliyor — artık işletme sahipleri veya freelance olarak çalışan şahıslar için bir zorunluluk haline geldi. Müşteri çekmek, satış yapmak, sponsor ve/veya yatırımcı bulmak için olmazsa olmazlardır."
   },
   {
     question: "Web siteleri nasıl yapılır, tasarlanır?",
@@ -79,9 +79,9 @@ const faqs = [
       "Evet, veriyoruz. Yayın sonrası 30 gün boyunca ücretsiz destek sağlıyoruz. Bu süreçte karşılaştığınız herhangi bir sorun, küçük değişiklik talepleri veya uyum sorunlarıyla ilgileniyoruz.\n\n30 gün sonrası için ise aylık bakım planlarımız var. Güvenlik güncellemeleri, performans takibi, içerik güncellemeleri ve yedekleme gibi hizmetleri düzenli olarak sağlıyoruz. Uzun vadeli çözüm ortağınız olmak isteriz."
   },
   {
-    question: "SEO ve Google Ads (reklam) arasındaki fark nedir? Hangisi daha iyi?",
+    question: "SEO nedir ve neden önemlidir?",
     answer:
-      "İkisi birbirini tamamlayan ama çok farklı şeyler. Google Ads, reklam verdiğiniz sürece üst sıralarda göründüğünüz bir sistem. Bütçeyi kestiğiniz an trafik de kesilir. Kısa vadeli hızlı sonuç almak istiyorsanız işe yarar.\n\nSEO ise uzun vadeli bir yatırım. Çalışmalar yapılır, içerik üretilir, teknik altyapı düzeltilir — ve zamanla sıralamalar oturur. Reklamdan farkı, bütçeyi kestiğinizde trafiğin kesilmemesi. Yani organik olarak kazandığınız sıralamalar sizin olmaya devam eder.\n\nHangisi daha iyi? İhtiyacınıza bağlı. Ama şunu söyleyebilirim: SEO olmadan sadece reklama bel bağlamak, her ay para ödemeniz gereken bir kiralık evde oturmak gibidir. SEO ise size kendi evinizi satın almak gibi gelir."
+      "SEO (arama motoru optimizasyonu), web sitenizin Google ve diğer arama motorlarında organik olarak üst sıralarda yer alması için yapılan çalışmaların bütünüdür. Teknik altyapı, içerik stratejisi ve yerel optimizasyon olmak üzere üç temel disiplinden oluşur.\n\nSEO uzun vadeli bir yatırımdır. Çalışmalar yapılır, içerik üretilir, teknik altyapı düzeltilir — ve zamanla sıralamalar oturur. Organik olarak kazandığınız sıralamalar size ait olmaya devam eder.\n\nNeden önemli? Çünkü internet kullanıcılarının %90'ı arama motorlarını kullanıyor ve tıklamaların büyük çoğunluğu ilk sayfadaki organik sonuçlara gidiyor. Doğru bir SEO stratejisi ile işletmenizi sürekli olarak potansiyel müşterilerin karşısına çıkarabilirsiniz."
   },
   {
     question: "SEO ne kadar sürede sonuç verir? Garanti verebiliyor musunuz?",

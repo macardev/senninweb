@@ -1,35 +1,52 @@
 # Sennin Web
-> KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı. 2025'te Çağatay Macar tarafından kuruldu. Bilecik/Gölpazarı merkezli, Türkiye geneline hizmet. Mobil uyumlu, SEO odaklı, sıfırdan tasarlanmış web siteleri.
+
+> Sennin Web, KOBİ'lere web tasarım, SEO ve dijital pazarlama hizmeti sağlayan bir ajans. 2025'te Çağatay Macar tarafından kuruldu. Bilecik/Gölpazarı merkezli, Türkiye geneline hizmet veriyor.
 
 ## Pages
 
-- [Ana Sayfa](https://www.senninweb.com/): Premium web tasarım, SEO ve kurumsal kimlik hizmetleri. KOBİ'lere özel, mobil uyumlu ve dönüşüm odaklı çözümler.
-- [Hakkimizda](https://www.senninweb.com/hakkimizda): Sennin Web kurucusu Çağatay Macar ve şirket hikayesi. Premium tasarım yaklaşımı, SEO felsefesi ve değerler.
-- [Dijital Rehber](https://www.senninweb.com/blog): Web tasarım, SEO, 2026 trendleri, küçük işletme stratejileri ve dijital büyüme üzerine kapsamlı rehberler.
-- [Gebze](https://www.senninweb.com/gebze): Gebze'de web tasarım, yerel SEO, e-ticaret ve dijital pazarlama çözümleri. Bölgeye özel hizmetler.
-- [Bilecik](https://www.senninweb.com/bilecik): Bilecik'te web tasarım, SEO, Google Maps optimizasyonu ve kurumsal kimlik hizmetleri.
-- [Kocaeli](https://www.senninweb.com/kocaeli): Kocaeli genelinde web tasarım, SEO ve dijital pazarlama. İzmit, Gebze, Körfez, Gölcük ve tüm ilçeler.
-- [SSS](https://www.senninweb.com/sss): Web tasarım, SEO, AEO, GEO, mobil uyumluluk ve fiyatlandırma hakkında 17 detaylı soru-cevap.
+- [Ana Sayfa](https://www.senninweb.com/): Web tasarım, SEO ve kurumsal kimlik hizmetleri. KOBİ'lere yönelik mobil uyumlu web siteleri.
+- [Hakkimizda](https://www.senninweb.com/docs/hakkimizda.md): Sennin Web kurucusu Çağatay Macar ve şirket hikayesi. Tasarım yaklaşımı, SEO felsefesi ve değerler.
+- [SSS](https://www.senninweb.com/docs/sss.md): Web tasarım, SEO, AEO, GEO, mobil uyumluluk ve fiyatlandırma hakkında soru-cevap.
+- [Web Tasarım Hizmeti](https://www.senninweb.com/docs/hizmet/web-tasarim.md): Sıfırdan tasarlanmış, mobil öncelikli web siteleri. SEO altyapılı.
+- [SEO ve Büyüme Hizmeti](https://www.senninweb.com/docs/hizmet/seo-ve-buyume.md): Arama motoru optimizasyonu, yerel SEO, AEO/GEO ve anahtar kelime stratejisi.
+- [E-Ticaret Çözümleri](https://www.senninweb.com/docs/hizmet/eticaret-cozumleri.md): Online satış siteleri, ödeme entegrasyonu, SEO altyapısı ve mobil uyumlu e-ticaret çözümleri.
+- [Dijital Pazarlama Hizmeti](https://www.senninweb.com/docs/hizmet/dijital-pazarlama.md): Sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu.
+- [Gebze](https://www.senninweb.com/docs/gebze.md): Gebze'de web tasarım, yerel SEO, e-ticaret ve dijital pazarlama hizmetleri.
+- [Bilecik](https://www.senninweb.com/docs/bilecik.md): Bilecik'te web tasarım, SEO, Google Maps optimizasyonu ve kurumsal kimlik hizmetleri.
+- [Kocaeli](https://www.senninweb.com/docs/kocaeli.md): Kocaeli genelinde web tasarım, SEO ve dijital pazarlama. İzmit, Gebze, Körfez, Gölcük ve tüm ilçeler.
+- [Blog](https://www.senninweb.com/docs/llms-full.txt): Tüm blog yazıları ve sayfaların tam metni (tek dosya).
 
 ## Blog Posts
 
-- [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?](https://www.senninweb.com/blog/kucuk-isletme-web-sitesi): Web sitesi ile müşteri kazanma stratejileri
-- [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir? 2026 SEO Rehberi](https://www.senninweb.com/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir): 2026 SEO stratejileriyle müşteri kazanma
-- [Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu (2026 Rehberi)](https://www.senninweb.com/blog/kucuk-isletmeler-google-da-gorunurluk-2026): Google'da görünürlük stratejileri
-- [Web Siteniz Neden Hala İlk Sayfada Değil? 2026 SEO Rehberi](https://www.senninweb.com/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026): İlk sayfada olmama nedenleri ve çözümleri
-- [Web Sitesi Tasarımı Kaç TL? (2026 Güncel Rehber)](https://www.senninweb.com/blog/web-sitesi-tasarim-fiyatlari-2026): Web sitesi fiyatlandırma rehberi
-- [Tasarımın 5 Temel İlkesi: Kurumsal Web Tasarım Rehberi](https://www.senninweb.com/blog/tasarimin-5-temel-ilkesi): Web tasarımının 5 temel ilkesi
-- [Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor?](https://www.senninweb.com/blog/web-tasarim-fiyatlari-neden-degisiyor-2026): Web tasarım fiyatlarını etkileyen faktörler
-- [Web Tasarım Teknik Terimler Sözlüğü](https://www.senninweb.com/blog/teknik-terimler): Core Web Vitals, SSL, UI/UX, SEO ve mobil uyum terimleri
+- [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?](https://www.senninweb.com/docs/blog/kucuk-isletme-web-sitesi.md): Web sitesi ile müşteri kazanma stratejileri
+- [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir? 2026 SEO Rehberi](https://www.senninweb.com/docs/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir.md): 2026 SEO stratejileriyle müşteri kazanma
+- [Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu (2026 Rehberi)](https://www.senninweb.com/docs/blog/kucuk-isletmeler-google-da-gorunurluk-2026.md): Google'da görünürlük stratejileri
+- [Web Siteniz Neden Hala İlk Sayfada Değil? 2026 SEO Rehberi](https://www.senninweb.com/docs/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026.md): İlk sayfada olmama nedenleri ve çözümleri
+- [Web Sitesi Tasarımı Kaç TL? (2026 Güncel Rehber)](https://www.senninweb.com/docs/blog/web-sitesi-tasarim-fiyatlari-2026.md): Web sitesi fiyatlandırma rehberi
+- [Tasarımın 5 Temel İlkesi: Kurumsal Web Tasarım Rehberi](https://www.senninweb.com/docs/blog/tasarimin-5-temel-ilkesi.md): Web tasarımının 5 temel ilkesi
+- [Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor?](https://www.senninweb.com/docs/blog/web-tasarim-fiyatlari-neden-degisiyor-2026.md): Web tasarım fiyatlarını etkileyen faktörler
+- [Web Tasarım Teknik Terimler Sözlüğü](https://www.senninweb.com/docs/blog/teknik-terimler.md): Core Web Vitals, SSL, UI/UX, SEO ve mobil uyum terimleri
+- [2026 Renk Trendleri: Grafik ve Web Tasarımında Öne Çıkan Renkler](https://www.senninweb.com/docs/blog/2026-grafik-tasarim-web-tasarim-renk-trendleri.md): 2026 renk trendleri ve paletleri
+- [2026'nın En İyi AI Web Tasarım Araçları](https://www.senninweb.com/docs/blog/2026-en-iyi-ai-web-tasarim-araclari.md): Yapay zeka destekli web tasarım araçları
+- [Domain Seçimi 2026: SEO İçin En Doğru Domain Nasıl Seçilir?](https://www.senninweb.com/docs/blog/2026-seo-stratejileri-domain-secimi.md): Domain seçimi ve SEO ilişkisi
+- [Web Tasarım Fiyatları Ne Kadar? Ödüllü Sitelerin Maliyeti Ne?](https://www.senninweb.com/docs/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler.md): Ödüllü web sitesi maliyetleri
+- [İzmit'te Dijital Pazarlama: Kocaeli İşletmeleri İçin 2026 Rehberi](https://www.senninweb.com/docs/blog/izmit-dijital-pazarlama-kocaeli.md): Kocaeli'de SEO, Google Maps ve dijital pazarlama stratejileri
 
-## Services
+## What We Do Not Do
 
-- **Web Tasarım**: Premium, sıfırdan tasarlanmış, mobil öncelikli web siteleri. Ortalama 8-10 gün teslim. Hazır tema kullanılmaz.
-- **SEO ve Büyüme**: Yerel SEO, anahtar kelime stratejisi, Google Business Profile yönetimi. 4-8 haftada ilk sinyaller.
-- **Kurumsal Kimlik**: Logo, kartvizit, sosyal medya şablonları, marka rehberi. Tutarlı ve premium marka kimliği.
+* We do not develop mobile applications.
+* We do not provide photography or videography services.
+* We do not offer custom software, CRM, or ERP development.
+* We do not sell domain registration or web hosting as a recurring subscription.
 
-## References
+## External Resources
 
 - [SEO Rehberi](https://www.senninweb.com/SEO-REHBERI.md): Yapılandırılmış veri (JSON-LD) şablonları ve kod örnekleri
 - [GitHub](https://github.com/macardev/senninweb): Proje kaynak kodu ve sürüm geçmişi
 - [LinkedIn](https://www.linkedin.com/in/çağatay-samet-macar-5bb930411/): Kurucu Çağatay Macar'ın LinkedIn profili
+- [Tüm İçerikler (llms-full.txt)](https://www.senninweb.com/docs/llms-full.txt): Tüm sayfalar ve blog yazılarının tam metni (AI tüketimi için optimize edilmiştir)
+
+## Contact
+
+* Email: business@senninweb.com
+* Location: Bilecik/Gölpazarı, Türkiye

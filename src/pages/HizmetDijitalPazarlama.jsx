@@ -39,23 +39,23 @@ function upsertLinkByRel(rel, href) {
 const content = {
   title: "Dijital Pazarlama Hizmeti | SenninWeb - Online Büyüme Çözümleri",
   shortTitle: "Dijital Pazarlama Hizmeti",
-  metaDescription: "Profesyonel dijital pazarlama hizmeti: Google Ads, sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu. Markanızı dijitalde büyütün, müşterilerinize ulaşın.",
-  description: "Dijital pazarlama, markaların çevrimiçi kanallar aracılığıyla hedef kitlelerine ulaşmasını sağlayan pazarlama disiplinidir. Google Ads, sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu (CRO) dijital pazarlamanın temel bileşenleridir. Veri odaklı stratejiler, reklam bütçelerinin verimli kullanılmasını ve yatırım getirisinin ölçülebilmesini sağlar.",
+  metaDescription: "Profesyonel dijital pazarlama hizmeti: sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu. Markanızı dijitalde büyütün, müşterilerinize ulaşın.",
+  description: "Dijital pazarlama, markaların çevrimiçi kanallar aracılığıyla hedef kitlelerine ulaşmasını sağlayan pazarlama disiplinidir. Sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu (CRO) temel bileşenleridir. Veri odaklı stratejiler, yatırım getirisinin ölçülebilmesini ve sürekli iyileştirme yapılmasını sağlar.",
   sections: [
     {
       type: "heroSection",
       title: "Dijital Pazarlama ile Markanızı Büyütün",
-      subtitle: "Google Ads, sosyal medya ve içerik pazarlama stratejileriyle hedef kitlenize ulaşın, satışlarınızı artırın"
+      subtitle: "Sosyal medya, içerik pazarlama ve dönüşüm optimizasyonu stratejileriyle hedef kitlenize ulaşın, satışlarınızı artırın"
     },
     {
       type: "paragraph",
       "isHtml": true,
-      "content": "Dijital Pazarlama hizmeti, markanızın Google Ads, sosyal medya ve içerik stratejileriyle hedef kitlesine ulaşmasını ve satışa dönüşmesini sağlayan bütünsel bir büyüme çözümüdür. SenninWeb veri odaklı stratejilerle yatırım getirinizi maksimize ediyor."
+      "content": "Dijital Pazarlama hizmeti, markanızın sosyal medya, içerik stratejileri ve dönüşüm optimizasyonu ile hedef kitlesine ulaşmasını ve satışa dönüşmesini sağlayan bütünsel bir büyüme çözümüdür. SenninWeb veri odaklı stratejilerle yatırım getirinizi maksimize ediyor."
     },
     {
       type: "paragraph",
       "isHtml": true,
-      "content": "Veri odaklı yaklaşımımızla her kanalda performansı ölçüyor, optimize ediyor ve bütçenizi en verimli şekilde kullanmanızı sağlıyoruz. SEO, Google Ads, sosyal medya ve içerik pazarlamayı tek bir stratejide birleştirerek bütünsel bir dijital büyüme planı oluşturuyoruz."
+      "content": "Veri odaklı yaklaşımımızla her kanalda performansı ölçüyor, optimize ediyor ve kaynaklarınızı en verimli şekilde kullanmanızı sağlıyoruz. SEO, sosyal medya ve içerik pazarlamayı tek bir stratejide birleştirerek bütünsel bir dijital büyüme planı oluşturuyoruz."
     },
     {
       type: "heading2",
@@ -65,10 +65,6 @@ const content = {
       type: "section",
       "content": "İşletmenizin hedeflerine göre özelleştirilmiş dijital pazarlama çözümleri sunuyoruz.",
       subsections: [
-        {
-          heading: "Google Ads & Search Kampanyaları",
-          content: "Anahtar kelime hedefleme, rakip analizi ve dönüşüm odaklı reklam stratejileri. Arama ağı, görüntülü reklamlar, alışveriş reklamları ve remarketing kampanyalarıyla doğru kitleye ulaşın."
-        },
         {
           heading: "Sosyal Medya Yönetimi",
           content: "Instagram, LinkedIn, Facebook ve Twitter/X'te markanızı büyütün. Profesyonel içerik takvimi, görsel tasarım, topluluk yönetimi ve performans raporlaması ile sosyal medyada fark yaratın."
@@ -84,7 +80,7 @@ const content = {
         {
           heading: "Performans Raporlaması & Analiz",
           answer: "",
-          content: "Google Analytics 4, Search Console ve reklam platformlarından elde ettiğimiz verilerle aylık performans raporları sunuyoruz. Hangi stratejinin çalıştığını görün, bütçenizi doğru kanala yönlendirin."
+          content: "Google Analytics 4 ve Search Console'dan elde ettiğimiz verilerle aylık performans raporları sunuyoruz. Hangi stratejinin çalıştığını görün, kaynaklarınızı doğru kanala yönlendirin."
         }
       ]
     },
@@ -100,7 +96,7 @@ const content = {
         "Dijital pazarlama, geleneksel pazarlamaya göre 3 kat daha fazla dönüşüm sağlıyor",
         "Hedef kitlenize tam olarak ulaşın — her kuruşluk bütçeniz verimli kullanılsın",
         "Performansı gerçek zamanlı ölçün, stratejinizi anında optimize edin",
-        "Küçük bütçelerle büyük markalarla rekabet edin"
+        "Organik trafikle sürdürülebilir büyüme elde edin"
       ]
     },
     {
@@ -166,7 +162,6 @@ export default function HizmetDijitalPazarlama() {
     ],
     "serviceType": [
       "Dijital Pazarlama",
-      "Google Ads",
       "Sosyal Medya Yönetimi",
       "İçerik Pazarlama",
       "CRO"
@@ -175,13 +170,6 @@ export default function HizmetDijitalPazarlama() {
       "@type": "OfferCatalog",
       "name": "Dijital Pazarlama Hizmetleri",
       "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Google Ads Yönetimi"
-          }
-        },
         {
           "@type": "Offer",
           "itemOffered": {

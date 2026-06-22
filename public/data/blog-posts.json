@@ -619,7 +619,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Doğru anahtar kelime araştırması ve içerik optimizasyonu ile tam da sizin hizmetinizi arayan \"sıcak müşterilere\" reklam bütçesi harcamadan ulaşırsınız."
+        "content": "Doğru anahtar kelime araştırması ve içerik optimizasyonu ile tam da sizin hizmetinizi arayan \"sıcak müşterilere\" organik olarak ulaşırsınız."
       },
       {
         "type": "heading3",
@@ -1269,7 +1269,7 @@
         "items": [
           "size güven kazandırır",
           "Google'da görünürlük sağlar",
-          "reklam dönüşümünü artırır",
+          "dönüşüm oranını artırır",
           "WhatsApp mesajlarını artırır",
           "marka algınızı güçlendirir"
         ]
@@ -2150,7 +2150,7 @@
       {
         "type": "paragraph",
         "isHtml": true,
-        "content": "<blockquote class=\"border-l-4 border-yellow-500/70 pl-4 my-4\"><p class=\"text-white font-medium\"><strong>Dijital pazarlama</strong>, işletmelerin ürün ve hizmetlerini internet üzerinden tanıtmak, hedef kitleye ulaşmak ve satış dönüşümü sağlamak için kullandığı stratejik bir pazarlama disiplinidir. SEO, Google Ads, sosyal medya yönetimi, e-posta pazarlaması ve içerik pazarlaması gibi kanalları kapsar. 2026 itibarıyla Türkiye'de işletmelerin dijital pazarlamaya ayırdığı bütçe, toplam pazarlama harcamalarının %45'ine ulaşmıştır (We Are Social, 2026 Digital Turkey Raporu).</p></blockquote>"
+        "content": "<blockquote class=\"border-l-4 border-yellow-500/70 pl-4 my-4\"><p class=\"text-white font-medium\"><strong>Dijital pazarlama</strong>, işletmelerin ürün ve hizmetlerini internet üzerinden tanıtmak, hedef kitleye ulaşmak ve satış dönüşümü sağlamak için kullandığı stratejik bir pazarlama disiplinidir. SEO, sosyal medya yönetimi, e-posta pazarlaması ve içerik pazarlaması gibi kanalları kapsar. 2026 itibarıyla Türkiye'de işletmelerin dijital pazarlamaya ayırdığı bütçe, toplam pazarlama harcamalarının %45'ine ulaşmıştır (We Are Social, 2026 Digital Turkey Raporu).</p></blockquote>"
       },
       {
         "type": "callout",
@@ -2246,14 +2246,6 @@
       },
       {
         "type": "heading3",
-        "content": "4. Hedefsiz ve Plansız Reklam Bütçesi Harcamak"
-      },
-      {
-        "type": "paragraph",
-        "content": "Pek çok işletme Google Ads veya sosyal medya reklamlarına para harcıyor ancak dönüşüm takibi yapmıyor. Hangi kanalın müşteri getirdiğini bilmeden harcanan her lira, potansiyel bir kayıptır. Veriye dayalı karar vermek, dijital pazarlamanın olmazsa olmazıdır."
-      },
-      {
-        "type": "heading3",
         "content": "5. İçerik Üretmemek"
       },
       {
@@ -2277,7 +2269,7 @@
         "isHtml": true,
         "items": [
           "<strong>Google İşletme Profili Optimizasyonu:</strong> İşletmenizin Kocaeli/İzmit konumunu doğru tanımlayın, çalışma saatlerinizi güncelleyin ve düzenli fotoğraf ekleyin.",
-          "<strong>Yerel Anahtar Kelimeler:</strong> \"İzmit'te web tasarım\", \"Kocaeli Google Ads\", \"Körfez SEO\" gibi lokasyon bazlı anahtar kelimeler hedefleyin.",
+          "<strong>Yerel Anahtar Kelimeler:</strong> \"İzmit'te web tasarım\", \"Kocaeli SEO\", \"Körfez SEO\" gibi lokasyon bazlı anahtar kelimeler hedefleyin.",
           "<strong>Müşteri Yorumları:</strong> <a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener noreferrer\">Google Haritalar'da</a> müşteri yorumları almak ve bu yorumlara yanıt vermek, sıralamanızı doğrudan etkiler.",
           "<strong>NAP Tutarlılığı:</strong> İşletme adı, adres ve telefon numaranız web sitenizde, Google profilinizde ve diğer platformlarda birebir aynı olmalıdır."
         ]
@@ -2305,11 +2297,7 @@
             "isHtml": true,
             "content": "Kocaeli'deki işletmeler için en uzun vadeli ve sürdürülebilir kanal SEO'dur. SEO'ya yatırım yapan işletmelerin %82'si, 6 ay içinde organik trafiklerinde belirgin artış görüyor (Ahrefs, 2025 SEO İstatistikleri). <a href=\"/blog/kucuk-isletmeler-google-da-gorunurluk-2026\">Google'da görünürlük rehberimizde</a> detaylıca anlattığımız gibi, doğru anahtar kelime stratejisi ve teknik altyapı ile organik trafik elde etmek mümkündür."
           },
-          {
-            "heading": "Google Ads (PPC)",
-            "content": "Özellikle \"İzmit acil tesisatçı\", \"Kocaeli nakliye\" gibi acil ihtiyaç odaklı sektörlerde Google Ads hızlı sonuç verir. Doğru yönetilen bir reklam bütçesi, her liranın karşılığını almanızı sağlar."
-          },
-          {
+              {
             "heading": "WhatsApp Ticaret",
             "content": "Kocaeli'de küçük ve orta ölçekli işletmeler arasında WhatsApp üzerinden satış hızla yaygınlaşıyor. Web sitenize entegre edeceğiniz bir WhatsApp butonu, müşterilerle doğrudan iletişim kurmanızı sağlar."
           },
@@ -2389,11 +2377,6 @@
         "question": "Web sitem var ama müşteri getirmiyor, ne yapmalıyım?",
         "isHtml": true,
         "answer": "Öncelikle sitenizin hızını, mobil uyumluluğunu ve teknik SEO altyapısını kontrol ettirin. <a href=\"/blog/web-siteniz-neden-hala-ilk-sayfada-degil-2026\">Web sitenizin neden görünmediğine dair rehberimizde</a> bu konuyu detaylıca ele alıyoruz. Google PageSpeed Insights'ta 80+ puan hedefleyin."
-      },
-      {
-        "type": "question",
-        "question": "Kocaeli'de Google Ads reklamları pahalı mı?",
-        "answer": "Rekabetin düşük olduğu sektörlerde Kocaeli'de Google Ads maliyetleri İstanbul'a göre %30-40 daha düşüktür. Doğru anahtar kelime seçimi ve optimize edilmiş kampanya yapısıyla düşük bütçelerle etkili sonuçlar almak mümkündür."
       },
       {
         "type": "heading2",

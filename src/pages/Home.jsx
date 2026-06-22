@@ -10,6 +10,7 @@ const DesignShowcase = lazy(() => import("@/components/sections/DesignShowcase")
 const Services = lazy(() => import("@/components/sections/Services"))
 const HowWeWork = lazy(() => import("@/components/sections/HowWeWork"))
 const References = lazy(() => import("@/components/sections/References"))
+const Testimonials = lazy(() => import("@/components/sections/Testimonials"))
 const Contact = lazy(() => import("@/components/sections/Contact"))
 
 function upsertMetaByName(name, content) {
@@ -127,6 +128,10 @@ export default function Home() {
 
       <Suspense fallback={<div style={{ height: "400px" }} />}>
         <HowWeWork />
+      </Suspense>
+
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <Testimonials />
       </Suspense>
 
       <Suspense fallback={<div style={{ height: "400px" }} />}>
