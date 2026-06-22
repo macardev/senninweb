@@ -6021,5 +6021,3429 @@
     "replied": false,
     "bounced": false,
     "addedDate": "2026-06-15"
+  },
+  {
+    "id": "gbz-318",
+    "business": "Dilek Fırın&Pastane&Cafe",
+    "category": "kafe pastane",
+    "phone": "",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Tatlıkuyu, Ahmet Pembegüllü Blv. No:117, 41400 Gebze/Kocaeli",
+    "rating": 4.3,
+    "userRatingCount": 157,
+    "googleMapsUri": "https://maps.google.com/?cid=228198118922571904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Dilek Fırın&Pastane&Cafe ekibi, \n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada da yer aldığını unutmayın. Bir web sitesi oluşturarak, potansiyel müşterilerinize daha kolay ulaşabilir ve hizmetlerinizi daha geniş kitlelere tanıtabilirsiniz. SenninWeb olarak, sizin için etkileyici bir web tasarımı ile dijital varlığınızı güçlendirmeye hazırız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-319",
+    "business": "Minica Ekler Pasta Cafe",
+    "category": "kafe pastane",
+    "phone": "(0262) 646 05 91",
+    "website": "https://www.minica.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Tatlıkuyu, Hükümet Cd. No:95/1, 41400 Gebze/Kocaeli",
+    "rating": 4.5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=11616954169534706664&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 206
+    },
+    "personalizationNote": "Merhaba Minica Ekler Pasta Cafe,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada aktif olduğunu unutmamalısınız. Web siteniz erişilemez durumda; SenninWeb olarak, size etkili bir web tasarımı ve dijital varlık oluşturma konusunda yardımcı olabiliriz. Hem müşteri kitlenizi genişletmek hem de lezzetli ürünlerinizi daha fazla insana ulaştırmak için birlikte çalışalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-320",
+    "business": "Crunchy Artisan Bakery",
+    "category": "kafe pastane",
+    "phone": "0533 726 67 64",
+    "website": "http://www.crunchyartisanbakery.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Osman Yılmaz, Millet Cd. No:38/B, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=3257622333031550404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 50,
+      "issues": [
+        "mobil uyumsuz",
+        "meta aciklama yok",
+        "h1 etiketi yok",
+        "dil etiketi yok (lang)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 10,
+      "fetchDurationMs": 283
+    },
+    "personalizationNote": "Merhaba Crunchy Artisan Bakery,\n\nWeb sitenizin kalite puanı 50/100 olarak belirlenmiş. Mobil uyumsuzluk, eksik meta açıklamaları ve h1 ile dil etiketlerinin olmaması gibi somut sorunlar, online varlığınızı olumsuz etkileyebilir. SenninWeb olarak, bu alanlarda size yardımcı olabilir ve işletmenizin dijital görünürlüğünü artırarak rakiplerinizle rekabet etmenizi sağlayabiliriz. \n\nSevgiyle,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-321",
+    "business": "Çeşme Saraylı Pasta & Cafe",
+    "category": "kafe pastane",
+    "phone": "(0262) 641 60 13",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Atatürk Cd. No:28, 41400 Gebze/Kocaeli",
+    "rating": 3.4,
+    "userRatingCount": 14,
+    "googleMapsUri": "https://maps.google.com/?cid=6239612145837692428&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Çeşme Saraylı Pasta & Cafe,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada yer aldığını unutmamanız önemli. Bir web sitesi ile marka görünürlüğünüzü artırabilir, müşteri kitlenizi genişletebilir ve sunduğunuz lezzetleri daha geniş bir kitleye ulaştırabilirsiniz. SenninWeb olarak, bu süreçte size destek olmaktan memnuniyet duyarız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-322",
+    "business": "Sultan Pastane & Cafe [ Mutlukent ]",
+    "category": "kafe pastane",
+    "phone": "(0262) 721 29 29",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Yenikent, Issıkgöl Cd No:149/7, 41400 Gebze/Kocaeli",
+    "rating": 2.8,
+    "userRatingCount": 335,
+    "googleMapsUri": "https://maps.google.com/?cid=3441602356807023605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Sultan Pastane & Cafe,\n\nGoogle Maps'te var olmanız önemli, ancak rakiplerinizin online dünyada aktif olduğunu unutmayın. SenninWeb olarak, size profesyonel bir web sitesi oluşturarak, müşteri kitlenize daha kolay ulaşmanızı sağlayabiliriz. Gelin, dijital dünyada birlikte güçlenelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-323",
+    "business": "kuaför nurullah altaş",
+    "category": "kuaför berber",
+    "phone": "0531 223 59 36",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Arapçeşme, Kavak Cd. 53/A, 41000 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 40,
+    "googleMapsUri": "https://maps.google.com/?cid=16960715793218810465&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Nurullah Altaş Kuaförü, \n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada aktif olduğunu unutmamalısınız. Kendi web sitenizle, hizmetlerinizi daha geniş bir kitleye ulaştırabilir ve müşteri portföyünüzü artırabilirsiniz. SenninWeb olarak, profesyonel bir web sitesi tasarımıyla markanızı güçlendirmek için buradayız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-324",
+    "business": "Berber BERK KARA",
+    "category": "kuaför berber",
+    "phone": "0551 160 14 10",
+    "website": "https://www.instagram.com/berberberkkara?igsh=MWFjNHI5OG0ydGdoZA==",
+    "email": null,
+    "contactName": "Berk",
+    "address": "Arapçeşme, Kavak Cd. 45/A, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 10,
+    "googleMapsUri": "https://maps.google.com/?cid=6045133035816832113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 80,
+      "issues": [
+        "sayfa cok agir (397KB)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 397,
+      "fetchDurationMs": 2105
+    },
+    "personalizationNote": "Merhaba Berk Kara, \n\nWeb sitenizin kalite puanı oldukça iyi, ancak sayfanızın ağır yüklenmesi ve H1 etiketinin eksikliği bazı geliştirme fırsatları sunuyor. SenninWeb olarak, bu sorunları çözerek hem kullanıcı deneyimini artırabilir hem de dijital görünürlüğünüzü güçlendirebiliriz. Sizinle çalışmayı dört gözle bekliyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-325",
+    "business": "Turgay Donmez Kuaför",
+    "category": "kuaför berber",
+    "phone": "0546 473 02 01",
+    "website": "https://www.kolayrandevu.com/isletme/turgay-donmez-unisex-official-salon",
+    "email": null,
+    "contactName": "Turgay",
+    "address": "Yenikent Mahallesi 206-4, Yenikent, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 414,
+    "googleMapsUri": "https://maps.google.com/?cid=7814208982250188870&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (325KB)",
+        "inline CSS fazla (485 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 325,
+      "fetchDurationMs": 890
+    },
+    "personalizationNote": "Merhaba Turgay Donmez Kuaför,\n\nWeb sitenizin kalitesi oldukça iyi, ancak sayfanızın ağır yüklenmesi ve fazla inline CSS nedeniyle performansını artırma fırsatları bulunuyor. SenninWeb olarak, bu somut sorunları çözerek kullanıcı deneyimini geliştirebilir ve daha fazla müşteri kazanmanıza yardımcı olabiliriz. Sizinle çalışmaktan memnuniyet duyarız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-326",
+    "business": "Seher Tunalı Güzellik Salonu Gebze | Microblading , Cilt Bakımı, Buz Lazer Epilasyon",
+    "category": "güzellik salonu",
+    "phone": "0553 947 30 84",
+    "website": "https://www.sehertunali.com/",
+    "email": "randevu@sehertunali.com",
+    "contactName": "Seher Tunalı",
+    "address": "Hacıhalil, 1219. Sk. No:4 Kat:3, 41400 Gebze/Kocaeli",
+    "rating": 4.5,
+    "userRatingCount": 91,
+    "googleMapsUri": "https://maps.google.com/?cid=10699182586745491685&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 100,
+      "issues": [],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 97,
+      "fetchDurationMs": 1588
+    },
+    "personalizationNote": "Merhaba Seher Tunalı Güzellik Salonu ekibi,\n\nWeb sitenizin mükemmel kalitesi ve 4.5 puanınızla müşterilerinize sunduğunuz hizmetlerin ne denli değerli olduğunu gösteriyor. Ancak, her zaman geliştirebileceğiniz alanlar vardır. SenninWeb olarak, dijital varlığınızı daha da güçlendirmek ve hedef kitlenize ulaşmanızı sağlamak için yanınızdayız. Size yardımcı olabileceğimiz konuları birlikte keşfetmek için sabırsızlanıyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-327",
+    "business": "Queen Beauty &Berber güzellik merkezi",
+    "category": "güzellik salonu",
+    "phone": "0545 656 41 06",
+    "website": "https://wa.me/qr/6ETMD6KEZXKWL1",
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, 1201/3. Sk. no2 c, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 45,
+    "googleMapsUri": "https://maps.google.com/?cid=10734000035233114882&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 65,
+      "issues": [
+        "SEO baslik yok",
+        "inline CSS fazla (57 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 147,
+      "fetchDurationMs": 1930
+    },
+    "personalizationNote": "Merhaba Queen Beauty & Berber Güzellik Merkezi,\n\nWeb sitenizin kalite puanı 65/100, ancak SEO başlık eksikliği, fazla inline CSS ve h1 etiketi olmaması gibi bazı geliştirilmesi gereken alanlar mevcut. SenninWeb olarak, bu sorunları gidererek online görünürlüğünüzü artırabilir ve potansiyel müşterilerinizi daha etkili bir şekilde çekmenize yardımcı olabiliriz. Sizlere destek olmak için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-328",
+    "business": "AVUKAT ŞERAFETTİN KAYA HUKUK VE ARABULUCUK BÜROSU",
+    "category": "avukat",
+    "phone": "0534 545 23 32",
+    "website": "https://serafettinkaya.av.tr/",
+    "email": "info@serafettinkaya.av.tr",
+    "contactName": "Şerafettin",
+    "address": "Mevlana, Issıkgöl Cd. No: 99 Kat: 1 Daire: 23, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 250,
+    "googleMapsUri": "https://maps.google.com/?cid=17788858952350354992&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 60,
+      "issues": [
+        "meta aciklama yok",
+        "sayfa cok agir (209KB)",
+        "inline CSS fazla (69 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 209,
+      "fetchDurationMs": 4460
+    },
+    "personalizationNote": "Sayın Avukat Şerafettin Kaya,\n\nWeb sitenizin mevcut durumu, dijital görünürlüğünüzü artırmak için bazı geliştirme fırsatları sunuyor. Meta açıklamanızın olmaması ve sayfanızın ağır yüklenmesi gibi somut sorunlar, potansiyel müvekkillerin sizi bulmasını zorlaştırabilir. SenninWeb olarak, bu sorunları çözmek ve web sitenizin performansını artırmak için size yardımcı olmaktan mutluluk duyarız. Daha iyi bir kullanıcı deneyimi ve arama motoru sıralaması için birlikte çalışabiliriz.\n\nSaygılarımla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-329",
+    "business": "Avukat Fatih Doğan | Fed Hukuk ve Arabuluculuk Bürosu",
+    "category": "avukat",
+    "phone": "0532 347 19 01",
+    "website": "https://fatihdogan.av.tr/",
+    "email": "info@fedhukuk.com",
+    "contactName": "Fatih",
+    "address": "Mevlana, Erenler Cd. No:33 D:6, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 24,
+    "googleMapsUri": "https://maps.google.com/?cid=12896823387736061923&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 70,
+      "issues": [
+        "sayfa cok agir (635KB)",
+        "inline CSS fazla (103 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 635,
+      "fetchDurationMs": 3277
+    },
+    "personalizationNote": "Merhaba Avukat Fatih Doğan,\n\nWeb siteniz, hukuk hizmetlerinizi tanıtmak adına önemli bir araç fakat bazı iyileştirmelere ihtiyaç duyuyor. Sayfa yükleme süresi ve inline CSS gibi sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu sorunları çözerek sitenizin performansını artırabilir ve daha fazla potansiyel müvekkile ulaşmanıza yardımcı olabiliriz. Sizinle çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-330",
+    "business": "Dumrul Hukuk Bürosu - Gebze Boşanma Avukatı - Gebze İş Avukatı - Gebze Ceza Avukatı",
+    "category": "avukat",
+    "phone": "0532 589 39 09",
+    "website": "http://dumrulhukuk.com/",
+    "email": "volkan@dumrulhukuk.com",
+    "contactName": "Av. Volkan Dumrul",
+    "address": "Hacıhalil, İsmet Paşa Cd. Şahinler İş Merkezi No:10 K:3, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 21,
+    "googleMapsUri": "https://maps.google.com/?cid=5557298505563640173&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (300KB)",
+        "inline CSS fazla (61 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 300,
+      "fetchDurationMs": 3583
+    },
+    "personalizationNote": "Merhaba Dumrul Hukuk Bürosu,\n\nWeb siteniz 75/100 puan almış olsa da, sayfa yükleme hızı ve inline CSS kullanımı gibi alanlarda iyileştirmeler yapma fırsatınız bulunuyor. SenninWeb olarak, bu sorunları gidermeye ve web sitenizin performansını artırmaya yardımcı olabiliriz. Böylece, potansiyel müvekkillerinize daha hızlı ve etkili bir hizmet sunabilirsiniz. \n\nİyi çalışmalar dileriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-331",
+    "business": "ŞAHİNÖZ&ENGİN HUKUK BÜROSU| Av. Berkay ŞAHİNÖZ & Av. Arda ENGİN",
+    "category": "avukat",
+    "phone": "0539 358 13 27",
+    "website": "https://www.sahinozenginhukuk.com/",
+    "email": "ardaengin@kocaeli.av.tr",
+    "contactName": "Berkay",
+    "address": "Mevlana, Erenler Cd. Elmas Plaza No:4/1 Kat:5 Daire:37, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=2215721945406598142&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (1398KB)",
+        "inline CSS fazla (460 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 1398,
+      "fetchDurationMs": 4361
+    },
+    "personalizationNote": "Merhaba Av. Berkay ŞAHİNÖZ ve Av. Arda ENGİN,\n\nWeb sitenizin kalite puanı oldukça iyi, ancak sayfa yükleme hızının artırılması ve inline CSS kullanımının azaltılması, kullanıcı deneyimini iyileştirebilir. SenninWeb olarak bu konularda size destek olabilir, böylece potansiyel müvekkillerinize daha hızlı ve etkili bir hizmet sunabilirsiniz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-332",
+    "business": "Avcı Hukuk & Danışmanlık Bürosu",
+    "category": "avukat",
+    "phone": "(0262) 642 70 49",
+    "website": "http://avcihukuk.com.tr/",
+    "email": "bilgi@siteadresi.com",
+    "contactName": null,
+    "address": "Hacı Halil Mah adliye cad : no:4 daire:10 /5, Hacıhalil, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 53,
+    "googleMapsUri": "https://maps.google.com/?cid=10768381892894933695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (262KB)",
+        "inline CSS fazla (33 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 262,
+      "fetchDurationMs": 2486
+    },
+    "personalizationNote": "Merhaba Avcı Hukuk & Danışmanlık Bürosu,\n\nWeb siteniz 75/100 puanıyla iyi bir başlangıç yapmış, ancak sayfa ağırlığı ve inline CSS kullanımı gibi somut sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, sitenizin performansını artırmak ve daha hızlı yüklenmesini sağlamak için size destek olabiliriz. Bu sayede potansiyel müvekkillerinize daha iyi bir deneyim sunabilirsiniz. \n\nSaygılarımla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-333",
+    "business": "Gebze Avukat Tuğçe Yılmaz | Boşanma, Miras, Gayrimenkul Davaları ve Yabancılar Hukuku Avukatlık ve Hukuki Danışmanlık",
+    "category": "avukat",
+    "phone": "0544 841 18 28",
+    "website": "https://tugceyilmaz.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, 1224. Sk. No:4 D:201, 41100 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 19,
+    "googleMapsUri": "https://maps.google.com/?cid=8632564087459247663&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 744
+    },
+    "personalizationNote": "Merhaba Tuğçe Yılmaz,\n\nWeb sitenizin erişilemez olması, potansiyel müşterilerinizin sizi bulmasını zorlaştırıyor. Rakipleriniz online ortamda aktifken, dijital varlığınızı güçlendirmek için profesyonel bir web tasarımına ihtiyacınız var. SenninWeb olarak, sizi dijital dünyada daha görünür hale getirerek, müşteri portföyünüzü genişletmenize yardımcı olabiliriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-334",
+    "business": "ŞİMŞEKDENT AĞIZ VE DİŞ SAĞLIĞI POLİKLİNİĞİ",
+    "category": "diş hekimi",
+    "phone": "(0262) 255 57 58",
+    "website": "https://www.simsekdent.com/",
+    "email": "info@simsekdent.com",
+    "contactName": null,
+    "address": "Hacıhalil, Atatürk Cd. 53/A, 41400 Gebze/Kocaeli",
+    "rating": 4.6,
+    "userRatingCount": 187,
+    "googleMapsUri": "https://maps.google.com/?cid=16101968149205811912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "inline CSS fazla (42 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 171,
+      "fetchDurationMs": 4397
+    },
+    "personalizationNote": "Merhaba ŞİMŞEKDENT AĞIZ VE DİŞ SAĞLIĞI POLİKLİNİĞİ,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip olsa da, inline CSS'in fazlalığı ve h1 etiketinin eksikliği gibi küçük iyileştirme alanları mevcut. SenninWeb olarak, bu gibi detaylara odaklanarak web sitenizin performansını artırabilir ve dijital görünürlüğünüzü güçlendirebiliriz. Sizlere bu süreçte destek olmaktan memnuniyet duyarız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-335",
+    "business": "Gebzesem (Kocaeli Büyükşehir Belediyesi Gebze Sporcu Eğitim Merkezi)",
+    "category": "spor salonu fitness",
+    "phone": "(0262) 643 16 73",
+    "website": "https://www.kocaeli.bel.tr/tr",
+    "email": null,
+    "contactName": null,
+    "address": "Tatlıkuyu, 1341. Sk. No:36, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 164,
+    "googleMapsUri": "https://maps.google.com/?cid=6435055429384333756&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 60,
+      "issues": [
+        "SEO baslik yok",
+        "meta aciklama yok",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 42,
+      "fetchDurationMs": 2670
+    },
+    "personalizationNote": "Merhaba Gebzesem,\n\nSizin gibi spor salonları, çevrimiçi varlıklarını güçlendirmeli ve rakiplerinizle rekabet edebilmek için web sitenizi optimize etmelisiniz. Mevcut site kalite puanınız 60/100 ve SEO başlık, meta açıklama ve H1 etiketi eksiklikleri var. SenninWeb olarak, bu sorunları çözerek sizi dijital dünyada daha görünür kılabiliriz. Sizinle birlikte çalışarak daha fazla müşteriye ulaşmanıza yardımcı olmayı çok isteriz.\n\nSevgiler,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-336",
+    "business": "Altınsoy Otomotiv",
+    "category": "oto galeri",
+    "phone": "(0262) 642 71 50",
+    "website": "https://www.altinsoyotomotiv.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Tatlıkuyu, Güney Yanyol Cd. No: 268, 41400 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 88,
+    "googleMapsUri": "https://maps.google.com/?cid=9741140840281215290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1158
+    },
+    "personalizationNote": "Merhaba Altınsoy Otomotiv,\n\nWeb sitenizin erişilemez olduğunu fark ettik. Google Maps'te var olmak önemli, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için etkili bir web sitesi de şart. SenninWeb olarak, size profesyonel bir web tasarımı ve dijital pazarlama hizmeti sunarak online görünürlüğünüzü artırabiliriz. Sizinle çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-337",
+    "business": "Sezgin Otomotiv",
+    "category": "oto galeri",
+    "phone": "",
+    "website": "https://gebzesezginotomotiv.sahibinden.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Mustafapaşa, Şht. Yılmaz Argon Cd. No:90, 41400 Gebze/Kocaeli",
+    "rating": 4.5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=333715057147903831&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1326
+    },
+    "personalizationNote": "Merhaba Sezgin Otomotiv,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online olarak sunduğu hizmetlerden geri kalmamak için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, sizin için etkileyici bir web tasarımı oluşturarak, dijital dünyada daha güçlü bir varlık göstermenize yardımcı olabiliriz. Gelin, birlikte markanızı daha görünür hale getirelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-338",
+    "business": "Autofest Oto Galeri",
+    "category": "oto galeri",
+    "phone": "0545 126 41 28",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Mustafapaşa, 735. Sk. no14, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 29,
+    "googleMapsUri": "https://maps.google.com/?cid=11223430048226211026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Autofest Oto Galeri,\n\nGoogle Maps’teki yüksek puanınız gerçekten etkileyici, ancak rakiplerinizin online varlıkları sayesinde daha fazla müşteri çekmek için bir web sitesine sahip olmanın önemini göz ardı etmemelisiniz. SenninWeb olarak, size etkili bir web tasarımı ve dijital pazarlama stratejisi ile destek olmayı çok isteriz. Gelin, birlikte online dünyada daha görünür hale gelelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-339",
+    "business": "ÖNCÜ OTO GEBZE",
+    "category": "oto galeri",
+    "phone": "0544 781 62 62",
+    "website": "https://oncuoto.sahibinden.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Ulus, 2158. Sk. No:5, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 11,
+    "googleMapsUri": "https://maps.google.com/?cid=1392368715757378946&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1320
+    },
+    "personalizationNote": "Merhaba Öncü Oto Gebze,\n\nGoogle Maps'te var olmanız önemli, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, sizi dijital dünyada daha görünür kılmak ve müşteri potansiyelinizi artırmak için gerekli adımları atmanıza yardımcı olabiliriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-340",
+    "business": "Eylül Auto Gebze",
+    "category": "oto galeri",
+    "phone": "0532 554 30 41",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Mustafapaşa, Şht. Yılmaz Argon Cd. No:27, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 3,
+    "googleMapsUri": "https://maps.google.com/?cid=629809302089854401&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Eylül Auto Gebze,\n\nGoogle Maps'te varlığınız önemli olsa da, rakiplerinizin online ortamda sunduğu hizmetleri göz önünde bulundurmak da oldukça kritik. SenninWeb olarak, etkileyici bir web sitesi oluşturarak, potansiyel müşterilerinize daha iyi ulaşmanıza yardımcı olabiliriz. Sizinle birlikte çalışarak, online varlığınızı güçlendirmek için sabırsızlanıyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-341",
+    "business": "Berat Otomotiv",
+    "category": "oto galeri",
+    "phone": "(0262) 644 98 49",
+    "website": "https://beratotomotiv34.sahibinden.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Mustafapaşa, Şht. Yılmaz Argon Cd. No:100, 41400 Gebze/Kocaeli",
+    "rating": 3.6,
+    "userRatingCount": 39,
+    "googleMapsUri": "https://maps.google.com/?cid=15221131554229958325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1514
+    },
+    "personalizationNote": "Merhaba Berat Otomotiv,\n\nGörünüşe göre web sitenize erişim sağlanamıyor. Google Maps'te var olmak önemli, ancak rakiplerinizin online olması sizi geride bırakabilir. SenninWeb olarak, etkili bir web tasarımı ile dijital varlığınızı güçlendirmenize yardımcı olabiliriz. Sizi desteklemek için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-342",
+    "business": "AYIŞIĞI GAYRİMENKUL",
+    "category": "emlak ofisi",
+    "phone": "",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Güzeller, 902/1. Sk. 6F, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 9,
+    "googleMapsUri": "https://maps.google.com/?cid=9078435522520320136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Ayışığı Gayrimenkul,\n\nSizi Google Maps'te bulmak harika, ancak rakiplerinizin online varlıklarıyla birlikte daha görünür olmanız önemli. SenninWeb olarak, etkili bir web sitesi oluşturmanıza yardımcı olabilir ve dijital dünyada güçlü bir yer edinmenizi sağlayabiliriz. Sizlere destek vermek için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-343",
+    "business": "BLC GAYRİMENKUL GEBZE",
+    "category": "emlak ofisi",
+    "phone": "0554 130 45 00",
+    "website": "https://blcgayrimenkul.sahibinden.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Osman Yılmaz, 602. Sk. 20C, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 14,
+    "googleMapsUri": "https://maps.google.com/?cid=17194605263283004360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1521
+    },
+    "personalizationNote": "Merhaba BLC Gayrimenkul,\n\nGoogle Maps'te var olmanın yeterli olmadığını, rakiplerinizin online dünyada aktif olduğunu belirtmek isteriz. SenninWeb olarak, etkili bir web sitesi ile görünürlüğünüzü artırarak daha fazla müşteri çekmenize yardımcı olabiliriz. Gelin, dijital varlığınızı güçlendirelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-344",
+    "business": "DR. TANER AYDIN",
+    "category": "doktor klinik",
+    "phone": "(0216) 212 59 53",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Osman Yılmaz, İstanbul Cd. No:18, 41400 Gebze/Kocaeli",
+    "rating": 4.3,
+    "userRatingCount": 27,
+    "googleMapsUri": "https://maps.google.com/?cid=16881501787155266956&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Dr. Taner Aydın, \n\nGoogle Maps'te görünmeniz harika, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, size etkili bir web tasarımı ve dijital pazarlama stratejisi ile destek olabiliriz. Sizlere özel çözümler sunmak için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-345",
+    "business": "Dent Gebze Ağız ve Diş Sağlığı Polikliniği",
+    "category": "doktor klinik",
+    "phone": "444 3 441",
+    "website": "http://www.dentgebze.com.tr/",
+    "email": "info@dentgebze.com.tr",
+    "contactName": null,
+    "address": "Osman Yılmaz, İstanbul Cd. No:24B, 41400 Gebze/Kocaeli",
+    "rating": 4.4,
+    "userRatingCount": 101,
+    "googleMapsUri": "https://maps.google.com/?cid=10961130355482740325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (936KB)",
+        "inline CSS fazla (280 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 936,
+      "fetchDurationMs": 1924
+    },
+    "personalizationNote": "Merhaba Dent Gebze Ağız ve Diş Sağlığı Polikliniği,\n\nWeb siteniz kaliteli bir içerik sunuyor, ancak sayfa hızının yavaş olması ve fazla inline CSS kullanımı gibi bazı sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu teknik detayları optimize ederek hem site performansınızı artırabilir hem de potansiyel hastalarınıza daha iyi bir erişim imkanı sunabiliriz. Sizinle birlikte çalışarak, dijital varlığınızı güçlendirmek için sabırsızlanıyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-346",
+    "business": "Op. Dr. Nilhan Öztürk, Kadın Hastalıkları Ve Doğum",
+    "category": "doktor klinik",
+    "phone": "",
+    "website": "https://www.doktortakvimi.com/nilhan-ozturk/kadin-hastaliklari-ve-dogum/kocaeli?utm_source=google&utm_medium=gmb&utm_campaign=255906&utm_content=website",
+    "email": null,
+    "contactName": "Nilhan",
+    "address": "Belediye Yanı, Güzeller, Kavak Cd. No: 5, 41400 Gebze/Kocaeli",
+    "rating": 3.6,
+    "userRatingCount": 28,
+    "googleMapsUri": "https://maps.google.com/?cid=13468629156977028449&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "sayfa cok agir (507KB)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 507,
+      "fetchDurationMs": 2708
+    },
+    "personalizationNote": "Merhaba Op. Dr. Nilhan Öztürk,\n\nWeb sitenizin genel kalitesi oldukça iyi, ancak sayfa boyutunun biraz ağır olduğunu gözlemledik. Bu durum, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, sitenizin hızını artırmak ve daha etkili bir dijital varlık oluşturmanız için size yardımcı olmaktan memnuniyet duyarız. Başka sorularınız olursa, her zaman buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-347",
+    "business": "Esteviolet Clinic",
+    "category": "doktor klinik",
+    "phone": "0532 054 75 41",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Arapçeşme, Kavak Cd. No:6C, 41400 Gebze/Kocaeli",
+    "rating": 4.4,
+    "userRatingCount": 7,
+    "googleMapsUri": "https://maps.google.com/?cid=5590819928764314548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Esteviolet Clinic,\n\nGoogle Maps'te var olmanın yeterli olmadığını ve rakiplerinizin online dünyada aktif olduğunu bilmenizi isteriz. SenninWeb olarak, etkili bir web sitesi oluşturmanıza yardımcı olabilir ve dijital varlığınızı güçlendirerek potansiyel hastalarınıza ulaşmanızı sağlamak için buradayız. İhtiyacınız olan desteği sunmak için sizinle çalışmayı çok isteriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-348",
+    "business": "Uz.Dr. Mustafa GÜNEŞ",
+    "category": "doktor klinik",
+    "phone": "0530 612 33 36",
+    "website": "https://www.instagram.com/dr_mustafagunes/",
+    "email": null,
+    "contactName": "Mustafa",
+    "address": "Arapçeşme, Nadide Kırcalı İş Mrkz Kat:4 No: 21, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 55,
+    "googleMapsUri": "https://maps.google.com/?cid=6958131847851262140&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 80,
+      "issues": [
+        "sayfa cok agir (397KB)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 397,
+      "fetchDurationMs": 1874
+    },
+    "personalizationNote": "Merhaba Uz.Dr. Mustafa Güneş,\n\nWeb sitenizin kalite puanı oldukça iyi, ancak sayfanızın ağırlığı ve H1 etiketinin eksikliği gibi küçük sorunlar, kullanıcı deneyimini etkileyebilir. SenninWeb olarak, bu konularda size destek olabilir ve online varlığınızı daha da güçlendirebiliriz. Sizlere en iyi hizmeti sunmak için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-349",
+    "business": "Burhan Şeker",
+    "category": "doktor klinik",
+    "phone": "0505 262 59 98",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Sultan Orhan, Yeni Bağdat Cd. No:478 kat:3, 41400 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 22,
+    "googleMapsUri": "https://maps.google.com/?cid=16051881471198593337&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Burhan Şeker, \n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online ortamda sunduğu hizmetler ile daha görünür hale gelmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, size etkileyici bir web tasarımı ve dijital pazarlama stratejileri ile destek olmaktan mutluluk duyarız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-350",
+    "business": "Amanullah ÇAGATAY",
+    "category": "doktor klinik",
+    "phone": "0543 644 26 06",
+    "website": "http://www.amanullahcagatay.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Sultan Orhan,Atilla Plaza,Yeni Bağdat Caddesi,Numara:478/301, Sultan Orhan, kat:3, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 26,
+    "googleMapsUri": "https://maps.google.com/?cid=14972072425319528575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 2656
+    },
+    "personalizationNote": "Sayın Amanullah Çagatay,\n\nWeb sitenizin erişilemez olması, potansiyel hastalarınıza ulaşmanızı zorlaştırıyor. Rakiplerinizin online varlık gösterdiği bu dönemde, SenninWeb olarak size web sitesi tasarımı ve dijital pazarlama hizmetlerimizle yardımcı olabiliriz. İhtiyacınıza özel çözümlerle, çevrimiçi varlığınızı güçlendirebiliriz. \n\nSaygılarımla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-351",
+    "business": "Ari Fotografçilik",
+    "category": "fotoğrafçı",
+    "phone": "(0262) 641 13 28",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Sultan Orhan, Hükümet Cd. No:123, 41400 Gebze/Kocaeli",
+    "rating": 2.9,
+    "userRatingCount": 21,
+    "googleMapsUri": "https://maps.google.com/?cid=11073578718781278941&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Ari Fotoğrafçılık,\n\nGoogle Maps'te var olmanız güzel, ancak rakiplerinizin online olması sizi geride bırakabilir. SenninWeb olarak, etkileyici bir web sitesi oluşturarak müşteri kitlenizi genişletmenize yardımcı olabiliriz. Siz de işinizi dijital dünyada daha görünür kılmak istemez misiniz?",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-352",
+    "business": "Foto Pınar",
+    "category": "fotoğrafçı",
+    "phone": "0505 704 26 74",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Gaziler, 1732. Sk. No:6, 41400 Gebze/Kocaeli",
+    "rating": 4.4,
+    "userRatingCount": 28,
+    "googleMapsUri": "https://maps.google.com/?cid=8812539492793258587&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Foto Pınar,\n\nGoogle Maps'te yer almanız harika, ancak rakiplerinizin online varlığıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, güçlü bir çevrimiçi kimlik oluşturmanıza ve potansiyel müşterilerinize ulaşmanıza yardımcı olabiliriz. Sizlerle bu konuda çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-353",
+    "business": "foto Dilek",
+    "category": "fotoğrafçı",
+    "phone": "0506 512 16 52",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Atatürk Cd., 41400 Gebze/Kocaeli",
+    "rating": 4.1,
+    "userRatingCount": 9,
+    "googleMapsUri": "https://maps.google.com/?cid=15215058157667827284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Foto Dilek,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada yer aldığını unutmayın. SenninWeb olarak, etkileyici bir web sitesi oluşturarak potansiyel müşterilerinize daha iyi ulaşmanıza yardımcı olabiliriz. Sizinle bu yolculuğa çıkmak için sabırsızlanıyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-354",
+    "business": "Foto Yavuz Gebze",
+    "category": "fotoğrafçı",
+    "phone": "0541 518 82 86",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Osmanyılmaz Mahallesi, Köşklü Çeşme, Yeni Bağdat Cd. No: 284, 41400 Gebze/Kocaeli",
+    "rating": 4.6,
+    "userRatingCount": 114,
+    "googleMapsUri": "https://maps.google.com/?cid=12677918615068912701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Foto Yavuz Gebze,\n\nGoogle Maps'te yer almanız harika, ancak rakiplerinizin online varlıkları da dikkat çekiyor. Web siteniz olmadan potansiyel müşterilere ulaşmanız zorlaşabilir. SenninWeb olarak, size profesyonel bir web sitesi oluşturarak, dijital dünyada görünürlüğünüzü artırmayı ve müşteri portföyünüzü genişletmeyi hedefliyoruz. Sizinle çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-355",
+    "business": "VİTAFILM",
+    "category": "fotoğrafçı",
+    "phone": "0553 458 46 28",
+    "website": "https://vitafilm.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Yazı Cd. No:20, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 1,
+    "googleMapsUri": "https://maps.google.com/?cid=2764028566564108865&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 90,
+      "issues": [
+        "inline CSS fazla (36 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 67,
+      "fetchDurationMs": 1521
+    },
+    "personalizationNote": "Merhaba VİTAFILM,\n\nWeb siteniz etkileyici bir kalite puanına sahip olsa da, inline CSS kullanımı fazla olduğu için bazı iyileştirmelere açık. SenninWeb olarak, bu tarz teknik optimizasyonlarla sitenizin performansını artırabilir ve Google puanınızı yükseltmek için destek olabiliriz. Sizlere daha fazla görünürlük kazandırmak için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-356",
+    "business": "Bekiroğlu Gebze Evden Eve Nakliyat",
+    "category": "nakliyat",
+    "phone": "0532 328 41 18",
+    "website": "https://gebzenakliyat.site/",
+    "email": null,
+    "contactName": null,
+    "address": "Arapçeşme, 1051/1. Sk. No:29, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 6,
+    "googleMapsUri": "https://maps.google.com/?cid=17036733001793348925&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 60,
+      "issues": [
+        "SEO baslik yok",
+        "meta aciklama yok",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 6,
+      "fetchDurationMs": 913
+    },
+    "personalizationNote": "Merhaba Bekiroğlu Gebze Evden Eve Nakliyat,\n\nWeb sitenizin kalitesi, potansiyel müşterilere ulaşmanızı ve rakiplerinizle rekabet etmenizi zorlaştırıyor. SEO başlığı, meta açıklaması ve H1 etiketi gibi temel unsurlar eksik. SenninWeb olarak, sitenizin görünürlüğünü artırmak ve müşteri çekmek için size özelleştirilmiş çözümler sunabiliriz. Birlikte çalışarak, online varlığınızı güçlendirebiliriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-357",
+    "business": "gebze nakliyat",
+    "category": "nakliyat",
+    "phone": "",
+    "website": "https://gebzenakliyat.site/",
+    "email": null,
+    "contactName": null,
+    "address": "Arapçeşme, Kavak Cd. No:4 D:3, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=18261440265169462316&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 60,
+      "issues": [
+        "SEO baslik yok",
+        "meta aciklama yok",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 6,
+      "fetchDurationMs": 911
+    },
+    "personalizationNote": "Merhaba Gebze Nakliyat,\n\nWeb siteniz üzerinden sunduğunuz hizmetleri tanıtmak için harika bir fırsatınız var; ancak bazı alanlarda iyileştirmelere ihtiyaç duyuyor. SEO başlığınız, meta açıklamanız ve H1 etiketiniz yok, bu da arama motorlarında görünürlüğünüzü olumsuz etkileyebilir. SenninWeb olarak, web sitenizin görünürlüğünü artırmak ve potansiyel müşterilerinize ulaşmanızı sağlamak için size yardımcı olmaktan memnuniyet duyarız. Birlikte daha fazla iş potansiyeli yakalayabiliriz!\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-358",
+    "business": "SÜTSOY evden eve nakliyat eşya depolama",
+    "category": "nakliyat",
+    "phone": "0553 084 69 93",
+    "website": "https://www.sutsoynakliyat.com.tr/",
+    "email": "bilgi@sutsoynakliyat.com.tr",
+    "contactName": null,
+    "address": "MUSA ECZANESİ, Sultan Orhan, 1112. Sk. NO:5, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=3937398337109988&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 90,
+      "issues": [
+        "inline CSS fazla (83 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 89,
+      "fetchDurationMs": 2496
+    },
+    "personalizationNote": "Merhaba SÜTSOY Ekibi,\n\nWeb siteniz oldukça yüksek bir kalite puanına sahip, bu da sunduğunuz hizmetlerin kalitesini yansıtıyor. Ancak, inline CSS kullanımının fazla olması bazı optimizasyon fırsatlarını beraberinde getiriyor. SenninWeb olarak, bu gibi teknik detayları düzelterek sitenizin performansını daha da artırmak için size yardımcı olabiliriz. Online varlığınızı güçlendirmek için birlikte çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-359",
+    "business": "Mahir ilbars Ambar ve Nakliyat",
+    "category": "nakliyat",
+    "phone": "0541 375 41 40",
+    "website": "https://www.gebzenakliyatambar.com.tr/",
+    "email": "email@yoursite.com",
+    "contactName": "Mahir",
+    "address": "KOMYON- TIR PARKI, Barış, Ahmet Pembegüllü Blv. Gebze Belediyesi İDARİ BİNA Kapı No:6, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=8585914567423727890&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 80,
+      "issues": [
+        "inline CSS fazla (117 adet)",
+        "yavas yuklenme (6.8s)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 181,
+      "fetchDurationMs": 6831
+    },
+    "personalizationNote": "Merhaba Mahir İlbars Ambar ve Nakliyat,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip, ancak yüklenme süresinin 6.8 saniye gibi uzun bir süreye ulaşması, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, sitenizin hızını artırmak ve inline CSS sorunlarını gidermek için sizinle birlikte çalışarak daha iyi bir performans elde etmenize yardımcı olabiliriz. Sizlere destek vermekten mutluluk duyarız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-360",
+    "business": "Öncü Nakliye & Ambar (Gebze)",
+    "category": "nakliyat",
+    "phone": "0532 306 81 60",
+    "website": "https://oncunakliye.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Barış, 1804/2. Sk. gebze kamyon garajı, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 39,
+    "googleMapsUri": "https://maps.google.com/?cid=14818116681185148254&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1686
+    },
+    "personalizationNote": "Merhaba Öncü Nakliye & Ambar,\n\nWeb sitenizin erişilemez olması, rakiplerinizin online dünyada daha görünür olmasına neden olabilir. SenninWeb olarak, etkili bir web tasarımı ve dijital pazarlama stratejisi ile sizinle iş birliği yaparak, online varlığınızı güçlendirmek ve müşteri potansiyelinizi artırmak için buradayız. Siz de Google'daki yüksek puanınızı daha fazla kişiye ulaştırabilirsiniz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-361",
+    "business": "As yapı İnşaat su tesisat",
+    "category": "inşaat firması",
+    "phone": "0538 775 04 41",
+    "website": "http://asyapiinsaat.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Koçeli, Hacıhalil, no 78, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 5,
+    "googleMapsUri": "https://maps.google.com/?cid=1604413796573840292&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 65,
+      "issues": [
+        "mobil uyumsuz",
+        "h1 etiketi yok",
+        "dil etiketi yok (lang)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 11,
+      "fetchDurationMs": 1944
+    },
+    "personalizationNote": "Merhaba As Yapı İnşaat,\n\nWeb sitenizin kalite puanı 65/100, ancak mobil uyumsuzluk, H1 etiketi ve dil etiketi gibi bazı somut sorunlar mevcut. SenninWeb olarak, bu sorunları gidererek sitenizin performansını artırabilir ve potansiyel müşterilerinize daha iyi ulaşmanızı sağlayabiliriz. Dijital dünyada daha güçlü bir varlık oluşturmak için birlikte çalışmayı çok isteriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-362",
+    "business": "Erdoğan İnşaat Malzemeleri (Gebze İnşaat Malzemeleri - Yapı Malzemeleri) Gebze Kum Çimanto",
+    "category": "inşaat firması",
+    "phone": "0533 521 50 66",
+    "website": "https://www.erdoganinsaatmalzeme.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Arapçeşme, 1065. Sk. No:2, 41400 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 33,
+    "googleMapsUri": "https://maps.google.com/?cid=9087342803133294925&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 95,
+      "issues": [
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 83,
+      "fetchDurationMs": 3154
+    },
+    "personalizationNote": "Merhaba Erdoğan İnşaat Malzemeleri,\n\nWeb siteniz oldukça yüksek bir kalite puanına sahip, bu da sizin dijital varlığınızın güçlü bir temele dayandığını gösteriyor. Ancak, H1 etiketinin eksikliği gibi küçük ama önemli detaylar, arama motorları tarafından daha iyi anlaşılmanızı engelleyebilir. SenninWeb olarak, bu gibi alanlarda size yardımcı olabiliriz, böylece online görünürlüğünüzü artırabiliriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-363",
+    "business": "Akut İnşaat",
+    "category": "inşaat firması",
+    "phone": "(0262) 643 22 20",
+    "website": "https://akutins.com.tr/",
+    "email": "akutins@akutins.com.tr",
+    "contactName": null,
+    "address": "Güzeller, 925. Sk. No:11 Kat:2, 41400 Gebze/Kocaeli",
+    "rating": 2,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=9739697521201522585&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "meta aciklama yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 46,
+      "fetchDurationMs": 2009
+    },
+    "personalizationNote": "Merhaba Akut İnşaat,\n\nWeb sitenizin kalite puanı oldukça iyi, ancak meta açıklamanızın eksik olduğunu gözlemledik. Bu küçük ama önemli detay, arama motorlarındaki görünürlüğünüzü artırabilir. SenninWeb olarak, dijital varlığınızı güçlendirmek ve potansiyel müşterilerinize daha iyi ulaşmanızı sağlamak için buradayız. Gelin, birlikte daha büyük başarılara imza atalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-364",
+    "business": "Abay İnşaat",
+    "category": "inşaat firması",
+    "phone": "0535 773 36 88",
+    "website": "https://www.abayinsaat.com.tr/",
+    "email": "info@abayinsaat.com.tr",
+    "contactName": null,
+    "address": "Güzeller, 905. Sk., 41400 Gebze/Kocaeli yakınında, Güzeller, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 4,
+    "googleMapsUri": "https://maps.google.com/?cid=15084193535206688844&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "inline CSS fazla (57 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 157,
+      "fetchDurationMs": 1451
+    },
+    "personalizationNote": "Merhaba Abay İnşaat,\n\nWeb sitenizin kalite puanı oldukça iyi, ancak inline CSS kullanımı ve h1 etiketinin eksikliği gibi bazı geliştirme alanları mevcut. SenninWeb olarak, bu sorunları çözerek sitenizin performansını artırabilir ve arama motorlarındaki görünürlüğünüzü güçlendirebiliriz. Başarılarınızın devamını dileriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-365",
+    "business": "EXPRESS BİLGİSAYAR SERVİSİ GEBZE",
+    "category": "bilgisayar tamir",
+    "phone": "(0262) 646 36 10",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "ARAPÇEŞME MH, Namık Kemal Cd. NO:2 KAT:5, 41400 Gebze/Kocaeli",
+    "rating": 4.3,
+    "userRatingCount": 3,
+    "googleMapsUri": "https://maps.google.com/?cid=10185102096943535480&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba EXPRESS BİLGİSAYAR SERVİSİ GEBZE,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada yer aldığını unutmamanız önemli. SenninWeb olarak, size etkili bir web sitesi oluşturarak, potansiyel müşterilerinize daha iyi ulaşmanıza yardımcı olabiliriz. Dijital varlığınızı güçlendirmek için birlikte çalışmayı çok isteriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-366",
+    "business": "notebook tamir merkezi",
+    "category": "bilgisayar tamir",
+    "phone": "0537 203 25 26",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Güzeller, Yeni Bağdat Cd. No: 621/B, 41400 Gebze/Kocaeli",
+    "rating": 4.2,
+    "userRatingCount": 13,
+    "googleMapsUri": "https://maps.google.com/?cid=4699435318058407660&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba, \n\nGoogle Maps'te yer almanız harika, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, işinizi dijital dünyada daha görünür hale getirmek ve müşteri potansiyelinizi artırmak için size yardımcı olmaktan mutluluk duyarız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-367",
+    "business": "Mega Bilgisayar ve Güvenlik Sistemleri",
+    "category": "bilgisayar tamir",
+    "phone": "(0262) 643 84 00",
+    "website": "http://www.megateknoloji.net/",
+    "email": null,
+    "contactName": null,
+    "address": "Güzeller, Doğan Cd. No:53/B, 41400 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 45,
+    "googleMapsUri": "https://maps.google.com/?cid=16088080375775894937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 364
+    },
+    "personalizationNote": "Merhaba Mega Bilgisayar ve Güvenlik Sistemleri,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online mevcudiyeti göz önünde bulundurulduğunda, web sitenizin erişilebilir olmaması potansiyel müşterilerinizi kaybetmenize neden olabilir. SenninWeb olarak, size etkili bir web tasarımı sunarak, dijital dünyada daha görünür olmanızı sağlayabiliriz. İhtiyacınız olan desteği sağlamak için buradayız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-368",
+    "business": "ST/Çağ Bilişim",
+    "category": "bilgisayar tamir",
+    "phone": "0538 779 66 24",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "No:, Hacıhalil, Yazı Cd. No:35/c, 41400 Gebze/Kocaeli",
+    "rating": 3.9,
+    "userRatingCount": 36,
+    "googleMapsUri": "https://maps.google.com/?cid=9444499876391082453&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba ST/Çağ Bilişim,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada aktif olduğunu unutmayın. Size özel bir web sitesi oluşturarak, müşteri portföyünüzü genişletmek ve dijital varlığınızı güçlendirmek için SenninWeb olarak yanınızdayız. Gelin, birlikte dijital dünyada fark yaratacak adımlar atalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-369",
+    "business": "Mikrobil Bilgisayar İletişim Bilişim ve Elektronik San. Tic. Ltd. Şti.",
+    "category": "bilgisayar tamir",
+    "phone": "0530 770 34 96",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Ali Rıza Efendi Cd. No:21, 41400 Gebze/Kocaeli",
+    "rating": 4.3,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=13082498565419678986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Mikrobil Bilgisayar İletişim Bilişim ve Elektronik San. Tic. Ltd. Şti.,\n\nGoogle Maps'te yer almak harika bir başlangıç, ancak rakiplerinizin online varlıkları ile rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, sizin için etkileyici bir web sitesi tasarlayarak müşteri kitlenizi genişletmenize ve online görünürlüğünüzü artırmanıza yardımcı olabiliriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-370",
+    "business": "Bi Teknolojik",
+    "category": "bilgisayar tamir",
+    "phone": "(0262) 408 29 29",
+    "website": "https://www.biteknolojik.com/",
+    "email": "info@biteknolojik.com",
+    "contactName": "Yonetici",
+    "address": "Osman Yılmaz, Şht. Numan Dede Cd. No:60/B, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 123,
+    "googleMapsUri": "https://maps.google.com/?cid=131966047434643714&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 100,
+      "issues": [],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 52,
+      "fetchDurationMs": 2266
+    },
+    "personalizationNote": "Merhaba Bi Teknolojik,\n\nWeb sitenizin mükemmel kalite puanı ve yüksek Google değerlendirme skoru ile dikkat çekiyorsunuz! Ancak, dijital dünyada rekabetin her gün arttığını unutmamak önemli. SenninWeb olarak, web sitenizi daha da güçlendirecek stratejiler geliştirebiliriz. Sizinle birlikte çalışarak, online varlığınızı daha da artırmayı hedefliyoruz.\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-371",
+    "business": "Demse Bilgisayar - Mikro Servis ve Satış",
+    "category": "bilgisayar tamir",
+    "phone": "(0262) 644 50 43",
+    "website": "http://www.mikrogebze.com/",
+    "email": "info@mikrogebze.com",
+    "contactName": null,
+    "address": "Hacıhalil, Hürriyet Cd. No:9/A, 41400 Gebze/Kocaeli",
+    "rating": 4.6,
+    "userRatingCount": 14,
+    "googleMapsUri": "https://maps.google.com/?cid=10715027462325115469&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 70,
+      "issues": [
+        "meta aciklama yok",
+        "yavas yuklenme (6.5s)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 123,
+      "fetchDurationMs": 6483
+    },
+    "personalizationNote": "Merhaba Demse Bilgisayar,\n\nWeb sitenizin kalite puanı iyi olsa da, meta açıklamasının olmaması ve yavaş yüklenme süreleri gibi bazı geliştirilmesi gereken alanlar mevcut. SenninWeb olarak, bu somut sorunları çözerek online görünürlüğünüzü artırabilir ve müşteri deneyimini iyileştirebiliriz. Size bu konularda yardımcı olmaktan memnuniyet duyarız.\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-372",
+    "business": "SERBEST MUHASEBECİ MALİ MÜŞAVİR ZAREMA RAGIB",
+    "category": "muhasebe mali müşavir",
+    "phone": "0545 914 75 41",
+    "website": "http://www.smmmzaremaragip.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, 1212. Sk. BALBAL APT NO:15 İÇ KAPI:1 KAT:1, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=5813738670643187672&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1482
+    },
+    "personalizationNote": "Merhaba Zarema Hanım, \n\nWeb sitenizin şu anda erişilemez olması, potansiyel müşterilerinizin sizi bulmasını zorlaştırıyor. Rakipleriniz online ortamda varlık gösterirken, sizin de dijital alanda yer almanız büyük önem taşıyor. SenninWeb olarak, etkili bir web sitesi tasarımı ve dijital pazarlama stratejileri ile sizi destekleyerek, müşteri kitlenizi genişletmenize yardımcı olabiliriz. \n\nSevgiler,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-373",
+    "business": "ONUR YENER SMMM",
+    "category": "muhasebe mali müşavir",
+    "phone": "0542 250 30 61",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, 1226. Sk. No:11 Kat: 2 D:11, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=7610823220062535674&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Onur Yener SMMM,\n\nGoogle Maps'te var olmak önemli, ancak rakiplerinizin online ortamda sunduğu hizmetleri göz önünde bulundurduğumuzda, profesyonel bir web sitesi oluşturmak size büyük avantajlar sağlayacaktır. SenninWeb olarak, web tasarımı ve dijital pazarlama çözümlerimizle işletmenizin online varlığını güçlendirmeye yardımcı olabiliriz. Siz de rakiplerinizin önüne geçmek için bizimle iletişime geçebilirsiniz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-374",
+    "business": "Fikret Bulut Serbest Muhasebeci Mali Müşavir",
+    "category": "muhasebe mali müşavir",
+    "phone": "(0262) 642 00 02",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Elma İş Merkezi, Hacıhalil, Ali Rıza Efendi Cd. No:29 Kat:1/4, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=17214906326247696369&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Fikret Bulut,\n\nGoogle Maps'te görünür olmanız harika, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, size etkileyici bir web tasarımı ile dijital dünyada güçlü bir yer edinmeniz için yardımcı olabiliriz. Siz de işinizi büyütmek için ilk adımı atın!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-375",
+    "business": "Gebze Titiz Terzi Çanta Tamiri",
+    "category": "terzi",
+    "phone": "0535 921 76 87",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacı Halil Mahallesi 1223 Sokak Demirhanlar Pasaji, Hacıhalil, No 5 / 15, 41400 Gebze/Kocaeli",
+    "rating": 2.5,
+    "userRatingCount": 55,
+    "googleMapsUri": "https://maps.google.com/?cid=3268420955450266885&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Gebze Titiz Terzi,\n\nWeb sitenizin olmaması, potansiyel müşterilerinizin sizi bulmasını zorlaştırıyor. Rakipleriniz online olarak varlık gösterirken, sizin de dijital dünyada yer almanız büyük önem taşıyor. SenninWeb olarak, profesyonel bir web sitesi oluşturmanıza ve dijital pazarlama stratejileriyle işinizi büyütmenize yardımcı olabiliriz. Sizi desteklemek için buradayız!\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-376",
+    "business": "TERZİ ŞERİF",
+    "category": "terzi",
+    "phone": "0539 236 89 14",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Arapçeşme, Kavak Cd, Arapçeşme, 1049. Sk. No:3/A, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 1,
+    "googleMapsUri": "https://maps.google.com/?cid=14093176530386265068&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Terzi Şerif, \n\nGoogle Maps'te var olmak harika, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, sizin için etkileyici bir web tasarımı oluşturabilir ve dijital dünyada yerinizi almanıza yardımcı olabiliriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-377",
+    "business": "TERZİ MUSTAFA",
+    "category": "terzi",
+    "phone": "0543 378 61 91",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacı Selahattin yavaş apartmanı, Mustafapaşa, 710. Sk. No:6, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 6,
+    "googleMapsUri": "https://maps.google.com/?cid=8145425691578416885&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Terzi Mustafa,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada yer aldığını unutmamanız önemli. SenninWeb olarak, profesyonel bir web sitesi oluşturarak, müşteri kitlenizi genişletmenize ve işinizi daha görünür hale getirmenize yardımcı olabiliriz. Siz de dijital dünyada yerinizi alarak daha fazla müşteri kazanabilirsiniz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-378",
+    "business": "Terzi hatice",
+    "category": "terzi",
+    "phone": "0551 242 62 76",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Mustafapaşa, 554. Sk. no:30/A, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 9,
+    "googleMapsUri": "https://maps.google.com/?cid=15440856916331179539&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Terzi Hatice,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online varlıkları ile öne çıkmak için bir web sitesine ihtiyacınız var. SenninWeb, size etkileyici bir web tasarımı sunarak, müşteri portföyünüzü genişletmenize yardımcı olabilir. Hadi birlikte başlayalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-379",
+    "business": "Kaolen Yapı - Gebze Tadilat İşleri",
+    "category": "ev tadilat",
+    "phone": "0530 884 69 91",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Sultan Orhan, Kışla Cd. No:17/E, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 16,
+    "googleMapsUri": "https://maps.google.com/?cid=11544590426095224467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Kaolen Yapı,\n\nGoogle Maps'te görünür olmanız harika, ancak rakiplerinizin online varlıkları sayesinde daha geniş bir müşteri kitlesine ulaşabileceğinizi unutmayın. SenninWeb olarak, size profesyonel bir web sitesi tasarımı ile dijital dünyada güçlü bir yer edinmenize yardımcı olabiliriz. Gelin, işinizi bir adım ileri taşıyalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-380",
+    "business": "GEBZE TADİLAT İŞLERİ",
+    "category": "ev tadilat",
+    "phone": "0543 772 52 11",
+    "website": "http://www.gebzecambalkon.net/",
+    "email": null,
+    "contactName": null,
+    "address": "Osman Yılmaz, Kızılay Cd. No:62/A, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=119794170571203952&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 3353
+    },
+    "personalizationNote": "Merhaba GEBZE TADİLAT İŞLERİ,\n\nWeb sitenizin erişilemez olması, potansiyel müşterilerinizin sizi bulmasını ve hizmetlerinizi tanımasını zorlaştırıyor. Rakiplerinizin online varlıklarını güçlendirdiği bu dijital ortamda, SenninWeb olarak web tasarım ve dijital pazarlama alanında size destek olabiliriz. İletişime geçmekten çekinmeyin!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-381",
+    "business": "Tadilattürk tadilat dekorasyon inşaat mobilya tesisat işleri",
+    "category": "ev tadilat",
+    "phone": "0533 713 41 20",
+    "website": "https://www.tadilatturk.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Mustafapaşa, Şht. Yılmaz Argon Cd. NO:26, 41000 Gebze/Kocaeli",
+    "rating": 4.6,
+    "userRatingCount": 17,
+    "googleMapsUri": "https://maps.google.com/?cid=3590921401872065443&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1883
+    },
+    "personalizationNote": "Merhaba Tadilattürk,\n\nWeb sitenizin erişilemez olması, potansiyel müşterilere ulaşmanızı zorlaştırıyor. Rakipleriniz online ortamda aktifken, Google Maps'te var olmak yeterli olmayabilir. SenninWeb olarak, web sitenizin yeniden tasarımı ve dijital varlığınızın güçlendirilmesi konusunda size yardımcı olabiliriz. İhtiyacınız olan destek için bize ulaşın!\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-382",
+    "business": "Lorem tadilat tesisat",
+    "category": "ev tadilat",
+    "phone": "0541 642 43 11",
+    "website": "https://www.instagram.com/lorem_tadilat?igsh=MWRxcWMzaGZ0emZyaw==",
+    "email": null,
+    "contactName": null,
+    "address": "Tatlıkuyu, 1304. Sk. No:22, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 20,
+    "googleMapsUri": "https://maps.google.com/?cid=5053068516952392770&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 80,
+      "issues": [
+        "sayfa cok agir (397KB)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 397,
+      "fetchDurationMs": 2907
+    },
+    "personalizationNote": "Merhaba Lorem Tadilat Ekibi,\n\nWeb sitenizin kalite puanı oldukça iyi, ancak sayfa boyutunun biraz ağır olması ve H1 etiketinin eksikliği, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu sorunları çözerek sitenizin performansını artırabilir ve daha fazla müşteri çekmenize yardımcı olabiliriz. Sizinle birlikte çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-383",
+    "business": "Gebze Tadilat",
+    "category": "ev tadilat",
+    "phone": "0552 920 70 41",
+    "website": "https://www.gebzetadilat.net/",
+    "email": null,
+    "contactName": "gebzetadilat",
+    "address": "Akse, 477. Sk. No:27, 41400 Çayırova/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 12,
+    "googleMapsUri": "https://maps.google.com/?cid=17803089311465417430&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 80,
+      "issues": [
+        "inline CSS fazla (96 adet)",
+        "yavas yuklenme (6.7s)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 80,
+      "fetchDurationMs": 6734
+    },
+    "personalizationNote": "Merhaba Gebze Tadilat Ekibi,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip olsa da, inline CSS'in fazlalığı ve yavaş yüklenme süreleri, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu sorunları çözüp sitenizin performansını artırarak daha fazla müşteri çekmenize yardımcı olabiliriz. Gelin birlikte, dijital varlığınızı güçlendirelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-384",
+    "business": "Gebze Dekorasyon",
+    "category": "ev tadilat",
+    "phone": "0531 829 10 18",
+    "website": "http://www.gebzedekorasyon.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Güzeller, 939. Sk. No:50, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 9,
+    "googleMapsUri": "https://maps.google.com/?cid=12280231987048325467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 70,
+      "issues": [
+        "meta aciklama yok",
+        "yavas yuklenme (6.3s)",
+        "dil etiketi yok (lang)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 1,
+      "fetchDurationMs": 6341
+    },
+    "personalizationNote": "Merhaba Gebze Dekorasyon,\n\nWeb siteniz güzel bir başlangıç yapmış, ancak bazı alanlarda iyileştirmelere ihtiyaç duyuyor. Özellikle meta açıklamanızın eksik olması ve yavaş yüklenme süresi (6.3 saniye) kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu sorunları çözmek ve sitenizin performansını artırmak için yanınızdayız. Online varlığınızı güçlendirmek için birlikte çalışalım!\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-385",
+    "business": "Bedirhan Dekorasyon Tadilat",
+    "category": "ev tadilat",
+    "phone": "0535 251 26 18",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Güzeller, 955. Sk. No:20/A, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 6,
+    "googleMapsUri": "https://maps.google.com/?cid=285191495749771360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Bedirhan Dekorasyon Tadilat,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada aktif olduğunu unutmayın. SenninWeb olarak, profesyonel bir web sitesi oluşturarak işletmenizin dijital görünürlüğünü artırmanıza ve potansiyel müşterilere daha etkili bir şekilde ulaşmanıza yardımcı olabiliriz. Sizlerle çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-386",
+    "business": "Tadilat Ekibi",
+    "category": "ev tadilat",
+    "phone": "",
+    "website": "http://www.tadilatekibi.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Hükümet Cd. No:85, 41400 Gebze/Kocaeli",
+    "rating": 4.3,
+    "userRatingCount": 3,
+    "googleMapsUri": "https://maps.google.com/?cid=4538591809318726597&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 9999
+    },
+    "personalizationNote": "Merhaba Tadilat Ekibi,\n\nWeb sitenizin erişilemez olması, potansiyel müşterilerinizin sizi bulmasını ve hizmetlerinizi tanımasını engelliyor. Google Maps'te var olmanız önemli, ancak rakiplerinizin online olması sizi geride bırakabilir. SenninWeb olarak, web sitenizin yeniden tasarlanması ve dijital varlığınızın güçlendirilmesi konusunda size yardımcı olabiliriz. Başarıya giden yolda birlikte ilerleyelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-387",
+    "business": "OPTİMUM MİMARLIK - İNŞAAT - İZOLASYON",
+    "category": "ev tadilat",
+    "phone": "0533 467 34 40",
+    "website": "http://www.grupoptimum.com/",
+    "email": "info@interiormimarlik.com",
+    "contactName": null,
+    "address": "Optimum Mimarlık, Hacıhalil, Hükümet Cd. Özgen iş merkezi Kat:3 No:6, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 12,
+    "googleMapsUri": "https://maps.google.com/?cid=17067833621210904833&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 80,
+      "issues": [
+        "inline CSS fazla (108 adet)",
+        "yavas yuklenme (8.7s)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 163,
+      "fetchDurationMs": 8666
+    },
+    "personalizationNote": "Merhaba Optimum Mimarlık, \n\nWeb siteniz kaliteli bir puana sahip olsa da, yüklenme süresinin 8.7 saniye olması, potansiyel müşterilerinizi kaybetmenize neden olabilir. SenninWeb olarak, yüklenme hızınızı artırmak ve inline CSS sorunlarını çözmek için size özel çözümler sunabiliriz. Dijital dünyada daha rekabetçi olmanız için birlikte çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-388",
+    "business": "MAX ROYAL MUTFAK BANYO TASARIM TADİLAT",
+    "category": "ev tadilat",
+    "phone": "(0262) 644 29 81",
+    "website": "http://maxroyal.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Yazı Cd. No:21, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 28,
+    "googleMapsUri": "https://maps.google.com/?cid=11015868310346548593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 10000
+    },
+    "personalizationNote": "Merhaba MAX ROYAL MUTFAK BANYO TASARIM TADİLAT,\n\nGoogle Maps'te görünür olmak önemli, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, web tasarımı ve dijital pazarlama konularında size yardımcı olabiliriz, böylece potansiyel müşterilerinize daha etkili bir şekilde ulaşabilirsiniz. Sizinle çalışmayı dört gözle bekliyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-389",
+    "business": "Gebze Bulduk İnşaat Tadilat & Dekorasyon",
+    "category": "ev tadilat",
+    "phone": "0532 180 06 10",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Menekşe Apt, Hacıhalil, 1215. Sk. No:6, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=17744164619106286758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Gebze Bulduk İnşaat Tadilat & Dekorasyon ekibi, \n\nGoogle Maps'te yer almak güzel, ancak rakiplerinizin online varlığıyla yarışabilmek için bir web sitesine ihtiyacınız var. SenninWeb olarak, sizin için etkileyici ve işlevsel bir web sitesi tasarlayarak dijital dünyada daha görünür olmanıza yardımcı olabiliriz. Gelin, birlikte başarınızı artıracak adımları atalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-390",
+    "business": "Ensar Dekorasyon",
+    "category": "ev tadilat",
+    "phone": "(0262) 646 34 92",
+    "website": "http://www.ensarinsaattadilat.com/",
+    "email": "info@ensarinsaattadilat.com",
+    "contactName": "Aydın",
+    "address": "No:60, Osman Yılmaz, Kızılay Cd., 41400 Gebze/Kocaeli",
+    "rating": 4,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=3980710800462953572&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 90,
+      "issues": [
+        "yavas yuklenme (8.8s)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 58,
+      "fetchDurationMs": 8802
+    },
+    "personalizationNote": "Merhaba Ensar Dekorasyon Ekibi,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip, ancak yavaş yüklenme süresi (8.8 saniye) kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu sorunu çözerek sitenizin performansını artırabilir ve potansiyel müşterilerinizi daha iyi bir deneyimle buluşturabilirsiniz. Sizlere yardımcı olmaktan memnuniyet duyarız. \n\nSevgi ve saygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-391",
+    "business": "Bölgem Yapı Dyo Bayi",
+    "category": "ev tadilat",
+    "phone": "(0262) 642 03 05",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Güzeller, Yeni Bağdat Cd. No:621, 41400 Gebze/Kocaeli",
+    "rating": 4.3,
+    "userRatingCount": 15,
+    "googleMapsUri": "https://maps.google.com/?cid=2379516022029669891&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Bölgem Yapı Dyo Bayi,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online varlıkları ile rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, sizi dijital dünyada daha görünür kılacak etkili bir web tasarımı ile destek olmaktan mutluluk duyarız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-392",
+    "business": "GEBZE BOYACI SEDAT USTA- EV BOYAMA-TAMİRAT TADİLAT",
+    "category": "ev tadilat",
+    "phone": "0541 605 99 28",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Mollafenari, İstanbul Cd. No:40/1, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 29,
+    "googleMapsUri": "https://maps.google.com/?cid=10957839798510792632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba, GEBZE BOYACI SEDAT USTA! Google Maps'te var olmanız harika, ancak rakiplerinizin online ortamda da yer aldığını unutmayın. SenninWeb olarak, etkili bir web sitesi ile dijital dünyada güçlü bir varlık oluşturmanıza yardımcı olabiliriz. Hedeflerinize ulaşmanız için birlikte çalışalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-393",
+    "business": "ÇAYIROVA TADİLAT",
+    "category": "ev tadilat",
+    "phone": "0532 130 42 00",
+    "website": "http://www.cayirovatadilat.com/",
+    "email": "info@cayirovatadilat.com",
+    "contactName": null,
+    "address": "Özgürlük, Adnan Kahveci Cd. NO:56/A, 41420 Çayırova/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 14,
+    "googleMapsUri": "https://maps.google.com/?cid=13872228224209320992&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "inline CSS fazla (64 adet)",
+        "yavas yuklenme (7.8s)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 38,
+      "fetchDurationMs": 7782
+    },
+    "personalizationNote": "Merhaba Çayırova Tadilat Ekibi,\n\nWeb sitenizin kalitesi oldukça iyi, ancak yüklenme süresindeki yavaşlık ve h1 etiketinin eksikliği gibi küçük sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu alanlarda yapacağımız iyileştirmelerle potansiyel müşterilerinize daha hızlı ve etkili bir hizmet sunmanıza yardımcı olabiliriz. İlgilenirseniz, sizinle çalışmaktan mutluluk duyarız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-394",
+    "business": "NovaLine Yapı",
+    "category": "ev tadilat",
+    "phone": "0531 243 36 88",
+    "website": "https://www.instagram.com/novalineyapi?igsh=MWt5ams3d3kzeGk2dA==&utm_source=qr",
+    "email": null,
+    "contactName": null,
+    "address": "Gaziler, 1752. Sk. No:20, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 10,
+    "googleMapsUri": "https://maps.google.com/?cid=2643382941529807039&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 70,
+      "issues": [
+        "sayfa cok agir (398KB)",
+        "yavas yuklenme (7.9s)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 398,
+      "fetchDurationMs": 7942
+    },
+    "personalizationNote": "Merhaba NovaLine Yapı,\n\nWeb sitenizin kalitesi sizi potansiyel müşterilerin gözünde ön plana çıkarabilir; ancak sayfanızın ağır yüklenmesi (7.9s) ve H1 etiketinin eksikliği gibi somut sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, sitenizin performansını artırmak ve arama motorlarındaki görünürlüğünüzü yükseltmek için yanınızdayız. Gelin, birlikte daha hızlı ve etkili bir web deneyimi oluşturalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-395",
+    "business": "Nalbur Dekorasyon",
+    "category": "ev tadilat",
+    "phone": "(0262) 646 93 38",
+    "website": "http://www.nalburdekorasyon.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Güzeller, Bülbül Cd. No:5, 41400 Gebze/Kocaeli",
+    "rating": 4.4,
+    "userRatingCount": 16,
+    "googleMapsUri": "https://maps.google.com/?cid=10696766588430941871&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 6996
+    },
+    "personalizationNote": "Merhaba Nalbur Dekorasyon,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada aktif olduğunu unutmayın. Web siteniz erişilemez durumda ve bu, potansiyel müşterilerin sizi bulmasını zorlaştırıyor. SenninWeb olarak, etkili bir web tasarımı ve dijital pazarlama stratejisi ile bu durumu düzeltmenize yardımcı olabiliriz. Sizi online dünyada daha görünür kılmak için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-396",
+    "business": "tadilatisleri",
+    "category": "ev tadilat",
+    "phone": "(0262) 644 18 19",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Ali Rıza Efendi Cd. No:16, 41400 Gebze/Kocaeli",
+    "rating": 4,
+    "userRatingCount": 4,
+    "googleMapsUri": "https://maps.google.com/?cid=1005930913554423216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Tadilatisleri, \n\nGoogle Maps'te var olmak önemli, ancak rakiplerinizin online varlığı da sizi geride bırakabilir. SenninWeb olarak, profesyonel bir web sitesi oluşturarak, sizin de dijital dünyada güçlü bir temele sahip olmanızı sağlamak için buradayız. Gelin, birlikte başarıya giden yolda ilerleyelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-397",
+    "business": "Gebze fayans seramik ustası abdurrahman aydaş",
+    "category": "ev tadilat",
+    "phone": "0532 356 34 06",
+    "website": "https://gebzefayansustasi.netlify.app/",
+    "email": null,
+    "contactName": "Abdurrahman",
+    "address": "Arapçeşme, Namık Kemal Cd. No:6, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=6349921099740324784&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "meta aciklama yok",
+        "yavas yuklenme (7.7s)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 8,
+      "fetchDurationMs": 7743
+    },
+    "personalizationNote": "Merhaba Abdurrahman Bey, \n\nWeb sitenizin potansiyeli yüksek, ancak meta açıklamanızın olmaması ve yavaş yüklenme süresi (7.7 saniye) gibi bazı alanlarda iyileştirmelere ihtiyaç duyduğunu görüyoruz. SenninWeb olarak, bu sorunları çözerek online görünürlüğünüzü artırabilir ve potansiyel müşterilerinize daha hızlı ulaşmanızı sağlayabiliriz. Sizinle çalışmayı heyecanla bekliyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-398",
+    "business": "Cahit Usta Boya Badana Tadilat Gebze",
+    "category": "çatı ustası",
+    "phone": "0545 910 64 09",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Cumhuriyet, Mimar Sinan Cad. No: 161/1, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 35,
+    "googleMapsUri": "https://maps.google.com/?cid=12610673442032593470&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Cahit Usta, \n\nGoogle Maps'te yer almanız harika, ancak rakiplerinizin online varlıkları giderek artıyor. Bir web sitesi oluşturmak, potansiyel müşterilerinize ulaşmanızı ve hizmetlerinizi tanıtmanızı kolaylaştıracaktır. SenninWeb olarak, size etkileyici bir web tasarımı ve dijital pazarlama stratejileri ile destek olmaktan memnuniyet duyarız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-399",
+    "business": "Ünsa Çatı ve Metal Trapez Sac Çatı Malzemeleri",
+    "category": "çatı ustası",
+    "phone": "0533 041 54 03",
+    "website": "https://unsacati.com/",
+    "email": null,
+    "contactName": null,
+    "address": "İnönü, 1983. Sk. No: 13/1, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 108,
+    "googleMapsUri": "https://maps.google.com/?cid=7327299599257171840&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 65,
+      "issues": [
+        "mobil uyumsuz",
+        "h1 etiketi yok",
+        "dil etiketi yok (lang)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 1,
+      "fetchDurationMs": 451
+    },
+    "personalizationNote": "Merhaba Ünsa Çatı ve Metal Trapez Sac Çatı Malzemeleri Ekibi,\n\nWeb sitenizin sağladığı hizmetlerin kalitesi oldukça yüksek, ancak mobil uyumluluk ve bazı SEO unsurlarında geliştirme alanlarınız mevcut. SenninWeb olarak, bu sorunları gidermeye yardımcı olabilir ve online görünürlüğünüzü artırarak rakiplerinizle daha etkili bir şekilde rekabet etmenizi sağlayabiliriz. Sizlere destek vermekten mutluluk duyarız!\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-400",
+    "business": "CEM ÇATI - çatı ustası",
+    "category": "çatı ustası",
+    "phone": "0532 723 55 42",
+    "website": "http://www.cemcati.com/",
+    "email": "info@cemcati.com",
+    "contactName": "Cem",
+    "address": "Kazım Karabekir, Bulut Sk. No:1 Daire:1, 41700 Darıca/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 34,
+    "googleMapsUri": "https://maps.google.com/?cid=13976223248236354343&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "yavas yuklenme (7.1s)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 43,
+      "fetchDurationMs": 7103
+    },
+    "personalizationNote": "Merhaba CEM ÇATI,\n\nWeb sitenizin kalite puanı oldukça yüksek, fakat yüklenme süresinin 7.1 saniye olduğunu görmekteyiz. Bu durum, kullanıcı deneyimini olumsuz etkileyebilir. Ayrıca, H1 etiketi eksikliği de SEO performansınızı düşürebilir. SenninWeb olarak, web sitenizin hızını artırmak ve arama motorlarındaki görünürlüğünüzü güçlendirmek için size özel çözümler sunabiliriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-401",
+    "business": "Çatı Sanatı Yapı İzolasyon İnş. San. ve Tic. Ltd. Şti.",
+    "category": "çatı ustası",
+    "phone": "(0262) 642 41 01",
+    "website": "http://catisanati.com/",
+    "email": "info@catisanati.com",
+    "contactName": null,
+    "address": "Gaziler, İbrahim Ağa Cd. No:283, 41400 Gebze/Kocaeli",
+    "rating": 4.5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=17125637671103091751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 90,
+      "issues": [
+        "inline CSS fazla (144 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 165,
+      "fetchDurationMs": 3115
+    },
+    "personalizationNote": "Merhaba Çatı Sanatı Yapı İzolasyon Ekibi,\n\nWeb sitenizin kalite puanı oldukça yüksek! Ancak, inline CSS gibi teknik iyileştirme alanları mevcut. SenninWeb olarak, web sitenizin performansını artırmak ve kullanıcı deneyimini geliştirmek için size yardımcı olmaktan mutluluk duyarız. Başarılarınızın devamını dileriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-402",
+    "business": "Arkan Çatı ve Eksiz Oluk Sistemleri GEBZE/KOCAELİ",
+    "category": "çatı ustası",
+    "phone": "",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "hürriyet mahallesi yaşardoğu caddesi, Hürriyet, 2051. Sk. no 6 D:1 dükkan, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 7,
+    "googleMapsUri": "https://maps.google.com/?cid=17721914614236728882&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Arkan Çatı ve Eksiz Oluk Sistemleri,\n\nGoogle Maps'te var olmak önemli, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, size etkileyici bir web tasarımı ve dijital pazarlama stratejileri sunarak işinizi daha geniş kitlelere ulaştırabiliriz. Gelin, birlikte dijital dünyada yerinizi alalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-403",
+    "business": "Asya Çatı",
+    "category": "çatı ustası",
+    "phone": "0532 552 13 72",
+    "website": "http://asyacati.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Osman Gazi, Galip Sk. no:6, 41700 Darıca/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 7,
+    "googleMapsUri": "https://maps.google.com/?cid=16750847714008930472&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 10000
+    },
+    "personalizationNote": "Merhaba Asya Çatı Ekibi,\n\nWeb sitenizin şu anda erişilemez olduğunu görüyoruz. Google Maps'te var olmanız önemli, ancak rakiplerinizin online ortamda aktif olduğunu unutmayın. SenninWeb olarak, web sitenizin yeniden hayata geçirilmesine ve dijital varlığınızın güçlendirilmesine yardımcı olabiliriz. Sizlere daha görünür olmanız için gereken desteği sunmaya hazırız. \n\nSevgi ve saygılarımla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-404",
+    "business": "Cevdet Özbitirgiç - Gebze Çayırova Boya Ustası",
+    "category": "çatı ustası",
+    "phone": "0541 733 55 46",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Özgürlük, 226. Sk., 41420 Çayırova/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 4,
+    "googleMapsUri": "https://maps.google.com/?cid=11795612301705716913&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Cevdet Bey,\n\nSizin gibi uzman bir çatı ustasının Google Maps'te var olması harika, ancak rakiplerinizin online varlıklarıyla da yarışabilmeniz için etkili bir web sitesine sahip olmanız şart. SenninWeb olarak, işletmenizi dijital dünyada daha görünür kılmak için size özel web tasarım ve dijital pazarlama çözümleri sunabiliriz. Size yardımcı olmaktan mutluluk duyarız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-405",
+    "business": "EKSİZ OLUK SİSTEMLERİ",
+    "category": "çatı ustası",
+    "phone": "0531 280 73 93",
+    "website": "http://eksizoluksistemleri.com/",
+    "email": null,
+    "contactName": null,
+    "address": "İstasyon, 1407. Sk. No:5/1 no :5, 41400 Gebze/Kocaeli",
+    "rating": 4,
+    "userRatingCount": 4,
+    "googleMapsUri": "https://maps.google.com/?cid=7304382014679009946&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1618
+    },
+    "personalizationNote": "Merhaba EKSİZ OLUK SİSTEMLERİ,\n\nWeb sitenizin şu anda erişilemez durumda olduğunu görüyoruz. Bu, potansiyel müşterilerin sizi bulmasını zorlaştırıyor. Rakipleriniz online ortamda aktifken, siz de güçlü bir dijital varlık oluşturarak farkınızı ortaya koyabilirsiniz. SenninWeb olarak, profesyonel web tasarım ve dijital pazarlama hizmetlerimizle size bu konuda yardımcı olmaktan memnuniyet duyarız. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-406",
+    "business": "Ay-Ar Çatı Sistemleri",
+    "category": "çatı ustası",
+    "phone": "0505 093 81 83",
+    "website": "http://www.ayarcati.com/",
+    "email": "varoleksi@gmail.com",
+    "contactName": null,
+    "address": "Abdi İpekçi, 1544/1. Sk. No:1, 41700 Darıca/Kocaeli",
+    "rating": 3,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=9363416346367378264&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 90,
+      "issues": [
+        "inline CSS fazla (167 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 127,
+      "fetchDurationMs": 2946
+    },
+    "personalizationNote": "Merhaba Ay-Ar Çatı Sistemleri,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip, ancak inline CSS'nin fazlalığı gibi küçük iyileştirme alanları mevcut. SenninWeb olarak, bu sorunları gidererek sitenizin performansını daha da artırabiliriz. Ayrıca, dijital pazarlama stratejilerimizle Google puanınızı yükseltmenize yardımcı olabiliriz. Sizinle çalışmayı dört gözle bekliyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-407",
+    "business": "Hasçelik prefabrik ev ve konteyner, Gebze",
+    "category": "konteynır ev",
+    "phone": "(0216) 510 00 34",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Mollafenari, Ankara Cd. 39/2, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 12,
+    "googleMapsUri": "https://maps.google.com/?cid=8627802383073311613&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Hasçelik Prefabrik Ev ve Konteyner ekibi,\n\nGoogle Maps'te bulunmanız harika, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, size özel bir web tasarımı ile dijital dünyada güçlü bir varlık oluşturmanıza yardımcı olabiliriz. Siz de işinizi daha geniş kitlelere ulaştırmak için ilk adımı atın!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-408",
+    "business": "Gebze Konteyner",
+    "category": "konteynır ev",
+    "phone": "0532 355 21 91",
+    "website": "https://www.gebzekonteyner.com/",
+    "email": "info@karamanlar.com.tr",
+    "contactName": null,
+    "address": "Balçık, Organize Cd. No:34, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=8674464145025103486&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "inline CSS fazla (24 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 105,
+      "fetchDurationMs": 2276
+    },
+    "personalizationNote": "Merhaba Gebze Konteyner,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip, ancak inline CSS'in fazlalığı ve h1 etiketinin eksikliği gibi küçük geliştirme alanları mevcut. SenninWeb olarak, bu sorunları çözerek kullanıcı deneyimini ve arama motorlarındaki görünürlüğünüzü artırmanıza yardımcı olabiliriz. Sizinle çalışmak için sabırsızlanıyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-409",
+    "business": "Aktepe Konteyner Ve Prefabrik",
+    "category": "konteynır ev",
+    "phone": "(0216) 498 83 11",
+    "website": "http://akkonteyner.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Tepeören, Kumtepe Sk., 41400 Gebze/Kocaeli",
+    "rating": 4.1,
+    "userRatingCount": 18,
+    "googleMapsUri": "https://maps.google.com/?cid=11754141348319546623&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 60,
+      "issues": [
+        "mobil uyumsuz",
+        "meta aciklama yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 10,
+      "fetchDurationMs": 2038
+    },
+    "personalizationNote": "Merhaba Aktepe Konteyner Ve Prefabrik,\n\nWeb sitenizin mobil uyumsuz olması ve meta açıklamasının eksikliği, potansiyel müşterilerinize ulaşmanızı zorlaştırıyor. SenninWeb olarak, bu somut sorunları gidermenize yardımcı olabiliriz. Daha etkili bir online varlık ile rakiplerinizin gerisinde kalmayın, birlikte büyüyelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-410",
+    "business": "Deniz konteyner ve prefabrik",
+    "category": "konteynır ev",
+    "phone": "0543 123 07 49",
+    "website": "https://denizkonteyner.com/i",
+    "email": "info@denizkonteyner.com",
+    "contactName": null,
+    "address": "Balçık, Atatürk Cd. No:113, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 14,
+    "googleMapsUri": "https://maps.google.com/?cid=3614267499924642519&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 70,
+      "issues": [
+        "meta aciklama yok",
+        "yavas yuklenme (5.7s)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 94,
+      "fetchDurationMs": 5672
+    },
+    "personalizationNote": "Merhaba, \n\nDeniz Konteyner olarak sunduğunuz hizmetlerin online görünürlüğünü artırmak adına bazı geliştirmeler yapabileceğinizi düşünüyoruz. Web sitenizde meta açıklaması olmaması, H1 etiketinin eksikliği ve yavaş yüklenme süresi (5.7s) gibi somut sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu konularda size yardımcı olarak, potansiyel müşterilerinize daha etkili bir şekilde ulaşmanızı sağlayabiliriz. \n\nSevgi ve saygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-411",
+    "business": "YUVAM KONTEYNER",
+    "category": "konteynır ev",
+    "phone": "0850 318 4353",
+    "website": "https://www.yuvamkonteyner.com.tr/",
+    "email": "info@yuvamkonteyner.com.tr",
+    "contactName": null,
+    "address": "Şekerpınar Mah. Muhsin Yazıcıoğlu Cad, Şekerpınar, Sevda Sk. No:3, 41420 Çayırova/Kocaeli",
+    "rating": 4.4,
+    "userRatingCount": 18,
+    "googleMapsUri": "https://maps.google.com/?cid=3753633564189325708&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 65,
+      "issues": [
+        "sayfa cok agir (216KB)",
+        "inline CSS fazla (57 adet)",
+        "h1 etiketi yok",
+        "dil etiketi yok (lang)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 216,
+      "fetchDurationMs": 2658
+    },
+    "personalizationNote": "Merhaba Yuvam Konteyner,\n\nWeb siteniz, konteynır ev sektöründe önemli bir potansiyele sahip. Ancak, sayfanızın ağır yüklenmesi, inline CSS kullanımının fazla olması ve bazı temel SEO unsurlarının eksikliği, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, web sitenizin performansını artırmak ve arama motorlarında daha görünür hale getirmek için size destek olmaktan memnuniyet duyarız. Gelin, birlikte sitenizi daha etkili bir hale getirelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-412",
+    "business": "Onay Konteyner prefabrik/Tiny House Ahşap evler",
+    "category": "konteynır ev",
+    "phone": "0507 441 79 91",
+    "website": "https://www.onaykonteyner.com/",
+    "email": "yusuf.onaykonteyner@gmail.com",
+    "contactName": null,
+    "address": "Denizli, gazi mustafa kemal caddesi, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 19,
+    "googleMapsUri": "https://maps.google.com/?cid=17261168373636838159&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 55,
+      "issues": [
+        "meta aciklama yok",
+        "sayfa cok agir (1569KB)",
+        "inline CSS fazla (295 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 1569,
+      "fetchDurationMs": 1826
+    },
+    "personalizationNote": "Merhaba Onay Konteyner,\n\nWeb sitenizin kalitesi, potansiyel müşterilerinize ulaşmanızı kolaylaştırmak için önemli bir adım. Ancak, meta açıklamanızın olmaması, sayfanızın ağır olması ve bazı temel etiketlerin eksikliği gibi sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, bu sorunları çözerek sitenizin performansını artırabilir ve daha fazla görünürlük sağlayabiliriz. Sizinle çalışarak, hedeflerinize daha hızlı ulaşmanıza yardımcı olmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-413",
+    "business": "Kayra Prefabrik ve Konteyner Çözümleri",
+    "category": "konteynır ev",
+    "phone": "0533 038 26 26",
+    "website": "https://www.kayraprefabrik.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Pelitli Mah. Tavşanlı Yolu Cad, Pelitli, 4470. Sok No:16, 41400 Gebze/Kocaeli",
+    "rating": 4.3,
+    "userRatingCount": 11,
+    "googleMapsUri": "https://maps.google.com/?cid=12082411495089793604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 10000
+    },
+    "personalizationNote": "Merhaba Kayra Prefabrik ve Konteyner Çözümleri,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada aktif olduğunu unutmayın. Web sitenizin erişilemez olması, potansiyel müşterilere ulaşmanızı engelliyor. SenninWeb olarak, size etkili bir web tasarımı ve dijital pazarlama stratejisi sunarak bu durumu düzeltmek için buradayız. Sizinle iş birliği yaparak, markanızı daha geniş kitlelere ulaştırabiliriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-414",
+    "business": "Pramo Prefabrik Yapı Teknolojileri Gebze Fabrika",
+    "category": "konteynır ev",
+    "phone": "0546 767 75 91",
+    "website": "https://pramo.com.tr/",
+    "email": "info@pramo.com.tr",
+    "contactName": null,
+    "address": "Pelitli, Yeni Mezarlık Yolu No:77, 41400 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 21,
+    "googleMapsUri": "https://maps.google.com/?cid=1283374153612621435&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (567KB)",
+        "inline CSS fazla (25 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 567,
+      "fetchDurationMs": 2371
+    },
+    "personalizationNote": "Merhaba Pramo Ekibi,\n\nWeb sitenizin kalitesi oldukça iyi, ancak sayfa hızınızı artırmak ve inline CSS kullanımını azaltmak, kullanıcı deneyimini daha da geliştirebilir. SenninWeb olarak, bu alanlarda size yardımcı olarak rakiplerinizle daha güçlü bir online varlık oluşturmanıza destek olabiliriz. Başarılarınızın devamını dileriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-415",
+    "business": "SNR YAPI KONTEYNER PRAFABRİK",
+    "category": "konteynır ev",
+    "phone": "0531 693 75 59",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Balçık, mandıra caddesi, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=10848811167884261652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba SNR YAPI KONTEYNER PRAFABRİK,\n\nOnline varlığınızın olmaması, rakiplerinizin önünde geride kalmanıza neden olabilir. Google Maps'te yer almanız önemli, ancak potansiyel müşterilerinize ulaşmak için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, web tasarım ve dijital pazarlama alanındaki uzmanlığımızla size yardımcı olmaktan mutluluk duyarız.\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-416",
+    "business": "Nural Grup Konteyner ve Prefabrik Yapı",
+    "category": "konteynır ev",
+    "phone": "",
+    "website": "https://www.nuralgrup.com.tr/",
+    "email": "info@nuralgrup.com.tr",
+    "contactName": null,
+    "address": "Eski, Mollafenari, İstanbul Cd. No:46/1, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=4729481151385771604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 100,
+      "issues": [],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 31,
+      "fetchDurationMs": 3736
+    },
+    "personalizationNote": "Merhaba Nural Grup,\n\nWeb sitenizin mükemmel bir kalite puanına sahip olması, dijital varlığınızın ne kadar güçlü olduğunu gösteriyor. Ancak, sektörünüzdeki rekabeti göz önünde bulundurarak, SEO ve dijital pazarlama stratejilerinizi geliştirerek daha fazla müşteriye ulaşma fırsatlarını değerlendirebilirsiniz. SenninWeb olarak, sizinle birlikte çalışarak online görünürlüğünüzü artırabilir ve potansiyel müşterilerinize ulaşmanızı kolaylaştırabiliriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-417",
+    "business": "PREFABRİK KONTEYNER ÜRETİCİSİ",
+    "category": "konteynır ev",
+    "phone": "(0216) 458 04 05",
+    "website": "https://module-t.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Balçık, Organize Cd. No:14/2, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=3842501040759097284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 962
+    },
+    "personalizationNote": "Merhaba,\n\nWeb sitenizin erişilemez olması, potansiyel müşteri kitlenize ulaşmanızı engelliyor. Rakipleriniz online ortamda güçlü bir varlık gösterirken, siz de dijital dünyada yer alarak bu fırsatları değerlendirebilirsiniz. SenninWeb olarak, web sitenizi yeniden tasarlayıp, etkili bir dijital pazarlama stratejisi oluşturmanıza yardımcı olabiliriz. Geleceğinizi birlikte inşa edelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-418",
+    "business": "DS Çelik Konteyner",
+    "category": "konteynır ev",
+    "phone": "0535 084 03 37",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Gebze kocaeli balçık mahallesi mandıra caddesi, Balçık, Karataş Sk. No:2, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 12,
+    "googleMapsUri": "https://maps.google.com/?cid=13325868747242298407&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba DS Çelik Konteyner ekibi,\n\nGoogle Maps'te yer almanız harika, ancak rakiplerinizin online varlıkları sayesinde daha geniş bir kitleye ulaşabileceğinizi unutmayın. SenninWeb olarak, profesyonel bir web sitesiyle markanızı dijital dünyada öne çıkarmanıza yardımcı olabiliriz. Sizlerle iş birliği yapmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-419",
+    "business": "Royal Ahşap & Konteyner",
+    "category": "konteynır ev",
+    "phone": "0538 340 39 19",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Eski, Osman Yılmaz, İstanbul Cd. No: 62, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=7416796720392463440&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Royal Ahşap & Konteyner, \n\nGoogle Maps'te var olmanın yeterli olmadığını unutmayın; rakipleriniz online dünyada aktif olarak yer alıyor. SenninWeb olarak, size profesyonel bir web sitesi tasarlayarak dijital varlığınızı güçlendirmek ve müşteri kitlenizi genişletmek için buradayız. Hadi, birlikte çalışalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-420",
+    "business": "Tuğra Konteyner Prefabrik",
+    "category": "konteynır ev",
+    "phone": "0506 940 11 31",
+    "website": "https://tugrakonteynerprefabrik.com/",
+    "email": "info@tugrakonteynerprefabrik.com",
+    "contactName": null,
+    "address": "Balçık, organize sanayi caddesi No:89, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 1,
+    "googleMapsUri": "https://maps.google.com/?cid=912139303929243272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 90,
+      "issues": [
+        "yavas yuklenme (5.9s)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 142,
+      "fetchDurationMs": 5854
+    },
+    "personalizationNote": "Merhaba Tuğra Konteyner Prefabrik,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip, ancak yüklenme süresi 5.9 saniye olarak biraz yavaş. Bu durum, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, web sitenizin hızını artırmak ve ziyaretçilerinize daha hızlı bir deneyim sunmak için gereken çözümleri sunabiliriz. Birlikte çalışarak, online varlığınızı daha da güçlendirebiliriz. \n\nSevgi ve Saygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-421",
+    "business": "Tekno konteyner",
+    "category": "konteynır ev",
+    "phone": "(0262) 255 57 37",
+    "website": "http://www.teknokonteyner.com/",
+    "email": "info@teknokonteyner.com",
+    "contactName": null,
+    "address": "Balçık, Organize Cad No:89, 41400 Gebze/Kocaeli",
+    "rating": 4.4,
+    "userRatingCount": 14,
+    "googleMapsUri": "https://maps.google.com/?cid=2612385820217398338&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 70,
+      "issues": [
+        "meta aciklama yok",
+        "yavas yuklenme (6.1s)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 136,
+      "fetchDurationMs": 6083
+    },
+    "personalizationNote": "Merhaba Tekno Konteyner,\n\nWeb sitenizin kalite puanı 70/100 olarak değerlendirildi. Ancak, meta açıklamalarının eksikliği ve yavaş yüklenme süreleri (6.1s) gibi bazı somut sorunlar mevcut. SenninWeb olarak, bu sorunları çözerek web sitenizin performansını artırabilir ve online görünürlüğünüzü güçlendirebiliriz. Dijital dünyada rakiplerinizin gerisinde kalmamanız için sizinle çalışmayı çok isteriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-422",
+    "business": "Azim konteyner ve Prefabrik",
+    "category": "konteynır ev",
+    "phone": "",
+    "website": "http://www.azimkonteyner.com/",
+    "email": "info@azimkonteyner.com",
+    "contactName": null,
+    "address": "Mustafa Kemal, Atatürk Cd. No:137/A, 41400 Gebze/Kocaeli",
+    "rating": 3,
+    "userRatingCount": 4,
+    "googleMapsUri": "https://maps.google.com/?cid=14009147966267099039&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 95,
+      "issues": [
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 41,
+      "fetchDurationMs": 2662
+    },
+    "personalizationNote": "Merhaba Azim Konteyner Ekibi, \n\nWeb siteniz oldukça yüksek bir kalite puanına sahip, ancak H1 etiketinin eksik olduğunu fark ettik. Bu küçük değişiklik, arama motorlarındaki görünürlüğünüzü artırabilir. SenninWeb olarak, SEO stratejilerinizi geliştirerek online varlığınızı güçlendirmek için buradayız. Sizlere destek olmaktan mutluluk duyarız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-423",
+    "business": "Gebze Prefabrik",
+    "category": "konteynır ev",
+    "phone": "0532 515 58 94",
+    "website": "https://gebzeprefabrik.com/",
+    "email": "bilgi@gebzecampencere.com",
+    "contactName": null,
+    "address": "Tatlıkuyu, Ahmet Pembegüllü Blv. No:30, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=18165398979904070266&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 70,
+      "issues": [
+        "meta aciklama yok",
+        "inline CSS fazla (32 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 147,
+      "fetchDurationMs": 4909
+    },
+    "personalizationNote": "Merhaba Gebze Prefabrik,\n\nWeb sitenizin kalite puanı 70/100, ancak bazı geliştirilmesi gereken alanlar mevcut. Meta açıklamanızın olmaması, inline CSS'in fazla kullanımı ve H1 etiketinin eksikliği, arama motorlarındaki görünürlüğünüzü etkileyebilir. SenninWeb olarak, bu konularda size destek olabilir ve sitenizin performansını artırarak rekabette öne çıkmanızı sağlayabiliriz. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-424",
+    "business": "Simgesan konteyner - Tiny house",
+    "category": "konteynır ev",
+    "phone": "0552 471 61 05",
+    "website": "https://www.e-konteyner.net/",
+    "email": "abdullah@simgesan.com.tr",
+    "contactName": null,
+    "address": "Denizli, atatürk cad no:205, 41200 Gebze/Kocaeli",
+    "rating": 3,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=6545287833605983470&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (1120KB)",
+        "inline CSS fazla (26 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 1120,
+      "fetchDurationMs": 3882
+    },
+    "personalizationNote": "Merhaba Simgesan Konteyner Ekibi,\n\nWeb sitenizin kalite puanı iyi olsa da, sayfa yükleme hızını artırmak ve inline CSS kullanımını azaltmak gibi geliştirme alanları mevcut. SenninWeb olarak, bu somut sorunları ele alarak, kullanıcı deneyimini ve SEO performansınızı artırmanıza yardımcı olabiliriz. Sizlerle iş birliği yapmaktan memnuniyet duyarız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-425",
+    "business": "NATURAL CONTAINER",
+    "category": "konteynır ev",
+    "phone": "0545 690 34 05",
+    "website": "https://www.naturalcontainer.net/",
+    "email": "tayfun@naturalcontainer.net",
+    "contactName": null,
+    "address": "Mollafenari, Ankara Cd. No:31, 41400 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 39,
+    "googleMapsUri": "https://maps.google.com/?cid=638926407075301345&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 70,
+      "issues": [
+        "sayfa cok agir (840KB)",
+        "inline CSS fazla (95 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 840,
+      "fetchDurationMs": 1813
+    },
+    "personalizationNote": "Merhaba Natural Container Ekibi,\n\nWeb siteniz oldukça etkileyici olsa da, sayfa yükleme hızınızı artırmak ve SEO performansınızı geliştirmek adına bazı iyileştirmeler yapma fırsatınız var. Özellikle sayfa boyutunu optimize etmek, inline CSS'i azaltmak ve H1 etiketini eklemek, kullanıcı deneyimini ve arama motorlarındaki görünürlüğünüzü artıracaktır. SenninWeb olarak, bu konularda size destek olmaktan memnuniyet duyarız.\n\nSaygılarımla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-426",
+    "business": "ÇAKAN KONTEYNER DEPO GEBZE",
+    "category": "konteynır ev",
+    "phone": "",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Tavşanlı, RG74+5H, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=5762278248660868774&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Çakan Konteyner Depo,\n\nGoogle Maps'te var olmanız önemli bir adım, ancak rakiplerinizin online dünyada aktif olduğunu unutmayın. SenninWeb olarak, etkileyici bir web sitesi ile markanızı güçlendirmenize yardımcı olabiliriz. Online varlığınızı artırarak potansiyel müşterilerinize daha kolay ulaşmanızı sağlamak için buradayız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-427",
+    "business": "GEBZE BOYA DEKORASYON",
+    "category": "boya badana",
+    "phone": "",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Beylikbağı, 324. Sk. 43A, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 13,
+    "googleMapsUri": "https://maps.google.com/?cid=15012018401054870810&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba GEBZE BOYA DEKORASYON,\n\nGoogle Maps’te var olmanız harika, ancak rakiplerinizin online olması sizi geri planda bırakabilir. Potansiyel müşterilerinize ulaşmak için profesyonel bir web sitesi oluşturmak, hizmetlerinizi daha etkili bir şekilde tanıtmanın en iyi yolu. SenninWeb olarak bu süreçte size yardımcı olmaktan memnuniyet duyarız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-428",
+    "business": "Gebze Boya Badana Ustası",
+    "category": "boya badana",
+    "phone": "",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Ulus, 2149. Sk. No:20 D:28, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=13025968200927435938&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba, Gebze Boya Badana Ustası! Google Maps'te var olmanız harika, ancak rakiplerinizin online olması sizi bir adım geride bırakabilir. SenninWeb olarak, size profesyonel bir web sitesi oluşturarak dijital dünyada görünürlüğünüzü artırabiliriz. Gelin birlikte işinizi daha geniş bir kitleye ulaştıralım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-429",
+    "business": "Murat dekorasyon Gebze’de boya badana Alçı ve Alçıpan ustası",
+    "category": "boya badana",
+    "phone": "0543 839 17 28",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Barış, Barış Cd. No:3, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=13206024260874885827&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Murat Dekorasyon,\n\nSizi Google Maps'te bulmak harika, ancak rakiplerinizin online varlıkları sayesinde daha geniş bir kitleye ulaşabileceğinizi unutmayın. Bir web sitesi oluşturmak, hizmetlerinizi tanıtmanın ve müşteri potansiyelinizi artırmanın en etkili yolu olacaktır. SenninWeb olarak, sizin için profesyonel ve etkili bir web tasarımı ile dijital pazarlama stratejileri geliştirmeye hazırız. Başarılar dileriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-430",
+    "business": "Göktürk Boya Badana",
+    "category": "boya badana",
+    "phone": "0554 021 79 88",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Osman Yılmaz, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 5,
+    "googleMapsUri": "https://maps.google.com/?cid=680628090370419545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Göktürk Boya Badana,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada yer aldığını unutmayın. SenninWeb olarak, etkili bir web sitesi oluşturarak markanızı dijital ortamda daha görünür hale getirebilir ve müşteri potansiyelinizi artırmanıza yardımcı olabiliriz. İhtiyacınız olan desteği sağlamak için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-431",
+    "business": "ASLAN BOYA DEKORASYON",
+    "category": "boya badana",
+    "phone": "0539 564 82 98",
+    "website": "https://wa.me/905395648298",
+    "email": null,
+    "contactName": null,
+    "address": "Hürriyet, 2049. Sk. No:32, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 76,
+    "googleMapsUri": "https://maps.google.com/?cid=2591631869706988854&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 65,
+      "issues": [
+        "SEO baslik yok",
+        "inline CSS fazla (66 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 171,
+      "fetchDurationMs": 961
+    },
+    "personalizationNote": "Merhaba ASLAN BOYA DEKORASYON,\n\nWeb sitenizi inceledik ve bazı geliştirme fırsatları gördük. SEO başlığınızın olmaması, inline CSS'in fazla kullanımı ve h1 etiketinin eksikliği, arama motorlarındaki görünürlüğünüzü olumsuz etkileyebilir. SenninWeb olarak, bu sorunları çözerek online varlığınızı güçlendirmeye ve müşteri potansiyelinizi artırmaya yardımcı olabiliriz. Detayları görüşmek için sabırsızlanıyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-432",
+    "business": "Çetin Boya Merkez",
+    "category": "boya badana",
+    "phone": "(0216) 617 00 07",
+    "website": "http://www.cetinboya.net/",
+    "email": "info@cetinboya.net",
+    "contactName": null,
+    "address": "Hasköy garanti bank şubesi arkası, Sultan Orhan, 1887. Sok, 41400 Gebze/Kocaeli",
+    "rating": 4.6,
+    "userRatingCount": 72,
+    "googleMapsUri": "https://maps.google.com/?cid=2636017360688183328&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (791KB)",
+        "inline CSS fazla (158 adet)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 791,
+      "fetchDurationMs": 1234
+    },
+    "personalizationNote": "Merhaba Çetin Boya Merkez,\n\nWeb sitenizin kalite puanı 75/100 ile oldukça iyi bir seviyede, ancak sayfa hızının iyileştirilmesi ve inline CSS kullanımının azaltılması gibi alanlarda geliştirmeler yapma fırsatınız var. SenninWeb, bu somut sorunları çözerek kullanıcı deneyimini artırmanıza ve rakiplerinizle daha güçlü bir online varlık oluşturmanıza yardımcı olabilir. \n\nSevgiler,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-433",
+    "business": "Varol Dekorasyon - Gebze Boya Ustası - Darıca Boya Ustası",
+    "category": "boya badana",
+    "phone": "0535 705 45 74",
+    "website": "https://gebzeboyaustasi.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Abdi İpekçi, İstasyon Cd. No:546/e, 41400 Darıca/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=15133833106850824035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 35,
+      "issues": [
+        "mobil uyumsuz",
+        "SEO baslik yok",
+        "meta aciklama yok",
+        "dil etiketi yok (lang)"
+      ],
+      "analyzedAt": "2026-06-22",
+      "pageSizeKB": 1,
+      "fetchDurationMs": 905
+    },
+    "personalizationNote": "Merhaba Varol Dekorasyon,\n\nWeb sitenizin kalite puanı 35/100 olarak belirlenmiş ve bazı önemli sorunlar tespit edilmiştir. Mobil uyumsuzluk, SEO başlığı ve meta açıklaması eksiklikleri gibi durumlar, potansiyel müşterilerin sizi bulmasını zorlaştırabilir. SenninWeb olarak, bu sorunları gidermek ve online görünürlüğünüzü artırmak için size profesyonel destek sunmaktan mutluluk duyarız. İhtiyacınız olan her adımda yanınızdayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-22"
   }
 ]
