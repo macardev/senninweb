@@ -18,6 +18,7 @@
 
 ## Blog Posts
 
+- [AI Görünürlük, GEO ve LLMO SEO Rehberi](https://www.senninweb.com/docs/blog/ai-gorunurluk-geo-llmo-seo-rehberi.md): Yapay zeka arama optimizasyonu, GEO ve LLMO stratejileriyle ChatGPT, Gemini ve Perplexity'de görünürlük
 - [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?](https://www.senninweb.com/docs/blog/kucuk-isletme-web-sitesi.md): Web sitesi ile müşteri kazanma stratejileri
 - [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir? 2026 SEO Rehberi](https://www.senninweb.com/docs/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir.md): 2026 SEO stratejileriyle müşteri kazanma
 - [Küçük İşletmeler İçin Google'da Görünür Olmanın Gerçek Yolu (2026 Rehberi)](https://www.senninweb.com/docs/blog/kucuk-isletmeler-google-da-gorunurluk-2026.md): Google'da görünürlük stratejileri
