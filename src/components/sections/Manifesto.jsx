@@ -3,14 +3,9 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 import { useIsMobile } from '@/hooks/useIsMobile'
 
 const words = [
-  'Güzel',
-  'görünmek',
-  'yetmez',
-  '—',
-  'Google\'da',
-  'da',
-  'görünmek',
-  'lazım.',
+  'Farkını',
+  'Ortaya',
+  'Koy',
 ]
 
 export default function Manifesto() {

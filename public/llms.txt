@@ -14,6 +14,7 @@
 - [Gebze](https://www.senninweb.com/docs/gebze.md): Gebze'de web tasarım, yerel SEO, e-ticaret ve dijital pazarlama hizmetleri.
 - [Bilecik](https://www.senninweb.com/docs/bilecik.md): Bilecik'te web tasarım, SEO, Google Maps optimizasyonu ve kurumsal kimlik hizmetleri.
 - [Kocaeli](https://www.senninweb.com/docs/kocaeli.md): Kocaeli genelinde web tasarım, SEO ve dijital pazarlama. İzmit, Gebze, Körfez, Gölcük ve tüm ilçeler.
+- [Fiyatlandırma](https://www.senninweb.com/pricing.md): SEO $300/ay, diğer hizmetler proje bazlı fiyatlandırma
 - [Blog](https://www.senninweb.com/docs/llms-full.txt): Tüm blog yazıları ve sayfaların tam metni (tek dosya).
 
 ## Blog Posts

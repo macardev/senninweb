@@ -58,8 +58,33 @@ const content = {
       "content": "Veri odaklı yaklaşımımızla her kanalda performansı ölçüyor, optimize ediyor ve kaynaklarınızı en verimli şekilde kullanmanızı sağlıyoruz. SEO, sosyal medya ve içerik pazarlamayı tek bir stratejide birleştirerek bütünsel bir dijital büyüme planı oluşturuyoruz."
     },
     {
+      type: "comparisonTable",
+      title: "Geleneksel Pazarlama vs Dijital Pazarlama",
+      headers: ["Kriter", "Geleneksel Pazarlama", "Dijital Pazarlama"],
+      rows: [
+        ["Maliyet", "Yüksek (TV, billboard, broşür)", "Düşük — her bütçeye uygun"],
+        ["Hedefleme", "Kitlesel, herkese aynı mesaj", "Segmentasyon, kişiselleştirme"],
+        ["Ölçümleme", "Zor — kaç kişi gördü?", "Kesin — tıklama, dönüşüm, ROI"],
+        ["Hız", "Haftalar/aylar sürebilir", "Saatler içinde kampanya yayında"],
+        ["Dönüşüm", "Sınırlı geri bildirim", "Canlı test ve optimizasyon"],
+        ["Erişim", "Yerel/bölgesel", "Küresel — 7/24"]
+      ]
+    },
+    {
+      type: "statBlock",
+      stat: "%87",
+      label: "İnternet kullanıcılarının %87'si satın alma öncesi ürün araştırması yapıyor.",
+      source: "Google/Ipsos Consumer Research, 2025"
+    },
+    {
+      type: "statBlock",
+      stat: "3x",
+      label: "Dijital pazarlama, geleneksel pazarlamaya göre 3 kat daha fazla dönüşüm sağlıyor.",
+      source: "HubSpot Marketing Statistics, 2025"
+    },
+    {
       type: "heading2",
-      "content": "Dijital Pazarlama Hizmetimiz Neleri Kapsar?"
+      content: "Dijital Pazarlama Hizmetimiz Neleri Kapsar?"
     },
     {
       type: "section",
@@ -280,6 +305,52 @@ export default function HizmetDijitalPazarlama() {
                     <h3 className="text-xl md:text-2xl font-display font-semibold text-white/80">
                       {section.subtitle}
                     </h3>
+                  </div>
+                )
+              case "comparisonTable":
+                return (
+                  <div key={index} className="space-y-4 pt-8">
+                    <h2 className="text-2xl md:text-3xl font-display font-semibold text-white">{section.title}</h2>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm md:text-base text-white/65 leading-relaxed border-collapse">
+                        <thead>
+                          <tr className="border-b border-white/10">
+                            {section.headers.map((h, i) => (
+                              <th key={i} className="text-left py-3 px-4 font-display font-semibold text-white/80 first:pl-0 last:pr-0">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {section.rows.map((row, ri) => (
+                            <tr key={ri} className="border-b border-white/5">
+                              {row.map((cell, ci) => (
+                                <td key={ci} className={`py-3 px-4 ${ci === 0 ? "font-medium text-white/80" : ""} first:pl-0 last:pr-0`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )
+              case "statBlock":
+                return (
+                  <div key={index} className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+                    <span className="text-4xl md:text-5xl font-display font-bold text-gold-400 flex-shrink-0 leading-none">{section.stat}</span>
+                    <div>
+                      <p className="text-sm md:text-base text-white/65 leading-relaxed">{section.label}</p>
+                      {section.source && (
+                        <p className="text-xs text-white/40 mt-1">— Kaynak: {section.source}</p>
+                      )}
+                    </div>
+                  </div>
+                )
+              case "callout":
+                return (
+                  <div key={index} className="relative rounded-2xl border-l-4 border-gold-500 bg-gold-500/[0.03] p-5 md:p-6">
+                    <p className="text-sm md:text-base text-white/70 leading-relaxed italic">
+                      <span dangerouslySetInnerHTML={{ __html: section.content }} />
+                    </p>
                   </div>
                 )
               case "heading2":

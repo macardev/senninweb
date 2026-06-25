@@ -58,6 +58,35 @@ const content = {
       "content": "Geleneksel SEO'nun ötesine geçiyoruz. 2026 yılında yapay zeka destekli arama motorları (ChatGPT, Perplexity, Google AI Overviews, Gemini, Claude) için de içeriklerinizi optimize ediyor, <strong>AEO (Answer Engine Optimization)</strong> ve <strong>GEO (Generative Engine Optimization)</strong> stratejilerimizle AI tabanlı aramalarda da görünür olmanızı sağlıyoruz."
     },
     {
+      type: "callout",
+      content: "Çağatay Macar, SenninWeb Kurucusu: \"SEO sadece Google'da üst sıralara çıkmak değil, doğru müşterinin sizi bulmasını sağlamaktır. 2026'da yapay zeka aramalarında da görünür olmak, geleneksel SEO kadar kritik hale geldi.\""
+    },
+    {
+      type: "comparisonTable",
+      title: "SEO vs Google Ads — Hangisi Sizin İçin Daha Uygun?",
+      headers: ["Kriter", "SEO (Organik)", "Google Ads (Reklam)"],
+      rows: [
+        ["Maliyet", "Aylık $300 — sürdürülebilir", "Tıklama başına ücret — kontrol edilebilir"],
+        ["Zaman", "3-6 ayda kalıcı sonuçlar", "Anında trafik"],
+        ["Süreklilik", "Ödeme durunca sıralama korunur", "Ödeme durunca trafik biter"],
+        ["Tıklama Oranı", "%70-80'i organik sonuçlara gider", "%20-30'u reklamlara gider"],
+        ["Güven", "Kullanıcılar organik sonuçlara daha çok güvenir", "Reklam olduğu için daha az güven"],
+        ["Uzun Vadeli", "Birikimli büyüme — dijital varlık", "Kısa vadeli — sürekli bütçe gerekir"]
+      ]
+    },
+    {
+      type: "statBlock",
+      stat: "%90",
+      label: "İnternet kullanıcılarının %90'ı arama motorlarını kullanıyor.",
+      source: "Google Search Statistics, 2025"
+    },
+    {
+      type: "statBlock",
+      stat: "3x",
+      label: "SEO yatırımı yapan işletmeler, yapmayanlara göre 3 kat daha fazla organik trafik elde ediyor.",
+      source: "BrightEdge Research, 2025"
+    },
+    {
       type: "heading2",
       content: "SEO Hizmetimiz Neleri Kapsar?"
     },
@@ -158,6 +187,19 @@ export default function HizmetSeoVeBuyume() {
       { "@type": "City", "name": "Kocaeli" },
       { "@type": "City", "name": "İstanbul" }
     ],
+    "hasProductReturnPolicy": {
+      "@type": "ProductReturnPolicy",
+      "name": "Aylık Abonelik"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "300",
+      "highPrice": "300",
+      "offerCount": "1",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.senninweb.com/hizmet/seo-ve-buyume"
+    },
     "serviceType": [
       "SEO",
       "Yerel SEO",
@@ -287,6 +329,52 @@ export default function HizmetSeoVeBuyume() {
                     <h3 className="text-xl md:text-2xl font-display font-semibold text-white/80">
                       {section.subtitle}
                     </h3>
+                  </div>
+                )
+              case "comparisonTable":
+                return (
+                  <div key={index} className="space-y-4 pt-8">
+                    <h2 className="text-2xl md:text-3xl font-display font-semibold text-white">{section.title}</h2>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm md:text-base text-white/65 leading-relaxed border-collapse">
+                        <thead>
+                          <tr className="border-b border-white/10">
+                            {section.headers.map((h, i) => (
+                              <th key={i} className="text-left py-3 px-4 font-display font-semibold text-white/80 first:pl-0 last:pr-0">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {section.rows.map((row, ri) => (
+                            <tr key={ri} className="border-b border-white/5">
+                              {row.map((cell, ci) => (
+                                <td key={ci} className={`py-3 px-4 ${ci === 0 ? "font-medium text-white/80" : ""} first:pl-0 last:pr-0`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )
+              case "statBlock":
+                return (
+                  <div key={index} className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+                    <span className="text-4xl md:text-5xl font-display font-bold text-gold-400 flex-shrink-0 leading-none">{section.stat}</span>
+                    <div>
+                      <p className="text-sm md:text-base text-white/65 leading-relaxed">{section.label}</p>
+                      {section.source && (
+                        <p className="text-xs text-white/40 mt-1">— Kaynak: {section.source}</p>
+                      )}
+                    </div>
+                  </div>
+                )
+              case "callout":
+                return (
+                  <div key={index} className="relative rounded-2xl border-l-4 border-gold-500 bg-gold-500/[0.03] p-5 md:p-6">
+                    <p className="text-sm md:text-base text-white/70 leading-relaxed italic">
+                      <span dangerouslySetInnerHTML={{ __html: section.content }} />
+                    </p>
                   </div>
                 )
               case "heading2":

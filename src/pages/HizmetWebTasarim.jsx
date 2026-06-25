@@ -58,6 +58,31 @@ const content = {
       "content": "Her web sitesi, işletmenizin benzersiz ihtiyaçlarına göre özel olarak tasarlanır. Hazır şablonlar kullanmıyor, her pikseli sizin markanız için özenle yerleştiriyoruz. Mobil öncelikli yaklaşımımız sayesinde siteniz tüm cihazlarda kusursuz görüntülenir."
     },
     {
+      type: "comparisonTable",
+      title: "Özel Tasarım vs Hazır Tema — Hangisi Sizin İçin Doğru?",
+      headers: ["Kriter", "Özel Tasarım (SenninWeb)", "Hazır Tema (WordPress vb.)"],
+      rows: [
+        ["Özgünlük", "%100 size özel, benzersiz tasarım", "Binlerce sitede aynı tasarım"],
+        ["Performans", "Hafif kod, optimize edilmiş hız", "Şişirilmiş kod, yavaş açılış"],
+        ["Güvenlik", "Sıfırdan yazılmış, güvenli altyapı", "Eklenti bağımlı, güvenlik açıkları"],
+        ["SEO Altyapısı", "Semantic HTML, schema markup hazır", "Eklenti gerektirir, ek maliyet"],
+        ["Mobil Uyum", "Mobil öncelikli, test edilmiş", "Temaya bağlı, değişken kalite"],
+        ["Özelleştirme", "Sınırsız — her şey mümkün", "Tema/eklenti sınırlamaları"]
+      ]
+    },
+    {
+      type: "statBlock",
+      stat: "%75",
+      label: "Kullanıcıların %75'i web sitesinin kredibilitesini tasarımına göre değerlendiriyor.",
+      source: "Stanford Web Credibility Research, 2025"
+    },
+    {
+      type: "statBlock",
+      stat: "0.05s",
+      label: "Ziyaretçiler ilk izlenimi 0.05 saniyede oluşturuyor. Profesyonel tasarım güven verir.",
+      source: "Google Web Fundamentals, 2025"
+    },
+    {
       type: "heading2",
       content: "Web Tasarım Hizmetimiz Neleri Kapsar?"
     },
@@ -303,6 +328,52 @@ export default function HizmetWebTasarim() {
                     <h3 className="text-xl md:text-2xl font-display font-semibold text-white/80">
                       {section.subtitle}
                     </h3>
+                  </div>
+                )
+              case "comparisonTable":
+                return (
+                  <div key={index} className="space-y-4 pt-8">
+                    <h2 className="text-2xl md:text-3xl font-display font-semibold text-white">{section.title}</h2>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm md:text-base text-white/65 leading-relaxed border-collapse">
+                        <thead>
+                          <tr className="border-b border-white/10">
+                            {section.headers.map((h, i) => (
+                              <th key={i} className="text-left py-3 px-4 font-display font-semibold text-white/80 first:pl-0 last:pr-0">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {section.rows.map((row, ri) => (
+                            <tr key={ri} className="border-b border-white/5">
+                              {row.map((cell, ci) => (
+                                <td key={ci} className={`py-3 px-4 ${ci === 0 ? "font-medium text-white/80" : ""} first:pl-0 last:pr-0`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )
+              case "statBlock":
+                return (
+                  <div key={index} className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+                    <span className="text-4xl md:text-5xl font-display font-bold text-gold-400 flex-shrink-0 leading-none">{section.stat}</span>
+                    <div>
+                      <p className="text-sm md:text-base text-white/65 leading-relaxed">{section.label}</p>
+                      {section.source && (
+                        <p className="text-xs text-white/40 mt-1">— Kaynak: {section.source}</p>
+                      )}
+                    </div>
+                  </div>
+                )
+              case "callout":
+                return (
+                  <div key={index} className="relative rounded-2xl border-l-4 border-gold-500 bg-gold-500/[0.03] p-5 md:p-6">
+                    <p className="text-sm md:text-base text-white/70 leading-relaxed italic">
+                      <span dangerouslySetInnerHTML={{ __html: section.content }} />
+                    </p>
                   </div>
                 )
               case "heading2":

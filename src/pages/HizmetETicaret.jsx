@@ -58,8 +58,33 @@ const content = {
       "content": "Sadece bir mağaza kurmuyoruz — satış yapacak, müşteri kazanacak ve büyüyecek bir dijital platform inşa ediyoruz. Ödeme sistemlerinden kargo entegrasyonuna, ürün yönetiminden SEO'ya kadar her detayı sizin için düşünüyoruz."
     },
     {
+      type: "comparisonTable",
+      title: "Fiziksel Mağaza vs E-Ticaret Sitesi",
+      headers: ["Kriter", "Fiziksel Mağaza", "E-Ticaret Sitesi"],
+      rows: [
+        ["Çalışma Saati", "Günde 8-10 saat", "7/24 — hiç kapanmaz"],
+        ["Müşteri Erişimi", "Yalnızca çevre bölge", "Türkiye'nin her yeri"],
+        ["İşletme Maliyeti", "Kira, fatura, personel", "Hosting + bakım (çok düşük)"],
+        ["Ürün Gösterimi", "Fiziksel raf sınırı", "Sınırsız ürün, kategori"],
+        ["Müşteri Verisi", "Sınırlı", "Detaylı analitik, yeniden pazarlama"],
+        ["Ölçeklenebilirlik", "Yeni şube = yüksek maliyet", "Dijital = düşük maliyetle büyüme"]
+      ]
+    },
+    {
+      type: "statBlock",
+      stat: "%58",
+      label: "Tüketicilerin %58'i alışverişe online başlıyor, fiziksel mağazaya gitmiyor.",
+      source: "Google/Ipsos Shopping Research, 2025"
+    },
+    {
+      type: "statBlock",
+      stat: "2.3T",
+      label: "Küresel e-ticaret satışları 2026'da 2.3 trilyon doları aşacak.",
+      source: "Statista Global E-Commerce Report, 2025"
+    },
+    {
       type: "heading2",
-      "content": "E-Ticaret Hizmetimiz Neleri Kapsar?"
+      content: "E-Ticaret Hizmetimiz Neleri Kapsar?"
     },
     {
       type: "section",
@@ -283,6 +308,52 @@ export default function HizmetETicaret() {
                     <h3 className="text-xl md:text-2xl font-display font-semibold text-white/80">
                       {section.subtitle}
                     </h3>
+                  </div>
+                )
+              case "comparisonTable":
+                return (
+                  <div key={index} className="space-y-4 pt-8">
+                    <h2 className="text-2xl md:text-3xl font-display font-semibold text-white">{section.title}</h2>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm md:text-base text-white/65 leading-relaxed border-collapse">
+                        <thead>
+                          <tr className="border-b border-white/10">
+                            {section.headers.map((h, i) => (
+                              <th key={i} className="text-left py-3 px-4 font-display font-semibold text-white/80 first:pl-0 last:pr-0">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {section.rows.map((row, ri) => (
+                            <tr key={ri} className="border-b border-white/5">
+                              {row.map((cell, ci) => (
+                                <td key={ci} className={`py-3 px-4 ${ci === 0 ? "font-medium text-white/80" : ""} first:pl-0 last:pr-0`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )
+              case "statBlock":
+                return (
+                  <div key={index} className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-8">
+                    <span className="text-4xl md:text-5xl font-display font-bold text-gold-400 flex-shrink-0 leading-none">{section.stat}</span>
+                    <div>
+                      <p className="text-sm md:text-base text-white/65 leading-relaxed">{section.label}</p>
+                      {section.source && (
+                        <p className="text-xs text-white/40 mt-1">— Kaynak: {section.source}</p>
+                      )}
+                    </div>
+                  </div>
+                )
+              case "callout":
+                return (
+                  <div key={index} className="relative rounded-2xl border-l-4 border-gold-500 bg-gold-500/[0.03] p-5 md:p-6">
+                    <p className="text-sm md:text-base text-white/70 leading-relaxed italic">
+                      <span dangerouslySetInnerHTML={{ __html: section.content }} />
+                    </p>
                   </div>
                 )
               case "heading2":
