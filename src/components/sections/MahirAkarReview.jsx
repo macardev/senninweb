@@ -1,18 +1,18 @@
 import useInView from '@/hooks/useInView'
 import TestimonialCard from '@/components/sections/TestimonialCard'
 
-const testimonial = {
-  quote: 'Google\'da aktif olup üst sıralarda durmak güzel.',
-  author: 'Emine Macar',
-  initials: 'EM',
-  company: 'Miss Butik Pasta',
+const mahir = {
+  quote: 'Çağatay Bey ile çalışmak gerçekten çok keyifli. Kendisi işine gayet hakim, sitemin gelişimi ve google görünürlüğümün artması için direksiyonu gönül rahatlığıyla ona teslim ettim. Şimdiden gelişmeleri görmeye başladık. Kendisine teşekkür ediyorum.',
+  author: 'Mahir Akar',
+  initials: 'MA',
+  company: 'Remax',
 }
 
-export default function Testimonials() {
+export default function MahirAkarReview() {
   const { ref, inView } = useInView()
 
   return (
-    <section id="testimonials" className="relative bg-black section-pad">
+    <section id="mahir-akar-review" className="relative bg-black section-pad">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
@@ -29,10 +29,10 @@ export default function Testimonials() {
           }`}
         >
           <TestimonialCard
-            quote={testimonial.quote}
-            author={testimonial.author}
-            initials={testimonial.initials}
-            company={testimonial.company}
+            quote={mahir.quote}
+            author={mahir.author}
+            initials={mahir.initials}
+            company={mahir.company}
           />
         </div>
       </div>

@@ -4,6 +4,8 @@ import Hero from "@/components/sections/Hero"
 import BlogCTA from "@/components/sections/BlogCTA"
 import useCanonicalUrl from "@/hooks/useCanonicalUrl"
 
+const MahirAkarReview = lazy(() => import("@/components/sections/MahirAkarReview"))
+const YusufReview = lazy(() => import("@/components/sections/YusufReview"))
 const PyramidSection = lazy(() => import("@/components/sections/PyramidSection"))
 const Manifesto = lazy(() => import("@/components/sections/Manifesto"))
 const DesignShowcase = lazy(() => import("@/components/sections/DesignShowcase"))
@@ -111,7 +113,15 @@ export default function Home() {
       <Hero />
 
       <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <MahirAkarReview />
+      </Suspense>
+
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
         <DesignShowcase />
+      </Suspense>
+
+      <Suspense fallback={<div style={{ height: "400px" }} />}>
+        <YusufReview />
       </Suspense>
 
       <Suspense fallback={<div style={{ height: "400px" }} />}>
