@@ -32,6 +32,7 @@
 - [2026'nın En İyi AI Web Tasarım Araçları](https://www.senninweb.com/docs/blog/2026-en-iyi-ai-web-tasarim-araclari.md): Yapay zeka destekli web tasarım araçları
 - [Domain Seçimi 2026: SEO İçin En Doğru Domain Nasıl Seçilir?](https://www.senninweb.com/docs/blog/2026-seo-stratejileri-domain-secimi.md): Domain seçimi ve SEO ilişkisi
 - [Web Tasarım Fiyatları Ne Kadar? Ödüllü Sitelerin Maliyeti Ne?](https://www.senninweb.com/docs/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler.md): Ödüllü web sitesi maliyetleri
+- [Dijital Pazarlama Kanalları Nelerdir? Kapsamlı Rehber (2026)](https://www.senninweb.com/docs/blog/dijital-pazarlama-kanallari-nedir.md): SEO, SEM, sosyal medya, e-posta, içerik pazarlaması ve tüm dijital pazarlama kanalları karşılaştırmalı rehber
 - [İzmit'te Dijital Pazarlama: Kocaeli İşletmeleri İçin 2026 Rehberi](https://www.senninweb.com/docs/blog/izmit-dijital-pazarlama-kocaeli.md): Kocaeli'de SEO, Google Maps ve dijital pazarlama stratejileri
 
 ## What We Do Not Do
