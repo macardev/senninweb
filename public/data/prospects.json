@@ -9445,5 +9445,528 @@
     "replied": false,
     "bounced": false,
     "addedDate": "2026-06-22"
+  },
+  {
+    "id": "gbz-434",
+    "business": "The Cacao Chocolate & Coffee",
+    "category": "kafe pastane",
+    "phone": "0530 093 46 61",
+    "website": "https://thecacao.co.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, 1209/1. Sk. no:21, 41400 Gebze/Kocaeli",
+    "rating": 4,
+    "userRatingCount": 242,
+    "googleMapsUri": "https://maps.google.com/?cid=17993823249622951731&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 311
+    },
+    "personalizationNote": "Merhaba The Cacao Chocolate & Coffee ekibi, \n\nWeb sitenizin şu an erişilemez olduğunu görüyoruz. Google Maps'te var olmak yeterli değil; rakipleriniz online dünyada aktif ve bu, potansiyel müşterilerinizi kaybetmenize neden olabilir. SenninWeb olarak, web sitenizi yeniden hayata geçirerek sizi dijital ortamda güçlendirmeye ve müşteri kitlenizi artırmaya yardımcı olabiliriz. Görüşmek dileğiyle!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-435",
+    "business": "Gurme simit",
+    "category": "kafe pastane",
+    "phone": "0535 684 57 86",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Atatürk Cd. 47/A, 41400 Gebze/Kocaeli",
+    "rating": 4.3,
+    "userRatingCount": 11,
+    "googleMapsUri": "https://maps.google.com/?cid=10472172495565943028&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Gurme Simit,\n\nGoogle Maps'te var olmak harika, ancak rakiplerinizin online olduğunu unutmayın. Bir web sitesine sahip olmak, sizi daha görünür kılacak ve müşteri kitlenizi genişletecektir. SenninWeb olarak, etkili bir web tasarımı ile işinizi dijital dünyaya taşımanıza yardımcı olabiliriz. Sizlerle çalışmayı dört gözle bekliyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-436",
+    "business": "One Pearl Güzellik Merkezi",
+    "category": "güzellik salonu",
+    "phone": "0553 466 69 89",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, 1222. Sk. No:25 k:3, 41100 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 30,
+    "googleMapsUri": "https://maps.google.com/?cid=4791175774259414370&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba One Pearl Güzellik Merkezi,\n\nGoogle Maps'te görünür olmanız harika, ancak rakiplerinizin online varlıklarıyla baş edebilmek için etkili bir web sitesine ihtiyacınız var. SenninWeb olarak, markanızı dijital dünyada güçlendirecek, estetik ve kullanıcı dostu bir web tasarımı oluşturmanıza yardımcı olabiliriz. Gelin, birlikte online varlığınızı güçlendirelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-437",
+    "business": "AVUKAT CUMHUR BALAMAN",
+    "category": "avukat",
+    "phone": "0532 657 08 76",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "HACI HALİL MAHALLESİ, Adliye Cd. BADEMALTI APT NO:17/10, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 72,
+    "googleMapsUri": "https://maps.google.com/?cid=14543605794757741728&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Cumhur Balaman,\n\nGoogle Maps'te görünür olmanız önemli bir adım, ancak rakiplerinizin online varlıkları ile öne çıkmak için bir web sitesine ihtiyacınız var. SenninWeb olarak, sizin için profesyonel bir web tasarımı oluşturarak, potansiyel müvekkillerinize daha etkili bir şekilde ulaşmanızı sağlamak için buradayız. İhtiyacınız olan dijital kimliği birlikte yaratalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-438",
+    "business": "Avukat Ela Özlem Doğan",
+    "category": "avukat",
+    "phone": "0532 175 06 92",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Mevlana, Erenler Cd. No:33 Daire:6, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=488276252619255450&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Avukat Ela Özlem Doğan,\n\nGoogle Maps'te var olmak önemli, ancak rakiplerinizin online olması sizi geride bırakabilir. SenninWeb olarak, profesyonel bir web sitesi oluşturarak dijital varlığınızı güçlendirmek ve potansiyel müvekkillerinize ulaşmanızı sağlamak için buradayız. Sizlerle birlikte çalışarak, hukuki hizmetlerinizi daha geniş bir kitleye tanıtabiliriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-439",
+    "business": "Avukat Cansu KOÇAK Hukuk ve Danışmanlık Bürosu",
+    "category": "avukat",
+    "phone": "0553 981 01 91",
+    "website": "https://avcansukocak.com/",
+    "email": null,
+    "contactName": "Cansu",
+    "address": "Gökçe Vizyon Plaza, Gaziler, Issıkgöl Cd. No:138 Kat:3 Daire:42, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 40,
+    "googleMapsUri": "https://maps.google.com/?cid=198542637216777684&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 100,
+      "issues": [],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 136,
+      "fetchDurationMs": 268
+    },
+    "personalizationNote": "Merhaba Avukat Cansu Koçak,\n\nWeb sitenizin mükemmel kalitesi ve 5 yıldızlı Google puanınız, profesyonelliğinizi ve müşteri memnuniyetinizi yansıtıyor. Ancak, dijital dünyada her zaman geliştirebileceğiniz alanlar bulunuyor. SenninWeb olarak, online görünürlüğünüzü artıracak stratejiler ve SEO optimizasyonu ile size destek olmaktan mutluluk duyarız. Başarılarınızın devamını dileriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-440",
+    "business": "Diş Hekimi İbrahim Erol",
+    "category": "diş hekimi",
+    "phone": "0531 240 82 10",
+    "website": "http://gebzedişhekimi.com/",
+    "email": "dtibrahimerol@hotmail.com",
+    "contactName": "İbrahim",
+    "address": "Güzeller, 910. Sk. no:11/B, 41000 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 34,
+    "googleMapsUri": "https://maps.google.com/?cid=11568225969367747857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (906KB)",
+        "inline CSS fazla (424 adet)"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 906,
+      "fetchDurationMs": 2614
+    },
+    "personalizationNote": "Merhaba Diş Hekimi İbrahim Erol,\n\nWeb siteniz oldukça iyi bir puana sahip olsa da, sayfa ağırlığı ve fazla inline CSS gibi bazı somut sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, web sitenizin performansını artırmak ve potansiyel hastalarınıza daha hızlı bir erişim sağlamak için size yardımcı olabiliriz. İlgilenirseniz, birlikte çalışarak bu sorunları çözüme kavuşturabiliriz. \n\nSaygılarımla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-441",
+    "business": "Alfadent Ağız ve Diş Sağlığı Polikliniği",
+    "category": "diş hekimi",
+    "phone": "0533 300 71 41",
+    "website": "https://www.alfadentclinic.com/",
+    "email": "emergencies@denticare.com",
+    "contactName": null,
+    "address": "Mahallesi, Osman Yılmaz, İstanbul Cd. No:42b, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 411,
+    "googleMapsUri": "https://maps.google.com/?cid=14176126545426603071&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 60,
+      "issues": [
+        "meta aciklama yok",
+        "sayfa cok agir (615KB)",
+        "inline CSS fazla (129 adet)"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 615,
+      "fetchDurationMs": 3052
+    },
+    "personalizationNote": "Merhaba Alfadent Ağız ve Diş Sağlığı Polikliniği,\n\nWeb sitenizin kalite puanı 60/100 olarak değerlendirildi ve bazı geliştirilmesi gereken alanlar mevcut. Özellikle meta açıklamanızın olmaması ve sayfanızın ağırlığı, kullanıcı deneyimini olumsuz etkileyebilir. SenninWeb olarak, web sitenizin performansını artırmak ve potansiyel hastalarınıza daha iyi bir deneyim sunmak için size destek olmaktan memnuniyet duyarız. \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-442",
+    "business": "Merkez Otomotiv Emlak",
+    "category": "oto galeri",
+    "phone": "0532 100 27 17",
+    "website": "https://merkezotomotivemlak.sahibinden.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Mustafapaşa, Şht. Yılmaz Argon Cd. 51 Z, 41400 Gebze/Kocaeli",
+    "rating": 3.7,
+    "userRatingCount": 21,
+    "googleMapsUri": "https://maps.google.com/?cid=16415456583994886687&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 383
+    },
+    "personalizationNote": "Merhaba Merkez Otomotiv Emlak,\n\nWeb sitenizin erişilemez olduğunu gördük ve yalnızca Google Maps'te var olmanın yeterli olmadığını belirtmek isteriz. Rakiplerinizin online varlıklarıyla rekabet edebilmeniz için güçlü bir web sitesi kurmanız önem taşıyor. SenninWeb olarak, size profesyonel bir web tasarımı ve dijital pazarlama desteği sunarak online görünürlüğünüzü artırabiliriz. Sizinle çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-443",
+    "business": "Gebze Merkez Emlak",
+    "category": "emlak ofisi",
+    "phone": "",
+    "website": "https://www.gebzemerkezemlak.com/",
+    "email": "merkezemlakgebze@gmail.com",
+    "contactName": "Armağan",
+    "address": "Tatlıkuyu, Körfez Cd. No:42, 41000 Gebze/Kocaeli",
+    "rating": 4.1,
+    "userRatingCount": 9,
+    "googleMapsUri": "https://maps.google.com/?cid=5994329334085498759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 90,
+      "issues": [
+        "h1 etiketi yok",
+        "dil etiketi yok (lang)"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 85,
+      "fetchDurationMs": 3387
+    },
+    "personalizationNote": "Merhaba Gebze Merkez Emlak,\n\nWeb siteniz oldukça etkileyici bir kalite puanına sahip! Ancak, h1 etiketi ve dil etiketi eksikliği gibi küçük iyileştirmelerle arama motorlarındaki görünürlüğünüzü daha da artırabiliriz. SenninWeb olarak, bu gibi detaylarla sitenizin performansını en üst düzeye çıkarmak için buradayız. Gelin, birlikte daha da başarılı olalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-444",
+    "business": "La Bella Clinic'a",
+    "category": "doktor klinik",
+    "phone": "0539 642 81 70",
+    "website": "https://labellaclinica.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Tatlıkuyu, 1313/6. Sk. No:2/1, 41400 Gebze/Kocaeli",
+    "rating": 4,
+    "userRatingCount": 132,
+    "googleMapsUri": "https://maps.google.com/?cid=17967004379406671720&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 790
+    },
+    "personalizationNote": "Merhaba La Bella Clinic,\n\nWeb sitenizin erişilemez olması, rakiplerinizin online dünyada daha görünür olmasına neden olabilir. SenninWeb olarak, web sitenizi yeniden tasarlayıp optimize ederek, potansiyel hastalarınıza daha etkili bir şekilde ulaşmanıza yardımcı olabiliriz. Dijital varlığınızı güçlendirmek için sizinle çalışmayı çok isteriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-445",
+    "business": "EVDEN EVE NAKLİYAT İS-HAKOĞLU",
+    "category": "nakliyat",
+    "phone": "0545 374 79 42",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Barış, Hayri Macar Cd., 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 4,
+    "googleMapsUri": "https://maps.google.com/?cid=9477685713948058894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba İS-HAKOĞLU Ekibi,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online varlıkları da göz önünde bulundurulduğunda, profesyonel bir web sitesinin önemi giderek artıyor. SenninWeb olarak, size etkili bir web tasarımı ve dijital pazarlama stratejisi sunarak, potansiyel müşterilerinize daha iyi ulaşmanıza yardımcı olabiliriz. Hedeflerinizi birlikte gerçekleştirelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-446",
+    "business": "GEBZEADA NAKLİYAT",
+    "category": "nakliyat",
+    "phone": "0533 518 71 54",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Beşevler mahallesi, Gebze nakliyeciler sitesi C blok no:20, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=11073575021025042265&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba GEBZEADA NAKLİYAT,\n\nDijital dünyada varlık göstermek, rakiplerinizin önünde kalmanız için oldukça önemli. Şu anda sadece Google Maps'te yer almak yeterli değil; rakiplerinizin online varlıkları, potansiyel müşterilerinizi çekmekte büyük rol oynuyor. SenninWeb olarak, web sitenizi oluşturmanıza ve online görünürlüğünüzü artırmanıza yardımcı olabiliriz. Gelin, birlikte güçlü bir dijital kimlik oluşturalım!\n\nSevgi ve saygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-447",
+    "business": "Marmara Yapı İnşaat ve Mantolama Gebze",
+    "category": "inşaat firması",
+    "phone": "0539 810 56 21",
+    "website": "https://www.marmarayapimantolama.com.tr/",
+    "email": "bilgi@marmarayapimantolama.com.tr",
+    "contactName": "Mustafa",
+    "address": "Gaziler, Issıkgöl Cd. No:42, 41400 Gebze/Kocaeli",
+    "rating": 4.7,
+    "userRatingCount": 78,
+    "googleMapsUri": "https://maps.google.com/?cid=14571290464454281512&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "yavas yuklenme (9.3s)",
+        "dil etiketi yok (lang)"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 46,
+      "fetchDurationMs": 9273
+    },
+    "personalizationNote": "Merhaba Marmara Yapı İnşaat ve Mantolama Ekibi,\n\nWeb sitenizin kalite puanı oldukça yüksek, fakat sayfanızın yavaş yüklenmesi ve dil etiketi eksikliği gibi bazı somut geliştirme alanları mevcut. SenninWeb olarak, bu sorunları çözmek ve kullanıcı deneyimini artırmak için yanınızdayız. Sizinle birlikte çalışarak, çevrimiçi varlığınızı daha da güçlendirebiliriz.\n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-448",
+    "business": "Terzi nesim",
+    "category": "terzi",
+    "phone": "0532 360 85 21",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Sultan Orhan, Hürriyet Cd. No:2/B, 41400 Gebze/Kocaeli",
+    "rating": 4.1,
+    "userRatingCount": 10,
+    "googleMapsUri": "https://maps.google.com/?cid=14029960063332266982&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Terzi Nesim,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online ortamda sunduğu imkanları göz önünde bulundurduğumuzda bir web sitesine sahip olmanın artık şart olduğunu belirtmek isterim. SenninWeb olarak, sizin için etkileyici bir web sitesi oluşturabilir ve dijital dünyada daha fazla görünürlük elde etmenize yardımcı olabiliriz. \n\nSaygılarımla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-449",
+    "business": "Cadde Bay & Bayan Terzisi",
+    "category": "terzi",
+    "phone": "0534 557 81 20",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Arapçeşme, Kavak Cd. No:17, 41400 Gebze/Kocaeli",
+    "rating": 3.8,
+    "userRatingCount": 4,
+    "googleMapsUri": "https://maps.google.com/?cid=4353536023463740118&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Cadde Bay & Bayan Terzisi, \n\nGoogle Maps'te yer almak güzel, ancak rakiplerinizin online varlığı ile birlikte daha fazla görünürlük kazanmanız önemli. SenninWeb olarak, size profesyonel bir web sitesi oluşturarak müşteri kitlenizi artırmanıza yardımcı olabiliriz. Gelin, sizi dijital dünyada daha güçlü bir şekilde temsil edelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-450",
+    "business": "MİR-KON KONTEYNER PREFABRİK VE VİNÇ HİZMETLERİ",
+    "category": "konteynır ev",
+    "phone": "0536 929 52 50",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Eski İstanbul, Mollafenari, Molla Fenari Yolu No:62, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=10568438396157348913&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba MİR-KON,\n\nGoogle Maps'te var olmanız önemli bir adım, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için etkili bir web sitesine ihtiyacınız var. SenninWeb olarak, sizin için özgün ve etkili bir web tasarımı oluşturarak dijital dünyada öne çıkmanıza yardımcı olabiliriz. Hedeflerinizi gerçekleştirmek için birlikte çalışmayı çok isteriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
+  },
+  {
+    "id": "gbz-451",
+    "business": "My House Yapı - Konteyner ve Prefabrik",
+    "category": "konteynır ev",
+    "phone": "0532 667 55 41",
+    "website": "https://www.myhouse.tr/",
+    "email": "ahmet@mail.com",
+    "contactName": null,
+    "address": "Mollafenari, Eski İstanbul, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=10600540071168416400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 100,
+      "issues": [],
+      "analyzedAt": "2026-06-29",
+      "pageSizeKB": 59,
+      "fetchDurationMs": 1344
+    },
+    "personalizationNote": "Merhaba My House Yapı,\n\nWeb sitenizin mükemmel bir kalite puanına sahip olması, online varlığınızın güçlü bir temele dayandığını gösteriyor. Ancak, dijital pazarlama stratejilerinizi daha da güçlendirmek ve rakiplerinizin önüne geçmek için geliştirebileceğiniz alanlar olabilir. SenninWeb olarak, sizinle iş birliği yaparak bu potansiyeli en iyi şekilde değerlendirmek için buradayız. \n\nSevgiyle,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-06-29"
   }
 ]
