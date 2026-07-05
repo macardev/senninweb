@@ -3544,5 +3544,390 @@
     ],
     "coverImage": "/images/blog/dijital-pazarlama-kanallari-nedir.webp",
     "coverImageAlt": "Dijital pazarlama kanalları: SEO, sosyal medya, e-posta, Google Ads ve içerik pazarlamasını gösteren modern bir illüstrasyon"
+  },
+  {
+    "slug": "bir-web-sitesi-ne-kadar-kazandirir",
+    "title": "Bir Web Sitesi Ne Kadar Kazandırır? KOBİ'ler İçin Rakamlarla Kapsamlı Rehber",
+    "description": "Bir web sitesi ne kadar kazandırır? Sektöre göre aylık 5.000 TL'den yüz binlerce liraya kadar değişen kazanç potansiyelini, hesaplama formüllerini ve gerçek vaka çalışmalarını keşfedin.",
+    "shortTitle": "Bir Web Sitesi Ne Kadar Kazandırır? KOBİ Rehberi",
+    "desc": "Web siteniz yıllık cironuza ortalama %15-30 katkı sağlar. Hesaplama formülü, sektörel veriler ve vaka çalışmalarıyla kapsamlı rehber.",
+    "tag": "SEO ve Büyüme",
+    "readingTime": "12 dk",
+    "datePublished": "2026-07-05",
+    "dateModified": "2026-07-05",
+    "date": "2026-07-05",
+    "author": "Çağatay Samet Macar",
+    "authorTitle": "Senior Web Developer",
+    "metaDescription": "Bir web sitesi ne kadar kazandırır? Doğru kurulmuş bir web sitesi yıllık cironuza ortalama %15-30 katkı sağlar. Sektörel veriler, hesaplama formülü ve vaka çalışmalarıyla KOBİ'ler için kapsamlı rehber.",
+    "schemaUrl": "https://www.senninweb.com/blog/bir-web-sitesi-ne-kadar-kazandirir",
+    "sections": [
+      {
+        "type": "heroSection",
+        "title": "Bir Web Sitesi Ne Kadar Kazandırır? KOBİ'ler İçin Rakamlarla Kapsamlı Rehber",
+        "subtitle": "Doğru stratejiyle web sitenizi bir gider değil, 7/24 çalışan bir gelir kanalına dönüştürün"
+      },
+      {
+        "type": "callout",
+        "stat": "Kısa Cevap",
+        "content": "<strong>Bir web sitesi ne kadar kazandırır?</strong> Doğru kurulmuş, hızlı ve düzenli yönetilen bir web sitesi; sektöre, ziyaretçi trafiğine ve dönüşüm oranına bağlı olarak işletmenin yıllık cirosuna ortalama <strong>%15-30 katkı</strong> sağlar. Küçük bir hizmet işletmesi için bu katkı ayda birkaç bin liradan, aktif bir e-ticaret sitesi için ayda yüz binlerce liraya kadar uzanabilir.",
+        "isHtml": true
+      },
+      {
+        "type": "callout",
+        "stat": "📋 Kısa Özet",
+        "content": "<ul class=\"list-disc list-inside space-y-1\"><li>Bir web sitesinin yıllık cironuza ortalama <strong>%15-30 katkı</strong> sağladığı</li><li>Gelirin <strong>5 farklı kaynaktan</strong> (satış, lead, güven, pasif, tasarruf) geldiği</li><li>Aylık kazancı hesaplamak için <strong>Ziyaretçi × Dönüşüm × Sepet</strong> formülü</li><li>SEO ve GEO optimizasyonunun bu kazancı <strong>katlayabildiği</strong></li></ul>",
+        "source": "SenninWeb Araştırması, 2026",
+        "isHtml": true
+      },
+      {
+        "type": "intro",
+        "content": "Türkiye'de KOBİ'lerin büyük çoğunluğu hâlâ \"web sitesi bir gider kalemidir\" düşüncesiyle hareket ediyor. Oysa güncel pazar verileri bunun tam tersini gösteriyor: dijitalleşen işletme sayısı her yıl artıyor, tüketicilerin satın alma kararlarının büyük bölümü artık önce internette araştırma yapılarak veriliyor ve arama motorlarında görünmeyen bir işletme, rakiplerine karşı görünmez hale geliyor. Bu nedenle \"bir web sitesi ne kadar kazandırır\" sorusu, aslında \"web sitesi olmadan ne kadar kaybediyorum\" sorusunun da cevabını içinde barındırıyor. Aşağıdaki bölümlerde, bu kazancı somut sayılarla, gerçek hesaplama yöntemleriyle ve hem uluslararası hem de Türkiye pazarından örneklerle ortaya koyuyoruz."
+      },
+      {
+        "type": "heading2",
+        "content": "Bir Web Sitesi Ne Kadar Kazandırır? Kısa ve Net Cevap"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bir web sitesinin kazandırdığı miktarı belirleyen beş temel değişken vardır:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>Sektör</strong> – E-ticaret, hizmet sektörü ve B2B işletmeleri için gelir modeli farklıdır.",
+          "<strong>Aylık ziyaretçi trafiği</strong> – Siteye gelen kişi sayısı ne kadar yüksekse, potansiyel gelir de o kadar büyür.",
+          "<strong>Dönüşüm oranı (CVR)</strong> – Ziyaretçilerin yüzde kaçının müşteriye dönüştüğü.",
+          "<strong>Ortalama sepet/işlem tutarı</strong> – Bir müşterinin tek işlemde bıraktığı ortalama gelir.",
+          "<strong>SEO ve GEO görünürlüğü</strong> – Sitenin hem klasik arama motorlarında hem de yapay zekâ destekli arama sonuçlarında ne kadar görünür olduğu."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "paragraph",
+        "content": "Bu beş değişken bir araya geldiğinde, bir web sitesi küçük bir esnaf için ayda 5.000-20.000 TL ek gelir yaratabilirken, iyi optimize edilmiş bir e-ticaret sitesi için aylık yüz binlerce, hatta milyonlarca liralık ciroya dönüşebilir."
+      },
+      {
+        "type": "heading2",
+        "content": "Web Sitesinin İşletmeye Kazandırdığı 5 Gelir Türü"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bir web sitesi tek bir şekilde değil, birden fazla kanaldan işletmeye kazanç sağlar:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>Doğrudan satış geliri:</strong> E-ticaret altyapısı olan siteler, ürün veya hizmeti doğrudan online satarak gelir üretir.",
+          "<strong>Potansiyel müşteri (lead) geliri:</strong> Avukat, klinik, mimar, danışmanlık gibi hizmet sektörlerinde web sitesi; telefon, form veya WhatsApp üzerinden gelen talepleri artırır.",
+          "<strong>Marka güveni ve dolaylı satış:</strong> Müşterilerin büyük çoğunluğu satın almadan önce işletmeyi Google'da arar. Profesyonel bir site olmadan bu güven oluşmaz.",
+          "<strong>Pasif gelir:</strong> Blog trafiği üzerinden reklam geliri, affiliate pazarlama veya dijital ürün satışı.",
+          "<strong>Zaman ve maliyet tasarrufu:</strong> Online randevu, sipariş takibi ve SSS gibi otomasyonlar müşteri hizmetleri maliyetini düşürür."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "paragraph",
+        "content": "Bu beş gelir türü genellikle birbirinden bağımsız değil, iç içe çalışır. Bu yüzden bir web sitesinin toplam kazancını değerlendirirken yalnızca \"site üzerinden yapılan satış\" rakamına bakmak, gerçek katkıyı büyük ölçüde eksik göstermeye neden olur."
+      },
+      {
+        "type": "heading2",
+        "content": "Web Sitesi Geliri Nasıl Hesaplanır? Formül ve Örnek"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Bir web sitesinin ne kadar kazandırdığını tahmin etmek için kullanılan temel formül şudur:<br><br><div class=\"bg-white/10 border border-white/20 rounded-xl p-5 my-4 text-center\"><strong class=\"text-yellow-400 text-lg\">Aylık Gelir = Aylık Ziyaretçi Sayısı × Dönüşüm Oranı (CVR) × Ortalama Sepet Tutarı (AOV)</strong></div>"
+      },
+      {
+        "type": "paragraph",
+        "content": "Türkiye'de e-ticaret sitelerinin ortalama dönüşüm oranı genellikle %1,2 ile %2,5 aralığındadır. Bu formülü örnek bir senaryo üzerinden inceleyelim:"
+      },
+      {
+        "type": "callout",
+        "stat": "Örnek Hesaplama",
+        "isHtml": true,
+        "content": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b border-white/20\"><th class=\"text-left py-2 pr-4 text-white/60\">Değişken</th><th class=\"text-left py-2 pr-4 text-white/60\">Mevcut Durum</th><th class=\"text-left py-2 text-white/60\">İyileştirme Sonrası</th></tr></thead><tbody><tr class=\"border-b border-white/10\"><td class=\"py-2 pr-4\">Aylık ziyaretçi</td><td class=\"py-2 pr-4\">100.000</td><td class=\"py-2\">100.000</td></tr><tr class=\"border-b border-white/10\"><td class=\"py-2 pr-4\">Dönüşüm oranı</td><td class=\"py-2 pr-4\">%1,5</td><td class=\"py-2\">%2,5</td></tr><tr class=\"border-b border-white/10\"><td class=\"py-2 pr-4\">Ortalama sepet tutarı</td><td class=\"py-2 pr-4\">1.500 TL</td><td class=\"py-2\">1.500 TL</td></tr><tr class=\"border-b border-white/10\"><td class=\"py-2 pr-4 font-medium\">Aylık ciro</td><td class=\"py-2 pr-4 font-medium\">2.250.000 TL</td><td class=\"py-2 font-medium text-yellow-400\">3.750.000 TL</td></tr></tbody></table></div>",
+        "source": "SenninWeb Hesaplama Modeli, 2026"
+      },
+      {
+        "type": "paragraph",
+        "content": "Görüldüğü gibi, sadece dönüşüm oranındaki 1 puanlık bir iyileştirme (hız artışı, daha iyi kullanıcı deneyimi veya güven unsurlarının eklenmesiyle), aylık 1.500.000 TL ek ciro yaratabilir. Bu da web sitesinin \"ne kadar kazandırdığı\" sorusunun aslında sabit bir sayı değil, optimize edilebilir bir sistem olduğunu gösterir."
+      },
+      {
+        "type": "heading2",
+        "content": "Sektöre Göre Web Sitesi Kazanç Potansiyeli"
+      },
+      {
+        "type": "paragraph",
+        "content": "Her sektörde web sitesinin kazanç modeli farklı işler:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>E-ticaret siteleri:</strong> Gelir doğrudan satıştan gelir; trafik ve dönüşüm oranı arttıkça ciro doğrusal biçimde büyür.",
+          "<strong>Yerel hizmet işletmeleri:</strong> Web sitesi doğrudan satış yapmaz ama randevu ve telefon talebini artırarak dolaylı ciroyu büyütür. Bir klinik için ayda 20-30 yeni hasta talebi, yıllık yüz binlerce liralık ek gelire dönüşebilir.",
+          "<strong>B2B işletmeler:</strong> Web sitesi bir \"güven belgesi\" işlevi görür; teklif alma oranını ve ortalama anlaşma büyüklüğünü artırır.",
+          "<strong>Kurumsal ve tanıtım siteleri:</strong> Doğrudan satış yapmasa da marka değerini, iş ortaklığı fırsatlarını ve pazarlık gücünü artırır.",
+          "<strong>İçerik ve blog siteleri:</strong> Reklam, affiliate ve dijital ürün satışıyla pasif gelir modeline dayanır."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "heading2",
+        "content": "Web Sitesinin Gerçekten Kazandırdığını Gösteren Vaka Çalışmaları"
+      },
+      {
+        "type": "heading3",
+        "content": "1. \"Kayıt Ol\" Butonunun 300 Milyon Dolarlık Maliyeti"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Kullanılabilirlik uzmanı <strong>Jared M. Spool</strong>'un belgelediği ünlü bir vakada, büyük bir e-ticaret sitesi müşterilerden satın almadan önce hesap oluşturmalarını zorunlu tutuyordu. Yapılan kullanıcı testleri, ziyaretçilerin büyük bir kısmının sadece hızlıca alışveriş yapmak istediğini, üyelik formuyla karşılaşınca siteyi terk ettiğini ortaya çıkardı. Tasarım ekibi \"Kayıt Ol\" butonunu \"Devam Et\" ile değiştirip üyeliğin zorunlu olmadığını belirten kısa bir not ekledi. Bu tek değişiklik, ilk ay içinde satışları %45 artırdı ve takip eden yıl boyunca yaklaşık <strong>300 milyon dolarlık</strong> ek gelir sağladı."
+      },
+      {
+        "type": "callout",
+        "stat": "+%45",
+        "content": "\"Kayıt Ol\" butonunun \"Devam Et\" ile değiştirilmesi, ilk ay içinde satışları yüzde 45 artırdı ve takip eden yıl boyunca yaklaşık 300 milyon dolarlık ek gelir sağladı. Bu vaka, web sitesi kazancının büyük bütçelerden değil, doğru kullanıcı deneyimi kararlarından geldiğini gösterir.",
+        "source": "Jared M. Spool, Kullanılabilirlik Araştırması"
+      },
+      {
+        "type": "heading3",
+        "content": "2. Site Hızının Getirdiği %53'lük Ciro Artışı"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bir aksesuar e-ticaret markası, sitesinin sayfa yükleme hızını iyileştirdikten sonra gelirinde %53 oranında artış kaydetti. Bu vaka, teknik altyapı yatırımının pazarlama bütçesi kadar doğrudan gelir etkisi olduğunu ortaya koyar; zira kullanıcıların büyük bölümü üç saniyeden uzun süren sayfa yüklemelerinde siteyi terk eder."
+      },
+      {
+        "type": "heading3",
+        "content": "3. Web Sitesi Yenilemesiyle %40 Organik Trafik Artışı"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bir dış mekân ürünleri markası, mevcut web sitesini modern bir altyapıya taşıyıp SEO uyumlu hale getirdikten sonra organik trafiğini %40 oranında artırdı. Organik trafikteki bu büyüme, reklam bütçesi harcamadan gelen ücretsiz müşteri akışını doğrudan büyüttüğü için kâr marjını da yükseltti."
+      },
+      {
+        "type": "heading3",
+        "content": "4. Bee&You: Bir Web Sitesiyle Küresel Pazara Açılan Türk Girişimi"
+      },
+      {
+        "type": "paragraph",
+        "content": "Türkiye merkezli arı ürünleri markası, 2014 yılında 5 kişilik küçük bir ekiple kurulduktan sonra, kendi web sitesi ve dijital satış kanalları üzerinden ABD pazarına doğrudan ulaşmaya başladı. Şirket, izlenebilir tedarik zincirini dijital vitrininde anlatarak yurt dışı tüketiciye doğrudan satış yapabildi ve ekibini kısa sürede 50 kişiye çıkardı; Deloitte'un Türkiye'nin en hızlı büyüyen teknoloji şirketleri listesine girdi."
+      },
+      {
+        "type": "heading3",
+        "content": "5. Türkiye'de Dijitalleşen KOBİ'lerin E-İhracat Sıçraması"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "<strong>Ticaret Bakanlığı 2024 verilerine göre</strong> Türkiye'nin e-ihracat hacmi 2022'de 2,2 milyar dolar seviyesindeyken 2024'te 6,4 milyar dolara yükseldi. Bu büyümenin arkasındaki temel itici güçlerden biri, KOBİ'lerin kendi web sitesi ve pazaryeri entegrasyonlarıyla doğrudan yurt dışı müşteriye ulaşabilmesidir. <strong>2024 yılında açıklanan</strong> 33 milyar TL'lik e-ihracat teşvik paketi de bu geçişi hızlandırmaya devam ediyor."
+      },
+      {
+        "type": "heading2",
+        "content": "Web Sitesi Yatırımının Geri Dönüşü (ROI) Nasıl Hesaplanır?"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Bir web sitesinin \"kazandırdığı\" parayı objektif ölçmek için ROI (Return on Investment) formülü kullanılır:<br><br><div class=\"bg-white/10 border border-white/20 rounded-xl p-5 my-4 text-center\"><strong class=\"text-yellow-400 text-lg\">ROI (%) = [(Web Sitesinden Gelen Gelir − Web Sitesi Maliyeti) ÷ Web Sitesi Maliyeti] × 100</strong></div>"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "Örneğin, yıllık 60.000 TL'ye kurulan ve yönetilen bir web sitesi, yıl boyunca 240.000 TL'lik yeni müşteri geliri getiriyorsa:<br><br><strong>ROI = [(240.000 − 60.000) ÷ 60.000] × 100 = %300</strong><br><br>Dijital pazarlama ajanslarının saha verilerine göre, SEO odaklı web sitesi yatırımlarında %200-700 aralığında ROI elde etmek olağan kabul edilir; niş ve rekabetin düşük olduğu sektörlerde bu oran 10 katına kadar çıkabilir."
+      },
+      {
+        "type": "callout",
+        "stat": "8,5x",
+        "content": "SEO üzerinden gelen organik (inbound) müşteri adaylarının soğuk aramaya kıyasla yaklaşık 8,5 kat daha yüksek oranda satışa dönüştüğü bilinen bir veridir.",
+        "source": "HubSpot, Inbound Pazarlama İstatistikleri, 2025"
+      },
+      {
+        "type": "heading2",
+        "content": "Bir Web Sitesinin Kazancını Artıran 6 Temel Faktör"
+      },
+      {
+        "type": "paragraph",
+        "content": "Aynı sektörde, aynı bütçeyle kurulan iki web sitesi çok farklı gelir üretebilir. Aradaki farkı yaratan unsurlar şunlardır:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>Hız ve teknik performans:</strong> Google'ın Core Web Vitals kriterlerine uygun, 3 saniyenin altında yüklenen siteler hem kullanıcıyı elde tutar hem de arama sıralamasında öne çıkar.",
+          "<strong>Mobil uyumluluk:</strong> Türkiye'de e-ticaret işlemlerinin %73'ü mobil cihazlardan gerçekleşiyor; mobilde zayıf çalışan bir site bu trafiğin büyük kısmını kaybeder.",
+          "<strong>SEO ve GEO optimizasyonu:</strong> Klasik arama motoru optimizasyonunun yanında, yapay zekâ destekli arama motorları (ChatGPT, Gemini, Google AI Overview) için de içeriğin yapılandırılmış biçimde yazılması gerekir.",
+          "<strong>Kullanıcı deneyimi (UX):</strong> <strong>McKinsey'in 2021 tarihli 'The Business Value of Design' raporuna göre</strong> tasarıma öncelik veren şirketler, rakiplerine kıyasla %32 daha yüksek gelir büyümesi kaydediyor. <strong>Forrester'ın 2020 tarihli raporuna göre</strong> her 1 dolarlık UX yatırımının ortalama 100 dolar getiri sağladığı ortaya konuyor.",
+          "<strong>Güven unsurları:</strong> SSL sertifikası, müşteri yorumları, açık iletişim bilgileri ve KVKK uyumu dönüşüm oranını doğrudan etkiler.",
+          "<strong>Güncel ve düzenli içerik:</strong> Düzenli güncellenen blog ve hizmet sayfaları, hem SEO hem de GEO görünürlüğünü artırır."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "heading2",
+        "content": "Türkiye'de Web Sitesi ve E-ticaretin Büyüklüğü: Genel Tablo"
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "<strong>Ticaret Bakanlığı 2025 verilerine göre</strong> Türkiye'nin toplam e-ticaret hacmi 2025 yılında 4,6 trilyon TL'ye (yaklaşık 115 milyar dolar) ulaştı ve bu, ülkenin GSYİH'sinin %6,9'una karşılık geliyor."
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "2025 sonunda Türkiye'de en az bir kez online alışveriş yapan kişi sayısı 48,6 milyona ulaştı.",
+          "Bir yılda ortalama sepet tutarı %52 artışla 1.278 TL seviyesine çıktı.",
+          "Satıcı sayısının %90'ını mikro ve küçük işletmeler oluştururken, işlem hacminin %75,5'i büyük ölçekli işletmelerde toplanıyor.",
+          "2023'te 559.412 olan e-ticaret yapan işletme sayısı, 2024'te 617.409'a yükseldi."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Bu tablo, doğru kurulmuş bir web sitesinin, büyüyen ve hâlâ doygunluğa ulaşmamış bir pazarda işletmelere gerçek bir rekabet avantajı sağladığını ortaya koyuyor."
+      },
+      {
+        "type": "heading2",
+        "content": "Web Sitesi Kurma Maliyeti ve Kazanç Karşılaştırması"
+      },
+      {
+        "type": "paragraph",
+        "content": "Web sitesinin ne kadar kazandırdığını değerlendirirken, kurulum maliyetini de aynı tabloya koymak gerekir:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>Giriş seviyesi siteler (yaklaşık 5.000-15.000 TL):</strong> Blog, portfolyo veya çok küçük yerel işletmeler için; SEO altyapısı sınırlıdır.",
+          "<strong>Orta seviye kurumsal siteler (yaklaşık 15.000-70.000 TL):</strong> Mobil uyumlu, temel SEO ayarları yapılmış, hizmet sektörü KOBİ'leri için idealdir.",
+          "<strong>Özel tasarım projeler (70.000-250.000 TL+):</strong> E-ticaret ve büyük ölçekli lead generation hedefleyen markalar için."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "paragraph",
+        "content": "Bütçe ne olursa olsun, belirleyici olan harcanan tutar değil, o tutarın stratejik SEO, hız optimizasyonu ve kullanıcı deneyimiyle desteklenip desteklenmediğidir."
+      },
+      {
+        "type": "paragraph",
+        "isHtml": true,
+        "content": "> <strong>Not:</strong> Bu rehberdeki gelir tahminleri sektör ortalamalarına ve genel kabul görmüş dijital pazarlama metriklerine dayanmaktadır. Her işletmenin sonuçları; sektör, rekabet yoğunluğu, bütçe ve uygulama kalitesine göre farklılık gösterebilir. Verilen rakamlar bir garanti değil, bilgilendirme amaçlıdır."
+      },
+      {
+        "type": "heading2",
+        "content": "Web Sitesinin Kazancını Ölçmek İçin Kullanılan Araçlar"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bir web sitesinin gerçekte ne kadar kazandırdığını tahmin değil, veriyle görmek mümkündür:"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>Google Analytics:</strong> Ziyaretçi sayısı, trafik kaynağı, hangi sayfanın satışa dönüştüğü gibi temel veriler.",
+          "<strong>Google Search Console:</strong> Sitenin hangi arama sorgularından trafik aldığını ve SEO performansını gösterir.",
+          "<strong>Isı haritası (heatmap) araçları:</strong> Ziyaretçilerin sayfada nereye tıkladığını görselleştirir.",
+          "<strong>E-ticaret paneli raporları:</strong> Ortalama sepet tutarı, terk edilen sepet oranı gibi ciro verileri.",
+          "<strong>CRM ve arama takip yazılımları:</strong> Web sitesinden gelen aramaların satışa dönüşüp dönüşmediğini izler."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "heading2",
+        "content": "Web Sitesinin Kazancını Azaltan 5 Yaygın Hata"
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>Yavaş yükleme süresi:</strong> Sayfa açılışı 3 saniyeyi geçtiğinde ziyaretçilerin önemli bir kısmı siteyi terk eder.",
+          "<strong>Mobilde bozuk görünüm:</strong> Trafiğin büyük çoğunluğu mobil cihazlardan geldiği için kritiktir.",
+          "<strong>Belirsiz iletişim bilgisi:</strong> Telefon, adres veya WhatsApp hattı kolay bulunamayan sitelerde dönüşüm düşer.",
+          "<strong>SEO ve GEO'yu göz ardı etmek:</strong> Sadece güzel tasarlanmış ama optimize edilmemiş bir site trafiğin büyük kısmından mahrum kalır.",
+          "<strong>İçeriğin güncellenmemesi:</strong> Güncel olmayan bilgiler hem kullanıcı güvenini hem de sıralamayı kaybettirir."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "heading2",
+        "content": "Yapay Zekâ Arama Motorları Çağında Web Sitesi Kazancı Nasıl Değişiyor?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Türkiye'de aylık 14,3 milyon kişinin ChatGPT gibi yapay zekâ araçlarını aktif olarak kullandığı bir dönemde, kullanıcıların önemli bir kısmı artık doğrudan Google yerine yapay zekâ destekli arama motorlarına soru soruyor."
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          "<strong>Doğrudan ve net cevaplar öne çıkıyor:</strong> Yapay zekâ, net ve yapılandırılmış cevaplar veren sayfaları kaynak olarak gösteriyor.",
+          "<strong>Sayısal veri ve listeler önceliklendiriliyor:</strong> Somut rakamlar, tablolar ve listeler yapay zekâ tarafından daha kolay alıntılanıyor.",
+          "<strong>Marka görünürlüğü satışa dönüşüyor:</strong> Yapay zekâ sonuçlarında referans gösterilen markalar, kullanıcı siteye girmeden bile güven kazanıyor."
+        ],
+        "isHtml": true
+      },
+      {
+        "type": "heading2",
+        "content": "Sıkça Sorulan Sorular"
+      },
+      {
+        "type": "question",
+        "question": "Bir web sitesi kaç ayda kendini amorti eder?",
+        "answer": "Sektöre ve pazarlama bütçesine bağlı olarak değişmekle birlikte, doğru SEO stratejisiyle desteklenen bir web sitesi genellikle 6-12 ay içinde kurulum maliyetini geri kazanmaya başlar."
+      },
+      {
+        "type": "question",
+        "question": "Sadece tanıtım amaçlı bir web sitesi de para kazandırır mı?",
+        "answer": "Evet. Doğrudan satış yapmasa bile, tanıtım siteleri telefon araması, form doldurma veya mağaza ziyareti gibi dolaylı satış kanallarını besleyerek gelire katkı sağlar."
+      },
+      {
+        "type": "question",
+        "question": "Küçük işletmeler için web sitesi gerçekten şart mı?",
+        "answer": "Müşterilerin büyük çoğunluğu satın almadan önce işletmeyi internette araştırıyor. Web sitesi olmayan bir KOBİ, bu araştırma aşamasında görünmez kalarak rakiplerine müşteri kaybediyor."
+      },
+      {
+        "type": "question",
+        "question": "SEO yapılmadan da bir web sitesi kazanç sağlar mı?",
+        "answer": "Sağlar, ancak potansiyelin çok altında kalır. SEO ve GEO optimizasyonu olmayan bir site yalnızca doğrudan bilinen ziyaretçilere ulaşabilirken, optimize edilmiş bir site sürekli yeni ve ücretsiz organik trafik üretir."
+      },
+      {
+        "type": "question",
+        "question": "E-ticaret sitesi ile kurumsal site arasında kazanç farkı ne kadar?",
+        "answer": "E-ticaret siteleri geliri doğrudan üretirken, kurumsal siteler geliri dolaylı yoldan (güven, marka değeri, lead) üretir. E-ticaret sitelerinin ciro üzerindeki etkisi daha ölçülebilir ve daha hızlı görülür."
+      },
+      {
+        "type": "question",
+        "question": "Web sitesi kazancını artırmak için önce nereye yatırım yapmalıyım?",
+        "answer": "Öncelik sırası: önce site hızı ve mobil uyum, ardından temel SEO ayarları, sonra kullanıcı deneyimi (UX) iyileştirmeleri ve son olarak düzenli içerik üretimi. Bu sıralama en düşük maliyetle en hızlı geri dönüşü sağlar."
+      },
+      {
+        "type": "question",
+        "question": "Web sitesinin kazancı zamanla artar mı yoksa sabit mi kalır?",
+        "answer": "SEO ve GEO odaklı yönetilen bir web sitesinin kazancı zamanla artma eğilimindedir; çünkü arama motorlarında biriken içerik ve geriye dönük bağlantılar sitenin otoritesini büyütür. Yönetilmeyen bir site ise zamanla rakiplerin gerisinde kalarak kazancını kaybedebilir."
+      },
+      {
+        "type": "heading2",
+        "content": "Sonuç"
+      },
+      {
+        "type": "conclusion",
+        "intro": "\"Bir web sitesi ne kadar kazandırır?\" sorusunun tek bir doğru cevabı yoktur; ama yukarıdaki formül, sektörel veriler ve vaka çalışmaları bir arada değerlendirildiğinde net bir gerçek ortaya çıkıyor: Doğru stratejiyle kurulmuş bir web sitesi, harcanan yatırımın kat kat üzerinde bir gelir potansiyeli taşır.",
+        "items": [
+          "Doğru kurulmuş bir site, yıllık cironuza ortalama %15-30 katkı sağlar",
+          "Ziyaretçi × Dönüşüm × Sepet formülüyle kazanç hesaplanabilir",
+          "SEO ve GEO optimizasyonu bu kazancı katlayabilir",
+          "Siteyi pasif bir kartvizit değil, canlı bir gelir kanalı olarak yönetin"
+        ],
+        "closing": "Sitenizi sadece dijital bir \"kartvizit\" olarak değil; trafiği, dönüşüm oranını ve kullanıcı deneyimini sürekli ölçüp geliştirilen canlı bir gelir kanalı olarak yönetin."
+      },
+      {
+        "type": "finalParagraph",
+        "content": "Siz de işletmeniz için gerçekten kazandıran bir web sitesi kurmak ve dijital varlığınızı büyütmek istiyorsanız, doğru stratejiyle başlamak için SenninWeb ile iletişime geçin."
+      },
+      {
+        "type": "finalCta",
+        "question": "Web sitenizin size ne kadar kazandırdığını ölçmek ister misiniz?",
+        "ctaText": "Bizimle iletişime geçin, ücretsiz danışmanlık için sizi bekliyoruz!"
+      }
+    ],
+    "coverImage": "/images/blog/bir-web-sitesi-ne-kadar-kazandirir.webp",
+    "coverImageAlt": "Bir web sitesi ne kadar kazandırır sorusunu yanıtlayan KOBİ rehberi: web sitesi gelir potansiyeli ve dönüşüm oranı görseli"
   }
 ]
