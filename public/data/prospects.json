@@ -10501,5 +10501,211 @@
     "replied": false,
     "bounced": false,
     "addedDate": "2026-07-06"
+  },
+  {
+    "id": "gbz-470",
+    "business": "AVUKAT AYŞENUR AVCI HUKUK BÜROSU",
+    "category": "avukat",
+    "phone": "0530 542 11 57",
+    "website": "https://avukataysenuravci.com/",
+    "email": null,
+    "contactName": "Ayşenur",
+    "address": "Hacıhalil Mah. 1207 Sk. No:1 Match, Hacıhalil, Office Kat:4, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 37,
+    "googleMapsUri": "https://maps.google.com/?cid=15754775542482758246&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 90,
+      "issues": [
+        "inline CSS fazla (69 adet)"
+      ],
+      "analyzedAt": "2026-07-13",
+      "pageSizeKB": 35,
+      "fetchDurationMs": 100
+    },
+    "personalizationNote": "Merhaba Avukat Ayşenur Avcı Hukuk Bürosu,\n\nWeb sitenizin kalitesi oldukça yüksek; ancak, inline CSS kullanımının fazla olması, sayfanızın performansını etkileyebilir. SenninWeb olarak, bu tür teknik detayları optimize ederek, sitenizin kullanıcı deneyimini daha da iyileştirmekte size yardımcı olabiliriz. Her zaman yanınızdayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-13"
+  },
+  {
+    "id": "gbz-471",
+    "business": "Av. Şerafettin Kaya Hukuk ve Arabuluculuk Bürosu",
+    "category": "avukat",
+    "phone": "0534 545 23 32",
+    "website": "https://www.serafettinkaya.av.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Mevlana, Issıkgöl Cd. No: 99 Kat: 1 Daire: 23, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 256,
+    "googleMapsUri": "https://maps.google.com/?cid=17788858952350354992&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-07-13",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 770
+    },
+    "personalizationNote": "Merhaba Av. Şerafettin Kaya,\n\nGoogle Maps'te var olmak, günümüz dijital dünyasında yeterli değil. Rakipleriniz online ortamda daha görünür ve erişilebilir durumda. SenninWeb olarak, etkili bir web sitesi ile hukuki hizmetlerinizi daha geniş kitlelere ulaştırmanıza yardımcı olabiliriz. İhtiyacınız olan dijital çözümler için bizimle iletişime geçebilirsiniz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-13"
+  },
+  {
+    "id": "gbz-472",
+    "business": "ÖZEL ESTETİK AĞIZ VE DİŞ SAĞLIĞI POLİKLİNİĞİ",
+    "category": "diş hekimi",
+    "phone": "(0262) 656 46 76",
+    "website": "https://sites.google.com/view/www-arslanestetikdis-com/ana-sayfa",
+    "email": null,
+    "contactName": null,
+    "address": "Sultan Orhan, Kışla Cd. 4A, 41400 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 149,
+    "googleMapsUri": "https://maps.google.com/?cid=16937829433345670126&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "sayfa cok agir (917KB)"
+      ],
+      "analyzedAt": "2026-07-13",
+      "pageSizeKB": 917,
+      "fetchDurationMs": 984
+    },
+    "personalizationNote": "Merhaba, Özel Estetik Ağız ve Diş Sağlığı Polikliniği ekibi! Web sitenizin kalitesi oldukça yüksek, ancak sayfa ağırlığının biraz fazla olduğunu gözlemledik. SenninWeb olarak, bu sorunu çözerek kullanıcı deneyimini artırabilir ve potansiyel hastalarınıza daha hızlı erişim sağlayabiliriz. Sizinle çalışarak dijital varlığınızı daha da güçlendirmek için sabırsızlanıyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-13"
+  },
+  {
+    "id": "gbz-473",
+    "business": "Bölge Gayrimenkul - Gebze",
+    "category": "emlak ofisi",
+    "phone": "444 9 102",
+    "website": "http://www.bolgegayrimenkul.com.tr/",
+    "email": null,
+    "contactName": null,
+    "address": "Mevlana, Issıkgöl Cd. No:100 Kat:1 D:3, 41400 Gebze/Kocaeli",
+    "rating": 4.2,
+    "userRatingCount": 10,
+    "googleMapsUri": "https://maps.google.com/?cid=1005620347025298752&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 80,
+      "issues": [
+        "sayfa cok agir (304KB)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-07-13",
+      "pageSizeKB": 304,
+      "fetchDurationMs": 1683
+    },
+    "personalizationNote": "Merhaba Bölge Gayrimenkul Ekibi,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip, ancak sayfa boyutunun biraz ağır olduğunu ve H1 etiketinin eksik olduğunu gördük. SenninWeb olarak, bu sorunları gidererek kullanıcı deneyimini artırabilir ve arama motorlarındaki görünürlüğünüzü güçlendirebiliriz. Sizinle çalışarak dijital varlığınızı daha da güçlendirmek için sabırsızlanıyoruz! \n\nSaygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-13"
+  },
+  {
+    "id": "gbz-474",
+    "business": "Saracoğlu Nakliyat-Gebze Evden Eve Nakliyat & Taşımacılık",
+    "category": "nakliyat",
+    "phone": "0537 334 19 23",
+    "website": "https://turkiyefirmaplatformu.com/firmalar/e1b28968-40a6-4722-bcf8-cc46f1ee2593",
+    "email": null,
+    "contactName": null,
+    "address": "İnönü, 1944. Sk. no:57, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=14611123050948312410&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 95,
+      "issues": [
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-07-13",
+      "pageSizeKB": 2,
+      "fetchDurationMs": 500
+    },
+    "personalizationNote": "Merhaba Saracoğlu Nakliyat,\n\nWeb sitenizin kalitesi oldukça yüksek, ancak h1 etiketi eksikliği gibi küçük bir detayın giderilmesi, arama motorlarındaki sıralamanızı daha da güçlendirebilir. SenninWeb olarak, bu tür iyileştirmelerde size destek olabiliriz. Başarılarınızın devamını dileriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-13"
+  },
+  {
+    "id": "gbz-475",
+    "business": "Gökçe Yapı",
+    "category": "inşaat firması",
+    "phone": "(0262) 646 11 64",
+    "website": "http://www.gokceyapi.com/",
+    "email": "info@gokceyapi.com",
+    "contactName": null,
+    "address": "Hacı Halil Mah, 1207. Sk. Gökçe İş Merkezi Kat: 4 No: 8, 41400 Gebze/Kocaeli",
+    "rating": 4.8,
+    "userRatingCount": 21,
+    "googleMapsUri": "https://maps.google.com/?cid=3687255850396494081&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 55,
+      "issues": [
+        "SEO baslik yok",
+        "sayfa cok agir (271KB)",
+        "inline CSS fazla (111 adet)"
+      ],
+      "analyzedAt": "2026-07-13",
+      "pageSizeKB": 271,
+      "fetchDurationMs": 916
+    },
+    "personalizationNote": "Merhaba Gökçe Yapı Ekibi,\n\nWeb sitenizin kalite puanı 55/100 olarak belirlenmiş ve bazı önemli geliştirme alanları mevcut. SEO başlığınızın olmaması ve sayfanızın ağır yüklenmesi, potansiyel müşterilerinizi kaybetmenize yol açabilir. SenninWeb olarak, web sitenizin performansını artırmak ve görünürlüğünüzü güçlendirmek için yanınızdayız. İhtiyaçlarınıza özel çözümler sunarak, online varlığınızı daha etkili hale getirebiliriz. \n\nSaygılarımla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-13"
+  },
+  {
+    "id": "gbz-476",
+    "business": "BEKTAŞ MUHASEBE - SMMM YAKUP BEKTAŞ",
+    "category": "muhasebe mali müşavir",
+    "phone": "0532 506 66 17",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacı Halil Mh, Adliye Cd. No:17 Bademaltı Apt. Daire:5, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 1,
+    "googleMapsUri": "https://maps.google.com/?cid=13939543824656014435&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-07-13",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Yakup Bektaş, \n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için bir web sitesine ihtiyacınız var. SenninWeb, size profesyonel bir web tasarımı ve dijital pazarlama çözümleri sunarak işinizi daha görünür hale getirebilir. Sizlerle tanışmayı ve birlikte çalışmayı çok isteriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-13"
   }
 ]
