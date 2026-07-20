@@ -10707,5 +10707,151 @@
     "replied": false,
     "bounced": false,
     "addedDate": "2026-07-13"
+  },
+  {
+    "id": "gbz-477",
+    "business": "Fındık Patisserie Cafe",
+    "category": "kafe pastane",
+    "phone": "",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Ulus, Ulus Cd. No: 3/B, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 6,
+    "googleMapsUri": "https://maps.google.com/?cid=16221938613028372522&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-07-20",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Fındık Patisserie Cafe,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online varlıkları ile rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, sizi dijital dünyada daha görünür kılmak için etkili web tasarım ve dijital pazarlama çözümleri sunmaktan mutluluk duyarız. Sizleri desteklemek için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-20"
+  },
+  {
+    "id": "gbz-478",
+    "business": "Carwiss",
+    "category": "oto galeri",
+    "phone": "0532 205 09 80",
+    "website": "https://carwiss.sahibinden.com/",
+    "email": null,
+    "contactName": null,
+    "address": "Güzeller, Mahallesi sokak No:13 OM, 942 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 22,
+    "googleMapsUri": "https://maps.google.com/?cid=2278017681742091012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-07-20",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 139
+    },
+    "personalizationNote": "Merhaba Carwiss,\n\nWeb sitenizin erişilemez olması, potansiyel müşterilerinizin sizi bulmasını zorlaştırıyor. Rakiplerinizin çevrimiçi varlık gösterdiği bu dijital dünyada, SenninWeb olarak size etkili bir web sitesi oluşturarak, online görünürlüğünüzü artırmak ve müşteri portföyünüzü genişletmek için buradayız. Beraber çalışarak, başarılarınızı daha da ileriye taşıyabiliriz.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-20"
+  },
+  {
+    "id": "gbz-479",
+    "business": "OMTAŞ Gebze Asansörlü Evden Eve Nakliyat",
+    "category": "nakliyat",
+    "phone": "0539 933 43 30",
+    "website": "https://www.omtasevdenevenakliyat.com/",
+    "email": "omtasnakliyat@hotmail.com",
+    "contactName": null,
+    "address": "Sultan Orhan, İlyasbey Cd. No:19 D:14, 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 58,
+    "googleMapsUri": "https://maps.google.com/?cid=14428767417635266073&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 85,
+      "issues": [
+        "inline CSS fazla (30 adet)",
+        "h1 etiketi yok"
+      ],
+      "analyzedAt": "2026-07-20",
+      "pageSizeKB": 77,
+      "fetchDurationMs": 2216
+    },
+    "personalizationNote": "Merhaba OMTAŞ Gebze Asansörlü Evden Eve Nakliyat,\n\nWeb siteniz oldukça iyi bir kalite puanına sahip, ancak inline CSS kullanımı ve h1 etiketi eksikliği gibi küçük geliştirme alanlarınız bulunuyor. SenninWeb olarak, bu konularda size profesyonel destek sunarak daha etkili bir çevrimiçi varlık oluşturmanıza yardımcı olabiliriz. Başarılarınızın devamını dileriz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-20"
+  },
+  {
+    "id": "gbz-480",
+    "business": "NAHITOGULLARI NAKLIYAT",
+    "category": "nakliyat",
+    "phone": "0536 593 11 98",
+    "website": "https://nahitogullarinakliyat.com/contact/",
+    "email": null,
+    "contactName": null,
+    "address": "Barış Mahallesi, Ahmet Pembegüllü Blv. No:6 D:6, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=15278377583413538672&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-07-20",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 476
+    },
+    "personalizationNote": "Merhaba NAHITOGULLARI NAKLIYAT,\n\nGoogle Maps'te var olmak önemli, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için etkili bir web sitesine ihtiyacınız var. SenninWeb olarak, web sitenizin erişilebilirliğini artırarak, dijital dünyadaki görünürlüğünüzü güçlendirmek için size yardımcı olabiliriz. Gelin, birlikte güçlü bir online kimlik oluşturalım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-20"
+  },
+  {
+    "id": "gbz-481",
+    "business": "Kocaeli Gebze | ÇNR Tadilat",
+    "category": "ev tadilat",
+    "phone": "0543 922 28 54",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Osman Yılmaz, 612. Sk. no2, 41100 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 8,
+    "googleMapsUri": "https://maps.google.com/?cid=5626882945730486184&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-07-20",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba ÇNR Tadilat,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online olduğunu da unutmayın. Sizi daha geniş bir kitleye ulaştırmak ve potansiyel müşterilerinize daha iyi hizmet vermek için etkili bir web sitesi oluşturmanın önemini vurgulamak isteriz. SenninWeb olarak, sizin için profesyonel bir web tasarımı ile dijital varlığınızı güçlendirmeye hazırız.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-20"
   }
 ]
