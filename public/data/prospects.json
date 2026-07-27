@@ -10853,5 +10853,204 @@
     "replied": false,
     "bounced": false,
     "addedDate": "2026-07-20"
+  },
+  {
+    "id": "gbz-482",
+    "business": "Latife Coffee Roasters Gebze",
+    "category": "kafe pastane",
+    "phone": "0538 853 09 19",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, Adliye Cd. No:12/3, 41400 Gebze/Kocaeli",
+    "rating": 4.5,
+    "userRatingCount": 284,
+    "googleMapsUri": "https://maps.google.com/?cid=10592459840520492889&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-07-27",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Latife Coffee Roasters Ekibi, \n\nGoogle Maps'te yer almak harika, ancak rakiplerinizin online varlıklarıyla rekabet edebilmek için etkili bir web sitesine sahip olmanız önemli. SenninWeb, sizin için özel bir web tasarımı oluşturarak, markanızı dijital dünyada daha görünür kılmaya yardımcı olabilir.",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-27"
+  },
+  {
+    "id": "gbz-483",
+    "business": "Maria Güzellik ve Bakım Merkezi",
+    "category": "güzellik salonu",
+    "phone": "0501 621 18 00",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Arapçeşme, 1044/4. Sk., 41400 Gebze/Kocaeli",
+    "rating": 4.9,
+    "userRatingCount": 39,
+    "googleMapsUri": "https://maps.google.com/?cid=5605066518277820793&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-07-27",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Maria Güzellik ve Bakım Merkezi, \n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online varlığıyla rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, size etkileyici bir web tasarımı sunarak, dijital dünyada daha görünür olmanıza ve müşteri kitlenizi genişletmenize yardımcı olabiliriz. Siz de bu fırsatı değerlendirin!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-27"
+  },
+  {
+    "id": "gbz-484",
+    "business": "Carla Zoe Güzellik Salonu Gebze",
+    "category": "güzellik salonu",
+    "phone": "0505 074 41 41",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacı Halil mahallesi ismet paşa caddesi, Hacıhalil, 1209. Sk. No:1/a, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 7,
+    "googleMapsUri": "https://maps.google.com/?cid=9087831846815632421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-07-27",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Carla Zoe Güzellik Salonu,\n\nGoogle Maps'te görünür olmanız harika, ancak rakiplerinizin online varlıkları sayesinde daha geniş bir kitleye ulaşmanız mümkün. SenninWeb olarak, profesyonel bir web sitesi oluşturarak online varlığınızı güçlendirmeye ve potansiyel müşterilerinizi etkilemeye yardımcı olabiliriz. Gelin, birlikte güzellik salonunuzu dijital dünyada daha görünür hale getirelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-27"
+  },
+  {
+    "id": "gbz-485",
+    "business": "RS Serhat Otomotiv",
+    "category": "oto galeri",
+    "phone": "0535 262 51 74",
+    "website": "https://shbd.io/s/KwSkVTU5",
+    "email": null,
+    "contactName": null,
+    "address": "Sultan Orhan, Eski Bağdat Cd. no:12, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 1,
+    "googleMapsUri": "https://maps.google.com/?cid=18425249056489693580&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi erisilemez"
+      ],
+      "analyzedAt": "2026-07-27",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 1217
+    },
+    "personalizationNote": "Merhaba RS Serhat Otomotiv,\n\nGoogle Maps'te var olmanız harika, ancak rakiplerinizin online dünyada aktif olduğunu unutmayın. Web siteniz erişilemez durumda, bu da potansiyel müşterilerinizin sizi bulmasını zorlaştırıyor. SenninWeb olarak, güçlü bir web varlığı oluşturmanıza yardımcı olabiliriz. Gelin, birlikte online görünürlüğünüzü artırarak işinizi büyütelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-27"
+  },
+  {
+    "id": "gbz-486",
+    "business": "Akse Fotoğrafçılık",
+    "category": "fotoğrafçı",
+    "phone": "0539 633 03 58",
+    "website": "https://aksefotograf.com/",
+    "email": "info@aksedigital.com",
+    "contactName": null,
+    "address": "Güzeller, 927. Sk. No:6-B, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 2,
+    "googleMapsUri": "https://maps.google.com/?cid=17461246809914651623&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 100,
+      "issues": [],
+      "analyzedAt": "2026-07-27",
+      "pageSizeKB": 123,
+      "fetchDurationMs": 996
+    },
+    "personalizationNote": "Merhaba Akse Fotoğrafçılık,\n\nWeb siteniz 100/100 kalite puanı ile harika bir performans sergiliyor! Ancak, dijital dünyada rekabetin ne kadar yoğun olduğunu unutmamak önemli. Size sunduğumuz SEO ve dijital pazarlama hizmetleri ile online görünürlüğünüzü daha da güçlendirebiliriz. Gelin, potansiyelinizi birlikte keşfedelim!\n\nSevgi ve saygılarımızla,  \nSenninWeb Ekibi",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-27"
+  },
+  {
+    "id": "gbz-487",
+    "business": "Gebze Evden Eve Nakliyat -Biz Taşırız",
+    "category": "nakliyat",
+    "phone": "0530 702 12 08",
+    "website": "https://biztasiriz.com/",
+    "email": "info@biztasiriz.com",
+    "contactName": null,
+    "address": "A153, Mutlukent, 2421. Sk., 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 1,
+    "googleMapsUri": "https://maps.google.com/?cid=3761450973762416175&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 100,
+      "issues": [],
+      "analyzedAt": "2026-07-27",
+      "pageSizeKB": 184,
+      "fetchDurationMs": 524
+    },
+    "personalizationNote": "Merhaba, Biz Taşırız ekibi! Web siteniz mükemmel bir kalite puanına sahip ve Google'da 5 yıldız almanız gerçekten etkileyici. Ancak, dijital varlığınızı daha da güçlendirmek adına sosyal medya ve içerik pazarlaması gibi alanlarda SenninWeb'in uzmanlığıyla birlikte nasıl daha fazla müşteri çekebileceğinizi keşfetmeye ne dersiniz? Başarılarınızın devamını diliyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-27"
+  },
+  {
+    "id": "gbz-488",
+    "business": "Terzi Murat gebze",
+    "category": "terzi",
+    "phone": "",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, 1216. Sk. No:9 iç kapı 3, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 1,
+    "googleMapsUri": "https://maps.google.com/?cid=5241897766738190195&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-07-27",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Terzi Murat,\n\nGoogle Maps'te var olmanız güzel, ancak rakiplerinizin online olması sizi geride bırakabilir. SenninWeb olarak, size profesyonel bir web sitesi oluşturarak dijital dünyada daha görünür hale gelmenize yardımcı olabiliriz. Gelin, birlikte başarınızı artıralım!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-07-27"
   }
 ]
