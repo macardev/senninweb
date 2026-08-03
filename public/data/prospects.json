@@ -11077,8 +11077,8 @@
       "fetchDurationMs": 304
     },
     "personalizationNote": "Merhaba Av. Furkan Yavuz,\n\nC&F Hukuk ve Danışmanlık olarak çevrimiçi varlığınızı güçlendirmek için SenninWeb olarak size yardımcı olmayı çok isteriz. Web sitenizin kalite puanı oldukça iyi olsa da, sayfa boyutunun yüksekliği ve fazla inline CSS gibi somut sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. Bu noktada, performans iyileştirmeleriyle daha hızlı ve etkili bir siteye sahip olmanızı sağlayabiliriz. Sizlere destek sunmak için sabırsızlanıyoruz!",
-    "outreachStage": 0,
-    "lastEmailDate": null,
+    "outreachStage": 1,
+    "lastEmailDate": "2026-08-03",
     "replied": false,
     "bounced": false,
     "addedDate": "2026-08-03"
