@@ -11052,5 +11052,93 @@
     "replied": false,
     "bounced": false,
     "addedDate": "2026-07-27"
+  },
+  {
+    "id": "gbz-489",
+    "business": "Gebze Avukat - C&F Hukuk ve Danışmanlık - Av. Furkan YAVUZ",
+    "category": "avukat",
+    "phone": "0532 744 20 55",
+    "website": "https://www.cfhukuk.com/",
+    "email": "cflaw@outlook.com.tr",
+    "contactName": "Furkan",
+    "address": "Gaziler, Issıkgöl Cd. No:96 D:3 Kat 2, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 19,
+    "googleMapsUri": "https://maps.google.com/?cid=15610630097209921993&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": true,
+    "siteQuality": {
+      "score": 75,
+      "issues": [
+        "sayfa cok agir (240KB)",
+        "inline CSS fazla (305 adet)"
+      ],
+      "analyzedAt": "2026-08-03",
+      "pageSizeKB": 240,
+      "fetchDurationMs": 304
+    },
+    "personalizationNote": "Merhaba Av. Furkan Yavuz,\n\nC&F Hukuk ve Danışmanlık olarak çevrimiçi varlığınızı güçlendirmek için SenninWeb olarak size yardımcı olmayı çok isteriz. Web sitenizin kalite puanı oldukça iyi olsa da, sayfa boyutunun yüksekliği ve fazla inline CSS gibi somut sorunlar, kullanıcı deneyimini olumsuz etkileyebilir. Bu noktada, performans iyileştirmeleriyle daha hızlı ve etkili bir siteye sahip olmanızı sağlayabiliriz. Sizlere destek sunmak için sabırsızlanıyoruz!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-08-03"
+  },
+  {
+    "id": "gbz-490",
+    "business": "Gebze Diş Doktoru Fatma Kurtuluş",
+    "category": "diş hekimi",
+    "phone": "0533 032 70 79",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Osman Yılmaz, İstanbul Cd. No: 28/30, 41400 Gebze/Kocaeli",
+    "rating": 5,
+    "userRatingCount": 1,
+    "googleMapsUri": "https://maps.google.com/?cid=7376982225726864205&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-08-03",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Fatma Hanım, \n\nGoogle Maps'te yer almanız harika, ancak rakiplerinizin online varlıkları ile rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, size etkileyici bir web tasarımı ve dijital pazarlama stratejileri ile destek olmaktan mutluluk duyarız. Gelin birlikte online görünürlüğünüzü artırarak daha fazla hasta çekelim!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-08-03"
+  },
+  {
+    "id": "gbz-491",
+    "business": "SMMM Onur Yener - Mali Müşavir ve Muhasebe Ofisi",
+    "category": "muhasebe mali müşavir",
+    "phone": "0542 250 30 61",
+    "website": null,
+    "email": null,
+    "contactName": null,
+    "address": "Hacıhalil, 1226. Sk. No:11 Kat: 2 D:11, 41400 Gebze/Kocaeli",
+    "rating": null,
+    "userRatingCount": 0,
+    "googleMapsUri": "https://maps.google.com/?cid=8363085488745894970&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "hasWebsite": false,
+    "siteQuality": {
+      "score": 0,
+      "issues": [
+        "web sitesi yok"
+      ],
+      "analyzedAt": "2026-08-03",
+      "pageSizeKB": 0,
+      "fetchDurationMs": 0
+    },
+    "personalizationNote": "Merhaba Onur Bey, \n\nGoogle Maps'te var olmanız önemli, ancak rakiplerinizin online olarak sunduğu hizmetlerle rekabet edebilmek için profesyonel bir web sitesine ihtiyacınız var. SenninWeb olarak, sizin için etkili ve kullanıcı dostu bir web tasarımı oluşturabilir, dijital dünyada daha görünür olmanızı sağlayabiliriz. Sizlere yardımcı olmak için buradayız!",
+    "outreachStage": 0,
+    "lastEmailDate": null,
+    "replied": false,
+    "bounced": false,
+    "addedDate": "2026-08-03"
   }
 ]
