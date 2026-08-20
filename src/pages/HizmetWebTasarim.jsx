@@ -37,9 +37,9 @@ function upsertLinkByRel(rel, href) {
 }
 
 const content = {
-  title: "Web Tasarım Hizmeti | SenninWeb - Premium Web Sitesi Tasarımı",
+  title: "Profesyonel Web Tasarım Hizmeti ve Fiyatları | SenninWeb",
   shortTitle: "Web Tasarım Hizmeti",
-  metaDescription: "Profesyonel web tasarım hizmeti: mobil uyumlu, hızlı yüklenen, SEO altyapılı kurumsal web siteleri. İşletmenize özel tasarım ve 3D animasyonlarla rakiplerinizden sıyrılın.",
+  metaDescription: "Mobil uyumlu, hızlı açılan ve SEO altyapılı kurumsal web siteniz 2-4 haftada yayında. Size özel tasarım, şeffaf fiyat. Hemen ücretsiz teklif alın.",
   description: "Web tasarım, web sitelerinin kullanıcı arayüzü, görsel estetik ve teknik performans bileşenlerinin planlanarak geliştirilmesidir. Mobil cihazlarla uyumluluk, hızlı yüklenme süreleri ve arama motoru görünürlüğü modern web tasarımının temel gereklilikleridir. Kurumsal web siteleri, marka kimliğini dijital ortamda temsil eden önemli bir iletişim aracıdır.",
   sections: [
     {
@@ -134,7 +134,7 @@ const content = {
     {
       type: "paragraph",
       "isHtml": true,
-      content: "Web tasarım hizmetimizi Türkiye'nin her şehrindeki işletmelere sunuyoruz. Özellikle <a href=\"/gebze\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Gebze web tasarım</a>, <a href=\"/bilecik\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Bilecik web tasarım</a> ve <a href=\"/kocaeli\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Kocaeli web tasarım</a> hizmetlerimizle yerel işletmelerin dijital dönüşümüne liderlik ediyoruz."
+      content: "Web tasarım hizmetimizi Türkiye'nin her şehrindeki işletmelere sunuyoruz. Özellikle <a href=\"/bilecik\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Bilecik web tasarım</a> ve Gebze dahil tüm <a href=\"/kocaeli\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Kocaeli web tasarım</a> hizmetlerimizle yerel işletmelerin dijital dönüşümüne liderlik ediyoruz."
     },
     {
       type: "paragraph",

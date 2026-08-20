@@ -1,6 +1,8 @@
 {
   "redirects": [
     { "source": "/blog/small-businesses-visible-on-google-2026", "destination": "/blog/kucuk-isletmeler-google-da-gorunurluk-2026", "permanent": true },
+    { "source": "/gebze", "destination": "/hizmet/web-tasarim", "permanent": true },
+    { "source": "/gebze/", "destination": "/hizmet/web-tasarim", "permanent": true },
     { "source": "/(.*)", "has": [{ "type": "host", "value": "senninweb.com" }], "destination": "https://www.senninweb.com/$1", "permanent": true }
   ],
   "rewrites": [
@@ -9,8 +11,6 @@
     { "source": "/blog", "destination": "/index.html" },
     { "source": "/blog/", "destination": "/index.html" },
     { "source": "/blog/:path*", "destination": "/index.html" },
-    { "source": "/gebze", "destination": "/index.html" },
-    { "source": "/gebze/", "destination": "/index.html" },
     { "source": "/bilecik", "destination": "/index.html" },
     { "source": "/bilecik/", "destination": "/index.html" },
     { "source": "/kocaeli", "destination": "/index.html" },

@@ -134,7 +134,7 @@ const content = {
     {
       type: "paragraph",
       "isHtml": true,
-      "content": "E-ticaret çözümlerimizle Türkiye'nin dört bir yanındaki işletmelere ulaşıyoruz. Özellikle <a href=\"/gebze\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Gebze e-ticaret</a>, <a href=\"/bilecik\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Bilecik e-ticaret</a> ve <a href=\"/kocaeli\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Kocaeli e-ticaret</a> hizmetlerimizle yerel işletmeleri dijital pazara taşıyoruz."
+      "content": "E-ticaret çözümlerimizle Türkiye'nin dört bir yanındaki işletmelere ulaşıyoruz. Özellikle <a href=\"/bilecik\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Bilecik e-ticaret</a> ve Gebze dahil tüm <a href=\"/kocaeli\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Kocaeli e-ticaret</a> hizmetlerimizle yerel işletmeleri dijital pazara taşıyoruz."
     },
     {
       type: "paragraph",

@@ -191,11 +191,11 @@ export default function SSS() {
     const prevOgDesc = document.head.querySelector('meta[property="og:description"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
-    document.title = "Sıkça Sorulan Sorular | SenninWeb"
-    upsertMetaByName("description", "Web siteniz neden Google'da çıkmıyor? SEO ne kadar sürer? Web tasarım fiyatları ne kadar? Tüm sorularınızı yanıtlıyoruz.")
+    document.title = "Web Tasarım & SEO Sıkça Sorulan Sorular | SenninWeb"
+    upsertMetaByName("description", "Web sitesi fiyatı, teslim süresi, SEO süreci ve daha fazlası: en çok sorulan soruların net yanıtları. Cevabını bulamadınız mı? Ücretsiz danışın.")
     upsertMetaByName("robots", "index, follow")
-    upsertMetaByProperty("og:title", "Sıkça Sorulan Sorular | SenninWeb")
-    upsertMetaByProperty("og:description", "Web siteniz neden Google'da çıkmıyor? SEO ne kadar sürer? Web tasarım fiyatları ne kadar? Tüm sorularınızı yanıtlıyoruz.")
+    upsertMetaByProperty("og:title", "Web Tasarım & SEO Sıkça Sorulan Sorular | SenninWeb")
+    upsertMetaByProperty("og:description", "Web sitesi fiyatı, teslim süresi, SEO süreci ve daha fazlası: en çok sorulan soruların net yanıtları. Cevabını bulamadınız mı? Ücretsiz danışın.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
     upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
@@ -203,8 +203,8 @@ export default function SSS() {
     upsertMetaByProperty("og:image:height", "630")
 
     upsertMetaByName("twitter:card", "summary_large_image")
-    upsertMetaByName("twitter:title", "Sıkça Sorulan Sorular | SenninWeb")
-    upsertMetaByName("twitter:description", "Web siteniz neden Google'da çıkmıyor? SEO ne kadar sürer? Web tasarım fiyatları ne kadar? Tüm sorularınızı yanıtlıyoruz.")
+    upsertMetaByName("twitter:title", "Web Tasarım & SEO Sıkça Sorulan Sorular | SenninWeb")
+    upsertMetaByName("twitter:description", "Web sitesi fiyatı, teslim süresi, SEO süreci ve daha fazlası: en çok sorulan soruların net yanıtları. Cevabını bulamadınız mı? Ücretsiz danışın.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 
@@ -222,7 +222,7 @@ export default function SSS() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "name": "Sıkça Sorulan Sorular | SenninWeb",
+    "name": "Web Tasarım & SEO Sıkça Sorulan Sorular | SenninWeb",
     "description": "Web tasarım, SEO, mobil uyumluluk, Google'da görünürlük ve daha fazlası hakkında sıkça sorulan sorular.",
     "dateModified": today,
     "mainEntity": faqs.map(f => ({

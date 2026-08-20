@@ -12,7 +12,6 @@ const CustomCursor = lazy(() => import("@/components/ui/CustomCursor"))
 const breadcrumbLabels = {
   "/hakkimizda": "Hakkımızda",
   "/blog": "Dijital Rehber",
-  "/gebze": "Gebze",
   "/bilecik": "Bilecik",
   "/kocaeli": "Kocaeli",
   "/sss": "Sıkça Sorulan Sorular",

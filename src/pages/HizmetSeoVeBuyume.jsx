@@ -133,7 +133,7 @@ const content = {
     {
       type: "paragraph",
       "isHtml": true,
-      content: "SEO hizmetimizi Türkiye genelinde sunuyoruz. Özellikle <a href=\"/gebze\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Gebze SEO</a>, <a href=\"/bilecik\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Bilecik SEO</a> ve <a href=\"/kocaeli\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Kocaeli SEO</a> hizmetlerimizle yerel işletmelerin Google'da üst sıralara çıkmasına yardımcı oluyoruz."
+      content: "SEO hizmetimizi Türkiye genelinde sunuyoruz. Özellikle <a href=\"/bilecik\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Bilecik SEO</a> ve Gebze dahil tüm <a href=\"/kocaeli\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Kocaeli SEO</a> hizmetlerimizle yerel işletmelerin Google'da üst sıralara çıkmasına yardımcı oluyoruz."
     },
     {
       type: "paragraph",

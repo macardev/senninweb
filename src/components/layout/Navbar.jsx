@@ -23,7 +23,6 @@ const navLinks = [
     label: 'Hizmet Verdiğimiz Bölgeler',
     href: '#',
     submenu: [
-      { label: 'Gebze', href: '/gebze' },
       { label: 'Kocaeli', href: '/kocaeli' },
       { label: 'İstanbul (Yakında)', href: '#', disabled: true },
       { label: 'Bursa (Yakında)', href: '#', disabled: true },

@@ -131,7 +131,7 @@ const content = {
     {
       type: "paragraph",
       "isHtml": true,
-      "content": "Dijital pazarlama hizmetlerimizle Türkiye'nin her şehrindeki işletmelere ulaşıyoruz. Özellikle <a href=\"/gebze\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Gebze dijital pazarlama</a>, <a href=\"/bilecik\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Bilecik dijital pazarlama</a> ve <a href=\"/kocaeli\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Kocaeli dijital pazarlama</a> hizmetlerimizle yerel işletmelerin büyümesine katkı sağlıyoruz."
+      "content": "Dijital pazarlama hizmetlerimizle Türkiye'nin her şehrindeki işletmelere ulaşıyoruz. Özellikle <a href=\"/bilecik\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Bilecik dijital pazarlama</a> ve Gebze dahil tüm <a href=\"/kocaeli\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">Kocaeli dijital pazarlama</a> hizmetlerimizle yerel işletmelerin büyümesine katkı sağlıyoruz."
     },
     {
       type: "paragraph",

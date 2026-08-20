@@ -57,13 +57,13 @@ export default function Blog() {
     const prevOgUrl = document.head.querySelector('meta[property="og:url"]')?.getAttribute("content") ?? null
     const prevCanonical = document.head.querySelector('link[rel="canonical"]')?.getAttribute("href") ?? null
 
-    document.title = "Blog | SenninWeb - Web Tasarım ve SEO Rehberleri"
+    document.title = "Web Tasarım ve SEO Rehberleri 2026 | SenninWeb Blog"
     upsertMetaByName(
       "description",
-      "Web siteniz neden müşteri getirmiyor? 2026 web tasarım fiyatları, SEO stratejileri ve dijital büyüme rehberleriyle işletmenizi Google'da üst sıralara taşıyın."
+      "Web tasarım fiyatlarından SEO stratejilerine, işletmenizi Google'da büyütecek güncel rehberler ve pratik ipuçları. Her hafta yeni içerik keşfedin."
     )
-    upsertMetaByProperty("og:title", "Blog | SenninWeb - Web Tasarım ve SEO Rehberleri")
-    upsertMetaByProperty("og:description", "Web siteniz neden müşteri getirmiyor? 2026 web tasarım fiyatları, SEO stratejileri ve dijital büyüme rehberleri.")
+    upsertMetaByProperty("og:title", "Web Tasarım ve SEO Rehberleri 2026 | SenninWeb Blog")
+    upsertMetaByProperty("og:description", "Web tasarım fiyatlarından SEO stratejilerine, işletmenizi Google'da büyütecek güncel rehberler ve pratik ipuçları. Her hafta yeni içerik keşfedin.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
     upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
@@ -71,8 +71,8 @@ export default function Blog() {
     upsertMetaByProperty("og:image:height", "630")
 
     upsertMetaByName("twitter:card", "summary_large_image")
-    upsertMetaByName("twitter:title", "Blog | SenninWeb - Web Tasarım ve SEO Rehberleri")
-    upsertMetaByName("twitter:description", "Web siteniz neden müşteri getirmiyor? 2026 web tasarım fiyatları, SEO stratejileri ve dijital büyüme rehberleri.")
+    upsertMetaByName("twitter:title", "Web Tasarım ve SEO Rehberleri 2026 | SenninWeb Blog")
+    upsertMetaByName("twitter:description", "Web tasarım fiyatlarından SEO stratejilerine, işletmenizi Google'da büyütecek güncel rehberler ve pratik ipuçları. Her hafta yeni içerik keşfedin.")
 
     upsertLinkByRel("canonical", canonicalUrl)
 
