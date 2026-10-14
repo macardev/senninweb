@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 import useCanonicalUrl from "@/hooks/useCanonicalUrl"
+import useReleaseStaticBody from "@/hooks/useReleaseStaticBody"
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -37,6 +38,7 @@ function upsertLinkByRel(rel, href) {
 }
 
 export default function Hakkimizda() {
+  useReleaseStaticBody()
   const navigate = useNavigate()
   const canonicalUrl = useCanonicalUrl()
 
@@ -57,7 +59,7 @@ export default function Hakkimizda() {
     upsertMetaByProperty("og:description", "SenninWeb'i tanıyın: KOBİ'ler için premium web tasarım ve SEO çözümleri üreten butik ajans. Çalışma sürecimizi keşfedin, ücretsiz teklif alın.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
-    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
+    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.jpg")
     upsertMetaByProperty("og:image:width", "1200")
     upsertMetaByProperty("og:image:height", "630")
 

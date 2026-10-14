@@ -6,9 +6,10 @@ const footerLinks = [
   {
     title: 'Hizmetler',
     links: [
-      { label: 'Web Tasarım',      href: '/#services'    },
-      { label: 'SEO & Büyüme',     href: '/#services'    },
-      { label: 'Kurumsal Kimlik',  href: '/#services'    },
+      { label: 'Hasta Kazanım Paketi', href: '/#services' },
+      { label: 'Size Özel Web Sitesi', href: '/hizmet/web-tasarim' },
+      { label: 'Uluslararası SEO',     href: '/hizmet/seo-ve-buyume' },
+      { label: 'Ücretsiz Rehber',      href: '/rehber/yurt-disindan-hasta-cekme' },
     ],
   },
   {
@@ -98,7 +99,7 @@ Bu web sitesini kullanarak aşağıdaki kullanım koşullarını kabul etmiş sa
 
 HİZMETLERİN KAPSAMI
 
-Sennin Web, küçük ve orta ölçekli işletmelere web tasarım, SEO danışmanlığı ve kurumsal kimlik hizmetleri sunmaktadır. Sunulan hizmetlerin kapsamı ve bedeli, taraflar arasında imzalanacak sözleşme ile belirlenir.
+Sennin Web, sağlık klinikleri başta olmak üzere işletmelere web sitesi tasarımı, uluslararası SEO ve hasta/müşteri kazanımı hizmetleri sunmaktadır. Sunulan hizmetlerin kapsamı ve bedeli, taraflar arasında imzalanacak sözleşme ile belirlenir.
 
 FİKRİ MÜLKİYET
 

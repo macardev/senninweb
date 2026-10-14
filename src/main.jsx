@@ -4,6 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import { logPerformanceMetrics } from './utils/performanceMonitoring'
 import { initMeshPointer } from './utils/meshPointer'
+import { initLeadTracking } from './utils/leads'
+import { initMotionTier } from './utils/motionTier'
 
 // Log performance metrics in development
 if (import.meta.env.DEV) {
@@ -11,10 +13,19 @@ if (import.meta.env.DEV) {
 }
 
 initMeshPointer()
+initLeadTracking()
+initMotionTier()
 
-// Render app immediately for faster FCP
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+// Static JSON-LD from postbuild prerender; pages inject their own at runtime
+document.querySelectorAll('script[data-prerender]').forEach((n) => n.remove())
+
+// The static hero/page body in #hero-host is already painted, so render as a
+// transition: React can split the initial render into small tasks (lower TBT).
+const root = ReactDOM.createRoot(document.getElementById('root'))
+React.startTransition(() => {
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  )
+})

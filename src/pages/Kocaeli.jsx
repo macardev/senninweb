@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
 import useCanonicalUrl from "@/hooks/useCanonicalUrl"
+import useReleaseStaticBody from "@/hooks/useReleaseStaticBody"
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -119,7 +120,7 @@ const kocaeliContent = {
     {
       type: "paragraph",
       "isHtml": true,
-      content: "Kocaeli'de işletmeniz için sunduğumuz tüm dijital çözümleri detaylı olarak inceleyin. Size özel <a href=\"/hizmet/web-tasarim\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">web tasarım</a>, <a href=\"/hizmet/seo-ve-buyume\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">SEO & büyüme</a>, <a href=\"/hizmet/eticaret-cozumleri\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">e-ticaret çözümleri</a> ve <a href=\"/hizmet/dijital-pazarlama\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">dijital pazarlama</a> hizmetlerimizle işletmenizi dijitalde büyütün."
+      content: "Kocaeli'de işletmeniz için sunduğumuz tüm dijital çözümleri detaylı olarak inceleyin. Size özel <a href=\"/hizmet/web-tasarim\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">web tasarım</a>, <a href=\"/hizmet/seo-ve-buyume\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">SEO & büyüme</a> ve <a href=\"/hizmet/dijital-pazarlama\" class=\"text-gold-400 hover:text-gold-300 underline transition-colors\">dijital pazarlama</a> hizmetlerimizle işletmenizi dijitalde büyütün."
     },
     {
       type: "paragraph",
@@ -135,6 +136,7 @@ const kocaeliContent = {
 }
 
 export default function Kocaeli() {
+  useReleaseStaticBody()
   const navigate = useNavigate()
   const canonicalUrl = useCanonicalUrl()
 
@@ -217,7 +219,7 @@ export default function Kocaeli() {
     upsertMetaByProperty("og:description", kocaeliContent.metaDescription)
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
-    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
+    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.jpg")
     upsertMetaByProperty("og:image:width", "1200")
     upsertMetaByProperty("og:image:height", "630")
 

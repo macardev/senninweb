@@ -34,7 +34,13 @@ We Are Social ve DataReportal'ın 2026 Digital Turkey raporuna göre, Türkiye'd
 
 Bu aramaların büyük kısmı herhangi bir karşılık bulamıyor. Çünkü Kocaeli'deki işletmelerin büyük bölümü ya hiç web sitesine sahip değil ya da sahip oldukları site SEO açısından optimize edilmemiş durumda.
 
-Dijital Varlık MetriğiKocaeliİstanbulAnkaraAktif web sitesi oranı%46%68%61Dijital pazarlama stratejisi<%20%40%35Google İşletme Profili güncel%40%65%58Düzenli içerik üretimi%15%32%28Kaynak: TÜİK Dijital Ekonomi Raporu, 2025
+| Dijital Varlık Metriği | Kocaeli | İstanbul | Ankara |
+| --- | --- | --- | --- |
+| Aktif web sitesi oranı | %46 | %68 | %61 |
+| Dijital pazarlama stratejisi | <%20 | %40 | %35 |
+| Google İşletme Profili güncel | %40 | %65 | %58 |
+| Düzenli içerik üretimi | %15 | %32 | %28 |
+Kaynak: TÜİK Dijital Ekonomi Raporu, 2025
 
 ## İzmit'teki İşletmelerin Dijital Pazarlamada Yaptığı 5 Büyük Hata
 

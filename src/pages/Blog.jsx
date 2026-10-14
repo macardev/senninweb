@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { getAllBlogPosts } from "@/data/blogPosts"
 import useCanonicalUrl from "@/hooks/useCanonicalUrl"
+import useReleaseStaticBody from "@/hooks/useReleaseStaticBody"
 
 function upsertMetaByName(name, content) {
   let el = document.head.querySelector(`meta[name="${name}"]`)
@@ -41,6 +42,7 @@ export default function Blog() {
   const canonicalUrl = useCanonicalUrl()
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
+  useReleaseStaticBody(!loading)
 
   useEffect(() => {
     getAllBlogPosts().then(data => {
@@ -66,7 +68,7 @@ export default function Blog() {
     upsertMetaByProperty("og:description", "Web tasarım fiyatlarından SEO stratejilerine, işletmenizi Google'da büyütecek güncel rehberler ve pratik ipuçları. Her hafta yeni içerik keşfedin.")
     upsertMetaByProperty("og:type", "website")
     upsertMetaByProperty("og:url", canonicalUrl)
-    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.svg")
+    upsertMetaByProperty("og:image", "https://www.senninweb.com/og-image.jpg")
     upsertMetaByProperty("og:image:width", "1200")
     upsertMetaByProperty("og:image:height", "630")
 
@@ -140,7 +142,7 @@ export default function Blog() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-16">
-            {posts.map((post) => (
+            {posts.map((post, index) => (
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
@@ -168,7 +170,10 @@ export default function Blog() {
                         src={post.coverImage}
                         alt={post.coverImageAlt || post.shortTitle}
                         className="w-full aspect-video object-cover"
-                        loading="lazy"
+                        width="1200"
+                        height="630"
+                        loading={index < 2 ? "eager" : "lazy"}
+                        fetchpriority={index === 0 ? "high" : "auto"}
                       />
                     </div>
                   )}

@@ -93,7 +93,7 @@ function StepCard({ step, index, total }) {
         )}
       </div>
 
-      <div className="pb-14">
+      <div className="pb-14 reveal-3d">
         <div className="flex items-center gap-4 mb-3">
           <span className="text-[10px] tracking-[0.3em] uppercase text-gold-400 font-medium">
             {step.number}

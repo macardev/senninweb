@@ -1,34 +1,56 @@
-# SEO & Büyüme Hizmeti | SenninWeb
+# Sağlık Turizmi SEO: Klinikler İçin Uluslararası SEO
 
-Arama motoru optimizasyonu (SEO), web sitelerinin Google ve diğer arama motorlarında organik olarak üst sıralarda yer alması için yapılan çalışmaların bütünüdür. Teknik SEO, yerel SEO ve içerik optimizasyonu temel disiplinlerdir. 2020'li yılların ortasından itibaren AI destekli arama motorları (ChatGPT, Perplexity, Gemini) için optimizasyon (AEO/GEO) da SEO stratejilerinin parçası haline gelmiştir.
+> Sağlık turizmi SEO'su, kliniğinizin yabancı hastanın kendi dilinde ve kendi ülkesinin Google'ında bulunmasını sağlayan çok dilli, çok pazarlı arama motoru optimizasyonudur. Amacımız trafik değil, yurt dışından gelen sıcak hasta talebidir.
 
-## Kapsam
+URL: https://www.senninweb.com/hizmet/seo-ve-buyume
 
-### Yerel SEO & Google İşletme Profili
+Londra'daki bir hasta "dental implants turkey cost", Düsseldorf'taki bir hasta "Haartransplantation Türkei Erfahrungen" diye arar. **Sağlık turizmi SEO** çalışmamızla saç ekim merkezleri, diş klinikleri, estetik ve güzellik klinikleri ile veteriner klinikleri bu aramalarda, hastanın kendi dilinde karşısına çıkar. Reklam bütçesi bittiği gün duran trafik yerine, her ay birikerek büyüyen bir yabancı hasta akışı kurarız.
 
-Google İşletme Profili optimizasyonu, yerel anahtar kelime stratejisi, NAP tutarlılığı ve yerel backlink çalışmaları.
+## Hastanın arama diliyle anahtar kelime stratejisi
 
-### Teknik SEO & Site Altyapısı
+Her hedef ülke ve dil için üç niyeti ayrı ayrı hedefleriz: fiyat aramaları ("Zahnimplantat Türkei Kosten"), güven aramaları ("best hair transplant clinic istanbul reviews") ve bilgi aramaları ("veneers vs crowns"). Her niyet için ayrı bir sayfa kurgular, aynı metni şehir adı değiştirerek çoğaltan ve Google'ın cezalandırdığı "kapı sayfalarından" kaçınırız.
 
-Sayfa hızı optimizasyonu, mobil uyumluluk, Core Web Vitals iyileştirmeleri, XML sitemap, robots.txt, schema.org yapılandırılmış veri, canonical URL yönetimi.
+## Hedef ülkeden otorite: backlink ve dizinler
 
-### Anahtar Kelime & İçerik Stratejisi
+Almanya'da sıralama istiyorsanız Almanya'daki saygın sitelerin sizden bahsetmesi gerekir. Hedef ülkenin sağlık ve seyahat yayınlarından, yerel dizinlerinden ve diaspora platformlarından düzenli, kaliteli bağlantılar alırız. Toplu ve ucuz backlink paketleri kullanmayız; sağlık sektöründe kötü bağlantılar sizi yükseltmez, aksine geriye düşürür.
 
-Rekabet analizi, uzun kuyruklu anahtar kelimeler, topic cluster modeli ve düzenli blog içerikleri.
+## Teknik SEO ve yapay zekâ aramalarında görünürlük
 
-### AEO & GEO — AI Arama Motorları İçin Optimizasyon
+- Her dil için doğru *hreflang* ve kendi URL yapısı
+- MedicalClinic, Physician, MedicalProcedure ve FAQPage schema işaretlemeleri
+- Doktor tarafından incelenmiş tıbbi içerik ve güncelleme tarihleri (E-E-A-T)
+- Google İşletme Profili'nin İngilizce ve hedef dillerde optimizasyonu
+- ChatGPT, Gemini ve Claude gibi asistanların kaynak gösterebileceği net cevap blokları
 
-ChatGPT, Perplexity, Google AI Overviews ve diğer AI destekli arama motorlarında görünür olmak için içerik optimizasyonu. Schema.org işaretlemesi, soru-cevap formatlı içerikler.
+## Sponsorlu reklam mı, sağlık turizmi SEO'su mu?
 
-## Süreç
+|  | Yurt dışı hedefli reklam | Sağlık turizmi SEO'su |
+| --- | --- | --- |
+| İlk sonuç | Günler içinde | Genellikle 4–6 ay |
+| Maliyet | Her tıklama için ödeme | Aylık sabit yatırım |
+| Bütçe durunca | Talep de durur | Sıralamalar ve trafik kalır |
+| Güven algısı | "Reklam" etiketiyle görünür | Organik sonuç olarak görünür |
+| Doğru kullanım | Hızlı test ve ilk hastalar | Kalıcı ve kontrolü sizde olan kanal |
 
-1. **Analiz:** Mevcut durum, backlink profili ve rakip analizi
-2. **Strateji:** Hedeflere göre SEO yol haritası
-3. **Uygulama:** Teknik SEO iyileştirmeleri, içerik optimizasyonu, yerel SEO
-4. **Takip & Raporlama:** Aylık performans raporları, sıralama takibi
+## Ölçüm ve aylık rapor
 
-## Örnek Proje
+Her ay hedef ülkedeki gösterim ve sıralamaları, ülke ve sayfa bazında organik ziyaretleri ve en önemlisi WhatsApp ile form üzerinden gelen hasta taleplerini raporlarız. Hangi sayfanın, hangi ülkeden kaç yabancı hasta talebi getirdiğini net görürsünüz.
 
-### Mahir Akar (mahirakarremax.com)
+## Fiyatlandırma: kliniğinize özel aylık teklif
 
-Pendik, Kartal ve Tuzla bölgelerinde gayrimenkul danışmanı için lokal SEO odaklı kurumsal web sitesi.
+Web sitesi tasarımı, sağlık turizmi SEO'su ve WhatsApp hasta akışı tek bir aylık pakette, **Hasta Kazanım Paketi**'nde yer alır. Web sitesi ayrıca ücretlendirilmez. Teklifi hedef ülke ve dil sayısı, tedavi ve sayfa sayısı, hedef ülkeden alınacak bağlantı hacmi ile tasarım ve animasyon kapsamına göre hazırlarız. Önce WhatsApp'tan ücretsiz kısa bir analiz yapıyor, ardından kliniğinize özel net bir teklif sunuyoruz.
+
+## Sık sorulan sorular
+
+### Sağlık turizmi SEO'su ne kadar sürede sonuç verir?
+Yeni bir dilde ve ülkede ilk belirgin sonuçlar genellikle 4–6 ay içinde görülür. Saç ekimi gibi rekabetçi alanlarda bu süre uzayabilir. Kurulan altyapı ise kalıcıdır ve büyümeye devam eder.
+
+### Hangi ülkelere SEO yapıyorsunuz?
+Kliniğinizin fiyat avantajı, uçuş süresi, dil kapasitesi ve mevcut hasta verisine göre 1 ana ve 1 ikincil hedef ülke belirliyoruz. Ana ülkede ilk sayfaya oturduktan sonra yeni bir dil ekliyoruz.
+
+### Backlink çalışması pakete dahil mi?
+Evet. Hedef ülkeden kaliteli bağlantı ve dizin çalışmaları Hasta Kazanım Paketi'ne dahildir; bağlantı hacmi, kliniğinize özel teklifi belirleyen etkenlerden biridir.
+
+**Kliniğiniz hedef ülkede Google'da görünüyor mu?** Ücretsiz rehberi indirin; ardından sitenizi ve hedef ülkenizi inceleyip WhatsApp'tan kısa bir analiz gönderelim.
+
+Ücretsiz rehber: https://www.senninweb.com/rehber/yurt-disindan-hasta-cekme

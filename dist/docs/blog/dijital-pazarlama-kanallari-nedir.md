@@ -70,7 +70,14 @@ Facebook ve Instagram reklamları, Meta'nın güçlü demografik veri altyapıs�
 
 ### Platforma Göre Doğru Kanal Seçimi
 
-PlatformGüçlü Olduğu AlanKitleInstagramGörsel markalar, moda, yeme-içme18-35 yaşTikTokVideo içerik, viral büyüme13-30 yaşLinkedInB2B, kurumsal, kariyerProfesyonellerFacebookGeniş kitle, yerel işletmeler, gruplar25-55 yaşX (Twitter)Anlık gündem, düşünce liderliğiHaber/fikir takipçileriPinterestİlham, DIY, e-ticaretÇoğunlukla kadınlar, 25-45 yaş
+| Platform | Güçlü Olduğu Alan | Kitle |
+| --- | --- | --- |
+| Instagram | Görsel markalar, moda, yeme-içme | 18-35 yaş |
+| TikTok | Video içerik, viral büyüme | 13-30 yaş |
+| LinkedIn | B2B, kurumsal, kariyer | Profesyoneller |
+| Facebook | Geniş kitle, yerel işletmeler, gruplar | 25-55 yaş |
+| X (Twitter) | Anlık gündem, düşünce liderliği | Haber/fikir takipçileri |
+| Pinterest | İlham, DIY, e-ticaret | Çoğunlukla kadınlar, 25-45 yaş |
 
 Kimler için idealdir? B2C markalar, e-ticaret siteleri ve görsel ürün/hizmet sunanlar için kritik bir kanal. B2B için LinkedIn öncelikli olmalı.
 
@@ -170,7 +177,21 @@ Kimler için idealdir? Restoran, klinik, hukuk bürosu, kuaför, tamir servisi g
 
 ## Karşılaştırma Tablosu: Dijital Pazarlama Kanalları
 
-KanalMaliyetHızSürdürülebilirlikEn İyi Kullanım AmacıSEODüşük-OrtaYavaş (3-12 ay)Çok YüksekUzun vadeli organik büyümeGoogle Ads (SEM)YüksekAnlıkDüşükHızlı dönüşüm, lead almaSosyal Medya (Organik)DüşükOrtaOrtaMarka bilinirliği, toplulukSosyal Medya (Ücretli)Orta-YüksekHızlıDüşükHedefli kitleye erişimE-posta PazarlamasıÇok DüşükHızlıÇok YüksekSadakat, tekrar satışİçerik PazarlamasıOrtaYavaşÇok YüksekOtorite, SEO desteğiInfluencer PazarlamasıOrta-YüksekHızlıDüşükMarka tanıtımı, güvenAffiliate MarketingDüşük (komisyon)OrtaYüksekPerformansa dayalı satışVideo PazarlamaOrtaOrtaYüksekEtkileşim, marka hikayesiDisplay / RetargetingOrtaHızlıDüşükYeniden hedeflemePodcastDüşük-OrtaYavaşYüksekOtorite, niş kitlePush BildirimleriÇok DüşükAnlıkOrtaAnlık dönüşümYerel SEO / GBPDüşükOrtaYüksekYerel müşteri edinimi
+| Kanal | Maliyet | Hız | Sürdürülebilirlik | En İyi Kullanım Amacı |
+| --- | --- | --- | --- | --- |
+| SEO | Düşük-Orta | Yavaş (3-12 ay) | Çok Yüksek | Uzun vadeli organik büyüme |
+| Google Ads (SEM) | Yüksek | Anlık | Düşük | Hızlı dönüşüm, lead alma |
+| Sosyal Medya (Organik) | Düşük | Orta | Orta | Marka bilinirliği, topluluk |
+| Sosyal Medya (Ücretli) | Orta-Yüksek | Hızlı | Düşük | Hedefli kitleye erişim |
+| E-posta Pazarlaması | Çok Düşük | Hızlı | Çok Yüksek | Sadakat, tekrar satış |
+| İçerik Pazarlaması | Orta | Yavaş | Çok Yüksek | Otorite, SEO desteği |
+| Influencer Pazarlaması | Orta-Yüksek | Hızlı | Düşük | Marka tanıtımı, güven |
+| Affiliate Marketing | Düşük (komisyon) | Orta | Yüksek | Performansa dayalı satış |
+| Video Pazarlama | Orta | Orta | Yüksek | Etkileşim, marka hikayesi |
+| Display / Retargeting | Orta | Hızlı | Düşük | Yeniden hedefleme |
+| Podcast | Düşük-Orta | Yavaş | Yüksek | Otorite, niş kitle |
+| Push Bildirimleri | Çok Düşük | Anlık | Orta | Anlık dönüşüm |
+| Yerel SEO / GBP | Düşük | Orta | Yüksek | Yerel müşteri edinimi |
 
 ## Hangi Kanaldan Başlamalısınız?
 

@@ -13,8 +13,8 @@ const Kocaeli = lazy(() => import("@/pages/Kocaeli"))
 const SSS = lazy(() => import("@/pages/SSS"))
 const HizmetWebTasarim = lazy(() => import("@/pages/HizmetWebTasarim"))
 const HizmetSeoVeBuyume = lazy(() => import("@/pages/HizmetSeoVeBuyume"))
-const HizmetETicaret = lazy(() => import("@/pages/HizmetETicaret"))
 const HizmetDijitalPazarlama = lazy(() => import("@/pages/HizmetDijitalPazarlama"))
+const Rehber = lazy(() => import("@/pages/Rehber"))
 const NotFound = lazy(() => import("@/pages/NotFound"))
 
 export default function App() {
@@ -64,14 +64,14 @@ export default function App() {
               <HizmetSeoVeBuyume />
             </Suspense>
           } />
-          <Route path="/hizmet/eticaret-cozumleri" element={
-            <Suspense fallback={<div className="min-h-screen bg-black" />}>
-              <HizmetETicaret />
-            </Suspense>
-          } />
           <Route path="/hizmet/dijital-pazarlama" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <HizmetDijitalPazarlama />
+            </Suspense>
+          } />
+          <Route path="/rehber/yurt-disindan-hasta-cekme" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <Rehber />
             </Suspense>
           } />
           <Route path="*" element={

@@ -37,8 +37,24 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
     </noscript>
 
+    <!-- Adaptive motion tier before first paint (see src/utils/motionTier.js) -->
+    <script>
+      (function () {
+        var d = document.documentElement, n = navigator, c = n.connection || {}, t = 'full';
+        try {
+          if (matchMedia('(prefers-reduced-motion: reduce)').matches) t = 'off';
+          else {
+            var mem = n.deviceMemory, touch = matchMedia('(pointer: coarse)').matches;
+            if (c.saveData || /2g|3g/.test(c.effectiveType || '') || (mem && mem <= (touch ? 4 : 2)) || (n.hardwareConcurrency && n.hardwareConcurrency <= 2)) t = 'lite';
+          }
+          if (t === 'full' && sessionStorage.getItem('sw_motion') === 'lite') t = 'lite';
+        } catch (e) {}
+        d.setAttribute('data-motion', t);
+      })();
+    </script>
+
     <!-- Critical CSS for instant above-the-fold paint (render-blocking replaced at build) -->
-    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero-critical{align-items:center;background-color:#000;display:flex;min-height:700px;overflow:hidden;position:relative}@media (max-width:768px){.hero-critical{min-height:600px}}</style>
+    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}#hero-host:not([hidden]):not(:has([data-static-hero]))+#root{display:none}.sh{background:#0a0a0a;font-family:Inter,system-ui,-apple-system,sans-serif;overflow:hidden;position:relative}#hero-host .sh{padding-top:112px}.sh-inner{align-items:center;display:grid;gap:32px;margin:0 auto;max-width:90rem;padding:16px 24px 48px;position:relative;z-index:1}.sh-eyebrow{align-items:center;color:#d97706;display:inline-flex;font-size:12px;font-weight:500;gap:8px;letter-spacing:.2em;margin-bottom:32px;text-transform:uppercase}.sh-line{background:#d97706;height:1px;width:32px}.sh-h1{color:#fff;font-family:Syne,system-ui,-apple-system,sans-serif;font-size:2.25rem;font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:0 0 24px}.sh-gold{background:linear-gradient(135deg,#fcd34d,#d97706 50%,#b45309);-webkit-background-clip:text;background-clip:text;display:block;-webkit-text-fill-color:transparent}.sh-sub{color:hsla(0,0%,100%,.6);font-size:16px;line-height:1.625;margin:0 0 32px;max-width:32rem}.sh-ctas{display:flex;flex-direction:column;gap:12px;margin-bottom:40px}.sh-btn{align-items:center;border-radius:9999px;display:inline-flex;font-size:16px;font-weight:600;gap:10px;height:56px;justify-content:center;padding:0 32px;text-decoration:none;transition:transform .18s cubic-bezier(.2,0,0,1),background-color .2s,border-color .2s;white-space:nowrap}.sh-btn:active{transform:scale(.97)}.sh-btn--gold{background:#d97706;color:#0a0a0a}.sh-btn--gold:hover{background:#fbbf24}.sh-btn--wa{border:1px solid rgba(37,211,102,.45);color:hsla(0,0%,100%,.85);font-weight:500}.sh-btn--wa:hover{background:rgba(37,211,102,.1);border-color:#25d366}.sh-stats{border-top:1px solid hsla(0,0%,100%,.08);display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin:0;padding-top:28px}.sh-stats dt{color:#fff;font-family:Syne,system-ui,sans-serif;font-size:18px;font-weight:700;margin-bottom:2px}.sh-stats dd{color:hsla(0,0%,100%,.6);font-size:12px;margin:0}.sh-visual{display:none}@media (min-width:640px){.sh-h1{font-size:3rem}.sh-ctas{flex-direction:row}}@media (min-width:769px){.sh{align-items:center;display:flex;min-height:100vh}.sh-inner{padding:80px 48px;width:100%}.sh-h1{font-size:3.75rem}.sh-sub{font-size:18px;margin-bottom:40px}.sh-btn:hover{transform:scale(1.03)}.sh-stats{gap:32px;margin-top:24px;padding-top:32px}.sh-stats dt{font-size:20px}}@media (min-width:1024px){.sh-inner{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.sh-h1{font-size:3.6rem}.sh-visual{display:block;min-height:560px}}@media (min-width:1536px){.sh-h1{font-size:4.5rem}}</style>
 
     <!-- Speculation Rules API: instant next-page navigations (progressive enhancement) -->
     <script type="speculationrules">
@@ -49,51 +65,117 @@
       }]
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-U2UgQLgg.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-qGFduViA.js">
-    <link rel="modulepreload" crossorigin href="/assets/layout-C0ZQ1qdF.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-DesignEditorial-Cet4Iyp2.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-Hero-WVwr54Sk.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-BlogCTA-B1jwzkMF.js">
-    <link rel="modulepreload" crossorigin href="/assets/page-Home-Bv7BRjfK.js">
-    <link rel="preload" href="/assets/index-Dw0DEcB_.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-Dw0DEcB_.css"></noscript>
+    <script type="module" crossorigin src="/assets/index-cow3BmcH.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-ru--Vhn1.js">
+    <link rel="modulepreload" crossorigin href="/assets/layout-Bo3aHkHr.js">
+    <link rel="modulepreload" crossorigin href="/assets/section-Hero-DavpDXWh.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-Home-BX5RZnEQ.js">
+    <link rel="preload" href="/assets/index-QLdG_k7r.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-QLdG_k7r.css"></noscript>
     <meta property="og:title" content="Dijital Pazarlama Kanalları Nelerdir? Kapsamlı Rehber (2026)">
   <meta property="og:description" content="Dijital pazarlama kanalları nelerdir? SEO, SEM, sosyal medya, e-posta, içerik pazarlaması ve daha 13 kanal. 2026'da hangi kanallarla müşteri kazanacağınızı öğrenin.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.senninweb.com/blog/dijital-pazarlama-kanallari-nedir">
-  <meta property="og:image" content="https://www.senninweb.com/og-image.svg">
+  <meta property="og:image" content="https://www.senninweb.com/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dijital Pazarlama Kanalları Nelerdir? Kapsamlı Rehber (2026)">
   <meta name="twitter:description" content="Dijital pazarlama kanalları nelerdir? SEO, SEM, sosyal medya, e-posta, içerik pazarlaması ve daha 13 kanal. 2026'da hangi kanallarla müşteri kazanacağınızı öğrenin.">
+  <script type="application/ld+json" data-prerender>{"@context":"https://schema.org","@type":"Article","headline":"Dijital Pazarlama Kanalları Nelerdir? Kapsamlı Rehber (2026)","description":"Dijital pazarlama kanalları nelerdir? SEO, SEM, sosyal medya, e-posta, içerik pazarlaması ve daha 13 kanal. 2026'da hangi kanallarla müşteri kazanacağınızı öğrenin.","image":"https://www.senninweb.com/images/blog/dijital-pazarlama-kanallari-nedir.webp","datePublished":"2026-06-28","dateModified":"2026-06-28","inLanguage":"tr-TR","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.senninweb.com/blog/dijital-pazarlama-kanallari-nedir"},"author":{"@type":"Person","name":"Çağatay Samet Macar","url":"https://www.senninweb.com/hakkimizda"},"publisher":{"@type":"Organization","name":"SenninWeb","logo":{"@type":"ImageObject","url":"https://www.senninweb.com/favicon/favicon-48x48.png"}}}</script>
   </head>
   <body>
     <div class="mesh-base"></div>
     <div class="mesh-glow"></div>
-    <div id="root">
-      <!-- ⚡ Pre-rendered Hero for instant FCP — React replaces this on hydration -->
-      <div class="hero-critical" style="padding:0 24px">
-        <div style="max-width:1280px;margin:0 auto;width:100%">
-          <span style="display:inline-flex;align-items:center;gap:8px;color:#D97706;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:32px;font-family:system-ui,-apple-system,sans-serif">
-            <span style="width:32px;height:1px;background:#D97706;display:inline-block"></span>
-            Premium Web Tasarım &amp; SEO
-          </span>
-          <h1 style="margin:0 0 24px;line-height:1.05;letter-spacing:-0.03em;font-family:system-ui,-apple-system,sans-serif">
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">Sennin Web ile işletmeniz için</span>
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">profesyonel</span>
-            <span class="text-gold-gradient" style="display:block;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">web tasarım ve SEO hizmeti</span>
-          </h1>
-          <p style="color:rgba(255,255,255,0.5);font-size:16px;line-height:1.625;margin:0 0 40px;max-width:512px;font-family:system-ui,-apple-system,sans-serif">
-            Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde rakiplerinizin önüne geçiriyoruz.
-          </p>
-          <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;background:#D97706;color:#000;font-size:16px;font-weight:600;text-align:center;font-family:system-ui,-apple-system,sans-serif">Ücretsiz Teklif Al</span>
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:16px;font-weight:500;text-align:center;font-family:system-ui,-apple-system,sans-serif">Blog'a Git</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Static hero (src/content/heroMarkup.js) paints before JS; <Hero /> adopts this node instead of re-rendering it.
+         On other routes postbuild swaps the block between the markers for that page's static body. -->
+    <div id="hero-host"><!--prerender:start-->
+<main style="max-width:760px;margin:0 auto;padding:140px 24px 80px;font-family:system-ui,-apple-system,sans-serif;color:rgba(255,255,255,0.75);line-height:1.7"><article><p style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#D97706">Dijital Pazarlama · 12 dk</p><h1 style="color:#FFF;font-size:clamp(2rem,4.5vw,3.25rem);line-height:1.1;letter-spacing:-0.02em;margin:0 0 20px;font-weight:700">Dijital Pazarlama Kanalları Nelerdir? Kapsamlı Rehber (2026)</h1><p><time datetime="2026-06-28">2026-06-28</time> · senninweb.com Ekibi</p><p style="font-size:1.25rem;color:#FFF">Dijital Pazarlama Kanalları Nelerdir? Kapsamlı Rehber (2026)</p><p>SEO'dan sosyal medyaya, e-posta pazarlamasından influencer iş birliklerine kadar tüm kanalları keşfedin.</p>
+<p>Dijital pazarlama kanalları, markaların ve işletmelerin internet üzerinden hedef kitlelerine ulaşmak için kullandığı tüm platformlar, araçlar ve yöntemlerdir. SEO'dan sosyal medyaya, e-posta pazarlamasından influencer iş birliklerine kadar uzanan bu geniş ekosistem, doğru kanal seçimi yapıldığında işletmenizi rakiplerinizin çok önüne taşıyabilir.</p>
+<blockquote><strong>Kısaca</strong> Dijital pazarlama kanalı = potansiyel müşterinize dijital ortamda dokunduğunuz her nokta.</blockquote>
+<p>Bu rehberde tüm dijital pazarlama kanallarını tek tek inceleyecek, hangisinin ne zaman işe yaradığını anlatacak ve sona doğru da karşılaştırma tablosuyla hangisini seçmeniz gerektiğine dair net bir yön haritası çıkaracağız.</p>
+<h2 style="color:#FFF">1. SEO (Arama Motoru Optimizasyonu)</h2>
+<p>SEO, web sitenizin Google, Yandex veya Bing gibi arama motorlarında organik (ücretli olmayan) sıralamada üst sıralara çıkmasını sağlamak için yapılan tüm teknik ve içerik çalışmalarının bütünüdür.</p>
+<h3 style="color:#FFF">SEO Nasıl Çalışır?</h3>
+<p>Arama motorları, kullanıcılar bir şey aradığında binlerce faktörü değerlendirerek hangi web sitesinin önce gösterileceğine karar verir. Bu faktörlerin başında şunlar gelir:</p>
+<ul><li>Teknik SEO: Sayfa hızı, mobil uyumluluk, HTTPS, site yapısı</li><li>İçerik SEO: Anahtar kelime kullanımı, içeriğin derinliği ve kalitesi</li><li>Off-page SEO: Başka sitelerden aldığınız backlinkler, marka otoritesi</li><li>Kullanıcı deneyimi (UX): Bounce rate, ortalama oturum süresi, sayfa içi tıklamalar</li></ul>
+<h3 style="color:#FFF">SEO'nun Avantajları</h3>
+<p>SEO'nun en büyük avantajı, reklam bütçesi olmadan sürdürülebilir ve uzun vadeli trafik elde etmenizi sağlamasıdır. Google'da ilk sayfada çıkan bir içerik, yıllarca sizi besleyebilir. <a href="/blog/kucuk-isletmeler-google-da-gorunurluk-2026">Küçük işletmeler için Google'da görünür olmanın 7 yolunu</a> anlattığımız rehberimizde bu konuyu detaylıca ele aldık. Özellikle bilgilendirici içerikler (blog yazıları, rehberler) ve ürün kategorisi sayfaları SEO için güçlü birer yatırımdır.</p>
+<h3 style="color:#FFF">SEO'nun Dezavantajları</h3>
+<p>Sonuçlar hemen gelmiyor. Yeni bir web sitesinde SEO çalışmaları 3-12 ay arasında sonuç vermeye başlar. Ayrıca algoritma güncellemeleri sıralamaları ani değiştirebilir.</p>
+<p><strong>Kimler için idealdir?</strong> Her büyüklükteki işletme için uygundur; ancak başlangıç aşamasında sabır gerektirdiğinden uzun vadeli düşünebilen markalar için önceliklidir. Domain seçiminden içerik stratejisine kadar her adımda doğru kararlar almak için <a href="/blog/2026-seo-stratejileri-domain-secimi">SEO odaklı domain seçimi rehberimize</a> de göz atabilirsiniz.</p>
+<h2 style="color:#FFF">2. SEM / Google Ads (Ücretli Arama Reklamları)</h2>
+<p>SEM (Search Engine Marketing), arama motorlarında belirli anahtar kelimeler için ücret ödeyerek reklam gösterme yöntemidir. Google Ads bu kanalın en yaygın aracıdır.</p>
+<h3 style="color:#FFF">SEM Nasıl Çalışır?</h3>
+<p>Açık artırma mantığıyla çalışır. Belirli bir anahtar kelime için teklif verirsiniz; reklamınız arama sonuçlarının en üstünde veya altında "Sponsorlu" etiketi ile görünür. Tıklandığında ödeme yaparsınız — buna PPC (Pay Per Click) denir.</p>
+<h3 style="color:#FFF">SEM'in Avantajları</h3>
+<ul><li>Anında görünürlük: Kampanya başlatır başlatmaz trafik almaya başlarsınız</li><li>Hedefleme gücü: Konum, cihaz, saat, demografi bazında ince ayar yapabilirsiniz</li><li>Ölçülebilirlik: Her tıklamanın, dönüşümün ve harcamanın tam verisi elinizde</li></ul>
+<h3 style="color:#FFF">SEM'in Dezavantajları</h3>
+<p>Reklam bütçesi kesildiğinde trafik de kesilir. Bazı sektörlerde tıklama başı maliyetler (CPC) oldukça yüksek olabilir; sigorta, hukuk, finans gibi alanlarda tek tıklama 50-100 TL'yi geçebilir.</p>
+<p>Kimler için idealdir? Hızlı sonuç isteyen, belirli bir bütçesi olan ve dönüşüm odaklı çalışan e-ticaret siteleri, yerel işletmeler ve B2B şirketleri.</p>
+<h2 style="color:#FFF">3. Sosyal Medya Pazarlaması (SMM)</h2>
+<p>Instagram, TikTok, Facebook, LinkedIn, X (Twitter), Pinterest gibi platformlarda hem organik içerik üretimi hem de ücretli reklamlarla yürütülen pazarlama faaliyetlerinin tümüdür.</p>
+<h3 style="color:#FFF">Organik Sosyal Medya</h3>
+<p>Marka bilinirliği oluşturmak, topluluk yönetmek ve müşteri ilişkileri kurmak için etkilidir. Algoritmaların organik erişimi kısıtladığını unutmamak gerekir; bu nedenle sadece organik içerikle büyümek eskiye göre çok daha yavaş bir süreçtir.</p>
+<h3 style="color:#FFF">Ücretli Sosyal Medya (Social Ads)</h3>
+<p>Facebook ve Instagram reklamları, Meta'nın güçlü demografik veri altyapısı sayesinde çok spesifik kitlelere ulaşmanızı sağlar. TikTok Ads, genç kitleler için giderek daha dominant bir kanal haline geliyor.</p>
+<h3 style="color:#FFF">Platforma Göre Doğru Kanal Seçimi</h3>
+<p><div class="overflow-x-auto my-6"><table class="w-full text-sm text-white/65 border-collapse"><thead><tr class="border-b border-white/10"><th class="text-left py-3 pr-6 font-semibold text-white">Platform</th><th class="text-left py-3 pr-6 font-semibold text-white">Güçlü Olduğu Alan</th><th class="text-left py-3 font-semibold text-white">Kitle</th></tr></thead><tbody><tr class="border-b border-white/10"><td class="py-3 pr-6">Instagram</td><td class="py-3 pr-6">Görsel markalar, moda, yeme-içme</td><td class="py-3">18-35 yaş</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-6">TikTok</td><td class="py-3 pr-6">Video içerik, viral büyüme</td><td class="py-3">13-30 yaş</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-6">LinkedIn</td><td class="py-3 pr-6">B2B, kurumsal, kariyer</td><td class="py-3">Profesyoneller</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-6">Facebook</td><td class="py-3 pr-6">Geniş kitle, yerel işletmeler, gruplar</td><td class="py-3">25-55 yaş</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-6">X (Twitter)</td><td class="py-3 pr-6">Anlık gündem, düşünce liderliği</td><td class="py-3">Haber/fikir takipçileri</td></tr><tr><td class="py-3 pr-6">Pinterest</td><td class="py-3 pr-6">İlham, DIY, e-ticaret</td><td class="py-3">Çoğunlukla kadınlar, 25-45 yaş</td></tr></tbody></table></div></p>
+<p>Kimler için idealdir? B2C markalar, e-ticaret siteleri ve görsel ürün/hizmet sunanlar için kritik bir kanal. B2B için LinkedIn öncelikli olmalı.</p>
+<h2 style="color:#FFF">4. İçerik Pazarlaması (Content Marketing)</h2>
+<p>İçerik pazarlaması, değerli, alakalı ve tutarlı içerik üretip dağıtarak hedef kitleyi çekmek ve elde tutmak amacıyla yapılan stratejik pazarlama yaklaşımıdır. <a href="/blog/dijital-pazarlama-kanallari-nedir">Bu rehberin kendisi de</a> iyi bir içerik pazarlaması örneğidir — her kanalı detaylıca ele alarak okuyucuya değer sunmayı hedefler.</p>
+<h3 style="color:#FFF">İçerik Pazarlamasının Biçimleri</h3>
+<ul><li>Blog yazıları ve rehberler</li><li>Video içerikler (YouTube, Reels, TikTok)</li><li>Podcast yayınları</li><li>Infografikler</li><li>E-kitaplar ve beyaz kitaplar (whitepaper)</li><li>Webinarlar ve canlı yayınlar</li><li>Vaka çalışmaları (case study)</li></ul>
+<h3 style="color:#FFF">Neden Bu Kadar Önemli?</h3>
+<blockquote><strong>3x</strong> İçerik pazarlaması, geleneksel pazarlamaya göre 3 kat daha fazla lead üretir ve maliyeti %62 daha düşüktür. Üstelik SEO ve sosyal medya kanallarının da yakıtıdır — iyi içerik olmadan hiçbir kanal tam verimli çalışmaz. <cite>Demand Metric, Content Marketing Infographic</cite></blockquote>
+<h3 style="color:#FFF">İçerik Huni Modeli</h3>
+<p>İçerikleri satın alma hunisine göre kurgulamak kritiktir:</p>
+<ul><li>TOFU (Top of Funnel): Farkındalık içerikleri — "Dijital pazarlama nedir?" gibi geniş kitleye hitap eden yazılar</li><li>MOFU (Middle of Funnel): Değerlendirme içerikleri — "SEO mu, Google Ads mi?" gibi karşılaştırmalar</li><li>BOFU (Bottom of Funnel): Dönüşüm içerikleri — "Ajansımız nasıl çalışır?" gibi satışı destekleyen içerikler</li></ul>
+<h2 style="color:#FFF">5. E-Posta Pazarlaması (Email Marketing)</h2>
+<p>E-posta pazarlaması, sahip olduğunuz bir abone listesine hedefli ve kişiselleştirilmiş mesajlar göndererek satış, sadakat ve dönüşüm elde etme yöntemidir.</p>
+<h3 style="color:#FFF">Neden Hâlâ Güçlü Bir Kanal?</h3>
+<blockquote><strong>$42</strong> E-posta pazarlamasının ortalama ROI'si (Yatırım Getirisi) harcanan her 1 dolar için 36-42 dolar arasındadır. Sosyal medya platformları değişir, algoritmalar kısıtlar — ama e-posta listeniz sizin mülkünüzdür. <cite>Litmus, Email Marketing ROI Report</cite></blockquote>
+<h3 style="color:#FFF">E-Posta Pazarlaması Türleri</h3>
+<ul><li>Newsletter (Bülten): Düzenli aralıklarla gönderilen bilgilendirici e-postalar</li><li>Hoş geldin serisi: Yeni aboneye otomatik olarak gönderilen onboarding e-postaları</li><li>Terk edilmiş sepet e-postaları: E-ticarette kritik bir dönüşüm aracı</li><li>Promosyon e-postaları: İndirim ve kampanya duyuruları</li><li>Yeniden etkileşim kampanyaları: Pasif kullanıcıları geri kazanmak için</li></ul>
+<h2 style="color:#FFF">6. Influencer Pazarlaması</h2>
+<p>Influencer pazarlaması, belirli bir kitleye sahip içerik üreticileriyle iş birliği yaparak ürün veya hizmetinizi tanıtma stratejisidir.</p>
+<h3 style="color:#FFF">Influencer Türleri</h3>
+<ul><li>Nano influencer (1K-10K): Yüksek etkileşim, niş kitle, uygun maliyet</li><li>Mikro influencer (10K-100K): Güvenilirlik yüksek, hedefli kitle</li><li>Makro influencer (100K-1M): Geniş erişim, yüksek maliyet</li><li>Mega influencer / Ünlü (1M+): Marka bilinirliği için güçlü ama pahalı</li></ul>
+<h2 style="color:#FFF">7. Affiliate Marketing (Ortaklık Pazarlaması)</h2>
+<p>Affiliate marketing, üçüncü taraf yayıncıların (bloggerlar, YouTube kanalları, karşılaştırma siteleri) sizin ürün ya da hizmetinizi tanıtması karşılığında her satış ya da yönlendirme için komisyon ödendiği modeldir.</p>
+<h3 style="color:#FFF">Nasıl Çalışır?</h3>
+<p>Affiliate, size özel bir takip linki alır. Bu link üzerinden gelen ziyaretçi satın alma yaparsa, affiliate komisyonunu kazanır. Siz sadece sonuç için ödersiniz. Performansa dayalı bir model olduğu için düşük risklidir. Amazon, Booking.com ve Airbnb'nin büyümesinde affiliate pazarlama kritik bir rol oynamıştır.</p>
+<h2 style="color:#FFF">8. Video Pazarlama</h2>
+<p>YouTube, TikTok, Instagram Reels ve LinkedIn Video gibi platformlarda üretilen video içeriklerle gerçekleştirilen pazarlama faaliyetleridir.</p>
+<blockquote><strong>%95</strong> İzleyiciler, bir video izledikten sonra ürün veya hizmet hakkındaki bilgiyi %95 oranında akılda tutuyor. Video içerik, metin ve görselden çok daha yüksek etkileşim ve hatırlanma oranı sağlar. <cite>Insivia, Video Statistics</cite></blockquote>
+<p>YouTube ayrıca dünyada ikinci büyük arama motoru konumundadır; bu da video içeriklerin SEO değerini ciddi şekilde artırmaktadır.</p>
+<h2 style="color:#FFF">9. Görüntülü Reklamlar (Display Advertising)</h2>
+<p>Google Display Network, programatik reklam ağları veya doğrudan medya satın alma aracılığıyla web sitelerinde, uygulamalarda ve platformlarda banner, video veya etkileşimli reklam gösterimidir.</p>
+<h3 style="color:#FFF">Retargeting (Yeniden Hedefleme)</h3>
+<p>Display reklamların en güçlü kullanım alanı retargeting'dir. Web sitenizi ziyaret edip çıkan kullanıcılara, internette dolaşırken sitenizin reklamlarını göstererek geri döndürürsünüz. E-ticaret sitelerinde sepet terk oranını önemli ölçüde düşürür.</p>
+<h2 style="color:#FFF">10. Podcast Pazarlaması</h2>
+<p>Podcast'ler, dinleyicilerle derinlemesine bağ kurmanın en güçlü araçlarından biridir. Hem kendi podcast'inizle otorite inşa edebilir hem de başka podcast'lere sponsor olarak ya da konuk olarak markanızı tanıtabilirsiniz. Türkiye'de podcast dinleyici sayısı her yıl önemli ölçüde artmakta; özellikle iş, kişisel gelişim ve teknoloji kategorileri güçlü büyüme göstermektedir.</p>
+<h2 style="color:#FFF">11. Anlık Bildirimler (Push Notifications)</h2>
+<p>Web sitesi veya uygulama üzerinden kullanıcılara onayları dahilinde anlık mesaj gönderme yöntemidir. Açılma oranları e-postaya göre genellikle daha yüksektir çünkü bildirim doğrudan ekrana düşer.</p>
+<h2 style="color:#FFF">12. Yerel SEO ve Google Business Profile</h2>
+<p>Fiziksel konumu olan işletmeler için yerel arama optimizasyonu ayrı bir kanal olarak değerlendirilmelidir. "Yakınımdaki kafe", "İstanbul web ajansı" gibi aramalarda öne çıkmak için Google Business Profile kaydınızın eksiksiz ve güncel olması, yerel backlinklerin güçlü olması ve müşteri yorumlarının yönetilmesi kritiktir. <a href="/blog/izmit-dijital-pazarlama-kocaeli">İzmit ve Kocaeli bölgesinde dijital pazarlama stratejileri</a> rehberimizde yerel SEO'nun nasıl çalıştığını detaylıca anlattık.</p>
+<p>Kimler için idealdir? Restoran, klinik, hukuk bürosu, kuaför, tamir servisi gibi yerel hizmet veren tüm işletmeler.</p>
+<h2 style="color:#FFF">Karşılaştırma Tablosu: Dijital Pazarlama Kanalları</h2>
+<p><div class="overflow-x-auto my-6"><table class="w-full text-sm text-white/65 border-collapse"><thead><tr class="border-b border-white/10"><th class="text-left py-3 pr-4 font-semibold text-white">Kanal</th><th class="text-left py-3 pr-4 font-semibold text-white">Maliyet</th><th class="text-left py-3 pr-4 font-semibold text-white">Hız</th><th class="text-left py-3 pr-4 font-semibold text-white">Sürdürülebilirlik</th><th class="text-left py-3 font-semibold text-white">En İyi Kullanım Amacı</th></tr></thead><tbody><tr class="border-b border-white/10"><td class="py-3 pr-4">SEO</td><td class="py-3 pr-4">Düşük-Orta</td><td class="py-3 pr-4">Yavaş (3-12 ay)</td><td class="py-3 pr-4">Çok Yüksek</td><td class="py-3">Uzun vadeli organik büyüme</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Google Ads (SEM)</td><td class="py-3 pr-4">Yüksek</td><td class="py-3 pr-4">Anlık</td><td class="py-3 pr-4">Düşük</td><td class="py-3">Hızlı dönüşüm, lead alma</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Sosyal Medya (Organik)</td><td class="py-3 pr-4">Düşük</td><td class="py-3 pr-4">Orta</td><td class="py-3 pr-4">Orta</td><td class="py-3">Marka bilinirliği, topluluk</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Sosyal Medya (Ücretli)</td><td class="py-3 pr-4">Orta-Yüksek</td><td class="py-3 pr-4">Hızlı</td><td class="py-3 pr-4">Düşük</td><td class="py-3">Hedefli kitleye erişim</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">E-posta Pazarlaması</td><td class="py-3 pr-4">Çok Düşük</td><td class="py-3 pr-4">Hızlı</td><td class="py-3 pr-4">Çok Yüksek</td><td class="py-3">Sadakat, tekrar satış</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">İçerik Pazarlaması</td><td class="py-3 pr-4">Orta</td><td class="py-3 pr-4">Yavaş</td><td class="py-3 pr-4">Çok Yüksek</td><td class="py-3">Otorite, SEO desteği</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Influencer Pazarlaması</td><td class="py-3 pr-4">Orta-Yüksek</td><td class="py-3 pr-4">Hızlı</td><td class="py-3 pr-4">Düşük</td><td class="py-3">Marka tanıtımı, güven</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Affiliate Marketing</td><td class="py-3 pr-4">Düşük (komisyon)</td><td class="py-3 pr-4">Orta</td><td class="py-3 pr-4">Yüksek</td><td class="py-3">Performansa dayalı satış</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Video Pazarlama</td><td class="py-3 pr-4">Orta</td><td class="py-3 pr-4">Orta</td><td class="py-3 pr-4">Yüksek</td><td class="py-3">Etkileşim, marka hikayesi</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Display / Retargeting</td><td class="py-3 pr-4">Orta</td><td class="py-3 pr-4">Hızlı</td><td class="py-3 pr-4">Düşük</td><td class="py-3">Yeniden hedefleme</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Podcast</td><td class="py-3 pr-4">Düşük-Orta</td><td class="py-3 pr-4">Yavaş</td><td class="py-3 pr-4">Yüksek</td><td class="py-3">Otorite, niş kitle</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-4">Push Bildirimleri</td><td class="py-3 pr-4">Çok Düşük</td><td class="py-3 pr-4">Anlık</td><td class="py-3 pr-4">Orta</td><td class="py-3">Anlık dönüşüm</td></tr><tr><td class="py-3 pr-4">Yerel SEO / GBP</td><td class="py-3 pr-4">Düşük</td><td class="py-3 pr-4">Orta</td><td class="py-3 pr-4">Yüksek</td><td class="py-3">Yerel müşteri edinimi</td></tr></tbody></table></div></p>
+<h2 style="color:#FFF">Hangi Kanaldan Başlamalısınız?</h2>
+<p>Tek bir doğru cevap yok — ama birkaç pratik kural var:</p>
+<ul><li><strong>Bütçe kısıtlıysa:</strong> SEO + İçerik Pazarlaması + E-posta ile başlayın. <a href="/blog/kucuk-isletmeler-google-da-gorunurluk-2026">Google'da görünürlük rehberimizdeki</a> adımları uygulayarak uzun vadede en yüksek ROI'yi elde edebilirsiniz.</li><li><strong>Hızlı sonuç gerekiyorsa:</strong> Google Ads veya Meta Ads ile başlayın, ölçümleri yakından takip edin.</li><li><strong>B2B iseniz:</strong> LinkedIn reklamları + içerik pazarlaması + e-posta güçlü bir üçlü oluşturur.</li><li><strong>E-ticaret iseniz:</strong> Google Alışveriş Reklamları + Meta Ads + E-posta (terk edilmiş sepet) + SEO birlikte çalışmalıdır. <a href="/blog/web-sitesi-tasarim-fiyatlari-2026">Web sitesi tasarım fiyatları</a> rehberimizde e-ticaret sitelerinin maliyetlerini detaylıca inceledik.</li><li><strong>Yerel işletme iseniz:</strong> Google Business Profile + Yerel SEO + Instagram organik içerik iyi bir başlangıç noktasıdır. <a href="/blog/kucuk-isletme-web-sitesi">Küçük işletme web sitesi stratejileri</a> yazımızda yerel müşteri kazanmanın yollarını anlattık.</li></ul>
+<p>Birden fazla kanalı aynı anda yönetmek kaynak gerektirdiğinden, başlangıçta 2-3 kanalda derinlemesine çalışmak, 10 kanalda yüzeysel kalmaktan çok daha etkilidir.</p>
+<h2 style="color:#FFF">Dijital Pazarlamada Başarının 3 Temel İlkesi</h2>
+<p>Hangi kanalı seçerseniz seçin, şu üç ilke her zaman geçerlidir:</p>
+<ul><li><strong>1. Veriyle karar alın:</strong> Google Analytics 4, Search Console, Meta Ads Manager gibi araçlardan gelen verileri düzenli takip edin. Sezgiyle değil, veriyle optimize edin.</li><li><strong>2. Tutarlılık:</strong> Dijital pazarlama, tek seferlik bir kampanya değil; sürekli ve tutarlı bir süreçtir. İçerik takvimi, yayın planı ve bütçe planlaması olmadan ilerleme sağlamak güçtür.</li><li><strong>3. Test edin ve öğrenin:</strong> A/B testleri yapın. Farklı reklam metinleri, farklı görseller, farklı e-posta konu satırları deneyin. Dijital pazarlamanın güzelliği: her şey ölçülebilir, her şey iyileştirilebilir.</li></ul>
+<h2 style="color:#FFF">Kaynaklar</h2>
+<ul><li>HubSpot, State of Marketing Report</li><li>Litmus, Email Marketing ROI Report</li><li>Demand Metric, Content Marketing Infographic</li><li>Insivia, Video Statistics</li><li>Google, Search Engine Optimization Starter Guide</li><li>Meta Business, Advertising Guide</li><li>Statista, Digital Advertising Spending Worldwide</li></ul>
+<h2 style="color:#FFF">Sonuç</h2>
+<p>Dijital pazarlama kanalları, modern işletmelerin büyümesinin omurgasını oluşturmaktadır. SEO'dan sosyal medyaya, e-posta pazarlamasından influencer iş birliklerine kadar her kanal, farklı hedefler ve farklı kitleler için farklı değerler sunar.</p><ul><li>İşletmenizin hedeflerine, bütçesine ve kitle profiline en uygun kanalları seçin</li><li>2-3 kanalda derinlemesine uzmanlaşın, hepsini birden yapmaya çalışmayın</li><li>Veriyle karar alın, test edin, optimize edin</li></ul><p>Seçtiğiniz kanallarda gerçekten iyi iş çıkarmak, hepsini yapmaya çalışmaktan her zaman daha iyi sonuç getirir.</p>
+<p>Bu konuda destek almak, strateji geliştirmek veya kanallarınızı profesyonel yönetmek istiyorsanız senninweb.com ekibimizle iletişime geçebilirsiniz.</p>
+<p style="color:#FFF"><strong>Dijital pazarlama kanallarınızı profesyonel yönetmek mi istiyorsunuz?</strong> <a href="/#contact" style="color:#FCD34D">Bizimle iletişime geçin, size özel bir strateji oluşturalım!</a></p></article><nav aria-label="Site" style="margin-top:40px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px"><a href="/hizmet/web-tasarim" style="color:#FCD34D">Sağlık Turizmi Web Sitesi</a><a href="/hizmet/seo-ve-buyume" style="color:#FCD34D">Sağlık Turizmi SEO</a><a href="/hizmet/dijital-pazarlama" style="color:#FCD34D">Sağlık Turizmi Dijital Pazarlama</a><a href="/kocaeli" style="color:#FCD34D">Kocaeli</a><a href="/bilecik" style="color:#FCD34D">Bilecik</a><a href="/rehber/yurt-disindan-hasta-cekme" style="color:#FCD34D">Yurt Dışından Hasta Çekme Rehberi</a><a href="/blog" style="color:#FCD34D">Blog</a><a href="/sss" style="color:#FCD34D">SSS</a><a href="/#contact" style="color:#FCD34D">Ücretsiz Teklif Al</a></nav></main>
+<!--prerender:end--></div>
+    <div id="root"></div>
 
     <script type="application/ld+json">
     {
@@ -103,8 +185,8 @@
       "name": "SenninWeb",
       "url": "https://www.senninweb.com",
       "logo": "https://www.senninweb.com/favicon/favicon-48x48.png",
-      "image": "https://www.senninweb.com/og-image.svg",
-      "description": "KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
+      "image": "https://www.senninweb.com/og-image.jpg",
+      "description": "Yurt dışından hasta çekmek isteyen sağlık klinikleri için size özel web sitesi, uluslararası SEO ve hasta kazanım ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
       "email": "business@senninweb.com",
       "telephone": "+90 (531) 405 15 84",
       "foundingDate": "2025",

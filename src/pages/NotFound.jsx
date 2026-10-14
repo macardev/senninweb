@@ -1,7 +1,9 @@
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
+import useReleaseStaticBody from "@/hooks/useReleaseStaticBody"
 
 export default function NotFound() {
+  useReleaseStaticBody()
   useEffect(() => {
     document.title = "Sayfa Bulunamadı | SenninWeb"
     const desc = document.head.querySelector('meta[name="description"]')

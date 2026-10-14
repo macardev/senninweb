@@ -44,7 +44,14 @@ Bir web sitesinin ne kadar kazandırdığını tahmin etmek için kullanılan te
 
 Türkiye'de e-ticaret sitelerinin ortalama dönüşüm oranı genellikle %1,2 ile %2,5 aralığındadır. Bu formülü örnek bir senaryo üzerinden inceleyelim:
 
-> **Örnek Hesaplama** — DeğişkenMevcut Durumİyileştirme SonrasıAylık ziyaretçi100.000100.000Dönüşüm oranı%1,5%2,5Ortalama sepet tutarı1.500 TL1.500 TLAylık ciro2.250.000 TL3.750.000 TL
+**Örnek Hesaplama**
+
+| Değişken | Mevcut Durum | İyileştirme Sonrası |
+| --- | --- | --- |
+| Aylık ziyaretçi | 100.000 | 100.000 |
+| Dönüşüm oranı | %1,5 | %2,5 |
+| Ortalama sepet tutarı | 1.500 TL | 1.500 TL |
+| Aylık ciro | 2.250.000 TL | 3.750.000 TL |
 > *Kaynak: SenninWeb Hesaplama Modeli, 2026*
 
 Görüldüğü gibi, sadece dönüşüm oranındaki 1 puanlık bir iyileştirme (hız artışı, daha iyi kullanıcı deneyimi veya güven unsurlarının eklenmesiyle), aylık 1.500.000 TL ek ciro yaratabilir. Bu da web sitesinin "ne kadar kazandırdığı" sorusunun aslında sabit bir sayı değil, optimize edilebilir bir sistem olduğunu gösterir.

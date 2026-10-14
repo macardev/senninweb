@@ -1,6 +1,8 @@
 export function initMeshPointer() {
   if (typeof window === "undefined") return
   if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return
+  // lite/off tiers hide the glow layer (index.css), so skip the pointer work too
+  if (document.documentElement.dataset.motion !== "full") return
 
   let rafId = null
 

@@ -51,7 +51,12 @@ Bir web sitesini etkili yapan sadece görseller değil, aynı zamanda içerikler
 
 Tabii ki her proje benzersizdir ancak 2026 yılı için genel bir fikir vermek adına ortalama fiyat aralıklarını şöyle özetleyebilirim:
 
-Proje TürüOrtalama Fiyat AralığıHazır tema ile basit tanıtım sitesi5.000 – 15.000 TLProfesyonel kurumsal site çözümü20.000 – 50.000 TLPremium UI/UX + SEO odaklı site50.000 – 100.000 TLÖzel yazılım + e-ticaret + portal100.000 TL ve üzeri
+| Proje Türü | Ortalama Fiyat Aralığı |
+| --- | --- |
+| Hazır tema ile basit tanıtım sitesi | 5.000 – 15.000 TL |
+| Profesyonel kurumsal site çözümü | 20.000 – 50.000 TL |
+| Premium UI/UX + SEO odaklı site | 50.000 – 100.000 TL |
+| Özel yazılım + e-ticaret + portal | 100.000 TL ve üzeri |
 
 Gördüğünüz gibi fiyatlar oldukça geniş bir skalada yer alıyor. Önemli olan en ucuz seçeneği bulmak değil, işletmenizin ihtiyaçlarına en uygun seçeneği almak.
 

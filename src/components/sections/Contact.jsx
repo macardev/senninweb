@@ -1,6 +1,15 @@
 import { useState } from 'react'
 import useInView from '@/hooks/useInView'
 import emailjs from '@emailjs/browser'
+import { trackLead } from '@/utils/leads'
+
+// Qualifying questions as one-tap chips: less typing, better-qualified leads.
+// Values map onto the existing EmailJS template fields q1–q3 (no budget/price question on purpose).
+const CHIP_GROUPS = [
+  { name: 'q1', label: 'Klinik türünüz', options: ['Saç ekim merkezi', 'Diş kliniği', 'Estetik / güzellik', 'Veteriner kliniği', 'Diğer'] },
+  { name: 'q2', label: 'Yurt dışından hasta alıyor musunuz?', options: ['Evet, artırmak istiyoruz', 'Az sayıda', 'Henüz değil, başlamak istiyoruz'] },
+  { name: 'q3', label: 'Ne zaman başlamak istersiniz?', options: ['Hemen', '1 ay içinde', 'Sadece araştırıyorum'] },
+]
 
 
 export default function Contact() {
@@ -19,12 +28,23 @@ export default function Contact() {
   const [sent,    setSent]      = useState(false)
   const [focused, setFocused]   = useState(null)
 
+  const [error, setError]       = useState('')
+
+  const pick = (name, value) => {
+    setForm(f => ({ ...f, [name]: f[name] === value ? '' : value }))
+  }
+
   const handleChange = (e) => {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
   }
 
 const handleSubmit = async (e) => {
   e.preventDefault()
+  if (!form.email.trim() && !form.phone.trim()) {
+    setError('Size dönebilmemiz için telefon ya da e-posta yazın.')
+    return
+  }
+  setError('')
   setSending(true)
 
   try {
@@ -33,7 +53,7 @@ const handleSubmit = async (e) => {
       'template_h8x9ylc',
       {
         from_name:  form.name,
-        from_email: form.email,
+        from_email: form.email || 'Belirtilmedi',
         phone:      form.phone || 'Belirtilmedi',
         q1:         form.q1    || 'Belirtilmedi',
         q2:         form.q2    || 'Belirtilmedi',
@@ -45,6 +65,7 @@ const handleSubmit = async (e) => {
 
     setSending(false)
     setSent(true)
+    trackLead('form', 'contact')
 
   } catch (error) {
     console.error('EmailJS hata:', error)
@@ -241,14 +262,14 @@ const handleSubmit = async (e) => {
               <>
               <a
                 href="https://wa.me/905314051584?text=Merhaba%2C%20daha%20fazla%20bilgi%20alabilir%20miyim%3F"
+                data-lead-placement="contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block w-full mb-8 p-[1px] rounded-2xl
                            bg-gradient-to-br from-[#25D366] via-[#22C55E] to-[#16A34A]
                            shadow-[0_0_30px_rgba(37,211,102,0.25)]
                            hover:shadow-[0_0_60px_rgba(37,211,102,0.45)]
-                           hover:scale-[1.02] transition-all duration-300
-                           animate-pulse"
+                           hover:scale-[1.02] transition-all duration-300"
               >
                 <div className="w-full h-full rounded-[calc(1rem-1px)]
                                 bg-gradient-to-br from-[#25D366] via-[#22C55E] to-[#16A34A]
@@ -295,7 +316,7 @@ const handleSubmit = async (e) => {
                   <div>
                     <label className="block text-xs text-white/60
                                       uppercase tracking-wider mb-2">
-                      Telefon
+                      Telefon / WhatsApp
                     </label>
                     <input
                       name="phone"
@@ -323,33 +344,58 @@ const handleSubmit = async (e) => {
                     onChange={handleChange}
                     onFocus={() => setFocused('email')}
                     onBlur={() => setFocused(null)}
-                    required
                     className={inputClass('email')}
                   />
                 </div>
 
-                {[
-                  { name: 'q1', label: 'Şu anda işletmenizi olumsuz yönde etkileyen konu nedir?' },
-                  { name: 'q2', label: 'Bu ne kadardır devam ediyor?' },
-                  { name: 'q3', label: 'Bunu çözmek için bir yöntem denediniz mi?' },
-                  { name: 'q4', label: 'Bunu çözmezseniz önümüzdeki 6 ay sonunda ne gibi sonuçları olur?' },
-                ].map(q => (
-                  <div key={q.name}>
-                    <label className="block text-xs text-white/60 uppercase tracking-wider mb-2">
-                      {q.label}
-                    </label>
-                    <textarea
-                      name={q.name}
-                      rows={2}
-                      placeholder={q.label}
-                      value={form[q.name]}
-                      onChange={handleChange}
-                      onFocus={() => setFocused(q.name)}
-                      onBlur={() => setFocused(null)}
-                      className={`${inputClass(q.name)} resize-none`}
-                    />
-                  </div>
+                {CHIP_GROUPS.map(group => (
+                  <fieldset key={group.name}>
+                    <legend className="block text-xs text-white/60 uppercase tracking-wider mb-2.5">
+                      {group.label}
+                    </legend>
+                    <div className="flex flex-wrap gap-2">
+                      {group.options.map(opt => {
+                        const active = form[group.name] === opt
+                        return (
+                          <button
+                            key={opt}
+                            type="button"
+                            aria-pressed={active}
+                            onClick={() => pick(group.name, opt)}
+                            className={`px-4 py-2 rounded-full text-sm border transition-all duration-200 active:scale-[0.96] ${
+                              active
+                                ? 'border-gold-500 bg-gold-500/15 text-gold-300'
+                                : 'border-white/10 bg-white/[0.03] text-white/65 hover:border-white/25 hover:text-white'
+                            }`}
+                          >
+                            {opt}
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </fieldset>
                 ))}
+
+                <div>
+                  <label htmlFor="contact-q4" className="block text-xs text-white/60 uppercase tracking-wider mb-2">
+                    Eklemek istedikleriniz <span className="normal-case tracking-normal text-white/40">(opsiyonel)</span>
+                  </label>
+                  <textarea
+                    id="contact-q4"
+                    name="q4"
+                    rows={3}
+                    placeholder="Örn: İstanbul'da diş kliniğiz, İngiltere'den daha fazla hasta istiyoruz."
+                    value={form.q4}
+                    onChange={handleChange}
+                    onFocus={() => setFocused('q4')}
+                    onBlur={() => setFocused(null)}
+                    className={`${inputClass('q4')} resize-none`}
+                  />
+                </div>
+
+                {error && (
+                  <p role="alert" className="text-sm text-red-400">{error}</p>
+                )}
 
                 <button
                   type="submit"
@@ -371,7 +417,7 @@ const handleSubmit = async (e) => {
                       </>
                     ) : (
                       <>
-                        Mesaj Gönder
+                        Ücretsiz Teklif İste
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                           <path d="M3 7h8M7 3l4 4-4 4"
                             stroke="currentColor" strokeWidth="1.5"

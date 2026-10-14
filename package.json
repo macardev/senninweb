@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "node generate-ico.js && vite",
-    "build": "node generate-ico.js && vite build && node postbuild.mjs",
+    "build": "node generate-ico.js && node scripts/validate-blog-posts.mjs && vite build && node postbuild.mjs",
     "preview": "vite preview",
     "generate-favicon": "node generate-ico.js",
     "prospect-clients": "node scripts/prospect-clients.mjs",
-    "send-outreach": "node scripts/send-outreach.mjs"
+    "send-outreach": "node scripts/send-outreach.mjs",
+    "build-guide": "node scripts/build-guide-pdf.mjs",
+    "validate-blog": "node scripts/validate-blog-posts.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

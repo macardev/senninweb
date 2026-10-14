@@ -1,238 +1,207 @@
-import { useEffect, useRef, useState } from 'react'
-import { useIsMobile } from '@/hooks/useIsMobile'
+import { Link } from 'react-router-dom'
 import useInView from '@/hooks/useInView'
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon'
+import { GUIDE_PATH, whatsappHref } from '@/utils/leads'
 
-const services = [
+// One package, three pillars. Website design is included in the monthly fee.
+const pillars = [
   {
     number: '01',
-    title: 'Web Tasarım',
-    subtitle: 'Etkileyici Dijital Deneyimler',
+    accent: 'Size özel',
+    rest: 'web sitesi',
+    subtitle: 'Sağlık turizmi web sitesi · hazır şablon yok',
     description:
-      'Rakiplerinizden sıyrılan, ziyaretçilerinizi müşteriye dönüştüren premium web siteleri tasarlıyoruz. Her piksel özenle yerleştirilir.',
+      'Kliniğinizin hikâyesine, hedef ülkenize ve hastanızın sorularına göre sıfırdan tasarlanır. İster zengin animasyonlu, ister sade: tasarım tamamen ihtiyacınıza göre şekillenir.',
     features: [
-      'Mobil öncelikli tasarım',
-      '3D animasyon & interaktif efektler',
-      'Hızlı yükleme optimizasyonu',
-      'Özel kurumsal kimlik entegrasyonu',
+      'Çok dilli yapı (EN, DE, AR, RU…)',
+      'Tedavi, doktor ve fiyat sayfaları',
+      'Mobilde hızlı açılış (Core Web Vitals)',
+      'WhatsApp + fotoğraflı değerlendirme formu',
     ],
-    accent: 'Web',
-    accentRest: 'Tasarım',
-    image: '/images/webtasarım.webp',
-    imageAlt: 'Web Tasarım hizmet görseli',
+    href: '/hizmet/web-tasarim',
+    linkLabel: 'Sağlık turizmi web sitesi',
   },
   {
     number: '02',
-    title: 'SEO & Büyüme',
-    subtitle: 'Google\'da Üst Sıralara Çıkın',
+    accent: 'Sağlık turizmi',
+    rest: 'SEO & otorite',
+    subtitle: "Yabancı hastanın kendi dilinde, kendi Google'ında",
     description:
-      'Güzel bir site yetmez — bulunabilir olması gerekir. Yerel SEO uzmanlığımızla işletmenizi arama sonuçlarının tepesine taşıyoruz.',
+      "Londra'daki ya da Berlin'deki hasta tedaviyi aradığında karşısına siz çıkarsınız. Hedef ülkeden kaliteli bağlantılarla Google'ın güvenini kazanırız.",
     features: [
-      'Yerel SEO optimizasyonu',
-      'Anahtar kelime stratejisi',
-      'Aylık performans raporu',
-      'Google Business Profile yönetimi',
+      'Hedef dilde anahtar kelime ve içerik',
+      'Hedef ülkeden backlink ve dizin kayıtları',
+      'Schema ve Google İşletme Profili',
+      'Yapay zekâ aramalarında görünürlük',
     ],
-    accent: 'SEO',
-    accentRest: '& Büyüme',
-    image: '/images/seovebüyüme.webp',
-    imageAlt: 'SEO ve Büyüme hizmet görseli',
+    href: '/hizmet/seo-ve-buyume',
+    linkLabel: 'Sağlık turizmi SEO',
   },
   {
     number: '03',
-    title: 'Kurumsal Kimlik',
-    subtitle: 'Marka Kimliğinizi İnşa Edin',
+    accent: 'Sıcak',
+    rest: 'hasta akışı',
+    subtitle: 'Trafik değil, randevu',
     description:
-      'Logo, kartvizit, sosyal medya şablonları — tutarlı ve premium bir marka kimliğiyle rakiplerinizden kalıcı olarak ayrışın.',
+      "Gelen ziyaretçiyi WhatsApp'ta randevuya dönüştüren akışı kurar, her talebi ülke ve sayfa bazında ölçeriz. Neyin hasta getirdiğini her ay net görürsünüz.",
     features: [
-      'Logo tasarımı',
-      'Kartvizit & basılı materyaller',
-      'Sosyal medya şablonları',
-      'Marka rehberi (brand guide)',
+      'WhatsApp karşılama ve takip akışı',
+      'Talep → görüşme → randevu takibi',
+      'Ülke ve sayfa bazında ölçüm',
+      'Aylık şeffaf performans raporu',
     ],
-    accent: 'Kurumsal',
-    accentRest: 'Kimlik',
-    image: '/images/kurumsalkimlik.webp',
-    imageAlt: 'Kurumsal Kimlik hizmet görseli',
+    href: '/hizmet/dijital-pazarlama',
+    linkLabel: 'Hasta kazanım akışı',
   },
 ]
 
-function ServiceCard({ service, index, isActive }) {
-  const { ref, inView } = useInView()
+const PRICE_DRIVERS = [
+  'Hedef ülke ve dil sayısı',
+  'Tedavi ve sayfa sayısı',
+  'Hedef ülkedeki backlink hacmi',
+  'Tasarım ve animasyon kapsamı',
+]
 
+function PillarCard({ pillar, index }) {
   return (
     <div
-      ref={ref}
-      className={`group relative transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
-        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[60px]'
-      }`}
-      style={{ transitionDelay: `${index * 150}ms` }}
+      className="reveal-3d group relative flex flex-col p-8 md:p-10 rounded-2xl border border-white/6 bg-white/[0.02] hover:bg-white/[0.04] hover:border-gold-500/25 transition-[border-color,background-color] duration-500"
+      style={{ animationRange: `entry ${index * 6}% cover ${30 + index * 6}%` }}
     >
-      <div className={`relative p-8 md:p-10 rounded-2xl border transition-all duration-700 overflow-hidden ${
-        isActive
-          ? 'border-gold-500/60 shadow-[0_0_30px_rgba(212,168,83,0.15)] bg-white/[0.04]'
-          : 'border-white/6 bg-white/[0.02]'
-      } hover:bg-white/[0.04] hover:border-gold-500/20`}>
+      <span className="text-[10px] tracking-[0.3em] uppercase text-gold-500 font-medium mb-8">
+        {pillar.number}
+      </span>
 
-        <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100
-                        transition-opacity duration-700 pointer-events-none"
-          style={{
-            background: 'radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(217,119,6,0.06), transparent 40%)',
-          }}
-        />
+      <h3 className="font-display font-bold text-3xl md:text-[2rem] tracking-tight leading-tight mb-2">
+        <span className="text-gold-gradient">{pillar.accent}</span>
+        <span className="text-white"> {pillar.rest}</span>
+      </h3>
+      <p className="text-xs tracking-[0.15em] uppercase text-white/55 mb-5">
+        {pillar.subtitle}
+      </p>
 
-        <div className="flex items-start justify-between mb-8">
-          <span className="text-[10px] tracking-[0.3em] uppercase text-gold-500 font-medium">
-            {service.number}
-          </span>
-          <div className={`w-9 h-9 rounded-full border border-white/10
-                         group-hover:border-gold-500/40
-                         flex items-center justify-center
-                         transition-colors duration-300 transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
-            inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[10px]'
-          }`}
-            style={{ transitionDelay: `${index * 150 + 400}ms` }}
-          >
-            <svg
-              width="14" height="14" viewBox="0 0 14 14" fill="none"
-              className="text-white/50 group-hover:text-gold-400 transition-colors duration-300"
-            >
-              <path
-                d="M3 7h8M7 3l4 4-4 4"
-                stroke="currentColor" strokeWidth="1.5"
-                strokeLinecap="round" strokeLinejoin="round"
-              />
+      <p className="text-white/60 text-sm leading-relaxed mb-6">
+        {pillar.description}
+      </p>
+
+      <div className="w-full h-px bg-white/6 mb-6" />
+
+      <ul className="space-y-3 mb-8">
+        {pillar.features.map((feat) => (
+          <li key={feat} className="flex items-start gap-3 text-sm text-white/65">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="mt-1 flex-shrink-0" aria-hidden="true">
+              <path d="M2.5 7l3 3 6-6" stroke="#D97706" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </div>
-        </div>
+            {feat}
+          </li>
+        ))}
+      </ul>
 
-        <div className="mb-4">
-          <h3 className="font-display font-bold text-3xl md:text-4xl tracking-tight mb-2">
-            <span className="text-gold-gradient">{service.accent}</span>
-            <span className="text-white"> {service.accentRest}</span>
-          </h3>
-            <p className="text-xs tracking-[0.15em] uppercase text-white/60">
-            {service.subtitle}
-          </p>
-        </div>
-
-        <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-sm">
-          {service.description}
-        </p>
-
-        <div className="relative w-full h-48 rounded-xl overflow-hidden mb-6">
-          <img
-            src={service.image}
-            alt={service.imageAlt}
-            loading="lazy"
-            width="400"
-            height="192"
-            className="w-full h-full object-cover rounded-xl
-                       transition-transform duration-500 group-hover:scale-[1.03]"
-          />
-        </div>
-
-        <div className="w-full h-px bg-white/6 mb-8" />
-
-        <ul className="space-y-3">
-          {service.features.map((feat, i) => (
-            <li key={i} className="flex items-center gap-3 text-sm text-white/60">
-              <span className="w-1 h-1 rounded-full bg-gold-500/70 flex-shrink-0" />
-              {feat}
-            </li>
-          ))}
-        </ul>
-      </div>
+      {pillar.href && (
+        <Link
+          to={pillar.href}
+          className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-gold-300 hover:text-gold-400 transition-colors duration-200"
+        >
+          {pillar.linkLabel}
+          <span aria-hidden="true">→</span>
+        </Link>
+      )}
     </div>
   )
 }
 
 export default function Services() {
   const { ref, inView } = useInView()
-  const isMobile = useIsMobile()
-  const [activeIndex, setActiveIndex] = useState(0)
-  const [isPaused, setIsPaused] = useState(false)
-
-  useEffect(() => {
-    if (isMobile || isPaused) return
-    const interval = setInterval(() => {
-      setActiveIndex(prev => (prev + 1) % services.length)
-    }, 4000)
-    return () => clearInterval(interval)
-  }, [isMobile, isPaused])
 
   return (
-    <section id="services" className="relative bg-black section-pad">
-
+    <section id="services" className="relative bg-black section-pad" data-lead-zone="services">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full
-                        bg-gold-500/3 blur-[150px]" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full
-                        bg-gold-600/3 blur-[120px]" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-gold-500/3 blur-[150px]" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full bg-gold-600/3 blur-[120px]" />
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-
         <div
           ref={ref}
-          className={`mb-20 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          className={`mb-16 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[30px]'
           }`}
         >
           <div className="flex items-center gap-3 mb-6">
             <span className="w-8 h-px bg-gold-500" />
             <span className="text-xs tracking-[0.25em] uppercase text-gold-400 font-medium">
-              Hizmetler
+              Hasta Kazanım Paketi
             </span>
           </div>
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <h2 className="font-display font-bold text-5xl md:text-6xl tracking-tight leading-tight">
-              <span className="text-white">Tek çatı altında</span>
+              <span className="text-white">Tek paket,</span>
               <br />
-              <span className="text-gold-gradient">her şey dahil.</span>
+              <span className="text-gold-gradient">tek hedef: hasta.</span>
             </h2>
 
-            <p className="text-white/60 text-sm leading-relaxed max-w-xs md:text-right">
-              Web siteniz, SEO'nuz ve marka kimliğiniz —
-              hepsini birlikte, hepsini premium kalitede sunuyoruz.
+            <p className="text-white/60 text-sm leading-relaxed max-w-sm md:text-right">
+              Saç ekim merkezleri, diş, estetik ve veteriner klinikleri için. Kliniğinize
+              yurt dışından sıcak hasta talebi getiren sistemi kurar ve her ay büyütürüz.
             </p>
           </div>
         </div>
 
-        <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-5"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
-          {services.map((service, i) => (
-            <ServiceCard key={service.number} service={service} index={i} isActive={!isMobile && i === activeIndex} />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {pillars.map((pillar, i) => (
+            <PillarCard key={pillar.number} pillar={pillar} index={i} />
           ))}
         </div>
 
-        <div
-          className={`mt-16 flex flex-col sm:flex-row items-center justify-between
-                     gap-6 p-8 rounded-2xl border border-white/6 bg-white/[0.02] transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)]`}
-        >
-          <div>
-            <p className="font-display font-semibold text-xl text-white mb-1">
-              Hangi paketi seçeceğinizi bilmiyor musunuz?
-            </p>
-            <p className="text-sm text-white/60">
-              Size özel ücretsiz danışmanlık için ulaşın.
-            </p>
+        {/* Pricing band: no public price range on purpose; every clinic gets a tailored monthly quote */}
+        <div className="reveal-3d mt-6 relative overflow-hidden rounded-3xl border border-gold-500/25 bg-gradient-to-br from-surface-100 via-black to-surface-50 p-8 md:p-12">
+          <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-gold-500/10 blur-[90px] pointer-events-none" />
+
+          <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-10 items-center">
+            <div>
+              <p className="text-xs tracking-[0.25em] uppercase text-gold-400 font-medium mb-4">Fiyatlandırma</p>
+              <p className="font-display font-bold text-4xl md:text-5xl tracking-tight leading-tight mb-4">
+                <span className="text-white">Kliniğinize özel</span>{' '}
+                <span className="text-gold-gradient">aylık teklif</span>
+              </p>
+              <p className="text-white/55 text-sm mb-6">Web sitesi tasarımı pakete dahildir, ayrıca ücretlendirilmez.</p>
+              <p className="text-white/65 text-sm leading-relaxed max-w-md">
+                Her kliniğin hedef ülkesi, tedavileri ve rekabeti farklı. Önce ücretsiz kısa bir analiz
+                yapıyor, ardından kliniğinizin hedeflerine göre net bir teklif sunuyoruz.
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm text-white font-medium mb-4">Fiyatı belirleyenler</p>
+              <div className="flex flex-wrap gap-2 mb-8">
+                {PRICE_DRIVERS.map((d) => (
+                  <span key={d} className="px-4 py-2 rounded-full text-sm border border-white/10 bg-white/[0.03] text-white/70">
+                    {d}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  to={GUIDE_PATH}
+                  data-lead-placement="pricing"
+                  className="flex-1 inline-flex items-center justify-center h-14 px-6 rounded-full bg-gold-500 hover:bg-gold-400 text-black font-semibold transition-colors duration-200 active:scale-[0.98]"
+                >
+                  Önce ücretsiz rehberi okuyun
+                </Link>
+                <a
+                  href={whatsappHref('Merhaba, kliniğim için hasta kazanım paketiniz hakkında bilgi ve kısa analiz istiyorum.')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-lead-placement="pricing"
+                  className="flex-1 inline-flex items-center justify-center gap-2.5 h-14 px-6 rounded-full border border-[#25D366]/50 hover:bg-[#25D366]/10 text-white font-medium transition-colors duration-200 active:scale-[0.98]"
+                >
+                  <WhatsAppIcon size={18} className="text-[#25D366]" />
+                  Kısa analiz iste
+                </a>
+              </div>
+            </div>
           </div>
-          <a href="#contact">
-            <button
-              className="relative flex-shrink-0 px-7 py-3.5 rounded-full
-                         font-medium text-sm tracking-wide overflow-hidden group"
-            >
-              <span className="absolute inset-0 rounded-full bg-gold-500
-                               group-hover:bg-gold-400 transition-colors duration-300" />
-              <span className="relative z-10 text-black font-semibold">
-                Ücretsiz Danış
-              </span>
-            </button>
-          </a>
         </div>
       </div>
     </section>

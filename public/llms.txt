@@ -1,24 +1,25 @@
 # Sennin Web
 
-> Sennin Web, KOBİ'lere web tasarım, SEO ve dijital pazarlama hizmeti sağlayan bir ajans. 2025'te Çağatay Macar tarafından kuruldu. Bilecik/Gölpazarı merkezli, Türkiye geneline hizmet veriyor.
+> Sennin Web, yurt dışından hasta çekmek isteyen sağlık kliniklerine (saç ekim merkezleri, diş, estetik ve veteriner klinikleri) size özel web sitesi, uluslararası SEO ve hasta kazanım hizmeti sunan bir ajans. 2025'te Çağatay Macar tarafından kuruldu.
 
 ## Pages
 
-- [Ana Sayfa](https://www.senninweb.com/): Web tasarım, SEO ve kurumsal kimlik hizmetleri. KOBİ'lere yönelik mobil uyumlu web siteleri.
+- [Ana Sayfa](https://www.senninweb.com/): Sağlık klinikleri için hasta kazanım paketi: size özel çok dilli web sitesi, uluslararası SEO, WhatsApp hasta akışı.
+- [Yurt Dışından Hasta Çekme Rehberi](https://www.senninweb.com/rehber/yurt-disindan-hasta-cekme): Klinikler için ücretsiz 15 sayfalık PDF rehber (hedef ülke, çok dilli site, uluslararası SEO, backlink, WhatsApp dönüşümü).
 - [Hakkimizda](https://www.senninweb.com/docs/hakkimizda.md): Sennin Web kurucusu Çağatay Macar ve şirket hikayesi. Tasarım yaklaşımı, SEO felsefesi ve değerler.
-- [SSS](https://www.senninweb.com/docs/sss.md): Web tasarım, SEO, AEO, GEO, mobil uyumluluk ve fiyatlandırma hakkında soru-cevap.
-- [Web Tasarım Hizmeti](https://www.senninweb.com/docs/hizmet/web-tasarim.md): Sıfırdan tasarlanmış, mobil öncelikli web siteleri. SEO altyapılı.
-- [SEO ve Büyüme Hizmeti](https://www.senninweb.com/docs/hizmet/seo-ve-buyume.md): Arama motoru optimizasyonu, yerel SEO, AEO/GEO ve anahtar kelime stratejisi.
-- [E-Ticaret Çözümleri](https://www.senninweb.com/docs/hizmet/eticaret-cozumleri.md): Online satış siteleri, ödeme entegrasyonu, SEO altyapısı ve mobil uyumlu e-ticaret çözümleri.
-- [Dijital Pazarlama Hizmeti](https://www.senninweb.com/docs/hizmet/dijital-pazarlama.md): Sosyal medya yönetimi, içerik pazarlama ve dönüşüm optimizasyonu.
+- [SSS](https://www.senninweb.com/docs/sss.md): Hasta Kazanım Paketi, yetki belgesi, yurt dışına yönelik site, sağlık turizmi SEO'su ve WhatsApp hasta akışı hakkında soru-cevap.
+- [Sağlık Turizmi Web Sitesi](https://www.senninweb.com/docs/hizmet/web-tasarim.md): Yurt dışından hasta çekmek isteyen klinikler için çok dilli, size özel web sitesi. Hazır şablon yok.
+- [Sağlık Turizmi SEO](https://www.senninweb.com/docs/hizmet/seo-ve-buyume.md): Klinikler için uluslararası SEO: hedef ülkede anahtar kelime, hreflang, schema, hedef ülkeden backlink, yapay zekâ aramalarında görünürlük.
+- [Sağlık Turizmi Dijital Pazarlama](https://www.senninweb.com/docs/hizmet/dijital-pazarlama.md): Yurt dışından hasta kazanımı: yönetmeliğe uygun yurt dışı tanıtım, WhatsApp hasta akışı, ölçüm.
 - [Gebze](https://www.senninweb.com/docs/gebze.md): Gebze'de web tasarım, yerel SEO, e-ticaret ve dijital pazarlama hizmetleri.
-- [Bilecik](https://www.senninweb.com/docs/bilecik.md): Bilecik'te web tasarım, SEO, Google Maps optimizasyonu ve kurumsal kimlik hizmetleri.
+- [Bilecik](https://www.senninweb.com/docs/bilecik.md): Bilecik'te web tasarım, SEO ve Google Maps optimizasyonu.
 - [Kocaeli](https://www.senninweb.com/docs/kocaeli.md): Kocaeli genelinde web tasarım, SEO ve dijital pazarlama. İzmit, Gebze, Körfez, Gölcük ve tüm ilçeler.
-- [Fiyatlandırma](https://www.senninweb.com/pricing.md): SEO $300/ay, diğer hizmetler proje bazlı fiyatlandırma
+- [Fiyatlandırma](https://www.senninweb.com/pricing.md): Hasta Kazanım Paketi, kliniğe özel aylık teklif; web sitesi tasarımı dahil
 - [Blog](https://www.senninweb.com/docs/llms-full.txt): Tüm blog yazıları ve sayfaların tam metni (tek dosya).
 
 ## Blog Posts
 
+- [Yurt Dışından Hasta Nasıl Çekilir? Klinikler İçin 2026 Rehberi](https://www.senninweb.com/docs/blog/yurt-disindan-hasta-nasil-cekilir.md): Saç ekim, diş, estetik ve veteriner klinikleri için yetki belgesi, 2025 tanıtım yönetmeliği, sağlık turizmi SEO'su ve kanal karşılaştırması
 - [AI Görünürlük, GEO ve LLMO SEO Rehberi](https://www.senninweb.com/docs/blog/ai-gorunurluk-geo-llmo-seo-rehberi.md): Yapay zeka arama optimizasyonu, GEO ve LLMO stratejileriyle ChatGPT, Gemini ve Perplexity'de görünürlük
 - [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?](https://www.senninweb.com/docs/blog/kucuk-isletme-web-sitesi.md): Web sitesi ile müşteri kazanma stratejileri
 - [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir? 2026 SEO Rehberi](https://www.senninweb.com/docs/blog/kucuk-isletmeler-icin-web-sitesi-nasil-musteri-getirir.md): 2026 SEO stratejileriyle müşteri kazanma
@@ -34,6 +35,7 @@
 - [Web Tasarım Fiyatları Ne Kadar? Ödüllü Sitelerin Maliyeti Ne?](https://www.senninweb.com/docs/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler.md): Ödüllü web sitesi maliyetleri
 - [Dijital Pazarlama Kanalları Nelerdir? Kapsamlı Rehber (2026)](https://www.senninweb.com/docs/blog/dijital-pazarlama-kanallari-nedir.md): SEO, SEM, sosyal medya, e-posta, içerik pazarlaması ve tüm dijital pazarlama kanalları karşılaştırmalı rehber
 - [İzmit'te Dijital Pazarlama: Kocaeli İşletmeleri İçin 2026 Rehberi](https://www.senninweb.com/docs/blog/izmit-dijital-pazarlama-kocaeli.md): Kocaeli'de SEO, Google Maps ve dijital pazarlama stratejileri
+- [Darıca'daki Bir Balıkçı Dükkanı İnternetten Nasıl Satış Yapmaya Başladı? Mira Balıkçılık E-Ticaret Örneği](https://www.senninweb.com/docs/blog/mira-balikcilik-e-ticaret-sitesi-ornegi.md): Yerel işletmeler için e-ticaret vaka çalışması, ilk ay Google Search Console verileri
 
 ## What We Do Not Do
 

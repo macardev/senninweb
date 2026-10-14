@@ -166,7 +166,7 @@ const references = [
     features: [
       'Lokal SEO optimizasyonu',
       'Modern responsive tasarım',
-      'Kurumsal kimlik & prestij',
+      'Kişisel marka & güven',
       'Mobil uyumlu arayüz',
     ],
     metrics: [

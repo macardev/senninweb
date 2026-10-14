@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
-import { scrollToIdWithRetry } from "@/utils/scrollToId"
 import { getBlogPost } from "@/data/blogPosts"
 import useCanonicalUrl from "@/hooks/useCanonicalUrl"
+import { GUIDE_PATH } from "@/utils/leads"
+import useReleaseStaticBody from "@/hooks/useReleaseStaticBody"
 
 function slugify(text) {
   return text
@@ -10,6 +11,10 @@ function slugify(text) {
     .replace(/[^a-z0-9çşğüöı]/g, "-")
     .replace(/-+/g, "-")
     .replace(/^-|-$/g, "")
+}
+
+function stripHtml(html = "") {
+  return html.replace(/<[^>]+>/g, "").trim()
 }
 
 function upsertMetaByName(name, content) {
@@ -281,6 +286,7 @@ export default function BlogPost() {
   const { slug } = useParams()
   const [post, setPost] = useState(null)
   const [loading, setLoading] = useState(true)
+  useReleaseStaticBody(!loading)
   const canonicalUrl = useCanonicalUrl()
 
   useEffect(() => {
@@ -310,7 +316,7 @@ export default function BlogPost() {
 
     const ogImage = post.coverImage
       ? `https://www.senninweb.com${post.coverImage}`
-      : "https://www.senninweb.com/og-image.svg"
+      : "https://www.senninweb.com/og-image.jpg"
 
     upsertMetaByProperty("og:title", post.title)
     upsertMetaByProperty("og:description", post.metaDescription)
@@ -415,10 +421,22 @@ export default function BlogPost() {
     )
   }
 
+  // Q&A blocks double as FAQPage markup so search engines and AI assistants can quote them
+  const faqItems = post.sections.filter((s) => s.type === "question")
+  const faqJsonLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((q) => ({
+      "@type": "Question",
+      name: stripHtml(q.question),
+      acceptedAnswer: { "@type": "Answer", text: stripHtml(q.answer) },
+    })),
+  } : null
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.shortTitle,
+    headline: post.title,
     description: post.metaDescription,
     image: post.coverImage ? `https://www.senninweb.com${post.coverImage}` : "https://www.senninweb.com/og-image.jpg",
     datePublished: post.datePublished,
@@ -448,6 +466,12 @@ export default function BlogPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <div className={tocEntries.length > 0 ? "lg:grid lg:grid-cols-[280px_1fr] lg:gap-10 max-w-6xl mx-auto" : "max-w-3xl mx-auto"}>
         {tocEntries.length > 0 && (
           <aside className="hidden lg:block relative">
@@ -524,7 +548,7 @@ export default function BlogPost() {
             )}
 
             <h1 className="mt-4 text-3xl md:text-5xl font-display font-bold tracking-tight leading-tight">
-              {post.shortTitle}
+              {post.title}
             </h1>
             <p className="mt-3 text-xs md:text-sm text-white/65">
               Yazar: {post.author} • {post.authorTitle}
@@ -573,28 +597,25 @@ export default function BlogPost() {
               <div className="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 blur-[70px] pointer-events-none" />
 
               <h2 className="relative text-lg md:text-2xl font-display font-semibold text-white">
-                Hazır mısınız?
+                Kliniğinize yurt dışından hasta çekmek ister misiniz?
               </h2>
               <p className="relative mt-3 text-sm md:text-base text-white/65 leading-relaxed max-w-xl">
-                Web sitenizi müşteri kazandıran, premium bir sisteme dönüştürelim. Hız, SEO ve dönüşüm odaklı bir planı birlikte çıkaralım.
+                15 sayfalık ücretsiz rehberimizde hedef ülke seçiminden çok dilli siteye, uluslararası SEO'dan
+                WhatsApp'ta hastaya dönüşüme kadar tüm sistemi adım adım anlattık.
               </p>
 
               <div className="relative mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <Link
-                  to="/#contact"
+                  to={GUIDE_PATH}
                   data-cursor
-                  onClick={(e) => {
-                    e.preventDefault()
-                    navigate("/")
-                    setTimeout(() => scrollToIdWithRetry("contact"), 0)
-                  }}
+                  data-lead-placement="blog-end"
                   className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-medium tracking-wide
                              bg-gold-500 text-black hover:bg-gold-400 transition-colors w-full sm:w-auto"
                 >
-                  Ücretsiz Teklif Al
+                  Ücretsiz Rehberi İndir
                 </Link>
                 <span className="text-xs text-white/60">
-                  Ortalama dönüş süresi: 24 saat
+                  15 sayfa · PDF · Ücretsiz
                 </span>
               </div>
             </section>

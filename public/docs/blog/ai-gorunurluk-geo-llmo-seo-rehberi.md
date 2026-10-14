@@ -35,7 +35,19 @@ Konuya soyut değil, somut verilerle bakalım. Dünyada neler oluyor, Türkiye'd
 
 ## Eski SEO ile Yeni Nesil AI Tabanlı SEO Arasındaki Fark
 
-Birçok işletme hâlâ "Google'da üst sıralarda çıkıyorum, sorunum yok" diye düşünüyor. Oysa oyunun kuralları değişti. Geleneksel SEO hâlâ önemli — ama tek başına yeterli değil. Aşağıdaki tablo, eski nesil SEO anlayışı ile yeni nesil AI tabanlı SEO (GEO + LLMO) arasındaki temel farkları özetliyor:KriterGeleneksel SEOYeni Nesil AI SEO (GEO + LLMO)Hedef PlatformGoogle, Bing gibi arama motorlarıChatGPT, Gemini, Perplexity, Claude gibi AI araçları + GoogleBaşarı ÖlçütüAnahtar kelime sıralaması, organik trafikAI alıntı payı (citation share), AI görünürlük skoruİçerik FormatıAnahtar kelime yoğunluğu, meta etiketlerSoru-cevap formatı, yapılandırılmış veri, anlamsal içerikBağlantı YapısıBacklink otoritesiDomain otoritesi + AI tarafından alıntılanabilirlikSıralama FaktörüSayfa yetkisi, geri bağlantı sayısıE-E-A-T, içerik derinliği, kaynak güvenilirliğiTıklama ModeliKullanıcı mavi bağlantılara tıklarAI cevabın içine gömülü kaynak; tıklama olmadan marka bilinirliğiSonuç Süresi3–12 ay3–12 ay (yapısal + içerik değişiklikleriyle)Kullanıcı AmacıAnahtar kelime bazlı sorgularDoğal dil ile konuşmak gibi yazılan sorularRakip Sayısı10 mavi bağlantı (çok sayıda rakip)Ortalama 2–7 kaynak alıntılanır (çok daha seçici)Dönüşüm KalitesiStandart organik trafik4,4x daha değerli ziyaretçi (Semrush, 2025)
+Birçok işletme hâlâ "Google'da üst sıralarda çıkıyorum, sorunum yok" diye düşünüyor. Oysa oyunun kuralları değişti. Geleneksel SEO hâlâ önemli — ama tek başına yeterli değil. Aşağıdaki tablo, eski nesil SEO anlayışı ile yeni nesil AI tabanlı SEO (GEO + LLMO) arasındaki temel farkları özetliyor:
+| Kriter | Geleneksel SEO | Yeni Nesil AI SEO (GEO + LLMO) |
+| --- | --- | --- |
+| Hedef Platform | Google, Bing gibi arama motorları | ChatGPT, Gemini, Perplexity, Claude gibi AI araçları + Google |
+| Başarı Ölçütü | Anahtar kelime sıralaması, organik trafik | AI alıntı payı (citation share), AI görünürlük skoru |
+| İçerik Formatı | Anahtar kelime yoğunluğu, meta etiketler | Soru-cevap formatı, yapılandırılmış veri, anlamsal içerik |
+| Bağlantı Yapısı | Backlink otoritesi | Domain otoritesi + AI tarafından alıntılanabilirlik |
+| Sıralama Faktörü | Sayfa yetkisi, geri bağlantı sayısı | E-E-A-T, içerik derinliği, kaynak güvenilirliği |
+| Tıklama Modeli | Kullanıcı mavi bağlantılara tıklar | AI cevabın içine gömülü kaynak; tıklama olmadan marka bilinirliği |
+| Sonuç Süresi | 3–12 ay | 3–12 ay (yapısal + içerik değişiklikleriyle) |
+| Kullanıcı Amacı | Anahtar kelime bazlı sorgular | Doğal dil ile konuşmak gibi yazılan sorular |
+| Rakip Sayısı | 10 mavi bağlantı (çok sayıda rakip) | Ortalama 2–7 kaynak alıntılanır (çok daha seçici) |
+| Dönüşüm Kalitesi | Standart organik trafik | 4,4x daha değerli ziyaretçi (Semrush, 2025) |
 
 Bu tablodan çıkan en kritik sonuç şu: AI araması çok daha seçici. Google'da 10 web sitesi listelenir; yapay zeka ise bir soruya yanıt verirken ortalama yalnızca 2–7 kaynağa atıfta bulunur. Bu kaynaklar arasında yer almak, dijital görünürlüğün yeni altın standardıdır.
 

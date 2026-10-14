@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Web siteniz Google'da yoksa müşteri kaybediyorsunuz. Premium web tasarım ve SEO ile işletmenizi dijitalde büyütün, organik müşteri kazanmaya başlayın.">
+    <meta name="description" content="Saç ekim, diş, estetik ve veteriner klinikleri için sağlık turizmi web sitesi ve SEO. Yurt dışından sıcak hasta talepleri alın. Ücretsiz rehberi indirin.">
     <meta name="robots" content="index, follow">
     <link rel="alternate" hreflang="tr" href="https://www.senninweb.com">
-    <title>Web Tasarım & SEO Hizmeti | SenninWeb</title>
+    <title>Klinikler İçin Web Sitesi & SEO | Yurt Dışından Hasta | SenninWeb</title>
 
     <!-- Favicon Assets -->
     <link rel="icon" href="/favicon.ico">
@@ -37,6 +37,22 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
     </noscript>
 
+    <!-- Adaptive motion tier before first paint (see src/utils/motionTier.js) -->
+    <script>
+      (function () {
+        var d = document.documentElement, n = navigator, c = n.connection || {}, t = 'full';
+        try {
+          if (matchMedia('(prefers-reduced-motion: reduce)').matches) t = 'off';
+          else {
+            var mem = n.deviceMemory, touch = matchMedia('(pointer: coarse)').matches;
+            if (c.saveData || /2g|3g/.test(c.effectiveType || '') || (mem && mem <= (touch ? 4 : 2)) || (n.hardwareConcurrency && n.hardwareConcurrency <= 2)) t = 'lite';
+          }
+          if (t === 'full' && sessionStorage.getItem('sw_motion') === 'lite') t = 'lite';
+        } catch (e) {}
+        d.setAttribute('data-motion', t);
+      })();
+    </script>
+
     <!-- Critical CSS for instant above-the-fold paint (render-blocking replaced at build) -->
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -48,7 +64,6 @@
       ::-webkit-scrollbar-track { background: #0A0A0A; }
       ::-webkit-scrollbar-thumb { background: #D97706; border-radius: 2px; }
       ::selection { background: #D97706; color: #0A0A0A; }
-      @font-face { font-family: 'Syne'; font-style: normal; font-weight: 600 800; font-display: swap; src: url(https://fonts.gstatic.com/s/syne/v22/8vIl7w4qzmVXs2qL5Y_M.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
       @keyframes slideDown { from { transform: translateY(-100px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
       .animate-slideDown { animation: slideDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
       @keyframes modalIn { from { opacity: 0; transform: translateY(60px) scale(0.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
@@ -58,8 +73,10 @@
       .text-white { color: #FFFFFF; }
       .text-gold-500 { color: #D97706; }
       .text-gold-gradient { background: linear-gradient(135deg, #FCD34D, #D97706, #B45309); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-      .hero-critical { display: flex; align-items: center; min-height: 700px; position: relative; overflow: hidden; background-color: #000; }
-      @media (max-width: 768px) { .hero-critical { min-height: 600px; } }
+      /* While a prerendered page body (not the home hero) is on screen, keep the React root out of
+         layout; it appears in place once the page releases the static copy (useReleaseStaticBody). */
+      #hero-host:not([hidden]):not(:has([data-static-hero])) + #root { display: none; }
+      /*hero-css*/
     </style>
 
     <!-- Speculation Rules API: instant next-page navigations (progressive enhancement) -->
@@ -75,29 +92,10 @@
   <body>
     <div class="mesh-base"></div>
     <div class="mesh-glow"></div>
-    <div id="root">
-      <!-- ⚡ Pre-rendered Hero for instant FCP — React replaces this on hydration -->
-      <div class="hero-critical" style="padding:0 24px">
-        <div style="max-width:1280px;margin:0 auto;width:100%">
-          <span style="display:inline-flex;align-items:center;gap:8px;color:#D97706;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:32px;font-family:system-ui,-apple-system,sans-serif">
-            <span style="width:32px;height:1px;background:#D97706;display:inline-block"></span>
-            Premium Web Tasarım &amp; SEO
-          </span>
-          <h1 style="margin:0 0 24px;line-height:1.05;letter-spacing:-0.03em;font-family:system-ui,-apple-system,sans-serif">
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">Sennin Web ile işletmeniz için</span>
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">profesyonel</span>
-            <span class="text-gold-gradient" style="display:block;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">web tasarım ve SEO hizmeti</span>
-          </h1>
-          <p style="color:rgba(255,255,255,0.5);font-size:16px;line-height:1.625;margin:0 0 40px;max-width:512px;font-family:system-ui,-apple-system,sans-serif">
-            Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde rakiplerinizin önüne geçiriyoruz.
-          </p>
-          <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;background:#D97706;color:#000;font-size:16px;font-weight:600;text-align:center;font-family:system-ui,-apple-system,sans-serif">Ücretsiz Teklif Al</span>
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:16px;font-weight:500;text-align:center;font-family:system-ui,-apple-system,sans-serif">Blog'a Git</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Static hero (src/content/heroMarkup.js) paints before JS; <Hero /> adopts this node instead of re-rendering it.
+         On other routes postbuild swaps the block between the markers for that page's static body. -->
+    <div id="hero-host"><!--prerender:start--><!--hero-html--><!--prerender:end--></div>
+    <div id="root"></div>
 
     <script type="application/ld+json">
     {
@@ -107,8 +105,8 @@
       "name": "SenninWeb",
       "url": "https://www.senninweb.com",
       "logo": "https://www.senninweb.com/favicon/favicon-48x48.png",
-      "image": "https://www.senninweb.com/og-image.svg",
-      "description": "KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
+      "image": "https://www.senninweb.com/og-image.jpg",
+      "description": "Yurt dışından hasta çekmek isteyen sağlık klinikleri için size özel web sitesi, uluslararası SEO ve hasta kazanım ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
       "email": "business@senninweb.com",
       "telephone": "+90 (531) 405 15 84",
       "foundingDate": "2025",

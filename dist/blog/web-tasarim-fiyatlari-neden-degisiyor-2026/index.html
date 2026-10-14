@@ -37,8 +37,24 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
     </noscript>
 
+    <!-- Adaptive motion tier before first paint (see src/utils/motionTier.js) -->
+    <script>
+      (function () {
+        var d = document.documentElement, n = navigator, c = n.connection || {}, t = 'full';
+        try {
+          if (matchMedia('(prefers-reduced-motion: reduce)').matches) t = 'off';
+          else {
+            var mem = n.deviceMemory, touch = matchMedia('(pointer: coarse)').matches;
+            if (c.saveData || /2g|3g/.test(c.effectiveType || '') || (mem && mem <= (touch ? 4 : 2)) || (n.hardwareConcurrency && n.hardwareConcurrency <= 2)) t = 'lite';
+          }
+          if (t === 'full' && sessionStorage.getItem('sw_motion') === 'lite') t = 'lite';
+        } catch (e) {}
+        d.setAttribute('data-motion', t);
+      })();
+    </script>
+
     <!-- Critical CSS for instant above-the-fold paint (render-blocking replaced at build) -->
-    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero-critical{align-items:center;background-color:#000;display:flex;min-height:700px;overflow:hidden;position:relative}@media (max-width:768px){.hero-critical{min-height:600px}}</style>
+    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}#hero-host:not([hidden]):not(:has([data-static-hero]))+#root{display:none}.sh{background:#0a0a0a;font-family:Inter,system-ui,-apple-system,sans-serif;overflow:hidden;position:relative}#hero-host .sh{padding-top:112px}.sh-inner{align-items:center;display:grid;gap:32px;margin:0 auto;max-width:90rem;padding:16px 24px 48px;position:relative;z-index:1}.sh-eyebrow{align-items:center;color:#d97706;display:inline-flex;font-size:12px;font-weight:500;gap:8px;letter-spacing:.2em;margin-bottom:32px;text-transform:uppercase}.sh-line{background:#d97706;height:1px;width:32px}.sh-h1{color:#fff;font-family:Syne,system-ui,-apple-system,sans-serif;font-size:2.25rem;font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:0 0 24px}.sh-gold{background:linear-gradient(135deg,#fcd34d,#d97706 50%,#b45309);-webkit-background-clip:text;background-clip:text;display:block;-webkit-text-fill-color:transparent}.sh-sub{color:hsla(0,0%,100%,.6);font-size:16px;line-height:1.625;margin:0 0 32px;max-width:32rem}.sh-ctas{display:flex;flex-direction:column;gap:12px;margin-bottom:40px}.sh-btn{align-items:center;border-radius:9999px;display:inline-flex;font-size:16px;font-weight:600;gap:10px;height:56px;justify-content:center;padding:0 32px;text-decoration:none;transition:transform .18s cubic-bezier(.2,0,0,1),background-color .2s,border-color .2s;white-space:nowrap}.sh-btn:active{transform:scale(.97)}.sh-btn--gold{background:#d97706;color:#0a0a0a}.sh-btn--gold:hover{background:#fbbf24}.sh-btn--wa{border:1px solid rgba(37,211,102,.45);color:hsla(0,0%,100%,.85);font-weight:500}.sh-btn--wa:hover{background:rgba(37,211,102,.1);border-color:#25d366}.sh-stats{border-top:1px solid hsla(0,0%,100%,.08);display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin:0;padding-top:28px}.sh-stats dt{color:#fff;font-family:Syne,system-ui,sans-serif;font-size:18px;font-weight:700;margin-bottom:2px}.sh-stats dd{color:hsla(0,0%,100%,.6);font-size:12px;margin:0}.sh-visual{display:none}@media (min-width:640px){.sh-h1{font-size:3rem}.sh-ctas{flex-direction:row}}@media (min-width:769px){.sh{align-items:center;display:flex;min-height:100vh}.sh-inner{padding:80px 48px;width:100%}.sh-h1{font-size:3.75rem}.sh-sub{font-size:18px;margin-bottom:40px}.sh-btn:hover{transform:scale(1.03)}.sh-stats{gap:32px;margin-top:24px;padding-top:32px}.sh-stats dt{font-size:20px}}@media (min-width:1024px){.sh-inner{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.sh-h1{font-size:3.6rem}.sh-visual{display:block;min-height:560px}}@media (min-width:1536px){.sh-h1{font-size:4.5rem}}</style>
 
     <!-- Speculation Rules API: instant next-page navigations (progressive enhancement) -->
     <script type="speculationrules">
@@ -49,51 +65,66 @@
       }]
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-U2UgQLgg.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-qGFduViA.js">
-    <link rel="modulepreload" crossorigin href="/assets/layout-C0ZQ1qdF.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-DesignEditorial-Cet4Iyp2.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-Hero-WVwr54Sk.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-BlogCTA-B1jwzkMF.js">
-    <link rel="modulepreload" crossorigin href="/assets/page-Home-Bv7BRjfK.js">
-    <link rel="preload" href="/assets/index-Dw0DEcB_.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-Dw0DEcB_.css"></noscript>
+    <script type="module" crossorigin src="/assets/index-cow3BmcH.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-ru--Vhn1.js">
+    <link rel="modulepreload" crossorigin href="/assets/layout-Bo3aHkHr.js">
+    <link rel="modulepreload" crossorigin href="/assets/section-Hero-DavpDXWh.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-Home-BX5RZnEQ.js">
+    <link rel="preload" href="/assets/index-QLdG_k7r.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-QLdG_k7r.css"></noscript>
     <meta property="og:title" content="2026 Web Tasarım Fiyatları Neden Değişiyor? (Detaylı Rehber)">
   <meta property="og:description" content="Web tasarım fiyatları neden bu kadar farklı? 2026 güncel fiyat aralıkları, saklı maliyetler ve bütçe dostu seçenekleri karşılaştırın.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.senninweb.com/blog/web-tasarim-fiyatlari-neden-degisiyor-2026">
-  <meta property="og:image" content="https://www.senninweb.com/og-image.svg">
+  <meta property="og:image" content="https://www.senninweb.com/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="2026 Web Tasarım Fiyatları Neden Değişiyor? (Detaylı Rehber)">
   <meta name="twitter:description" content="Web tasarım fiyatları neden bu kadar farklı? 2026 güncel fiyat aralıkları, saklı maliyetler ve bütçe dostu seçenekleri karşılaştırın.">
+  <script type="application/ld+json" data-prerender>{"@context":"https://schema.org","@type":"Article","headline":"2026 Web Tasarım Fiyatları Neden Değişiyor? (Detaylı Rehber)","description":"Web tasarım fiyatları neden bu kadar farklı? 2026 güncel fiyat aralıkları, saklı maliyetler ve bütçe dostu seçenekleri karşılaştırın.","image":"https://www.senninweb.com/images/blog/web-tasarim-fiyatlari-neden-degisiyor-2026.webp","datePublished":"2026-03-22","dateModified":"2026-03-22","inLanguage":"tr-TR","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.senninweb.com/blog/web-tasarim-fiyatlari-neden-degisiyor-2026"},"author":{"@type":"Person","name":"Çağatay Samet Macar","url":"https://www.senninweb.com/hakkimizda"},"publisher":{"@type":"Organization","name":"SenninWeb","logo":{"@type":"ImageObject","url":"https://www.senninweb.com/favicon/favicon-48x48.png"}}}</script>
   </head>
   <body>
     <div class="mesh-base"></div>
     <div class="mesh-glow"></div>
-    <div id="root">
-      <!-- ⚡ Pre-rendered Hero for instant FCP — React replaces this on hydration -->
-      <div class="hero-critical" style="padding:0 24px">
-        <div style="max-width:1280px;margin:0 auto;width:100%">
-          <span style="display:inline-flex;align-items:center;gap:8px;color:#D97706;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:32px;font-family:system-ui,-apple-system,sans-serif">
-            <span style="width:32px;height:1px;background:#D97706;display:inline-block"></span>
-            Premium Web Tasarım &amp; SEO
-          </span>
-          <h1 style="margin:0 0 24px;line-height:1.05;letter-spacing:-0.03em;font-family:system-ui,-apple-system,sans-serif">
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">Sennin Web ile işletmeniz için</span>
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">profesyonel</span>
-            <span class="text-gold-gradient" style="display:block;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">web tasarım ve SEO hizmeti</span>
-          </h1>
-          <p style="color:rgba(255,255,255,0.5);font-size:16px;line-height:1.625;margin:0 0 40px;max-width:512px;font-family:system-ui,-apple-system,sans-serif">
-            Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde rakiplerinizin önüne geçiriyoruz.
-          </p>
-          <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;background:#D97706;color:#000;font-size:16px;font-weight:600;text-align:center;font-family:system-ui,-apple-system,sans-serif">Ücretsiz Teklif Al</span>
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:16px;font-weight:500;text-align:center;font-family:system-ui,-apple-system,sans-serif">Blog'a Git</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Static hero (src/content/heroMarkup.js) paints before JS; <Hero /> adopts this node instead of re-rendering it.
+         On other routes postbuild swaps the block between the markers for that page's static body. -->
+    <div id="hero-host"><!--prerender:start-->
+<main style="max-width:760px;margin:0 auto;padding:140px 24px 80px;font-family:system-ui,-apple-system,sans-serif;color:rgba(255,255,255,0.75);line-height:1.7"><article><p style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#D97706">Web Tasarım · 7 dk</p><h1 style="color:#FFF;font-size:clamp(2rem,4.5vw,3.25rem);line-height:1.1;letter-spacing:-0.02em;margin:0 0 20px;font-weight:700">2026 Web Tasarım Fiyatları Neden Değişiyor? (Detaylı Rehber)</h1><p><time datetime="2026-03-22">2026-03-22</time> · Çağatay Macar</p><p style="font-size:1.25rem;color:#FFF">Web Tasarım Fiyatları Neden Bu Kadar Değişiklik Gösteriyor?</p><p>5.000 TL'ye de site var, 100.000 TL'ye de — peki aradaki fark ne?</p>
+<p>İnternette web sitesi yaptırmak istediğinizde karşınıza çıkan fiyatlar o kadar farklı ki insan ister istemez kafası karışıyor. Bir ajans 3.000 TL'ye "profesyonel web sitesi" yaparken, başka bir ajans aynı hizmet için 50.000 TL istiyor. İkisi de aynı şeyi mi yapıyor? Kesinlikle hayır.</p>
+<blockquote><strong>%75</strong> Kullanıcıların yüzde 75'i web sitesi tasarımına dayanarak bir şirketin güvenilirliğini değerlendiriyor. Tasarım kalitesi, algılanan değeri doğrudan etkiliyor. <cite>Stanford University, Web Güvenilirlik Araştırması, 2025</cite></blockquote>
+<p>Tıpkı bir araba örneğindeki gibi: İkisi de araba ama biri sizi A noktasından B noktasına götüren ekonomik bir model, diğeri ise konfor, hız ve güvenlik donanımlarıyla dolu lüks bir araç. <strong>Tasarım</strong> dünyasında da durum aynı. Bu yazıda, fiyat uçurumunun nedenlerini, 2026 yılında hangi fiyat aralıklarının gerçekçi olduğunu ve doğru tercihi nasıl yapacağınızı adım adım anlatacağım.</p>
+<h2 style="color:#FFF">Web Tasarım Fiyatları Neden Bu Kadar Farklı?</h2>
+<p>Bu sorunun tek bir cevabı yok. Çünkü fiyatı etkileyen onlarca değişken var. Ama en temel sebep şu: Herkes "web sitesi" yapıyor ama ortaya çıkan işin kalitesi, kapsamı ve teknik altyapısı tamamen farklı. <strong>Kurumsal bir site</strong> ile hazır tema üzerinden yapılan bir site arasında dağlar kadar fark vardır.</p>
+<p>Düşük fiyatlı seçenekler genellikle hazır şablonlar kullanır, size özel bir tasarım sunmaz ve çoğu zaman <a href="/blog/teknik-terimler#mobil-uyumlu-tasarim">mobil uyumlu tasarım</a> gibi temel gereklilikleri bile tam karşılamaz. Oysa profesyonel bir stratejik süreç, markanıza özel stratejilerle ilerler ve sizi rakiplerinizden ayıran bir dijital varlık oluşturur.</p>
+<h2 style="color:#FFF">2026 Web Tasarım Fiyatlarını Belirleyen 5 Faktör</h2>
+<p>Bu hizmeti alırken ödediğiniz ücretin karşılığında tam olarak ne aldığınızı anlamak için şu 5 faktöre dikkat etmelisiniz.</p>
+<h3 style="color:#FFF">1. Tasarım Kalitesi ve UI/UX</h3>
+<p><a href="/blog/teknik-terimler#ui-ux-tasarimi">UI/UX tasarımı</a>, bir web sitesinin sadece görünümünü değil, kullanıcının siteyle olan tüm etkileşimini kapsar. Profesyonel bir ekip, sitenize giren bir kişinin hangi butona tıklayacağından, hangi renklerin güven hissi vereceğine kadar her detayı özel olarak tasarlar. <a href="/blog/tasarimin-5-temel-ilkesi">Web tasarımın 5 temel ilkesi</a> rehberimizde bu konuları detaylıca ele aldık. Hazır tema kullanan siteler ise bu sürecin neredeyse tamamını atlar. Bu da fiyata doğrudan yansır.</p>
+<h3 style="color:#FFF">2. Mobil Uyum ve Hız (Core Web Vitals)</h3>
+<p>Google, 2026 yılında mobil uyum ve site hızını sıralama faktörü olarak çok ciddiye alıyor. <a href="/blog/teknik-terimler#core-web-vitals">Core Web Vitals</a> olarak bilinen bu performans metrikleri, sitenizin hem kullanıcı deneyimini hem de Google'daki sıralamasını doğrudan etkiliyor. Profesyonel bir ajans, bu metrikleri optimize etmek için altyapı seviyesinde çalışır. Bu da ek bir maliyet demektir.</p>
+<h3 style="color:#FFF">3. SEO ve Teknik Altyapı</h3>
+<blockquote><strong>₺2.000</strong> Bir freelance web tasarımcısının saatlik ücreti Türkiye'de 200 TL'den başlarken, premium bir ajansın saatlik ücreti 2.000 TL'ye kadar çıkabiliyor. Fiyat farkı, sunulan değerdeki farkı yansıtıyor. <cite>SenninWeb, Freelance vs Ajans Fiyat Karşılaştırması, 2026</cite></blockquote>
+<p><a href="/blog/teknik-terimler#seo-uyumlu-web-sitesi">SEO uyumlu web sitesi</a> kurulumu, sitenin iskeletinden itibaren başlar. Doğru başlık etiketleri, schema.org yapılandırması, hız optimizasyonu, görsel sıkıştırma ve daha birçok teknik detay, sitenizin Google'da görünür olmasını sağlar. Ucuz seçeneklerde bu adımlar genellikle ya eksiktir ya da hiç yoktur.</p>
+<h3 style="color:#FFF">4. Özel Yazılım ve Fonksiyonellik İhtiyaçları</h3>
+<p>Her işletmenin ihtiyacı farklıdır. Online rezervasyon sistemi, üyelik paneli, ödeme entegrasyonu, çoklu dil desteği gibi özellikler projenin kapsamını ve dolayısıyla fiyatı artırır. Basit bir tanıtım sitesi ile özel yazılım gerektiren bir platform arasındaki fiyat farkı bu noktada ortaya çıkar.</p>
+<h3 style="color:#FFF">5. İçerik ve Metin Yazarlığı</h3>
+<p>Bir web sitesini etkili yapan sadece görseller değil, aynı zamanda içerikleridir. Profesyonel metin yazarlığı, markanızın sesini doğru yansıtır, ziyaretçileri harekete geçirir ve SEO'ya katkı sağlar. İçerik üretimi de maliyeti etkileyen önemli bir faktördür.</p>
+<h2 style="color:#FFF">2026 Güncel Fiyat Aralıkları</h2>
+<p>Tabii ki her proje benzersizdir ancak 2026 yılı için genel bir fikir vermek adına ortalama fiyat aralıklarını şöyle özetleyebilirim:</p>
+<p><div class="overflow-x-auto my-6"><table class="w-full text-sm text-white/65 border-collapse"><thead><tr class="border-b border-white/10"><th class="text-left py-3 pr-6 font-semibold text-white">Proje Türü</th><th class="text-left py-3 font-semibold text-white">Ortalama Fiyat Aralığı</th></tr></thead><tbody><tr class="border-b border-white/10"><td class="py-3 pr-6">Hazır tema ile basit tanıtım sitesi</td><td class="py-3">5.000 – 15.000 TL</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-6">Profesyonel kurumsal site çözümü</td><td class="py-3">20.000 – 50.000 TL</td></tr><tr class="border-b border-white/10"><td class="py-3 pr-6">Premium UI/UX + SEO odaklı site</td><td class="py-3">50.000 – 100.000 TL</td></tr><tr><td class="py-3 pr-6">Özel yazılım + e-ticaret + portal</td><td class="py-3">100.000 TL ve üzeri</td></tr></tbody></table></div></p>
+<p>Gördüğünüz gibi <strong>fiyatlar</strong> oldukça geniş bir skalada yer alıyor. Önemli olan en ucuz seçeneği bulmak değil, işletmenizin ihtiyaçlarına en uygun seçeneği almak.</p>
+<h2 style="color:#FFF">Ucuz Web Tasarım vs Profesyonel Yaklaşım</h2>
+<p>Düşük fiyatlı bir web sitesi yaptırıp birkaç ay sonra "keşke daha iyisini yaptırsaydım" dediğinizi duyar gibiyim. Çünkü <a href="/blog/teknik-terimler#ssl-sertifikasi">SSL sertifikası</a> olmayan, mobilde bozulan, yavaş açılan bir site size sadece masraf değil, aynı zamanda itibar kaybı da yaşatır.</p>
+<p><strong>Profesyonel bir site</strong> ise şunları garanti eder: Google'da görünürlük, hızlı açılış süreleri, mobilde kusursuz deneyim, güvenli altyapı ve markanıza uygun özel tasarım. Bu bir maliyet değil, yatırımdır.</p>
+<blockquote><strong>%55</strong> Özel yazılım gerektiren web projelerinin maliyeti, standart kurumsal sitelere göre yüzde 55 daha yüksek. Proje kapsamı, fiyatlandırmadaki en büyük değişkendir. <cite>Clutch, Web Geliştirme Maliyetleri Raporu, 2025</cite></blockquote>
+<p>Unutmayın, internet kullanıcılarının %75'i bir web sitesinin güvenilirliğini sadece tasarımına bakarak değerlendiriyor. Amatör görünen bir site, profesyonel bir işletme olsanız bile potansiyel müşterilerinizi kaçırmanıza neden olur.</p>
+<h2 style="color:#FFF">Web Tasarım Fiyatları Hakkında Sık Sorulan Sorular</h2>
+<p>En çok merak edilen soruları ve cevaplarını burada topladım:</p>
+<ul><li><strong>En ucuz site fiyatı ne kadar?</strong> Hazır tema kullanan basit bir tanıtım sitesi 5.000 TL'den başlayabilir. Ancak bu siteler genellikle SEO, hız ve mobil uyum konusunda yetersiz kalır.</li><li><strong>Kurumsal site fiyatları neden daha yüksek?</strong> Çünkü markaya özel UI/UX çalışması, SEO altyapısı, hız optimizasyonu ve özgün içerik üretimi gibi profesyonel hizmetleri kapsar.</li><li><strong>Site fiyatları 2026'da arttı mı?</strong> Evet, döviz kurları, artan işçilik maliyetleri ve gelişen teknoloji gereksinimleri nedeniyle fiyatlar her yıl belirli bir oranda artış gösteriyor.</li><li><strong>Web sitesi fiyatına domain ve hosting dahil mi?</strong> Çoğu profesyonel ajans ilk yıl domain ve hosting hizmetini pakete dahil eder. Sonraki yıllar için yenileme ücretleri ayrıca alınır.</li></ul>
+<p>Daha fazla sorunuz varsa <a href="/sss">SSS sayfamızı</a> ziyaret edebilir veya bizimle doğrudan iletişime geçebilirsiniz.</p>
+<p style="color:#FFF"><strong>İşletmenize özel, profesyonel bir çözüm mü arıyorsunuz?</strong> <a href="/#contact" style="color:#FCD34D">Bizimle iletişime geçin, size özel bir strateji ve fiyat teklifi oluşturalım!</a></p></article><nav aria-label="Site" style="margin-top:40px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px"><a href="/hizmet/web-tasarim" style="color:#FCD34D">Sağlık Turizmi Web Sitesi</a><a href="/hizmet/seo-ve-buyume" style="color:#FCD34D">Sağlık Turizmi SEO</a><a href="/hizmet/dijital-pazarlama" style="color:#FCD34D">Sağlık Turizmi Dijital Pazarlama</a><a href="/kocaeli" style="color:#FCD34D">Kocaeli</a><a href="/bilecik" style="color:#FCD34D">Bilecik</a><a href="/rehber/yurt-disindan-hasta-cekme" style="color:#FCD34D">Yurt Dışından Hasta Çekme Rehberi</a><a href="/blog" style="color:#FCD34D">Blog</a><a href="/sss" style="color:#FCD34D">SSS</a><a href="/#contact" style="color:#FCD34D">Ücretsiz Teklif Al</a></nav></main>
+<!--prerender:end--></div>
+    <div id="root"></div>
 
     <script type="application/ld+json">
     {
@@ -103,8 +134,8 @@
       "name": "SenninWeb",
       "url": "https://www.senninweb.com",
       "logo": "https://www.senninweb.com/favicon/favicon-48x48.png",
-      "image": "https://www.senninweb.com/og-image.svg",
-      "description": "KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
+      "image": "https://www.senninweb.com/og-image.jpg",
+      "description": "Yurt dışından hasta çekmek isteyen sağlık klinikleri için size özel web sitesi, uluslararası SEO ve hasta kazanım ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
       "email": "business@senninweb.com",
       "telephone": "+90 (531) 405 15 84",
       "foundingDate": "2025",

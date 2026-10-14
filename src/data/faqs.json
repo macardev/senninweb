@@ -1,66 +1,70 @@
 [
   {
-    "question": "İnternet sitesi nedir ve neden ihtiyacım var?",
-    "answer": "İnternet (web) sitesi veya siteleri, bizim dijitaldeki 7/24 çalışan dükkanlarımızdır. Birçok farklı kategorisi vardır: blog, portfolyo, e-ticaret, haber siteleri, topluluk ve forum siteleri vs. İnternet siteleri, kendinizin veya işletmenizi tanıtmak için müthiş ve bir o kadar da etkili araçlardır. Günümüzde internet sitesi olmayan bir işletme hayal etmek bile tuhaf geliyor — artık işletme sahipleri veya freelance olarak çalışan şahıslar için bir zorunluluk haline geldi. Müşteri çekmek, satış yapmak, sponsor ve/veya yatırımcı bulmak için olmazsa olmazlardır."
+    "question": "SenninWeb ne yapıyor, hangi kliniklerle çalışıyor?",
+    "answer": "Yurt dışından hasta çekmek isteyen sağlık klinikleriyle çalışıyoruz: saç ekim merkezleri, diş klinikleri, estetik ve güzellik klinikleri ile veteriner klinikleri. Tek bir işe odaklanıyoruz: kliniğinizin hedef ülkede, hastanın kendi dilinde Google'da bulunmasını ve gelen ziyaretçinin WhatsApp'ta sıcak hasta talebine, ardından randevuya dönüşmesini sağlamak."
   },
   {
-    "question": "Web sitesi nasıl yapılır?",
-    "answer": "Günümüzde bunun birden fazla yolu var. Figma-Webflow gibi tasarım araçları, baştan sona elle kodlayarak yazma, vibe coding (son birkaç yılda ortaya çıkan bir kodlama yöntemi — sadece yapay zekaya ne yapması gerektiği söylenerek profesyonel kalitede web sitesi tasarımları ortaya çıkarılabiliyor) bunlardan birkaç tanesidir. Sennin Web olarak biz bu üçünü harmanlayarak daha etkili sonuçlar elde ediyoruz. Sitenin UI/UX tasarımı için Figma kullanarak kullanıcının etkileşime girdiği arayüzü modern, estetik ve hızlı bir şekilde tasarlıyoruz. Ardından geliştirici ekibimiz bunu yapay zeka ajanlarının yardımıyla hem kodluyor hem de debug (hata giderme) işlemini yapıyor."
+    "question": "Hasta Kazanım Paketi'ne neler dahil?",
+    "answer": "Paket dört parçadan oluşur:\n\n1. Size özel tasarlanan, çok dilli, yurt dışına yönelik web sitesi.\n2. Hedef ülkede sağlık turizmi SEO'su: hastanın arama diliyle içerik, teknik SEO, schema ve Google İşletme Profili.\n3. Hedef ülkeden kaliteli backlink ve dizin çalışmaları.\n4. WhatsApp hasta karşılama ve takip akışı, ülke ve sayfa bazında ölçüm ve aylık performans raporu.\n\nHepsi tek bir aylık pakette yer alır."
   },
   {
-    "question": "Web sitem Google'da neden çıkmıyor?",
-    "answer": "En sık duyduğumuz sorulardan biridir bu. Birkaç farklı sebebi olabilir, en yaygın olanlarına bir bakalım.\n\nBirincisi: siteniz çok yeni olabilir. Google'ın yeni bir siteyi keşfetmesi, taraması ve sıralamaya koyması zaman alır. İkincisi: siteniz teknik olarak Google'ın istediği kriterleri karşılamıyor olabilir. Mobil uyumluluk, hız, SSL sertifikası, düzgün bir site haritası — bunlar olmadan Google sizi görmezden gelir. Üçüncüsü: içerik yetersizliği. Sitenizde bir iki cümlelik sayfalar varsa, Google'a \"bu sayfa bir şey anlatmıyor\" sinyali gönderirsiniz.\n\nDördüncüsü de şu: hiç SEO çalışması yapılmamış olabilir. Güzel bir site yapıp yayına almak yetmez. Doğru anahtar kelimeleri hedeflemek, etiketleri düzenlemek, yerel SEO'yu kurmak — bunların hepsi ayrı birer çalışma gerektirir.\n\nKısacası: siteniz var diye Google'da çıkacağının garantisi yok. Ama doğru adımları atarsanız çıkma ihtimali epey artar."
+    "question": "Web sitesi tasarımı ayrıca ücretli mi?",
+    "answer": "Hayır. Web sitesinin tasarımı ve geliştirmesi Hasta Kazanım Paketi'ne dahildir, ayrıca ücretlendirilmez. Sitenin animasyonlu ve etkileyici mi, sade ve hızlı mı olacağı tamamen kliniğinizin ihtiyacına göre belirlenir."
   },
   {
-    "question": "Hazır tema mı kullanıyorsunuz yoksa sıfırdan mı tasarlıyorsunuz?",
-    "answer": "Kesinlikle sıfırdan tasarlıyoruz. Hazır temalar — özellikle WordPress için olanlar — hız, güvenlik ve SEO açısından ciddi dezavantajlar yaratabiliyor. Biz her projeye sıfırdan başlıyor, işletmenin ihtiyaçlarını analiz ediyor, hedef kitlesini tanıyor ve ona göre bir tasarım çıkarıyoruz.\n\nBunun en büyük avantajı: siteniz size özel oluyor. Başka hiçbir yerde görmeyeceğiniz bir arayüz, markanızın renkleriyle bütünleşmiş bir deneyim. Hazır tema kullandığınızda ise aynı siteyi onlarca farklı işletmede görmeniz mümkün. Bu da hem prestij hem de özgünlük açısından can sıkıcı."
+    "question": "Fiyatlandırma nasıl belirleniyor?",
+    "answer": "Paketi aylık olarak fiyatlandırıyoruz ve her kliniğe özel teklif hazırlıyoruz. Fiyatı belirleyen başlıca etkenler: hedef ülke ve dil sayısı, tedavi ve sayfa sayısı, hedef ülkeden alınacak bağlantı (backlink) hacmi ile tasarım ve animasyon kapsamı.\n\nÖnce WhatsApp'tan ücretsiz kısa bir analiz yapıyor, kliniğinizin durumunu ve hedeflerini görüyor, ardından net bir teklif sunuyoruz."
   },
   {
-    "question": "Mobil uyumlu site yapıyor musunuz?",
-    "answer": "Tabii ki. Günümüzde internet trafiğinin %60'ı mobilden geliyor. Google da mobil uyumluluğu en kritik sıralama faktörlerinden biri olarak değerlendiriyor. Mobil uyumlu olmayan bir site yapmak, 2026 yılında dükkânınızın kapısına \"girmeyin\" yazısı asmak gibi bir şey.\n\nTüm projelerimizi mobil öncelikli tasarlıyoruz. Önce telefon ekranında kusursuz görünsün, sonra tablet ve masaüstüne uyarlıyoruz. Buton boyutlarından yazı puntolarına, menü düzeninden görsel optimizasyonuna kadar her şey mobil kullanıcı düşünülerek hazırlanıyor."
+    "question": "Hazır şablon kullanıyor musunuz?",
+    "answer": "Hayır, hiçbir projede hazır tema veya template kullanmıyoruz. Aynı şablonu kullanan onlarca klinik birbirine benzer ve yabancı hastanın gözünde sıradanlaşır. Her site kliniğin hikâyesine, doktorlarına, hedef ülkesine ve hastasının sorularına göre sıfırdan tasarlanır. Gereksiz kod taşımadığı için daha hızlı açılır ve SEO'da avantaj sağlar."
   },
   {
-    "question": "Siteyi kendim güncelleyebilir miyim?",
-    "answer": "Evet, tüm projelerimizi kullanıcı dostu bir yönetim paneliyle teslim ediyoruz. Hiç kod bilmeseniz bile içeriklerinizi kolayca güncelleyebilir, yeni sayfalar ekleyebilir, görselleri değiştirebilirsiniz.\n\nTeslimat sonrası kısa bir eğitim de veriyoruz — paneli nasıl kullanacağınızı, nelere dikkat etmeniz gerektiğini anlatıyoruz. Yine de \"uğraşamam, siz yönetin\" derseniz, onun için de aylık bakım seçeneklerimiz mevcut."
+    "question": "Mevcut sitemiz var. Yine de yeni site yapmak gerekiyor mu?",
+    "answer": "Her zaman değil. Önce mevcut sitenizi hız, çok dilli yapı, güven unsurları ve yönetmelik uyumu açısından inceliyoruz. Site sağlamsa onun üzerine sağlık turizmi SEO'su ve hasta akışı kuruyoruz. Teknik altyapı SEO'nun verim almasını engelliyorsa, bunu açıkça söylüyor ve önce siteyi iyileştirmeyi öneriyoruz."
   },
   {
-    "question": "Web sitesi yaptırmak ne kadar sürer?",
-    "answer": "Projenin kapsamına göre değişir, ama ortalama bir kurumsal site için 8-10 gün civarında teslim yapıyoruz. İlk 48 saat içinde demo tasarımı gönderiyoruz, siz onayladıktan sonra geliştirme aşamasına geçiyoruz.\n\nTabii e-ticaret gibi daha karmaşık projelerde bu süre 2-3 haftayı bulabilir. Ama net zaman çizelgesini her zaman ilk görüşmede sizinle paylaşıyoruz — ne zaman ne olacağını bilmek istemez misiniz?"
+    "question": "Yurt dışından hasta kabul etmek için yetki belgesi gerekli mi?",
+    "answer": "Evet. 26 Nisan 2025 tarihli Uluslararası Sağlık Turizmi ve Turistin Sağlığı Hakkında Yönetmelik'in 5. maddesine göre sağlık tesisi ve aracı kuruluşların uluslararası sağlık turizmi hizmetlerinde faaliyet yürütebilmesi için yetki belgesi alması zorunludur. Belgenin sitenizde görünür olması, yabancı hasta için de güçlü bir güven sinyalidir. (Genel bilgilendirmedir, hukuki danışmanlık değildir.)"
   },
   {
-    "question": "Yayın sonrası destek ve bakım veriyor musunuz?",
-    "answer": "Evet, veriyoruz. Yayın sonrası 30 gün boyunca ücretsiz destek sağlıyoruz. Bu süreçte karşılaştığınız herhangi bir sorun, küçük değişiklik talepleri veya uyum sorunlarıyla ilgileniyoruz.\n\n30 gün sonrası için ise aylık bakım planlarımız var. Güvenlik güncellemeleri, performans takibi, içerik güncellemeleri ve yedekleme gibi hizmetleri düzenli olarak sağlıyoruz. Uzun vadeli çözüm ortağınız olmak isteriz."
+    "question": "Yurt dışına yönelik ayrı bir web sitesi şart mı?",
+    "answer": "12 Kasım 2025 tarihli Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik'e göre yurt dışına yönelik tanıtım, ayrı bir internet sitesi veya sosyal medya hesabı üzerinden yapılmalı ve bu platformda sağlık turizmi kapsamında hizmet sunulduğu açıkça belirtilmelidir. Bu nedenle yabancı hasta çekmek isteyen klinikler için ayrı, çok dilli bir site pratikte zorunlu hâle geldi. (Genel bilgilendirmedir, hukuki danışmanlık değildir.)"
   },
   {
-    "question": "SEO nedir ve ne işe yarar?",
-    "answer": "SEO (arama motoru optimizasyonu), web sitenizin Google ve diğer arama motorlarında organik olarak üst sıralarda yer alması için yapılan çalışmaların bütünüdür. Teknik altyapı, içerik stratejisi ve yerel optimizasyon olmak üzere üç temel disiplinden oluşur.\n\nSEO uzun vadeli bir yatırımdır. Çalışmalar yapılır, içerik üretilir, teknik altyapı düzeltilir — ve zamanla sıralamalar oturur. Organik olarak kazandığınız sıralamalar size ait olmaya devam eder.\n\nNeden önemli? Çünkü internet kullanıcılarının %90'ı arama motorlarını kullanıyor ve tıklamaların büyük çoğunluğu ilk sayfadaki organik sonuçlara gidiyor. Doğru bir SEO stratejisi ile işletmenizi sürekli olarak potansiyel müşterilerin karşısına çıkarabilirsiniz."
+    "question": "Hasta yorumlarını ve önce/sonra fotoğraflarını sitede kullanabilir miyiz?",
+    "answer": "Bu konu 2025 tanıtım yönetmeliğiyle sıkı kurallara bağlandı ve yurt içi ile yurt dışına yönelik tanıtım için farklı hükümler var. Hasta görselleri ancak hastanın yazılı veya elektronik onayıyla kullanılabilir. Yorumları ve görselleri sitenizde kullanmadan önce güncel yönetmelik metnini bir sağlık hukuku uzmanıyla birlikte değerlendirmenizi öneriyoruz. Biz sitenizi bu kontrolü kolaylaştıracak şekilde kurguluyoruz."
   },
   {
-    "question": "SEO ne kadar sürede sonuç verir? Garanti verebiliyor musunuz?",
-    "answer": "Açık olacağım: SEO'da garanti diye bir şey yoktur. Google, yılda binlerce algoritma güncellemesi yapar ve sıralama 200'den fazla faktöre bağlıdır. Size \"bir ay sonra birinci sıradayız\" diyen bir ajans varsa, ya size yalan söylüyordur ya da kendine.\n\nAma gerçekçi bir zaman çizelgesi verebilirim. Teknik düzenlemelerin etkisi 4-8 hafta içinde görülmeye başlar. Düşük ve orta rekabetli kelimelerde ilk sıralama hareketleri 3. aydan itibaren gözlemlenir. Kalıcı ve güçlü sonuçlar ise 6-12 ay arasında oturur.\n\nGaranti veremeyiz — bunu veren bir ajans varsa kaçın derim. Ama şeffaf raporlama ile her ay ne yaptığımızı, hangi kelimelerde ilerlediğimizi, trafiğin nasıl değiştiğini gösteririz. Sonuçlar konuşur."
+    "question": "Hangi ülkelerden hasta çekebiliriz, hangi dillerde site yapıyorsunuz?",
+    "answer": "Hedef ülkeyi kliniğinizin fiyat avantajına, uçuş süresine, ekibinizin dil kapasitesine ve şu ana kadar hangi ülkelerden hasta geldiğine bakarak birlikte seçiyoruz. İngilizce, Almanca, Arapça, Rusça ve diğer dillerde site yapabiliyoruz. Önerimiz önce 1 ana ve 1 ikincil ülkeyle başlamak, ana ülkede güçlendikten sonra yeni dil eklemek."
   },
   {
-    "question": "AEO ve GEO nedir? SEO'dan farkı ne?",
-    "answer": "Önce SEO'dan bahsedelim. SEO (search engine optimization — arama motoru optimizasyonu), web sitenizi kullanıcı dostu hale getirerek Google'da üst sıralarda çıkması için yapılan işlemdir. Bunu zaten duymayan yoktur herhalde? Gelelim AEO'ya. AEO (answer engine optimization — cevap motoru optimizasyonu), yapay zeka destekli arama motorları tarafından kullanıcıya en doğru cevabı verebilmek için içeriklerin optimize edilmesidir. Örneğin Gemini veya ChatGPT'ye bir soru sorduğunuzda, bu yapay zekaların sizin sitenizdeki bilgilerden yola çıkarak kullanıcıya cevap vermesini sağlayan bir işlemdir. GEO ise AEO'ya benzer. Generative Engine Optimization (üretici motor optimizasyonu), içeriklerinizi üretken yapay zeka destekli arama motorlarının daha kolay bulması, anlaması ve yanıtlarına kaynak olarak göstermesi için yapılan işlemdir."
+    "question": "Sağlık turizmi SEO'su ne kadar sürede sonuç verir? Garanti veriyor musunuz?",
+    "answer": "Yeni bir dilde ve ülkede ilk belirgin sonuçlar genellikle 4–6 ay içinde görülür. Saç ekimi gibi rekabetçi alanlarda bu süre uzayabilir. Google sıralamalarını hiç kimse garanti edemez; \"1. sıra garantisi\" veren birine şüpheyle yaklaşın. Bizim garantimiz şeffaflık: her ay hangi ülkede, hangi aramada nerede olduğunuzu ve kaç hasta talebi geldiğini raporluyoruz."
   },
   {
-    "question": "AEO ve GEO için ne yapmalıyım?",
-    "answer": "Açık konuşacağım, şu an ortada öyle aman aman kesin yöntemler yok. SEO'daki gibi kalıplaşmış yöntemler yok desek daha doğru olur. Dediğim gibi ama şu anlık."
+    "question": "Reklam (Google Ads) yerine neden SEO?",
+    "answer": "İkisi birbirinin alternatifi değil. Yurt dışı hedefli reklam ilk talepleri hızlı getirir ama bütçe durduğu gün talep de durur. Sağlık turizmi SEO'su ise daha yavaş başlar ama birikir: sıralamalar ve trafik kalıcıdır, hasta başına maliyet zamanla düşer. En sağlıklı yaklaşım kısa vadede hızlı kanalları kullanırken uzun vadede kliniğin kendi sitesini ve SEO'sunu büyütmektir."
   },
   {
-    "question": "Sadece SEO hizmeti alabilir miyim?",
-    "answer": "Evet, sadece SEO hizmeti de alabilirsiniz. Mevcut bir siteniz varsa ve sadece Google'da görünürlüğünü artırmak istiyorsanız, SEO paketlerimizden birini seçip başlayabiliriz. Önce sitenizin mevcut durumunu analiz ediyor, sonra size özel bir strateji belirliyoruz.\n\nAma şunu da söylemeden geçemeyeceğim: bazen sitenin teknik altyapısı SEO çalışmasının tam verim almasını engelleyebiliyor. Eğer böyle bir durumla karşılaşırsak, sizi uyarır ve önce siteyi iyileştirmeyi öneririz. Yoksa \"sadece SEO yapalım, sonra siteyi düşünürüz\" yaklaşımı pek sağlıklı olmuyor."
+    "question": "ChatGPT, Gemini gibi yapay zekâ asistanlarında görünebilir miyiz?",
+    "answer": "Evet, bunun için çalışıyoruz. Hastalar artık soruyu yapay zekâ asistanlarına da soruyor ve bu asistanlar arka planda web araması yapıp net cevap veren, kaynak gösteren, güncel ve yapılandırılmış veriye sahip sayfaları kaynak olarak gösteriyor. Sitenizi bu yapıya uygun (AEO/GEO) kurguluyor; doktor kontrolünden geçmiş içerik, net cevap blokları ve schema işaretlemeleri kullanıyoruz."
   },
   {
-    "question": "Web tasarım fiyatları neye göre belirleniyor?",
-    "answer": "Fiyat konusunun birçok farklı etkeni var. Sitenin kategorisine (blog, portfolyo veya e-ticaret) göre, sayfa sayısı, animasyonların kompleks olup olmadığı veya 3D animasyonlar gibi konular örneklerden birkaç tanesi olarak gösterilebilir."
+    "question": "WhatsApp'a gelen hastalara siz mi cevap veriyorsunuz?",
+    "answer": "Hasta iletişimini klinik ekibiniz yürütür, çünkü tıbbi değerlendirme ve güven ilişkisi sizde olmalı. Biz hastanın dilinde karşılama metinlerini, takip mesajlarını, talep → görüşme → randevu panosunu ve ölçümü kuruyor, her ay verilerle iyileştiriyoruz."
   },
   {
-    "question": "E-ticaret sitesi neden daha pahalı?",
-    "answer": "E-ticaret sitelerinin daha pahalı olmasının iki ana sebebi var. Web sitesi tasarımı ve geliştirmesinde iki ana başlık bulunur. Birisi front-end (ön uç), diğeri ise back-end (arka uç) olarak isimlendirilir. Front-end, kullanıcının siteye girdiği zaman gördüğü her şeydir: yazılar, renkler, kartlar, görseller, ikonlar, logo vs. Back-end ise sitenin arkaplanında siteye fonksiyonellik katmak için kullanılır. Abonelik işlemleri, kayıt olmak veya sitede hesap açma, ödeme altyapıları ekleme, ürün satışları back-end ile yapılır. Blog ve portfolyo türündeki siteler için çoğu zaman front-end yeterlidir. E-ticaret sitelerinde ise back-end işin içine girdiği için maliyet artar."
+    "question": "Çalışmaya nasıl başlıyoruz?",
+    "answer": "1. Ücretsiz Yurt Dışından Hasta Çekme Rehberi'ni inceleyin.\n2. WhatsApp'tan bize yazın; sitenizi ve hedef ülkenizi inceleyip ücretsiz kısa bir analiz gönderelim.\n3. Kısa bir görüşmede hedeflerinizi netleştirip kliniğinize özel teklif sunalım.\n4. İlk ay strateji, hedef ülke ve site mimarisi; ikinci ay sitenin yayına alınması; üçüncü aydan itibaren hedef ülkeden otorite, içerik ve büyüme."
   },
   {
-    "question": "SenninWeb'i neden tercih etmeliyim?",
-    "answer": "Güzel soru. Bizi diğer ajanslardan ayıran birkaç şey var.\n\nBirincisi: hazır tema kullanmıyoruz. Her projeyi sıfırdan, markaya özel tasarlıyoruz. Çoğu ajans bir tema alıp üzerinden iki günde site çıkarırken, biz her pikselle tek tek ilgileniyoruz.\n\nİkincisi: SEO sadece bir hizmetimiz değil, felsefemizin temeli. \"Güzel görünmek yetmez, Google'da da görünmek lazım\" sözü boşuna değil. Tasarım ve SEO'yu birbirinden ayırmıyor, her projede ikisini birlikte düşünüyoruz.\n\nÜçüncüsü: işimizi hızlı yapıyoruz. Ortalama 8 günde teslim, 48 saatte demo tasarım. Çoğu ajansın haftalarca sürdüğü işi biz günlerle ölçüyoruz.\n\nDördüncüsü: şeffafız. Ne yapıyoruz, neden yapıyoruz, ne zaman bitecek — her şeyi baştan konuşuyoruz. Sürpriz yok, gizli maliyet yok.\n\nBeşincisi: AEO ve GEO gibi yeni nesil arama motoru optimizasyonu konularında da çalışıyoruz. Çoğu ajansın henüz adını bile duymadığı bu alanlarda projeler üretiyoruz. Yapay zeka çağında sadece Google'da değil, ChatGPT'de, Gemini'de, Perplexity'de de görünür olmanız için çalışıyoruz."
+    "question": "Raporlama nasıl yapılıyor?",
+    "answer": "Her ay; hedef ülkedeki gösterim ve sıralamaları, ülke ve sayfa bazında ziyaretleri, WhatsApp ve form üzerinden gelen hasta taleplerini ve yapılan çalışmaları içeren bir rapor paylaşıyoruz. Amaç yalnızca trafiği değil, hangi sayfanın hangi ülkeden kaç hasta talebi getirdiğini görmeniz."
+  },
+  {
+    "question": "Veteriner kliniği için de uygun mu?",
+    "answer": "Evet. Veteriner kliniklerinde \"yurt dışı\" hedefi biraz farklı işler: Türkiye'de yaşayan yabancılar, turistler ve evcil hayvanıyla ülke değiştirenler. Evcil hayvan pasaportu, seyahat aşıları, kuduz antikor testi ve sağlık sertifikası gibi hizmetleri İngilizce, Rusça gibi dillerde anlatan bir site ve \"English speaking vet\" gibi aramalara yönelik SEO bu kitleye ulaşmanın en etkili yoludur."
   }
 ]

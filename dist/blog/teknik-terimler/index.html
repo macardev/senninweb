@@ -37,8 +37,24 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
     </noscript>
 
+    <!-- Adaptive motion tier before first paint (see src/utils/motionTier.js) -->
+    <script>
+      (function () {
+        var d = document.documentElement, n = navigator, c = n.connection || {}, t = 'full';
+        try {
+          if (matchMedia('(prefers-reduced-motion: reduce)').matches) t = 'off';
+          else {
+            var mem = n.deviceMemory, touch = matchMedia('(pointer: coarse)').matches;
+            if (c.saveData || /2g|3g/.test(c.effectiveType || '') || (mem && mem <= (touch ? 4 : 2)) || (n.hardwareConcurrency && n.hardwareConcurrency <= 2)) t = 'lite';
+          }
+          if (t === 'full' && sessionStorage.getItem('sw_motion') === 'lite') t = 'lite';
+        } catch (e) {}
+        d.setAttribute('data-motion', t);
+      })();
+    </script>
+
     <!-- Critical CSS for instant above-the-fold paint (render-blocking replaced at build) -->
-    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero-critical{align-items:center;background-color:#000;display:flex;min-height:700px;overflow:hidden;position:relative}@media (max-width:768px){.hero-critical{min-height:600px}}</style>
+    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}#hero-host:not([hidden]):not(:has([data-static-hero]))+#root{display:none}.sh{background:#0a0a0a;font-family:Inter,system-ui,-apple-system,sans-serif;overflow:hidden;position:relative}#hero-host .sh{padding-top:112px}.sh-inner{align-items:center;display:grid;gap:32px;margin:0 auto;max-width:90rem;padding:16px 24px 48px;position:relative;z-index:1}.sh-eyebrow{align-items:center;color:#d97706;display:inline-flex;font-size:12px;font-weight:500;gap:8px;letter-spacing:.2em;margin-bottom:32px;text-transform:uppercase}.sh-line{background:#d97706;height:1px;width:32px}.sh-h1{color:#fff;font-family:Syne,system-ui,-apple-system,sans-serif;font-size:2.25rem;font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:0 0 24px}.sh-gold{background:linear-gradient(135deg,#fcd34d,#d97706 50%,#b45309);-webkit-background-clip:text;background-clip:text;display:block;-webkit-text-fill-color:transparent}.sh-sub{color:hsla(0,0%,100%,.6);font-size:16px;line-height:1.625;margin:0 0 32px;max-width:32rem}.sh-ctas{display:flex;flex-direction:column;gap:12px;margin-bottom:40px}.sh-btn{align-items:center;border-radius:9999px;display:inline-flex;font-size:16px;font-weight:600;gap:10px;height:56px;justify-content:center;padding:0 32px;text-decoration:none;transition:transform .18s cubic-bezier(.2,0,0,1),background-color .2s,border-color .2s;white-space:nowrap}.sh-btn:active{transform:scale(.97)}.sh-btn--gold{background:#d97706;color:#0a0a0a}.sh-btn--gold:hover{background:#fbbf24}.sh-btn--wa{border:1px solid rgba(37,211,102,.45);color:hsla(0,0%,100%,.85);font-weight:500}.sh-btn--wa:hover{background:rgba(37,211,102,.1);border-color:#25d366}.sh-stats{border-top:1px solid hsla(0,0%,100%,.08);display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin:0;padding-top:28px}.sh-stats dt{color:#fff;font-family:Syne,system-ui,sans-serif;font-size:18px;font-weight:700;margin-bottom:2px}.sh-stats dd{color:hsla(0,0%,100%,.6);font-size:12px;margin:0}.sh-visual{display:none}@media (min-width:640px){.sh-h1{font-size:3rem}.sh-ctas{flex-direction:row}}@media (min-width:769px){.sh{align-items:center;display:flex;min-height:100vh}.sh-inner{padding:80px 48px;width:100%}.sh-h1{font-size:3.75rem}.sh-sub{font-size:18px;margin-bottom:40px}.sh-btn:hover{transform:scale(1.03)}.sh-stats{gap:32px;margin-top:24px;padding-top:32px}.sh-stats dt{font-size:20px}}@media (min-width:1024px){.sh-inner{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.sh-h1{font-size:3.6rem}.sh-visual{display:block;min-height:560px}}@media (min-width:1536px){.sh-h1{font-size:4.5rem}}</style>
 
     <!-- Speculation Rules API: instant next-page navigations (progressive enhancement) -->
     <script type="speculationrules">
@@ -49,51 +65,62 @@
       }]
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-U2UgQLgg.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-qGFduViA.js">
-    <link rel="modulepreload" crossorigin href="/assets/layout-C0ZQ1qdF.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-DesignEditorial-Cet4Iyp2.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-Hero-WVwr54Sk.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-BlogCTA-B1jwzkMF.js">
-    <link rel="modulepreload" crossorigin href="/assets/page-Home-Bv7BRjfK.js">
-    <link rel="preload" href="/assets/index-Dw0DEcB_.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-Dw0DEcB_.css"></noscript>
+    <script type="module" crossorigin src="/assets/index-cow3BmcH.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-ru--Vhn1.js">
+    <link rel="modulepreload" crossorigin href="/assets/layout-Bo3aHkHr.js">
+    <link rel="modulepreload" crossorigin href="/assets/section-Hero-DavpDXWh.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-Home-BX5RZnEQ.js">
+    <link rel="preload" href="/assets/index-QLdG_k7r.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-QLdG_k7r.css"></noscript>
     <meta property="og:title" content="Web Tasarım Teknik Terimler Sözlüğü: Core Web Vitals'tan SEO'ya 50+ Terim">
   <meta property="og:description" content="Core Web Vitals, SSL, SEO, UI/UX — tüm teknik terimler tek rehberde. Web tasarım jargonunu anlayın, bilinçli kararlar verin.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.senninweb.com/blog/teknik-terimler">
-  <meta property="og:image" content="https://www.senninweb.com/og-image.svg">
+  <meta property="og:image" content="https://www.senninweb.com/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Web Tasarım Teknik Terimler Sözlüğü: Core Web Vitals'tan SEO'ya 50+ Terim">
   <meta name="twitter:description" content="Core Web Vitals, SSL, SEO, UI/UX — tüm teknik terimler tek rehberde. Web tasarım jargonunu anlayın, bilinçli kararlar verin.">
+  <script type="application/ld+json" data-prerender>{"@context":"https://schema.org","@type":"Article","headline":"Web Tasarım Teknik Terimler Sözlüğü: Core Web Vitals'tan SEO'ya 50+ Terim","description":"Core Web Vitals, SSL, SEO, UI/UX — tüm teknik terimler tek rehberde. Web tasarım jargonunu anlayın, bilinçli kararlar verin.","image":"https://www.senninweb.com/images/blog/teknik-terimler.webp","datePublished":"2026-04-01","dateModified":"2026-04-01","inLanguage":"tr-TR","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.senninweb.com/blog/teknik-terimler"},"author":{"@type":"Person","name":"Çağatay Samet Macar","url":"https://www.senninweb.com/hakkimizda"},"publisher":{"@type":"Organization","name":"SenninWeb","logo":{"@type":"ImageObject","url":"https://www.senninweb.com/favicon/favicon-48x48.png"}}}</script>
   </head>
   <body>
     <div class="mesh-base"></div>
     <div class="mesh-glow"></div>
-    <div id="root">
-      <!-- ⚡ Pre-rendered Hero for instant FCP — React replaces this on hydration -->
-      <div class="hero-critical" style="padding:0 24px">
-        <div style="max-width:1280px;margin:0 auto;width:100%">
-          <span style="display:inline-flex;align-items:center;gap:8px;color:#D97706;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:32px;font-family:system-ui,-apple-system,sans-serif">
-            <span style="width:32px;height:1px;background:#D97706;display:inline-block"></span>
-            Premium Web Tasarım &amp; SEO
-          </span>
-          <h1 style="margin:0 0 24px;line-height:1.05;letter-spacing:-0.03em;font-family:system-ui,-apple-system,sans-serif">
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">Sennin Web ile işletmeniz için</span>
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">profesyonel</span>
-            <span class="text-gold-gradient" style="display:block;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">web tasarım ve SEO hizmeti</span>
-          </h1>
-          <p style="color:rgba(255,255,255,0.5);font-size:16px;line-height:1.625;margin:0 0 40px;max-width:512px;font-family:system-ui,-apple-system,sans-serif">
-            Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde rakiplerinizin önüne geçiriyoruz.
-          </p>
-          <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;background:#D97706;color:#000;font-size:16px;font-weight:600;text-align:center;font-family:system-ui,-apple-system,sans-serif">Ücretsiz Teklif Al</span>
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:16px;font-weight:500;text-align:center;font-family:system-ui,-apple-system,sans-serif">Blog'a Git</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Static hero (src/content/heroMarkup.js) paints before JS; <Hero /> adopts this node instead of re-rendering it.
+         On other routes postbuild swaps the block between the markers for that page's static body. -->
+    <div id="hero-host"><!--prerender:start-->
+<main style="max-width:760px;margin:0 auto;padding:140px 24px 80px;font-family:system-ui,-apple-system,sans-serif;color:rgba(255,255,255,0.75);line-height:1.7"><article><p style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#D97706">Web Tasarım · 8 dk</p><h1 style="color:#FFF;font-size:clamp(2rem,4.5vw,3.25rem);line-height:1.1;letter-spacing:-0.02em;margin:0 0 20px;font-weight:700">Web Tasarım Teknik Terimler Sözlüğü: Core Web Vitals'tan SEO'ya 50+ Terim</h1><p><time datetime="2026-04-01">2026-04-01</time> · Çağatay Macar</p><p>Web tasarım dünyasında sıkça duyduğunuz ama tam olarak ne anlama geldiğini bilmediğiniz teknik terimler mi var? Bu sayfada, blog yazılarımızda link verdiğimiz tüm teknik terimlerin detaylı açıklamalarını bulabilirsiniz. Her bir terimi, neden önemli olduğunu ve web sitenizi nasıl etkilediğini anlattım.</p>
+<h2 style="color:#FFF">Core Web Vitals</h2>
+<blockquote><strong>%90</strong> Kullanıcıların yüzde 90'ı SSL sertifikası olmayan bir web sitesinden hemen çıkıyor. Güvenlik, dijital dünyada en temel güven sinyalidir. <cite>GlobalSign, SSL ve Tüketici Güveni Araştırması, 2025</cite></blockquote>
+<p>Core Web Vitals, Google'ın bir web sitesinin kullanıcı deneyimini ölçmek için kullandığı üç temel performans metriğidir. 2021 yılında Google tarafından sıralama faktörü haline getirilmiştir ve 2026 itibarıyla hala en önemli sıralama sinyallerinden biridir.</p>
+<p>Bu üç metrik şunlardır:</p>
+<ul><li><strong>LCP (Largest Contentful Paint):</strong> Sayfadaki en büyük içerik öğesinin (görsel, video, metin bloğu) ne kadar sürede görüntülendiğini ölçer. İdeal süre 2.5 saniyenin altıdır.</li><li><strong>INP (Interaction to Next Paint):</strong> Kullanıcının bir sayfayla etkileşime geçmesi (tıklama, dokunma) ile tarayıcının buna yanıt vermesi arasındaki süreyi ölçer. 200 milisaniyenin altı ideal kabul edilir.</li><li><strong>CLS (Cumulative Layout Shift):</strong> Sayfa yüklenirken görsel öğelerin beklenmedik şekilde kaymasını ölçer. 0.1'in altı ideal değerdir.</li></ul>
+<p>Core Web Vitals metriklerinin iyi olması, sitenizin hem Google'da daha üst sıralarda çıkmasını sağlar hem de kullanıcıların sitenizde daha uzun süre kalmasına yardımcı olur. <strong>Web tasarım</strong> sürecinde bu metrikleri göz önünde bulundurmak, uzun vadede sitenizin başarısını doğrudan etkiler.</p>
+<h2 style="color:#FFF">SSL Sertifikası</h2>
+<p>SSL (Secure Sockets Layer) sertifikası, web siteniz ile ziyaretçilerinizin tarayıcısı arasındaki veri iletişimini şifreleyen bir güvenlik protokolüdür. Bir sitenin HTTPS ile başlamasını sağlayan ve tarayıcıda kilit simgesiyle gösterilen bu sertifika, özellikle kullanıcı bilgilerinin (kredi kartı, şifre, kişisel veriler) korunması için hayati önem taşır.</p>
+<p>SSL sertifikası olmayan bir site, tarayıcılarda "Güvenli Değil" uyarısı gösterir. Araştırmalar, kullanıcıların %90'ının böyle bir uyarıyla karşılaştığında siteyi hemen terk ettiğini gösteriyor. Ayrıca Google, SSL sertifikası olan siteleri (HTTPS) sıralamada SSL olmayanlara (HTTP) göre daha üstte konumlandırır.</p>
+<p>Günümüzde ücretsiz SSL sertifikası sağlayıcıları (Let's Encrypt gibi) sayesinde her web sitesi kolayca SSL sahibi olabilir. <strong>Profesyonel web tasarım</strong> hizmeti alırken SSL sertifikasının dahil olup olmadığını mutlaka sormalısınız.</p>
+<blockquote><strong>2,5s</strong> Google'ın Core Web Vitals metriği LCP (Largest Contentful Paint) için hedef süre 2,5 saniye. Bu sürenin üzerindeki siteler, arama sonuçlarında dezavantajlı konuma düşüyor. <cite>Google, Core Web Vitals Teknik Dokümantasyonu, 2026</cite></blockquote>
+<h2 style="color:#FFF">UI/UX Tasarımı</h2>
+<p>UI (User Interface — Kullanıcı Arayüzü) ve UX (User Experience — Kullanıcı Deneyimi), modern web tasarımının iki temel yapıtaşıdır. Sıkça birlikte anılsalar da aslında farklı şeyleri ifade ederler.</p>
+<p><strong>UI Tasarımı:</strong> Web sitesinin görsel öğeleriyle ilgilenir. Renk paletleri, tipografi, buton tasarımları, ikonlar, boşluk kullanımı ve genel görsel hiyerarşi UI'ın kapsamına girer. Kısacası kullanıcının "gördüğü" her şeydir.</p>
+<p><strong>UX Tasarımı:</strong> Kullanıcının siteyle olan tüm etkileşimini kapsar. Bir butona tıkladığında ne olacağı, sayfalar arasında nasıl gezineceği, aradığı bilgiyi kaç adımda bulacağı gibi akış ve kullanılabilirlik konularıyla ilgilenir.</p>
+<p>İyi bir UI/UX tasarımı, ziyaretçilerin sitenizde daha uzun süre kalmasını, daha kolay gezinmesini ve sonuç olarak dönüşüm oranlarının artmasını sağlar. <strong>Kurumsal web tasarım</strong> projelerinde UI/UX çalışması, profesyonel fiyatın önemli bir bölümünü oluşturur.</p>
+<h2 style="color:#FFF">SEO Uyumlu Web Sitesi</h2>
+<p>SEO (Search Engine Optimization — Arama Motoru Optimizasyonu), bir web sitesinin Google gibi arama motorlarında üst sıralarda çıkması için yapılan teknik ve stratejik çalışmaların tamamıdır. SEO uyumlu bir web sitesi, daha en baştan bu optimizasyonlar düşünülerek inşa edilir.</p>
+<p>SEO uyumlu bir web sitesinde şunlar bulunur:</p>
+<ul><li><strong>Teknik SEO:</strong> Doğru HTML etiket yapısı (h1, h2, title, meta description), schema.org yapılandırması, XML sitemap, robots.txt dosyası ve hızlı sayfa yükleme süreleri.</li><li><strong>İçerik SEO:</strong> Doğru anahtar kelime stratejisi, kullanıcı niyetine uygun içerik, okunabilirlik ve özgün değer sunan metinler.</li><li><strong>Teknik Altyapı:</strong> Mobil uyumluluk, HTTPS güvenliği, kırık link kontrolleri, yönlendirme (redirect) yönetimi ve sayfa hızı optimizasyonu.</li></ul>
+<blockquote><strong>%60</strong> Web trafiğinin yüzde 60'ı artık mobil cihazlardan geliyor. Mobile-first tasarım, yalnızca bir trend değil, modern web geliştirmenin temel standardıdır. <cite>Statista, Mobil Web Trafiği Raporu, 2026</cite></blockquote>
+<p>SEO sonradan eklenen bir özellik değil, sitenin temeline işlenmesi gereken bir sistemdir. Bu yüzden <strong>web tasarım hizmeti</strong> alırken SEO altyapısının projeye dahil olup olmadığını sorgulamak kritik önem taşır. SEO hakkında sıkça sorulan sorular için <a href="/sss">SSS sayfamızı</a> ziyaret edebilirsiniz.</p>
+<h2 style="color:#FFF">Mobil Uyumlu Tasarım</h2>
+<p>Mobil uyumlu tasarım (responsive design), bir web sitesinin tüm ekran boyutlarında (mobil telefon, tablet, dizüstü bilgisayar, masaüstü) kusursuz görünmesini ve çalışmasını sağlayan bir yaklaşımdır. 2026 yılı itibarıyla internet trafiğinin %60'ından fazlası mobil cihazlardan geliyor.</p>
+<p>Google, 2015 yılından beri mobil uyumluluğu sıralama faktörü olarak kullanıyor ve 2024 itibarıyla tamamen mobil öncelikli indekslemeye (mobile-first indexing) geçti. Bu demek oluyor ki Google, sitenizin mobil sürümünü masaüstü sürümünden önce değerlendiriyor.</p>
+<p>İyi bir mobil uyumlu tasarım şunları içerir:</p>
+<ul><li>Esnek grid yapısı ve orantılı boyutlandırma</li><li>Dokunmatik ekranlara uygun buton ve link boyutları</li><li>Okunabilir font büyüklükleri (en az 16px)</li><li>Hızlı yükleme süreleri için optimize edilmiş görseller</li><li>Yatay kaydırma gerektirmeyen akışkan düzen</li></ul>
+<p>Mobil uyumlu bir site sadece Google için değil, kullanıcı deneyimi için de olmazsa olmazdır. <strong>Web sitesi tasarımı</strong> yaptırırken mobil uyumun standart olarak dahil edildiğinden emin olun.</p>
+<p style="color:#FFF"><strong>Bu terimler hakkında daha fazla bilgi mi almak istiyorsunuz?</strong> <a href="/#contact" style="color:#FCD34D">Bizimle iletişime geçin, web sitenizin tüm teknik detaylarını birlikte planlayalım!</a></p></article><nav aria-label="Site" style="margin-top:40px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px"><a href="/hizmet/web-tasarim" style="color:#FCD34D">Sağlık Turizmi Web Sitesi</a><a href="/hizmet/seo-ve-buyume" style="color:#FCD34D">Sağlık Turizmi SEO</a><a href="/hizmet/dijital-pazarlama" style="color:#FCD34D">Sağlık Turizmi Dijital Pazarlama</a><a href="/kocaeli" style="color:#FCD34D">Kocaeli</a><a href="/bilecik" style="color:#FCD34D">Bilecik</a><a href="/rehber/yurt-disindan-hasta-cekme" style="color:#FCD34D">Yurt Dışından Hasta Çekme Rehberi</a><a href="/blog" style="color:#FCD34D">Blog</a><a href="/sss" style="color:#FCD34D">SSS</a><a href="/#contact" style="color:#FCD34D">Ücretsiz Teklif Al</a></nav></main>
+<!--prerender:end--></div>
+    <div id="root"></div>
 
     <script type="application/ld+json">
     {
@@ -103,8 +130,8 @@
       "name": "SenninWeb",
       "url": "https://www.senninweb.com",
       "logo": "https://www.senninweb.com/favicon/favicon-48x48.png",
-      "image": "https://www.senninweb.com/og-image.svg",
-      "description": "KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
+      "image": "https://www.senninweb.com/og-image.jpg",
+      "description": "Yurt dışından hasta çekmek isteyen sağlık klinikleri için size özel web sitesi, uluslararası SEO ve hasta kazanım ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
       "email": "business@senninweb.com",
       "telephone": "+90 (531) 405 15 84",
       "foundingDate": "2025",

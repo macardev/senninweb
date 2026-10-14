@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Yurt Dışından Hasta Çekme Rehberi 2026 | SenninWeb</title>
+<meta name="author" content="Çağatay Samet Macar, SenninWeb">
+<meta name="description" content="Saç ekim merkezleri, diş klinikleri, estetik ve veteriner klinikleri için uluslararası hasta kazanım rehberi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --ink: #141414;
+    --muted: #5b5b5b;
+    --line: #e7e2d8;
+    --paper: #fbfaf7;
+    --gold: #D97706;
+    --gold-soft: #FCD34D;
+    --gold-deep: #B45309;
+    --black: #0A0A0A;
+    --wa: #25D366;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); background: #fff; font-size: 9.6pt; line-height: 1.5; }
+  h1, h2, h3, .display { font-family: 'Syne', 'Inter', sans-serif; letter-spacing: -0.02em; line-height: 1.12; }
+  a { color: var(--gold-deep); text-decoration: none; border-bottom: 1px solid rgba(217,119,6,0.35); }
+
+  .page { width: 210mm; height: 297mm; padding: 17mm 18mm 18mm; position: relative; page-break-after: always; break-after: page; background: var(--paper); overflow: hidden; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .page-num { position: absolute; bottom: 8mm; left: 20mm; right: 20mm; display: flex; justify-content: space-between; font-size: 8pt; color: #9a9389; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 8pt; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .eyebrow::before { content: ''; width: 22px; height: 1px; background: var(--gold); }
+  .chapter-no { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 34pt; line-height: 1; color: transparent; -webkit-text-stroke: 1.2px rgba(217,119,6,0.5); margin-bottom: 2mm; }
+  h2 { font-size: 20pt; margin-bottom: 3.5mm; }
+  h3 { font-size: 11.5pt; margin: 4.5mm 0 2mm; }
+  p { margin-bottom: 2.4mm; }
+  .lead { font-size: 10.8pt; color: #333; margin-bottom: 4mm; }
+  ul, ol { margin: 0 0 4mm 5mm; }
+  li { margin-bottom: 1.2mm; padding-left: 1mm; }
+  strong { font-weight: 600; }
+  .muted { color: var(--muted); }
+  .small { font-size: 8.8pt; }
+
+  .box { border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 4mm 5mm; margin: 4mm 0; }
+  .box--gold { border-color: rgba(217,119,6,0.4); background: linear-gradient(135deg, #fff8ea, #fff); }
+  .box--dark { background: var(--black); color: #f3f3f3; border: none; }
+  .box--dark h3 { color: #fff; margin-top: 0; }
+  .box-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 11pt; margin-bottom: 2mm; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+  .tile { border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 3.2mm 4mm; }
+  .tile b { display: block; font-family: 'Syne', sans-serif; font-size: 10.5pt; margin-bottom: 1mm; }
+  .tile p { font-size: 9pt; color: var(--muted); margin: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 8.6pt; }
+  th { text-align: left; font-weight: 600; background: #f3efe6; padding: 1.8mm 2.6mm; border-bottom: 1px solid var(--line); }
+  td { padding: 1.8mm 2.6mm; border-bottom: 1px solid var(--line); vertical-align: top; }
+
+  .steps { counter-reset: step; list-style: none; margin-left: 0; }
+  .steps li { counter-increment: step; position: relative; padding-left: 10mm; margin-bottom: 2.2mm; }
+  .steps li::before { content: counter(step); position: absolute; left: 0; top: -0.5mm; width: 7mm; height: 7mm; border-radius: 50%; background: var(--black); color: var(--gold-soft); font-family: 'Syne', sans-serif; font-weight: 700; font-size: 9pt; display: flex; align-items: center; justify-content: center; }
+
+  .check { list-style: none; margin-left: 0; }
+  .check li { position: relative; padding-left: 8mm; margin-bottom: 2.4mm; }
+  .check li::before { content: ''; position: absolute; left: 0; top: 0.6mm; width: 4.2mm; height: 4.2mm; border: 1.3px solid var(--gold); border-radius: 3px; }
+
+  .quote { font-family: 'Syne', sans-serif; font-size: 12.5pt; line-height: 1.3; border-left: 3px solid var(--gold); padding-left: 5mm; margin: 4.5mm 0; }
+
+  /* Cover */
+  .cover { background: var(--black); color: #fff; padding: 24mm 20mm; display: flex; flex-direction: column; }
+  .cover .brand { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13pt; }
+  .cover .brand span { color: var(--gold); }
+  .cover h1 { font-size: 40pt; margin: 34mm 0 8mm; }
+  .cover h1 .gold { background: linear-gradient(135deg, #FCD34D, #D97706 55%, #B45309); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .cover .sub { font-size: 13pt; color: rgba(255,255,255,0.72); max-width: 130mm; }
+  .cover .for { margin-top: 12mm; display: flex; flex-wrap: wrap; gap: 3mm; }
+  .cover .for span { border: 1px solid rgba(252,211,77,0.35); color: var(--gold-soft); border-radius: 999px; padding: 1.6mm 4mm; font-size: 9pt; }
+  .cover .foot { position: relative; z-index: 1; margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; font-size: 9pt; color: rgba(255,255,255,0.55); }
+  .cover .stack { position: absolute; right: -18mm; top: 158mm; width: 120mm; height: 120mm; opacity: 0.9; }
+  .cover .stack div { position: absolute; width: 86mm; height: 56mm; border-radius: 6mm; border: 1px solid rgba(255,255,255,0.12); background: linear-gradient(160deg, #222, #141414); transform: rotate(-30deg) skewX(18deg); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+  .cover .stack div:nth-child(1) { left: 20mm; top: 44mm; }
+  .cover .stack div:nth-child(2) { left: 16mm; top: 32mm; }
+  .cover .stack div:nth-child(3) { left: 12mm; top: 20mm; border-color: rgba(252,211,77,0.5); box-shadow: 0 0 40px rgba(217,119,6,0.45), 0 20px 40px rgba(0,0,0,0.6); }
+
+  .toc { list-style: none; margin: 0; }
+  .toc li { display: flex; gap: 5mm; padding: 3mm 0; border-bottom: 1px solid var(--line); margin: 0; }
+  .toc .n { font-family: 'Syne', sans-serif; font-weight: 700; color: var(--gold); width: 9mm; }
+  .toc .t { flex: 1; font-weight: 500; }
+  .toc .d { color: var(--muted); font-size: 9pt; }
+
+  .cta-page { background: var(--black); color: #fff; }
+  .cta-page h2 { font-size: 30pt; color: #fff; }
+  .cta-page .gold { color: var(--gold-soft); }
+  .btn { display: inline-flex; align-items: center; gap: 3mm; padding: 4mm 7mm; border-radius: 999px; font-weight: 600; border: none; }
+  .btn--wa { background: var(--wa); color: #fff; }
+  .btn--gold { background: var(--gold); color: #0A0A0A; }
+  .cta-page .tile { background: #151515; border-color: #262626; }
+  .cta-page .tile p { color: rgba(255,255,255,0.6); }
+  .cta-page .page-num { color: rgba(255,255,255,0.35); }
+</style>
+</head>
+<body>
+
+<!-- ───────────── COVER ───────────── -->
+<section class="page cover">
+  <div class="brand">Sennin<span>Web</span></div>
+  <div class="stack" aria-hidden="true"><div></div><div></div><div></div></div>
+  <h1>Yurt Dışından<br>Hasta Çekme<br><span class="gold">Rehberi 2026</span></h1>
+  <p class="sub">Kliniğinizi Google'da, hastanın kendi dilinde ve kendi ülkesinde bulunur hâle getirip, gelen ziyaretçiyi WhatsApp'ta randevuya dönüştürmenin adım adım sistemi.</p>
+  <div class="for">
+    <span>Saç ekim merkezleri</span>
+    <span>Diş klinikleri</span>
+    <span>Estetik &amp; güzellik klinikleri</span>
+    <span>Veteriner klinikleri</span>
+  </div>
+  <div class="foot">
+    <div>Hazırlayan: Çağatay Samet Macar<br>SenninWeb · senninweb.com</div>
+    <div>Ücretsiz rehber · Sürüm 1.0</div>
+  </div>
+</section>
+
+<!-- ───────────── TOC ───────────── -->
+<section class="page">
+  <span class="eyebrow">İçindekiler</span>
+  <h2>Bu rehberde neler var?</h2>
+  <p class="lead">Rehber, yurt dışından hasta almak isteyen bir kliniğin ihtiyaç duyduğu her şeyi sırayla anlatır: hastanın nasıl karar verdiğini, doğru ülkeyi seçmeyi, güven veren bir site kurmayı, o ülkede Google'da görünmeyi ve gelen talebi kaçırmamayı.</p>
+  <ol class="toc">
+    <li><span class="n">01</span><span class="t">Uluslararası hasta nasıl karar veriyor?</span><span class="d">Hasta yolculuğu</span></li>
+    <li><span class="n">02</span><span class="t">Doğru hedef ülkeyi seçmek</span><span class="d">Pazar seçimi</span></li>
+    <li><span class="n">03</span><span class="t">Yasal zemin ve güven temeli</span><span class="d">Yetki, reklam, KVKK/GDPR</span></li>
+    <li><span class="n">04</span><span class="t">7/24 çalışan danışmanınız: çok dilli web sitesi</span><span class="d">Site mimarisi</span></li>
+    <li><span class="n">05</span><span class="t">Hedef ülkede Google'da görünmek</span><span class="d">Uluslararası SEO</span></li>
+    <li><span class="n">06</span><span class="t">Hedef ülkeden otorite kazanmak</span><span class="d">Backlink &amp; dizinler</span></li>
+    <li><span class="n">07</span><span class="t">Güven sinyalleri ve sosyal kanıt</span><span class="d">Yorumlar, doktor profili</span></li>
+    <li><span class="n">08</span><span class="t">İlk 5 dakika: talebi hastaya çevirmek</span><span class="d">WhatsApp süreci</span></li>
+    <li><span class="n">09</span><span class="t">Neyi, nasıl ölçmeli?</span><span class="d">KPI'lar</span></li>
+    <li><span class="n">10</span><span class="t">Sektöre özel notlar</span><span class="d">Saç, diş, estetik, veteriner</span></li>
+    <li><span class="n">11</span><span class="t">90 günlük yol haritası</span><span class="d">Uygulama planı</span></li>
+    <li><span class="n">12</span><span class="t">Kliniğiniz hazır mı? Kontrol listesi</span><span class="d">25 madde</span></li>
+  </ol>
+  <div class="box box--gold">
+    <div class="box-title">Bu rehber kimin için?</div>
+    <p style="margin:0">Türkiye'de hizmet veren, kaliteli işini yurt dışındaki hastalara da ulaştırmak isteyen; reklama sürekli para yakmak yerine kalıcı, kendi kontrolündeki bir hasta akışı kurmak isteyen klinik sahipleri ve yöneticileri için.</p>
+  </div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>02</span></div>
+</section>
+
+<!-- ───────────── 01 ───────────── -->
+<section class="page">
+  <div class="chapter-no">01</div>
+  <span class="eyebrow">Hasta yolculuğu</span>
+  <h2>Uluslararası hasta nasıl karar veriyor?</h2>
+  <p class="lead">Londra'daki ya da Düsseldorf'taki bir hasta için yurt dışında tedavi olmak büyük bir karar. Para, sağlık ve seyahat aynı anda risk altında. Bu yüzden karar haftalar sürer ve neredeyse tamamı internette verilir.</p>
+  <h3>Karar yolculuğunun 7 aşaması</h3>
+  <ol class="steps">
+    <li><strong>Fark etme:</strong> "Türkiye'de diş implantı ne kadar?" gibi bir aramayla başlar. Kendi dilinde, kendi ülkesinin Google'ında.</li>
+    <li><strong>Araştırma:</strong> Forumlar, YouTube videoları, karşılaştırma siteleri, Reddit ve Facebook grupları. Riskleri ve "kötü deneyimleri" okur.</li>
+    <li><strong>Kısa liste:</strong> Genellikle 3–5 klinik belirler. Kriterler: güven, doktor, yorumlar, fiyat şeffaflığı, iletişim kolaylığı.</li>
+    <li><strong>İletişim:</strong> Birden fazla kliniğe aynı anda yazar, çoğunlukla WhatsApp'tan. Fotoğraf gönderir, fiyat ister.</li>
+    <li><strong>Değerlendirme:</strong> En hızlı, en net ve en "insani" cevap veren klinik bir adım öne geçer.</li>
+    <li><strong>Karar ve seyahat:</strong> Uçuş, konaklama, transfer ve tercüman gibi konular netleşince randevu kesinleşir.</li>
+    <li><strong>Tedavi sonrası:</strong> Kontrol, iletişim ve yorum. Memnun hasta en güçlü pazarlama kanalınız olur.</li>
+  </ol>
+  <div class="quote">Hasta en iyi kliniği değil, en çok güvendiği kliniği seçer. Güven ise internette, hastanın kendi dilinde inşa edilir.</div>
+  <div class="box">
+    <div class="box-title">Klinikler en çok nerede kaybediyor?</div>
+    <ul style="margin-bottom:0">
+      <li>Site yalnızca Türkçe ya da otomatik çeviriyle İngilizce. Hasta daha ilk saniyede güvenini kaybediyor.</li>
+      <li>Hedef ülkenin Google'ında görünmüyorlar; tüm trafik aracı platformlara ve komisyoncu ajanslara gidiyor.</li>
+      <li>WhatsApp'a gelen mesaj saatlerce cevapsız kalıyor ya da tek satırlık bir fiyatla geçiştiriliyor.</li>
+      <li>Fiyat, süreç, doktor ve garanti bilgisi belirsiz. Hasta "sonra soracağım" diyor ve bir daha dönmüyor.</li>
+    </ul>
+  </div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>03</span></div>
+</section>
+
+<!-- ───────────── 02 ───────────── -->
+<section class="page">
+  <div class="chapter-no">02</div>
+  <span class="eyebrow">Pazar seçimi</span>
+  <h2>Doğru hedef ülkeyi seçmek</h2>
+  <p class="lead">"Tüm dünyaya açılalım" bir strateji değildir. Bütçe, dil ve operasyon kapasitesi sınırlıdır. 1–2 ülkede güçlü olmak, 10 ülkede görünmez olmaktan çok daha fazla hasta getirir.</p>
+  <h3>Ülke seçerken 6 kriter</h3>
+  <table>
+    <tr><th style="width:32%">Kriter</th><th>Sorulacak soru</th></tr>
+    <tr><td><strong>Fiyat farkı</strong></td><td>Tedavinin o ülkedeki maliyeti ile sizin fiyatınız arasındaki fark, seyahat masrafını karşılayıp hastaya cazip gelecek kadar büyük mü?</td></tr>
+    <tr><td><strong>Ulaşım</strong></td><td>Direkt uçuş var mı, kaç saat? Kısa ve ucuz uçuş, karar eşiğini düşürür.</td></tr>
+    <tr><td><strong>Dil kapasitesi</strong></td><td>O dilde hastayla yazışabilecek, görüntülü görüşme yapabilecek bir koordinatörünüz var mı ya da olacak mı?</td></tr>
+    <tr><td><strong>Diaspora ve bağ</strong></td><td>O ülkede büyük bir Türk topluluğu ya da Türkiye'yi zaten tanıyan bir kitle var mı? (Almanya, Hollanda, Avusturya gibi.)</td></tr>
+    <tr><td><strong>Mevcut hasta verisi</strong></td><td>Şu ana kadar hangi ülkelerden kendiliğinden hasta geldi? En güçlü ipucu genelde budur.</td></tr>
+    <tr><td><strong>Rekabet yoğunluğu</strong></td><td>O dilde, o tedavi için Google'ın ilk sayfası büyük platformlarla mı dolu, yoksa klinik siteleriyle mi? Boşluk nerede?</td></tr>
+  </table>
+  <h3>Pratik doğrulama: 30 dakikalık test</h3>
+  <ol class="steps">
+    <li><strong>Google Trends</strong>'te tedavi adını hedef dilde yazın ("Zahnimplantat Türkei", "hair transplant turkey") ve ülke bazında ilgiyi karşılaştırın.</li>
+    <li><strong>Google Ads Anahtar Kelime Planlayıcı</strong>'da hedef ülke ve dil seçerek aylık arama hacmini ve tıklama maliyetini görün. Tıklama maliyeti yüksekse o sorgunun ticari değeri de yüksektir.</li>
+    <li>O ülkenin Google'ında (ör. google.de) gizli pencerede arama yapın: ilk 10 sonuçta kimler var? Sitelerinin kalitesi nasıl?</li>
+    <li>Kendi WhatsApp ve form geçmişinizi tarayın: hangi ülke kodlarından mesaj geliyor?</li>
+  </ol>
+  <div class="box box--gold">
+    <div class="box-title">Kural</div>
+    <p style="margin:0">Önce <strong>1 ana ülke + 1 ikincil ülke</strong> seçin. Ana ülkede ilk sayfaya oturduktan sonra yeni bir dil ekleyin. Her yeni dil, ayrı bir içerik, SEO ve iletişim yatırımı demektir.</p>
+  </div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>04</span></div>
+</section>
+
+<!-- ───────────── 03 ───────────── -->
+<section class="page">
+  <div class="chapter-no">03</div>
+  <span class="eyebrow">Yasal zemin</span>
+  <h2>Yasal zemin ve güven temeli</h2>
+  <p class="lead">Sağlık; Google'ın "Hayatınızı ya da Paranızı Etkileyen" (YMYL) kategorisinde, hem arama motorlarının hem de yasaların en sıkı denetlediği alandır. 2025'te iki yönetmelik kuralları yeniden yazdı.</p>
+  <h3>1. Yetki belgesi ve 2025 yönetmeliği</h3>
+  <p>26 Nisan 2025 tarihli <em>Uluslararası Sağlık Turizmi ve Turistin Sağlığı Hakkında Yönetmelik</em> (Madde 5): <strong>"Sağlık tesisi ve aracı kuruluşların uluslararası sağlık turizmi hizmetlerinde faaliyet yürütebilmesi için yetki belgesi alması zorunludur."</strong> Aynı yönetmelik ameliyathanedeki cerrahi ve girişimsel işlemler için <strong>komplikasyon sigortasını</strong> zorunlu tutar ve sağlık hizmeti bedelinin Bakanlıkça belirlenen <strong>sağlık turizmi fiyat tarifesine</strong> uygun olmasını şart koşar.</p>
+  <h3>2. Yurt dışına yönelik tanıtım (12 Kasım 2025)</h3>
+  <p><em>Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik</em> ile ilgili TÜRSAB duyurusunda öne çıkan kurallar:</p>
+  <ul>
+    <li>Tanıtım, <strong>yurt dışına yönelik ayrı bir internet sitesi veya sosyal medya hesabı</strong> üzerinden yapılmalı; bu platformda sağlık turizmi kapsamında hizmet sunulduğu açıkça belirtilmeli.</li>
+    <li>Yetki belgesi sitede ya da sosyal medya hesabında yayımlanmalı.</li>
+    <li>Türkiye'de yaşayanlara yönelik talep oluşturan tanıtım yasak; sosyal medyada yurt içi hedef kitle seçilemez.</li>
+    <li>Türkçe dışındaki dillerde, yurt dışına yönelik sponsorlu tanıtım ile indirim, kampanya ve fiyat duyurusu yapılabilir.</li>
+  </ul>
+  <h3>3. KVKK ve GDPR</h3>
+  <p>Hastanın gönderdiği fotoğraflar, röntgenler ve sağlık bilgileri <strong>özel nitelikli kişisel veridir</strong>; AB'den gelen hastalar için GDPR de devreye girer. Form ve WhatsApp akışlarında açık rıza ve aydınlatma metni bulundurun, sağlık verilerini kişisel telefonlarda bırakmayın.</p>
+  <div class="box">
+    <div class="box-title">Önemli not</div>
+    <p class="small" style="margin:0">Genel bilgilendirme amaçlıdır, hukuki danışmanlık değildir. Kaynaklar: Resmî Gazete (26.04.2025, Sayı 32882; 12.11.2025, Sayı 33075), TÜRSAB duyurusu. Uygulamadan önce güncel metni bir sağlık hukuku uzmanıyla doğrulayın.</p>
+  </div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>05</span></div>
+</section>
+
+<!-- ───────────── 04 ───────────── -->
+<section class="page">
+  <div class="chapter-no">04</div>
+  <span class="eyebrow">Web sitesi</span>
+  <h2>7/24 çalışan danışmanınız: çok dilli web sitesi</h2>
+  <p class="lead">2025 tanıtım yönetmeliğiyle yurt dışına yönelik <strong>ayrı</strong> bir site pratikte zorunlu hâle geldi. Bu site; resepsiyonunuz, broşürünüz ve ilk muayeneniz aynı anda. Hazır bir şablon bu işi yapamaz, çünkü güven benzersiz olmaktan doğar.</p>
+  <h3>Olmazsa olmaz sayfalar</h3>
+  <div class="grid-2">
+    <div class="tile"><b>Tedavi sayfaları</b><p>Her tedavi için ayrı sayfa: nedir, kimlere uygun, süreç, süre, iyileşme, sık sorulanlar ve fiyat aralığı.</p></div>
+    <div class="tile"><b>Doktor profilleri</b><p>Eğitim, uzmanlık, deneyim, üyelikler, gerçek fotoğraf ve mümkünse kısa bir tanıtım videosu.</p></div>
+    <div class="tile"><b>"Nasıl çalışıyoruz?"</b><p>Online değerlendirme → tedavi planı → seyahat → tedavi → kontrol. Belirsizliği ortadan kaldırır.</p></div>
+    <div class="tile"><b>Fiyat şeffaflığı</b><p>Bakanlık fiyat tarifesine uygun, pakete neyin dahil olduğu (otel, transfer, tercüman) net. Yetki belgesi görünür.</p></div>
+    <div class="tile"><b>Hasta deneyimleri</b><p>Kurallara uygun hasta yorumları, video görüşleri ve hastanın kendi dilinde anlatılmış hikâyeler.</p></div>
+    <div class="tile"><b>Seyahat &amp; konaklama</b><p>Transfer, otel, tercüman, şehir rehberi. Hastanın aklındaki "orada ne yapacağım?" sorusunun cevabı.</p></div>
+  </div>
+  <h3>Teknik temeller</h3>
+  <ul>
+    <li><strong>Her dil kendi adresinde:</strong> <em>/en/</em>, <em>/de/</em> gibi alt klasörler ve doğru <em>hreflang</em> etiketleri. Tek sayfada dil değiştiren yapılar Google'da iyi sıralanmaz.</li>
+    <li><strong>İnsan eliyle çeviri:</strong> Makine çevirisi taslak olabilir, ama son metin o dili ana dili olarak konuşan biri tarafından düzenlenmeli. Hasta "çeviri kokusunu" hemen fark eder.</li>
+    <li><strong>Mobil ve hız:</strong> Hastaların çoğu telefondan araştırır. Sayfalar yavaş internette bile 2–3 saniyede açılmalı (Core Web Vitals).</li>
+    <li><strong>Kolay iletişim:</strong> Her sayfada görünür bir WhatsApp butonu, fotoğraf yüklenebilen bir "ücretsiz online değerlendirme" formu ve ülke kodlu telefon.</li>
+    <li><strong>Ölçüm altyapısı:</strong> Her WhatsApp tıklaması, form gönderimi ve arama ülke bazında ölçülmeli (bkz. Bölüm 09).</li>
+  </ul>
+  <div class="box box--gold">
+    <div class="box-title">Neden hazır şablon değil?</div>
+    <p style="margin:0">Aynı temayı kullanan onlarca klinik aynı görünür. Bu da hastanın gözünde "sıradan" demektir. Size özel bir tasarım, kliniğinizin hikâyesini, doktorlarınızı ve hedef ülkenizin beklentilerini merkeze alır. Gereksiz kod taşımadığı için daha hızlı açılır ve SEO'da avantaj sağlar.</p>
+  </div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>06</span></div>
+</section>
+
+<!-- ───────────── 05 ───────────── -->
+<section class="page">
+  <div class="chapter-no">05</div>
+  <span class="eyebrow">Uluslararası SEO</span>
+  <h2>Hedef ülkede Google'da görünmek</h2>
+  <p class="lead">Reklam, bütçe bittiği gün durur. Organik SEO ise birikir: doğru kurulduğunda her ay daha fazla hasta adayı, tıklama başına ödeme yapmadan sitenize gelir.</p>
+  <h3>1. Hastanın kullandığı kelimeleri bulun</h3>
+  <p>Hasta sizin kullandığınız tıbbi terimlerle değil, kendi kelimeleriyle arar. Her dil için üç tür arama vardır:</p>
+  <table>
+    <tr><th style="width:24%">Niyet</th><th>Örnek (EN / DE)</th><th style="width:30%">Hangi sayfa?</th></tr>
+    <tr><td><strong>Fiyat</strong></td><td>"dental implants turkey cost" / "Zahnimplantat Türkei Kosten"</td><td>Tedavi + fiyat sayfası</td></tr>
+    <tr><td><strong>Güven</strong></td><td>"best hair transplant clinic istanbul reviews" / "Haartransplantation Türkei Erfahrungen"</td><td>Hasta deneyimleri, doktor sayfası</td></tr>
+    <tr><td><strong>Bilgi</strong></td><td>"veneers vs crowns" / "Wie lange hält ein Zahnimplantat?"</td><td>Rehber / blog yazısı</td></tr>
+  </table>
+  <h3>2. Doğru sayfa yapısı</h3>
+  <ul>
+    <li>Her tedavi × her dil için ayrı, özgün içerikli bir sayfa. Aynı metni şehir adı değiştirerek çoğaltmayın; Google bunu "kapı sayfası" (doorway) olarak cezalandırır.</li>
+    <li>Başlık (title) ve açıklama (meta description) her dilde, hastanın arama diliyle yazılmalı.</li>
+    <li>Tedavi sayfaları arasında mantıklı iç linkler kurun: implant → all-on-4 → fiyatlar → hasta deneyimleri.</li>
+  </ul>
+  <h3>3. Tıbbi içerikte güvenilirlik (E-E-A-T)</h3>
+  <ul>
+    <li>Tıbbi içerikler bir doktor tarafından yazılmalı ya da kontrol edilmeli. Yazının altında "Uzm. Dr. … tarafından incelenmiştir" ibaresi ve güncelleme tarihi bulunmalı.</li>
+    <li>Kaynak gösterin, abartmayın, riskleri de anlatın. Google sağlık içeriğinde dürüstlüğü ödüllendirir.</li>
+  </ul>
+  <h3>4. Yapılandırılmış veri (schema)</h3>
+  <p><em>MedicalClinic</em>, <em>Physician</em>, <em>MedicalProcedure</em> ve <em>FAQPage</em> işaretlemeleri, Google'ın ve yapay zekâ asistanlarının (ChatGPT, Gemini, Perplexity) kliniğinizi doğru anlamasını sağlar. Hastalar artık soruyu Google'a olduğu kadar yapay zekâya da soruyor.</p>
+  <h3>5. Google İşletme Profili</h3>
+  <p>Profilinizi İngilizce açıklama, gerçek fotoğraflar, doğru kategori ve hizmet listesiyle doldurun. Yabancı hastalardan kendi dillerinde Google yorumu isteyin; bu yorumlar hedef ülkedeki aramalarda da görünür.</p>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>07</span></div>
+</section>
+
+<!-- ───────────── 06 ───────────── -->
+<section class="page">
+  <div class="chapter-no">06</div>
+  <span class="eyebrow">Otorite</span>
+  <h2>Hedef ülkeden otorite kazanmak</h2>
+  <p class="lead">Google bir siteye güvenip güvenmeyeceğine büyük ölçüde başka sitelerin ona nasıl referans verdiğine bakarak karar verir. Almanya'da sıralama istiyorsanız, Almanya'daki saygın sitelerin sizden bahsetmesi gerekir.</p>
+  <h3>Kaliteli bağlantı (backlink) kaynakları</h3>
+  <div class="grid-2">
+    <div class="tile"><b>Sağlık turizmi platformları</b><p>Klinik karşılaştırma ve rezervasyon platformlarında profil. Hem bağlantı hem de doğrudan hasta kaynağı olabilir (çoğu komisyonla çalışır).</p></div>
+    <div class="tile"><b>Hedef ülkenin yerel dizinleri</b><p>O ülkenin sağlık, seyahat ve işletme rehberlerinde doğru ve tutarlı kayıt.</p></div>
+    <div class="tile"><b>Sağlık ve seyahat yayınları</b><p>Hedef dilde, uzman görüşü içeren makaleler, röportajlar ve misafir yazılar.</p></div>
+    <div class="tile"><b>Diaspora ve topluluklar</b><p>O ülkedeki Türk dernekleri, gurbetçi platformları ve topluluk siteleriyle iş birlikleri.</p></div>
+  </div>
+  <h3>Bütçe gerçeği</h3>
+  <p>Hedef ülkedeki saygın, editoryal bir siteden tek bir kaliteli bağlantının maliyeti çoğu zaman <strong>birkaç yüz euroyu</strong> bulur. Almanya gibi pazarlarda 300–400 € bandı olağandır. Bu yüzden ciddi bir uluslararası SEO çalışması tek seferlik bir iş değil, aylık bütçe gerektiren düzenli bir yatırımdır.</p>
+  <table>
+    <tr><th>Yapın ✓</th><th>Kaçının ✗</th></tr>
+    <tr><td>Konuyla ve ülkeyle alakalı, gerçek okuru olan siteler</td><td>"1.000 backlink 50 $" tarzı toplu paketler</td></tr>
+    <tr><td>Ayda az ama kaliteli, düzenli bağlantı</td><td>Bağlantı çiftlikleri, alakasız bloglar (PBN)</td></tr>
+    <tr><td>Doğal, çeşitli bağlantı metinleri</td><td>Her bağlantıda aynı "hair transplant turkey" metni</td></tr>
+    <tr><td>Kaynağa değer katan içerik</td><td>Yorum spam'i, forum imzaları</td></tr>
+  </table>
+  <div class="box box--dark">
+    <h3>Önemli</h3>
+    <p style="margin:0">Kötü bağlantılar sizi yükseltmez, aksine Google cezasıyla yıllarca geriye düşürebilir. Sağlık sektöründe kalite, hacimden her zaman daha değerlidir.</p>
+  </div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>08</span></div>
+</section>
+
+<!-- ───────────── 07 ───────────── -->
+<section class="page">
+  <div class="chapter-no">07</div>
+  <span class="eyebrow">Güven</span>
+  <h2>Güven sinyalleri ve sosyal kanıt</h2>
+  <p class="lead">Hasta, binlerce kilometre öteden size sağlığını emanet edecek. Her sayfada "Bu insanlar gerçek ve işini biliyor" duygusunu yaratmalısınız.</p>
+  <div class="grid-3">
+    <div class="tile"><b>Gerçek yüzler</b><p>Doktor ve ekibin profesyonel ama samimi fotoğrafları. Stok fotoğraf güveni öldürür.</p></div>
+    <div class="tile"><b>Video</b><p>Doktordan hastanın dilinde ya da altyazılı 60 saniyelik bir "merhaba" videosu.</p></div>
+    <div class="tile"><b>Yorumlar</b><p>Google ve Trustpilot gibi bağımsız platformlarda, hastanın dilinde. Kendi tanıtımınızda kullanmadan önce yönetmeliği kontrol edin.</p></div>
+    <div class="tile"><b>Belgeler</b><p>Yetki belgesi, akreditasyonlar, meslek kuruluşu üyelikleri ve sertifikalar.</p></div>
+    <div class="tile"><b>Klinik turu</b><p>Steril alanlar, cihazlar ve bekleme alanı. Hijyen ve modernlik algısı.</p></div>
+    <div class="tile"><b>Garanti &amp; takip</b><p>Tedavi sonrası takip ve kontrol süreci açıkça yazılı olsun.</p></div>
+  </div>
+  <h3>Yorum toplama sistemi</h3>
+  <ol class="steps">
+    <li>Tedavi bittikten 1–3 gün sonra, hasta hâlâ kliniğe yakınken memnuniyetini sorun.</li>
+    <li>Memnunsa, tek tıkla açılan Google yorum bağlantısını WhatsApp'tan gönderin.</li>
+    <li>Ülkesine döndükten sonra yazılı ya da video bir deneyim paylaşıp paylaşamayacağını sorun. İzni yazılı alın.</li>
+    <li>Olumsuz yorumlara 24 saat içinde, sakin ve çözüm odaklı yanıt verin. Bu yanıtları gelecekteki hastalar da okuyacak.</li>
+  </ol>
+  <div class="quote">Bir hastanın kendi dilinde anlattığı deneyim, sizin yazacağınız en iyi reklam metninden daha ikna edicidir.</div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>09</span></div>
+</section>
+
+<!-- ───────────── 08 ───────────── -->
+<section class="page">
+  <div class="chapter-no">08</div>
+  <span class="eyebrow">Dönüşüm</span>
+  <h2>İlk 5 dakika: talebi hastaya çevirmek</h2>
+  <p class="lead">Hasta aynı anda birkaç kliniğe yazıyor. Satış araştırmaları, potansiyel müşteriye ilk bir saat içinde dönen firmaların, onu nitelikli bir görüşmeye taşıma ihtimalinin kat kat yüksek olduğunu gösteriyor (Harvard Business Review, "The Short Life of Online Sales Leads", 2011). Sağlık turizminde bu süre dakikalarla ölçülür.</p>
+  <h3>WhatsApp karşılama akışı</h3>
+  <ol class="steps">
+    <li><strong>Hastanın dilinde karşılama</strong> ve isimle hitap. Otomatik mesaj yalnızca mesai dışında, ne zaman dönüleceğini net söyleyerek kullanılmalı.</li>
+    <li><strong>Doğru soruları sorun:</strong> şikâyet ya da istek, daha önceki tedaviler, varsa röntgen ve fotoğraflar, planlanan tarih aralığı.</li>
+    <li><strong>Değerlendirme sözü:</strong> "Doktorumuz fotoğraflarınızı inceleyip 24 saat içinde size özel bir plan hazırlayacak."</li>
+    <li><strong>Net bir teklif:</strong> Tedavi planı, fiyat aralığı, pakete dahil olanlar (otel, transfer, tercüman), süre ve kaç gün kalınacağı. Mümkünse PDF olarak.</li>
+    <li><strong>Görüntülü görüşme:</strong> Doktor ya da koordinatörle 10–15 dakikalık bir görüntülü görüşme, güveni katlar.</li>
+    <li><strong>Takip:</strong> Cevap gelmezse 2., 5. ve 10. günde nazik ve bilgi veren mesajlar gönderin. "Kararınızı verdiniz mi?" değil, "Implant sonrası iyileşme sürecini merak edenler için kısa bir video hazırladık" gibi.</li>
+  </ol>
+  <h3>Basit bir hasta takip panosu</h3>
+  <table>
+    <tr><th>Aşama</th><th>Tanım</th><th>Sorumlu</th></tr>
+    <tr><td>Yeni talep</td><td>İlk mesaj geldi</td><td>Koordinatör (5 dk içinde)</td></tr>
+    <tr><td>Bilgi toplandı</td><td>Fotoğraf ve geçmiş alındı</td><td>Koordinatör</td></tr>
+    <tr><td>Plan gönderildi</td><td>Tedavi planı ve fiyat iletildi</td><td>Doktor + koordinatör</td></tr>
+    <tr><td>Görüşme yapıldı</td><td>Görüntülü görüşme tamamlandı</td><td>Doktor</td></tr>
+    <tr><td>Randevu kesin</td><td>Tarih ve kapora netleşti</td><td>Koordinatör</td></tr>
+    <tr><td>Tedavi &amp; yorum</td><td>Tedavi bitti, yorum istendi</td><td>Klinik ekibi</td></tr>
+  </table>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>10</span></div>
+</section>
+
+<!-- ───────────── 09 ───────────── -->
+<section class="page">
+  <div class="chapter-no">09</div>
+  <span class="eyebrow">Ölçüm</span>
+  <h2>Neyi, nasıl ölçmeli?</h2>
+  <p class="lead">Ölçmediğiniz şeyi büyütemezsiniz. Amaç "site trafiği" değil; hangi ülkeden, hangi sayfadan, hangi kanaldan kaç gerçek hastanın geldiğini bilmek.</p>
+  <h3>Hasta hunisi ve takip edilecek metrikler</h3>
+  <table>
+    <tr><th style="width:26%">Aşama</th><th>Metrik</th><th style="width:28%">Araç</th></tr>
+    <tr><td>Görünürlük</td><td>Hedef ülkedeki gösterim ve ortalama sıralama</td><td>Google Search Console (ülke filtresi)</td></tr>
+    <tr><td>Ziyaret</td><td>Ülke ve dil bazında organik ziyaretçi</td><td>Google Analytics 4</td></tr>
+    <tr><td>Talep</td><td>WhatsApp tıklaması, form, arama (ülke ve sayfa bazında)</td><td>GA4 olayları</td></tr>
+    <tr><td>Nitelikli talep</td><td>Fotoğraf/bilgi gönderen hasta sayısı</td><td>Takip panosu / CRM</td></tr>
+    <tr><td>Randevu</td><td>Kesinleşen randevu ve kapora</td><td>CRM</td></tr>
+    <tr><td>Gelir</td><td>Hasta başına gelir, kanal başına maliyet</td><td>CRM + muhasebe</td></tr>
+  </table>
+  <h3>Aylık bakılacak 5 soru</h3>
+  <ol class="steps">
+    <li>Hedef ülkede hangi sayfalar ilk 10'a yaklaştı (11–20. sıradakiler en hızlı kazanılacaklar)?</li>
+    <li>Hangi sayfa en çok WhatsApp talebi getiriyor? O sayfanın benzerini başka bir tedavi için yapabilir miyiz?</li>
+    <li>Talepten randevuya dönüşüm oranı ne? Düşükse sorun trafikte değil, iletişim sürecindedir.</li>
+    <li>Ortalama ilk yanıt süremiz kaç dakika?</li>
+    <li>Bu ay kaç yeni yorum aldık?</li>
+  </ol>
+  <div class="box box--gold">
+    <div class="box-title">Gerçekçi beklenti</div>
+    <p style="margin:0">Organik SEO bir maratondur. Yeni bir dilde ve ülkede belirgin sonuçlar genellikle <strong>4–6 ay</strong>, rekabetçi tedavilerde daha uzun sürede gelir. Bu süre boyunca kurulan altyapı (site, içerik, otorite, yorumlar) ise kalıcıdır ve büyümeye devam eder.</p>
+  </div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>11</span></div>
+</section>
+
+<!-- ───────────── 10 ───────────── -->
+<section class="page">
+  <div class="chapter-no">10</div>
+  <span class="eyebrow">Sektöre özel</span>
+  <h2>Sektöre özel notlar</h2>
+  <div class="grid-2">
+    <div class="box" style="margin:0">
+      <div class="box-title">Saç ekim merkezleri</div>
+      <ul style="margin-bottom:0" class="small">
+        <li>Rekabetin en yoğun olduğu alan; genel "hair transplant turkey" yerine tekniğe ve soruna özel sayfalar (FUE, DHI, kadınlarda saç ekimi, sakal ekimi) daha hızlı sonuç verir.</li>
+        <li>Ameliyatı kimin yaptığı en kritik güven sorusu. Doktorun rolünü açıkça anlatın.</li>
+        <li>Sonuç 6–12 ayda görüldüğü için uzun takip içerikleri ve hasta günlükleri çok değerlidir.</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <div class="box-title">Diş klinikleri</div>
+      <ul style="margin-bottom:0" class="small">
+        <li>İmplant, all-on-4/all-on-6, zirkonyum kaplama ve gülüş tasarımı için ayrı sayfalar.</li>
+        <li>Kaç gün kalınacağı ve kaç seyahat gerektiği en sık sorulan soru. Bunu net bir zaman çizelgesiyle anlatın.</li>
+        <li>Kullanılan implant markaları ve garanti koşulları güveni artırır.</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <div class="box-title">Estetik &amp; güzellik klinikleri</div>
+      <ul style="margin-bottom:0" class="small">
+        <li>Reklam ve önce/sonra kuralları en hassas alan. Bilgilendirici ve kurallara uygun bir dil kullanın.</li>
+        <li>Uygulayıcının yetkinliği, kullanılan ürünler ve cihazlar ile iyileşme süreci şeffaf olmalı.</li>
+        <li>Tatil + bakım kombinasyonları (kısa süreli, düşük iyileşme süreli işlemler) cazip paketler sunar.</li>
+      </ul>
+    </div>
+    <div class="box" style="margin:0">
+      <div class="box-title">Veteriner klinikleri</div>
+      <ul style="margin-bottom:0" class="small">
+        <li>"Yurt dışı" hedefi burada farklı işler: Türkiye'de yaşayan yabancılar, turistler ve evcil hayvanıyla ülke değiştirenler.</li>
+        <li>Evcil hayvan pasaportu, seyahat aşıları, kuduz antikor testi ve sağlık sertifikası gibi hizmetleri İngilizce ve Rusça gibi dillerde anlatın.</li>
+        <li>"English speaking vet + şehir adı" gibi aramalar yüksek niyetli ve rekabeti düşük olabilir.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="quote" style="margin-top:8mm">Ortak nokta: Her sektörde kazanan, hastanın en çok endişe duyduğu soruyu en açık şekilde, hastanın dilinde yanıtlayan kliniktir.</div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>12</span></div>
+</section>
+
+<!-- ───────────── 11 ───────────── -->
+<section class="page">
+  <div class="chapter-no">11</div>
+  <span class="eyebrow">Uygulama planı</span>
+  <h2>90 günlük yol haritası</h2>
+  <p class="lead">Aşağıdaki plan, sıfırdan ya da zayıf bir dijital varlıktan başlayan bir klinik için gerçekçi bir başlangıç takvimidir.</p>
+  <table>
+    <tr><th style="width:18%">Dönem</th><th>Yapılacaklar</th><th style="width:28%">Çıktı</th></tr>
+    <tr>
+      <td><strong>1–30. gün</strong><br><span class="muted small">Temel</span></td>
+      <td>Mevcut durum analizi, hedef ülke ve tedavi önceliklendirmesi, anahtar kelime araştırması, site mimarisi ve içerik planı, ölçüm altyapısı (GA4, Search Console, WhatsApp takibi), yasal metinler.</td>
+      <td>Strateji dokümanı, site taslağı, ölçüm hazır</td>
+    </tr>
+    <tr>
+      <td><strong>31–60. gün</strong><br><span class="muted small">Yayın</span></td>
+      <td>Size özel tasarlanmış çok dilli sitenin yayına alınması, öncelikli tedavi sayfaları, doktor profilleri, schema işaretlemeleri, Google İşletme Profili optimizasyonu, WhatsApp karşılama akışı.</td>
+      <td>Yayında, ölçülen ve talep toplayan site</td>
+    </tr>
+    <tr>
+      <td><strong>61–90. gün</strong><br><span class="muted small">Büyüme</span></td>
+      <td>Hedef ülkeden ilk kaliteli bağlantılar ve dizin kayıtları, yorum toplama sistemi, ilk bilgi içerikleri, ilk verilerle sayfa iyileştirmeleri.</td>
+      <td>İlk sıralamalar, ilk organik talepler</td>
+    </tr>
+    <tr>
+      <td><strong>4. ay ve sonrası</strong><br><span class="muted small">Ölçek</span></td>
+      <td>Her ay düzenli içerik ve otorite çalışması, 11–20. sıradaki sayfaların ilk sayfaya taşınması, dönüşüm iyileştirmeleri, ikinci dil/ülke.</td>
+      <td>Büyüyen ve öngörülebilir hasta akışı</td>
+    </tr>
+  </table>
+  <div class="box box--dark">
+    <h3>En sık yapılan 3 hata</h3>
+    <ol style="margin-bottom:0">
+      <li>Aynı anda 5 dile ve 10 ülkeye açılmaya çalışıp hiçbirinde derinleşememek.</li>
+      <li>Siteyi yaptırıp "trafik gelir" diye beklemek. Site bir başlangıç noktasıdır, bitiş değil.</li>
+      <li>Trafik gelmeye başladığında WhatsApp'ı ve takibi düzene sokmamak. En pahalı hata budur, çünkü emek verilip kazanılan hasta kaçar.</li>
+    </ol>
+  </div>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>13</span></div>
+</section>
+
+<!-- ───────────── 12 ───────────── -->
+<section class="page">
+  <div class="chapter-no">12</div>
+  <span class="eyebrow">Kontrol listesi</span>
+  <h2>Kliniğiniz hazır mı?</h2>
+  <p class="lead" style="margin-bottom:4mm">İşaretlediğiniz her madde 1 puan. Toplamınız size nereden başlamanız gerektiğini söyler.</p>
+  <div class="grid-2">
+    <div>
+      <h3 style="margin-top:0">Strateji &amp; yasal</h3>
+      <ul class="check small">
+        <li>1 ana, 1 ikincil hedef ülkemiz belli</li>
+        <li>Öncelikli 3 tedavimiz belli</li>
+        <li>Uluslararası sağlık turizmi yetki belgemiz var</li>
+        <li>KVKK/GDPR metinlerimiz ve açık rıza akışımız hazır</li>
+        <li>Reklam ve tanıtım kurallarını biliyoruz</li>
+      </ul>
+      <h3>Web sitesi</h3>
+      <ul class="check small">
+        <li>Hedef dilde, insan eliyle düzenlenmiş içerik</li>
+        <li>Her dil kendi URL'sinde, hreflang doğru</li>
+        <li>Her tedavi için ayrı sayfa</li>
+        <li>Doktor profilleri gerçek fotoğraflı</li>
+        <li>Fiyat aralığı ve pakete dahil olanlar net</li>
+        <li>Mobilde 3 saniyenin altında açılıyor</li>
+        <li>Her sayfada görünür WhatsApp butonu</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="margin-top:0">SEO &amp; otorite</h3>
+      <ul class="check small">
+        <li>Hedef dilde anahtar kelime listemiz var</li>
+        <li>Schema işaretlemeleri (MedicalClinic, FAQ) kurulu</li>
+        <li>Google İşletme Profilimiz İngilizce de dolu</li>
+        <li>Hedef ülkeden en az 5 kaliteli bağlantımız var</li>
+        <li>Tıbbi içerikler doktor kontrolünden geçiyor</li>
+      </ul>
+      <h3>İletişim &amp; ölçüm</h3>
+      <ul class="check small">
+        <li>Hedef dilde yazışabilen bir koordinatör var</li>
+        <li>İlk yanıt süremiz 15 dakikanın altında</li>
+        <li>Standart bir karşılama ve takip akışımız var</li>
+        <li>Talepleri bir panoda/CRM'de takip ediyoruz</li>
+        <li>WhatsApp tıklamaları ve formlar ölçülüyor</li>
+        <li>Düzenli olarak yorum istiyoruz</li>
+        <li>Aylık rapora bakıp karar alıyoruz</li>
+        <li>Hedef ülkeden gelen hasta sayısını biliyoruz</li>
+      </ul>
+    </div>
+  </div>
+  <table style="margin-top:4mm">
+    <tr><th style="width:22%">Puan</th><th>Durum</th></tr>
+    <tr><td><strong>0–10</strong></td><td>Temel eksik. Önce strateji, site ve ölçüm altyapısını kurun; reklama para harcamadan önce burayı düzeltin.</td></tr>
+    <tr><td><strong>11–18</strong></td><td>Altyapı var, büyüme motoru eksik. Uluslararası SEO, otorite ve iletişim sürecine odaklanın.</td></tr>
+    <tr><td><strong>19–25</strong></td><td>Güçlü bir temel. Yeni dil/ülke ekleyerek ve dönüşüm oranını artırarak ölçekleyin.</td></tr>
+  </table>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>14</span></div>
+</section>
+
+<!-- ───────────── CTA ───────────── -->
+<section class="page cta-page">
+  <span class="eyebrow">Sonraki adım</span>
+  <h2>Kliniğiniz için <span class="gold">ücretsiz kısa analiz</span></h2>
+  <p class="lead" style="color:rgba(255,255,255,0.75)">Rehberi okudunuz. Şimdi bunun sizin kliniğinize nasıl uygulanacağını konuşalım. Sitenizi ve hedef ülkenizi inceleyip WhatsApp üzerinden kısa bir analiz gönderelim:</p>
+  <div class="grid-3" style="margin:6mm 0 8mm">
+    <div class="tile"><b style="color:#fff">Görünürlük</b><p>Hedef ülkede hangi aramalarda varsınız, hangilerinde rakipleriniz?</p></div>
+    <div class="tile"><b style="color:#fff">Site</b><p>Güven, hız ve dönüşüm açısından en kritik 3 eksik</p></div>
+    <div class="tile"><b style="color:#fff">Fırsat</b><p>İlk 90 günde en hızlı sonuç alacağınız tedavi ve ülke</p></div>
+  </div>
+  <p style="margin-bottom:6mm">
+    <a class="btn btn--wa" href="https://wa.me/905314051584?text=Merhaba%2C%20rehberi%20okudum.%20Klini%C4%9Fim%20i%C3%A7in%20%C3%BCcretsiz%20k%C4%B1sa%20analiz%20istiyorum.">WhatsApp'tan analiz iste → +90 531 405 15 84</a>
+  </p>
+  <p style="color:rgba(255,255,255,0.6)">ya da <a href="mailto:business@senninweb.com" style="color:#FCD34D">business@senninweb.com</a> · <a href="https://www.senninweb.com" style="color:#FCD34D">senninweb.com</a></p>
+
+  <div class="box" style="background:#151515;border-color:#262626;margin-top:12mm">
+    <div class="box-title" style="color:#fff">SenninWeb ne yapar?</div>
+    <p style="color:rgba(255,255,255,0.7);margin:0">Sağlık kliniklerinin yurt dışından hasta kazanması için uçtan uca çalışırız: hazır şablon kullanmadan size özel tasarlanan çok dilli web sitesi, hedef ülkede uluslararası SEO ve otorite çalışmaları, ziyaretçiyi WhatsApp'ta sıcak hasta adayına dönüştüren iletişim akışı ve aylık şeffaf raporlama. Amacımız tek: kliniğinize daha fazla doğru hasta getirmek.</p>
+  </div>
+  <p class="small" style="color:rgba(255,255,255,0.4);margin-top:10mm">© 2026 SenninWeb. Bu rehber bilgilendirme amaçlıdır; tıbbi ya da hukuki danışmanlık yerine geçmez. Rehberi değiştirmeden ve kaynak göstererek paylaşabilirsiniz.</p>
+  <div class="page-num"><span>SenninWeb · Yurt Dışından Hasta Çekme Rehberi</span><span>15</span></div>
+</section>
+
+</body>
+</html>

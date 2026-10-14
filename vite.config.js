@@ -1,9 +1,20 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import { HERO_HTML, HERO_CSS } from './src/content/heroMarkup.js'
+
+// Inlines the static home hero + its critical CSS into index.html
+const staticHero = () => ({
+  name: 'senninweb-static-hero',
+  // 'pre' so it runs before Vite's own HTML/CSS processing strips the placeholders
+  transformIndexHtml: {
+    order: 'pre',
+    handler: (html) => html.replace('<!--hero-html-->', HERO_HTML).replace('/*hero-css*/', HERO_CSS),
+  },
+})
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), staticHero()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

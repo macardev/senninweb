@@ -37,8 +37,24 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
     </noscript>
 
+    <!-- Adaptive motion tier before first paint (see src/utils/motionTier.js) -->
+    <script>
+      (function () {
+        var d = document.documentElement, n = navigator, c = n.connection || {}, t = 'full';
+        try {
+          if (matchMedia('(prefers-reduced-motion: reduce)').matches) t = 'off';
+          else {
+            var mem = n.deviceMemory, touch = matchMedia('(pointer: coarse)').matches;
+            if (c.saveData || /2g|3g/.test(c.effectiveType || '') || (mem && mem <= (touch ? 4 : 2)) || (n.hardwareConcurrency && n.hardwareConcurrency <= 2)) t = 'lite';
+          }
+          if (t === 'full' && sessionStorage.getItem('sw_motion') === 'lite') t = 'lite';
+        } catch (e) {}
+        d.setAttribute('data-motion', t);
+      })();
+    </script>
+
     <!-- Critical CSS for instant above-the-fold paint (render-blocking replaced at build) -->
-    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero-critical{align-items:center;background-color:#000;display:flex;min-height:700px;overflow:hidden;position:relative}@media (max-width:768px){.hero-critical{min-height:600px}}</style>
+    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}#hero-host:not([hidden]):not(:has([data-static-hero]))+#root{display:none}.sh{background:#0a0a0a;font-family:Inter,system-ui,-apple-system,sans-serif;overflow:hidden;position:relative}#hero-host .sh{padding-top:112px}.sh-inner{align-items:center;display:grid;gap:32px;margin:0 auto;max-width:90rem;padding:16px 24px 48px;position:relative;z-index:1}.sh-eyebrow{align-items:center;color:#d97706;display:inline-flex;font-size:12px;font-weight:500;gap:8px;letter-spacing:.2em;margin-bottom:32px;text-transform:uppercase}.sh-line{background:#d97706;height:1px;width:32px}.sh-h1{color:#fff;font-family:Syne,system-ui,-apple-system,sans-serif;font-size:2.25rem;font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:0 0 24px}.sh-gold{background:linear-gradient(135deg,#fcd34d,#d97706 50%,#b45309);-webkit-background-clip:text;background-clip:text;display:block;-webkit-text-fill-color:transparent}.sh-sub{color:hsla(0,0%,100%,.6);font-size:16px;line-height:1.625;margin:0 0 32px;max-width:32rem}.sh-ctas{display:flex;flex-direction:column;gap:12px;margin-bottom:40px}.sh-btn{align-items:center;border-radius:9999px;display:inline-flex;font-size:16px;font-weight:600;gap:10px;height:56px;justify-content:center;padding:0 32px;text-decoration:none;transition:transform .18s cubic-bezier(.2,0,0,1),background-color .2s,border-color .2s;white-space:nowrap}.sh-btn:active{transform:scale(.97)}.sh-btn--gold{background:#d97706;color:#0a0a0a}.sh-btn--gold:hover{background:#fbbf24}.sh-btn--wa{border:1px solid rgba(37,211,102,.45);color:hsla(0,0%,100%,.85);font-weight:500}.sh-btn--wa:hover{background:rgba(37,211,102,.1);border-color:#25d366}.sh-stats{border-top:1px solid hsla(0,0%,100%,.08);display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin:0;padding-top:28px}.sh-stats dt{color:#fff;font-family:Syne,system-ui,sans-serif;font-size:18px;font-weight:700;margin-bottom:2px}.sh-stats dd{color:hsla(0,0%,100%,.6);font-size:12px;margin:0}.sh-visual{display:none}@media (min-width:640px){.sh-h1{font-size:3rem}.sh-ctas{flex-direction:row}}@media (min-width:769px){.sh{align-items:center;display:flex;min-height:100vh}.sh-inner{padding:80px 48px;width:100%}.sh-h1{font-size:3.75rem}.sh-sub{font-size:18px;margin-bottom:40px}.sh-btn:hover{transform:scale(1.03)}.sh-stats{gap:32px;margin-top:24px;padding-top:32px}.sh-stats dt{font-size:20px}}@media (min-width:1024px){.sh-inner{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.sh-h1{font-size:3.6rem}.sh-visual{display:block;min-height:560px}}@media (min-width:1536px){.sh-h1{font-size:4.5rem}}</style>
 
     <!-- Speculation Rules API: instant next-page navigations (progressive enhancement) -->
     <script type="speculationrules">
@@ -49,51 +65,50 @@
       }]
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-U2UgQLgg.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-qGFduViA.js">
-    <link rel="modulepreload" crossorigin href="/assets/layout-C0ZQ1qdF.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-DesignEditorial-Cet4Iyp2.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-Hero-WVwr54Sk.js">
-    <link rel="modulepreload" crossorigin href="/assets/section-BlogCTA-B1jwzkMF.js">
-    <link rel="modulepreload" crossorigin href="/assets/page-Home-Bv7BRjfK.js">
-    <link rel="preload" href="/assets/index-Dw0DEcB_.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-Dw0DEcB_.css"></noscript>
+    <script type="module" crossorigin src="/assets/index-cow3BmcH.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-ru--Vhn1.js">
+    <link rel="modulepreload" crossorigin href="/assets/layout-Bo3aHkHr.js">
+    <link rel="modulepreload" crossorigin href="/assets/section-Hero-DavpDXWh.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-Home-BX5RZnEQ.js">
+    <link rel="preload" href="/assets/index-QLdG_k7r.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-QLdG_k7r.css"></noscript>
     <meta property="og:title" content="Ödüllü Web Sitesi Fiyatları 2026: Awwwards Kalitesinde Site Maliyeti">
   <meta property="og:description" content="Ödüllü bir web sitesi yaptırmak ne kadar? Awwwards kalitesinde premium tasarım ve özelliklerin maliyetini öğrenin.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.senninweb.com/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler">
-  <meta property="og:image" content="https://www.senninweb.com/og-image.svg">
+  <meta property="og:image" content="https://www.senninweb.com/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ödüllü Web Sitesi Fiyatları 2026: Awwwards Kalitesinde Site Maliyeti">
   <meta name="twitter:description" content="Ödüllü bir web sitesi yaptırmak ne kadar? Awwwards kalitesinde premium tasarım ve özelliklerin maliyetini öğrenin.">
+  <script type="application/ld+json" data-prerender>{"@context":"https://schema.org","@type":"Article","headline":"Ödüllü Web Sitesi Fiyatları 2026: Awwwards Kalitesinde Site Maliyeti","description":"Ödüllü bir web sitesi yaptırmak ne kadar? Awwwards kalitesinde premium tasarım ve özelliklerin maliyetini öğrenin.","image":"https://www.senninweb.com/images/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler.webp","datePublished":"2026-04-10","dateModified":"2026-04-10","inLanguage":"tr-TR","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.senninweb.com/blog/web-tasarim-fiyatlari-ne-kadar-odullu-siteler"},"author":{"@type":"Person","name":"Çağatay Samet Macar","url":"https://www.senninweb.com/hakkimizda"},"publisher":{"@type":"Organization","name":"SenninWeb","logo":{"@type":"ImageObject","url":"https://www.senninweb.com/favicon/favicon-48x48.png"}}}</script>
   </head>
   <body>
     <div class="mesh-base"></div>
     <div class="mesh-glow"></div>
-    <div id="root">
-      <!-- ⚡ Pre-rendered Hero for instant FCP — React replaces this on hydration -->
-      <div class="hero-critical" style="padding:0 24px">
-        <div style="max-width:1280px;margin:0 auto;width:100%">
-          <span style="display:inline-flex;align-items:center;gap:8px;color:#D97706;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:32px;font-family:system-ui,-apple-system,sans-serif">
-            <span style="width:32px;height:1px;background:#D97706;display:inline-block"></span>
-            Premium Web Tasarım &amp; SEO
-          </span>
-          <h1 style="margin:0 0 24px;line-height:1.05;letter-spacing:-0.03em;font-family:system-ui,-apple-system,sans-serif">
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">Sennin Web ile işletmeniz için</span>
-            <span style="display:block;color:#FFF;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">profesyonel</span>
-            <span class="text-gold-gradient" style="display:block;font-size:clamp(2.25rem,5.5vw,4.5rem);font-weight:700">web tasarım ve SEO hizmeti</span>
-          </h1>
-          <p style="color:rgba(255,255,255,0.5);font-size:16px;line-height:1.625;margin:0 0 40px;max-width:512px;font-family:system-ui,-apple-system,sans-serif">
-            Etkileyici web tasarımı ve güçlü SEO ile işletmenizi dijitalde rakiplerinizin önüne geçiriyoruz.
-          </p>
-          <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;background:#D97706;color:#000;font-size:16px;font-weight:600;text-align:center;font-family:system-ui,-apple-system,sans-serif">Ücretsiz Teklif Al</span>
-            <span style="display:inline-block;padding:16px 32px;border-radius:9999px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:16px;font-weight:500;text-align:center;font-family:system-ui,-apple-system,sans-serif">Blog'a Git</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Static hero (src/content/heroMarkup.js) paints before JS; <Hero /> adopts this node instead of re-rendering it.
+         On other routes postbuild swaps the block between the markers for that page's static body. -->
+    <div id="hero-host"><!--prerender:start-->
+<main style="max-width:760px;margin:0 auto;padding:140px 24px 80px;font-family:system-ui,-apple-system,sans-serif;color:rgba(255,255,255,0.75);line-height:1.7"><article><p style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#D97706">Web Tasarım · 8 dk</p><h1 style="color:#FFF;font-size:clamp(2rem,4.5vw,3.25rem);line-height:1.1;letter-spacing:-0.02em;margin:0 0 20px;font-weight:700">Ödüllü Web Sitesi Fiyatları 2026: Awwwards Kalitesinde Site Maliyeti</h1><p><time datetime="2026-04-10">2026-04-10</time> · Çağatay Macar</p><p style="font-size:1.25rem;color:#FFF">Web Tasarım Fiyatları Ne Kadar? Ödüllü Sitelerin Maliyeti Ne?</p><p>Bir Hayalle Başlayalım: Ödüllü Bir Web Sitesi Size Ne Kazandırır?</p>
+<p>Şimdi bir hayal edelim. Gözlerinizi kapatın ve şöyle bir senaryo düşünün: Web siteniz Awwwards'da 'Site of the Day' seçilmiş, CSSDA veya FWA gibi platformlarda ödül almış. Müşterileriniz size 'siteniz harika olmuş, böyle profesyonel bir firmayla çalıştığımız için gurur duyuyoruz' diye mesaj atıyor. Google'da rakiplerinizin hep önünde çıkıyorsunuz çünkü SEO ile birleşmiş ödüllü bir tasarım, işletmenize sadece prestij değil, doğrudan 1.8x - 2x daha fazla satış getiriyor. İnsanlar güvenilir, profesyonel ve akılda kalan bir markayla çalışmak ister — ve siz o marka oluyorsunuz. Peki bu hayal gerçek olabilir mi? Üstelik düşündüğünüz kadar pahalı da değil.</p>
+<blockquote><strong>₺5.000</strong> Türkiye'de ödüllü bir web sitesinin ortalama proje maliyeti 5.000-15.000 USD arasında değişiyor. Ödül seviyesi yükseldikçe proje bütçesi de katlanarak artıyor. <cite>Awwwards, Web Tasarım Ödülleri ve Proje Bütçeleri Raporu, 2025</cite></blockquote>
+<p>Bu yazıda, ödüllü web sitelerinin ardındaki gerçek maliyetleri, hangi bütçeyle ne alabileceğinizi ve bir müşteri olarak nelere dikkat etmeniz gerektiğini anlatacağım. Çünkü web tasarım fiyatları internette dolaşan o kafa karıştırıcı rakamlar arasında kaybolmamanızı istiyorum.</p>
+<h2 style="color:#FFF">1. Ödüllü Siteleri Sıradan Sitelerden Ayıran Ne?</h2>
+<p>Bu soru, işin en can alıcı noktası. Çünkü bir siteye baktığınızda 'işte bu ödüllük' dedirten şey tam olarak ne? Hazır bir tema üzerine yapılmış bir siteyle, ödül almak için özel olarak tasarlanmış bir site arasındaki farkı nasıl anlarsınız?</p>
+<ul><li><strong>Hız ve Performans:</strong> Ödüllü sitelerin ortak özelliği, Core Web Vitals metriklerinde mükemmel puan almalarıdır. Yani saniyeler içinde açılır, kullanıcıyı bekletmezler.</li><li><strong>UI/UX Detayları:</strong> Her butonun konumu, her geçiş animasyonu, her font seçimi — bunların hepsi bilinçli yapılmış tercihlerdir. Gözünüzün 'güzel' dediği şey aslında onlarca küçük kararın toplamıdır.</li><li><strong>Yaratıcı Yaklaşım:</strong> Jüri üyeleri sıradanlıktan sıkılmıştır. Ödül alan siteler, alışılmışın dışında bir hikaye anlatma biçimiyle gelir. Bu da özel bir tasarım süreci gerektirir.</li><li><strong>Mobil Performans:</strong> Günümüzde bir site mobilde kötü çalışıyorsa ödül alması neredeyse imkansız. Mobil uyumluluk artık standart değil, zorunluluk.</li></ul>
+<h2 style="color:#FFF">2. Web Tasarım Fiyatları: Hangi Bütçeyle Ne Alıyorsun?</h2>
+<p>Şimdi gelelim işin maddi kısmına. 2026 yılında web tasarım fiyatları geniş bir skalaya yayılıyor. Ama işin güzel tarafı şu: Ödül alacak kalitede bir site yaptırmak sandığınız kadar astronomik rakamlar gerektirmiyor. Tabii doğru ajansla çalışırsanız.</p>
+<h2 style="color:#FFF"></h2><p>Projenin kapsamına ve ihtiyaçlarınıza göre üç ana fiyat aralığından bahsetmek mümkün:</p><h3 style="color:#FFF">10.000 – 20.000 TL Arası: Basit Ama Temiz Çözümler</h3><p>Bu fiyat aralığı genelde hazır tema üzerinden yapılan, standart özelliklere sahip siteleri kapsar. Ödül almak için yeterli olmasa da, küçük bir işletme için iş görebilir. Ancak SEO altyapısı, mobil performans ve özgün tasarım gibi konularda genellikle sınırlı kalır.</p><h3 style="color:#FFF">20.000 – 50.000 TL Arası: Profesyonel Ödül Adayı</h3><p>İşte asıl sihir burada başlıyor. Bu bütçeyle markanıza özel, modern ve performans odaklı bir site yaptırabilirsiniz. SEO altyapısı, hız optimizasyonu ve UI/UX çalışması bu paketin içinde yer alır. Geçenlerde bir müşterimle konuşurken şöyle demişti: 'Keşke daha önce yaptırsaydım, gelen müşteri sayısı iki katına çıktı.' İşte bu aralık, ödül almak için en gerçekçi bütçedir.</p><h3 style="color:#FFF">50.000 TL ve Üzeri: Premium Ödül Avcısı</h3><p>Awwwards, CSSDA gibi platformlarda 'Site of the Day' hedefleyenler için bu aralık daha uygun. Özel animasyonlar, sıfırdan yazılmış kod, benzersiz bir kullanıcı deneyimi — bunların hepsi bir ekip çalışmasıdır. Ama unutmayın, yüksek bütçe tek başına ödül garantisi vermez. Önemli olan vizyon ve doğru ekiptir.</p>
+<blockquote><strong>%70</strong> Awwwards ödüllü sitelerin yüzde 70'i özel animasyon ve micro-interaction içeriyor. Bu tür premium özellikler, standart bir siteye göre maliyeti %50-100 artırabiliyor. <cite>Awwwards, Ödüllü Site Trend Analizi, 2025</cite></blockquote>
+<h2 style="color:#FFF">3. Ödüllü Site Yaptırmak İstiyorum: Ne Yapmalıyım?</h2>
+<p>Peki bir müşteri olarak siz ne yapmalısınız? İşte size birkaç pratik tavsiye:</p>
+<ul><li>Ödül kazanmış ajansların portföylerini inceleyin. Beğendiğiniz siteleri bir listeye alın.</li><li>Fiyat teklifi alırken sadece rakam değil, teklifin içeriğini de karşılaştırın. SEO dahil mi? Mobil performans garantisi var mı?</li><li>Referans isteyin ve o referanslarla konuşun. 'Siteniz size müşteri getirdi mi?' sorusu en kritik sorudur.</li><li>Awwwards, CSSDA, FWA gibi platformlarda gezinin. Hangi ortak özellikleri görüyorsunuz? Bunları kendi sitenizde de isteyin.</li><li>Acele karar vermeyin. İyi bir site planlaması 2-3 hafta sürebilir, bu normaldir.</li></ul>
+<p>Unutmayın, ödül bir amaç değil, bir araçtır. Asıl hedef, sitenizin size daha fazla müşteri kazandırması ve işletmenizi büyütmesidir. Eğer şu anki web siteniz:</p><ul><li>beklediğiniz kadar müşteri getirmiyorsa</li><li>rakiplerinizin gerisinde kalıyorsa</li><li>ödül alabilecek potansiyelde değilse</li></ul><p>bunun çözümü doğru strateji ve doğru ekipten geçiyor.</p>
+<p><a href="/blog/web-tasarim-fiyatlari-neden-degisiyor-2026">Web tasarım fiyatları</a> kafanızı karıştırmasın. Önemli olan, sitenizin size ne kazandıracağıdır. Ödüllü bir site, iyi bir SEO stratejisiyle birleştiğinde işletmenizi bir sonraki seviyeye taşıyabilir.</p>
+<blockquote><strong>%300</strong> Ödüllü tasarıma sahip markalar, standart tasarımlı rakiplerine göre yüzde 300 daha fazla organik medya bahsi alıyor. Tasarıma yapılan yatırım, PR değeri olarak geri dönüyor. <cite>DesignRush, Tasarım ve Medya İlişkisi Raporu, 2025</cite></blockquote>
+<p style="color:#FFF"><strong>Sizin hayalinizdeki siteyi konuşmaya ne dersiniz?</strong> <a href="/#contact" style="color:#FCD34D">Bizimle iletişime geçin, web tasarım fiyatları ve size özel çözümler hakkında detaylı bilgi alın!</a></p></article><nav aria-label="Site" style="margin-top:40px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px"><a href="/hizmet/web-tasarim" style="color:#FCD34D">Sağlık Turizmi Web Sitesi</a><a href="/hizmet/seo-ve-buyume" style="color:#FCD34D">Sağlık Turizmi SEO</a><a href="/hizmet/dijital-pazarlama" style="color:#FCD34D">Sağlık Turizmi Dijital Pazarlama</a><a href="/kocaeli" style="color:#FCD34D">Kocaeli</a><a href="/bilecik" style="color:#FCD34D">Bilecik</a><a href="/rehber/yurt-disindan-hasta-cekme" style="color:#FCD34D">Yurt Dışından Hasta Çekme Rehberi</a><a href="/blog" style="color:#FCD34D">Blog</a><a href="/sss" style="color:#FCD34D">SSS</a><a href="/#contact" style="color:#FCD34D">Ücretsiz Teklif Al</a></nav></main>
+<!--prerender:end--></div>
+    <div id="root"></div>
 
     <script type="application/ld+json">
     {
@@ -103,8 +118,8 @@
       "name": "SenninWeb",
       "url": "https://www.senninweb.com",
       "logo": "https://www.senninweb.com/favicon/favicon-48x48.png",
-      "image": "https://www.senninweb.com/og-image.svg",
-      "description": "KOBİ'ler için premium web tasarım, SEO ve dijital pazarlama ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
+      "image": "https://www.senninweb.com/og-image.jpg",
+      "description": "Yurt dışından hasta çekmek isteyen sağlık klinikleri için size özel web sitesi, uluslararası SEO ve hasta kazanım ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
       "email": "business@senninweb.com",
       "telephone": "+90 (531) 405 15 84",
       "foundingDate": "2025",

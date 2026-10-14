@@ -1,21 +1,22 @@
 # Sennin Web — Full Documentation
 
-> Sennin Web, KOBİ'lere web tasarım, SEO ve dijital pazarlama hizmeti sağlayan bir ajans. 2025'te Çağatay Macar tarafından kuruldu. Bilecik/Gölpazarı merkezli, Türkiye geneline hizmet veriyor.
+> Sennin Web, yurt dışından hasta çekmek isteyen sağlık kliniklerine (saç ekim merkezleri, diş, estetik ve veteriner klinikleri) size özel web sitesi, uluslararası SEO ve hasta kazanım hizmeti sunan bir ajans. 2025'te Çağatay Macar tarafından kuruldu.
 
 ## Pages
 
 - [Hakkımızda](hakkimizda.md): Sennin Web kurucusu Çağatay Macar ve şirket hikayesi
-- [SSS](sss.md): Web tasarım, SEO, AEO, GEO, mobil uyumluluk ve fiyatlandırma hakkında soru-cevap
-- [Web Tasarım](hizmet/web-tasarim.md): Sıfırdan tasarlanmış, mobil öncelikli web siteleri
-- [SEO ve Büyüme](hizmet/seo-ve-buyume.md): Arama motoru optimizasyonu, yerel SEO, AEO/GEO
-- [E-Ticaret Çözümleri](hizmet/eticaret-cozumleri.md): Online satış siteleri, ödeme entegrasyonu
-- [Dijital Pazarlama](hizmet/dijital-pazarlama.md): Sosyal medya yönetimi, içerik pazarlama
+- [SSS](sss.md): Hasta Kazanım Paketi, yetki belgesi, yurt dışına yönelik site, sağlık turizmi SEO'su hakkında soru-cevap
+- [Sağlık Turizmi Web Sitesi](hizmet/web-tasarim.md): Klinikler için çok dilli, size özel web sitesi
+- [Sağlık Turizmi SEO](hizmet/seo-ve-buyume.md): Hedef ülkede uluslararası SEO, backlink, yapay zekâ görünürlüğü
+- [Sağlık Turizmi Dijital Pazarlama](hizmet/dijital-pazarlama.md): Yurt dışından hasta kazanımı, WhatsApp hasta akışı
+- [Yurt Dışından Hasta Çekme Rehberi](https://www.senninweb.com/rehber/yurt-disindan-hasta-cekme): Ücretsiz 15 sayfalık PDF
 - [Gebze](gebze.md): Gebze'de web tasarım, yerel SEO, e-ticaret ve dijital pazarlama
 - [Bilecik](bilecik.md): Bilecik'te web tasarım, SEO, Google Maps optimizasyonu
 - [Kocaeli](kocaeli.md): Kocaeli genelinde web tasarım, SEO ve dijital pazarlama
 
 ## Blog Posts
 
+- [Yurt Dışından Hasta Nasıl Çekilir? Klinikler İçin 2026 Rehberi](blog/yurt-disindan-hasta-nasil-cekilir.md): Yurt dışından hasta nasıl çekilir? Saç ekim, diş, estetik ve veteriner klinikleri için 2025 yönetmeliği, sağlık turizmi SEO'su, çok dilli site ve WhatsApp'ta hastaya dönüşüm rehberi.
 - [2026 Renk Trendleri: Grafik ve Web Tasarımında Öne Çıkan Renkler](blog/2026-grafik-tasarim-web-tasarim-renk-trendleri.md): 2026 renk trendleri grafik ve web tasarımınızı nasıl etkileyecek? Doğru renk paletiyle markanızı öne çıkarın, müşteri algısını yönlendirin.
 - [2026'nın En İyi AI Web Tasarım Araçları (Kapsamlı Liste)](blog/2026-en-iyi-ai-web-tasarim-araclari.md): AI web tasarım araçlarıyla işlerinizi 10x hızlandırın. 2026'nın en iyi yapay zeka araçlarını keşfedin, rakiplerinizin önüne geçin.
 - [Domain Seçimi 2026: SEO İçin En Doğru Domain Nasıl Seçilir?](blog/2026-seo-stratejileri-domain-secimi.md): Domain seçiminiz SEO başarınızı belirliyor. 2026'da doğru domain uzantısı ve stratejisiyle Google'da zirveye çıkın.
@@ -33,8 +34,157 @@
 - [Profesyonel Web Sitesi Tasarımı Ne Kadar Tutar? (2026 Kapsamlı Rehber)](blog/profesyonel-web-sitesi-tasarim-maliyeti.md): Profesyonel bir web sitesi tasarımının maliyeti 15.000 TL'den başlar, 500.000 TL+ seviyelerine kadar çıkar. Fiyatı etkileyen faktörleri, piyasa karşılaştırmalarını ve SEO'nun gerçek maliyetini keşfedin.
 - [Dijital Pazarlama Kanalları Nelerdir? Kapsamlı Rehber (2026)](blog/dijital-pazarlama-kanallari-nedir.md): Dijital pazarlama kanalları nelerdir? SEO, SEM, sosyal medya, e-posta, içerik pazarlaması ve daha 13 kanal. 2026'da hangi kanallarla müşteri kazanacağınızı öğrenin.
 - [Bir Web Sitesi Ne Kadar Kazandırır? KOBİ'ler İçin Rakamlarla Kapsamlı Rehber](blog/bir-web-sitesi-ne-kadar-kazandirir.md): Bir web sitesi ne kadar kazandırır? Sektöre göre aylık 5.000 TL'den yüz binlerce liraya kadar değişen kazanç potansiyelini, hesaplama formüllerini ve gerçek vaka çalışmalarını keşfedin.
+- [Darıca'daki Bir Balıkçı Dükkanı İnternetten Nasıl Satış Yapmaya Başladı? Mira Balıkçılık E-Ticaret Örneği](blog/mira-balikcilik-e-ticaret-sitesi-ornegi.md): Fiziksel mağazası olan yerel bir işletme e-ticaret sitesi açmalı mı? Mira Balıkçılık örneğinde ilk ayın Google Search Console rakamları, yapılan işler ve dikkat edilecekler.
 
 ## Blog İçerikleri
+
+---
+
+# Yurt Dışından Hasta Nasıl Çekilir? Klinikler İçin 2026 Rehberi
+
+> *Yazar: Çağatay Samet Macar | 2026-10-14 | 9 dk*
+
+Yurt dışından hasta nasıl çekilir? Saç ekim, diş, estetik ve veteriner klinikleri için 2025 yönetmeliği, sağlık turizmi SEO'su, çok dilli site ve WhatsApp'ta hastaya dönüşüm rehberi.
+
+Yurt dışından hasta nasıl çekilir? Klinikler için 2026 rehberi niteliğindeki bu yazı, en çok bu soruyu soran saç ekim merkezleri, diş klinikleri, estetik ve güzellik klinikleri ile yabancı müşterisi artan veteriner klinikleri için hazırlandı. 2025'te değişen yasal kuralları, hedef ülke seçimini, yurt dışına yönelik web sitesini, sağlık turizmi SEO'sunu ve gelen talebi WhatsApp'ta randevuya dönüştürmeyi tek bir sistem olarak anlatıyoruz. Konuyu daha derin işlemek isteyenler için 15 sayfalık [ücretsiz yurt dışından hasta çekme rehberi (PDF)](https://www.senninweb.com/rehber/yurt-disindan-hasta-cekme) de hazır.
+
+## Kısa cevap: Yurt dışından hasta nasıl çekilir?
+
+Yurt dışından hasta çekmek için klinik önce yasal zemini kurmalı, ardından hastanın kendi dilinde ve kendi ülkesinin Google'ında bulunabilir hâle gelmelidir. Pratikte bu iş beş adımdan oluşur. Birincisi, Sağlık Bakanlığı'ndan uluslararası sağlık turizmi yetki belgesi almak. 2025 yönetmeliğine göre bu belge olmadan faaliyet yürütülemez. İkincisi, 1 ana ve 1 ikincil hedef ülke seçmek. Fiyat farkı, uçuş süresi, dil kapasitesi ve mevcut hasta verisi bu seçimi belirler. Üçüncüsü, yurt dışına yönelik ayrı ve çok dilli bir web sitesi kurmak. Sitede her tedavi için hastanın dilinde ayrı bir sayfa, doktor profilleri, süreç anlatımı ve sık sorulan sorular bulunmalı. Dördüncüsü, hedef ülkede uluslararası SEO yapmak. Bunun için hastanın arama diliyle yazılmış içerik, hreflang, schema işaretlemeleri ve o ülkeden alınan kaliteli backlinkler gerekir. Beşincisi, gelen talebi dakikalar içinde WhatsApp'ta karşılamak. Fotoğraf, ön değerlendirme, görüntülü görüşme ve net bir tedavi planıyla talebi randevuya dönüştürmek gerekir. Reklam ve aracı platformlar hızlı talep getirir ama bütçe kesildiğinde durur. Organik SEO ise genellikle 4–6 ayda ilk sonuçları verir ve birikerek kalıcı bir hasta akışı oluşturur. En sağlıklı strateji, kısa vadede hızlı kanalları kullanırken uzun vadede kliniğin kendi sitesini ve SEO'sunu büyütmektir. Her adımda yetki belgesini görünür kılmak ve hastaya şeffaf bilgi vermek, 2025'te sektörün en büyük sorunu olan güven eksikliğini doğrudan giderir.
+
+## Sağlık turizminde 2025 tablosu: güven kaybı, fırsat kazancı
+
+Türkiye uzun süredir saç ekimi ve diş tedavisinde dünyanın en çok tercih edilen ülkelerinden biri. Ancak 2025'in ilk yarısı, büyümenin otomatik olmadığını gösterdi.
+
+> **801 bin → 733 bin** — Ekonomi Gazetesi'nin TÜİK verilerine dayanan haberine göre, sağlık amacıyla gelen turist sayısı 2025'in ocak-haziran döneminde "68 bin adet birden düşerek 801 binden 733 bine geriledi". Aynı dönemde sağlık turizmi geliri 229 milyon dolar azalarak 1 milyar 392 milyon dolara indi. Haber, ölümle sonuçlanan sağlık skandallarını ve oluşan güvensizlik ortamını düşüşün etkenleri arasında gösteriyor.
+> *Kaynak: Ekonomi Gazetesi, Yener Karadeniz, "Alışveriş artıyor, sağlık turizmi geriliyor" (Ağustos 2025)*
+
+Bu tablo klinikler için önemli bir mesaj taşıyor: Yabancı hasta artık yalnızca fiyata değil, güvene bakıyor. Yetki belgesini görünür kılan, doktorunu ve sürecini şeffaf anlatan, hastanın sorusuna kendi dilinde hızlı cevap veren klinikler bu dönemde rakiplerinden ayrışıyor.
+
+## Önce yasal zemin: 2025'te değişen kurallar
+
+Yurtdışından hasta bulma çalışmasına başlamadan önce iki yönetmeliği bilmek gerekiyor: 26 Nisan 2025 tarihli Uluslararası Sağlık Turizmi ve Turistin Sağlığı Hakkında Yönetmelik ve 12 Kasım 2025 tarihli Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik.
+
+> "Sağlık tesisi ve aracı kuruluşların uluslararası sağlık turizmi hizmetlerinde faaliyet yürütebilmesi için yetki belgesi alması zorunludur."
+> *Kaynak: Resmî Gazete, Uluslararası Sağlık Turizmi ve Turistin Sağlığı Hakkında Yönetmelik, Madde 5 (26 Nisan 2025, Sayı 32882)*
+
+Aynı yönetmelik ameliyathane ortamındaki cerrahi ve girişimsel işlemler için komplikasyon sigortasını zorunlu tutuyor ve fiyatlar konusunda net bir çerçeve çiziyor: "Uluslararası sağlık turizmi kapsamında sunulan sağlık hizmetinin bedeli Bakanlıkça belirlenir." Yani yurt dışına verdiğiniz fiyatlar da Bakanlığın sağlık turizmi fiyat tarifesindeki usul ve esaslara uymak zorunda.
+
+Kasım 2025 tanıtım yönetmeliği ise yurt dışına yönelik pazarlamanın nasıl yapılacağını belirliyor. TÜRSAB'ın yönetmeliğe ilişkin duyurusunda öne çıkan kurallar şunlar:
+
+- Ayrı platform: Tanıtım, yurt dışına yönelik ayrı bir internet sitesi veya sosyal medya hesabı üzerinden yapılmalı ve bu platformlarda sağlık turizmi kapsamında hizmet sunulduğu açıkça belirtilmeli.
+- Yetki belgesi görünür olmalı: Belge, tesisin internet sitesinde ya da sosyal medya hesabında yayımlanmalı.
+- Türkiye'deki kişilere yönelik tanıtım yasak: Sosyal medyada yurt içi hedef kitle seçilemiyor, otomatik hedef kitle tanımları da kapatılmalı.
+- Sponsorlu tanıtım: Türkçe dışındaki dillerde, yurt dışına yönelik sponsorlu tanıtım yapılabiliyor.
+- Kampanya ve fiyat duyurusu: Yurt dışına yönelik platformlarda indirim, kampanya ve rekabetçi fiyat duyuruları yapılabiliyor.
+
+> Bu bölüm genel bilgilendirme amaçlıdır, hukuki danışmanlık değildir. Uygulamaya geçmeden önce yönetmeliklerin Resmî Gazete'deki güncel metnini ve Sağlık Bakanlığı duyurularını bir sağlık hukuku uzmanıyla birlikte inceleyin.
+
+## Hangi ülkeden hasta çekmelisiniz?
+
+"Tüm dünyaya açılalım" bir strateji değildir. Bütçe, dil ve hasta koordinasyonu kapasitesi sınırlıdır. 1–2 ülkede güçlü olmak, 10 ülkede görünmez olmaktan çok daha fazla yabancı hasta getirir. Hedef ülkeyi seçerken şu sorulara cevap verin:
+
+- Fiyat farkı: Tedavinin o ülkedeki maliyeti ile sizin fiyatınız arasındaki fark, uçak ve konaklama masrafını karşılıyor mu?
+- Ulaşım: Direkt uçuş var mı, kaç saat sürüyor?
+- Dil kapasitesi: O dilde hastayla yazışacak, görüntülü görüşme yapacak bir koordinatörünüz var mı?
+- Diaspora: Almanya, Hollanda veya Avusturya gibi Türkiye'yi zaten tanıyan büyük bir topluluk var mı?
+- Mevcut veriniz: WhatsApp ve form geçmişinizde hangi ülke kodları sık görünüyor?
+
+Seçimi doğrulamak için Google Trends'te tedavi adını hedef dilde aratın (ör. "Zahnimplantat Türkei" veya "hair transplant turkey"), ardından Google Ads Anahtar Kelime Planlayıcı'da o ülkenin aylık arama hacmine ve tıklama maliyetine bakın. Tıklama maliyeti yüksekse o aramanın ticari değeri de yüksektir.
+
+## Sağlık turizmi web sitesi: ayrı, çok dilli ve size özel
+
+2025 tanıtım yönetmeliğiyle birlikte yurt dışına yönelik ayrı bir sağlık turizmi web sitesi artık bir tercih değil, pratikte bir zorunluluk. Bu site kliniğinizin resepsiyonu, broşürü ve ilk muayenesi gibi çalışır. Hazır bir şablon bu işi iyi yapamaz, çünkü yabancı hastanın güveni benzersiz bir hikâyeden ve sorularına tam yerinde verilen cevaplardan doğar. Olmazsa olmaz sayfalar şunlar:
+
+- Her tedavi için ayrı sayfa: nedir, kimlere uygun, süreç, kaç gün kalınacağı, iyileşme süresi ve SSS.
+- Doktor profilleri: eğitim, uzmanlık, deneyim ve gerçek fotoğraf.
+- "Nasıl çalışıyoruz?" sayfası: online ön değerlendirme → tedavi planı → seyahat → tedavi → kontrol.
+- Yetki belgesi ve sağlık turizmi beyanı (yönetmelik gereği).
+- Her sayfada görünür WhatsApp butonu ve fotoğraf yüklenebilen ön değerlendirme formu.
+- Her dil kendi adresinde (/en/, /de/) ve doğru hreflang etiketleriyle.
+
+> Google, çevrilmiş sayfaları kopya içerik olarak görmez; sorun yalnızca ana içerik çevrilmeden bırakıldığında çıkar. Google'ın ifadesiyle: "Localized versions of a page are only considered duplicates if the main content of the page remains untranslated."
+> *Kaynak: Google Search Central, "Tell Google about localized versions of your page"*
+
+## Sağlık turizmi SEO: hastanın arama diliyle yazmak
+
+Yabancı hasta sizin kullandığınız tıbbi terimlerle değil, kendi kelimeleriyle arar. İngiltere'deki bir hasta "dental implants turkey cost", Almanya'daki bir hasta "Zahnimplantat Türkei Kosten" yazar. Güven arayan hasta "hair transplant turkey reviews" ya da "Haartransplantation Türkei Erfahrungen" diye arar. Bilgi arayan hasta ise "veneers vs crowns" gibi karşılaştırmalar yapar. Her niyet için farklı bir sayfa gerekir: fiyat aramaları için tedavi ve fiyat sayfası, güven aramaları için hasta deneyimi ve doktor sayfası, bilgi aramaları için rehber içerikler.
+
+Bir değişiklik daha var: Hastalar artık soruyu Google'a olduğu kadar ChatGPT, Gemini ve Claude gibi yapay zekâ asistanlarına da soruyor. Bu asistanlar cevap verirken arka planda web araması yapıyor ve net cevap veren, kaynak gösteren, güncel tarihli ve yapılandırılmış veriye (MedicalClinic, Physician, FAQPage schema) sahip sayfaları kaynak olarak öne çıkarıyor. Tıbbi içeriklerin bir doktor tarafından yazılması ya da kontrol edilmesi ve sayfada bunun belirtilmesi, hem Google'ın E-E-A-T beklentisini hem de yapay zekânın güven sinyallerini karşılar.
+
+## Yurtdışından hasta bulma kanalları karşılaştırması
+
+| Kanal | Hız | Maliyet yapısı | Kalıcılık | Dikkat edilecek |
+| --- | --- | --- | --- | --- |
+| Sağlık turizmi SEO'su (kendi siteniz) | Yavaş (4–6 ay) | Aylık sabit yatırım | Yüksek, birikir | Hedef ülkeden otorite ve özgün içerik ister |
+| Yurt dışı hedefli sponsorlu reklam | Hızlı (günler) | Tıklama başına | Düşük, bütçeyle durur | Türkçe dışı dil, yurt içi hedefleme yasak |
+| Sağlık turizmi platformları | Orta | Çoğunlukla komisyon | Orta | Hasta verisi ve marka platformda kalır |
+| Aracı kuruluş / acente | Orta | Hasta başına komisyon | Anlaşmaya bağlı | Aracının yetki belgesini kontrol edin |
+| Organik sosyal medya | Orta | Zaman ve içerik üretimi | Orta | Yurt dışına yönelik ayrı hesap gerekir |
+
+Tablodan çıkan sonuç basit: Reklam ve platformlar ilk hastaları hızlı getirir, ancak klinik kendi sitesine ve SEO'suna yatırım yapmadıkça her yeni hasta için yeniden ödeme yapar. Kalıcı ve kontrolü kliniğin elinde olan tek kanal, kendi sağlık turizmi web sitesi ve onun organik görünürlüğüdür.
+
+## Talebi hastaya çevirmek: ilk 5 dakika
+
+Yabancı hasta aynı anda 3–5 kliniğe yazar. İlk net ve insani cevabı veren klinik bir adım öne geçer. Bu, yalnızca sağlık turizmine özgü bir gözlem değil.
+
+> **~7 kat** — Harvard Business Review'da yayımlanan araştırmaya göre, potansiyel müşteriyle ilk bir saat içinde iletişime geçen firmaların bu talebi nitelikli bir görüşmeye dönüştürme ihtimali, bir saat daha bekleyen firmalara göre yaklaşık yedi kat yüksek.
+> *Kaynak: Harvard Business Review, Oldroyd, McElheran ve Elkington, "The Short Life of Online Sales Leads" (2011)*
+
+- Hastayı kendi dilinde ve ismiyle karşılayın. Otomatik mesajı yalnızca mesai dışında kullanın.
+- Doğru soruları sorun: şikâyet, önceki tedaviler, fotoğraf ve röntgen, planlanan tarih.
+- Doktor değerlendirmesinden sonra net bir tedavi planı gönderin: süre, kalınacak gün, pakete dahil olanlar.
+- 10–15 dakikalık bir görüntülü görüşme önerin. Bu, güveni en hızlı artıran adımdır.
+- Cevap gelmezse 2., 5. ve 10. günde bilgi veren, baskı kurmayan takip mesajları gönderin.
+
+## Sektöre göre kısa notlar
+
+### Saç ekim kliniği için yurt dışı hasta
+
+Rekabetin en yoğun olduğu alan. Genel "hair transplant turkey" yerine FUE, DHI, kadınlarda saç ekimi ve sakal ekimi gibi tekniğe ve soruna özel sayfalar daha hızlı sıralama alır. Ameliyatı kimin yaptığı en kritik güven sorusudur; doktorun rolünü açıkça anlatın.
+
+### Diş kliniği için yabancı hasta
+
+İmplant, all-on-4, zirkonyum kaplama ve gülüş tasarımı için ayrı sayfalar oluşturun. Hastanın en çok sorduğu şey kaç gün kalacağı ve kaç kez gelmesi gerektiğidir. Bunu net bir zaman çizelgesiyle gösterin.
+
+### Estetik ve güzellik klinikleri
+
+Tanıtım kurallarının en hassas olduğu alan. Bilgilendirici bir dil kullanın, uygulayıcının yetkinliğini, kullanılan ürünleri ve iyileşme sürecini şeffaf anlatın.
+
+### Veteriner klinikleri
+
+Burada "yurt dışı" hedefi farklı işler: Türkiye'de yaşayan yabancılar, turistler ve evcil hayvanıyla ülke değiştirenler. Evcil hayvan pasaportu, seyahat aşıları, kuduz antikor testi ve sağlık sertifikası gibi hizmetleri İngilizce ve Rusça gibi dillerde anlatın. "English speaking vet" + şehir adı gibi aramalar yüksek niyetlidir ve rekabeti genellikle düşüktür.
+
+## Sık sorulan sorular
+
+**S: Yurt dışından hasta kabul etmek için yetki belgesi şart mı?**
+
+Evet. 26 Nisan 2025 tarihli Uluslararası Sağlık Turizmi ve Turistin Sağlığı Hakkında Yönetmelik'in 5. maddesine göre sağlık tesisi ve aracı kuruluşların uluslararası sağlık turizmi hizmetlerinde faaliyet yürütebilmesi için yetki belgesi alması zorunludur. Belge, sağlık tesisleri için Sağlık Bakanlığı tarafından düzenlenir.
+
+**S: Yurt dışına yönelik ayrı bir web sitesi gerekli mi?**
+
+12 Kasım 2025 tarihli tanıtım yönetmeliğine göre yurt dışına yönelik tanıtımın ayrı bir internet sitesi veya sosyal medya hesabı üzerinden yapılması ve bu platformda sağlık turizmi kapsamında hizmet sunulduğunun açıkça belirtilmesi gerekiyor. Bu yüzden yurt dışından hasta çekmek isteyen klinikler için ayrı, çok dilli bir sağlık turizmi web sitesi pratikte zorunlu hâle geldi.
+
+**S: Sağlık turizmi SEO'su ne kadar sürede sonuç verir?**
+
+Yeni bir dilde ve ülkede ilk belirgin sonuçlar genellikle 4–6 ay içinde görülür. Rekabetçi tedavilerde (ör. saç ekimi) bu süre daha uzun olabilir. SEO'nun avantajı, kurulan altyapının kalıcı olması ve reklam gibi bütçe kesildiğinde durmamasıdır.
+
+**S: Yurtdışından hasta bulmak için aracı platformlar mı, kendi siteniz mi?**
+
+İkisi birbirinin alternatifi değil. Platformlar ve aracı kuruluşlar ilk hastaları hızlı getirebilir, ancak çoğu komisyonla çalışır ve hasta ilişkisi platformda kalır. Kendi sağlık turizmi web siteniz ve SEO'nuz ise zamanla hasta başına maliyeti düşüren, kontrolü sizde olan kalıcı kanaldır. En sağlıklı yaklaşım ikisini birlikte kullanıp kendi kanalınızı büyütmektir.
+
+**S: Sağlık turizmi web sitesi ve SEO maliyeti ne kadar?**
+
+Maliyeti hedef ülke ve dil sayısı, tedavi ve sayfa sayısı, hedef ülkeden alınacak bağlantı hacmi ve tasarım kapsamı belirler. Örneğin Almanya gibi bir pazarda saygın bir siteden tek bir editoryal bağlantı genellikle 300–400 € bandındadır. SenninWeb'de web sitesi tasarımı, uluslararası SEO ve WhatsApp hasta akışı tek bir aylık pakette yer alır ve teklif, ücretsiz kısa analizin ardından kliniğe özel hazırlanır.
+
+Bu yazı sistemin özeti. Hedef ülke testi, 90 günlük yol haritası ve 25 maddelik kontrol listesiyle birlikte tamamını [Yurt Dışından Hasta Çekme Rehberi 2026 (ücretsiz PDF)](https://www.senninweb.com/rehber/yurt-disindan-hasta-cekme) içinde bulabilirsiniz. Kliniğinize özel değerlendirme isterseniz [sağlık turizmi SEO hizmetimizi](https://www.senninweb.com/hizmet/seo-ve-buyume) ve [klinik web sitesi yaklaşımımızı](https://www.senninweb.com/hizmet/web-tasarim) inceleyebilirsiniz.
+
+**Kliniğinize yurt dışından hasta çekmeye hazır mısınız?**
+Sitenizi ve hedef ülkenizi inceleyip WhatsApp'tan ücretsiz kısa bir analiz gönderelim.
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/yurt-disindan-hasta-nasil-cekilir) sitesinde yayınlanmıştır.*
 
 ---
 
@@ -771,7 +921,12 @@ gibi özellikler projeyi tamamen farklı seviyeye taşır. Bu yüzden fiyat veri
 
 Tabii ki her proje farklıdır ama 2026 için genel tablo aşağı yukarı şöyle:
 
-Proje TürüOrtalama AralıkBasit tanıtım sitesi10.000 – 20.000 TLProfesyonel kurumsal site20.000 – 50.000 TLPremium UI/UX odaklı site50.000 TL+Özel yazılım projeleriÇok daha yüksek olabilir
+| Proje Türü | Ortalama Aralık |
+| --- | --- |
+| Basit tanıtım sitesi | 10.000 – 20.000 TL |
+| Profesyonel kurumsal site | 20.000 – 50.000 TL |
+| Premium UI/UX odaklı site | 50.000 TL+ |
+| Özel yazılım projeleri | Çok daha yüksek olabilir |
 
 Burada önemli olan en ucuz seçeneği bulmak değil, gerçekten işletmenize katkı sağlayacak sistemi kurmak.
 
@@ -943,7 +1098,12 @@ Bir web sitesini etkili yapan sadece görseller değil, aynı zamanda içerikler
 
 Tabii ki her proje benzersizdir ancak 2026 yılı için genel bir fikir vermek adına ortalama fiyat aralıklarını şöyle özetleyebilirim:
 
-Proje TürüOrtalama Fiyat AralığıHazır tema ile basit tanıtım sitesi5.000 – 15.000 TLProfesyonel kurumsal site çözümü20.000 – 50.000 TLPremium UI/UX + SEO odaklı site50.000 – 100.000 TLÖzel yazılım + e-ticaret + portal100.000 TL ve üzeri
+| Proje Türü | Ortalama Fiyat Aralığı |
+| --- | --- |
+| Hazır tema ile basit tanıtım sitesi | 5.000 – 15.000 TL |
+| Profesyonel kurumsal site çözümü | 20.000 – 50.000 TL |
+| Premium UI/UX + SEO odaklı site | 50.000 – 100.000 TL |
+| Özel yazılım + e-ticaret + portal | 100.000 TL ve üzeri |
 
 Gördüğünüz gibi fiyatlar oldukça geniş bir skalada yer alıyor. Önemli olan en ucuz seçeneği bulmak değil, işletmenizin ihtiyaçlarına en uygun seçeneği almak.
 
@@ -1172,7 +1332,13 @@ We Are Social ve DataReportal'ın 2026 Digital Turkey raporuna göre, Türkiye'd
 
 Bu aramaların büyük kısmı herhangi bir karşılık bulamıyor. Çünkü Kocaeli'deki işletmelerin büyük bölümü ya hiç web sitesine sahip değil ya da sahip oldukları site SEO açısından optimize edilmemiş durumda.
 
-Dijital Varlık MetriğiKocaeliİstanbulAnkaraAktif web sitesi oranı%46%68%61Dijital pazarlama stratejisi<%20%40%35Google İşletme Profili güncel%40%65%58Düzenli içerik üretimi%15%32%28Kaynak: TÜİK Dijital Ekonomi Raporu, 2025
+| Dijital Varlık Metriği | Kocaeli | İstanbul | Ankara |
+| --- | --- | --- | --- |
+| Aktif web sitesi oranı | %46 | %68 | %61 |
+| Dijital pazarlama stratejisi | <%20 | %40 | %35 |
+| Google İşletme Profili güncel | %40 | %65 | %58 |
+| Düzenli içerik üretimi | %15 | %32 | %28 |
+Kaynak: TÜİK Dijital Ekonomi Raporu, 2025
 
 ## İzmit'teki İşletmelerin Dijital Pazarlamada Yaptığı 5 Büyük Hata
 
@@ -1320,7 +1486,19 @@ Konuya soyut değil, somut verilerle bakalım. Dünyada neler oluyor, Türkiye'd
 
 ## Eski SEO ile Yeni Nesil AI Tabanlı SEO Arasındaki Fark
 
-Birçok işletme hâlâ "Google'da üst sıralarda çıkıyorum, sorunum yok" diye düşünüyor. Oysa oyunun kuralları değişti. Geleneksel SEO hâlâ önemli — ama tek başına yeterli değil. Aşağıdaki tablo, eski nesil SEO anlayışı ile yeni nesil AI tabanlı SEO (GEO + LLMO) arasındaki temel farkları özetliyor:KriterGeleneksel SEOYeni Nesil AI SEO (GEO + LLMO)Hedef PlatformGoogle, Bing gibi arama motorlarıChatGPT, Gemini, Perplexity, Claude gibi AI araçları + GoogleBaşarı ÖlçütüAnahtar kelime sıralaması, organik trafikAI alıntı payı (citation share), AI görünürlük skoruİçerik FormatıAnahtar kelime yoğunluğu, meta etiketlerSoru-cevap formatı, yapılandırılmış veri, anlamsal içerikBağlantı YapısıBacklink otoritesiDomain otoritesi + AI tarafından alıntılanabilirlikSıralama FaktörüSayfa yetkisi, geri bağlantı sayısıE-E-A-T, içerik derinliği, kaynak güvenilirliğiTıklama ModeliKullanıcı mavi bağlantılara tıklarAI cevabın içine gömülü kaynak; tıklama olmadan marka bilinirliğiSonuç Süresi3–12 ay3–12 ay (yapısal + içerik değişiklikleriyle)Kullanıcı AmacıAnahtar kelime bazlı sorgularDoğal dil ile konuşmak gibi yazılan sorularRakip Sayısı10 mavi bağlantı (çok sayıda rakip)Ortalama 2–7 kaynak alıntılanır (çok daha seçici)Dönüşüm KalitesiStandart organik trafik4,4x daha değerli ziyaretçi (Semrush, 2025)
+Birçok işletme hâlâ "Google'da üst sıralarda çıkıyorum, sorunum yok" diye düşünüyor. Oysa oyunun kuralları değişti. Geleneksel SEO hâlâ önemli — ama tek başına yeterli değil. Aşağıdaki tablo, eski nesil SEO anlayışı ile yeni nesil AI tabanlı SEO (GEO + LLMO) arasındaki temel farkları özetliyor:
+| Kriter | Geleneksel SEO | Yeni Nesil AI SEO (GEO + LLMO) |
+| --- | --- | --- |
+| Hedef Platform | Google, Bing gibi arama motorları | ChatGPT, Gemini, Perplexity, Claude gibi AI araçları + Google |
+| Başarı Ölçütü | Anahtar kelime sıralaması, organik trafik | AI alıntı payı (citation share), AI görünürlük skoru |
+| İçerik Formatı | Anahtar kelime yoğunluğu, meta etiketler | Soru-cevap formatı, yapılandırılmış veri, anlamsal içerik |
+| Bağlantı Yapısı | Backlink otoritesi | Domain otoritesi + AI tarafından alıntılanabilirlik |
+| Sıralama Faktörü | Sayfa yetkisi, geri bağlantı sayısı | E-E-A-T, içerik derinliği, kaynak güvenilirliği |
+| Tıklama Modeli | Kullanıcı mavi bağlantılara tıklar | AI cevabın içine gömülü kaynak; tıklama olmadan marka bilinirliği |
+| Sonuç Süresi | 3–12 ay | 3–12 ay (yapısal + içerik değişiklikleriyle) |
+| Kullanıcı Amacı | Anahtar kelime bazlı sorgular | Doğal dil ile konuşmak gibi yazılan sorular |
+| Rakip Sayısı | 10 mavi bağlantı (çok sayıda rakip) | Ortalama 2–7 kaynak alıntılanır (çok daha seçici) |
+| Dönüşüm Kalitesi | Standart organik trafik | 4,4x daha değerli ziyaretçi (Semrush, 2025) |
 
 Bu tablodan çıkan en kritik sonuç şu: AI araması çok daha seçici. Google'da 10 web sitesi listelenir; yapay zeka ise bir soruya yanıt verirken ortalama yalnızca 2–7 kaynağa atıfta bulunur. Bu kaynaklar arasında yer almak, dijital görünürlüğün yeni altın standardıdır.
 
@@ -1552,7 +1730,19 @@ Hazır şablon tabanlı siteler kısa vadede ucuz görünse de uzun vadede ağı
 
 ## 3. Karşılaştırma Tablosu: 7.000 TL Paket vs. Gerçek Profesyonel Tasarım
 
-Özellik / Kriter7.000 TL 'Hazır Paket'Profesyonel Özel TasarımTasarım SüreciHazır şablon seçimi (~1-3 gün)UX araştırması + wireframe + prototip (~4-12 hafta)ÖzgünlükBinlerce sitede aynı tasarımMarkanıza özel, rakipsiz kimlikMobil UyumlulukŞablon standartı (temel)Her ekran boyutu için özel tasarlanmışSite Hızı (Core Web Vitals)Şablon kodu yükü nedeniyle genellikle düşükOptimize edilmiş, yüksek Lighthouse skoruSEO AltyapısıPlugin kurulumu (temel)Teknik SEO + içerik mimarisi + schema markupİçerik StratejisiYok / müşteriye bırakılırAnahtar kelime araştırması + içerik planıDönüşüm Optimizasyonu (CRO)YokA/B test, kullanıcı davranışı analiziTeknik ÖzelleştirmeSınırlı (şablon kısıtları)Sınırsız, ihtiyaca göre geliştirmeSürdürülebilirlikŞablon güncellemelerine bağımlıUzun vadeli, ölçeklenebilir altyapıSonraki SEO ÇalışmalarıGenellikle dahil değil, sonradan ayrı fiyatlandırılırEntegre planlama, sürekli iyileştirmeFiyat Aralığı (TR Pazarı)5.000 – 12.000 TL15.000 TL – 500.000 TL+
+| Özellik / Kriter | 7.000 TL 'Hazır Paket' | Profesyonel Özel Tasarım |
+| --- | --- | --- |
+| Tasarım Süreci | Hazır şablon seçimi (~1-3 gün) | UX araştırması + wireframe + prototip (~4-12 hafta) |
+| Özgünlük | Binlerce sitede aynı tasarım | Markanıza özel, rakipsiz kimlik |
+| Mobil Uyumluluk | Şablon standartı (temel) | Her ekran boyutu için özel tasarlanmış |
+| Site Hızı (Core Web Vitals) | Şablon kodu yükü nedeniyle genellikle düşük | Optimize edilmiş, yüksek Lighthouse skoru |
+| SEO Altyapısı | Plugin kurulumu (temel) | Teknik SEO + içerik mimarisi + schema markup |
+| İçerik Stratejisi | Yok / müşteriye bırakılır | Anahtar kelime araştırması + içerik planı |
+| Dönüşüm Optimizasyonu (CRO) | Yok | A/B test, kullanıcı davranışı analizi |
+| Teknik Özelleştirme | Sınırlı (şablon kısıtları) | Sınırsız, ihtiyaca göre geliştirme |
+| Sürdürülebilirlik | Şablon güncellemelerine bağımlı | Uzun vadeli, ölçeklenebilir altyapı |
+| Sonraki SEO Çalışmaları | Genellikle dahil değil, sonradan ayrı fiyatlandırılır | Entegre planlama, sürekli iyileştirme |
+| Fiyat Aralığı (TR Pazarı) | 5.000 – 12.000 TL | 15.000 TL – 500.000 TL+ |
 
 ## 4. Awwwards Standartında Bir Site Ne Kadar Tutar?
 
@@ -1560,7 +1750,16 @@ Awwwards.com, dünyanın en iyi web tasarımlarını ödüllendiren ve referans 
 
 Örnek üzerinden düşünelim: Awwwards 'Site of the Day' ödülü almış uluslararası ajansların geliştirdiği bir kurumsal web sitesi için tipik fiyatlandırma nasıl görünür?* Türkiye'deki global ajans standartlarındaki ekipler için bu rakamlar TL bazında orantılı olarak değişkenlik gösterir. Kur ve piyasa dinamiklerine göre hesaplanmalıdır.
 
-Hizmet KalemiSüreTahmini Maliyet (USD)Discovery & Strateji2-4 hafta$3,000 – $8,000UX Araştırması & Wireframe3-6 hafta$5,000 – $15,000UI Tasarımı (özgün, animasyonlu)4-8 hafta$10,000 – $40,000Front-end Geliştirme6-12 hafta$15,000 – $50,000Back-end & CMS Entegrasyonu4-8 hafta$8,000 – $25,000İçerik Üretimi & Optimizasyon3-6 hafta$5,000 – $20,000Test, Lansman & Eğitim2-4 hafta$3,000 – $10,000TOPLAM24-48 hafta$49,000 – $168,000
+| Hizmet Kalemi | Süre | Tahmini Maliyet (USD) |
+| --- | --- | --- |
+| Discovery & Strateji | 2-4 hafta | $3,000 – $8,000 |
+| UX Araştırması & Wireframe | 3-6 hafta | $5,000 – $15,000 |
+| UI Tasarımı (özgün, animasyonlu) | 4-8 hafta | $10,000 – $40,000 |
+| Front-end Geliştirme | 6-12 hafta | $15,000 – $50,000 |
+| Back-end & CMS Entegrasyonu | 4-8 hafta | $8,000 – $25,000 |
+| İçerik Üretimi & Optimizasyon | 3-6 hafta | $5,000 – $20,000 |
+| Test, Lansman & Eğitim | 2-4 hafta | $3,000 – $10,000 |
+| TOPLAM | 24-48 hafta | $49,000 – $168,000 |
 
 Büyük uluslararası şirketler (Fortune 500 kategorisinde) için yapılan web sitesi yenileme projeleri ise 500.000 USD'yi aşabiliyor. Bu rakamları abartılı bulmak yerine şöyle düşünün: bir şirketin dijital vitrini, her gün binlerce potansiyel müşteriyle kurduğu ilk temas noktasıdır.
 
@@ -1610,7 +1809,12 @@ Bu süreç şunları kapsar:
 
 ### 5.4 SEO Olmadan Web Sitesi: Sayılarla Gerçek
 
-DurumBeklenen SonuçWeb sitesi var, SEO yokAylık 0-50 organik ziyaretçi (çoğunlukla yalnızca marka aramaları)Web sitesi var, temel SEO var6-12 ay içinde aylık 200-1.000 ziyaretçiWeb sitesi var, aktif SEO + içerik var12-24 ay içinde aylık 5.000-50.000+ ziyaretçiTasarım + SEO entegre planlanmışEn hızlı büyüme, en düşük uzun vadeli maliyet
+| Durum | Beklenen Sonuç |
+| --- | --- |
+| Web sitesi var, SEO yok | Aylık 0-50 organik ziyaretçi (çoğunlukla yalnızca marka aramaları) |
+| Web sitesi var, temel SEO var | 6-12 ay içinde aylık 200-1.000 ziyaretçi |
+| Web sitesi var, aktif SEO + içerik var | 12-24 ay içinde aylık 5.000-50.000+ ziyaretçi |
+| Tasarım + SEO entegre planlanmış | En hızlı büyüme, en düşük uzun vadeli maliyet |
 
 > **5-7x** — Organik trafik, ücretli reklamdan 5-7 kat daha düşük maliyetle müşteri getiriyor. SEO, uzun vadede en verimli pazarlama yatırımıdır.
 > *Kaynak: HubSpot, Pazarlama Durumu Raporu, 2024*
@@ -1619,7 +1823,14 @@ DurumBeklenen SonuçWeb sitesi var, SEO yokAylık 0-50 organik ziyaretçi (çoğ
 
 Türkiye'de web tasarım hizmetleri için gerçekçi bir fiyat haritası çıkarmak gerekirse aşağıdaki tablo size yol gösterecektir.
 
-Proje TürüFiyat AralığıNe Beklemeli?Hazır Şablon Paket Site5.000 – 12.000 TLWordPress şablon, temel SEO plugin, standart özelliklerYarı-Özel Kurumsal Site15.000 – 50.000 TLÖzelleştirilmiş şablon, içerik mimarisi, teknik SEO altyapısıTam Özel Tasarım (KOBİ)50.000 – 150.000 TLÖzgün UI/UX, marka kimliği entegrasyonu, performans odaklıKurumsal / E-ticaret Özel150.000 – 500.000 TLTam entegrasyon, özel geliştirme, içerik stratejisi, sürekli destekAwwwards Standartı / Enterprise500.000 TL+Uluslararası kalite, animasyon, interaktif deneyim, çok dilliSEO (aylık, devam eden)3.000 – 30.000 TL/ayİçerik üretimi, backlink, teknik SEO, raporlama
+| Proje Türü | Fiyat Aralığı | Ne Beklemeli? |
+| --- | --- | --- |
+| Hazır Şablon Paket Site | 5.000 – 12.000 TL | WordPress şablon, temel SEO plugin, standart özellikler |
+| Yarı-Özel Kurumsal Site | 15.000 – 50.000 TL | Özelleştirilmiş şablon, içerik mimarisi, teknik SEO altyapısı |
+| Tam Özel Tasarım (KOBİ) | 50.000 – 150.000 TL | Özgün UI/UX, marka kimliği entegrasyonu, performans odaklı |
+| Kurumsal / E-ticaret Özel | 150.000 – 500.000 TL | Tam entegrasyon, özel geliştirme, içerik stratejisi, sürekli destek |
+| Awwwards Standartı / Enterprise | 500.000 TL+ | Uluslararası kalite, animasyon, interaktif deneyim, çok dilli |
+| SEO (aylık, devam eden) | 3.000 – 30.000 TL/ay | İçerik üretimi, backlink, teknik SEO, raporlama |
 
 Bu fiyat aralıkları 2026 yılı için güncel piyasa verilerine dayanmaktadır. [Web sitesi tasarım fiyatları](https://www.senninweb.com/blog/web-sitesi-tasarim-fiyatlari-2026) yazımızda benzer bir karşılaştırmayı detaylıca bulabilirsiniz.
 
@@ -1749,7 +1960,14 @@ Facebook ve Instagram reklamları, Meta'nın güçlü demografik veri altyapıs�
 
 ### Platforma Göre Doğru Kanal Seçimi
 
-PlatformGüçlü Olduğu AlanKitleInstagramGörsel markalar, moda, yeme-içme18-35 yaşTikTokVideo içerik, viral büyüme13-30 yaşLinkedInB2B, kurumsal, kariyerProfesyonellerFacebookGeniş kitle, yerel işletmeler, gruplar25-55 yaşX (Twitter)Anlık gündem, düşünce liderliğiHaber/fikir takipçileriPinterestİlham, DIY, e-ticaretÇoğunlukla kadınlar, 25-45 yaş
+| Platform | Güçlü Olduğu Alan | Kitle |
+| --- | --- | --- |
+| Instagram | Görsel markalar, moda, yeme-içme | 18-35 yaş |
+| TikTok | Video içerik, viral büyüme | 13-30 yaş |
+| LinkedIn | B2B, kurumsal, kariyer | Profesyoneller |
+| Facebook | Geniş kitle, yerel işletmeler, gruplar | 25-55 yaş |
+| X (Twitter) | Anlık gündem, düşünce liderliği | Haber/fikir takipçileri |
+| Pinterest | İlham, DIY, e-ticaret | Çoğunlukla kadınlar, 25-45 yaş |
 
 Kimler için idealdir? B2C markalar, e-ticaret siteleri ve görsel ürün/hizmet sunanlar için kritik bir kanal. B2B için LinkedIn öncelikli olmalı.
 
@@ -1849,7 +2067,21 @@ Kimler için idealdir? Restoran, klinik, hukuk bürosu, kuaför, tamir servisi g
 
 ## Karşılaştırma Tablosu: Dijital Pazarlama Kanalları
 
-KanalMaliyetHızSürdürülebilirlikEn İyi Kullanım AmacıSEODüşük-OrtaYavaş (3-12 ay)Çok YüksekUzun vadeli organik büyümeGoogle Ads (SEM)YüksekAnlıkDüşükHızlı dönüşüm, lead almaSosyal Medya (Organik)DüşükOrtaOrtaMarka bilinirliği, toplulukSosyal Medya (Ücretli)Orta-YüksekHızlıDüşükHedefli kitleye erişimE-posta PazarlamasıÇok DüşükHızlıÇok YüksekSadakat, tekrar satışİçerik PazarlamasıOrtaYavaşÇok YüksekOtorite, SEO desteğiInfluencer PazarlamasıOrta-YüksekHızlıDüşükMarka tanıtımı, güvenAffiliate MarketingDüşük (komisyon)OrtaYüksekPerformansa dayalı satışVideo PazarlamaOrtaOrtaYüksekEtkileşim, marka hikayesiDisplay / RetargetingOrtaHızlıDüşükYeniden hedeflemePodcastDüşük-OrtaYavaşYüksekOtorite, niş kitlePush BildirimleriÇok DüşükAnlıkOrtaAnlık dönüşümYerel SEO / GBPDüşükOrtaYüksekYerel müşteri edinimi
+| Kanal | Maliyet | Hız | Sürdürülebilirlik | En İyi Kullanım Amacı |
+| --- | --- | --- | --- | --- |
+| SEO | Düşük-Orta | Yavaş (3-12 ay) | Çok Yüksek | Uzun vadeli organik büyüme |
+| Google Ads (SEM) | Yüksek | Anlık | Düşük | Hızlı dönüşüm, lead alma |
+| Sosyal Medya (Organik) | Düşük | Orta | Orta | Marka bilinirliği, topluluk |
+| Sosyal Medya (Ücretli) | Orta-Yüksek | Hızlı | Düşük | Hedefli kitleye erişim |
+| E-posta Pazarlaması | Çok Düşük | Hızlı | Çok Yüksek | Sadakat, tekrar satış |
+| İçerik Pazarlaması | Orta | Yavaş | Çok Yüksek | Otorite, SEO desteği |
+| Influencer Pazarlaması | Orta-Yüksek | Hızlı | Düşük | Marka tanıtımı, güven |
+| Affiliate Marketing | Düşük (komisyon) | Orta | Yüksek | Performansa dayalı satış |
+| Video Pazarlama | Orta | Orta | Yüksek | Etkileşim, marka hikayesi |
+| Display / Retargeting | Orta | Hızlı | Düşük | Yeniden hedefleme |
+| Podcast | Düşük-Orta | Yavaş | Yüksek | Otorite, niş kitle |
+| Push Bildirimleri | Çok Düşük | Anlık | Orta | Anlık dönüşüm |
+| Yerel SEO / GBP | Düşük | Orta | Yüksek | Yerel müşteri edinimi |
 
 ## Hangi Kanaldan Başlamalısınız?
 
@@ -1947,7 +2179,14 @@ Bir web sitesinin ne kadar kazandırdığını tahmin etmek için kullanılan te
 
 Türkiye'de e-ticaret sitelerinin ortalama dönüşüm oranı genellikle %1,2 ile %2,5 aralığındadır. Bu formülü örnek bir senaryo üzerinden inceleyelim:
 
-> **Örnek Hesaplama** — DeğişkenMevcut Durumİyileştirme SonrasıAylık ziyaretçi100.000100.000Dönüşüm oranı%1,5%2,5Ortalama sepet tutarı1.500 TL1.500 TLAylık ciro2.250.000 TL3.750.000 TL
+**Örnek Hesaplama**
+
+| Değişken | Mevcut Durum | İyileştirme Sonrası |
+| --- | --- | --- |
+| Aylık ziyaretçi | 100.000 | 100.000 |
+| Dönüşüm oranı | %1,5 | %2,5 |
+| Ortalama sepet tutarı | 1.500 TL | 1.500 TL |
+| Aylık ciro | 2.250.000 TL | 3.750.000 TL |
 > *Kaynak: SenninWeb Hesaplama Modeli, 2026*
 
 Görüldüğü gibi, sadece dönüşüm oranındaki 1 puanlık bir iyileştirme (hız artışı, daha iyi kullanıcı deneyimi veya güven unsurlarının eklenmesiyle), aylık 1.500.000 TL ek ciro yaratabilir. Bu da web sitesinin "ne kadar kazandırdığı" sorusunun aslında sabit bir sayı değil, optimize edilebilir bir sistem olduğunu gösterir.
@@ -2104,4 +2343,107 @@ Bizimle iletişime geçin, ücretsiz danışmanlık için sizi bekliyoruz!
 ---
 
 *Bu yazı [SenninWeb](https://www.senninweb.com/blog/bir-web-sitesi-ne-kadar-kazandirir) sitesinde yayınlanmıştır.*
+
+---
+
+# Darıca'daki Bir Balıkçı Dükkanı İnternetten Nasıl Satış Yapmaya Başladı? Mira Balıkçılık E-Ticaret Örneği
+
+> *Yazar: Çağatay Samet Macar | 2026-10-03 | 4 dk*
+
+Fiziksel mağazası olan yerel bir işletme e-ticaret sitesi açmalı mı? Mira Balıkçılık örneğinde ilk ayın Google Search Console rakamları, yapılan işler ve dikkat edilecekler.
+
+# Darıca'daki Bir Balıkçı Dükkanı İnternetten Nasıl Satış Yapmaya Başladı?
+
+> Mira Balıkçılık e-ticaret sitesi örneği: ilk ayın rakamları ve yerel işletmeler için çıkarılabilecek dersler
+> **Kısa Cevap** — Darıca'daki bir balıkçı dükkanı internetten nasıl satış yapmaya başladı? Mira Balıkçılık, müşterinin aradığı dille kurulmuş bir kategori yapısı, hazır setler ve eksik ürünler için WhatsApp köprüsüyle, katalog tamamlanmadan e-ticarete başladı. Özel kodlanmış (Next.js) site, yayına girdikten sonraki ilk ayda (30 Ağustos – 29 Eylül 2026) Google'dan 493 tıklama aldı. Fiziksel mağazası olan bir işletme için bu yol, stok ve kargo sürecini yönetebiliyorsa mantıklıdır. Bu sonuç bir garanti değil, tek bir işletmenin ilk ay verisidir.
+
+Mira Balıkçılık, Darıca'da fiziksel bir mağazası olan bir balıkçılık ekipmanları satıcısı. Olta kamışı, makine, misina, yem ve kamp ürünleri satıyorlar. Müşteriler çoğunlukla mağazaya gelirdi, ama aynı ürünü aramaya başlayan insanlar önce internete bakıyordu. Aşağıda bu iş için ne yaptığımızı ve ilk ayda ne gördüğümüzü, abartmadan anlatıyoruz. Amaç, benzer bir yolu düşünen yerel bir işletmenin kendi kararını verirken somut bir örnek görmesi.
+
+## Fiziksel Mağazası Olan Bir İşletme E-Ticaret Sitesi Açmalı mı?
+
+Cevap işletmeye göre değişir. Ürünleriniz kargoyla gönderilebiliyorsa, kataloğunuzun bir kısmını düzenli güncelleyebiliyorsanız ve müşterileriniz satın almadan önce internette araştırma yapıyorsa, e-ticaret sitesi mağazanızın ikinci bir vitrini olur. Balıkçılık ekipmanında bu davranış çok belirgin: insanlar marka, model ve fiyat karşılaştırmasını önce Google'da yapıyor.
+
+## Mira Balıkçılık E-Ticaret Sitesi Nasıl Kuruldu?
+
+1. Müşterinin aradığı gibi kategori yapısı: LRF, maket yemler, olta kamışları, olta makineleri, misinalar, ekipmanlar ve hazır setler. Menü, balıkçının kendi kullandığı dille kuruldu.
+2. Hazır setler: Kamış, makine, misina ve yemi tek paket halinde sunan 'kutudan çıkar çıkmaz ava çık' setleri. Yeni başlayanlar için karar vermeyi kolaylaştırıyor.
+3. Net kargo kuralı: 1.900 TL ve üzeri siparişlerde ücretsiz kargo, sitenin en üstünde görünüyor.
+4. Eksik ürün için WhatsApp köprüsü: Tüm ürünler henüz siteye eklenmedi. Bunu gizlemek yerine 'sitemize eklemediğimiz birçok ürün ve varyant var, WhatsApp'tan ulaşın' notuyla çözüldü. Böylece katalog tamamlanmadan satış başlayabildi.
+5. Güven sayfaları: Hakkımızda, SSS, teknik servis, sipariş takibi ve Darıca'daki mağazanın adresi.
+
+![Mira Balıkçılık olta makineleri kategori sayfası: alt kategoriler, filtreler ve ürün kartları](https://www.senninweb.com/images/blog/mira-balikcilik-urun-listesi.webp)
+*Olta makineleri kategori sayfası: alt kategoriler, sıralama ve stok bilgisiyle ürün kartları*
+
+Site, hazır bir tema yerine özel kodla (Next.js) geliştirildi. Canlı hali için [mirabalikcilik.com](https://www.mirabalikcilik.com) adresine bakabilirsiniz.
+
+## İlk Ayın Rakamları
+
+> **493 tıklama** — 30 Ağustos – 29 Eylül 2026 arasında Google arama sonuçlarında yaklaşık 6.290 gösterim ve 493 tıklama. Ortalama konum yaklaşık 10, tıklama oranı yaklaşık %7,8.
+> *Kaynak: Google Search Console, mirabalikcilik.com, Eylül 2026*
+
+![Mira Balıkçılık için Google Search Console performans grafiği: ilk ay tıklama ve gösterim eğrisi](https://www.senninweb.com/images/blog/mira-balikcilik-gsc-ilk-ay.webp)
+*Google Search Console performans raporu, 30.08.2026 – 29.09.2026*
+
+Bu rakamları doğru okumak önemli. Tek bir işletme, tek bir ay ve niş bir ürün kategorisi var. Başka sektörde aynı sonucu bekleyemezsiniz. Yine de gösterdiği şey şu: yeni kurulan bir e-ticaret sitesi, ürün başlıkları ve kategori yapısı aranan kelimelerle uyumluysa ilk haftalardan itibaren Google'da görünmeye başlayabiliyor.
+
+## Mağaza + WhatsApp, Hazır Altyapı ve Özel E-Ticaret Sitesi Karşılaştırması
+
+Bir yerel işletme için üç ana yol var. Aşağıdaki tablo genel sektör bilgisine dayanır, Mira Balıkçılık'a özgü bir ölçüm değildir ve proje kapsamına göre değişir.
+
+**Karşılaştırma**
+
+| Kriter | Mağaza + WhatsApp | Hazır e-ticaret altyapısı | Özel kodlanmış site |
+| --- | --- | --- | --- |
+| Kurulum hızı | Aynı gün | Günler – haftalar | Haftalar |
+| SEO ve kategori yapısı kontrolü | Yok (Google'da ürün sayfası oluşmaz) | Sınırlı, tema ve eklentiye bağlı | Tam kontrol |
+| Sayfa hızı ve tasarım esnekliği | Uygulanamaz | Tema sınırları içinde | Yüksek |
+| Başlangıç maliyeti | Çok düşük | Düşük – orta | Orta – yüksek |
+| Aylık bakım ve güncelleme | Yok | Düşük | Geliştiriciye bağlı |
+| Kime uygun | Sadece mevcut müşterisine satan işletme | Hızlı başlamak isteyen, küçük katalog | Büyük katalog, SEO ve özel deneyim hedefleyen işletme |
+> *Kaynak: SenninWeb genel değerlendirmesi, 2026*
+
+## Bu Yol Her İşletmeye Uyar mı?
+
+Uymayabilir. Stok durumunu takip edemiyorsanız, kargo ve iade sürecini yönetecek kimse yoksa ya da ürünleriniz internetten satılmaya uygun değilse, önce bu iki konuyu çözmek gerekir. Mağazanıza gelen müşteriyi telefonla ya da WhatsApp'la yönetmek bazı işletmeler için hâlâ daha mantıklı. Bunu baştan konuşmak, yanlış bir yatırım yapmanızı engeller.
+
+## Sıkça Sorulan Sorular
+
+**S: Yeni bir e-ticaret sitesi Google'da ne kadar sürede görünür?**
+
+Mira Balıkçılık örneğinde site ilk ay içinde Google'da gösterilmeye ve tıklama almaya başladı. Süre sektöre, rekabete ve ürün başlıklarının kalitesine göre değişir. Birkaç haftada görünürlük başlayabilir, istikrarlı sıralama için genellikle birkaç ay gerekir.
+
+**S: Hazır e-ticaret altyapısı mı, özel kodlanmış site mi seçmeliyim?**
+
+Hazır altyapılar daha hızlı başlar ve düşük bütçeye uygundur. Özel kodlanmış site; hız, kategori yapısı, SEO kontrolü ve tasarım esnekliği gerektiğinde avantaj sağlar. Mira Balıkçılık için kategori yapısını ve sayfa hızını tam kontrol edebilmek için özel geliştirmeyi seçtik.
+
+**S: Tüm ürünleri siteye eklemeden satışa başlanabilir mi?**
+
+Evet. En çok satan ve en çok aranan ürünlerle başlayıp, kalan ürünler için WhatsApp ya da telefon yönlendirmesi vermek mümkün. Mira Balıkçılık bu yöntemle kataloğu tamamlanmadan satışa başladı.
+
+**S: Kocaeli, Gebze ve Darıca'da e-ticaret sitesini kim yapar?**
+
+Bölgede birçok ajans ve serbest çalışan var. Seçerken yaptıkları sitelerin canlı örneklerine, Google'da nasıl göründüğüne ve sipariş sonrası desteğe bakın. SenninWeb, Kocaeli merkezli çalışan ve Mira Balıkçılık gibi yerel e-ticaret projeleri geliştiren bir web tasarım ve SEO stüdyosudur.
+
+**S: Fiziksel mağazam varsa e-ticaret siteme neden Google Maps kaydı da gerekir?**
+
+Yerel aramalarda ('Darıca balıkçı malzemeleri' gibi) Google Haritalar sonuçları öne çıkar. E-ticaret sitesi ülke genelindeki müşteriye, Haritalar kaydı mağazanıza gelecek yakın çevredeki müşteriye ulaşır. İkisi birbirini tamamlar.
+
+## Sonuç
+
+Mira Balıkçılık örneği, fiziksel mağazası olan bir işletmenin internete doğru sırayla açılmasının mümkün olduğunu gösteriyor.
+- Müşterinin kullandığı dille kurulmuş bir kategori yapısı Google'da görünürlüğü hızlandırır
+- Katalog tamamlanmadan WhatsApp köprüsüyle satışa başlamak mümkündür
+- İlk ay verisi bir garanti değil, tek bir işletmenin başlangıç noktasıdır
+- Stok ve kargo süreci hazır değilse önce onu çözmek gerekir
+
+E-ticaret her yerel işletme için doğru adım olmayabilir. Ama aranıyor olduğunuzu ve rakiplerinizin internette göründüğünü biliyorsanız, küçük bir katalogla başlamak makul bir ilk adım olabilir.
+
+Dükkanınızın ya da ürünlerinizin internette nasıl göründüğünü merak ediyorsanız, kısa bir not yazmanız yeterli. Size uymuyorsa bunu da açıkça söylerim.
+
+**Mağazanızın e-ticarete uygun olup olmadığını konuşalım mı?**
+Kısa bir not bırakın, işletmenize bakıp dürüstçe cevap vereyim.
+
+---
+
+*Bu yazı [SenninWeb](https://www.senninweb.com/blog/mira-balikcilik-e-ticaret-sitesi-ornegi) sitesinde yayınlanmıştır.*
 

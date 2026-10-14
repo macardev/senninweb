@@ -1,21 +1,89 @@
 {
   "redirects": [
-    { "source": "/blog/small-businesses-visible-on-google-2026", "destination": "/blog/kucuk-isletmeler-google-da-gorunurluk-2026", "permanent": true },
-    { "source": "/gebze", "destination": "/hizmet/web-tasarim", "permanent": true },
-    { "source": "/gebze/", "destination": "/hizmet/web-tasarim", "permanent": true },
-    { "source": "/(.*)", "has": [{ "type": "host", "value": "senninweb.com" }], "destination": "https://www.senninweb.com/$1", "permanent": true }
+    {
+      "source": "/blog/small-businesses-visible-on-google-2026",
+      "destination": "/blog/kucuk-isletmeler-google-da-gorunurluk-2026",
+      "permanent": true
+    },
+    {
+      "source": "/gebze",
+      "destination": "/hizmet/web-tasarim",
+      "permanent": true
+    },
+    {
+      "source": "/hizmet/eticaret-cozumleri",
+      "destination": "/hizmet/web-tasarim",
+      "permanent": true
+    },
+    {
+      "source": "/gebze/",
+      "destination": "/hizmet/web-tasarim",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "senninweb.com"
+        }
+      ],
+      "destination": "https://www.senninweb.com/$1",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/hakkimizda", "destination": "/index.html" },
-    { "source": "/hakkimizda/", "destination": "/index.html" },
-    { "source": "/blog", "destination": "/index.html" },
-    { "source": "/blog/", "destination": "/index.html" },
-    { "source": "/blog/:path*", "destination": "/index.html" },
-    { "source": "/bilecik", "destination": "/index.html" },
-    { "source": "/bilecik/", "destination": "/index.html" },
-    { "source": "/kocaeli", "destination": "/index.html" },
-    { "source": "/kocaeli/", "destination": "/index.html" },
-    { "source": "/sss", "destination": "/index.html" },
-    { "source": "/sss/", "destination": "/index.html" }
+    {
+      "source": "/hakkimizda",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/hakkimizda/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/bilecik",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/bilecik/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/kocaeli",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/kocaeli/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sss",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sss/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/rehber/yurt-disindan-hasta-cekme",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/rehber/yurt-disindan-hasta-cekme/",
+      "destination": "/index.html"
+    }
   ]
 }

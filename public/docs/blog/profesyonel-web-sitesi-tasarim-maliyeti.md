@@ -66,7 +66,19 @@ Hazır şablon tabanlı siteler kısa vadede ucuz görünse de uzun vadede ağı
 
 ## 3. Karşılaştırma Tablosu: 7.000 TL Paket vs. Gerçek Profesyonel Tasarım
 
-Özellik / Kriter7.000 TL 'Hazır Paket'Profesyonel Özel TasarımTasarım SüreciHazır şablon seçimi (~1-3 gün)UX araştırması + wireframe + prototip (~4-12 hafta)ÖzgünlükBinlerce sitede aynı tasarımMarkanıza özel, rakipsiz kimlikMobil UyumlulukŞablon standartı (temel)Her ekran boyutu için özel tasarlanmışSite Hızı (Core Web Vitals)Şablon kodu yükü nedeniyle genellikle düşükOptimize edilmiş, yüksek Lighthouse skoruSEO AltyapısıPlugin kurulumu (temel)Teknik SEO + içerik mimarisi + schema markupİçerik StratejisiYok / müşteriye bırakılırAnahtar kelime araştırması + içerik planıDönüşüm Optimizasyonu (CRO)YokA/B test, kullanıcı davranışı analiziTeknik ÖzelleştirmeSınırlı (şablon kısıtları)Sınırsız, ihtiyaca göre geliştirmeSürdürülebilirlikŞablon güncellemelerine bağımlıUzun vadeli, ölçeklenebilir altyapıSonraki SEO ÇalışmalarıGenellikle dahil değil, sonradan ayrı fiyatlandırılırEntegre planlama, sürekli iyileştirmeFiyat Aralığı (TR Pazarı)5.000 – 12.000 TL15.000 TL – 500.000 TL+
+| Özellik / Kriter | 7.000 TL 'Hazır Paket' | Profesyonel Özel Tasarım |
+| --- | --- | --- |
+| Tasarım Süreci | Hazır şablon seçimi (~1-3 gün) | UX araştırması + wireframe + prototip (~4-12 hafta) |
+| Özgünlük | Binlerce sitede aynı tasarım | Markanıza özel, rakipsiz kimlik |
+| Mobil Uyumluluk | Şablon standartı (temel) | Her ekran boyutu için özel tasarlanmış |
+| Site Hızı (Core Web Vitals) | Şablon kodu yükü nedeniyle genellikle düşük | Optimize edilmiş, yüksek Lighthouse skoru |
+| SEO Altyapısı | Plugin kurulumu (temel) | Teknik SEO + içerik mimarisi + schema markup |
+| İçerik Stratejisi | Yok / müşteriye bırakılır | Anahtar kelime araştırması + içerik planı |
+| Dönüşüm Optimizasyonu (CRO) | Yok | A/B test, kullanıcı davranışı analizi |
+| Teknik Özelleştirme | Sınırlı (şablon kısıtları) | Sınırsız, ihtiyaca göre geliştirme |
+| Sürdürülebilirlik | Şablon güncellemelerine bağımlı | Uzun vadeli, ölçeklenebilir altyapı |
+| Sonraki SEO Çalışmaları | Genellikle dahil değil, sonradan ayrı fiyatlandırılır | Entegre planlama, sürekli iyileştirme |
+| Fiyat Aralığı (TR Pazarı) | 5.000 – 12.000 TL | 15.000 TL – 500.000 TL+ |
 
 ## 4. Awwwards Standartında Bir Site Ne Kadar Tutar?
 
@@ -74,7 +86,16 @@ Awwwards.com, dünyanın en iyi web tasarımlarını ödüllendiren ve referans 
 
 Örnek üzerinden düşünelim: Awwwards 'Site of the Day' ödülü almış uluslararası ajansların geliştirdiği bir kurumsal web sitesi için tipik fiyatlandırma nasıl görünür?* Türkiye'deki global ajans standartlarındaki ekipler için bu rakamlar TL bazında orantılı olarak değişkenlik gösterir. Kur ve piyasa dinamiklerine göre hesaplanmalıdır.
 
-Hizmet KalemiSüreTahmini Maliyet (USD)Discovery & Strateji2-4 hafta$3,000 – $8,000UX Araştırması & Wireframe3-6 hafta$5,000 – $15,000UI Tasarımı (özgün, animasyonlu)4-8 hafta$10,000 – $40,000Front-end Geliştirme6-12 hafta$15,000 – $50,000Back-end & CMS Entegrasyonu4-8 hafta$8,000 – $25,000İçerik Üretimi & Optimizasyon3-6 hafta$5,000 – $20,000Test, Lansman & Eğitim2-4 hafta$3,000 – $10,000TOPLAM24-48 hafta$49,000 – $168,000
+| Hizmet Kalemi | Süre | Tahmini Maliyet (USD) |
+| --- | --- | --- |
+| Discovery & Strateji | 2-4 hafta | $3,000 – $8,000 |
+| UX Araştırması & Wireframe | 3-6 hafta | $5,000 – $15,000 |
+| UI Tasarımı (özgün, animasyonlu) | 4-8 hafta | $10,000 – $40,000 |
+| Front-end Geliştirme | 6-12 hafta | $15,000 – $50,000 |
+| Back-end & CMS Entegrasyonu | 4-8 hafta | $8,000 – $25,000 |
+| İçerik Üretimi & Optimizasyon | 3-6 hafta | $5,000 – $20,000 |
+| Test, Lansman & Eğitim | 2-4 hafta | $3,000 – $10,000 |
+| TOPLAM | 24-48 hafta | $49,000 – $168,000 |
 
 Büyük uluslararası şirketler (Fortune 500 kategorisinde) için yapılan web sitesi yenileme projeleri ise 500.000 USD'yi aşabiliyor. Bu rakamları abartılı bulmak yerine şöyle düşünün: bir şirketin dijital vitrini, her gün binlerce potansiyel müşteriyle kurduğu ilk temas noktasıdır.
 
@@ -124,7 +145,12 @@ Bu süreç şunları kapsar:
 
 ### 5.4 SEO Olmadan Web Sitesi: Sayılarla Gerçek
 
-DurumBeklenen SonuçWeb sitesi var, SEO yokAylık 0-50 organik ziyaretçi (çoğunlukla yalnızca marka aramaları)Web sitesi var, temel SEO var6-12 ay içinde aylık 200-1.000 ziyaretçiWeb sitesi var, aktif SEO + içerik var12-24 ay içinde aylık 5.000-50.000+ ziyaretçiTasarım + SEO entegre planlanmışEn hızlı büyüme, en düşük uzun vadeli maliyet
+| Durum | Beklenen Sonuç |
+| --- | --- |
+| Web sitesi var, SEO yok | Aylık 0-50 organik ziyaretçi (çoğunlukla yalnızca marka aramaları) |
+| Web sitesi var, temel SEO var | 6-12 ay içinde aylık 200-1.000 ziyaretçi |
+| Web sitesi var, aktif SEO + içerik var | 12-24 ay içinde aylık 5.000-50.000+ ziyaretçi |
+| Tasarım + SEO entegre planlanmış | En hızlı büyüme, en düşük uzun vadeli maliyet |
 
 > **5-7x** — Organik trafik, ücretli reklamdan 5-7 kat daha düşük maliyetle müşteri getiriyor. SEO, uzun vadede en verimli pazarlama yatırımıdır.
 > *Kaynak: HubSpot, Pazarlama Durumu Raporu, 2024*
@@ -133,7 +159,14 @@ DurumBeklenen SonuçWeb sitesi var, SEO yokAylık 0-50 organik ziyaretçi (çoğ
 
 Türkiye'de web tasarım hizmetleri için gerçekçi bir fiyat haritası çıkarmak gerekirse aşağıdaki tablo size yol gösterecektir.
 
-Proje TürüFiyat AralığıNe Beklemeli?Hazır Şablon Paket Site5.000 – 12.000 TLWordPress şablon, temel SEO plugin, standart özelliklerYarı-Özel Kurumsal Site15.000 – 50.000 TLÖzelleştirilmiş şablon, içerik mimarisi, teknik SEO altyapısıTam Özel Tasarım (KOBİ)50.000 – 150.000 TLÖzgün UI/UX, marka kimliği entegrasyonu, performans odaklıKurumsal / E-ticaret Özel150.000 – 500.000 TLTam entegrasyon, özel geliştirme, içerik stratejisi, sürekli destekAwwwards Standartı / Enterprise500.000 TL+Uluslararası kalite, animasyon, interaktif deneyim, çok dilliSEO (aylık, devam eden)3.000 – 30.000 TL/ayİçerik üretimi, backlink, teknik SEO, raporlama
+| Proje Türü | Fiyat Aralığı | Ne Beklemeli? |
+| --- | --- | --- |
+| Hazır Şablon Paket Site | 5.000 – 12.000 TL | WordPress şablon, temel SEO plugin, standart özellikler |
+| Yarı-Özel Kurumsal Site | 15.000 – 50.000 TL | Özelleştirilmiş şablon, içerik mimarisi, teknik SEO altyapısı |
+| Tam Özel Tasarım (KOBİ) | 50.000 – 150.000 TL | Özgün UI/UX, marka kimliği entegrasyonu, performans odaklı |
+| Kurumsal / E-ticaret Özel | 150.000 – 500.000 TL | Tam entegrasyon, özel geliştirme, içerik stratejisi, sürekli destek |
+| Awwwards Standartı / Enterprise | 500.000 TL+ | Uluslararası kalite, animasyon, interaktif deneyim, çok dilli |
+| SEO (aylık, devam eden) | 3.000 – 30.000 TL/ay | İçerik üretimi, backlink, teknik SEO, raporlama |
 
 Bu fiyat aralıkları 2026 yılı için güncel piyasa verilerine dayanmaktadır. [Web sitesi tasarım fiyatları](https://www.senninweb.com/blog/web-sitesi-tasarim-fiyatlari-2026) yazımızda benzer bir karşılaştırmayı detaylıca bulabilirsiniz.
 

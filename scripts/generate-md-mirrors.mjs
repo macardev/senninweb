@@ -28,7 +28,9 @@ function sectionToMd(section) {
     }
     case 'callout': {
       let lines = []
-      if (section.stat) lines.push(`> **${section.stat}** — ${section.isHtml ? stripHtml(section.content) : section.content}`)
+      if (section.stat && section.isHtml && /<table/.test(section.content)) {
+        lines.push(`**${section.stat}**\n\n${stripHtml(section.content)}`)
+      } else if (section.stat) lines.push(`> **${section.stat}** — ${section.isHtml ? stripHtml(section.content) : section.content}`.replace(/\n/g, '\n> '))
       else lines.push(`> ${section.isHtml ? stripHtml(section.content) : section.content}`)
       if (section.source) lines.push(`> *Kaynak: ${section.source}*`)
       return lines.join('\n') + '\n\n'
@@ -70,6 +72,8 @@ function sectionToMd(section) {
       }
       return lines.join('\n') + '\n'
     }
+    case 'image':
+      return `![${section.alt || ''}](https://www.senninweb.com${section.src})${section.caption ? `\n*${section.caption}*` : ''}\n\n`
     default:
       console.warn(`  ⚠ Unknown section type: ${section.type}`)
       return ''
@@ -85,6 +89,21 @@ function stripHtml(html) {
       return `[${cleanText}](${siteUrl}${url})`
     }
     return `[${cleanText}](${url})`
+  })
+  // Convert <table> to a markdown table
+  result = result.replace(/<table[\s\S]*?<\/table>/g, (table) => {
+    const rows = [...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)].map(r =>
+      [...r[1].matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/g)].map(c => c[1].replace(/<[^>]+>/g, '').trim())
+    )
+    if (!rows.length) return ''
+    const md = rows.map(r => `| ${r.join(' | ')} |`)
+    md.splice(1, 0, `| ${rows[0].map(() => '---').join(' | ')} |`)
+    return '\n' + md.join('\n') + '\n'
+  })
+  // Convert <ol> items to a numbered list
+  result = result.replace(/<ol[\s\S]*?<\/ol>/g, (ol) => {
+    let n = 0
+    return '\n' + [...ol.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map(li => `${++n}. ${li[1]}`).join('\n') + '\n'
   })
   // Strip remaining HTML tags
   result = result.replace(/<[^>]+>/g, '')
@@ -113,15 +132,15 @@ function generateBlogPostMd(post) {
 
 function generateLlmsFull(blogPosts) {
   let content = `# Sennin Web — Full Documentation\n\n`
-  content += `> Sennin Web, KOBİ'lere web tasarım, SEO ve dijital pazarlama hizmeti sağlayan bir ajans. 2025'te Çağatay Macar tarafından kuruldu. Bilecik/Gölpazarı merkezli, Türkiye geneline hizmet veriyor.\n\n`
+  content += `> Sennin Web, yurt dışından hasta çekmek isteyen sağlık kliniklerine (saç ekim merkezleri, diş, estetik ve veteriner klinikleri) size özel web sitesi, uluslararası SEO ve hasta kazanım hizmeti sunan bir ajans. 2025'te Çağatay Macar tarafından kuruldu.\n\n`
 
   content += `## Pages\n\n`
   content += `- [Hakkımızda](hakkimizda.md): Sennin Web kurucusu Çağatay Macar ve şirket hikayesi\n`
-  content += `- [SSS](sss.md): Web tasarım, SEO, AEO, GEO, mobil uyumluluk ve fiyatlandırma hakkında soru-cevap\n`
-  content += `- [Web Tasarım](hizmet/web-tasarim.md): Sıfırdan tasarlanmış, mobil öncelikli web siteleri\n`
-  content += `- [SEO ve Büyüme](hizmet/seo-ve-buyume.md): Arama motoru optimizasyonu, yerel SEO, AEO/GEO\n`
-  content += `- [E-Ticaret Çözümleri](hizmet/eticaret-cozumleri.md): Online satış siteleri, ödeme entegrasyonu\n`
-  content += `- [Dijital Pazarlama](hizmet/dijital-pazarlama.md): Sosyal medya yönetimi, içerik pazarlama\n`
+  content += `- [SSS](sss.md): Hasta Kazanım Paketi, yetki belgesi, yurt dışına yönelik site, sağlık turizmi SEO'su hakkında soru-cevap\n`
+  content += `- [Sağlık Turizmi Web Sitesi](hizmet/web-tasarim.md): Klinikler için çok dilli, size özel web sitesi\n`
+  content += `- [Sağlık Turizmi SEO](hizmet/seo-ve-buyume.md): Hedef ülkede uluslararası SEO, backlink, yapay zekâ görünürlüğü\n`
+  content += `- [Sağlık Turizmi Dijital Pazarlama](hizmet/dijital-pazarlama.md): Yurt dışından hasta kazanımı, WhatsApp hasta akışı\n`
+  content += `- [Yurt Dışından Hasta Çekme Rehberi](https://www.senninweb.com/rehber/yurt-disindan-hasta-cekme): Ücretsiz 15 sayfalık PDF\n`
   content += `- [Gebze](gebze.md): Gebze'de web tasarım, yerel SEO, e-ticaret ve dijital pazarlama\n`
   content += `- [Bilecik](bilecik.md): Bilecik'te web tasarım, SEO, Google Maps optimizasyonu\n`
   content += `- [Kocaeli](kocaeli.md): Kocaeli genelinde web tasarım, SEO ve dijital pazarlama\n\n`

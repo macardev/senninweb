@@ -115,7 +115,12 @@ gibi özellikler projeyi tamamen farklı seviyeye taşır. Bu yüzden fiyat veri
 
 Tabii ki her proje farklıdır ama 2026 için genel tablo aşağı yukarı şöyle:
 
-Proje TürüOrtalama AralıkBasit tanıtım sitesi10.000 – 20.000 TLProfesyonel kurumsal site20.000 – 50.000 TLPremium UI/UX odaklı site50.000 TL+Özel yazılım projeleriÇok daha yüksek olabilir
+| Proje Türü | Ortalama Aralık |
+| --- | --- |
+| Basit tanıtım sitesi | 10.000 – 20.000 TL |
+| Profesyonel kurumsal site | 20.000 – 50.000 TL |
+| Premium UI/UX odaklı site | 50.000 TL+ |
+| Özel yazılım projeleri | Çok daha yüksek olabilir |
 
 Burada önemli olan en ucuz seçeneği bulmak değil, gerçekten işletmenize katkı sağlayacak sistemi kurmak.
 

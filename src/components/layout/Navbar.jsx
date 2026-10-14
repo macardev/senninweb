@@ -1,26 +1,27 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import { scrollToIdWithRetry } from "@/utils/scrollToId"
+import { GUIDE_PATH } from "@/utils/leads"
 
 const navLinks = [
   {
     label: 'Hizmetler',
     href: '#',
     submenu: [
-      { label: 'Web Tasarım', href: '/hizmet/web-tasarim' },
-      { label: 'SEO & Büyüme', href: '/hizmet/seo-ve-buyume' },
-      { label: 'E-Ticaret Çözümleri', href: '/hizmet/eticaret-cozumleri' },
-      { label: 'Dijital Pazarlama', href: '/hizmet/dijital-pazarlama' },
-      { label: 'Tüm Hizmetler', href: '/#services' },
+      { label: 'Sağlık Turizmi Web Sitesi', href: '/hizmet/web-tasarim' },
+      { label: 'Sağlık Turizmi SEO', href: '/hizmet/seo-ve-buyume' },
+      { label: 'Dijital Pazarlama & Hasta Kazanımı', href: '/hizmet/dijital-pazarlama' },
+      { label: 'Hasta Kazanım Paketi', href: '/#services' },
+      { label: 'Ücretsiz Rehber (PDF)', href: '/rehber/yurt-disindan-hasta-cekme' },
     ]
   },
   { label: 'Referanslar', href: '/#references' },
   { label: 'Hakkımızda',  href: '/hakkimizda' },
   { label: 'İletişim',    href: '/#contact' },
-  { label: 'Dijital Rehber', href: '/blog' },
+  { label: 'Blog', href: '/blog' },
   { label: 'SSS', href: '/sss' },
   {
-    label: 'Hizmet Verdiğimiz Bölgeler',
+    label: 'Bölgeler',
     href: '#',
     submenu: [
       { label: 'Kocaeli', href: '/kocaeli' },
@@ -213,16 +214,17 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <button
-            onClick={() => handleNav({ preventDefault: () => {} }, '/#contact')}
-            className="relative px-8 py-3 text-base font-medium tracking-wide overflow-hidden group rounded-full hover:scale-[1.03] active:scale-[0.97] transition-transform duration-200"
+          <Link
+            to={GUIDE_PATH}
+            data-lead-placement="navbar"
+            className="relative inline-block whitespace-nowrap px-6 py-2.5 text-sm font-medium tracking-wide overflow-hidden group rounded-full hover:scale-[1.03] active:scale-[0.97] transition-transform duration-200"
           >
             <span className="absolute inset-0 rounded-full border border-gold-500/50 group-hover:border-gold-400 transition-colors duration-300" />
             <span className="absolute inset-0 rounded-full bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
             <span className="relative z-10 text-gold-400 group-hover:text-black transition-colors duration-300">
-              Teklif Al
+              Ücretsiz Rehber
             </span>
-          </button>
+          </Link>
         </div>
 
         <button
@@ -363,10 +365,19 @@ export default function Navbar() {
               </a>
             )
           })}
-          <a href="/#contact" onClick={e => handleNav(e, '/#contact')}>
-            <button className="w-full py-4 rounded-full border border-gold-500/50 text-gold-400 text-base font-medium tracking-wide hover:bg-gold-500/10 transition-colors">
-              Teklif Al
-            </button>
+          <Link
+            to={GUIDE_PATH}
+            onClick={() => setMenuOpen(false)}
+            className="block w-full py-4 rounded-full bg-gold-500 text-black text-center text-base font-semibold tracking-wide"
+          >
+            Ücretsiz Rehberi İndir
+          </Link>
+          <a
+            href="/#contact"
+            onClick={e => handleNav(e, '/#contact')}
+            className="block w-full py-4 rounded-full border border-gold-500/50 text-gold-400 text-center text-base font-medium tracking-wide hover:bg-gold-500/10 transition-colors"
+          >
+            Teklif Al
           </a>
         </div>
       </div>

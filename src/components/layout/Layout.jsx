@@ -8,6 +8,7 @@ import { scrollToIdWithRetry } from "@/utils/scrollToId"
 const BASE = "https://www.senninweb.com"
 
 const CustomCursor = lazy(() => import("@/components/ui/CustomCursor"))
+const LeadDock = lazy(() => import("@/components/ui/LeadDock"))
 
 const breadcrumbLabels = {
   "/hakkimizda": "Hakkımızda",
@@ -15,10 +16,10 @@ const breadcrumbLabels = {
   "/bilecik": "Bilecik",
   "/kocaeli": "Kocaeli",
   "/sss": "Sıkça Sorulan Sorular",
-  "/hizmet/web-tasarim": "Web Tasarım",
-  "/hizmet/seo-ve-buyume": "SEO & Büyüme",
-  "/hizmet/eticaret-cozumleri": "E-Ticaret Çözümleri",
-  "/hizmet/dijital-pazarlama": "Dijital Pazarlama",
+  "/hizmet/web-tasarim": "Sağlık Turizmi Web Sitesi",
+  "/hizmet/seo-ve-buyume": "Sağlık Turizmi SEO",
+  "/hizmet/dijital-pazarlama": "Sağlık Turizmi Dijital Pazarlama",
+  "/rehber/yurt-disindan-hasta-cekme": "Yurt Dışından Hasta Çekme Rehberi",
 }
 
 function getCursorEnabled() {
@@ -104,6 +105,7 @@ export default function Layout() {
         </Suspense>
       )}
 
+      <div className="scroll-progress" aria-hidden="true" />
       <Navbar />
 
       <div className="min-h-screen flex flex-col bg-black text-white max-w-full relative z-10">
@@ -111,7 +113,13 @@ export default function Layout() {
           <Outlet />
         </main>
         <Footer />
+        {/* Keeps the footer clear of the mobile lead bar */}
+        <div className="h-20 md:hidden" aria-hidden="true" />
       </div>
+
+      <Suspense fallback={null}>
+        <LeadDock />
+      </Suspense>
     </>
   )
 }
