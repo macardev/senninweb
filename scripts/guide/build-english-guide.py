@@ -46,7 +46,7 @@ pages = [
 ('Week 2 / Clarify', 'Rewrite the introduction and next-step button. Add missing practical information and verified clinician details. Review treatment copy with the clinical team.'),
 ('Week 3 / Test', 'Test the page and contact flow on mobile. Check links, confirmations and team routing. Review language and search settings with your developer. Fix the most consequential obstacles first.'),
 ('Week 4 / Learn', 'Compare enquiries and their suitability with your baseline. Small samples can mislead, so use patient questions and team feedback alongside the numbers. Choose the next improvement based on what you learned.'),
-('Want a review of your own clinic website?', 'Send SenninWeb your website, clinic type and target market on WhatsApp. Ask for a free website and search review to identify the next practical steps. Do not include patient details.')])]
+('Where am I losing visitors?', 'Already have a website and wondering, "Where am I losing visitors?" Get in touch with me, and let\'s find out together.')])]
 for index,(title,subtitle,sections) in enumerate(pages):
     c.setFillColor(HexColor('#f5f1e8'));c.rect(0,0,595,842,fill=1,stroke=0)
     c.setFillColor(HexColor('#D97706'));c.rect(0,802,595,40,fill=1,stroke=0)
