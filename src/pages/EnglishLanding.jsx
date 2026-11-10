@@ -139,16 +139,16 @@ export default function EnglishLanding() {
         <img src="/images/en/irish-coast.webp" alt="A quiet Atlantic coastline representing the Irish market" className="absolute inset-0 w-full h-full object-cover object-center" width="1600" height="1000" fetchPriority="high" />
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 w-full px-5 md:px-12 pb-16 md:pb-20 pt-32">
-          <h1 className="font-display font-bold text-[clamp(3.3rem,9vw,9rem)] leading-[0.88] tracking-[-0.055em] max-w-[11ch] text-balance">
-            Irish clinics, found
+          <h1 className="font-display font-bold text-[clamp(2.5rem,6vw,6rem)] leading-[1.02] tracking-[-0.045em] max-w-[23ch] text-balance">
+            Having Trouble with getting more patient enquiries?
           </h1>
           <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-6 items-end">
             <p className="md:col-span-5 text-lg md:text-xl leading-relaxed text-white max-w-xl">
-              Patient-focused websites and international search strategy for private clinics ready to grow beyond Ireland.
+              Custom websites and international SEO for private clinics in Ireland, built to help patients find your treatments and take the next step.
             </p>
             <div className="md:col-start-9 md:col-span-4 flex md:justify-end">
-              <a href="#contact" className="inline-flex bg-[#D97706] text-black px-7 py-4 font-semibold hover:bg-[#FCD34D] transition-colors min-h-[52px] items-center">
-                Request a clinic review
+              <a href={whatsapp} data-lead-placement="en-hero-review" className="inline-flex bg-[#D97706] text-black px-7 py-4 font-semibold hover:bg-[#FCD34D] transition-colors min-h-[52px] items-center">
+                Get my free review on WhatsApp
               </a>
             </div>
           </div>

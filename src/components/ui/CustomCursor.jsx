@@ -88,10 +88,12 @@ export default function CustomCursor() {
     <>
       <div
         ref={cursorRef}
+        style={{ boxShadow: '0 0 0 1px #111, inset 0 0 0 1px #111' }}
         className="fixed top-0 left-0 w-9 h-9 rounded-full border border-white/30 pointer-events-none z-[9999] transition-transform duration-200 will-change-transform"
       />
       <div
         ref={dotRef}
+        style={{ boxShadow: '0 0 0 1.5px #111, 0 0 0 2.5px #fff' }}
         className="fixed top-0 left-0 w-1.5 h-1.5 rounded-full bg-gold-500 pointer-events-none z-[9999] will-change-transform"
       />
     </>

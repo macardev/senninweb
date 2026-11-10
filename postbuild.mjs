@@ -295,8 +295,9 @@ const faqItemsForEnglish = [
 
 function englishBody() {
   return `<main lang="en-IE" style="${BODY_STYLE}">
-    <h1 style="${H1_STYLE}">Irish clinics, found</h1>
-    <p>Patient-focused websites and international search strategy for private clinics ready to grow beyond Ireland.</p>
+    <h1 style="${H1_STYLE}">Having Trouble with getting more patient enquiries?</h1>
+    <p>Custom websites and international SEO for private clinics in Ireland, built to help patients find your treatments and take the next step.</p>
+    <p><a href="https://wa.me/905314051584?text=Hello%2C%20I%20run%20a%20clinic%20in%20Ireland%20and%20would%20like%20a%20website%20and%20international%20SEO%20review.">Get my free review on WhatsApp</a></p>
     <section><h2>Built for private clinics</h2><p>SenninWeb combines clear treatment content, custom design, technical SEO and a practical enquiry journey.</p></section>
     <section><h2>Start with your clinic</h2><p>Dental, aesthetic, hair restoration and private clinics receive a website and search plan shaped around their treatments and patient questions.</p></section>
     <section><h2>A patient journey you can measure</h2><h3>Clarify</h3><p>Define treatments, markets and patient questions.</p><h3>Build</h3><p>Create a custom English website and direct enquiry route.</p><h3>Reach</h3><p>Structure international SEO around real search intent.</p><h3>Convert</h3><p>Measure calls, messages and forms.</p></section>
