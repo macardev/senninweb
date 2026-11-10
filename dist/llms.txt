@@ -19,6 +19,7 @@
 
 ## Blog Posts
 
+- [AI Görünürlük Yol Haritası 2027](https://www.senninweb.com/docs/blog/ai-gorunurluk-yol-haritasi-2027.md): İşletmeler için sosyal medya, web sitesi, Google İşletme Profili, llms.txt ve backlink başlangıç rehberi
 - [Yurt Dışından Hasta Nasıl Çekilir? Klinikler İçin 2026 Rehberi](https://www.senninweb.com/docs/blog/yurt-disindan-hasta-nasil-cekilir.md): Saç ekim, diş, estetik ve veteriner klinikleri için yetki belgesi, 2025 tanıtım yönetmeliği, sağlık turizmi SEO'su ve kanal karşılaştırması
 - [AI Görünürlük, GEO ve LLMO SEO Rehberi](https://www.senninweb.com/docs/blog/ai-gorunurluk-geo-llmo-seo-rehberi.md): Yapay zeka arama optimizasyonu, GEO ve LLMO stratejileriyle ChatGPT, Gemini ve Perplexity'de görünürlük
 - [Küçük İşletmeler İçin Web Sitesi Nasıl Müşteri Getirir?](https://www.senninweb.com/docs/blog/kucuk-isletme-web-sitesi.md): Web sitesi ile müşteri kazanma stratejileri
