@@ -211,6 +211,13 @@ export default function Navbar() {
               </a>
             )
           })}
+          <Link
+            to="/en"
+            lang="en"
+            className="text-sm font-semibold text-gold-400 hover:text-white transition-colors duration-300 py-2"
+          >
+            EN
+          </Link>
         </nav>
 
         <div className="hidden md:block">
@@ -365,6 +372,14 @@ export default function Navbar() {
               </a>
             )
           })}
+          <Link
+            to="/en"
+            lang="en"
+            onClick={() => setMenuOpen(false)}
+            className="text-xl font-display font-semibold text-gold-400 min-h-[44px] flex items-center"
+          >
+            English
+          </Link>
           <Link
             to={GUIDE_PATH}
             onClick={() => setMenuOpen(false)}

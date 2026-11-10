@@ -20,6 +20,7 @@ const breadcrumbLabels = {
   "/hizmet/seo-ve-buyume": "Sağlık Turizmi SEO",
   "/hizmet/dijital-pazarlama": "Sağlık Turizmi Dijital Pazarlama",
   "/rehber/yurt-disindan-hasta-cekme": "Yurt Dışından Hasta Çekme Rehberi",
+  "/en": "For Irish Clinics",
 }
 
 function getCursorEnabled() {
@@ -33,6 +34,7 @@ function getCursorEnabled() {
 export default function Layout() {
   const location = useLocation()
   const [cursorEnabled, setCursorEnabled] = useState(getCursorEnabled)
+  const isEnglishLanding = location.pathname === "/en" || location.pathname.startsWith("/en/")
 
   const breadcrumbItems = useMemo(() => {
     const items = [
@@ -106,20 +108,22 @@ export default function Layout() {
       )}
 
       <div className="scroll-progress" aria-hidden="true" />
-      <Navbar />
+      {!isEnglishLanding && <Navbar />}
 
       <div className="min-h-screen flex flex-col bg-black text-white max-w-full relative z-10">
-        <main className="flex-1 pt-28 w-full">
+        <main className={`flex-1 w-full ${isEnglishLanding ? "pt-0" : "pt-28"}`}>
           <Outlet />
         </main>
-        <Footer />
+        {!isEnglishLanding && <Footer />}
         {/* Keeps the footer clear of the mobile lead bar */}
-        <div className="h-20 md:hidden" aria-hidden="true" />
+        {!isEnglishLanding && <div className="h-20 md:hidden" aria-hidden="true" />}
       </div>
 
-      <Suspense fallback={null}>
-        <LeadDock />
-      </Suspense>
+      {!isEnglishLanding && (
+        <Suspense fallback={null}>
+          <LeadDock />
+        </Suspense>
+      )}
     </>
   )
 }

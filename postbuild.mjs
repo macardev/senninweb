@@ -15,15 +15,14 @@ function prerender(route, title, description, opts = {}) {
   const ogType = opts.ogType || 'website'
 
   let html = indexHtml
+    .replace('<html lang="tr">', `<html lang="${escapeAttr(opts.lang || 'tr')}">`)
     .replace(/(<title>).*?(<\/title>)/, `$1${escapeHtml(title)}$2`)
     .replace(
       /(<meta name="description" content=").*?(")/,
       `$1${escapeAttr(description)}$2`
     )
-    .replace(
-      /<link rel="alternate" hreflang="tr" href="[^"]*">/,
-      `<link rel="canonical" href="${escapeAttr(canonicalUrl)}">`
-    )
+    .replace(/\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">/g, '')
+    .replace('</head>', `  <link rel="canonical" href="${escapeAttr(canonicalUrl)}">\n  </head>`)
 
   const headTags = [
     `<meta property="og:title" content="${escapeAttr(title)}">`,
@@ -37,6 +36,9 @@ function prerender(route, title, description, opts = {}) {
     `<meta name="twitter:title" content="${escapeAttr(title)}">`,
     `<meta name="twitter:description" content="${escapeAttr(description)}">`,
   ]
+  for (const alternate of opts.alternates || []) {
+    headTags.push(`<link rel="alternate" hreflang="${escapeAttr(alternate.lang)}" href="${escapeAttr(alternate.href)}">`)
+  }
   if (opts.jsonLd) {
     // data-prerender: removed on boot (main.jsx) so React's own JSON-LD doesn't duplicate it
     for (const ld of [].concat(opts.jsonLd)) {
@@ -260,8 +262,12 @@ const homeTitle = indexHtml.match(/<title>(.*?)<\/title>/)[1]
 const homeDescription = indexHtml.match(/<meta name="description" content="(.*?)">/)[1]
 const homeHtml = indexHtml
   .replace(
-    /<link rel="alternate" hreflang="tr" href="[^"]*">/,
-    `<link rel="canonical" href="https://www.senninweb.com/">`
+    /(?:\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">)+/,
+    `
+    <link rel="canonical" href="https://www.senninweb.com/">
+    <link rel="alternate" hreflang="tr" href="https://www.senninweb.com/">
+    <link rel="alternate" hreflang="en-IE" href="https://www.senninweb.com/en">
+    <link rel="alternate" hreflang="x-default" href="https://www.senninweb.com/">`
   )
   .replace('</head>', `  <meta property="og:title" content="${homeTitle}">
   <meta property="og:description" content="${homeDescription}">
@@ -278,6 +284,47 @@ writeFileSync(distHtmlPath, homeHtml, 'utf-8')
 
 // ── Prerender static HTML pages ──
 console.log('\n📄 Prerendering static pages:')
+
+const faqItemsForEnglish = [
+  ['Do you only work with clinics in Turkey?', 'No. This English service is built for private clinics in Ireland that want a stronger website, clearer patient journeys and visibility in selected European markets.'],
+  ['Can you work with our existing brand?', 'Yes. We can retain your identity and rebuild the website around clearer treatment information, stronger proof and a more direct enquiry path.'],
+  ['Do you guarantee patient numbers or Google rankings?', 'No responsible agency can guarantee either. We agree on measurable work such as technical health, qualified visibility, enquiry quality and conversion points.'],
+  ['What does the first review include?', 'We review your website, treatment structure, search visibility and enquiry journey, then share the most important opportunities.'],
+  ['Will the site support more than one country?', 'Yes. We plan country and language architecture, hreflang, local search intent and market-specific treatment pages.'],
+]
+
+function englishBody() {
+  return `<main lang="en-IE" style="${BODY_STYLE}">
+    <h1 style="${H1_STYLE}">Irish clinics, found</h1>
+    <p>Patient-focused websites and international search strategy for private clinics ready to grow beyond Ireland.</p>
+    <section><h2>Built for private clinics</h2><p>SenninWeb combines clear treatment content, custom design, technical SEO and a practical enquiry journey.</p></section>
+    <section><h2>Start with your clinic</h2><p>Dental, aesthetic, hair restoration and private clinics receive a website and search plan shaped around their treatments and patient questions.</p></section>
+    <section><h2>A patient journey you can measure</h2><h3>Clarify</h3><p>Define treatments, markets and patient questions.</p><h3>Build</h3><p>Create a custom English website and direct enquiry route.</p><h3>Reach</h3><p>Structure international SEO around real search intent.</p><h3>Convert</h3><p>Measure calls, messages and forms.</p></section>
+    <section><h2>Questions before we begin</h2>${faqItemsForEnglish.map(([q, a]) => `<h3>${escapeHtml(q)}</h3><p>${escapeHtml(a)}</p>`).join('')}</section>
+    <p><a href="mailto:business@senninweb.com?subject=Irish%20clinic%20review">Request a clinic review</a></p>
+  </main>`
+}
+
+prerender(
+  '/en',
+  'Web Design & International SEO for Irish Clinics | SenninWeb',
+  'Patient-focused websites and international SEO for dental, aesthetic, hair restoration and private clinics in Ireland. Reach patients across Europe with SenninWeb.',
+  {
+    lang: 'en-IE',
+    bodyHtml: englishBody(),
+    alternates: [
+      { lang: 'en-IE', href: 'https://www.senninweb.com/en' },
+      { lang: 'tr', href: 'https://www.senninweb.com/' },
+      { lang: 'x-default', href: 'https://www.senninweb.com/' },
+    ],
+    jsonLd: {
+      '@context': 'https://schema.org', '@type': 'ProfessionalService', name: 'SenninWeb',
+      url: 'https://www.senninweb.com/en', inLanguage: 'en-IE',
+      areaServed: { '@type': 'Country', name: 'Ireland' },
+      serviceType: ['Healthcare website design', 'International SEO', 'Patient acquisition strategy'],
+    },
+  }
+)
 
 // Static pages
 prerender(
@@ -351,6 +398,7 @@ for (const post of blogPosts) {
 // ── Generate sitemap ──
 const pages = [
   { loc: '/', priority: '1.0' },
+  { loc: '/en', priority: '1.0' },
   { loc: '/hakkimizda', priority: '0.8' },
   { loc: '/blog', priority: '0.8' },
   { loc: '/bilecik', priority: '0.9' },

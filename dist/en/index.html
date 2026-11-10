@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Patient-focused websites and international SEO for dental, aesthetic, hair restoration and private clinics in Ireland. Reach patients across Europe with SenninWeb.">
+    <meta name="robots" content="index, follow">
+    <title>Web Design &amp; International SEO for Irish Clinics | SenninWeb</title>
+
+    <!-- Favicon Assets -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon/favicon-48x48.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="theme-color" content="#D97706">
+
+    <!-- Preconnect critical origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://api.emailjs.com" />
+
+    <!-- Async Google Fonts (non-render-blocking) -->
+    <link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap"
+      as="style" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+      media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    </noscript>
+
+    <!-- Adaptive motion tier before first paint (see src/utils/motionTier.js) -->
+    <script>
+      (function () {
+        var d = document.documentElement, n = navigator, c = n.connection || {}, t = 'full';
+        try {
+          if (matchMedia('(prefers-reduced-motion: reduce)').matches) t = 'off';
+          else {
+            var mem = n.deviceMemory, touch = matchMedia('(pointer: coarse)').matches;
+            if (c.saveData || /2g|3g/.test(c.effectiveType || '') || (mem && mem <= (touch ? 4 : 2)) || (n.hardwareConcurrency && n.hardwareConcurrency <= 2)) t = 'lite';
+          }
+          if (t === 'full' && sessionStorage.getItem('sw_motion') === 'lite') t = 'lite';
+        } catch (e) {}
+        d.setAttribute('data-motion', t);
+      })();
+    </script>
+
+    <!-- Critical CSS for instant above-the-fold paint (render-blocking replaced at build) -->
+    <style>*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body,html{overflow-x:hidden}body{background-color:#0a0a0a;color:#fff;font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;padding:0}body.cursor-none{cursor:none}h1,h2,h3,h4,h5,h6{hyphens:auto;overflow-wrap:break-word;word-break:break-word}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#d97706;border-radius:2px}::-moz-selection{background:#d97706;color:#0a0a0a}::selection{background:#d97706;color:#0a0a0a}@keyframes a{0%{opacity:0;transform:translateY(-100px)}to{opacity:1;transform:translateY(0)}}.animate-slideDown{animation:a .8s cubic-bezier(.16,1,.3,1) .1s both}@keyframes b{0%{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.animate-modalIn{animation:b .4s cubic-bezier(.16,1,.3,1) both}@keyframes c{0%{transform:translateY(10px)}to{transform:translateY(0)}}.animate-heroIn{animation:c .7s cubic-bezier(.16,1,.3,1) forwards}.text-white{color:#fff}.text-gold-500{color:#d97706}.text-gold-gradient{background:linear-gradient(135deg,#fcd34d,#d97706,#b45309);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}#hero-host:not([hidden]):not(:has([data-static-hero]))+#root{display:none}.sh{background:#0a0a0a;font-family:Inter,system-ui,-apple-system,sans-serif;overflow:hidden;position:relative}#hero-host .sh{padding-top:112px}.sh-inner{align-items:center;display:grid;gap:32px;margin:0 auto;max-width:90rem;padding:16px 24px 48px;position:relative;z-index:1}.sh-eyebrow{align-items:center;color:#d97706;display:inline-flex;font-size:12px;font-weight:500;gap:8px;letter-spacing:.2em;margin-bottom:32px;text-transform:uppercase}.sh-line{background:#d97706;height:1px;width:32px}.sh-h1{color:#fff;font-family:Syne,system-ui,-apple-system,sans-serif;font-size:2.25rem;font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:0 0 24px}.sh-gold{background:linear-gradient(135deg,#fcd34d,#d97706 50%,#b45309);-webkit-background-clip:text;background-clip:text;display:block;-webkit-text-fill-color:transparent}.sh-sub{color:hsla(0,0%,100%,.6);font-size:16px;line-height:1.625;margin:0 0 32px;max-width:32rem}.sh-ctas{display:flex;flex-direction:column;gap:12px;margin-bottom:40px}.sh-btn{align-items:center;border-radius:9999px;display:inline-flex;font-size:16px;font-weight:600;gap:10px;height:56px;justify-content:center;padding:0 32px;text-decoration:none;transition:transform .18s cubic-bezier(.2,0,0,1),background-color .2s,border-color .2s;white-space:nowrap}.sh-btn:active{transform:scale(.97)}.sh-btn--gold{background:#d97706;color:#0a0a0a}.sh-btn--gold:hover{background:#fbbf24}.sh-btn--wa{border:1px solid rgba(37,211,102,.45);color:hsla(0,0%,100%,.85);font-weight:500}.sh-btn--wa:hover{background:rgba(37,211,102,.1);border-color:#25d366}.sh-stats{border-top:1px solid hsla(0,0%,100%,.08);display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin:0;padding-top:28px}.sh-stats dt{color:#fff;font-family:Syne,system-ui,sans-serif;font-size:18px;font-weight:700;margin-bottom:2px}.sh-stats dd{color:hsla(0,0%,100%,.6);font-size:12px;margin:0}.sh-visual{display:none}@media (min-width:640px){.sh-h1{font-size:3rem}.sh-ctas{flex-direction:row}}@media (min-width:769px){.sh{align-items:center;display:flex;min-height:100vh}.sh-inner{padding:80px 48px;width:100%}.sh-h1{font-size:3.75rem}.sh-sub{font-size:18px;margin-bottom:40px}.sh-btn:hover{transform:scale(1.03)}.sh-stats{gap:32px;margin-top:24px;padding-top:32px}.sh-stats dt{font-size:20px}}@media (min-width:1024px){.sh-inner{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.sh-h1{font-size:3.6rem}.sh-visual{display:block;min-height:560px}}@media (min-width:1536px){.sh-h1{font-size:4.5rem}}</style>
+
+    <!-- Speculation Rules API: instant next-page navigations (progressive enhancement) -->
+    <script type="speculationrules">
+    {
+      "prerender": [{
+        "where": { "href_matches": "/*" },
+        "eagerness": "moderate"
+      }]
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-VxQ8zOwY.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-ru--Vhn1.js">
+    <link rel="modulepreload" crossorigin href="/assets/layout-ReShVR3W.js">
+    <link rel="modulepreload" crossorigin href="/assets/section-Hero-B3FYTX0v.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-Home-CqUyVp2I.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-EnglishLanding-Dvu8qwCN.js">
+    <link rel="preload" href="/assets/index-g8WTmSxE.css" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-g8WTmSxE.css"></noscript>
+    <link rel="canonical" href="https://www.senninweb.com/en">
+    <meta property="og:title" content="Web Design &amp; International SEO for Irish Clinics | SenninWeb">
+  <meta property="og:description" content="Patient-focused websites and international SEO for dental, aesthetic, hair restoration and private clinics in Ireland. Reach patients across Europe with SenninWeb.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.senninweb.com/en">
+  <meta property="og:image" content="https://www.senninweb.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Design &amp; International SEO for Irish Clinics | SenninWeb">
+  <meta name="twitter:description" content="Patient-focused websites and international SEO for dental, aesthetic, hair restoration and private clinics in Ireland. Reach patients across Europe with SenninWeb.">
+  <link rel="alternate" hreflang="en-IE" href="https://www.senninweb.com/en">
+  <link rel="alternate" hreflang="tr" href="https://www.senninweb.com/">
+  <link rel="alternate" hreflang="x-default" href="https://www.senninweb.com/">
+  <script type="application/ld+json" data-prerender>{"@context":"https://schema.org","@type":"ProfessionalService","name":"SenninWeb","url":"https://www.senninweb.com/en","inLanguage":"en-IE","areaServed":{"@type":"Country","name":"Ireland"},"serviceType":["Healthcare website design","International SEO","Patient acquisition strategy"]}</script>
+  </head>
+  <body>
+    <div class="mesh-base"></div>
+    <div class="mesh-glow"></div>
+    <!-- Static hero (src/content/heroMarkup.js) paints before JS; <Hero /> adopts this node instead of re-rendering it.
+         On other routes postbuild swaps the block between the markers for that page's static body. -->
+    <div id="hero-host"><!--prerender:start-->
+<main lang="en-IE" style="max-width:760px;margin:0 auto;padding:140px 24px 80px;font-family:system-ui,-apple-system,sans-serif;color:rgba(255,255,255,0.75);line-height:1.7">
+    <h1 style="color:#FFF;font-size:clamp(2rem,4.5vw,3.25rem);line-height:1.1;letter-spacing:-0.02em;margin:0 0 20px;font-weight:700">Irish clinics, found</h1>
+    <p>Patient-focused websites and international search strategy for private clinics ready to grow beyond Ireland.</p>
+    <section><h2>Built for private clinics</h2><p>SenninWeb combines clear treatment content, custom design, technical SEO and a practical enquiry journey.</p></section>
+    <section><h2>Start with your clinic</h2><p>Dental, aesthetic, hair restoration and private clinics receive a website and search plan shaped around their treatments and patient questions.</p></section>
+    <section><h2>A patient journey you can measure</h2><h3>Clarify</h3><p>Define treatments, markets and patient questions.</p><h3>Build</h3><p>Create a custom English website and direct enquiry route.</p><h3>Reach</h3><p>Structure international SEO around real search intent.</p><h3>Convert</h3><p>Measure calls, messages and forms.</p></section>
+    <section><h2>Questions before we begin</h2><h3>Do you only work with clinics in Turkey?</h3><p>No. This English service is built for private clinics in Ireland that want a stronger website, clearer patient journeys and visibility in selected European markets.</p><h3>Can you work with our existing brand?</h3><p>Yes. We can retain your identity and rebuild the website around clearer treatment information, stronger proof and a more direct enquiry path.</p><h3>Do you guarantee patient numbers or Google rankings?</h3><p>No responsible agency can guarantee either. We agree on measurable work such as technical health, qualified visibility, enquiry quality and conversion points.</p><h3>What does the first review include?</h3><p>We review your website, treatment structure, search visibility and enquiry journey, then share the most important opportunities.</p><h3>Will the site support more than one country?</h3><p>Yes. We plan country and language architecture, hreflang, local search intent and market-specific treatment pages.</p></section>
+    <p><a href="mailto:business@senninweb.com?subject=Irish%20clinic%20review">Request a clinic review</a></p>
+  </main>
+<!--prerender:end--></div>
+    <div id="root"></div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://www.senninweb.com",
+      "name": "SenninWeb",
+      "url": "https://www.senninweb.com",
+      "logo": "https://www.senninweb.com/favicon/favicon-48x48.png",
+      "image": "https://www.senninweb.com/og-image.jpg",
+      "description": "Yurt dışından hasta çekmek isteyen sağlık klinikleri için size özel web sitesi, uluslararası SEO ve hasta kazanım ajansı. 2025'te Çağatay Macar tarafından kuruldu.",
+      "email": "business@senninweb.com",
+      "telephone": "+90 (531) 405 15 84",
+      "foundingDate": "2025",
+      "founder": {
+        "@type": "Person",
+        "name": "Çağatay Macar"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11702 Çukurören",
+        "addressLocality": "Gölpazarı",
+        "addressRegion": "Bilecik",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.316075,
+        "longitude": 30.292531
+      },
+      "priceRange": "₺₺",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "sameAs": [
+        "https://github.com/macardev/senninweb",
+        "https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-samet-macar-5bb930411/",
+        "https://www.google.com/maps?cid=17139558010122278128"
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Bilecik" },
+        { "@type": "City", "name": "Kocaeli" },
+        { "@type": "City", "name": "Gebze" },
+        { "@type": "City", "name": "İstanbul" }
+      ]
+    }
+    </script>
+
+
+    <!-- Defer Google Analytics to first user interaction (avoids 490ms main-thread blocking) -->
+    <script>
+      if (!document.prerendering) {
+        var _ga = function() {
+          _ga = function(){};
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MNVQN1HEK9');
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MNVQN1HEK9';
+          document.head.appendChild(s);
+        };
+        var _events = ['keydown', 'mousedown', 'touchstart', 'scroll'];
+        function _onFirstInteraction() {
+          _events.forEach(function(e) { document.removeEventListener(e, _onFirstInteraction, {passive:true, once:true}); });
+          _ga();
+        }
+        _events.forEach(function(e) { document.addEventListener(e, _onFirstInteraction, {passive: true, once: true}); });
+      }
+    </script>
+  </body>
+</html>

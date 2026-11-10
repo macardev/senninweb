@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Layout from "@/components/layout/Layout"
 import ScrollToTop from "@/components/ui/ScrollToTop"
 import Home from "@/pages/Home"
+import EnglishLanding from "@/pages/EnglishLanding"
 
 const Hakkimizda = lazy(() => import("@/pages/Hakkimizda"))
 const Blog = lazy(() => import("@/pages/Blog"))
@@ -24,6 +25,11 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/en" element={
+            <Suspense fallback={<div className="min-h-screen bg-black" />}>
+              <EnglishLanding />
+            </Suspense>
+          } />
           <Route path="/hakkimizda" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <Hakkimizda />
