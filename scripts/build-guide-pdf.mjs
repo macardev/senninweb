@@ -7,9 +7,10 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath, pathToFileURL } from 'url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const source = resolve(root, 'scripts/guide/yurt-disindan-hasta-cekme.html')
+const english = process.argv.includes('--en')
+const source = resolve(root, english ? 'scripts/guide/attracting-patients-from-abroad-en.html' : 'scripts/guide/yurt-disindan-hasta-cekme.html')
 const outDir = resolve(root, 'public/rehber')
-const out = resolve(outDir, 'yurt-disindan-hasta-cekme-rehberi.pdf')
+const out = resolve(outDir, english ? 'patient-enquiry-playbook.pdf' : 'yurt-disindan-hasta-cekme-rehberi.pdf')
 
 function findChrome() {
   if (process.env.CHROME_PATH) return process.env.CHROME_PATH

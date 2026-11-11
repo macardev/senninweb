@@ -145,7 +145,7 @@ export default function EnglishLanding() {
           </h1>
           <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-6 items-end">
             <p className="md:col-span-5 text-lg md:text-xl leading-relaxed text-white max-w-xl">
-              Get the free Patient Enquiry Playbook: six practical pages to help your Irish clinic improve its website, search visibility and enquiry journey.
+              Get the free Attracting Patients from Abroad guide: 12 chapters on international visibility, multilingual websites and turning enquiries into appointments.
             </p>
             <div className="md:col-start-9 md:col-span-4 flex md:justify-end">
               <a href="#free-book" className="inline-flex bg-[#D97706] text-black px-7 py-4 font-semibold hover:bg-[#FCD34D] transition-colors min-h-[52px] items-center">
@@ -158,21 +158,21 @@ export default function EnglishLanding() {
 
       <section id="free-book" aria-labelledby="free-book-title" className="px-5 md:px-12 py-20 md:py-28 bg-[#e7e1d5] text-[#111] scroll-mt-8">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <img src="/images/en/patient-enquiry-playbook.webp" alt="Cover of The Patient Enquiry Playbook by SenninWeb" width="595" height="842" loading="lazy" className="w-full max-w-[280px] mx-auto shadow-xl" />
+          <img src="/images/en/patient-enquiry-playbook.webp" alt="Attracting Patients from Abroad - Guide 2026 by SenninWeb" width="595" height="842" loading="lazy" className="w-full max-w-[280px] mx-auto shadow-xl" />
           <div>
-            <p className="text-sm font-semibold mb-4">FREE E-BOOK · 6 PAGES · NO EMAIL REQUIRED</p>
-            <h2 id="free-book-title" className="font-display text-4xl md:text-5xl leading-tight tracking-tight">The Patient Enquiry Playbook</h2>
-            <p className="mt-5 text-lg leading-relaxed">A practical starting point for private clinics in Ireland, with a 30-day action plan you can work through with your team.</p>
+            <p className="text-sm font-semibold mb-4">FREE E-BOOK · 15 PAGES · NO EMAIL REQUIRED</p>
+            <h2 id="free-book-title" className="font-display text-4xl md:text-5xl leading-tight tracking-tight">Attracting Patients from Abroad</h2>
+            <p className="mt-5 text-lg leading-relaxed">The English translation of our original guide, with a 90-day roadmap and a 25-point checklist. Examples and legal references retain the original guide’s Turkish context.</p>
             <ul className="mt-6 space-y-3 list-disc pl-5">
-              <li>Know what to fix first on your treatment pages.</li>
-              <li>Make it easier for patients to find you and get in touch.</li>
-              <li>Measure useful enquiries, with no technical background needed.</li>
+              <li>Understand the patient journey and choose your target countries.</li>
+              <li>Build multilingual pages, search visibility and patient trust.</li>
+              <li>Organise WhatsApp follow-up and measure your patient funnel.</li>
             </ul>
             <a href="/rehber/patient-enquiry-playbook.pdf" download onClick={() => { setBookDownloaded(true); trackLead('guide_download', 'en-free-book') }} className="inline-flex mt-8 bg-[#111] text-white px-7 py-4 font-semibold hover:bg-[#333]">Download my free e-book (PDF)</a>
             {bookDownloaded && <div role="status" className="mt-8 border-t border-black/20 pt-6">
               <h3 className="font-display text-2xl">Your book is ready.</h3>
               <p className="mt-3 leading-relaxed">You can download it again above. After reading, send us your clinic website and target market for a free review of your next steps.</p>
-              <a href={whatsappHref('Hello, I downloaded your Patient Enquiry Playbook and would like a free review of my clinic website.')} target="_blank" rel="noopener noreferrer" data-lead-placement="en-book-success" className="inline-flex mt-5 bg-[#D97706] px-6 py-4 font-semibold text-black hover:bg-[#FCD34D]">Discuss my clinic on WhatsApp</a>
+              <a href={whatsappHref('Hello, I downloaded your Attracting Patients from Abroad guide and would like a free review of my clinic website.')} target="_blank" rel="noopener noreferrer" data-lead-placement="en-book-success" className="inline-flex mt-5 bg-[#D97706] px-6 py-4 font-semibold text-black hover:bg-[#FCD34D]">Discuss my clinic on WhatsApp</a>
             </div>}
           </div>
         </div>
