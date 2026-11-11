@@ -126,6 +126,7 @@ export default function EnglishLanding() {
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/85" aria-label="English navigation">
           <a href="#approach" className="hover:text-white">Approach</a>
           <a href="#services" className="hover:text-white">Services</a>
+          <a href="/demo/dental/" className="hover:text-white">Clinic demo</a>
           <a href="#faq" className="hover:text-white">FAQ</a>
           <a href="#free-book" className="bg-[#D97706] text-black px-5 py-3 font-semibold hover:bg-[#FCD34D]">Get the free book</a>
           <Link to="/" lang="tr" className="hover:text-white">TR</Link>
@@ -223,6 +224,22 @@ export default function EnglishLanding() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="px-5 md:px-12 py-24 md:py-36 bg-[#eaf3fc] text-[#132b39]" aria-labelledby="clinic-demo-heading">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
+          <div>
+            <p className="text-xs uppercase tracking-widest mb-6">Explore a clinic website concept</p>
+            <h2 id="clinic-demo-heading" className="font-display text-[clamp(2.8rem,5vw,5.5rem)] leading-[0.96] tracking-[-0.045em]">A calmer path to the first enquiry.</h2>
+            <p className="mt-7 text-lg leading-relaxed max-w-lg">Meet Luma Dental Studio: an original dental website concept with immersive treatment galleries, illustrative smile stories, transparent sample fees and a simple consultation journey.</p>
+            <a href="/demo/dental/" className="inline-flex items-center gap-8 mt-8 bg-[#132b39] text-white px-7 py-4 font-semibold hover:bg-[#345c78]">Explore the dental demo <span aria-hidden="true">↗</span></a>
+            <p className="mt-4 text-xs text-[#526a7b]">Fictional clinic · Sample content · No real bookings</p>
+          </div>
+          <a href="/demo/dental/" aria-label="Explore the Luma Dental Studio website" className="block relative overflow-hidden">
+            <img src="/demo/dental/assets/clinic.webp" alt="Bright dental studio illustrating the Luma website concept" loading="lazy" width="1200" height="900" className="w-full aspect-[4/3] object-cover" />
+            <span className="absolute bottom-5 left-5 bg-white text-[#132b39] px-5 py-3 text-xl font-semibold">✳ luma / Dental Studio</span>
+          </a>
         </div>
       </section>
 
