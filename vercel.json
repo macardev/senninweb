@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "s"
+        }
+      ],
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
       "source": "/blog/small-businesses-visible-on-google-2026",
       "destination": "/blog/kucuk-isletmeler-google-da-gorunurluk-2026",
       "permanent": true
