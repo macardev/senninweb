@@ -4,6 +4,8 @@
 
 ## Pages
 
+- [English guide for Irish clinics](https://www.senninweb.com/en/llms.txt): English landing page, clinic website examples and published articles.
+
 - [Ana Sayfa](https://www.senninweb.com/): Sağlık klinikleri için hasta kazanım paketi: size özel çok dilli web sitesi, uluslararası SEO, WhatsApp hasta akışı.
 - [Yurt Dışından Hasta Çekme Rehberi](https://www.senninweb.com/rehber/yurt-disindan-hasta-cekme): Klinikler için ücretsiz 15 sayfalık PDF rehber (hedef ülke, çok dilli site, uluslararası SEO, backlink, WhatsApp dönüşümü).
 - [Hakkimizda](https://www.senninweb.com/docs/hakkimizda.md): Sennin Web kurucusu Çağatay Macar ve şirket hikayesi. Tasarım yaklaşımı, SEO felsefesi ve değerler.

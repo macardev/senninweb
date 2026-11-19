@@ -677,3 +677,38 @@ body.en-page .mesh-glow {
 .clinic-blog p { margin: 1rem 0; font-size: 1.125rem; line-height: 1.7; color: #ddd; }
 .clinic-blog section, .clinic-blog footer, .clinic-blog-copy > p + article { margin-top: 3rem; border-top: 1px solid #434343; padding-top: 1.4rem; }
 .clinic-blog time, .clinic-blog .byline { color: #fcd34d; font-size: .9rem; }
+.studio-about { display:grid; grid-template-columns:minmax(0, .95fr) minmax(0, 1fr); align-items:center; gap:clamp(2rem,8vw,9rem); padding:clamp(3rem,8vw,8rem) clamp(1.25rem,7vw,8rem); background:#f3ebdb; color:#241c18; }
+.studio-about h2 { font-family:Georgia,serif; font-size:clamp(3.2rem,6vw,7rem); line-height:.95; letter-spacing:-.055em; margin-bottom:1.75rem; }
+.studio-about p { max-width:46ch; margin-bottom:1rem; line-height:1.65; }
+.studio-about .studio-byline { font:600 .82rem/1.4 system-ui; letter-spacing:.07em; margin-bottom:1.5rem; }
+.studio-print { background:#713a24; border:1px solid #472a1f; padding:clamp(.6rem,1.3vw,1.35rem); box-shadow:0 9px 0 -4px #bb957b; transform:rotate(-2deg); }
+.studio-print img { display:block; width:100%; height:auto; }
+.studio-profile { display:inline-flex; gap:.65rem; align-items:center; min-height:44px; font-weight:650; text-decoration:underline; text-underline-offset:.25em; }
+.studio-profile:hover span,.studio-profile:focus-visible span { transform:translate(2px,-2px); }
+.studio-profile span { transition:transform .18s ease-out; }
+.coast-print { display:block; width:100%; height:auto; max-height:22rem; color:#342019; overflow:hidden; pointer-events:none; }
+.coast-hero { position:absolute; right:1%; top:12%; width:min(42%,46rem); color:#ffce83; opacity:.84; }
+.en-landing #contact { background:linear-gradient(155deg,#ffc47e,#e79545 64%,#efab67); }
+.en-landing #contact > a { margin-bottom:1rem; }
+@keyframes studio-light { from {transform:rotate(-4deg)} to {transform:rotate(6deg)} }
+@keyframes studio-tide { from {transform:translateX(-9px)} to {transform:translateX(9px)} }
+@keyframes studio-scroll { from {transform:translateY(18px) rotate(-3deg)} to {transform:translateY(-8px) rotate(1deg)} }
+@media (prefers-reduced-motion:no-preference) {
+  [data-motion="full"] .coast-beam { transform-origin:228px 113px; animation:studio-light 7s ease-in-out infinite alternate; }
+  [data-motion="full"] .coast-water { animation:studio-tide 5s ease-in-out infinite alternate; }
+  @supports (animation-timeline:view()) {
+    [data-motion="full"] .studio-print { animation:studio-scroll ease-in-out both; animation-timeline:view(); animation-range:entry 0% exit 90%; }
+    [data-motion="full"] .coast-hero { animation:studio-scroll ease-in-out both; animation-timeline:view(); }
+  }
+  @media (hover:hover) {
+    .en-landing header nav a { transition:transform .2s ease-out; }
+    .en-landing header nav a:hover { transform:translateY(-2px); }
+    .studio-print img { transition:filter .3s ease-out; filter:saturate(.78); }
+    .studio-print:hover img { filter:saturate(1.15); }
+  }
+}
+@media (max-width:767px) {
+  .studio-about { grid-template-columns:1fr; }
+  .studio-print { width:min(84%,24rem); margin-inline:auto; }
+  .coast-hero { width:50%; top:10%; opacity:.5; }
+}

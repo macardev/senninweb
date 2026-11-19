@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import useReleaseStaticBody from "@/hooks/useReleaseStaticBody"
 import { EMAIL, whatsappHref, trackLead } from "@/utils/leads"
+import CoastPrint from "@/components/CoastPrint"
+import LinkedinProfile from "@/components/LinkedinProfile"
 
 const TITLE = "Web Design & International SEO for Irish Clinics | SenninWeb"
 const DESCRIPTION = "Patient-focused websites and international SEO for dental, aesthetic, hair restoration and private clinics in Ireland. Reach patients across Europe with SenninWeb."
@@ -126,6 +128,7 @@ export default function EnglishLanding() {
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/85" aria-label="English navigation">
           <a href="/en/blog" className="hover:text-white">Blog</a>
           <a href="#approach" className="hover:text-white">Approach</a>
+          <a href="#about" className="hover:text-white">About</a>
           <a href="#services" className="hover:text-white">Services</a>
           <a href="/demo/dental/" className="hover:text-white">Clinic demo</a>
           <a href="#faq" className="hover:text-white">FAQ</a>
@@ -142,6 +145,7 @@ export default function EnglishLanding() {
       <section className="relative min-h-[100svh] flex items-end en-shutter">
         <img src="/images/en/irish-coast.webp" alt="A quiet Atlantic coastline representing the Irish market" className="absolute inset-0 w-full h-full object-cover object-center" width="1600" height="1000" fetchPriority="high" />
         <div className="absolute inset-0 bg-black/55" />
+        <CoastPrint hero />
         <div className="relative z-10 w-full px-5 md:px-12 pb-16 md:pb-20 pt-32">
           <h1 className="font-display font-bold text-[clamp(2.5rem,6vw,6rem)] leading-[1.02] tracking-[-0.045em] max-w-[23ch] text-balance">
             Having Trouble with getting more patient enquiries?
@@ -245,6 +249,15 @@ export default function EnglishLanding() {
         </div>
       </section>
 
+      <section id="about" className="studio-about" aria-labelledby="studio-about-heading">
+        <figure className="studio-print"><img src="/images/en/cagatay-ink.webp" width="720" height="815" loading="lazy" alt="Ink illustration of Çağatay Samet Macar" /></figure>
+        <div><p className="studio-byline">About the founder</p>
+          <h2 id="studio-about-heading">Çağatay<br />Samet Macar</h2>
+          <p>I founded SenninWeb in 2025. When I look at a clinic website, I start with a patient’s first visit. Can they find the treatment they need, see who will care for them and book from their phone?</p>
+          <p>That’s the route I work through with each clinic, from the first search to the conversation with reception.</p>
+          <LinkedinProfile />
+        </div>
+      </section>
       <section id="faq" className="px-5 md:px-12 py-28 md:py-48 bg-[#121212] en-reveal">
         <h2 className="font-display text-[clamp(3rem,6vw,6rem)] leading-[0.92] tracking-[-0.05em] max-w-[12ch]">Before we begin</h2>
         <div className="mt-20 md:ml-[34%] max-w-3xl space-y-8">
@@ -267,10 +280,12 @@ export default function EnglishLanding() {
         <a href={`mailto:${EMAIL}?subject=Irish%20clinic%20review`} data-lead-placement="en-contact-email" className="font-display text-[clamp(2.7rem,7vw,7.5rem)] leading-[0.9] tracking-[-0.055em] break-words hover:text-white transition-colors my-20">
           business@<br className="md:hidden" />senninweb.com
         </a>
+        <CoastPrint />
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 text-base">
           <div>
             <a href={whatsapp} target="_blank" rel="noopener noreferrer" data-lead-placement="en-contact-whatsapp" className="font-semibold underline underline-offset-4">Start on WhatsApp</a>
             <p className="mt-2">Working with clinics across Ireland and Europe</p>
+            <LinkedinProfile />
           </div>
           <div className="md:text-right text-sm max-w-2xl">
             <p>Photography: Ivan Slade, Aleksi Tappura, Jonathan Bean and Francesco Gallarotti via Lorem Picsum.</p>

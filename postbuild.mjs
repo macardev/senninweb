@@ -298,7 +298,7 @@ const faqItemsForEnglish = [
 
 function englishBody() {
   return `<main lang="en-IE" style="${BODY_STYLE}">
-    <nav><a href="/en/blog">Clinic blog</a></nav>
+    <nav><a href="/en/blog">Clinic blog</a> · <a href="#about">About the founder</a></nav>
     <h1 style="${H1_STYLE}">Having Trouble with getting more patient enquiries?</h1>
     <p>Get the free Attracting Patients from Abroad guide: 12 chapters on international visibility, multilingual websites and turning enquiries into appointments.</p>
     <p><a href="#free-book">Here’s the book you’re looking for</a></p>
@@ -306,6 +306,7 @@ function englishBody() {
     <section><h2>Built for private clinics</h2><p>SenninWeb combines clear treatment content, custom design, technical SEO and a practical enquiry journey.</p></section>
     <section><h2>Start with your clinic</h2><p>Dental, aesthetic, hair restoration and private clinics receive a website and search plan shaped around their treatments and patient questions.</p></section>
     <section><h2>A patient journey you can measure</h2><h3>Clarify</h3><p>Define treatments, markets and patient questions.</p><h3>Build</h3><p>Create a custom English website and direct enquiry route.</p><h3>Reach</h3><p>Structure international SEO around real search intent.</p><h3>Convert</h3><p>Measure calls, messages and forms.</p></section>
+    <section id="about"><h2>Çağatay Samet Macar</h2><p>Founder of SenninWeb, working with clinics on the journey from first search to booked appointment.</p><img src="/images/en/cagatay-ink.webp" width="360" height="407" loading="lazy" alt="Ink illustration of Çağatay Samet Macar"><p><a href="https://www.linkedin.com/in/çağatay-samet-macar-5bb930411/">Çağatay on LinkedIn</a></p></section>
     <section><h2>Questions before we begin</h2>${faqItemsForEnglish.map(([q, a]) => `<h3>${escapeHtml(q)}</h3><p>${escapeHtml(a)}</p>`).join('')}</section>
     <p><a href="mailto:business@senninweb.com?subject=Irish%20clinic%20review">Request a clinic review</a></p>
   </main>`
@@ -408,6 +409,17 @@ for (const post of [null, ...englishPosts]) {
     lang: 'en-IE', ogType: post ? 'article' : 'website', bodyHtml: page.bodyHtml, jsonLd: page.jsonLd
   })
 }
+const siteUrl = 'https://www.senninweb.com'
+writeFileSync(resolve(distDir, 'en/llms.txt'), [
+  '# SenninWeb for clinics in Ireland', '',
+  '> SenninWeb designs clinic websites and helps patients find treatments and contact the practice.', '',
+  '## Clinic resources', '',
+  `- [English home](${siteUrl}/en): Services, founder and contact details.`,
+  `- [Dental website example](${siteUrl}/demo/dental/): Fictional practice with sample treatments and fees.`,
+  `- [Attracting Patients from Abroad](${siteUrl}/rehber/patient-enquiry-playbook.pdf): English PDF guide.`,
+  '', '## Articles', '', `- [Clinic blog](${siteUrl}${blogPath})`,
+  ...englishPosts.map(post => `- [${post.title}](${siteUrl}${articlePath(post)}): ${post.description}`), ''
+].join('\n'))
 const pages = [
   { loc: blogPath, priority: '0.8', lastmod: englishPosts.map(p => p.date).sort().at(-1) },
   ...englishPosts.map(p => ({ loc: articlePath(p), priority: '0.7', lastmod: p.date })),
