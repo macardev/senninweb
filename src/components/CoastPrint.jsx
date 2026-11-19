@@ -1,6 +1,6 @@
 // A two-ink coastal print. The beam and water move independently of the lettering.
-export default function CoastPrint({hero = false}) {
-  return <svg aria-hidden="true" viewBox="0 0 800 300" className={hero ? 'coast-print coast-hero' : 'coast-print'} fill="none">
+export default function CoastPrint() {
+  return <svg aria-hidden="true" viewBox="0 0 800 300" className="coast-print" fill="none">
     <g className="coast-sun" stroke="currentColor">
       {Array.from({length:14}, (_, i) => <circle key={i} cx="593" cy="113" r={16+i*5} strokeWidth=".75" />)}
     </g>

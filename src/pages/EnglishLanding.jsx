@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import useReleaseStaticBody from "@/hooks/useReleaseStaticBody"
 import { EMAIL, whatsappHref, trackLead } from "@/utils/leads"
 import CoastPrint from "@/components/CoastPrint"
+import ServicesMenu from "@/components/ServicesMenu"
+import { services, servicePath } from "@/data/englishServices"
 import LinkedinProfile from "@/components/LinkedinProfile"
 
 const TITLE = "Web Design & International SEO for Irish Clinics | SenninWeb"
@@ -125,19 +127,20 @@ export default function EnglishLanding() {
         <Link to="/en" className="font-display font-bold text-xl text-white" aria-label="SenninWeb English home">
           Sennin<span className="text-[#D97706]">Web</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-8 text-sm text-white/85" aria-label="English navigation">
+        <nav className="hidden lg:flex items-center gap-8 text-sm text-white/85" aria-label="English navigation">
           <a href="/en/blog" className="hover:text-white">Blog</a>
           <a href="#approach" className="hover:text-white">Approach</a>
           <a href="#about" className="hover:text-white">About</a>
-          <a href="#services" className="hover:text-white">Services</a>
+          <ServicesMenu />
           <a href="/demo/dental/" className="hover:text-white">Clinic demo</a>
           <a href="#faq" className="hover:text-white">FAQ</a>
-          <a href="#free-book" className="bg-[#D97706] text-black px-5 py-3 font-semibold hover:bg-[#FCD34D]">Get the free book</a>
+          <a href="#free-book" className="en-cta">Get the free book</a>
           <Link to="/" lang="tr" className="hover:text-white">TR</Link>
         </nav>
-        <div className="md:hidden flex items-center gap-5 text-sm">
+        <div className="lg:hidden flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-sm">
+          <ServicesMenu />
           <a href="/en/blog">Blog</a>
-          <a href="#free-book" className="text-[#FCD34D]">Free book</a>
+          <a href="#free-book" className="en-cta">Free book</a>
           <Link to="/" lang="tr" className="text-white/75">TR</Link>
         </div>
       </header>
@@ -145,7 +148,6 @@ export default function EnglishLanding() {
       <section className="relative min-h-[100svh] flex items-end en-shutter">
         <img src="/images/en/irish-coast.webp" alt="A quiet Atlantic coastline representing the Irish market" className="absolute inset-0 w-full h-full object-cover object-center" width="1600" height="1000" fetchPriority="high" />
         <div className="absolute inset-0 bg-black/55" />
-        <CoastPrint hero />
         <div className="relative z-10 w-full px-5 md:px-12 pb-16 md:pb-20 pt-32">
           <h1 className="font-display font-bold text-[clamp(2.5rem,6vw,6rem)] leading-[1.02] tracking-[-0.045em] max-w-[23ch] text-balance">
             Having Trouble with getting more patient enquiries?
@@ -155,7 +157,7 @@ export default function EnglishLanding() {
               Get the free Attracting Patients from Abroad guide: 12 chapters on international visibility, multilingual websites and turning enquiries into appointments.
             </p>
             <div className="md:col-start-9 md:col-span-4 flex md:justify-end">
-              <a href="#free-book" className="inline-flex bg-[#D97706] text-black px-7 py-4 font-semibold hover:bg-[#FCD34D] transition-colors min-h-[52px] items-center">
+              <a href="#free-book" className="en-cta">
                 Here’s the book you’re looking for
               </a>
             </div>
@@ -175,11 +177,11 @@ export default function EnglishLanding() {
               <li>Build multilingual pages, search visibility and patient trust.</li>
               <li>Organise WhatsApp follow-up and measure your patient funnel.</li>
             </ul>
-            <a href="/rehber/patient-enquiry-playbook.pdf" download onClick={() => { setBookDownloaded(true); trackLead('guide_download', 'en-free-book') }} className="inline-flex mt-8 bg-[#111] text-white px-7 py-4 font-semibold hover:bg-[#333]">Download my free e-book (PDF)</a>
+            <a href="/rehber/patient-enquiry-playbook.pdf" download onClick={() => { setBookDownloaded(true); trackLead('guide_download', 'en-free-book') }} className="en-cta mt-8">Download my free e-book (PDF)</a>
             {bookDownloaded && <div role="status" className="mt-8 border-t border-black/20 pt-6">
               <h3 className="font-display text-2xl">Your book is ready.</h3>
               <p className="mt-3 leading-relaxed">You can download it again above. After reading, send us your clinic website and target market for a free review of your next steps.</p>
-              <a href={whatsappHref('Hello, I downloaded your Attracting Patients from Abroad guide and would like a free review of my clinic website.')} target="_blank" rel="noopener noreferrer" data-lead-placement="en-book-success" className="inline-flex mt-5 bg-[#D97706] px-6 py-4 font-semibold text-black hover:bg-[#FCD34D]">Discuss my clinic on WhatsApp</a>
+              <a href={whatsappHref('Hello, I downloaded your Attracting Patients from Abroad guide and would like a free review of my clinic website.')} target="_blank" rel="noopener noreferrer" data-lead-placement="en-book-success" className="en-cta mt-5">Discuss my clinic on WhatsApp</a>
             </div>}
           </div>
         </div>
@@ -194,6 +196,7 @@ export default function EnglishLanding() {
       </section>
 
       <section id="services" className="bg-[#d9d4c8] text-[#111] px-5 md:px-12 py-28 md:py-44 en-reveal">
+        <nav aria-label="Our services" className="service-index">{services.map(item => <a key={item.slug} href={servicePath(item)}>{item.name}<span aria-hidden="true">↗</span></a>)}</nav>
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <h2 className="font-display text-[clamp(2.8rem,6vw,6rem)] leading-[0.92] tracking-[-0.05em] text-balance">Start with your clinic</h2>
@@ -239,7 +242,7 @@ export default function EnglishLanding() {
             <p className="text-xs uppercase tracking-widest mb-6">Explore a clinic website concept</p>
             <h2 id="clinic-demo-heading" className="font-display text-[clamp(2.8rem,5vw,5.5rem)] leading-[0.96] tracking-[-0.045em]">A calmer path to the first enquiry.</h2>
             <p className="mt-7 text-lg leading-relaxed max-w-lg">Meet Luma Dental Studio: an original dental website concept with immersive treatment galleries, illustrative smile stories, transparent sample fees and a simple consultation journey.</p>
-            <a href="/demo/dental/" className="inline-flex items-center gap-8 mt-8 bg-[#132b39] text-white px-7 py-4 font-semibold hover:bg-[#345c78]">Explore the dental demo <span aria-hidden="true">↗</span></a>
+            <a href="/demo/dental/" className="en-cta mt-8">Explore the dental demo <span aria-hidden="true">↗</span></a>
             <p className="mt-4 text-xs text-[#526a7b]">Fictional clinic · Sample content · No real bookings</p>
           </div>
           <a href="/demo/dental/" aria-label="Explore the Luma Dental Studio website" className="block relative overflow-hidden">
@@ -283,7 +286,7 @@ export default function EnglishLanding() {
         <CoastPrint />
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 text-base">
           <div>
-            <a href={whatsapp} target="_blank" rel="noopener noreferrer" data-lead-placement="en-contact-whatsapp" className="font-semibold underline underline-offset-4">Start on WhatsApp</a>
+            <a href={whatsapp} target="_blank" rel="noopener noreferrer" data-lead-placement="en-contact-whatsapp" className="en-cta">Start on WhatsApp</a>
             <p className="mt-2">Working with clinics across Ireland and Europe</p>
             <LinkedinProfile />
           </div>

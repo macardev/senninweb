@@ -3,6 +3,7 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { SERVICES, serviceJsonLd, serviceFaqJsonLd } from './src/data/services.js'
 import { englishPosts } from './src/data/englishPosts.js'
+import { services as englishServices, servicePath } from './src/data/englishServices.js'
 import { englishBlogPage, blogPath, articlePath } from './src/content/englishBlog.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -299,6 +300,7 @@ const faqItemsForEnglish = [
 function englishBody() {
   return `<main lang="en-IE" style="${BODY_STYLE}">
     <nav><a href="/en/blog">Clinic blog</a> · <a href="#about">About the founder</a></nav>
+    <nav aria-label="Services">${englishServices.map(s => `<a href="${servicePath(s)}">${escapeHtml(s.name)}</a>`).join(' · ')}</nav>
     <h1 style="${H1_STYLE}">Having Trouble with getting more patient enquiries?</h1>
     <p>Get the free Attracting Patients from Abroad guide: 12 chapters on international visibility, multilingual websites and turning enquiries into appointments.</p>
     <p><a href="#free-book">Here’s the book you’re looking for</a></p>
@@ -410,6 +412,12 @@ for (const post of [null, ...englishPosts]) {
   })
 }
 const siteUrl = 'https://www.senninweb.com'
+for (const item of englishServices) {
+  const path = servicePath(item)
+  const bodyHtml = `<article class="clinic-blog"><a href="/en">SenninWeb</a><div class="clinic-blog-copy"><h1>${escapeHtml(item.name)}</h1><p>${escapeHtml(item.lead)}</p>${item.paragraphs.map(p => '<p>' + escapeHtml(p) + '</p>').join('')}${item.source ? '<p><a href="' + escapeAttr(item.source[1]) + '">' + escapeHtml(item.source[0]) + '</a></p>' : ''}<a class="en-cta" href="/en#contact">${escapeHtml(item.cta)}</a></div></article>`
+  prerender(path, item.name + ' | SenninWeb', item.description, { lang:'en-IE', bodyHtml,
+    jsonLd:{ '@context':'https://schema.org', '@type':'Service', name:item.name, description:item.description, url:siteUrl + path } })
+}
 writeFileSync(resolve(distDir, 'en/llms.txt'), [
   '# SenninWeb for clinics in Ireland', '',
   '> SenninWeb designs clinic websites and helps patients find treatments and contact the practice.', '',
@@ -417,10 +425,12 @@ writeFileSync(resolve(distDir, 'en/llms.txt'), [
   `- [English home](${siteUrl}/en): Services, founder and contact details.`,
   `- [Dental website example](${siteUrl}/demo/dental/): Fictional practice with sample treatments and fees.`,
   `- [Attracting Patients from Abroad](${siteUrl}/rehber/patient-enquiry-playbook.pdf): English PDF guide.`,
+  '', '## Services', '', ...englishServices.map(s => `- [${s.name}](${siteUrl}${servicePath(s)}): ${s.description}`),
   '', '## Articles', '', `- [Clinic blog](${siteUrl}${blogPath})`,
   ...englishPosts.map(post => `- [${post.title}](${siteUrl}${articlePath(post)}): ${post.description}`), ''
 ].join('\n'))
 const pages = [
+  ...englishServices.map(s => ({ loc: servicePath(s), priority: '0.8', lastmod: '2026-11-19' })),
   { loc: blogPath, priority: '0.8', lastmod: englishPosts.map(p => p.date).sort().at(-1) },
   ...englishPosts.map(p => ({ loc: articlePath(p), priority: '0.7', lastmod: p.date })),
   { loc: '/', priority: '1.0' },

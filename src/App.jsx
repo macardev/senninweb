@@ -9,6 +9,7 @@ import EnglishLanding from "@/pages/EnglishLanding"
 const Hakkimizda = lazy(() => import("@/pages/Hakkimizda"))
 const Blog = lazy(() => import("@/pages/Blog"))
 const EnglishBlog = lazy(() => import("@/pages/EnglishBlog"))
+const EnglishService = lazy(() => import("@/pages/EnglishService"))
 const BlogPost = lazy(() => import("@/pages/BlogPost"))
 const Bilecik = lazy(() => import("@/pages/Bilecik"))
 const Kocaeli = lazy(() => import("@/pages/Kocaeli"))
@@ -27,6 +28,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/en/blog/:slug?" element={<Suspense fallback={null}><EnglishBlog /></Suspense>} />
+          <Route path="/en/services/:slug" element={<Suspense fallback={null}><EnglishService /></Suspense>} />
           <Route path="/en" element={
             <Suspense fallback={<div className="min-h-screen bg-black" />}>
               <EnglishLanding />
