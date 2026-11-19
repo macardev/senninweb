@@ -668,3 +668,12 @@ body.en-page .mesh-glow {
     transform: none !important;
   }
 }
+.clinic-blog { background: #0b0b0b; color: #fafafa; min-height: 100vh; padding: 1.5rem clamp(1.2rem, 5vw, 5rem) 6rem; }
+.clinic-blog header { display: flex; justify-content: space-between; padding-bottom: 1.25rem; border-bottom: 1px solid #434343; }
+.clinic-blog a { color: #fcd34d; text-decoration: underline; text-underline-offset: .18em; }
+.clinic-blog-copy { max-width: 46rem; margin: clamp(2.5rem, 7vw, 6rem) auto 0; }
+.clinic-blog h1 { font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1.04; font-weight: 700; letter-spacing: -.04em; }
+.clinic-blog h2 { font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; font-weight: 650; }
+.clinic-blog p { margin: 1rem 0; font-size: 1.125rem; line-height: 1.7; color: #ddd; }
+.clinic-blog section, .clinic-blog footer, .clinic-blog-copy > p + article { margin-top: 3rem; border-top: 1px solid #434343; padding-top: 1.4rem; }
+.clinic-blog time, .clinic-blog .byline { color: #fcd34d; font-size: .9rem; }

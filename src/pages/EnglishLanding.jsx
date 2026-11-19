@@ -124,6 +124,7 @@ export default function EnglishLanding() {
           Sennin<span className="text-[#D97706]">Web</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/85" aria-label="English navigation">
+          <a href="/en/blog" className="hover:text-white">Blog</a>
           <a href="#approach" className="hover:text-white">Approach</a>
           <a href="#services" className="hover:text-white">Services</a>
           <a href="/demo/dental/" className="hover:text-white">Clinic demo</a>
@@ -132,6 +133,7 @@ export default function EnglishLanding() {
           <Link to="/" lang="tr" className="hover:text-white">TR</Link>
         </nav>
         <div className="md:hidden flex items-center gap-5 text-sm">
+          <a href="/en/blog">Blog</a>
           <a href="#free-book" className="text-[#FCD34D]">Free book</a>
           <Link to="/" lang="tr" className="text-white/75">TR</Link>
         </div>

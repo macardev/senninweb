@@ -44,13 +44,15 @@
     }
   ],
   "rewrites": [
+    { "source": "/en/blog", "destination": "/en/blog/index.html" },
+    { "source": "/en/blog/:slug", "destination": "/en/blog/:slug/index.html" },
     {
       "source": "/en",
-      "destination": "/index.html"
+      "destination": "/en/index.html"
     },
     {
       "source": "/en/",
-      "destination": "/index.html"
+      "destination": "/en/index.html"
     },
     {
       "source": "/hakkimizda",

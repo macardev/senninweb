@@ -2,6 +2,8 @@ import { writeFileSync, readFileSync, mkdirSync, existsSync, cpSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { SERVICES, serviceJsonLd, serviceFaqJsonLd } from './src/data/services.js'
+import { englishPosts } from './src/data/englishPosts.js'
+import { englishBlogPage, blogPath, articlePath } from './src/content/englishBlog.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const publicDir = resolve(__dirname, 'public')
@@ -296,6 +298,7 @@ const faqItemsForEnglish = [
 
 function englishBody() {
   return `<main lang="en-IE" style="${BODY_STYLE}">
+    <nav><a href="/en/blog">Clinic blog</a></nav>
     <h1 style="${H1_STYLE}">Having Trouble with getting more patient enquiries?</h1>
     <p>Get the free Attracting Patients from Abroad guide: 12 chapters on international visibility, multilingual websites and turning enquiries into appointments.</p>
     <p><a href="#free-book">Here’s the book you’re looking for</a></p>
@@ -399,7 +402,15 @@ for (const post of blogPosts) {
 }
 
 // ── Generate sitemap ──
+for (const post of [null, ...englishPosts]) {
+  const page = englishBlogPage(post)
+  prerender(post ? articlePath(post) : blogPath, page.title, page.description, {
+    lang: 'en-IE', ogType: post ? 'article' : 'website', bodyHtml: page.bodyHtml, jsonLd: page.jsonLd
+  })
+}
 const pages = [
+  { loc: blogPath, priority: '0.8', lastmod: englishPosts.map(p => p.date).sort().at(-1) },
+  ...englishPosts.map(p => ({ loc: articlePath(p), priority: '0.7', lastmod: p.date })),
   { loc: '/', priority: '1.0' },
   { loc: '/en', priority: '1.0' },
   { loc: '/hakkimizda', priority: '0.8' },
